@@ -1,22 +1,22 @@
 ;Platform
-Android Google Play
-Android F-droid/apk
-Desktop/Web
+Android Google Play;
+Android F-droid/apk;
+Desktop/Web;
 ;Technical details
-Protocol
-Server license
-Client license
+Protocol;
+Server license;
+Client license;
 ;Security
-End-to-end encryption
+End-to-end encryption;
 Contact list confidential;If the client never sends over its contact list to the server
 ;Sustainability
-Self-hostable
-Company jurisdiction
-Infrastructure jurisdiction
-Infrastructure provider
+Self-hostable;
+Company jurisdiction;
+Infrastructure jurisdiction;
+Infrastructure provider;
 ;Topology
 Offline;Can be used to read buffered messages or compose new ones if started without internet
-Servers required
-Servers optional
-Serverless mode
-Wireless mode
+Servers required;
+Servers optional;
+Serverless mode;
+Wireless mode;
