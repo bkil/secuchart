@@ -62,7 +62,7 @@ EOF
 }
 
 gen_filters() {
-  echo "Hide messengers:"
+  echo "<span>Hide messengers:</span>"
 
   cat "$ITEMS" |
   while read IT; do

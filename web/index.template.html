@@ -102,7 +102,51 @@ label {
   padding: 0.5em;
 }
 
+#dark:checked ~ * {
+  background-color: black;
+  color: white;
+}
 
+#dark:checked ~ table td,
+#dark:checked ~ table th {
+  border-color: #202020;
+}
+
+#dark:checked ~ table th {
+  background-color: #101010;
+}
+
+#dark:checked ~ table td {
+  color: black;
+}
+
+#dark:checked ~ table td a {
+  background-color: #202020;
+  color: white;
+}
+
+@media (prefers-color-scheme: dark) {
+  html {
+    background-color: black;
+    color: white;
+  }
+  td, th {
+    border-color: #202020;
+  }
+  th {
+    background-color: #101010;
+  }
+  td {
+    color: black;
+  }
+  td a {
+    background-color: #202020;
+    color: white;
+  }
+  a {
+    color: #e0e0ff;
+  }
+}
 </style>
 
 ((style))
@@ -112,7 +156,8 @@ label {
 
 <main>
 
-<label for=transpose>transpose table&nbsp;</label><input type=checkbox id=transpose><br>
+<label for=transpose>transpose table&nbsp;</label><input type=checkbox id=transpose>
+<label for=dark>dark mode&nbsp;</label><input type=checkbox id=dark><br>
 
 ((filters))
 
