@@ -1,0 +1,40 @@
+name;Jami
+Android Google Play;yes<a href='https://play.google.com/store/apps/details?id=cx.ring'>1</a>
+Android F-droid/apk;yes<a href='https://f-droid.org/en/packages/cx.ring/'>1</a>
+Apple iOS;yes<a href='https://git.jami.net/savoirfairelinux/jami-client-ios'>1</a>
+Desktop;yes<a href='https://packages.ubuntu.com/impish/jami'>1</a><a href='https://jami.net/download/'>2</a>
+Web;no<a href='https://jami.net/download/'>1</a>
+Protocol;SIP &amp, OpenDHT<a href='https://en.m.wikipedia.org/wiki/Jami_(software)'>1</a>
+Server license;GPLv3<a href='https://git.jami.net/savoirfairelinux/jami-nameservice'>1</a><a href='https://github.com/savoirfairelinux/opendht'>2</a>
+Client license;GPLv3+
+Group chat;no
+Voice calls;yes<a href='https://jami.net/help/#answer11'>1</a>
+Video calls;yes<a href='https://jami.net/help/#answer11'>1</a>
+Group calls;limited, by forwarding by the initiator<a href='https://jami.net/help/#answer12'>1</a>
+Read public content without registering;no
+Network conservation;partial offload by OpenDHT proxy<a href='https://jami.net/why-is-jami-truly-distributed/'>1</a>
+End-to-end encryption;yes<a href='https://jami.net/why-is-jami-truly-distributed/'>1</a><a href='https://linuxkamarada.com/en/2021/05/25/the-jami-messenger/'>2</a>
+E2EE keys shielded from operator;yes<a href='https://jami.net/why-is-jami-truly-distributed/'>1</a><a href='https://linuxkamarada.com/en/2021/05/25/the-jami-messenger/'>2</a>
+Contact list confidential;no, leaks through OpenDHT proxy, Jami name server and ICE<a href='https://jami.net/why-is-jami-truly-distributed/'>1</a><a href='https://linuxkamarada.com/en/2021/05/25/the-jami-messenger/'>2</a>
+Perfect forward secrecy;yes<a href='https://git.jami.net/savoirfairelinux/jami-project/-/wikis/technical/Technical-overview#user-content-security-privacy'>1</a>
+Audits;
+Usage without phone number;yes
+Register without app;
+Transparent financing;PayPal donations<a href='https://jami.net/'>1</a>
+Company jurisdiction;
+Infrastructure jurisdiction;Canada
+Infrastructure provider;Savoir-faire Linux (default)
+Isolated self-hosting;yes, but complicated<a href='https://jami.net/why-is-jami-truly-distributed/'>1</a>
+User can extend network with node;yes: OpenDHT proxy, bootstrap, TURN, Jami blockchain, Jami name server<a href='https://jami.net/why-is-jami-truly-distributed/'>1</a>
+Identity not controlled by company;yes, names are optional and stored on a blockchain<a href='https://jami.net/why-is-jami-truly-distributed/'>1</a><a href='https://linuxkamarada.com/en/2021/05/25/the-jami-messenger/'>2</a>
+Account deactivation after device compromise;yes<a href='https://git.jami.net/savoirfairelinux/jami-project/-/wikis/technical/Technical-overview#user-content-usages'>1</a>
+Account recovery after device compromise;no<a href='https://jami.net/help/#answer5'>1</a>
+Spam protection;none
+Offline;yes<a href='https://linuxkamarada.com/en/2021/05/25/the-jami-messenger/'>1</a>
+Servers required;DNS, OpenDHT proxy, GCN/Apple push, bootstrap, TURN<a href='https://jami.net/why-is-jami-truly-distributed/'>1</a>
+Servers optional;Jami name server<a href='https://jami.net/why-is-jami-truly-distributed/'>1</a>
+Serverless WAN mode;no, but traffic is P2P (TODO: with IP &amp, SIP?)<a href='https://jami.net/why-is-jami-truly-distributed/'>1</a>
+Serverless LAN mode;no<a href='https://jami.net/why-is-jami-truly-distributed/'>1</a>
+Network store and forward;no<a href='https://jami.net/why-is-jami-truly-distributed/'>1</a><a href='https://linuxkamarada.com/en/2021/05/25/the-jami-messenger/'>1</a>
+Wireless mode;no<a href='https://jami.net/why-is-jami-truly-distributed/'>1</a>
+IP shielded from peers;partially, not over STUN<a href='https://jami.net/establishing-peer-to-peer-connections-with-jami/'>1</a>

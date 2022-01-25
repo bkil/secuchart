@@ -1,10 +1,11 @@
 name;Matrix Synapse &amp, Element Web;
 Android Google Play;yes<a href='https://matrix.org/clients/'>1</a>;
 Android F-droid/apk;yes<a href='https://f-droid.org/en/packages/im.vector.app/'>1</a>;
-Desktop/Web;yes<a href='https://matrix.org/clients/'>1</a>;
+Desktop;yes<a href='https://matrix.org/clients/'>1</a>;
+Web;yes<a href='https://matrix.org/clients/'>1</a>;
 Protocol;Matrix;
 Offline;no;
 Servers required;Synapse homeserver &amp, notifications;
 Servers optional;DNS, Element Web app, identity, integrations, ICE, Jitsi<a href='https://gitlab.com/libremonde-org/papers/research/privacy-matrix.org/-/blob/master/part1/README.md'>1</a>;
 Serverless LAN mode;no;
-Peers know your IP;During calls if you enable WebRTC;p
+IP shielded from peers;Not during calls if you enable WebRTC;p

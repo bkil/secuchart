@@ -140,13 +140,13 @@ print_items() {
     VALUE="`get_prop_value "$PROP"`"
 
     CLASS=""
-    if echo "$PROP" | grep -qE "\<(no|proprietary)\>"; then
+    if echo "$PROP" | grep -qE "\<(no|none|proprietary)\>"; then
       CLASS="n"
     fi
     if echo "$PROP" | grep -qE "\<yes\>"; then
       CLASS="y"
     fi
-    if echo "$PROP" | grep -qE "\<(only|partial)\>"; then
+    if echo "$PROP" | grep -qE "\<(only|partial|partially|limited)\>"; then
       CLASS="p"
     fi
 

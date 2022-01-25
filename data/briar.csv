@@ -1,7 +1,7 @@
 name;Briar;
 Android Google Play;yes<a href='https://briarproject.org/download-briar/'>1</a>;
 Android F-droid/apk;yes<a href='https://f-droid.org/en/packages/org.briarproject.briar.android/'>1</a>;
-Desktop/Web;<details><summary>Linux</summary>Not full featured<a href='https://code.briarproject.org/briar/briar-gtk'>1</a></details>;p
+Desktop;<details><summary>Linux</summary>Not full featured<a href='https://code.briarproject.org/briar/briar-gtk'>1</a></details>;p
 Protocol;Bramble;
 Contact list confidential;yes<a href='https://briarproject.org/how-it-works/'>1</a>;
 Offline;yes<a href='https://briarproject.org/how-it-works/'>1</a>;
