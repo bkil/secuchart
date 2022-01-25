@@ -20,7 +20,10 @@ Multiple accounts;If you can stay logged in with multiple accounts on the same d
 End-to-end encryption;
 E2EE keys shielded from operator;Regardless of this, certain OS vendors might also have access to your keys
 Contact list confidential;If the client never sends over its contact list to the server
+Metadata protection;
 Perfect forward secrecy;
+Remote message removal;Also called redaction or deletion
+Remote message correction;Also called editing
 Message expiration;Also called retention time or disappearing messages
 Audits;
 Usage without phone number;
