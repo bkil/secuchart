@@ -1,11 +1,21 @@
 name;Matrix Synapse &amp, Element Web;
 Android Google Play;yes<a href='https://matrix.org/clients/'>1</a>;
 Android F-droid/apk;yes<a href='https://f-droid.org/en/packages/im.vector.app/'>1</a>;
+Apple iOS;yes <a href='https://matrix.org/clients/'>1</a>;
 Desktop;yes<a href='https://matrix.org/clients/'>1</a>;
 Web;yes<a href='https://matrix.org/clients/'>1</a>;
 Protocol;Matrix;
+Server license;Apache 2.0 <a href='https://github.com/matrix-org/synapse/blob/develop/LICENSE'>1</a>;
+Client license;Apache 2.0 <a href='https://github.com/vector-im/element-web/blob/develop/LICENSE'>1</a>;
+Group chat;yes;
+Voice calls;yes, WebRTC <a href='https://matrix.org/faq/#what-can-i-actually-do-with-this%3F'>1</a>;
+Video calls;yes, WebRTC <a href='https://matrix.org/faq/#what-can-i-actually-do-with-this%3F'>1</a>;
+Group calls;yes, via Jitsi <a href='https://matrix.org/faq/#what-can-i-actually-do-with-this%3F'>1</a>;
+End-to-end encryption;yes <a href='https://matrix.org/faq/#which-matrix-clients-support-e2e'>1</a>;
+Usage without phone number;yes;
 Offline;no;
 Servers required;Synapse homeserver &amp, notifications;
 Servers optional;DNS, Element Web app, identity, integrations, ICE, Jitsi<a href='https://gitlab.com/libremonde-org/papers/research/privacy-matrix.org/-/blob/master/part1/README.md'>1</a>;
+Serverless WAN mode;no;
 Serverless LAN mode;no;
 IP shielded from peers;Not during calls if you enable WebRTC;p
