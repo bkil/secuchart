@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/sh
 
 main() {
   O="`dirname $0`"
@@ -15,8 +15,9 @@ main() {
 gen_index() {
   IN="$WEB/index.template.html"
 
-  cat "$IN" |
-  while read; do
+  sed "s~^~_~" "$IN" |
+  while read REPL; do
+    REPLY="`echo "$REPL" | sed "s~^_~~"`"
     if [ "$REPLY" = "((style))" ]; then
       gen_style
     elif [ "$REPLY" = "((filters))" ]; then
