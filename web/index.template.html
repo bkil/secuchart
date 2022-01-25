@@ -47,6 +47,7 @@ tr:not(:first-child) > th.section {
   left: initial;
   text-align: right;
   z-index: 1;
+  font-weight: normal;
 }
 
 td:not(:empty) {
@@ -76,6 +77,32 @@ label {
   padding-left: 1em;
   white-space: nowrap;
 }
+
+#transpose:checked ~ table td,
+#transpose:checked ~ table th {
+  min-height: 2em;
+  min-width: 10em;
+  display: block;
+}
+
+#transpose:checked ~ table tr {
+  display: inline-block;
+  float: left;
+}
+
+#transpose:checked ~ table {
+  overflow-x: initial;
+  width: max-content;
+}
+
+#transpose:checked ~ table details[open] {
+  display: inline-block;
+  position: absolute;
+  background-color: white;
+  padding: 0.5em;
+}
+
+
 </style>
 
 ((style))
@@ -84,6 +111,8 @@ label {
 <body>
 
 <main>
+
+<label for=transpose>transpose table&nbsp;</label><input type=checkbox id=transpose><br>
 
 ((filters))
 
