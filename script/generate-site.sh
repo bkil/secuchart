@@ -140,13 +140,15 @@ print_items() {
     VALUE="`get_prop_value "$PROP"`"
 
     CLASS=""
-    if echo "$PROP" | grep -qE "\<(no|none|proprietary)\>"; then
+    FVEY="Australia|Canada|New Zealand|UK|USA"
+    NINEEYES="Denmark|France|Netherlands|Norway"
+    if echo "$PROP" | grep -qE "\<(no|none|proprietary|$FVEY)\>"; then
       CLASS="n"
     fi
     if echo "$PROP" | grep -qE "\<yes\>"; then
       CLASS="y"
     fi
-    if echo "$PROP" | grep -qE "\<(only|partial|partially|limited)\>"; then
+    if echo "$PROP" | grep -qE "\<(only|partial|partially|limited|$NINEEYES)\>"; then
       CLASS="p"
     fi
 

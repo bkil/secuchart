@@ -19,6 +19,7 @@ End-to-end encryption;
 E2EE keys shielded from operator;Regardless of this, certain OS vendors might also have access to your keys
 Contact list confidential;If the client never sends over its contact list to the server
 Perfect forward secrecy;
+Message expiration;Also called retention time or disappearing messages
 Audits;
 Usage without phone number;
 Register without app;

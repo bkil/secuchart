@@ -17,11 +17,12 @@ End-to-end encryption;yes<a href='https://jami.net/why-is-jami-truly-distributed
 E2EE keys shielded from operator;yes<a href='https://jami.net/why-is-jami-truly-distributed/'>1</a><a href='https://linuxkamarada.com/en/2021/05/25/the-jami-messenger/'>2</a>
 Contact list confidential;no, leaks through OpenDHT proxy, Jami name server and ICE<a href='https://jami.net/why-is-jami-truly-distributed/'>1</a><a href='https://linuxkamarada.com/en/2021/05/25/the-jami-messenger/'>2</a>
 Perfect forward secrecy;yes<a href='https://git.jami.net/savoirfairelinux/jami-project/-/wikis/technical/Technical-overview#user-content-security-privacy'>1</a>
-Audits;
+Message expiration;none
+Audits;none
 Usage without phone number;yes
-Register without app;
-Transparent financing;PayPal donations<a href='https://jami.net/'>1</a>
-Company jurisdiction;
+Register without app;no
+Transparent financing;official GNU project with EFF funding in the past, PayPal donations<a href='https://jami.net/'>1</a><a href='https://www.fsf.org/campaigns/priority-projects/voicevideochat'>2</a><a href='https://opensource.com/article/20/5/free-software-communication'>3</a>
+Company jurisdiction;Canada with two offices in France
 Infrastructure jurisdiction;Canada
 Infrastructure provider;Savoir-faire Linux (default)
 Isolated self-hosting;yes, but complicated<a href='https://jami.net/why-is-jami-truly-distributed/'>1</a>
