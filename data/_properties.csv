@@ -1,22 +1,41 @@
 ;Platform
 Android Google Play;
 Android F-droid/apk;
+Apple iOS;
 Desktop/Web;
 ;Technical details
 Protocol;
 Server license;
 Client license;
+Group chat;
+Voice calls
+Video calls;
+Group calls;
+Read public content without registering;
+Network conservation;Can optimize battery time by delegating processing to devices on AC
 ;Security
 End-to-end encryption;
+Operator has E2EE keys;Regardless of this, certain OS vendors might also have access to your keys
 Contact list confidential;If the client never sends over its contact list to the server
+Perfect forward secrecy;
+Audits;
+Requires phone number;
+Registration requires an app;
 ;Sustainability
-Self-hostable;
+Transparent financing;
 Company jurisdiction;
 Infrastructure jurisdiction;
 Infrastructure provider;
+Isolated self-hosting;It can be deployed in a LAN without internet
+User can extend network with node;Improving the scaling of the system and communicate with anyone (i.e., if P2P or federated)
+Identity not controlled by company;Will the system still work if the developer goes bankrupt
+Spam protection;If it gained worldwide adoption
 ;Topology
 Offline;Can be used to read buffered messages or compose new ones if started without internet
 Servers required;
 Servers optional;
-Serverless mode;
-Wireless mode;
+Serverless WAN mode;If communicating over the internet might scale without (a vast amount of) dedicated servers, i.e. by supernode promotion and DHT
+Serverless LAN mode;If you can communicate without an internet connection and a server
+Network store & forward;You can compose messages to your peer even if the two of you aren't online at the same time
+Wireless mode;Built-in support for peering with nearby peers over ISM wireless either to sync or as part of a mesh
+Peers know your IP;

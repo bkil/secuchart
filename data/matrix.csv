@@ -6,4 +6,5 @@ Protocol;Matrix;
 Offline;no;
 Servers required;Synapse homeserver &amp, notifications;
 Servers optional;DNS, Element Web app, identity, integrations, ICE, Jitsi<a href='https://gitlab.com/libremonde-org/papers/research/privacy-matrix.org/-/blob/master/part1/README.md'>1</a>;
-Wireless mode;no;
+Serverless LAN mode;no;
+Peers know your IP;During calls if you enable WebRTC;p
