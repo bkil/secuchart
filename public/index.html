@@ -15,34 +15,37 @@ td, th {
   padding: 4px;
 }
 
+th {
+  background-color: #f0f0f0;
+}
+
 table {
   overflow-x: auto;
   border-spacing: 0px;
 }
 
-thead > tr > th {
+tr:first-child > th {
   position: sticky;
   top: 0;
-  background-color: #f0f0f0;
-  padding: 10px;
   z-index: 2;
 }
 
-tbody > tr > th:first-child {
-  position: sticky;
-  left: 0;
-  background-color: #f0f0f0;
-  text-align: left;
-  z-index: 3;
-}
-
-thead > tr > th:first-child {
+tr:first-child > th:first-child {
   position: initial;
   z-index: 4;
 }
 
-tbody > tr > th[colspan] {
-  padding-left: 5em;
+tr:not(:first-child) > th:first-child {
+  position: sticky;
+  left: 0;
+  text-align: left;
+  z-index: 3;
+}
+
+tr:not(:first-child) > th.section {
+  position: initial;
+  left: initial;
+  text-align: right;
   z-index: 1;
 }
 
@@ -74,7 +77,7 @@ td.n:before {
   content: 'no';
 }
 
-td > a {
+td a {
   padding: 0.2em;
   margin-left: 0.4em;
   background-color: white;
@@ -115,9 +118,7 @@ Hide messengers:
 <label for=proprietary>proprietary&nbsp;</label><input type=checkbox id=proprietary>
 
 <table>
-<thead>
 <caption>Messenger vs. feature comparison
-<thead>
 
 <tr>
  <th>Feature
@@ -127,10 +128,8 @@ Hide messengers:
  <th>WhatsApp
  <th>Threema
 
-<tbody>
-
 <tr>
- <th colspan=6>Platform
+ <th class=section>Platform<td><td><td><td><td></td>
 
 <tr>
  <th>Android Google Play
@@ -161,7 +160,7 @@ Hide messengers:
  <td></td>
 
 <tr>
- <th colspan=6>Technical details
+ <th class=section>Technical details<td><td><td><td><td></td>
 
 <tr>
  <th>Protocol
@@ -188,7 +187,7 @@ Hide messengers:
  <td></td>
 
 <tr>
- <th colspan=6>Security
+ <th class=section>Security<td><td><td><td><td></td>
 
 <tr>
  <th>End-to-end encryption
@@ -210,7 +209,7 @@ Hide messengers:
  <td></td>
 
 <tr>
- <th colspan=6>Sustainability
+ <th class=section>Sustainability<td><td><td><td><td></td>
 
 <tr>
  <th>Self-hostable
@@ -245,7 +244,7 @@ Hide messengers:
  <td></td>
 
 <tr>
- <th colspan=6>Topology
+ <th class=section>Topology<td><td><td><td><td></td>
 
 <tr>
  <th><details>
