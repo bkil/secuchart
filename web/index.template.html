@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang=en>
+<head>
+  <meta charset=utf-8>
+  <title>SecuChart - secure messenger comparison</title>
+  <link rel='shortcut icon' type=image/x-icon href=data:image/x-icon;,>
+  <meta name=viewport content='width=device-width, initial-scale=1.0'>
+
+<style>
+td, th {
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+  border-right-style: dotted;
+  border-right-width: 1px;
+  padding: 4px;
+}
+
+th {
+  background-color: #f0f0f0;
+}
+
+table {
+  overflow-x: auto;
+  border-spacing: 0px;
+}
+
+tr:first-child > th {
+  position: sticky;
+  top: 0;
+  z-index: 2;
+}
+
+tr:first-child > th:first-child {
+  position: initial;
+  z-index: 4;
+}
+
+tr:not(:first-child) > th:first-child {
+  position: sticky;
+  left: 0;
+  text-align: left;
+  z-index: 3;
+}
+
+tr:not(:first-child) > th.section {
+  position: initial;
+  left: initial;
+  text-align: right;
+  z-index: 1;
+}
+
+td:not(:empty) {
+  background-color: lime;
+}
+
+td.n {
+  background-color: orange;
+}
+
+td.p {
+  background-color: yellow;
+}
+
+td a {
+  padding: 0.2em;
+  margin-left: 0.4em;
+  background-color: white;
+}
+
+details {
+  min-width: 10em;
+  max-width: 20em;
+}
+
+label {
+  padding-left: 1em;
+  white-space: nowrap;
+}
+</style>
+
+((style))
+
+</head>
+<body>
+
+<main>
+
+((filters))
+
+<table>
+<caption>Messenger vs. feature comparison</caption>
+
+((table))
+
+</table>
+</main>
+
+<nav>
+<a href=LICENSE>Copyright</a> &copy; 2022 <a href='https://gitlab.com/bkil/secuchart'>contributors</a>
+</nav>
+
+</body>
+</html>

@@ -4,8 +4,11 @@ pages:
   before_script:
   - apk update && apk add brotli
   script:
+  - script/generate-site.sh
   - find public -type f -regex '.*\.\(htm\|html\|txt\|text\|js\|css\|json\|dz\|index\|csv\)$\|.*/LICENSE$' -exec gzip -9 -f -k {} \;
   - find public -type f -regex '.*\.\(htm\|html\|txt\|text\|js\|css\|json\|dz\|index\|csv\)$\|.*/LICENSE$' -exec brotli -f -k {} \;
+  - mkdir -p public
+  - mv -t public dist/*
   artifacts:
     paths:
     - public
