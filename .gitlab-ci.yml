@@ -1,0 +1,14 @@
+image: alpine:latest
+pages:
+  stage: deploy
+  before_script:
+  - apk update && apk add brotli
+  script:
+  - find public -type f -regex '.*\.\(htm\|html\|txt\|text\|js\|css\|json\|dz\|index\|csv\)$\|.*/LICENSE$' -exec gzip -9 -f -k {} \;
+  - find dist -type f -regex '.*\.\(htm\|html\|txt\|text\|js\|css\|json\|dz\|index\|csv\)$\|.*/LICENSE$' -exec brotli -f -k {} \;
+  artifacts:
+    paths:
+    - public
+    expire_in: 1 day
+  only:
+  - master
