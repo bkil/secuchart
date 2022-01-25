@@ -14,6 +14,8 @@ Video calls;
 Group calls;
 Read public content without registering;
 Network conservation;Can optimize battery time by delegating processing to devices on AC
+Multiple devices;If the same account can be used at the same time from multiple devices, syncing contacts, messages and notifications.
+Multiple accounts;If you can stay logged in with multiple accounts on the same device and application without external isolation techniques
 ;Security
 End-to-end encryption;
 E2EE keys shielded from operator;Regardless of this, certain OS vendors might also have access to your keys

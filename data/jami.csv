@@ -7,15 +7,16 @@ Web;no<a href='https://jami.net/download/'>1</a>
 Protocol;SIP &amp, OpenDHT<a href='https://en.m.wikipedia.org/wiki/Jami_(software)'>1</a>
 Server license;GPLv3<a href='https://git.jami.net/savoirfairelinux/jami-nameservice'>1</a><a href='https://github.com/savoirfairelinux/opendht'>2</a>
 Client license;GPLv3+
-Group chat;no
+Group chat;no<a href='https://forum.jami.net/t/am-i-able-to-create-group-chats/123'>1</a>
 Voice calls;yes<a href='https://jami.net/help/#answer11'>1</a>
 Video calls;yes<a href='https://jami.net/help/#answer11'>1</a>
-Group calls;limited, by forwarding by the initiator<a href='https://jami.net/help/#answer12'>1</a>
+Group calls;limited, by forwarding by the initiator<a href='https://jami.net/help/#answer12'>1</a><a href='https://jami.net/the-jami-conferencing-system/'>2</a>
 Read public content without registering;no
 Network conservation;partial offload by OpenDHT proxy<a href='https://jami.net/why-is-jami-truly-distributed/'>1</a>
+Multiple devices;yes<a href='https://jami.net/the-jami-quirks/#connecting-multiple-devices-to-the-same-account'>1</a>
 End-to-end encryption;yes<a href='https://jami.net/why-is-jami-truly-distributed/'>1</a><a href='https://linuxkamarada.com/en/2021/05/25/the-jami-messenger/'>2</a>
 E2EE keys shielded from operator;yes<a href='https://jami.net/why-is-jami-truly-distributed/'>1</a><a href='https://linuxkamarada.com/en/2021/05/25/the-jami-messenger/'>2</a>
-Contact list confidential;no, leaks through OpenDHT proxy, Jami name server and ICE<a href='https://jami.net/why-is-jami-truly-distributed/'>1</a><a href='https://linuxkamarada.com/en/2021/05/25/the-jami-messenger/'>2</a>
+Contact list confidential;not published, but leaks through OpenDHT proxy, Jami name server and ICE<a href='https://jami.net/why-is-jami-truly-distributed/'>1</a><a href='https://linuxkamarada.com/en/2021/05/25/the-jami-messenger/'>2</a>
 Perfect forward secrecy;yes<a href='https://git.jami.net/savoirfairelinux/jami-project/-/wikis/technical/Technical-overview#user-content-security-privacy'>1</a>
 Message expiration;none
 Audits;none
