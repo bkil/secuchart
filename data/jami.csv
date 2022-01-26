@@ -23,6 +23,8 @@ Audits;none
 Usage without phone number;yes
 Register without app;no
 Transparent financing;official GNU project with EFF funding in the past, PayPal donations<a href='https://jami.net/'>1</a><a href='https://www.fsf.org/campaigns/priority-projects/voicevideochat'>2</a><a href='https://opensource.com/article/20/5/free-software-communication'>3</a>
+No-cost tier;yes
+Payment choices;N/A
 Company jurisdiction;Canada with two offices in France
 Infrastructure jurisdiction;Canada
 Infrastructure provider;Savoir-faire Linux (default)
@@ -40,3 +42,4 @@ Serverless LAN mode;no<a href='https://jami.net/why-is-jami-truly-distributed/'>
 Network store and forward;no<a href='https://jami.net/why-is-jami-truly-distributed/'>1</a><a href='https://linuxkamarada.com/en/2021/05/25/the-jami-messenger/'>1</a>
 Wireless mode;no<a href='https://jami.net/why-is-jami-truly-distributed/'>1</a>
 IP shielded from peers;partially, not over STUN<a href='https://jami.net/establishing-peer-to-peer-connections-with-jami/'>1</a>
+IPv6 access of company operated network;no<a href='https://git.jami.net/savoirfairelinux/jami-project/-/issues/847'>1</a>

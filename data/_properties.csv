@@ -32,6 +32,7 @@ Register without app;
 First release;
 Transparent financing;
 No-cost tier;
+Payment choices;
 Company jurisdiction;
 Infrastructure jurisdiction;
 Infrastructure provider;
@@ -50,3 +51,6 @@ Serverless LAN mode;If you can communicate without an internet connection and a 
 Network store and forward;You can compose messages to your peer even if the two of you aren't online at the same time
 Wireless mode;Built-in support for peering with nearby nodes over ISM wireless either to sync or as part of a mesh
 IP shielded from peers;
+Tor access of company operated network;Yes=Without involving Tor exit nodes, no=Tor exit nodes blocked, limited=otherwise
+IPv6 access of company operated network;Still green if only registration is limited to IPv4
+Company operated network inaccessible from countries;If it is illegal or blocked here or if the company prohibits usage or its infrastructure blocks users from here. Encryption itself is outlawed in many countries, do not list these.

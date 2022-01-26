@@ -18,15 +18,21 @@ Multiple accounts;yes<a href='https://delta.chat/en/2021-08-24-updates#multi-acc
 End-to-end encryption;yes<a href='https://delta.chat/en/help#does-delta-chat-support-end-to-end-encryption'>1</a>
 E2EE keys shielded from operator;yes<a href='https://delta.chat/en/help#does-delta-chat-support-end-to-end-encryption'>1</a>
 Contact list confidential;not published, but leaks through mail headers<a href='https://delta.chat/en/help#which-messages-do-appear-in-delta-chat'>1</a>
+Metadata protection;limited: encrypts certain email headers<a href='https://delta.chat/en/help#how-does-delta-chat-protect-my-metadata'>1</a>
 Perfect forward secrecy;no<a href='https://delta.chat/en/help#does-delta-chat-support-perfect-forward-secrecy'>1</a>
+Remote message removal;no<a href='https://support.delta.chat/t/retract-edit-sent-messages/1918/7'>1</a>
+Remote message correction;no<a href='https://support.delta.chat/t/retract-edit-sent-messages/1918/7'>1</a>
 Message expiration;yes<a href='https://delta.chat/en/2020-07-30-summer-update#disappearing-messages'>1</a>
 Audits;<a href='https://delta.chat/assets/1907-otf-deltachat-rpgp-rustrsa-gb-reportv1.pdf'>2019</a>
 Usage without phone number;yes, depending on mailbox provider
 Register without app;yes, supports existing mailbox providers accounts<a href='https://delta.chat/en/help#does-delta-chat-work-with-my-e-mail-provider'>1</a>
+First release;2017 <a href='https://delta.chat/en/2017-05-31-blog-created'>1</a><a href='https://delta.chat/en/help#how-are-delta-chat-developments-funded'>2</a>
 Transparent financing;yes, grants, funds and Librepay donations<a href='https://delta.chat/en/help#how-are-delta-chat-developments-funded'>1</a>
-Company jurisdiction;
-Infrastructure jurisdiction;
-Infrastructure provider;
+No-cost tier;yes
+Payment choices;N/A
+Company jurisdiction;Germany<a href='https://delta.chat/en/gdpr'>1</a>
+Infrastructure jurisdiction;<details><summary>N/A</summary>depends on provider</details>
+Infrastructure provider;<details><summary>N/A</summary>depends on provider</details>
 Isolated self-hosting;yes (SMTP and IMAP)<a href='https://delta.chat/en/help#what-are-the-advantages-of-delta-chat-compared-to-other-messengers'>1</a>
 User can extend network with node;yes (SMTP and IMAP)<a href='https://delta.chat/en/help#what-are-the-advantages-of-delta-chat-compared-to-other-messengers'>1</a>
 Identity not controlled by company;yes (SMTP and IMAP)<a href='https://delta.chat/en/help#what-are-the-advantages-of-delta-chat-compared-to-other-messengers'>1</a>
@@ -40,4 +46,7 @@ Serverless WAN mode;no, because SMTP is usually blocked
 Serverless LAN mode;no, but might be feasible
 Network store and forward;yes<a href='https://delta.chat/en/help#how-does-delta-chat-protect-my-metadata'>1</a>
 Wireless mode;no
-IP shielded from peers;depends on provider<a href='https://security.stackexchange.com/questions/237525/ip-address-leaked-in-email-header'>1</a>
+IP shielded from peers;usually not, depends on provider<a href='https://security.stackexchange.com/questions/237525/ip-address-leaked-in-email-header'>1</a>
+Tor access of company operated network;<details><summary>N/A</summary>depends on provider</details>
+IPv6 access of company operated network;<details><summary>N/A</summary>depends on provider</details>
+Company operated network inaccessible from countries;<details><summary>N/A</summary>depends on provider</details>

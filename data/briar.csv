@@ -8,3 +8,4 @@ Offline;yes<a href='https://briarproject.org/how-it-works/'>1</a>;
 Servers required;Tor<a href='https://code.briarproject.org/briar/briar/-/wikis/A-Quick-Overview-of-the-Protocol-Stack'>1</a>;
 Serverless LAN mode;yes<a href='https://briarproject.org/how-it-works/'>1</a>;
 Wireless mode;Bluetooth<a href='https://code.briarproject.org/briar/briar/-/wikis/How-Briar-Connects-to-Contacts'>1</a>;
+Tor access of company operated network;<details><summary>N/A</summary>uses Tor connection to peers</details>;
