@@ -140,16 +140,20 @@ print_items() {
     VALUE="`get_prop_value "$PROP"`"
 
     CLASS=""
-    FVEY="Australia|Canada|New Zealand|UK|USA"
-    NINEEYES="Denmark|France|Netherlands|Norway"
-    if echo "$PROP" | grep -iqE "\<(depends|usually|limited|probably|VC|often|not|$NINEEYES)\>|\<(venture capital|partial|leak|possibl)|(^|[^0-9a-z_-])only "; then
-      CLASS="p"
-    fi
-    if echo "$PROP" | grep -iqE "\<(no|none|proprietary|unknown|offshore|cryptocoin|$FVEY)\>"; then
-      CLASS="n"
-    fi
-    if echo "$PROP" | grep -iqE "\<yes|N/A\>"; then
-      CLASS="y"
+    if echo "$FINDKEY" | grep -qE "^(Payment choices|Company jurisdiction|Infrastructure jurisdiction)$"; then
+      CLASS="x"
+    else
+#      FVEY="Australia|Canada|New Zealand|UK|USA"
+#      NINEEYES="Denmark|France|Netherlands|Norway"
+      if echo "$PROP" | grep -iqE "\<(depends|usually|limited|probably|VC|often|not)\>|\<(venture capital|partial|leak|possibl)|(^|[^0-9a-z_-])only "; then
+        CLASS="p"
+      fi
+      if echo "$PROP" | grep -iqE "\<(no|none|proprietary|unknown|offshore|cryptocoin)\>"; then
+        CLASS="n"
+      fi
+      if echo "$PROP" | grep -iqE "\<yes|N/A\>"; then
+        CLASS="y"
+      fi
     fi
 
     PARAM="`echo "$PROP" | cut -d';' -s -f 2-`"

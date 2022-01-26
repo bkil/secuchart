@@ -50,15 +50,15 @@ tr:not(:first-child) > th.section {
   font-weight: normal;
 }
 
-td:not(:empty) {
+td:not([class="x"]):not(:empty) {
   background-color: lime;
 }
 
-td.n {
+td.n:not(:empty) {
   background-color: orange;
 }
 
-td.p {
+td.p:not(:empty) {
   background-color: yellow;
 }
 
@@ -126,17 +126,17 @@ label {
   color: #ddd;
 }
 
-#dark:checked ~ table td:not(:empty) {
+#dark:checked ~ table td:not([class="x"]):not(:empty) {
   background-color: #060;
   color: #fff;
 }
 
-#dark:checked ~ table td.n {
+#dark:checked ~ table td.n:not(:empty) {
   background-color: #600;
   color: #fff;
 }
 
-#dark:checked ~ table td.p {
+#dark:checked ~ table td.p:not(:empty) {
   background-color: #880;
   color: #fff;
 }
@@ -168,17 +168,17 @@ label {
     color: #ddf;
   }
 
-  td:not(:empty) {
+  td:not([class="x"]):not(:empty) {
     background-color: #060;
     color: #fff;
   }
 
-  td.n {
+  td.n:not(:empty) {
     background-color: #600;
     color: #fff;
   }
 
-  td.p {
+  td.p:not(:empty) {
     background-color: #880;
     color: #fff;
   }
