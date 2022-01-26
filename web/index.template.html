@@ -104,7 +104,12 @@ label {
 
 #dark:checked ~ * {
   background-color: black;
-  color: white;
+  color: #eee;
+}
+
+#transpose:checked ~ #dark:checked ~ table details[open] {
+  background-color: black;
+  color: #eee;
 }
 
 #dark:checked ~ table td,
@@ -113,7 +118,7 @@ label {
 }
 
 #dark:checked ~ table th {
-  background-color: #101010;
+  background-color: #333;
 }
 
 #dark:checked ~ table td {
@@ -122,29 +127,59 @@ label {
 
 #dark:checked ~ table td a {
   background-color: #202020;
-  color: white;
+  color: #eee;
+}
+
+#dark:checked ~ table td:not(:empty) {
+  background-color: #060;
+}
+
+#dark:checked ~ table td.n {
+  background-color: #b50;
+}
+
+#dark:checked ~ table td.p {
+  background-color: #aa0;
 }
 
 @media (prefers-color-scheme: dark) {
   html {
     background-color: black;
-    color: white;
+    color: #eee;
   }
+
+  #transpose:checked ~ table details[open] {
+    background-color: black;
+    color: #eee;
+  }
+
   td, th {
     border-color: #202020;
   }
   th {
-    background-color: #101010;
+    background-color: #333;
   }
   td {
     color: black;
   }
   td a {
     background-color: #202020;
-    color: white;
+    color: #eee;
   }
   a {
     color: #e0e0ff;
+  }
+
+  td:not(:empty) {
+    background-color: #060;
+  }
+
+  td.n {
+    background-color: #b50;
+  }
+
+  td.p {
+    background-color: #aa0;
   }
 }
 </style>
