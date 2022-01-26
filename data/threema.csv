@@ -1,2 +1,33 @@
 name;Threema
+Android Google Play;yes
+Android F-droid/apk;no
+Apple iOS;yes
+Desktop;only if mobile online
+Web;only if mobile online
 Server license;proprietary
+Client license;AGPLv3 but paid
+Group chat;yes
+Voice calls;yes
+Video calls;yes
+Multiple devices;limited, as group chat <a href='https://threema.ch/en/faq/multidevice'>1</a>
+Multiple accounts;no
+End-to-end encryption;yes <a href='https://threema.ch/en/faq/why_secure'>1</a>
+Metadata protection;yes <a href='https://threema.ch/en/faq/privacy_protection'>1</a>
+Perfect forward secrecy;no
+Remote message correction;no
+Message expiration;no
+Audits;yes, 2020, 2019 <a href='https://threema.ch/en/faq/code_audit'>1</a>
+Usage without phone number;yes
+Register without app;no
+Company jurisdiction;Switzerland
+Infrastructure jurisdiction;Switzerland
+Isolated self-hosting;possibly <a href='https://threema.ch/en/onprem'>1</a>;p
+User can extend network with node;no
+Identity not controlled by company;no
+Account deactivation after device compromise;yes <a href='https://threema.ch/en/faq/revoke'>1</a>
+Offline;yes
+Serverless WAN mode;no
+Serverless LAN mode;no
+Network store and forward;yes
+Wireless mode;no
+IP shielded from peers;yes
