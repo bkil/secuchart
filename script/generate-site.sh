@@ -142,10 +142,10 @@ print_items() {
     CLASS=""
     FVEY="Australia|Canada|New Zealand|UK|USA"
     NINEEYES="Denmark|France|Netherlands|Norway"
-    if echo "$PROP" | grep -iqE "\<(depends|limited|probably|not|$NINEEYES)\>|\<(partial|leak|possibl)|(^|[^0-9a-z_-])only "; then
+    if echo "$PROP" | grep -iqE "\<(depends|limited|probably|VC|not|$NINEEYES)\>|\<(venture capital|partial|leak|possibl)|(^|[^0-9a-z_-])only "; then
       CLASS="p"
     fi
-    if echo "$PROP" | grep -iqE "\<(no|none|proprietary|$FVEY)\>"; then
+    if echo "$PROP" | grep -iqE "\<(no|none|proprietary|unknown|offshore|cryptocoin|$FVEY)\>"; then
       CLASS="n"
     fi
     if echo "$PROP" | grep -iqE "\<yes\>"; then
