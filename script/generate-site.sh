@@ -142,13 +142,13 @@ print_items() {
     CLASS=""
     FVEY="Australia|Canada|New Zealand|UK|USA"
     NINEEYES="Denmark|France|Netherlands|Norway"
-    if echo "$PROP" | grep -qE "\<(only|depends|limited|$NINEEYES)\>|\<(partial|leak)"; then
+    if echo "$PROP" | grep -iqE "\<(depends|limited|probably|not|$NINEEYES)\>|\<(partial|leak|possibl)|(^|[^0-9a-z_-])only "; then
       CLASS="p"
     fi
-    if echo "$PROP" | grep -qE "\<(no|none|proprietary|$FVEY)\>"; then
+    if echo "$PROP" | grep -iqE "\<(no|none|proprietary|$FVEY)\>"; then
       CLASS="n"
     fi
-    if echo "$PROP" | grep -qE "\<yes\>"; then
+    if echo "$PROP" | grep -iqE "\<yes\>"; then
       CLASS="y"
     fi
 

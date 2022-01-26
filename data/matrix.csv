@@ -11,6 +11,7 @@ Group chat;yes;
 Voice calls;yes, WebRTC <a href='https://matrix.org/faq/#what-can-i-actually-do-with-this%3F'>1</a>;
 Video calls;yes, WebRTC <a href='https://matrix.org/faq/#what-can-i-actually-do-with-this%3F'>1</a>;
 Group calls;yes, via Jitsi <a href='https://matrix.org/faq/#what-can-i-actually-do-with-this%3F'>1</a>;
+Read public content without registering;guest participant, room peek preview, static HTML view<a href='https://spec.matrix.org/latest/client-server-api/#guest-access'>1</a><a href='https://view.matrix.org/'>2</a>
 End-to-end encryption;yes <a href='https://matrix.org/faq/#which-matrix-clients-support-e2e'>1</a>;
 Usage without phone number;yes;
 Offline;no;

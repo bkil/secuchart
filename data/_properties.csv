@@ -33,7 +33,7 @@ Transparent financing;
 Company jurisdiction;
 Infrastructure jurisdiction;
 Infrastructure provider;
-Isolated self-hosting;It can be deployed in a LAN without internet
+Isolated self-hosting;It can be deployed on-premise in a LAN without internet
 User can extend network with node;Improving the scaling of the system and communicate with anyone (i.e., if P2P or federated)
 Identity not controlled by company;Will the system still work if the developer goes bankrupt
 Account deactivation after device compromise;Solvable with centralized or federated servers or with revocation certificates in P2P.
@@ -46,5 +46,5 @@ Servers optional;
 Serverless WAN mode;If communicating over the internet might scale without (a vast amount of) dedicated servers, i.e. by supernode promotion and DHT
 Serverless LAN mode;If you can communicate without an internet connection and a server
 Network store and forward;You can compose messages to your peer even if the two of you aren't online at the same time
-Wireless mode;Built-in support for peering with nearby peers over ISM wireless either to sync or as part of a mesh
+Wireless mode;Built-in support for peering with nearby nodes over ISM wireless either to sync or as part of a mesh
 IP shielded from peers;
