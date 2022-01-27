@@ -9,24 +9,27 @@ Protocol;;SMTP and IMAP with AutoCrypt https://github.com/deltachat/deltachat-co
 Protocol open;yes;https://github.com/deltachat/deltachat-core-rust/blob/master/standards.md#standards-used-in-delta-chat;
 Server license;;various (any SMTP and IMAP server);
 Client license;;GPLv3+;
-Group chat;;yes https://delta.chat/en/help#groups;
+Group chat;yes;;https://delta.chat/en/help#groups membership change is unicast
 Voice calls;;limited via embedding jitsi, talky.io, appear.in https://delta.chat/en/2020-07-30-summer-update#video-chats;
 Video calls;;limited via embedding jitsi, talky.io, appear.in https://delta.chat/en/2020-07-30-summer-update#video-chats;
 Group calls;;limited via embedding jitsi, talky.io, appear.in https://delta.chat/en/2020-07-30-summer-update#video-chats;
 Read public content without registering;;no;
 CPU idle;yes;;
 Power saving;partial;IMAP IDLE keeps a socket open;
-Bandwidth frugal;partial;should use selective IMAP fetches and compression;
+Bandwidth frugal;partial;group messages are unicast;should use selective IMAP fetches and compression
 Multiple devices;;yes https://delta.chat/en/help#can-i-use-delta-chat-on-multiple-devices-at-the-same-time;
 Multiple accounts;;yes https://delta.chat/en/2021-08-24-updates#multi-account-added-or-improved;
 End-to-end encryption;;yes https://delta.chat/en/help#does-delta-chat-support-end-to-end-encryption;
 E2EE keys shielded from operator;;yes https://delta.chat/en/help#does-delta-chat-support-end-to-end-encryption;
+Deniability;no;;https://nixfaq.org/2020/09/delta-chat-a-libre-decentralized-chat-over-email-end-to-end-encrypted-messaging-solution.html DKIM and received mail headers reduce feasibility
+Replay prevention;no;;DKIM could already provide all needed information
+Downgrade resistance;no;;warn when encryption disabled https://support.delta.chat/t/show-end-to-end-encryption-state-of-chat/230 force E2EE https://support.delta.chat/t/force-once-un-encrypted-to-directly-reach-a-classic-mua-after-having-had-a-chat/227
 Contact list confidential;;not published, but leaks through mail headers https://delta.chat/en/help#which-messages-do-appear-in-delta-chat;
-Metadata protection;;limited: encrypts certain email headers https://delta.chat/en/help#how-does-delta-chat-protect-my-metadata;
-Perfect forward secrecy;;no https://delta.chat/en/help#does-delta-chat-support-perfect-forward-secrecy;
-Remote message removal;;no https://support.delta.chat/t/retract-edit-sent-messages/1918/7;
-Remote message correction;;no https://support.delta.chat/t/retract-edit-sent-messages/1918/7;
-Message expiration;;yes https://delta.chat/en/2020-07-30-summer-update#disappearing-messages;
+Metadata protection;partial;encrypts certain email headers https://delta.chat/en/help#how-does-delta-chat-protect-my-metadata;recipients and time in the clear
+Perfect forward secrecy;no;https://delta.chat/en/help#does-delta-chat-support-perfect-forward-secrecy;
+Remote message removal;no;https://support.delta.chat/t/retract-edit-sent-messages/1918/7;
+Remote message correction;no;https://support.delta.chat/t/retract-edit-sent-messages/1918/7;
+Message expiration;yes;https://delta.chat/en/2020-07-30-summer-update#disappearing-messages;
 Audits;;2019 https://delta.chat/assets/1907-otf-deltachat-rpgp-rustrsa-gb-reportv1.pdf;
 Usage without phone number;;yes, depending on mailbox provider;
 Register without app;;yes, supports existing mailbox provider accounts https://delta.chat/en/help#does-delta-chat-work-with-my-e-mail-provider;
