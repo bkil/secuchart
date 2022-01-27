@@ -139,10 +139,12 @@ get_prop_value() {
   DETAILS="`echo "$1" | cut -d';' -s -f 3 | escape`"
 
   [ -z "$SUMMARY" ] && SUMMARY="$STATUS"
+
   VALUE="$SUMMARY"
   if [ -n "$DETAILS" ]; then
     VALUE="<details><summary>$VALUE</summary>$DETAILS</details"
   fi
+
   echo "$VALUE" |
   sed -r "s~(&[a-zA-Z]+),~\1;~g" |
   linkify
