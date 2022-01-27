@@ -20,4 +20,4 @@ Servers required;;Synapse homeserver, notifications push;
 Servers optional;;DNS, Element Web app, identity, integrations, ICE, Jitsi https://gitlab.com/libremonde-org/papers/research/privacy-matrix.org/-/blob/master/part1/README.md;
 Serverless WAN mode;;no;
 Serverless LAN mode;;no;
-IP shielded from peers;partial;Not during calls if you enable WebRTC;
+IP shielded from peers;yes;Not during calls if you enable WebRTC;

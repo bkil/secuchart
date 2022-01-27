@@ -42,5 +42,5 @@ Serverless WAN mode;;no, but traffic is P2P (TODO: with IP and SIP?) https://jam
 Serverless LAN mode;;no https://jami.net/why-is-jami-truly-distributed/;
 Network store and forward;;no https://jami.net/why-is-jami-truly-distributed/ https://linuxkamarada.com/en/2021/05/25/the-jami-messenger/;
 Wireless mode;;no https://jami.net/why-is-jami-truly-distributed/;
-IP shielded from peers;;partially, not over STUN https://jami.net/establishing-peer-to-peer-connections-with-jami/;
+IP shielded from peers;yes;not over STUN https://jami.net/establishing-peer-to-peer-connections-with-jami/;
 IPv6 access of company operated network;;no https://git.jami.net/savoirfairelinux/jami-project/-/issues/847;
