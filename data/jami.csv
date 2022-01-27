@@ -13,7 +13,8 @@ Voice calls;;yes https://jami.net/help/#answer11;
 Video calls;;yes https://jami.net/help/#answer11;
 Group calls;;limited, by forwarding by the initiator https://jami.net/help/#answer12 https://jami.net/the-jami-conferencing-system/;
 Read public content without registering;;no;
-Network conservation;;partial offload by OpenDHT proxy https://jami.net/why-is-jami-truly-distributed/;
+Power saving;no;partial offload by OpenDHT proxy https://jami.net/why-is-jami-truly-distributed/;background transfers deplete the battery faster noticeably
+Bandwidth frugal;no;transfers constantly in the background according to experience;
 Multiple devices;;yes https://jami.net/the-jami-quirks/#connecting-multiple-devices-to-the-same-account;
 End-to-end encryption;;yes https://jami.net/why-is-jami-truly-distributed/ https://linuxkamarada.com/en/2021/05/25/the-jami-messenger/;
 E2EE keys shielded from operator;;yes https://jami.net/why-is-jami-truly-distributed/ https://linuxkamarada.com/en/2021/05/25/the-jami-messenger/;

@@ -14,7 +14,9 @@ Voice calls
 Video calls;
 Group calls;
 Read public content without registering;
-Network conservation;Can optimize battery time by delegating processing to devices on AC
+CPU idle;no=Proof of work, partial=sluggish due to Idling too little in foreground or measurable amount of processing in background; yes=otherwise
+Power saving;Ensure that device wakes up as few times as possible, filters and batches events on remote side, no open sockets, delegated peer tracking
+Bandwidth frugal;Conservation by lazy loading, previews, adaptive detail, incremental sync, fewer round trips, tokenization, batching transfers to improve compression, tweaked key schedule, multicasting hubs
 Multiple devices;If the same account can be used at the same time from multiple devices, syncing contacts, messages and notifications.
 Multiple accounts;If you can stay logged in with multiple accounts on the same device and application without external isolation techniques
 ;Security
@@ -46,7 +48,7 @@ Account deactivation after device compromise;Solvable with centralized or federa
 Account recovery after device compromise;Solvable with centralized or federated servers or with subkeys, revocation and secret sharing in P2P.
 Spam protection;If it gained worldwide adoption
 ;Topology
-Offline;Can be used to read buffered messages or compose new ones if started without internet
+Offline;no=Not useful if disconnected. partial=Only read a few buffered messages or compose new ones. yes=Reboot, add new contacts, past logs, search, cache list of groups or users, settings.
 Servers required;
 Servers optional;
 Serverless WAN mode;If communicating over the internet might scale without (a vast amount of) dedicated servers, i.e. by supernode promotion and DHT

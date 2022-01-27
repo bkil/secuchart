@@ -13,7 +13,9 @@ Voice calls;;limited via embedding jitsi, talky.io, appear.in https://delta.chat
 Video calls;;limited via embedding jitsi, talky.io, appear.in https://delta.chat/en/2020-07-30-summer-update#video-chats;
 Group calls;;limited via embedding jitsi, talky.io, appear.in https://delta.chat/en/2020-07-30-summer-update#video-chats;
 Read public content without registering;;no;
-Network conservation;;uses limited data and IMAP push, but the protocol could use selective IMAP fetches much more efficiently;
+CPU idle;yes;;
+Power saving;partial;IMAP IDLE keeps a socket open;
+Bandwidth frugal;partial;should use selective IMAP fetches and compression;
 Multiple devices;;yes https://delta.chat/en/help#can-i-use-delta-chat-on-multiple-devices-at-the-same-time;
 Multiple accounts;;yes https://delta.chat/en/2021-08-24-updates#multi-account-added-or-improved;
 End-to-end encryption;;yes https://delta.chat/en/help#does-delta-chat-support-end-to-end-encryption;

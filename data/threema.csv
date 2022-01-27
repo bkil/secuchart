@@ -7,11 +7,13 @@ Web;;only if mobile online;
 Protocol open;partial;ARP open https://github.com/threema-ch/app-remote-protocol others in prose https://threema.ch/press-files/2_documentation/cryptography_whitepaper.pdf;
 Server license;;proprietary: Identity, Media;
 Client license;;AGPLv3 but paid;
-Group chat;;yes, implemented with unicast https://threema.ch/press-files/cryptography_whitepaper.pdf;
+Group chat;yes;implemented with unicast https://threema.ch/press-files/cryptography_whitepaper.pdf;
 Voice calls;;yes;
 Video calls;;yes;
 Read public content without registering;;no;
-Network conservation;;partial;Not optimized for this but centralized services usually fare well
+CPU idle;yes;;
+Power saving;yes;Push relay & native push;Fetches encrypted content from its own server in response to a push https://threema.ch/press-files/2_documentation/cryptography_whitepaper.pdf
+Bandwidth frugal;partial;;Push relay & native push, group chat via unicast;Fetches encrypted content from its own server in response to a push https://threema.ch/press-files/2_documentation/cryptography_whitepaper.pdf
 Multiple devices;;limited, as group chat https://threema.ch/en/faq/multidevice;
 Multiple accounts;;no;
 End-to-end encryption;;yes https://threema.ch/en/faq/why_secure;
