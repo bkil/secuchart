@@ -4,6 +4,7 @@ Android F-droid/apk;yes;https://fdroid.getsession.org/ https://github.com/oxen-i
 Apple iOS;yes;https://apps.apple.com/us/app/session-private-messenger/id1470168868;
 Desktop;yes;Linux and Windows https://github.com/oxen-io/session-desktop/releases;
 Web;no;;
+Languages;yes;many https://github.com/oxen-io/session-android/tree/master/app/src/main/res;
 Protocol;;Session protocol, fork of Signal protocol https://getsession.org/blog/session-protocol-technical-information;
 Server license;;GPL v3 https://github.com/oxen-io/lokinet/blob/dev/LICENSE.txt;
 Client license;;GPL v3 https://github.com/oxen-io/session-desktop/blob/clearnet/LICENSE;

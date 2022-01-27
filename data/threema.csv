@@ -4,6 +4,7 @@ Android F-droid/apk;;apk https://shop.threema.ch/;
 Apple iOS;;yes;
 Desktop;;only if mobile online;
 Web;;only if mobile online;
+Languages;yes;16 https://threema.ch/en/faq/languages;
 Protocol open;partial;ARP open https://github.com/threema-ch/app-remote-protocol others in prose https://threema.ch/press-files/2_documentation/cryptography_whitepaper.pdf;
 Server license;;proprietary: Identity, Media;
 Client license;;AGPLv3 but paid;

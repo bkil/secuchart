@@ -4,6 +4,7 @@ Android F-droid/apk;;yes https://f-droid.org/en/packages/cx.ring/;
 Apple iOS;;yes https://git.jami.net/savoirfairelinux/jami-client-ios;
 Desktop;;yes https://packages.ubuntu.com/impish/jami https://jami.net/download/;
 Web;;no https://jami.net/download/;
+Languages;yes;many https://git.jami.net/savoirfairelinux/jami-project/-/wikis/features/All-features-by-client#other-features https://github.com/savoirfairelinux/jami-client-android/tree/master/ring-android/app/src/main/res;
 Protocol;;SIP, OpenDHT https://en.m.wikipedia.org/wiki/Jami_(software);
 Protocol open;yes;https://git.jami.net/savoirfairelinux/jami-project/-/wikis/technical/Technical-overview;
 Server license;;GPLv3 https://git.jami.net/savoirfairelinux/jami-nameservice https://github.com/savoirfairelinux/opendht;

@@ -2,6 +2,7 @@ name;;Briar;
 Android Google Play;;yes https://briarproject.org/download-briar/;
 Android F-droid/apk;;yes https://f-droid.org/en/packages/org.briarproject.briar.android/;
 Desktop;partial;Linux;Not full featured https://code.briarproject.org/briar/briar-gtk
+Languages;yes;many https://code.briarproject.org/briar/briar/-/tree/master/briar-android/src/main/res;
 Protocol;;Bramble;
 Protocol open;yes;https://code.briarproject.org/briar/briar/-/wikis/home#protocol;
 Contact list confidential;;yes https://briarproject.org/how-it-works/;
