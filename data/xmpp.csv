@@ -1,5 +1,6 @@
 name;;XMPP;
 Protocol;;XMPP;
+Protocol open;yes;https://xmpp.org/extensions/;
 Server license;;various;
 Client license;;various;
 Offline;;yes;

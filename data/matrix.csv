@@ -5,6 +5,7 @@ Apple iOS;;yes https://matrix.org/clients/;
 Desktop;;yes https://matrix.org/clients/;
 Web;;yes https://matrix.org/clients/;
 Protocol;;Matrix;
+Protocol open;yes;https://spec.matrix.org/latest/;
 Server license;;Apache 2.0 https://github.com/matrix-org/synapse/blob/develop/LICENSE;
 Client license;;Apache 2.0 https://github.com/vector-im/element-web/blob/develop/LICENSE;
 Group chat;;yes;

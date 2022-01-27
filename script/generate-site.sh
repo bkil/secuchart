@@ -138,7 +138,14 @@ get_prop_value() {
   SUMMARY="`echo "$1" | cut -d';' -s -f 2 | escape`"
   DETAILS="`echo "$1" | cut -d';' -s -f 3 | escape`"
 
-  [ -z "$SUMMARY" ] && SUMMARY="$STATUS"
+  if [ -z "$SUMMARY" ]; then
+    SUMMARY="$STATUS"
+  else
+    NOLINK="`echo "$SUMMARY" | sed -r "s~\<((http|ftp)s?://[^ ]*)~~g"`"
+    if [ -z "$NOLINK" ]; then
+      SUMMARY="$STATUS $SUMMARY"
+    fi
+  fi
 
   VALUE="$SUMMARY"
   if [ -n "$DETAILS" ]; then

@@ -5,6 +5,7 @@ Apple iOS;;yes https://git.jami.net/savoirfairelinux/jami-client-ios;
 Desktop;;yes https://packages.ubuntu.com/impish/jami https://jami.net/download/;
 Web;;no https://jami.net/download/;
 Protocol;;SIP, OpenDHT https://en.m.wikipedia.org/wiki/Jami_(software);
+Protocol open;yes;https://git.jami.net/savoirfairelinux/jami-project/-/wikis/technical/Technical-overview;
 Server license;;GPLv3 https://git.jami.net/savoirfairelinux/jami-nameservice https://github.com/savoirfairelinux/opendht;
 Client license;;GPLv3+;
 Group chat;;no https://forum.jami.net/t/am-i-able-to-create-group-chats/123;
