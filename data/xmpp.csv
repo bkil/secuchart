@@ -1,7 +1,7 @@
-name;XMPP
-Protocol;XMPP
-Server license;various
-Client license;various
-Offline;yes
-Serverless LAN mode;yes<a href='https://xmpp.org/extensions/xep-0174.html#impl-wide'>1</a> <a href='https://stackoverflow.com/questions/5632955/is-xmpp-peer-to-peer-connection-without-server-possible'>2</a>
-IP shielded from peers;Not during calls via STUN;p
+name;;XMPP;
+Protocol;;XMPP;
+Server license;;various;
+Client license;;various;
+Offline;;yes;
+Serverless LAN mode;;yes https://xmpp.org/extensions/xep-0174.html#impl-wide https://stackoverflow.com/questions/5632955/is-xmpp-peer-to-peer-connection-without-server-possible;
+IP shielded from peers;partial;Not during calls via STUN;

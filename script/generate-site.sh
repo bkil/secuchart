@@ -115,10 +115,37 @@ get_item_prop() {
   VALUE="`echo "$PROP" | cut -d';' -f 1 | sed -r "s~(&[a-zA-Z]+),~\1;~g"`"
 }
 
-get_prop_value() {
+get_prop_status() {
   echo "$1" |
-  cut -d';' -f 1 |
-  sed -r "s~(&[a-zA-Z]+),~\1;~g"
+  cut -d';' -s -f 1 |
+  escape
+}
+
+linkify() {
+  sed -r "s~\<((http|ftp)s?://[^ ]*)~<a href='\1'>w</a>~g"
+}
+
+escape() {
+  sed "
+    s~&~\&amp;~g
+    s~<~\&lt;~g
+    s~>~\&gt;~g
+  "
+}
+
+get_prop_value() {
+  STATUS="`get_prop_status "$1"`"
+  SUMMARY="`echo "$1" | cut -d';' -s -f 2 | escape`"
+  DETAILS="`echo "$1" | cut -d';' -s -f 3 | escape`"
+
+  [ -z "$SUMMARY" ] && SUMMARY="$STATUS"
+  VALUE="$SUMMARY"
+  if [ -n "$DETAILS" ]; then
+    VALUE="<details><summary>$VALUE</summary>$DETAILS</details"
+  fi
+  echo "$VALUE" |
+  sed -r "s~(&[a-zA-Z]+),~\1;~g" |
+  linkify
 }
 
 get_item_value() {
@@ -140,7 +167,7 @@ print_items() {
     VALUE="`get_prop_value "$PROP"`"
 
     CLASS=""
-    if echo "$FINDKEY" | grep -qE "^(Payment choices|Company jurisdiction|Infrastructure jurisdiction)$"; then
+    if echo "$FINDKEY" | grep -qE "^(Payment choices|Company jurisdiction|Infrastructure jurisdiction|Infrastructure provider)$"; then
       CLASS="x"
     else
 #      FVEY="Australia|Canada|New Zealand|UK|USA"
@@ -156,8 +183,8 @@ print_items() {
       fi
     fi
 
-    PARAM="`echo "$PROP" | cut -d';' -s -f 2-`"
-    [ -n "$PARAM" ] && CLASS="$PARAM"
+    STATUS="`get_prop_status "$PROP"`"
+    [ -n "$STATUS" ] && CLASS="`echo "$STATUS" | cut -c 1`"
     ATTR=""
     [ -n "$CLASS" ] && ATTR=" class='$CLASS'"
     printf " <%s%s>%s</%s>\n" "$ADDTAG" "$ATTR" "$VALUE" "$ADDTAG"

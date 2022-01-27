@@ -1,11 +1,11 @@
-name;Briar;
-Android Google Play;yes<a href='https://briarproject.org/download-briar/'>1</a>;
-Android F-droid/apk;yes<a href='https://f-droid.org/en/packages/org.briarproject.briar.android/'>1</a>;
-Desktop;<details><summary>Linux</summary>Not full featured<a href='https://code.briarproject.org/briar/briar-gtk'>1</a></details>;p
-Protocol;Bramble;
-Contact list confidential;yes<a href='https://briarproject.org/how-it-works/'>1</a>;
-Offline;yes<a href='https://briarproject.org/how-it-works/'>1</a>;
-Servers required;Tor<a href='https://code.briarproject.org/briar/briar/-/wikis/A-Quick-Overview-of-the-Protocol-Stack'>1</a>;
-Serverless LAN mode;yes<a href='https://briarproject.org/how-it-works/'>1</a>;
-Wireless mode;Bluetooth<a href='https://code.briarproject.org/briar/briar/-/wikis/How-Briar-Connects-to-Contacts'>1</a>;
-Tor access of company operated network;<details><summary>N/A</summary>uses Tor connection to peers</details>;
+name;;Briar;
+Android Google Play;;yes https://briarproject.org/download-briar/;
+Android F-droid/apk;;yes https://f-droid.org/en/packages/org.briarproject.briar.android/;
+Desktop;partial;Linux;Not full featured https://code.briarproject.org/briar/briar-gtk
+Protocol;;Bramble;
+Contact list confidential;;yes https://briarproject.org/how-it-works/;
+Offline;;yes https://briarproject.org/how-it-works/;
+Servers required;;Tor https://code.briarproject.org/briar/briar/-/wikis/A-Quick-Overview-of-the-Protocol-Stack;
+Serverless LAN mode;;yes https://briarproject.org/how-it-works/;
+Wireless mode;;Bluetooth https://code.briarproject.org/briar/briar/-/wikis/How-Briar-Connects-to-Contacts;
+Tor access of company operated network;;N/A;uses Tor connection to peers
