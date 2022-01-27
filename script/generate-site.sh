@@ -175,7 +175,7 @@ print_items() {
     VALUE="`get_prop_value "$PROP"`"
 
     CLASS=""
-    if echo "$FINDKEY" | grep -qE "^(Payment choices|Company jurisdiction|Infrastructure jurisdiction|Infrastructure provider|Servers required|Servers optional)$"; then
+    if echo "$FINDKEY" | grep -qE "^(Payment choices|Company jurisdiction|Infrastructure jurisdiction|Infrastructure provider|Servers required|Servers optional|Protocol)$"; then
       CLASS="x"
     else
 #      FVEY="Australia|Canada|New Zealand|UK|USA"
