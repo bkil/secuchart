@@ -97,10 +97,12 @@ label {
 }
 
 #transpose:checked ~ table details[open] {
-  display: inline-block;
+  display: block;
   position: absolute;
   background-color: white;
-  padding: 0.5em;
+  padding-left: 0.5em;
+  padding-right: 0.5em;
+  padding-bottom: 0.5em;
 }
 
 #dark:checked ~ * {
@@ -139,6 +141,42 @@ label {
 #dark:checked ~ table td.p:not(:empty) {
   background-color: #880;
   color: #fff;
+}
+
+#dark:not(:checked) ~ #contrast:checked ~ * {
+  font-weight: bold;
+}
+
+#dark:not(:checked) ~ #contrast:checked ~ table th {
+  background-color: white;
+}
+
+#dark:not(:checked) ~ #contrast:checked ~ table td a {
+  color: black;
+}
+
+#dark:not(:checked) ~ #contrast:checked ~ table td:not([class="x"]):not(:empty) {
+  background-color: white;
+}
+
+#dark:not(:checked) ~ #contrast:checked ~ table td:not([class="x"]):not(:empty):before {
+  content: "+ ";
+}
+
+#dark:not(:checked) ~ #contrast:checked ~ table td.n:not(:empty) {
+  background-color: white;
+}
+
+#dark:not(:checked) ~ #contrast:checked ~ table td.n:not(:empty):before {
+  content: "- ";
+}
+
+#dark:not(:checked) ~ #contrast:checked ~ table td.p:not(:empty) {
+  background-color: white;
+}
+
+#dark:not(:checked) ~ #contrast:checked ~ table td.p:not(:empty):before {
+  content: "~ ";
 }
 
 @media (prefers-color-scheme: dark) {
@@ -183,6 +221,40 @@ label {
     color: #fff;
   }
 }
+
+@media (prefers-contrast: more) {
+  th {
+    background-color: white;
+  }
+
+  td a {
+    color: black;
+  }
+
+  td:not([class="x"]):not(:empty) {
+    background-color: white;
+  }
+
+  td:not([class="x"]):not(:empty):before {
+    content: "+ ";
+  }
+
+  td.n:not(:empty) {
+    background-color: white;
+  }
+
+  td.n:not(:empty):before {
+    content: "- ";
+  }
+
+  td.p:not(:empty) {
+    background-color: white;
+  }
+
+  td.p:not(:empty):before {
+    content: "~ ";
+  }
+}
 </style>
 
 ((style))
@@ -193,7 +265,9 @@ label {
 <main>
 
 <label for=transpose>transpose table&nbsp;</label><input type=checkbox id=transpose>
-<label for=dark>dark mode&nbsp;</label><input type=checkbox id=dark><br>
+<label for=dark>dark mode&nbsp;</label><input type=checkbox id=dark>
+<label for=contrast>high contrast&nbsp;</label><input type=checkbox id=contrast>
+<br>
 
 ((filters))
 
