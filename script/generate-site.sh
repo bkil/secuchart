@@ -160,6 +160,36 @@ get_item_value() {
   get_prop_value "`get_item_prop "$@"`"
 }
 
+get_entry_status_class() {
+  FINDKEY="$1"
+  PROP="$2"
+
+  if [ "$FINDKEY" = "name" ]; then
+    return
+  fi
+
+  CLASS=""
+  if echo "$FINDKEY" | grep -qE "^(Payment choices|Company jurisdiction|Infrastructure jurisdiction|Infrastructure provider|Servers required|Servers optional|Protocol)$"; then
+    CLASS="x"
+  else
+#      FVEY="Australia|Canada|New Zealand|UK|USA"
+#      NINEEYES="Denmark|France|Netherlands|Norway"
+    if echo "$PROP" | grep -iqE "\<(depends|usually|limited|probably|VC|often|not)\>|\<(venture capital|partial|leak|possibl)|(^|[^0-9a-z_-])only "; then
+      CLASS="p"
+    fi
+    if echo "$PROP" | grep -iqE "\<(no|none|proprietary|unknown|offshore|cryptocoin)\>"; then
+      CLASS="n"
+    fi
+    if echo "$PROP" | grep -iqE "\<yes|N/A\>"; then
+      CLASS="y"
+    fi
+  fi
+
+  STATUS="`get_prop_status "$PROP"`"
+  [ -n "$STATUS" ] && CLASS="`echo "$STATUS" | cut -c 1`"
+  echo "$CLASS"
+}
+
 print_items() {
   FINDKEY="$1"
   ISHEAD="$2"
@@ -174,25 +204,7 @@ print_items() {
     [ "$ISHEAD" = 1 ] &&  [ -z "$PROP" ] && PROP="$FINDKEY"
     VALUE="`get_prop_value "$PROP"`"
 
-    CLASS=""
-    if echo "$FINDKEY" | grep -qE "^(Payment choices|Company jurisdiction|Infrastructure jurisdiction|Infrastructure provider|Servers required|Servers optional|Protocol)$"; then
-      CLASS="x"
-    else
-#      FVEY="Australia|Canada|New Zealand|UK|USA"
-#      NINEEYES="Denmark|France|Netherlands|Norway"
-      if echo "$PROP" | grep -iqE "\<(depends|usually|limited|probably|VC|often|not)\>|\<(venture capital|partial|leak|possibl)|(^|[^0-9a-z_-])only "; then
-        CLASS="p"
-      fi
-      if echo "$PROP" | grep -iqE "\<(no|none|proprietary|unknown|offshore|cryptocoin)\>"; then
-        CLASS="n"
-      fi
-      if echo "$PROP" | grep -iqE "\<yes|N/A\>"; then
-        CLASS="y"
-      fi
-    fi
-
-    STATUS="`get_prop_status "$PROP"`"
-    [ -n "$STATUS" ] && CLASS="`echo "$STATUS" | cut -c 1`"
+    CLASS="`get_entry_status_class "$FINDKEY" "$PROP"`"
     ATTR=""
     [ -n "$CLASS" ] && ATTR=" class='$CLASS'"
     printf " <%s%s>%s</%s>\n" "$ADDTAG" "$ATTR" "$VALUE" "$ADDTAG"

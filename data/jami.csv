@@ -40,7 +40,7 @@ Spam protection;;none;
 Offline;;yes https://linuxkamarada.com/en/2021/05/25/the-jami-messenger/;
 Servers required;;DNS, OpenDHT proxy, GCN/Apple push, bootstrap, TURN https://jami.net/why-is-jami-truly-distributed/;
 Servers optional;;Jami name server https://jami.net/why-is-jami-truly-distributed/;
-Serverless WAN mode;;no, but traffic is P2P (TODO: with IP and SIP?) https://jami.net/why-is-jami-truly-distributed/;
+Serverless WAN mode;;no, but data traffic is P2P;(TODO: with IP and SIP?) https://jami.net/why-is-jami-truly-distributed/
 Serverless LAN mode;;no https://jami.net/why-is-jami-truly-distributed/;
 Network store and forward;;no https://jami.net/why-is-jami-truly-distributed/ https://linuxkamarada.com/en/2021/05/25/the-jami-messenger/;
 Wireless mode;;no https://jami.net/why-is-jami-truly-distributed/;
