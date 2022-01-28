@@ -46,3 +46,4 @@ Network store and forward;;no https://jami.net/why-is-jami-truly-distributed/ ht
 Wireless mode;;no https://jami.net/why-is-jami-truly-distributed/;
 IP shielded from peers;yes;not over STUN https://jami.net/establishing-peer-to-peer-connections-with-jami/;
 IPv6 access of company operated network;;no https://git.jami.net/savoirfairelinux/jami-project/-/issues/847;
+Third party clients;partial;no alternative client;

@@ -61,3 +61,4 @@ IP shielded from peers;
 Tor access of company operated network;Yes=Without involving Tor exit nodes, no=Tor exit nodes blocked, limited=otherwise
 IPv6 access of company operated network;Still green if only registration is limited to IPv4
 Company operated network inaccessible from countries;If it is illegal or blocked here or if the company prohibits usage or its infrastructure blocks users from here. Encryption itself is outlawed in many countries, do not list these.
+Third party clients;yes=Multiple full featured clients available;no=Terms of service prohibits access to company operated network

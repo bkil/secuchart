@@ -22,3 +22,4 @@ Servers optional;;DNS, Element Web app, identity, integrations, ICE, Jitsi https
 Serverless WAN mode;;no;
 Serverless LAN mode;;no;
 IP shielded from peers;yes;Not during calls if you enable WebRTC;
+Third party clients;yes;https://matrix.org/clients/;

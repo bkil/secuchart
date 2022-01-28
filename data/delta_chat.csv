@@ -40,7 +40,7 @@ Payment choices;;N/A;
 Company jurisdiction;;Germany https://delta.chat/en/gdpr;
 Infrastructure jurisdiction;;N/A;depends on provider
 Infrastructure provider;;N/A;depends on provider
-Isolated self-hosting;;yes (SMTP and IMAP) https://delta.chat/en/help#what-are-the-advantages-of-delta-chat-compared-to-other-messengers;
+Isolated self-hosting;yes;SMTP and IMAP https://delta.chat/en/help#what-are-the-advantages-of-delta-chat-compared-to-other-messengers;
 User can extend network with node;;yes (SMTP and IMAP) https://delta.chat/en/help#what-are-the-advantages-of-delta-chat-compared-to-other-messengers;
 Identity not controlled by company;;yes (SMTP and IMAP) https://delta.chat/en/help#what-are-the-advantages-of-delta-chat-compared-to-other-messengers;
 Account deactivation after device compromise;;limited;probably manually by a revocation certificate and with the help of the mailbox provider
@@ -57,3 +57,4 @@ IP shielded from peers;;usually not, depends on provider https://security.stacke
 Tor access of company operated network;;N/A;depends on provider
 IPv6 access of company operated network;;N/A;depends on provider
 Company operated network inaccessible from countries;;N/A;depends on provider
+Third party clients;yes;SMTP and IMAP;interoperates with any email client, E2EE uses AutoCrypt https://delta.chat/en/help#which-standards-are-used-for-end-to-end-encryption

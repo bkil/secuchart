@@ -53,3 +53,4 @@ IP shielded from peers;partial;onion requests in private, group server operators
 Tor access of company operated network;no;session/lokinet were designed to be non-compatible with tor;
 IPv6 access of company operated network;no;session is not currently compatible with ipv6, may be in future;
 Company operated network inaccessible from countries;partial;possibly China is blocking access to Session and Lokinet;
+Third party clients;partial;no alternative client;

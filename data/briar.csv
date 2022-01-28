@@ -11,3 +11,4 @@ Servers required;;Tor https://code.briarproject.org/briar/briar/-/wikis/A-Quick-
 Serverless LAN mode;;yes https://briarproject.org/how-it-works/;
 Wireless mode;;Bluetooth https://code.briarproject.org/briar/briar/-/wikis/How-Briar-Connects-to-Contacts;
 Tor access of company operated network;;N/A;uses Tor connection to peers
+Third party clients;partial;no alternative client;
