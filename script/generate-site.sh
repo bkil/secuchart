@@ -38,7 +38,14 @@ gen_style() {
     NUM=2
     while read IT; do
       NAME=`get_item_value "$IT" "name"`
-      printf "#%s:checked ~ table tr > *:nth-child(%d),\n" "$IT" "$NUM"
+      cat <<EOF
+#$IT:not(:target) ~ #any:checked ~ #_$IT:not(:checked) ~ table tr > *:nth-child($NUM),
+#$IT:not(:target) ~ #any:not(:checked) ~ #s_$IT:not(:checked) ~ table tr > *:nth-child($NUM),
+#$IT:not(:target) ~ #any:not(:checked) ~ #s_$IT:not(:checked) ~ #a_$IT,
+#$IT:not(:target) ~ #any:checked ~ #a_$IT,
+:target ~ #$IT:not(:target) ~ table tr > *:nth-child($NUM),
+#$IT:not(:target) ~ :target ~ table tr > *:nth-child($NUM),
+EOF
 
       SERVERLIC=`get_item_value "$IT" "Server license"`
       CLIENTLIC=`get_item_value "$IT" "Client license"`
@@ -53,25 +60,66 @@ gen_style() {
   }
 
   cat <<EOF
-#IGNORETHIS
+#any:not(:checked) ~ .C,
+#any:checked ~ .P,
+:target ~ .C,
+:target ~ .S,
+#all
 {
   display: none;
+}
+
+:target ~ #all,
+:target ~ #all ~ .P
+{
+  display: initial;
 }
 </style>
 EOF
 }
 
 gen_filters() {
-  echo "<span>Hide messengers:</span>"
+  cat "$ITEMS" |
+  while read IT; do
+    echo "<span id=$IT></span>"
+  done
+  echo
+
+  cat <<EOF
+<a href="#" id=all>Show all messengers</a>
+<br>
+<span class=S>Single messenger:</span>
+<label for=any class=S>any&nbsp;</label><input type=radio name=S checked autofocus accesskey=a id=any class=S>
+EOF
 
   cat "$ITEMS" |
   while read IT; do
     NAME=`get_prop_value "$(get_item_prop "$IT" "name")"`
-    printf "<label for=%s>%s&nbsp;</label><input type=checkbox id=%s>\n" "$IT" "$NAME" "$IT"
+    printf "<label for=s_%s class=S>%s&nbsp;</label><input type=radio name=S id=s_%s class=S>\n" "$IT" "$NAME" "$IT"
   done
 
   cat <<EOF
-<label for=proprietary>proprietary&nbsp;</label><input type=checkbox id=proprietary>
+<br class=P>
+EOF
+
+  cat "$ITEMS" |
+  while read IT; do
+    printf "<a href=#%s id=a_%s>Permalink #%s</a>\n" "$IT" "$IT" "$IT"
+  done
+
+  cat <<EOF
+<br class=C>
+<span class=C>Compare messengers:</span>
+EOF
+
+  cat "$ITEMS" |
+  while read IT; do
+    NAME=`get_prop_value "$(get_item_prop "$IT" "name")"`
+    printf "<label for=_%s class=C>%s&nbsp;</label><input type=checkbox checked id=_%s class=C>\n" "$IT" "$NAME" "$IT"
+  done
+
+  cat <<EOF
+<label for=proprietary class=C>non-proprietary&nbsp;</label><input type=checkbox id=proprietary class=C>
 EOF
 }
 
