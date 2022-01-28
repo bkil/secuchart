@@ -1,6 +1,6 @@
 ;Platform
 Android Google Play;
-Android F-droid/apk;
+Android F-droid/apk;yes=f-droid.org, partial=apk or separate repository
 Apple iOS;
 Desktop;
 Web;
