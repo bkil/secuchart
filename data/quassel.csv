@@ -9,7 +9,7 @@ Languages;
 Protocol;;IRC;
 Protocol open;yes;https://www.ietf.org/rfc/rfc1459.txt;
 Server license;
-Client license;GPLv3 https://github.com/quassel/quassel/blob/master/gpl-3.0.txt https://git.kuschku.de/justJanne/QuasselDroid-ng/-/blob/main/LICENSE.md;
+Client license;;GPLv3 https://github.com/quassel/quassel/blob/master/gpl-3.0.txt https://git.kuschku.de/justJanne/QuasselDroid-ng/-/blob/main/LICENSE.md;
 Group chat;yes;
 Voice calls;no;
 Video calls;no;
