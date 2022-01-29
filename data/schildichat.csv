@@ -18,6 +18,7 @@ Multiple devices;yes;
 Multiple accounts;no;
 End-to-end encryption;;yes https://matrix.org/faq/#which-matrix-clients-support-e2e;
 Usage without phone number;;yes;
+First release;;2019-07-11 https://github.com/SchildiChat/SchildiChat-android/releases/tag/v0.1.0;
 Offline;partial;compose or read recent messages on Android/Desktop, no Web startup;Buffered messages on SchildiChat Android/Desktop, SchildiChat Web lacks offline startup via Web Workers;
 Servers required;;Matrix homeserver e.g. Synapse, Dendride, Conduit, notifications push, Unified push, backround synchronization service;
 Serverless WAN mode;;no;
