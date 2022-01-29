@@ -1,5 +1,7 @@
 #!/bin/sh
 
+set -e
+
 main() {
   O="`dirname $0`"
   DIST="$O/../dist"
