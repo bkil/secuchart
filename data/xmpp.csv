@@ -1,4 +1,5 @@
 name;;XMPP;
+Summary;;Features as spec extensions
 Protocol;;XMPP;
 Protocol open;yes;https://xmpp.org/extensions/;
 Server license;;various;

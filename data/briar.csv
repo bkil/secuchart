@@ -1,4 +1,5 @@
 name;;Briar;
+Summary;;Anonymous chat
 Android Google Play;;yes https://briarproject.org/download-briar/;
 Android F-droid/apk;;yes https://f-droid.org/en/packages/org.briarproject.briar.android/;
 Desktop;partial;Linux;Not full featured https://code.briarproject.org/briar/briar-gtk

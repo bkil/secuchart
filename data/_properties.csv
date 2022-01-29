@@ -1,4 +1,5 @@
 ;Platform
+Summary;Highlight in a few words why it is interesting
 Android Google Play;
 Android F-droid/apk;yes=f-droid.org, partial=apk or separate repository
 Apple iOS;

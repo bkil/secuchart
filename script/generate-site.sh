@@ -217,7 +217,7 @@ get_entry_status_class() {
   fi
 
   CLASS=""
-  if echo "$FINDKEY" | grep -qE "^(Payment choices|Company jurisdiction|Infrastructure jurisdiction|Infrastructure provider|Servers required|Servers optional|Protocol)$"; then
+  if echo "$FINDKEY" | grep -qE "^(Summary|Payment choices|Company jurisdiction|Infrastructure jurisdiction|Infrastructure provider|Servers required|Servers optional|Protocol)$"; then
     CLASS="x"
   else
 #      FVEY="Australia|Canada|New Zealand|UK|USA"
