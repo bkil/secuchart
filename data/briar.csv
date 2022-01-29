@@ -1,12 +1,18 @@
 name;;Briar;
 Summary;;Anonymous chat
 Android Google Play;;yes https://briarproject.org/download-briar/;
-Android F-droid/apk;;yes https://f-droid.org/en/packages/org.briarproject.briar.android/;
-Desktop;partial;Linux;Not full featured https://code.briarproject.org/briar/briar-gtk
+Android F-droid/apk;;yes https://f-droid.org/en/packages/org.briarproject.briar.android/ https://briarproject.org/installing-briar-via-f-droid/;
+Desktop;partial;Linux;Not full featured https://code.briarproject.org/briar/briar-desktop/
 Languages;yes;many https://code.briarproject.org/briar/briar/-/tree/master/briar-android/src/main/res;
 Protocol;;Bramble;
 Protocol open;yes;https://code.briarproject.org/briar/briar/-/wikis/home#protocol;
+Client license;;varios https://code.briarproject.org/briar/briar/-/blob/master/LICENSE.txt https://code.briarproject.org/briar/briar-desktop/-/blob/main/LICENSE.md;
+Group chat;;yes;
 Contact list confidential;;yes https://briarproject.org/how-it-works/;
+Multiple devices;no;
+Multiple accounts;no;
+End-to-end encryption;;yes https://briarproject.org/how-it-works/;
+Usage without phone number;;yes;
 Offline;;yes https://briarproject.org/how-it-works/;
 Servers required;;Tor https://code.briarproject.org/briar/briar/-/wikis/A-Quick-Overview-of-the-Protocol-Stack;
 Serverless LAN mode;;yes https://briarproject.org/how-it-works/;

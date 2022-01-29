@@ -14,6 +14,8 @@ Voice calls;;yes, WebRTC https://matrix.org/faq/#what-can-i-actually-do-with-thi
 Video calls;;yes, WebRTC https://matrix.org/faq/#what-can-i-actually-do-with-this%3F;
 Group calls;;yes, via Jitsi https://matrix.org/faq/#what-can-i-actually-do-with-this%3F;
 Read public content without registering;;guest participant, room peek preview, static HTML view https://spec.matrix.org/latest/client-server-api/#guest-access https://view.matrix.org/;
+Multiple devices;yes;
+Multiple accounts;no;
 End-to-end encryption;;yes https://matrix.org/faq/#which-matrix-clients-support-e2e;
 Usage without phone number;;yes;
 Offline;partial;compose or read recent messages on Android/Desktop, no Web startup;Buffered messages on SchildiChat Android/Desktop, SchildiChat Web lacks offline startup via Web Workers;
