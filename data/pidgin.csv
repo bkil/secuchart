@@ -6,7 +6,7 @@ Apple iOS;
 Desktop;;yes https://pidgin.im/install/;
 Web;
 Languages;
-Protocol;;Jabber/XMPP, Bonjour, Gadu-Gadu, IRC, Novell GroupWise Messenger, Lotus Sametime, SILC, SIMPLE, Zephyr + extandable via plugins plugins https://pidgin.im/plugins/?publisher=all&query=&type=;
+Protocol;;Jabber/XMPP, Bonjour, Gadu-Gadu, IRC, Novell GroupWise Messenger, Lotus Sametime, SILC, SIMPLE, Zephyr + extendable via plugins https://pidgin.im/plugins/?publisher=all&query=&type=;
 Protocol open;partial;some yes;
 Server license;;GNUv2 https://keep.imfreedom.org/pidgin/pidgin/file/tip/COPYING;
 Client license;
