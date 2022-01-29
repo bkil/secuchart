@@ -17,7 +17,7 @@ gen_index() {
 
   sed "s~^~_~" "$IN" |
   while read REPL; do
-    REPLY="`echo "$REPL" | sed "s~^_~~"`"
+    REPLY="`printf '%s' "$REPL" | sed "s~^_~~"`"
     if [ "$REPLY" = "((style))" ]; then
       gen_style
     elif [ "$REPLY" = "((filters))" ]; then
@@ -49,7 +49,7 @@ EOF
 
       SERVERLIC=`get_item_value "$IT" "Server license"`
       CLIENTLIC=`get_item_value "$IT" "Client license"`
-      echo "$SERVERLIC $CLIENTLIC" | grep -q "proprietary" && PROPR="$PROPR $NUM"
+      printf '%s' "$SERVERLIC $CLIENTLIC" | grep -q "proprietary" && PROPR="$PROPR $NUM"
 
       NUM=`expr $NUM + 1`
     done
@@ -138,8 +138,8 @@ gen_table() {
   cat "$DATA/_properties.csv" |
   while read P; do
     echo "<tr>"
-    K="`echo "$P" | cut -d';' -f 1`"
-    V="`echo "$P" | cut -d';' -s -f 2-`"
+    K="`printf '%s' "$P" | cut -d';' -f 1`"
+    V="`printf '%s' "$P" | cut -d';' -s -f 2-`"
     if [ -z "$K" ]; then
       printf " <th class=section>%s%s\n\n" "$V" "$COLSPAN"
     elif [ -n "$V" ]; then
@@ -160,11 +160,11 @@ get_item_prop() {
   [ -f "$DE" ] || { echo "error: missing $DE" >&2; exit 1; }
   grep -m1 "^${FINDKEY};" "$DE" |
   cut -d';' -s -f 2-
-  VALUE="`echo "$PROP" | cut -d';' -f 1 | sed -r "s~(&[a-zA-Z]+),~\1;~g"`"
+  VALUE="`printf '%s' "$PROP" | cut -d';' -f 1 | sed -r "s~(&[a-zA-Z]+),~\1;~g"`"
 }
 
 get_prop_status() {
-  echo "$1" |
+  printf '%s' "$1" |
   cut -d';' -s -f 1 |
   escape
 }
@@ -183,14 +183,14 @@ escape() {
 
 get_prop_value() {
   STATUS="`get_prop_status "$1"`"
-  SUMMARYU="`echo "$1" | cut -d';' -s -f 2 | escape`"
-  SUMMARY="`echo "$SUMMARYU" | linkify`"
-  DETAILS="`echo "$1" | cut -d';' -s -f 3 | escape | linkify`"
+  SUMMARYU="`printf '%s' "$1" | cut -d';' -s -f 2 | escape`"
+  SUMMARY="`printf '%s' "$SUMMARYU" | linkify`"
+  DETAILS="`printf '%s' "$1" | cut -d';' -s -f 3 | escape | linkify`"
 
   if [ -z "$SUMMARY" ]; then
     SUMMARY="$STATUS"
   else
-    NOLINK="`echo "$SUMMARYU" | sed -r "s~\<((http|ftp)s?://[^ ]*)~~g ; s~^ *~~ ; s~ *$~~"`"
+    NOLINK="`printf '%s' "$SUMMARYU" | sed -r "s~\<((http|ftp)s?://[^ ]*)~~g ; s~^ *~~ ; s~ *$~~"`"
     if [ -z "$NOLINK" ]; then
       SUMMARY="$STATUS $SUMMARY"
     fi
@@ -201,7 +201,7 @@ get_prop_value() {
     VALUE="<details><summary>$VALUE</summary>$DETAILS</details"
   fi
 
-  echo "$VALUE"
+  printf '%s' "$VALUE"
 }
 
 get_item_value() {
@@ -217,25 +217,25 @@ get_entry_status_class() {
   fi
 
   CLASS=""
-  if echo "$FINDKEY" | grep -qE "^(Summary|Payment choices|Company jurisdiction|Infrastructure jurisdiction|Infrastructure provider|Servers required|Servers optional|Protocol)$"; then
+  if printf '%s' "$FINDKEY" | grep -qE "^(Summary|Payment choices|Company jurisdiction|Infrastructure jurisdiction|Infrastructure provider|Servers required|Servers optional|Protocol)$"; then
     CLASS="x"
   else
 #      FVEY="Australia|Canada|New Zealand|UK|USA"
 #      NINEEYES="Denmark|France|Netherlands|Norway"
-    if echo "$PROP" | grep -iqE "\<(depends|usually|limited|probably|VC|often|not)\>|\<(venture capital|partial|leak|possibl)|(^|[^0-9a-z_-])only "; then
+    if printf '%s' "$PROP" | grep -iqE "\<(depends|usually|limited|probably|VC|often|not)\>|\<(venture capital|partial|leak|possibl)|(^|[^0-9a-z_-])only "; then
       CLASS="p"
     fi
-    if echo "$PROP" | grep -iqE "\<(no|none|proprietary|unknown|offshore|cryptocoin)\>"; then
+    if printf '%s' "$PROP" | grep -iqE "\<(no|none|proprietary|unknown|offshore|cryptocoin)\>"; then
       CLASS="n"
     fi
-    if echo "$PROP" | grep -iqE "\<yes|N/A\>"; then
+    if printf '%s' "$PROP" | grep -iqE "\<yes|N/A\>"; then
       CLASS="y"
     fi
   fi
 
   STATUS="`get_prop_status "$PROP"`"
-  [ -n "$STATUS" ] && CLASS="`echo "$STATUS" | cut -c 1`"
-  echo "$CLASS"
+  [ -n "$STATUS" ] && CLASS="`printf '%s' "$STATUS" | cut -c 1`"
+  printf '%s' "$CLASS"
 }
 
 print_items() {
