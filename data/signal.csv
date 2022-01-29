@@ -12,6 +12,7 @@ Group chat;;yes https://support.signal.org/hc/en-us/articles/360007319331-Group-
 Voice calls;;yes https://support.signal.org/hc/en-us/articles/360007060492-Voice-or-Video-Calling-with-Screen-Sharing
 Video calls;;yes https://support.signal.org/hc/en-us/articles/360007060492-Voice-or-Video-Calling-with-Screen-Sharing
 Group calls;;yes https://support.signal.org/hc/en-us/articles/360052977792-Group-Calling-Voice-or-Video-with-Screen-Sharing
+Power saving;yes;;Polling without FCM https://reddit.com/r/signal/comments/ium7he/no_notifications_on_degoogled_phone_tried/ https://reddit.com/r/degoogle/comments/m9cxax/what_are_your_thoughts_on_this_degoogled_fork_of/, TODO: research
 End-to-end encryption;;yes https://support.signal.org/hc/en-us/articles/360007320391-Is-it-private-Can-I-trust-it-
 Message expiration;;yes https://support.signal.org/hc/en-us/articles/360007320771-Set-and-manage-disappearing-messages
 Usage without phone number;;no
@@ -22,6 +23,7 @@ Infrastructure provider;;Amazon
 User can extend network with node;;no
 Identity not controlled by company;;no
 Offline;;partial
+Servers optional;;FCM https://support.signal.org/hc/en-us/articles/360007318711-Troubleshooting-Notifications https://reddit.com/r/signal/comments/ium7he/no_notifications_on_degoogled_phone_tried/ https://reddit.com/r/degoogle/comments/m9cxax/what_are_your_thoughts_on_this_degoogled_fork_of/;TODO: what else?
 Serverless WAN mode;;no
 Serverless LAN mode;;no
 Network store and forward;;yes
