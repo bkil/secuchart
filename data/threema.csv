@@ -32,7 +32,7 @@ Usage without phone number;;yes;
 Register without app;;no;
 No-cost tier;;no;
 Payment choices;;Wire transfer, MasterCard, Visa, PayPal, Bitcoin https://shop.threema.ch/terms;
-Transparent financing;;mandatory subscription;
+Transparent financing;;mandatory one-time payment;
 Company jurisdiction;;Switzerland;
 Infrastructure jurisdiction;;Switzerland;
 Infrastructure provider;;a colocation data center https://work.threema.ch/docs/threema_privacy-security_en.pdf;
