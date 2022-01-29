@@ -7,7 +7,7 @@ Web;
 Languages;The higher the amount of people reachable the better. No=1 language, partial=2-3, yes=many global ones
 ;Technical details
 Protocol;
-Protocol open;
+Protocol open;yes=can be implemented based on published detailed specification; no=no source published; partial=needs reverse engineering based on rough specs or source code
 Server license;
 Client license;
 Group chat;

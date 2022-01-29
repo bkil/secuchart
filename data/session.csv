@@ -6,8 +6,8 @@ Desktop;yes;Linux and Windows https://github.com/oxen-io/session-desktop/release
 Web;no;;
 Languages;yes;many https://github.com/oxen-io/session-android/tree/master/app/src/main/res;
 Protocol;;Session protocol, fork of Signal protocol https://getsession.org/blog/session-protocol-technical-information;
-Protocol open;;MIT https://github.com/oxen-io/oxen-storage-server/blob/dev/LICENSE
-Server license;;GPL v3 https://github.com/oxen-io/lokinet/blob/dev/LICENSE.txt;
+Protocol open;partial;prose, source;out of date in prose https://getsession.org/blog/session-protocol-technical-information https://www.getsession.org/blog/session-protocol-explained need to reverse engineer from source
+Server license;;GPL v3 https://github.com/oxen-io/lokinet/blob/dev/LICENSE.txt MIT https://github.com/oxen-io/oxen-storage-server/blob/dev/LICENSE;
 Client license;;GPL v3 https://github.com/oxen-io/session-desktop/blob/clearnet/LICENSE;
 Group chat;yes;closed groups (private) e2ee, open groups (public) not e2ee https://getsession.org/faq;
 Voice calls;yes;beta test, p2p, ip exposed https://getsession.org/blog/calls-on-session-how-to-opt-in;
