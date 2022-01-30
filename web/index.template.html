@@ -27,26 +27,16 @@ table {
 tr:first-child > th {
   position: sticky;
   top: 0;
-  z-index: 2;
 }
 
-tr:first-child > th:first-child {
-  position: initial;
-  z-index: 4;
-}
-
-tr:not(:first-child) > th:first-child {
+th:first-child {
   position: sticky;
   left: 0;
   text-align: left;
-  z-index: 3;
 }
 
-tr:not(:first-child) > th.section {
-  position: initial;
-  left: initial;
+th.section {
   text-align: right;
-  z-index: 1;
   font-weight: normal;
 }
 
