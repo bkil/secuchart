@@ -172,7 +172,7 @@ get_prop_status() {
 }
 
 linkify() {
-  sed -r "s~\<((http|ftp)s?://[^ ]*)~<a href='\1'>w</a>~g"
+  sed -r "s~\<((http|ftp)s?://[^ ]*)~<a href='\1' target=_blank>w</a>~g"
 }
 
 escape() {
