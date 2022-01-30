@@ -1,0 +1,62 @@
+name;OnionShare;;
+Summary;;epehemeral messenger over tor https://onionshare.org/ http://lldan5gahapx5k7iafb3s4ikijc4ni7gx5iywdflkba5y2ezyg6sjgyd.onion/ https://github.com/onionshare/onionshare;
+Android Google Play;;yes;client only via Tor Browser
+Android F-droid/apk;;yes;client only via Tor Browser
+Apple iOS;;yes;client only via Tor Browser
+Desktop;yes;server and client; Linux, Windows, MacOS http://docs.lldan5gahapx5k7iafb3s4ikijc4ni7gx5iywdflkba5y2ezyg6sjgyd.onion/2.5/en/install.html#windows-or-macos http://docs.lldan5gahapx5k7iafb3s4ikijc4ni7gx5iywdflkba5y2ezyg6sjgyd.onion/2.5/en/install.html#linux
+Web;;yes;
+Languages;;;
+Protocol;Tor onion routing;;
+Protocol open;;yes;
+Server license;;GNU GPL v3 https://github.com/onionshare/onionshare/blob/develop/LICENSE;
+Client license;;GNU GPL v3 https://github.com/onionshare/onionshare/blob/develop/LICENSE;
+Group chat;;yes http://docs.lldan5gahapx5k7iafb3s4ikijc4ni7gx5iywdflkba5y2ezyg6sjgyd.onion/2.5/en/features.html#chat-anonymously;
+Voice calls;;no http://docs.lldan5gahapx5k7iafb3s4ikijc4ni7gx5iywdflkba5y2ezyg6sjgyd.onion/2.5/en/features.html#chat-anonymously;
+Video calls;;no http://docs.lldan5gahapx5k7iafb3s4ikijc4ni7gx5iywdflkba5y2ezyg6sjgyd.onion/2.5/en/features.html#chat-anonymously;
+Group calls;;no http://docs.lldan5gahapx5k7iafb3s4ikijc4ni7gx5iywdflkba5y2ezyg6sjgyd.onion/2.5/en/features.html#chat-anonymously;
+Read public content without registering;;no http://docs.lldan5gahapx5k7iafb3s4ikijc4ni7gx5iywdflkba5y2ezyg6sjgyd.onion/2.5/en/features.html#chat-anonymously;
+CPU idle;;;
+Power saving;;;
+Bandwidth frugal;;;
+Multiple devices;;yes http://docs.lldan5gahapx5k7iafb3s4ikijc4ni7gx5iywdflkba5y2ezyg6sjgyd.onion/2.5/en/features.html#chat-anonymously;
+Multiple accounts;;;
+End-to-end encryption;;yes http://docs.lldan5gahapx5k7iafb3s4ikijc4ni7gx5iywdflkba5y2ezyg6sjgyd.onion/2.5/en/features.html#how-does-the-encryption-work;
+E2EE keys shielded from operator;;yes http://docs.lldan5gahapx5k7iafb3s4ikijc4ni7gx5iywdflkba5y2ezyg6sjgyd.onion/2.5/en/features.html#how-does-the-encryption-work;
+Deniability;;yes http://docs.lldan5gahapx5k7iafb3s4ikijc4ni7gx5iywdflkba5y2ezyg6sjgyd.onion/2.5/en/features.html#how-does-the-encryption-work;
+Replay prevention;;yes http://docs.lldan5gahapx5k7iafb3s4ikijc4ni7gx5iywdflkba5y2ezyg6sjgyd.onion/2.5/en/features.html#how-does-the-encryption-work;
+Downgrade resistance;;yes http://docs.lldan5gahapx5k7iafb3s4ikijc4ni7gx5iywdflkba5y2ezyg6sjgyd.onion/2.5/en/features.html#how-does-the-encryption-work;
+Contact list confidential;;yes http://docs.lldan5gahapx5k7iafb3s4ikijc4ni7gx5iywdflkba5y2ezyg6sjgyd.onion/2.5/en/features.html#how-does-the-encryption-work;
+Metadata protection;;;
+Perfect forward secrecy;;;
+Remote message removal;;;
+Remote message correction;;;
+Message expiration;;;
+Audits;;;
+Usage without phone number;;yes http://docs.lldan5gahapx5k7iafb3s4ikijc4ni7gx5iywdflkba5y2ezyg6sjgyd.onion/2.5/en/features.html#chat-anonymously;
+Register without app;;yes http://docs.lldan5gahapx5k7iafb3s4ikijc4ni7gx5iywdflkba5y2ezyg6sjgyd.onion/2.5/en/features.html#chat-anonymously;
+First release;;2015-05-19 https://github.com/onionshare/onionshare/releases/tag/0.7;
+Transparent financing;;yes;
+No-cost tier;;yes;all FOSS
+Payment choices;;N/A;all FOSS
+Company jurisdiction;;US;
+Infrastructure jurisdiction;;global;tor onion routed network
+Infrastructure provider;;global;tor onion routed network
+Isolated self-hosting;;;
+User can extend network with node;;;
+Identity not controlled by company;;;
+Will the system still work if the developer goes bankrupt;;;
+Account deactivation after device compromise;;;
+Account recovery after device compromise;;;
+Spam protection;;;
+Offline;;;
+Servers required;;;
+Servers optional;;;
+Serverless WAN mode;;;
+Serverless LAN mode;;;
+Network store and forward;;;
+Wireless mode;;;
+IP shielded from peers;;;
+Tor access of company operated network;;;
+IPv6 access of company operated network;;;
+Company operated network inaccessible from countries;;;
+Third party clients;;;
