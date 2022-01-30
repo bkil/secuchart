@@ -18,6 +18,7 @@ End-to-end encryption;;yes https://support.signal.org/hc/en-us/articles/36000732
 Message expiration;;yes https://support.signal.org/hc/en-us/articles/360007320771-Set-and-manage-disappearing-messages
 Usage without phone number;;no
 Register without app;;no
+First release;;2014-07-29 https://en.wikipedia.org/wiki/Signal_(software);
 Company jurisdiction;;USA https://signal.org/legal/
 Infrastructure jurisdiction;;USA
 Infrastructure provider;;Amazon

@@ -26,6 +26,7 @@ Message expiration;;none;
 Audits;;none;
 Usage without phone number;;yes;
 Register without app;;no;
+First release;;2004-12-22 (as SFLphone) http://freshmeat.sourceforge.net/projects/sflphone/releases?page=3;
 Transparent financing;;official GNU project with EFF funding in the past, PayPal donations https://jami.net/ https://www.fsf.org/campaigns/priority-projects/voicevideochat https://opensource.com/article/20/5/free-software-communication;
 No-cost tier;;yes;
 Payment choices;;N/A;

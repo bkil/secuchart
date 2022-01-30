@@ -13,6 +13,8 @@ Multiple devices;no;
 Multiple accounts;no;
 End-to-end encryption;;yes https://briarproject.org/how-it-works/;
 Usage without phone number;;yes;
+Register without app;;no;
+First release;;2018-05-09 https://en.wikipedia.org/wiki/Briar_(software);
 Offline;;yes https://briarproject.org/how-it-works/;
 Servers required;;Tor https://code.briarproject.org/briar/briar/-/wikis/A-Quick-Overview-of-the-Protocol-Stack;
 Serverless LAN mode;;yes https://briarproject.org/how-it-works/;
