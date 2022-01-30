@@ -1,62 +1,62 @@
 name;OnionShare;;
-Summary;;epehemeral messenger over tor https://onionshare.org/ http://lldan5gahapx5k7iafb3s4ikijc4ni7gx5iywdflkba5y2ezyg6sjgyd.onion/ https://github.com/onionshare/onionshare;
-Android Google Play;;yes;client only via Tor Browser
-Android F-droid/apk;;yes;client only via Tor Browser
-Apple iOS;;yes;client only via Tor Browser
-Desktop;yes;server and client; Linux, Windows, MacOS http://docs.lldan5gahapx5k7iafb3s4ikijc4ni7gx5iywdflkba5y2ezyg6sjgyd.onion/2.5/en/install.html#windows-or-macos http://docs.lldan5gahapx5k7iafb3s4ikijc4ni7gx5iywdflkba5y2ezyg6sjgyd.onion/2.5/en/install.html#linux
-Web;;yes;
+Summary;;ephemeral messenger over Tor https://onionshare.org/ https://lldan5gahapx5k7iafb3s4ikijc4ni7gx5iywdflkba5y2ezyg6sjgyd.onion/ https://github.com/onionshare/onionshare;
+Android Google Play;partial;only client via Tor Browser;JavaScript required
+Android F-droid/apk;partial;only client via Tor Browser;JavaScript required
+Apple iOS;partial;only client via Tor Browser;JavaScript required
+Desktop;yes;server and client;Linux, Windows, MacOS https://docs.onionshare.org/2.5/en/install.html#windows-or-macos https://docs.onionshare.org/2.5/en/install.html#linux
+Web;yes;only client via Tor Browser;JavaScript required
 Languages;;;
-Protocol;Tor onion routing;;
-Protocol open;;yes;
+Protocol;;unnamed;Built on top of Tor
+Protocol open;partial;not documented;Need to reverse engineer from source code
 Server license;;GNU GPL v3 https://github.com/onionshare/onionshare/blob/develop/LICENSE;
 Client license;;GNU GPL v3 https://github.com/onionshare/onionshare/blob/develop/LICENSE;
-Group chat;;yes http://docs.lldan5gahapx5k7iafb3s4ikijc4ni7gx5iywdflkba5y2ezyg6sjgyd.onion/2.5/en/features.html#chat-anonymously;
-Voice calls;;no http://docs.lldan5gahapx5k7iafb3s4ikijc4ni7gx5iywdflkba5y2ezyg6sjgyd.onion/2.5/en/features.html#chat-anonymously;
-Video calls;;no http://docs.lldan5gahapx5k7iafb3s4ikijc4ni7gx5iywdflkba5y2ezyg6sjgyd.onion/2.5/en/features.html#chat-anonymously;
-Group calls;;no http://docs.lldan5gahapx5k7iafb3s4ikijc4ni7gx5iywdflkba5y2ezyg6sjgyd.onion/2.5/en/features.html#chat-anonymously;
-Read public content without registering;;no http://docs.lldan5gahapx5k7iafb3s4ikijc4ni7gx5iywdflkba5y2ezyg6sjgyd.onion/2.5/en/features.html#chat-anonymously;
+Group chat;yes;https://docs.onionshare.org/2.5/en/features.html#chat-anonymously;
+Voice calls;no;https://docs.onionshare.org/2.5/en/features.html#chat-anonymously;
+Video calls;no;https://docs.onionshare.org/2.5/en/features.html#chat-anonymously;
+Group calls;no;https://docs.onionshare.org/2.5/en/features.html#chat-anonymously;
+Read public content without registering;no;https://docs.onionshare.org/2.5/en/features.html#chat-anonymously;
 CPU idle;;;
 Power saving;;;
 Bandwidth frugal;;;
-Multiple devices;;yes http://docs.lldan5gahapx5k7iafb3s4ikijc4ni7gx5iywdflkba5y2ezyg6sjgyd.onion/2.5/en/features.html#chat-anonymously;
+Multiple devices;yes;just paste the private key on each https://docs.onionshare.org/2.5/en/features.html#chat-anonymously;
 Multiple accounts;;;
-End-to-end encryption;;yes http://docs.lldan5gahapx5k7iafb3s4ikijc4ni7gx5iywdflkba5y2ezyg6sjgyd.onion/2.5/en/features.html#how-does-the-encryption-work;
-E2EE keys shielded from operator;;yes http://docs.lldan5gahapx5k7iafb3s4ikijc4ni7gx5iywdflkba5y2ezyg6sjgyd.onion/2.5/en/features.html#how-does-the-encryption-work;
-Deniability;;yes http://docs.lldan5gahapx5k7iafb3s4ikijc4ni7gx5iywdflkba5y2ezyg6sjgyd.onion/2.5/en/features.html#how-does-the-encryption-work;
-Replay prevention;;yes http://docs.lldan5gahapx5k7iafb3s4ikijc4ni7gx5iywdflkba5y2ezyg6sjgyd.onion/2.5/en/features.html#how-does-the-encryption-work;
-Downgrade resistance;;yes http://docs.lldan5gahapx5k7iafb3s4ikijc4ni7gx5iywdflkba5y2ezyg6sjgyd.onion/2.5/en/features.html#how-does-the-encryption-work;
-Contact list confidential;;yes http://docs.lldan5gahapx5k7iafb3s4ikijc4ni7gx5iywdflkba5y2ezyg6sjgyd.onion/2.5/en/features.html#how-does-the-encryption-work;
+End-to-end encryption;no;Tor hidden service hub;MITM possible, separate encrypted Tor channels between the server and clients https://docs.onionshare.org/2.5/en/features.html#how-does-the-encryption-work
+E2EE keys shielded from operator;;;
+Deniability;partial;;TODO: couldn't the server correlate messages of a client?
+Replay prevention;no;;Trivial to repeat a message as it's anonymous with chosen display name
+Downgrade resistance;yes;;
+Contact list confidential;yes;;TODO: Are we sure a server running multiple rooms or clients connecting to multiple rooms aren't able to correlate their peers?
 Metadata protection;;;
 Perfect forward secrecy;;;
 Remote message removal;;;
 Remote message correction;;;
 Message expiration;;;
 Audits;;;
-Usage without phone number;;yes http://docs.lldan5gahapx5k7iafb3s4ikijc4ni7gx5iywdflkba5y2ezyg6sjgyd.onion/2.5/en/features.html#chat-anonymously;
-Register without app;;yes http://docs.lldan5gahapx5k7iafb3s4ikijc4ni7gx5iywdflkba5y2ezyg6sjgyd.onion/2.5/en/features.html#chat-anonymously;
+Usage without phone number;yes;https://docs.onionshare.org/2.5/en/features.html#chat-anonymously;
+Register without app;partial;clients connect via Tor Browser;JavaScript required, accounts are per group, not per user, but the server does need an app to create each group account https://docs.onionshare.org/2.5/en/features.html#chat-anonymously;
 First release;;2015-05-19 https://github.com/onionshare/onionshare/releases/tag/0.7;
-Transparent financing;;yes;
-No-cost tier;;yes;all FOSS
-Payment choices;;N/A;all FOSS
+Transparent financing;no;;Couldn't find any donation links, previous sponsorship or how supportive their community is https://micahflee.com/
+No-cost tier;;yes;
+Payment choices;;N/A;
 Company jurisdiction;;US;
-Infrastructure jurisdiction;;global;tor onion routed network
-Infrastructure provider;;global;tor onion routed network
-Isolated self-hosting;;;
-User can extend network with node;;;
-Identity not controlled by company;;;
-Will the system still work if the developer goes bankrupt;;;
-Account deactivation after device compromise;;;
-Account recovery after device compromise;;;
-Spam protection;;;
+Infrastructure jurisdiction;;global;Tor onion routed network
+Infrastructure provider;;Tor;onion routed network
+Isolated self-hosting;no;Requires Tor;
+User can extend network with node;partial;All networks isolated;A user can either start a separate one or join an existing one
+Identity not controlled by company;yes;Generated when starting server;
+Will the system still work if the developer goes bankrupt;yes;Based on Tor;
+Account deactivation after device compromise;no;Private key distributed;
+Account recovery after device compromise;no;Private key distributed;
+Spam protection;no;Groups are invite-only;The server could implement filtering in the future
 Offline;;;
-Servers required;;;
+Servers required;;Tor;
 Servers optional;;;
-Serverless WAN mode;;;
-Serverless LAN mode;;;
-Network store and forward;;;
-Wireless mode;;;
-IP shielded from peers;;;
-Tor access of company operated network;;;
+Serverless WAN mode;no;Requires Tor;
+Serverless LAN mode;no;Requires Tor;
+Network store and forward;no;No chat log https://docs.onionshare.org/2.5/en/features.html#chat-anonymously;
+Wireless mode;no;https://docs.onionshare.org/2.5/en/features.html#chat-anonymously;
+IP shielded from peers;yes;via Tor;
+Tor access of company operated network;N/A;uses Tor connection to peers;
 IPv6 access of company operated network;;;
 Company operated network inaccessible from countries;;;
-Third party clients;;;
+Third party clients;partial;no alternative client;
