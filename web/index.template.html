@@ -40,6 +40,10 @@ th.section {
   font-weight: normal;
 }
 
+tr:nth-child(odd) {
+  background-color: #f8f8f8;
+}
+
 td:not([class="x"]):not(:empty) {
   background-color: lime;
 }
@@ -69,6 +73,7 @@ label {
   white-space: nowrap;
 }
 
+
 #transpose:checked ~ table td,
 #transpose:checked ~ table th {
   min-height: 2em;
@@ -95,6 +100,7 @@ label {
   padding-bottom: 0.5em;
 }
 
+
 #dark:checked ~ * {
   background-color: black;
   color: #ddd;
@@ -111,6 +117,10 @@ label {
 
 #dark:checked ~ table th {
   background-color: #333;
+}
+
+#dark:checked ~ table tr:nth-child(odd) {
+  background-color: #080808;
 }
 
 #dark:checked ~ table td a {
@@ -133,11 +143,16 @@ label {
   color: #fff;
 }
 
+
 #dark:not(:checked) ~ #contrast:checked ~ * {
   font-weight: bold;
 }
 
 #dark:not(:checked) ~ #contrast:checked ~ table th {
+  background-color: white;
+}
+
+#dark:not(:checked) ~ #contrast:checked ~ table tr {
   background-color: white;
 }
 
@@ -187,6 +202,10 @@ label {
     background-color: #333;
   }
 
+  tr {
+    background-color: #080808;
+  }
+
   td a {
     background-color: #222;
     color: #eee;
@@ -213,7 +232,7 @@ label {
 }
 
 @media (prefers-contrast: more) {
-  th {
+  tr, th {
     background-color: white;
   }
 
@@ -295,7 +314,6 @@ label {
  <li>Google Hangouts/Meet
  <li>Slack
  <li>Secure Scuttlebutt
- <li>OnionShare
  <li>Matrix Hydrogen (beta)
  <li>Matrix Cinny
  <li>Cabal
