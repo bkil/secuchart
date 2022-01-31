@@ -17,7 +17,7 @@ Power saving;yes;;Polling without FCM https://reddit.com/r/signal/comments/ium7h
 End-to-end encryption;;yes https://support.signal.org/hc/en-us/articles/360007320391-Is-it-private-Can-I-trust-it-
 Message expiration;;yes https://support.signal.org/hc/en-us/articles/360007320771-Set-and-manage-disappearing-messages
 Usage without phone number;;no
-Register without app;;no
+Register without app;;no;as a workaround, through the unofficial mautrix-signal matrix bridge with a custom HS
 First release;;2014-07-29 https://en.wikipedia.org/wiki/Signal_(software);
 Company jurisdiction;;USA https://signal.org/legal/
 Infrastructure jurisdiction;;USA
