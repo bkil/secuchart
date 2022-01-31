@@ -97,7 +97,7 @@ gen_filters() {
 <a href="#" id=all>Show all messengers</a>
 <br>
 <span class=S>Single messenger:</span>
-<label for=any class=S>any&nbsp;</label><input type=radio name=S checked autofocus accesskey=a id=any class=S>
+<label for=any class=S>any&nbsp;</label><input type=radio name=S checked accesskey=a id=any class=S>
 EOF
 
   get_items "$LIMITITEMS" |
