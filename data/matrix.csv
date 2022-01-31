@@ -1,4 +1,4 @@
-name;;Matrix Synapse & Element Web;
+name;;Matrix Synapse & Element;
 Summary;;Protocol that bridges all
 Android Google Play;;yes https://matrix.org/clients/;
 Android F-droid/apk;;yes https://f-droid.org/en/packages/im.vector.app/;
@@ -17,7 +17,7 @@ Group calls;;yes, via Jitsi https://matrix.org/faq/#what-can-i-actually-do-with-
 Read public content without registering;;guest participant, room peek preview, static HTML view https://spec.matrix.org/latest/client-server-api/#guest-access https://view.matrix.org/;
 End-to-end encryption;;yes https://matrix.org/faq/#which-matrix-clients-support-e2e;
 Usage without phone number;;yes;
-Offline;partial;compose or read recent Desktop messages, no Web startup;Buffered messages on Element Desktop, Element Web lacks offline startup via Web Workers;
+Offline;partial;compose or read recent Desktop messages, no Web startup;Buffered messages on Element Desktop, Element Web lacks offline startup via Web Workers
 Servers required;;Synapse homeserver, notifications push;
 Servers optional;;DNS, Element Web app, identity, integrations, ICE, Jitsi https://gitlab.com/libremonde-org/papers/research/privacy-matrix.org/-/blob/master/part1/README.md;
 Serverless WAN mode;;no;

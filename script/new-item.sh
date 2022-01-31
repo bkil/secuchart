@@ -1,8 +1,9 @@
 #!/bin/sh
 
 main() {
+  echo "Create a new empty item based on _properties.csv" >&2
   if [ $# -ne 1 ]; then
-    echo "usage: $0 [app_slug]" >&2
+    echo "usage: $0 [item_slug]" >&2
     exit 1
   fi
   O="`dirname "$0"`"
@@ -17,7 +18,7 @@ main() {
   fi
 
   {
-    echo "name;$SLUG"
+    echo "name;;$SLUG"
 
     cut -d';' -f 1 "$DATA/_properties.csv" |
     grep -v "^$" |
@@ -29,8 +30,8 @@ main() {
     echo "warning: $SLUG already referenced in $ITEMS" >&2
   else
     echo "$SLUG" >> "$ITEMS"
+    echo "created $ITEMS" >&2
   fi
 }
 
 main "$@"
-

@@ -1,4 +1,4 @@
-name;OnionShare;;
+name;;OnionShare;
 Summary;;ephemeral messenger over Tor https://onionshare.org/ https://lldan5gahapx5k7iafb3s4ikijc4ni7gx5iywdflkba5y2ezyg6sjgyd.onion/ https://github.com/onionshare/onionshare;
 Android Google Play;partial;only client via Tor Browser;JavaScript required
 Android F-droid/apk;partial;only client via Tor Browser;JavaScript required
@@ -21,19 +21,12 @@ Bandwidth frugal;;yes;uses Tor browser
 Multiple devices;yes;just paste the private key on each https://docs.onionshare.org/2.5/en/features.html#chat-anonymously;
 Multiple accounts;partial;;could connect via multiple Tor browser instances
 End-to-end encryption;no;Tor hidden service hub;MITM possible, separate encrypted Tor channels between the server and clients https://docs.onionshare.org/2.5/en/features.html#how-does-the-encryption-work
-E2EE keys shielded from operator;;;
 Deniability;partial;;TODO: couldn't the server correlate messages of a client?
 Replay prevention;no;;Trivial to repeat a message as it's anonymous with chosen display name
 Downgrade resistance;yes;;
 Contact list confidential;yes;;TODO: Are we sure a server running multiple rooms or clients connecting to multiple rooms aren't able to correlate their peers?
-Metadata protection;;;
-Perfect forward secrecy;;;
-Remote message removal;;;
-Remote message correction;;;
-Message expiration;;;
-Audits;;;
 Usage without phone number;yes;https://docs.onionshare.org/2.5/en/features.html#chat-anonymously;
-Register without app;partial;clients connect via Tor Browser;JavaScript required, accounts are per group, not per user, but the server does need an app to create each group account https://docs.onionshare.org/2.5/en/features.html#chat-anonymously;
+Register without app;partial;clients connect via Tor Browser;JavaScript required, accounts are per group, not per user, but the server does need an app to create each group account https://docs.onionshare.org/2.5/en/features.html#chat-anonymously
 First release;;2015-05-19 https://github.com/onionshare/onionshare/releases/tag/0.7;
 Transparent financing;no;;Couldn't find any donation links, previous sponsorship or how supportive their community is https://micahflee.com/
 No-cost tier;;yes;
@@ -44,19 +37,16 @@ Infrastructure provider;;Tor;onion routed network
 Isolated self-hosting;no;Requires Tor;
 User can extend network with node;partial;All networks isolated;A user can either start a separate one or join an existing one
 Identity not controlled by company;yes;Generated when starting server;
-Will the system still work if the developer goes bankrupt;yes;Based on Tor;
 Account deactivation after device compromise;no;Private key distributed;
 Account recovery after device compromise;no;Private key distributed;
 Spam protection;no;Groups are invite-only;The server could implement filtering in the future
-Offline;;;
 Servers required;;Tor, OnionShare;
-Servers optional;;;
 Serverless WAN mode;no;Requires Tor;
 Serverless LAN mode;no;Requires Tor;
 Network store and forward;no;No chat log https://docs.onionshare.org/2.5/en/features.html#chat-anonymously;
 Wireless mode;no;https://docs.onionshare.org/2.5/en/features.html#chat-anonymously;
 IP shielded from peers;yes;via Tor;
-Tor access of company operated network;N/A;uses Tor connection to peers;
+Tor access of company operated network;;N/A;uses Tor connection to peers
 IPv6 access of company operated network;yes;;
 Company operated network inaccessible from countries;;some countries attempt to censor Tor;bridges are available
 Third party clients;partial;no alternative client;

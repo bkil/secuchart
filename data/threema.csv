@@ -14,7 +14,7 @@ Video calls;;yes;
 Read public content without registering;;no;
 CPU idle;yes;;
 Power saving;yes;Push relay & native push;Fetches encrypted content from its own server in response to a push, group chat via unicast https://threema.ch/press-files/2_documentation/cryptography_whitepaper.pdf Polling without FCM https://threema.ch/en/faq/privacy_push
-Bandwidth frugal;partial;;Push relay & native push, group chat via unicast;Fetches encrypted content from its own server in response to a push, optimized binary chat protocol https://threema.ch/press-files/2_documentation/cryptography_whitepaper.pdf
+Bandwidth frugal;partial;Push relay & native push, group chat via unicast;Fetches encrypted content from its own server in response to a push, optimized binary chat protocol https://threema.ch/press-files/2_documentation/cryptography_whitepaper.pdf
 Multiple devices;;limited, as group chat https://threema.ch/en/faq/multidevice;
 Multiple accounts;;no;
 End-to-end encryption;;yes https://threema.ch/en/faq/why_secure;
@@ -31,9 +31,9 @@ Audits;;yes, 2020, 2019 https://threema.ch/en/faq/code_audit;
 Usage without phone number;;yes;
 Register without app;;no;
 First release;;2012-12 https://en.wikipedia.org/wiki/Threema;
+Transparent financing;;individuals: one-time payment;subscriptions for organizations https://threema.ch/en/work and educational institutions https://threema.ch/en/education
 No-cost tier;;no;
 Payment choices;;Wire transfer, MasterCard, Visa, PayPal, Bitcoin https://shop.threema.ch/terms;
-Transparent financing;;individuals: one-time payment;subscriptions for organizations https://threema.ch/en/work and educational institutions https://threema.ch/en/education
 Company jurisdiction;;Switzerland;
 Infrastructure jurisdiction;;Switzerland;
 Infrastructure provider;;a colocation data center https://work.threema.ch/docs/threema_privacy-security_en.pdf;
