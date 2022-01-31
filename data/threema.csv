@@ -50,4 +50,4 @@ Serverless LAN mode;;no;
 Network store and forward;yes;;
 Wireless mode;no;;
 IP shielded from peers;yes;not if STUN calls are enabled https://threema.ch/press-files/cryptography_whitepaper.pdf;
-Third party clients;partial;no alternative client;
+Third party clients;partial;openMittsu https://github.com/blizzard4591/openMittsu#does-the-threema-gmbh-allow-this-project;It is "tolerated" as of now
