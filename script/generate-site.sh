@@ -222,7 +222,7 @@ get_entry_status_class() {
   FINDKEY="$1"
   PROP="$2"
 
-  if printf '%s' "$FINDKEY" | grep -qE "^(name|Summary|Payment choices|Company jurisdiction|Infrastructure jurisdiction|Infrastructure provider|Servers required|Servers optional|Protocol|Read public content without registering)$"; then
+  if printf '%s' "$FINDKEY" | grep -qE "^(name|Summary|Payment choices|Company jurisdiction|Infrastructure jurisdiction|Infrastructure provider|Servers required|Servers optional|Protocol|Read public content without registering|Company operated network inaccessible from countries)$"; then
     echo "x"
     return
   fi
