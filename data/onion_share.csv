@@ -49,7 +49,7 @@ Account deactivation after device compromise;no;Private key distributed;
 Account recovery after device compromise;no;Private key distributed;
 Spam protection;no;Groups are invite-only;The server could implement filtering in the future
 Offline;;;
-Servers required;;Tor;
+Servers required;;Tor, OnionShare;
 Servers optional;;;
 Serverless WAN mode;no;Requires Tor;
 Serverless LAN mode;no;Requires Tor;
