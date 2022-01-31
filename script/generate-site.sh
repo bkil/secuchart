@@ -3,6 +3,7 @@
 set -e
 
 main() {
+  LIMITITEMS="$*"
   O="`dirname $0`"
   DIST="$O/../dist"
   WEB="$O/../web"
@@ -11,21 +12,22 @@ main() {
 
   mkdir -p "$DIST" || exit 1
   cp -at "$DIST" "$O/../LICENSE" || exit 1
-  gen_index > "$DIST/index.html" || exit 1
+  gen_index "$LIMITITEMS" > "$DIST/index.html" || exit 1
 }
 
 gen_index() {
+  LIMITITEMS="$1"
   IN="$WEB/index.template.html"
 
   sed "s~^~_~" "$IN" |
   while read REPL; do
     REPLY="`printf '%s' "$REPL" | sed "s~^_~~"`"
     if [ "$REPLY" = "((style))" ]; then
-      gen_style
+      gen_style "$LIMITITEMS"
     elif [ "$REPLY" = "((filters))" ]; then
-      gen_filters
+      gen_filters "$LIMITITEMS"
     elif [ "$REPLY" = "((table))" ]; then
-      gen_table
+      gen_table "$LIMITITEMS"
     else
       printf "%s\n" "$REPLY"
     fi
@@ -33,8 +35,10 @@ gen_index() {
 }
 
 gen_style() {
+  LIMITITEMS="$1"
+
   echo "<style>"
-  cat "$ITEMS" |
+  get_items "$LIMITITEMS" |
   {
     PROPR=""
     NUM=2
@@ -81,7 +85,9 @@ EOF
 }
 
 gen_filters() {
-  cat "$ITEMS" |
+  LIMITITEMS="$1"
+
+  get_items "$LIMITITEMS" |
   while read IT; do
     echo "<span id=$IT></span>"
   done
@@ -94,7 +100,7 @@ gen_filters() {
 <label for=any class=S>any&nbsp;</label><input type=radio name=S checked autofocus accesskey=a id=any class=S>
 EOF
 
-  cat "$ITEMS" |
+  get_items "$LIMITITEMS" |
   while read IT; do
     NAME=`get_prop_value "$(get_item_prop "$IT" "name")"`
     printf "<label for=s_%s class=S>%s&nbsp;</label><input type=radio name=S id=s_%s class=S>\n" "$IT" "$NAME" "$IT"
@@ -104,7 +110,7 @@ EOF
 <br class=P>
 EOF
 
-  cat "$ITEMS" |
+  get_items "$LIMITITEMS" |
   while read IT; do
     printf "<a href=#%s id=a_%s>Permalink #%s</a>\n" "$IT" "$IT" "$IT"
   done
@@ -114,7 +120,7 @@ EOF
 <span class=C>Compare messengers:</span>
 EOF
 
-  cat "$ITEMS" |
+  get_items "$LIMITITEMS" |
   while read IT; do
     NAME=`get_prop_value "$(get_item_prop "$IT" "name")"`
     printf "<label for=_%s class=C>%s&nbsp;</label><input type=checkbox checked id=_%s class=C>\n" "$IT" "$NAME" "$IT"
@@ -126,11 +132,13 @@ EOF
 }
 
 gen_table() {
+  LIMITITEMS="$1"
+
   printf "<tr>\n <th>Feature\n"
 
   print_items "name" 1
 
-  NUMITEMS="`wc -l < "$ITEMS"`"
+  NUMITEMS="`get_items "$LIMITITEMS" | wc -l`"
   COLSPAN=""
   for I in `seq 1 $NUMITEMS`; do
     COLSPAN="$COLSPAN<td>"
@@ -247,7 +255,7 @@ print_items() {
   ADDTAG="td"
   [ "$ISHEAD" = 1 ] && ADDTAG="th"
 
-  cat "$ITEMS" |
+  get_items "$LIMITITEMS" |
   while read IT; do
     PROP="`get_item_prop "$IT" "$FINDKEY"`"
 
@@ -260,6 +268,16 @@ print_items() {
     printf " <%s%s>%s</%s>\n" "$ADDTAG" "$ATTR" "$VALUE" "$ADDTAG"
   done
   echo ""
+}
+
+get_items() {
+  LIMITITEMS="$1"
+  if [ -n "$LIMITITEMS" ]; then
+    echo "$LIMITITEMS" |
+    sed -r "s~ +~\n~g"
+  else
+    cat "$ITEMS"
+  fi
 }
 
 main "$@"
