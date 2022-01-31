@@ -33,12 +33,15 @@ Perfect forward secrecy;
 Remote message removal;Also called redaction or deletion
 Remote message correction;Also called editing
 Message expiration;Also called retention time or disappearing messages
+Security team;yes=regularly scanning for vulnerabilities proactively, found bugs inspected for security implications, partial=reported vulnerabilities promptly fixed and released
 Audits;
 Usage without phone number;
 Register without app;
 ;Sustainability
 First release;
 Transparent financing;
+Active development;yes=a company or nearly a full time developer's worth of time is put into it, partial=occasional hobby development or basic maintenance work, no=no development or only ensuring it builds
+Multi-party development;no=one-man show, yes=highest level contributors are exchangeable, equal drivers, partial=regular contributions from multiple people
 No-cost tier;
 Payment choices;
 Company jurisdiction;
