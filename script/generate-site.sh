@@ -222,14 +222,12 @@ get_entry_status_class() {
   FINDKEY="$1"
   PROP="$2"
 
-  if [ "$FINDKEY" = "name" ]; then
+  if printf '%s' "$FINDKEY" | grep -qE "^(name|Summary|Payment choices|Company jurisdiction|Infrastructure jurisdiction|Infrastructure provider|Servers required|Servers optional|Protocol|Read public content without registering)$"; then
+    echo "x"
     return
   fi
 
   CLASS=""
-  if printf '%s' "$FINDKEY" | grep -qE "^(Summary|Payment choices|Company jurisdiction|Infrastructure jurisdiction|Infrastructure provider|Servers required|Servers optional|Protocol)$"; then
-    CLASS="x"
-  else
 #      FVEY="Australia|Canada|New Zealand|UK|USA"
 #      NINEEYES="Denmark|France|Netherlands|Norway"
     if printf '%s' "$PROP" | grep -iqE "\<(depends|usually|limited|probably|VC|often|not)\>|\<(venture capital|partial|leak|possibl)|(^|[^0-9a-z_-])only "; then
@@ -241,7 +239,6 @@ get_entry_status_class() {
     if printf '%s' "$PROP" | grep -iqE "\<yes|N/A\>"; then
       CLASS="y"
     fi
-  fi
 
   STATUS="`get_prop_status "$PROP"`"
   [ -n "$STATUS" ] && CLASS="`printf '%s' "$STATUS" | cut -c 1`"
