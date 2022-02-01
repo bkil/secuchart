@@ -15,7 +15,7 @@ Group chat;
 Voice calls
 Video calls;
 Group calls;
-Read public content without registering;
+Read public content without registering;Provides free tasting to look around before committing to install anything or having to remember another pair of credentials
 CPU idle;no=Proof of work, partial=sluggish due to Idling too little in foreground or measurable amount of processing in background; yes=otherwise
 Power saving;Ensure that device wakes up as few times as possible, filters and batches events on remote side, no open sockets, delegated peer tracking
 Bandwidth frugal;Conservation by lazy loading, previews, adaptive detail, incremental sync, fewer round trips, tokenization, batching transfers to improve compression, tweaked key schedule, multicasting hubs
