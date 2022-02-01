@@ -8,6 +8,7 @@ Web;no;
 Languages;;many https://translations.telegram.org/;
 Protocol;;MTProto https://core.telegram.org/mtproto;
 Protocol open;;yes https://core.telegram.org/mtproto;
+Server license;;proprietary;
 Client license;;GPLv2 https://github.com/Telegram-FOSS-Team/Telegram-FOSS/blob/master/LICENSE;
 Group chat;;yes;
 Voice calls;yes;

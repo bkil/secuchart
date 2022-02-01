@@ -7,6 +7,7 @@ Web;;yes https://web.telegram.org;
 Languages;;many https://translations.telegram.org/;
 Protocol;;MTProto https://core.telegram.org/mtproto;
 Protocol open;;yes https://core.telegram.org/mtproto;
+Server license;;proprietary;
 Client license;;GPLv2 / GPLv3 https://github.com/DrKLO/Telegram/blob/master/LICENSE https://github.com/overtake/TelegramSwift/blob/master/LICENSE https://github.com/telegramdesktop/tdesktop/blob/dev/LICENSE;
 Group chat;;yes;
 Voice calls;yes;
