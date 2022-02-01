@@ -17,7 +17,7 @@ Group calls;no;;
 Read public content without registering;partial;5 official rooms are bridged https://open.getsession.org/;
 CPU idle;no;Uses proof of work to combat spam;
 Power saving;no;Constantly transfers in the background;
-Bandwidth frugal;no;Constantly transfers a lot in the background;
+Bandwidth frugal;no;Constantly transfers a lot in the background;36MB/hour in our Desktop test in 2022
 Multiple devices;yes;still not functioning properly;
 Multiple accounts;no;;
 End-to-end encryption;partial;yes in private conversations and closed groups, no in open groups https://getsession.org/faq;
