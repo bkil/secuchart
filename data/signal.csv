@@ -1,39 +1,39 @@
 name;;Signal;
 Summary;;Secure chat with phone numbers;
-Android Google Play;;yes https://signal.org/download/
+Android Google Play;yes;https://signal.org/download/
 Android F-droid/apk;partial;apk https://signal.org/android/apk/;avoids f-droid https://community.signalusers.org/t/wiki-signal-android-app-on-f-droid-store-f-droid-status/28581
-Apple iOS;;yes https://signal.org/download/
-Desktop;;yes https://signal.org/download/
-Web;;no
-Languages;;100+ https://www.transifex.com/signalapp/signal-android/ https://www.transifex.com/signalapp/signal-desktop/ https://www.transifex.com/signalapp/signal-ios/;
+Apple iOS;yes;https://signal.org/download/
+Desktop;yes;https://signal.org/download/
+Web;no;
+Languages;yes;100+ https://www.transifex.com/signalapp/signal-android/ https://www.transifex.com/signalapp/signal-desktop/ https://www.transifex.com/signalapp/signal-ios/;
 Protocol;;Signal Protocol https://signal.org/docs/
-Protocol open;;yes https://signal.org/docs/
-Server license;;AGPLv3 https://github.com/signalapp/Signal-Server/blob/master/LICENSE
-Client license;;Android GPLv3 https://github.com/signalapp/Signal-Android/blob/master/LICENSE iOS GPLv3 https://github.com/signalapp/Signal-iOS/blob/master/LICENSE Desktop AGPLv3 https://github.com/signalapp/Signal-Desktop/blob/development/LICENSE
-Group chat;;yes https://support.signal.org/hc/en-us/articles/360007319331-Group-chats
-Voice calls;;yes https://support.signal.org/hc/en-us/articles/360007060492-Voice-or-Video-Calling-with-Screen-Sharing
-Video calls;;yes https://support.signal.org/hc/en-us/articles/360007060492-Voice-or-Video-Calling-with-Screen-Sharing
-Group calls;;yes https://support.signal.org/hc/en-us/articles/360052977792-Group-Calling-Voice-or-Video-with-Screen-Sharing
+Protocol open;yes;https://signal.org/docs/
+Server license;yes;AGPLv3 https://github.com/signalapp/Signal-Server/blob/master/LICENSE
+Client license;yes;Android GPLv3 https://github.com/signalapp/Signal-Android/blob/master/LICENSE iOS GPLv3 https://github.com/signalapp/Signal-iOS/blob/master/LICENSE Desktop AGPLv3 https://github.com/signalapp/Signal-Desktop/blob/development/LICENSE
+Group chat;yes;https://support.signal.org/hc/en-us/articles/360007319331-Group-chats
+Voice calls;yes;https://support.signal.org/hc/en-us/articles/360007060492-Voice-or-Video-Calling-with-Screen-Sharing;
+Video calls;yes;https://support.signal.org/hc/en-us/articles/360007060492-Voice-or-Video-Calling-with-Screen-Sharing;
+Group calls;yes;https://support.signal.org/hc/en-us/articles/360052977792-Group-Calling-Voice-or-Video-with-Screen-Sharing;
 Power saving;yes;;Polling without FCM https://reddit.com/r/signal/comments/ium7he/no_notifications_on_degoogled_phone_tried/ https://reddit.com/r/degoogle/comments/m9cxax/what_are_your_thoughts_on_this_degoogled_fork_of/, TODO: research
 Multiple devices;partial;Only Desktop as secondary device;
-Multiple accounts;;no;
-End-to-end encryption;;yes https://support.signal.org/hc/en-us/articles/360007320391-Is-it-private-Can-I-trust-it-
-Message expiration;;yes https://support.signal.org/hc/en-us/articles/360007320771-Set-and-manage-disappearing-messages
-Usage without phone number;;no
-Register without app;;no;as a workaround, through the unofficial mautrix-signal matrix bridge with a custom HS
-First release;;2014-07-29 https://en.wikipedia.org/wiki/Signal_(software);
-Active development;;yes;
+Multiple accounts;no;;
+End-to-end encryption;yes;https://support.signal.org/hc/en-us/articles/360007320391-Is-it-private-Can-I-trust-it-
+Message expiration;yes;https://support.signal.org/hc/en-us/articles/360007320771-Set-and-manage-disappearing-messages
+Usage without phone number;no;
+Register without app;no;;as a workaround, through the unofficial mautrix-signal matrix bridge with a custom HS
+First release;yes;2014-07-29 https://en.wikipedia.org/wiki/Signal_(software);
+Active development;yes;;
 Company jurisdiction;;USA https://signal.org/legal/
 Infrastructure jurisdiction;;USA
 Infrastructure provider;;Amazon
-User can extend network with node;;no
-Identity not controlled by company;;no
-Account deactivation after device compromise;partial; Only for secondary devices;
+User can extend network with node;no;;
+Identity not controlled by company;no;;
+Account deactivation after device compromise;partial;Only for secondary devices;
 Offline;partial;Compose or read stored messages;
 Servers optional;;FCM https://support.signal.org/hc/en-us/articles/360007318711-Troubleshooting-Notifications https://reddit.com/r/signal/comments/ium7he/no_notifications_on_degoogled_phone_tried/ https://reddit.com/r/degoogle/comments/m9cxax/what_are_your_thoughts_on_this_degoogled_fork_of/;TODO: what else?
-Serverless WAN mode;;no
-Serverless LAN mode;;no
-Network store and forward;;yes
-Wireless mode;;no
-IP shielded from peers;;yes
+Serverless WAN mode;no;
+Serverless LAN mode;no;
+Network store and forward;yes;
+Wireless mode;no;
+IP shielded from peers;yes;
 Third party clients;no;https://github.com/LibreSignal/LibreSignal/blob/master/README.md https://github.com/LibreSignal/LibreSignal/issues/37#issuecomment-217211165 https://lwn.net/Articles/687294/;

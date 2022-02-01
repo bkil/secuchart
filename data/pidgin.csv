@@ -1,9 +1,9 @@
 name;;Pidgin;
 Summary;;Universal chat client;
-Desktop;;yes https://pidgin.im/install/;
+Desktop;yes;https://pidgin.im/install/;
 Protocol;;Jabber/XMPP, multiple;Bonjour, Gadu-Gadu, IRC, Novell GroupWise Messenger, Lotus Sametime, SILC, SIMPLE, Zephyr + extendable via plugins https://pidgin.im/plugins/?publisher=all&query=&type=
 Protocol open;partial;some yes;
-Client license;;GNUv2 https://keep.imfreedom.org/pidgin/pidgin/file/tip/COPYING;
+Client license;yes;GNUv2 https://keep.imfreedom.org/pidgin/pidgin/file/tip/COPYING;
 Group chat;yes;
 Multiple devices;yes;
 Multiple accounts;yes;
@@ -11,4 +11,4 @@ End-to-end encryption;partial;some protocols;
 Message expiration;no;
 Usage without phone number;yes;
 Register without app;yes;
-First release;;1998-12-31 (as Gaim) https://en.wikipedia.org/wiki/Pidgin_%28software%29;
+First release;yes;1998-12-31 (as Gaim) https://en.wikipedia.org/wiki/Pidgin_%28software%29;

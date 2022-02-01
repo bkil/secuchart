@@ -44,15 +44,15 @@ tr:nth-child(odd) {
   background-color: #f8f8f8;
 }
 
-td:not([class="x"]):not(:empty) {
+td.y {
   background-color: lime;
 }
 
-td.n:not(:empty) {
+td.n {
   background-color: orange;
 }
 
-td.p:not(:empty) {
+td.p {
   background-color: yellow;
 }
 
@@ -128,17 +128,17 @@ label {
   color: #ddd;
 }
 
-#dark:checked ~ table td:not([class="x"]):not(:empty) {
+#dark:checked ~ table td.y {
   background-color: #060;
   color: #fff;
 }
 
-#dark:checked ~ table td.n:not(:empty) {
+#dark:checked ~ table td.n {
   background-color: #600;
   color: #fff;
 }
 
-#dark:checked ~ table td.p:not(:empty) {
+#dark:checked ~ table td.p {
   background-color: #880;
   color: #fff;
 }
@@ -160,27 +160,27 @@ label {
   color: black;
 }
 
-#dark:not(:checked) ~ #contrast:checked ~ table td:not([class="x"]):not(:empty) {
+#dark:not(:checked) ~ #contrast:checked ~ table td.y {
   background-color: white;
 }
 
-#dark:not(:checked) ~ #contrast:checked ~ table td:not([class="x"]):not(:empty):before {
+#dark:not(:checked) ~ #contrast:checked ~ table td.y:before {
   content: "+ ";
 }
 
-#dark:not(:checked) ~ #contrast:checked ~ table td.n:not(:empty) {
+#dark:not(:checked) ~ #contrast:checked ~ table td.n {
   background-color: white;
 }
 
-#dark:not(:checked) ~ #contrast:checked ~ table td.n:not(:empty):before {
+#dark:not(:checked) ~ #contrast:checked ~ table td.n:before {
   content: "- ";
 }
 
-#dark:not(:checked) ~ #contrast:checked ~ table td.p:not(:empty) {
+#dark:not(:checked) ~ #contrast:checked ~ table td.p {
   background-color: white;
 }
 
-#dark:not(:checked) ~ #contrast:checked ~ table td.p:not(:empty):before {
+#dark:not(:checked) ~ #contrast:checked ~ table td.p:before {
   content: "~ ";
 }
 
@@ -215,17 +215,17 @@ label {
     color: #ddf;
   }
 
-  td:not([class="x"]):not(:empty) {
+  td.y {
     background-color: #060;
     color: #fff;
   }
 
-  td.n:not(:empty) {
+  td.n {
     background-color: #600;
     color: #fff;
   }
 
-  td.p:not(:empty) {
+  td.p {
     background-color: #880;
     color: #fff;
   }
@@ -240,27 +240,27 @@ label {
     color: black;
   }
 
-  td:not([class="x"]):not(:empty) {
+  td.y {
     background-color: white;
   }
 
-  td:not([class="x"]):not(:empty):before {
+  td.y:before {
     content: "+ ";
   }
 
-  td.n:not(:empty) {
+  td.n {
     background-color: white;
   }
 
-  td.n:not(:empty):before {
+  td.n:before {
     content: "- ";
   }
 
-  td.p:not(:empty) {
+  td.p {
     background-color: white;
   }
 
-  td.p:not(:empty):before {
+  td.p:before {
     content: "~ ";
   }
 }

@@ -2,9 +2,9 @@ name;;XMPP;
 Summary;;Features as spec extensions
 Protocol;;XMPP;
 Protocol open;yes;https://xmpp.org/extensions/;
-Server license;;various;
-Client license;;various;
-Offline;;yes;
-Serverless LAN mode;;yes https://xmpp.org/extensions/xep-0174.html#impl-wide https://stackoverflow.com/questions/5632955/is-xmpp-peer-to-peer-connection-without-server-possible;
+Server license;yes;various;
+Client license;yes;various;
+Offline;yes;;
+Serverless LAN mode;yes;https://xmpp.org/extensions/xep-0174.html#impl-wide https://stackoverflow.com/questions/5632955/is-xmpp-peer-to-peer-connection-without-server-possible;
 IP shielded from peers;yes;Not during STUN calls;
 Third party clients;yes;https://xmpp.org/software/clients/;

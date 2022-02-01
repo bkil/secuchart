@@ -1,13 +1,12 @@
 #!/bin/sh
+. "`dirname "$0"`/include.inc.sh"
 
 set -e
 
 main() {
   LIMITITEMS="$*"
-  O="`dirname $0`"
   DIST="$O/../dist"
   WEB="$O/../web"
-  DATA="$O/../data"
   ITEMS="$DATA/_items.csv"
 
   mkdir -p "$DIST" || exit 1
@@ -229,14 +228,14 @@ get_entry_status_class() {
   FINDKEY="$1"
   PROP="$2"
 
-  if printf '%s' "$FINDKEY" | grep -qE "^(name|Summary|Payment choices|Company jurisdiction|Infrastructure jurisdiction|Infrastructure provider|Servers required|Servers optional|Protocol|Read public content without registering|Company operated network inaccessible from countries)$"; then
-    echo "x"
+  if is_colorless_property "$FINDKEY"; then
     return
   fi
 
   CLASS=""
-#      FVEY="Australia|Canada|New Zealand|UK|USA"
-#      NINEEYES="Denmark|France|Netherlands|Norway"
+  if false; then
+    FVEY="Australia|Canada|New Zealand|UK|USA"
+    NINEEYES="Denmark|France|Netherlands|Norway"
     if printf '%s' "$PROP" | grep -iqE "\<(depends|usually|limited|probably|VC|often|not)\>|\<(venture capital|partial|leak|possibl)|(^|[^0-9a-z_-])only "; then
       CLASS="p"
     fi
@@ -246,6 +245,7 @@ get_entry_status_class() {
     if printf '%s' "$PROP" | grep -iqE "\<yes|N/A\>"; then
       CLASS="y"
     fi
+  fi
 
   STATUS="`get_prop_status "$PROP"`"
   [ -n "$STATUS" ] && CLASS="`printf '%s' "$STATUS" | cut -c 1`"

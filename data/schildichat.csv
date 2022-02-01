@@ -1,24 +1,24 @@
 name;;SchildiChat;
 Summary;;Element with classic look;soft fork with message bubbles, unified chat list, bigger room list items https://github.com/SchildiChat/schildichat-desktop#user-content-schildichat-webdesktop
-Android Google Play;;yes https://play.google.com/store/apps/details?id=de.spiritcroc.riotx;
-Android F-droid/apk;;yes https://f-droid.org/en/packages/de.spiritcroc.riotx/ https://schildi.chat/android/;
-Apple iOS;;no ;
-Desktop;;yes https://schildi.chat/desktop/;
-Web;;yes https://app.schildi.chat/;
+Android Google Play;yes;https://play.google.com/store/apps/details?id=de.spiritcroc.riotx;
+Android F-droid/apk;yes;https://f-droid.org/en/packages/de.spiritcroc.riotx/ https://schildi.chat/android/;
+Apple iOS;no;;
+Desktop;yes;https://schildi.chat/desktop/;
+Web;yes;https://app.schildi.chat/;
 Languages;yes;many https://weblate.bubu1.eu/projects/schildichat/schildichat-android/;
 Protocol;;Matrix;
 Protocol open;yes;https://spec.matrix.org/latest/;
-Client license;;Apache 2.0 https://github.com/SchildiChat/SchildiChat-android/blob/sc/LICENSE https://github.com/SchildiChat/schildichat-desktop/blob/sc/LICENSE;
-Group chat;;yes;
-Voice calls;;yes, WebRTC https://matrix.org/faq/#what-can-i-actually-do-with-this%3F;
-Video calls;;yes, WebRTC https://matrix.org/faq/#what-can-i-actually-do-with-this%3F;
-Group calls;;yes, via Jitsi https://matrix.org/faq/#what-can-i-actually-do-with-this%3F;
+Client license;yes;Apache 2.0 https://github.com/SchildiChat/SchildiChat-android/blob/sc/LICENSE https://github.com/SchildiChat/schildichat-desktop/blob/sc/LICENSE;
+Group chat;yes;;
+Voice calls;yes;WebRTC https://matrix.org/faq/#what-can-i-actually-do-with-this%3F;
+Video calls;yes;WebRTC https://matrix.org/faq/#what-can-i-actually-do-with-this%3F;
+Group calls;yes;via Jitsi https://matrix.org/faq/#what-can-i-actually-do-with-this%3F;
 Read public content without registering;;guest participant, room peek preview, static HTML view https://spec.matrix.org/latest/client-server-api/#guest-access https://view.matrix.org/;
 Multiple devices;yes;
 Multiple accounts;no;
-End-to-end encryption;;yes https://matrix.org/faq/#which-matrix-clients-support-e2e;
-Usage without phone number;;yes;
-First release;;2019-07-11 https://github.com/SchildiChat/SchildiChat-android/releases/tag/v0.1.0;
+End-to-end encryption;yes;https://matrix.org/faq/#which-matrix-clients-support-e2e;
+Usage without phone number;yes;;
+First release;yes;2019-07-11 https://github.com/SchildiChat/SchildiChat-android/releases/tag/v0.1.0;
 Offline;partial;compose or read recent messages on Android/Desktop, no Web startup;Buffered messages on SchildiChat Android/Desktop, SchildiChat Web lacks offline startup via Web Workers
 Servers required;;Matrix homeserver e.g. Synapse, Dendride, Conduit, notifications push, Unified push, backround synchronization service;
 Serverless WAN mode;no;;

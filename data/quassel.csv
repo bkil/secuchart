@@ -1,12 +1,12 @@
 name;;Quassel;
 Summary;;Modern, cross-platform, distributed IRC client with local server backend;
-Android Google Play;;yes https://play.google.com/store/apps/details?id=com.iskrembilen.quasseldroid;
-Android F-droid/apk;;yes https://f-droid.org/en/packages/com.iskrembilen.quasseldroid/;
-Apple iOS;;yes https://apps.apple.com/us/app/iquassel-for-quassel-cores/id566844252;
-Desktop;;yes https://quassel-irc.org/downloads;
+Android Google Play;yes;https://play.google.com/store/apps/details?id=com.iskrembilen.quasseldroid;
+Android F-droid/apk;yes;https://f-droid.org/en/packages/com.iskrembilen.quasseldroid/;
+Apple iOS;yes;https://apps.apple.com/us/app/iquassel-for-quassel-cores/id566844252;
+Desktop;yes;https://quassel-irc.org/downloads;
 Protocol;;IRC;
 Protocol open;yes;https://www.ietf.org/rfc/rfc1459.txt;
-Client license;;GPLv3 https://github.com/quassel/quassel/blob/master/gpl-3.0.txt https://git.kuschku.de/justJanne/QuasselDroid-ng/-/blob/main/LICENSE.md;
+Client license;yes;GPLv3 https://github.com/quassel/quassel/blob/master/gpl-3.0.txt https://git.kuschku.de/justJanne/QuasselDroid-ng/-/blob/main/LICENSE.md;
 Group chat;yes;
 Voice calls;no;
 Video calls;no;
@@ -21,6 +21,6 @@ Remote message correction;no;
 Message expiration;no;
 Usage without phone number;yes;
 Register without app;yes;
-First release;;2008-08-27 https://en.wikipedia.org/wiki/Quassel_IRC;
+First release;yes;2008-08-27 https://en.wikipedia.org/wiki/Quassel_IRC;
 Account deactivation after device compromise;yes;
 Servers required;;IRC server

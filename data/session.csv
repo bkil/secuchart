@@ -8,8 +8,8 @@ Web;no;;
 Languages;yes;many https://github.com/oxen-io/session-android/tree/master/app/src/main/res;
 Protocol;;Session protocol, fork of Signal protocol https://getsession.org/blog/session-protocol-technical-information;
 Protocol open;partial;prose, source;out of date in prose https://getsession.org/blog/session-protocol-technical-information https://www.getsession.org/blog/session-protocol-explained need to reverse engineer from source
-Server license;;GPL v3 https://github.com/oxen-io/lokinet/blob/dev/LICENSE.txt MIT https://github.com/oxen-io/oxen-storage-server/blob/dev/LICENSE;
-Client license;;GPL v3 https://github.com/oxen-io/session-desktop/blob/clearnet/LICENSE;
+Server license;yes;GPL v3 https://github.com/oxen-io/lokinet/blob/dev/LICENSE.txt MIT https://github.com/oxen-io/oxen-storage-server/blob/dev/LICENSE;
+Client license;yes;GPL v3 https://github.com/oxen-io/session-desktop/blob/clearnet/LICENSE;
 Group chat;yes;closed groups (private) e2ee, open groups (public) not e2ee https://getsession.org/faq;
 Voice calls;yes;beta test, p2p, ip exposed https://getsession.org/blog/calls-on-session-how-to-opt-in;
 Video calls;yes;beta test, p2p, ip exposed https://getsession.org/blog/calls-on-session-how-to-opt-in;
@@ -34,7 +34,7 @@ Register without app;no;;
 First release;partial;2020-02-06 https://github.com/oxen-io/session-desktop/releases?page=6;
 Transparent financing;no;complex financial structure with no clear answers;network is financed by oxen crypto, financial disclosures haven't been published since 2019 https://optf.ngo/annual-reports/
 No-cost tier;yes;;
-Payment choices;no;;
+Payment choices;;none;
 Company jurisdiction;;Australia;complicated 5 eyes jurisdiction with many anti-privacy and anti-encryption laws	https://optf.ngo/legals/
 Infrastructure jurisdiction;;Australia https://optf.ngo/legals/;
 Infrastructure provider;;Hetzner and OVH, distributed Lokinet;session owned servers are primarily hetzner and ovh, lokinet servers are distributed worldwide in multiple countries and with various isps

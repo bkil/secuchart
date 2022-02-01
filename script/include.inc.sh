@@ -58,25 +58,52 @@ check_item_syntax() {
 
   BADBODY="^[^;]+; *;(yes|no|partial)\>"
   if
-    head -n 1 "$FILE" |
+    tail -n +2 "$FILE" |
     grep -qE "$BADBODY"
   then
     echo "error: the following lines are bad in $FILE according to $BADBODY" >&2
 
-    head -n 1 "$FILE" |
+    tail -n +2 "$FILE" |
     grep -E "$BADBODY" "$FILE" >&2
 
     return 1
   fi
 
-  MULTIPLE="$(\
-  cut -d ";" -f 1 "$FILE" |
-  sort |
-  uniq -c |
-  grep -v "^ *1\>" |
-  sed -r "s~^ *[0-9]+ ~~")"
-  if [ -n "$MULTIPLE" ]; then
-    printf "error: the following keys occur multiple times:\n%s\n" "$MULTIPLE" >&2
+  LINES="$(\
+    cut -d ";" -f 1 "$FILE" |
+    sort |
+    uniq -c |
+    grep -v "^ *1\>" |
+    sed -r "s~^ *[0-9]+ ~~")"
+  if [ -n "$LINES" ]; then
+    printf "error: the following keys occur multiple times:\n%s\n" "$LINES" >&2
+    return 1
+  fi
+
+  TMP="`tempfile -s "secu-" -p ".secuchart.tmp.csv"`"
+  get_property_keys > "$TMP"
+  LINES="`grep -vFf "$TMP" "$FILE"`"
+  if [ -n "$LINES" ]; then
+    rm "$TMP"
+    printf "error: the following lines use unknown property keys:\n%s\n" "$LINES" >&2
+    return 1
+  fi
+  rm "$TMP"
+
+  LINES="`\
+    grep_colorless_property "$FILE" |
+    grep_color_optional -v |
+    grep "^[^;]*;[^;]"`"
+  if [ -n "$LINES" ]; then
+    printf "error: the following lines should not specify a status:\n%s\n" "$LINES" >&2
+    return 1
+  fi
+
+  LINES="`\
+    grep_colorless_property -v "$FILE" |
+    grep "^[^;]*;;"`"
+  if [ -n "$LINES" ]; then
+    printf "error: a status is expected in the following lines:\n%s\n" "$LINES" >&2
     return 1
   fi
 
@@ -100,4 +127,17 @@ extend_reorder() {
     grep -E "^$PROP;" "$OUT" || printf "%s;\n" "$PROP"
   done > "$TMP"
   mv "$TMP" "$OUT"
+}
+
+grep_color_optional() {
+  grep -E "^(Read public content without registering|Company operated network inaccessible from countries)(;|$)" "$@"
+}
+
+grep_colorless_property() {
+  grep -E "^(name|Summary|Payment choices|Company jurisdiction|Infrastructure jurisdiction|Infrastructure provider|Servers required|Servers optional|Protocol|Read public content without registering|Company operated network inaccessible from countries)(;|$)" "$@"
+}
+
+is_colorless_property() {
+  printf '%s' "$FINDKEY" |
+  grep_colorless_property > /dev/null
 }

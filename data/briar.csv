@@ -1,29 +1,29 @@
 name;;Briar;
 Summary;;Anonymous chat
-Android Google Play;;yes https://briarproject.org/download-briar/;
-Android F-droid/apk;;yes https://f-droid.org/en/packages/org.briarproject.briar.android/ https://briarproject.org/installing-briar-via-f-droid/;
+Android Google Play;yes;https://briarproject.org/download-briar/;
+Android F-droid/apk;yes;https://f-droid.org/en/packages/org.briarproject.briar.android/ https://briarproject.org/installing-briar-via-f-droid/;
 Desktop;partial;Linux;Not full featured https://code.briarproject.org/briar/briar-desktop/
 Languages;yes;many https://code.briarproject.org/briar/briar/-/tree/master/briar-android/src/main/res;
 Protocol;;Bramble;
 Protocol open;yes;https://code.briarproject.org/briar/briar/-/wikis/home#protocol;
-Client license;;varios https://code.briarproject.org/briar/briar/-/blob/master/LICENSE.txt https://code.briarproject.org/briar/briar-desktop/-/blob/main/LICENSE.md;
-Group chat;;yes;
+Client license;yes;various https://code.briarproject.org/briar/briar/-/blob/master/LICENSE.txt https://code.briarproject.org/briar/briar-desktop/-/blob/main/LICENSE.md;
+Group chat;yes;;
 Multiple devices;no;
 Multiple accounts;no;
-End-to-end encryption;;yes https://briarproject.org/how-it-works/;
-Contact list confidential;;yes https://briarproject.org/how-it-works/;
-Remote message removal;;no;
-Remote message correction;;no;
+End-to-end encryption;yes;https://briarproject.org/how-it-works/;
+Contact list confidential;yes;https://briarproject.org/how-it-works/;
+Remote message removal;no;;
+Remote message correction;no;;
 Message expiration;yes;Only setting of 7 days possible https://briarproject.org/news/2021-briar-1.3-released/;
-Usage without phone number;;yes;
-Register without app;;no;
-First release;;2018-05-09 https://en.wikipedia.org/wiki/Briar_(software);
-Active development;;yes;
+Usage without phone number;yes;;
+Register without app;no;;
+First release;yes;2018-05-09 https://en.wikipedia.org/wiki/Briar_(software);
+Active development;yes;;
 Account deactivation after device compromise;no;
 Account recovery after device compromise;no;
-Offline;;yes https://briarproject.org/how-it-works/;
+Offline;yes;https://briarproject.org/how-it-works/;
 Servers required;;Tor https://code.briarproject.org/briar/briar/-/wikis/A-Quick-Overview-of-the-Protocol-Stack;
-Serverless LAN mode;;yes https://briarproject.org/how-it-works/;
-Wireless mode;;Bluetooth https://code.briarproject.org/briar/briar/-/wikis/How-Briar-Connects-to-Contacts;
-Tor access of company operated network;;N/A;uses Tor connection to peers
+Serverless LAN mode;yes;https://briarproject.org/how-it-works/;
+Wireless mode;yes;Bluetooth https://code.briarproject.org/briar/briar/-/wikis/How-Briar-Connects-to-Contacts;
+Tor access of company operated network;yes;N/A;uses Tor connection to peers
 Third party clients;partial;no alternative client;

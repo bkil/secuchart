@@ -1,16 +1,16 @@
 name;;Elixxir xx;
 Android Google Play;yes;https://play.google.com/store/apps/details?id=io.xxlabs.messenger;
-Android F-droid/apk;;no;
+Android F-droid/apk;no;;
 Apple iOS;yes;https://apps.apple.com/rs/app/xx-messenger/id1593670957
 Desktop;no;https://xx.network/messenger/;
 Web;no;https://xx.network/messenger/;
 Languages;no;1 https://apps.apple.com/rs/app/xx-messenger/id1593670957
 Protocol;;blockchain and mixnet;xx blockchain coin based on Praxxis with xx cMix mixnet privacy layer
-Server license;;proprietary;
-Client license;;proprietary;
-Audits;;no;
+Server license;no;proprietary;
+Client license;no;proprietary;
+Audits;no;;
 First release;partial;2019-11-05 https://xx.network/archive/elixxir-releases-xx-messenger/;
-Transparent financing;;cryptocoin backed by VC https://xx.network/coin/ https://pitchbook.com/profiles/company/266442-76;
-No-cost tier;;no https://xx.network/coin/;
+Transparent financing;no;cryptocoin backed by VC https://xx.network/coin/ https://pitchbook.com/profiles/company/266442-76;
+No-cost tier;no;https://xx.network/coin/;
 Company jurisdiction;;USA and Cayman Islands offshore;xx cMix privacy layer in Los Angeles https://xx.network/faq/#elementor-tab-title-1722
 Third party clients;partial;no alternative client;
