@@ -45,10 +45,16 @@ gen_style() {
     while read IT; do
       NAME=`get_item_value "$IT" "name"`
       cat <<EOF
-#$IT:not(:target) ~ #any:checked ~ #_$IT:not(:checked) ~ table tr > *:nth-child($NUM),
-#$IT:not(:target) ~ #any:not(:checked) ~ #s_$IT:not(:checked) ~ table tr > *:nth-child($NUM),
-#$IT:not(:target) ~ #any:not(:checked) ~ #s_$IT:not(:checked) ~ #a_$IT,
-#$IT:not(:target) ~ #any:checked ~ #a_$IT,
+.P {
+  display: none;
+}
+.C:checked ~ .P {
+  display: initial;
+}
+
+#$IT:not(:target) ~ #proprietary:not(:checked) ~ .C:checked ~ #_$IT:not(:checked) ~ table tr > *:nth-child($NUM),
+#$IT:not(:target) ~ #proprietary:not(:checked) ~ #_$IT:not(:checked) ~ .C:checked ~ table tr > *:nth-child($NUM),
+#$IT:not(:target) ~ #_$IT:not(:checked) ~ #a_$IT,
 :target ~ #$IT:not(:target) ~ table tr > *:nth-child($NUM),
 #$IT:not(:target) ~ :target ~ table tr > *:nth-child($NUM),
 EOF
@@ -66,10 +72,9 @@ EOF
   }
 
   cat <<EOF
-#any:not(:checked) ~ .C,
-#any:checked ~ .P,
+.C:checked ~ .C:checked ~ .P,
+#proprietary:checked ~ .C,
 :target ~ .C,
-:target ~ .S,
 #all
 {
   display: none;
@@ -96,14 +101,15 @@ gen_filters() {
   cat <<EOF
 <a href="#" id=all>Show all messengers</a>
 <br>
-<span class=S>Single messenger:</span>
-<label for=any class=S>any&nbsp;</label><input type=radio name=S checked accesskey=a id=any class=S>
+<label for=proprietary class=C>non-proprietary&nbsp;</label><input type=checkbox id=proprietary class=C>
+<br>
+<span class=C>Compare messengers:</span>
 EOF
 
   get_items "$LIMITITEMS" |
   while read IT; do
     NAME=`get_prop_value "$(get_item_prop "$IT" "name")"`
-    printf "<label for=s_%s class=S>%s&nbsp;</label><input type=radio name=S id=s_%s class=S>\n" "$IT" "$NAME" "$IT"
+    printf "<label for=_%s class=C>%s&nbsp;</label><input type=checkbox id=_%s class=C>\n" "$IT" "$NAME" "$IT"
   done
 
   cat <<EOF
@@ -112,23 +118,8 @@ EOF
 
   get_items "$LIMITITEMS" |
   while read IT; do
-    printf "<a href=#%s id=a_%s>Permalink #%s</a>\n" "$IT" "$IT" "$IT"
+    printf "<a href=#%s class=P id=a_%s>Permalink #%s</a>\n" "$IT" "$IT" "$IT"
   done
-
-  cat <<EOF
-<br class=C>
-<span class=C>Compare messengers:</span>
-EOF
-
-  get_items "$LIMITITEMS" |
-  while read IT; do
-    NAME=`get_prop_value "$(get_item_prop "$IT" "name")"`
-    printf "<label for=_%s class=C>%s&nbsp;</label><input type=checkbox checked id=_%s class=C>\n" "$IT" "$NAME" "$IT"
-  done
-
-  cat <<EOF
-<label for=proprietary class=C>non-proprietary&nbsp;</label><input type=checkbox id=proprietary class=C>
-EOF
 }
 
 gen_table() {
