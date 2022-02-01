@@ -1,9 +1,9 @@
 name;;Matrix Synapse & Element;
 Summary;;Protocol that bridges all
-Android Google Play;;yes https://matrix.org/clients/;
+Android Google Play;;yes https://matrix.org/docs/projects/client/element-android;
 Android F-droid/apk;;yes https://f-droid.org/en/packages/im.vector.app/;
-Apple iOS;;yes https://matrix.org/clients/;
-Desktop;;yes https://matrix.org/clients/;
+Apple iOS;;yes https://matrix.org/docs/projects/client/element-ios;
+Desktop;;yes https://matrix.org/docs/projects/client/element;
 Web;;yes https://matrix.org/clients/;
 Languages;yes;many https://github.com/vector-im/element-web#user-content-translations https://github.com/vector-im/element-web/tree/master/src/i18n/strings;
 Protocol;;Matrix;
@@ -15,8 +15,18 @@ Voice calls;;yes, WebRTC https://matrix.org/faq/#what-can-i-actually-do-with-thi
 Video calls;;yes, WebRTC https://matrix.org/faq/#what-can-i-actually-do-with-this%3F;
 Group calls;;yes, via Jitsi https://matrix.org/faq/#what-can-i-actually-do-with-this%3F;
 Read public content without registering;;guest participant, room peek preview, static HTML view https://spec.matrix.org/latest/client-server-api/#guest-access https://view.matrix.org/;
+Multiple devices;;yes;
+Multiple accounts;;Web tabs, Desktop profiles
 End-to-end encryption;;yes https://matrix.org/faq/#which-matrix-clients-support-e2e;
+Metadata protection;;no;
+Perfect forward secrecy;;no;
+Remote message removal;;by redaction events https://matrix.org/faq/#what-are-redactions%3F;
+Remote message correction;;yes;
+Message expiration;;no;
 Usage without phone number;;yes;
+Register without app;;yes;
+Active development;;yes https://github.com/vector-im;
+Multi-party development;;yes https://github.com/vector-im/element-web/pulse/monthly https://github.com/vector-im/element-android/pulse/monthly https://github.com/vector-im/element-ios/pulse/monthly;
 Offline;partial;compose or read recent Desktop messages, no Web startup;Buffered messages on Element Desktop, Element Web lacks offline startup via Web Workers
 Servers required;;Synapse homeserver, notifications push;
 Servers optional;;DNS, Element Web app, identity, integrations, ICE, Jitsi https://gitlab.com/libremonde-org/papers/research/privacy-matrix.org/-/blob/master/part1/README.md;
