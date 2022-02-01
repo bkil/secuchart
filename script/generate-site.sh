@@ -41,6 +41,8 @@ gen_style() {
   get_items "$LIMITITEMS" |
   {
     PROPR=""
+    MATRIX=""
+    XMPP=""
     NUM=2
     while read IT; do
       NAME=`get_item_value "$IT" "name"`
@@ -48,12 +50,13 @@ gen_style() {
 .P {
   display: none;
 }
+
 .C:checked ~ .P {
   display: initial;
 }
 
-#$IT:not(:target) ~ #proprietary:not(:checked) ~ .C:checked ~ #_$IT:not(:checked) ~ table tr > *:nth-child($NUM),
-#$IT:not(:target) ~ #proprietary:not(:checked) ~ #_$IT:not(:checked) ~ .C:checked ~ table tr > *:nth-child($NUM),
+#$IT:not(:target) ~ #any:checked ~ .C:checked ~ #_$IT:not(:checked) ~ table tr > *:nth-child($NUM),
+#$IT:not(:target) ~ #any:checked ~ #_$IT:not(:checked) ~ .C:checked ~ table tr > *:nth-child($NUM),
 #$IT:not(:target) ~ #_$IT:not(:checked) ~ #a_$IT,
 :target ~ #$IT:not(:target) ~ table tr > *:nth-child($NUM),
 #$IT:not(:target) ~ :target ~ table tr > *:nth-child($NUM),
@@ -62,6 +65,9 @@ EOF
       SERVERLIC=`get_item_value "$IT" "Server license"`
       CLIENTLIC=`get_item_value "$IT" "Client license"`
       printf '%s' "$SERVERLIC $CLIENTLIC" | grep -q "proprietary" && PROPR="$PROPR $NUM"
+      PROTOCOL="`get_item_value "$IT" "Protocol"`"
+      printf '%s' "$PROTOCOL" | grep -qi "\<matrix\>" || MATRIX="$MATRIX $NUM"
+      printf '%s' "$PROTOCOL" | grep -qi "\<xmpp\>" || XMPP="$XMPP $NUM"
 
       NUM=`expr $NUM + 1`
     done
@@ -69,12 +75,19 @@ EOF
     for NUM in $PROPR; do
       printf "#proprietary:checked ~ table tr > *:nth-child(%d),\n" "$NUM"
     done
+    for NUM in $MATRIX; do
+      printf "#t_matrix:checked ~ table tr > *:nth-child(%d),\n" "$NUM"
+    done
+    for NUM in $XMPP; do
+      printf "#t_xmpp:checked ~ table tr > *:nth-child(%d),\n" "$NUM"
+    done
   }
 
   cat <<EOF
 .C:checked ~ .C:checked ~ .P,
-#proprietary:checked ~ .C,
+.T:checked ~ .C,
 :target ~ .C,
+:target ~ .F,
 #all
 {
   display: none;
@@ -101,7 +114,10 @@ gen_filters() {
   cat <<EOF
 <a href="#" id=all>Show all messengers</a>
 <br>
-<label for=proprietary class=C>non-proprietary&nbsp;</label><input type=checkbox id=proprietary class=C>
+<label for=any class=F>any&nbsp;</label><input type=radio id=any name=S checked class="F">
+<label for=proprietary class=F>non-proprietary&nbsp;</label><input type=radio id=proprietary name=S class="F T">
+<label for=t_matrix class=F>matrix&nbsp;</label><input type=radio id=t_matrix name=S class="F T">
+<label for=t_xmpp class=F>xmpp&nbsp;</label><input type=radio id=t_xmpp name=S class="F T">
 <br>
 <span class=C>Compare messengers:</span>
 EOF
