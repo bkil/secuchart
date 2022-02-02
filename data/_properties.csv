@@ -34,6 +34,7 @@ Remote message removal;Also called redaction or deletion
 Remote message correction;Also called editing
 Message expiration;Also called retention time or disappearing messages
 Security team;yes=regularly scanning for vulnerabilities proactively, found bugs inspected for security implications, partial=reported vulnerabilities promptly fixed and released
+Public issue tracker;Whether outstanding bugs can be viewed by the public. partial=approximated via forum
 Audits;
 Usage without phone number;
 Register without app;

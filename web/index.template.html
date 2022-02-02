@@ -19,6 +19,14 @@ th {
   background-color: #f0f0f0;
 }
 
+table > tbody > tr:not(:first-child) > th > details {
+  font-weight: normal;
+}
+
+table > tbody > tr:not(:first-child) > th > details > summary {
+  font-weight: bold;
+}
+
 table {
   overflow-x: auto;
   border-spacing: 0px;
@@ -183,6 +191,62 @@ label {
 #dark:not(:checked) ~ #contrast:checked ~ table td.p:before {
   content: "~ ";
 }
+
+
+#abbr:checked ~ table td,
+#abbr:checked ~ table tr:first-child th
+{
+  max-width: 1em;
+  overflow: hidden;
+}
+
+#abbr:checked ~ table th details
+{
+  min-width: initial;
+  max-width: 10em;
+}
+
+#abbr:checked ~ table tr:not(:first-child) th,
+#abbr:checked ~ table > tbody > tr:not(:first-child) > th > details > summary
+{
+  font-weight: normal;
+}
+
+#abbr:checked ~ table td {
+  white-space: nowrap;
+  visibility: hidden;
+  vertical-align: baseline;
+}
+
+#abbr:checked ~ table tr:not(:first-child) th {
+  vertical-align: baseline;
+}
+
+#abbr:checked ~ table tr td:before {
+  visibility: initial;
+  padding-right: 1em;
+}
+
+#abbr:checked ~ table tr:nth-child(odd) td:before {
+  content: ' ';
+  background-color: #f8f8f8;
+}
+
+#abbr:checked ~ table tr td.y:before {
+  content: '+ ';
+  background-color: lime;
+}
+
+#abbr:checked ~ table tr td.n:before {
+  content: '- ';
+  background-color: orange;
+}
+
+#abbr:checked ~ table tr td.p:before {
+  content: '~ ';
+  background-color: yellow;
+}
+
 
 @media (prefers-color-scheme: dark) {
   html {
@@ -414,7 +478,7 @@ Ideas for the interface design:
 <ul>
   <li>`(x)`bright mode, `(_)`dark mode, `(_)`high contrast
   <li><em>(Perhaps some tabs at the top to switch to other comparison tables, e.g. fediverse, browsers)</em>
-  <li>Use case: `(x)`FOSS, `(_)`tinfoil, `(_)`layperson, `[_]`all properties,`[_]`expand explanations, `[_]`pro & con
+  <li>Use case: `(x)`FOSS, `(_)`tinfoil, `(_)`layperson, `[_]`all properties, `[_]`expand explanations, `[_]`abbreviated, `[_]`pro & con
   <li>Filter: `(x)`any, `(_)`P2P, `(_)`federated, `(_)`centralized, `(_)`Matrix, `(_)`XMPP, `(_)`non-proprietary
   <li>Compare messengers: `[_]` ... <em>(properties = rows, items = columns)</em>
   <li>Compare properties: `[_]` ... <em>(properties = columns, items = rows)</em>
@@ -500,6 +564,7 @@ See the following for sources of inspiration (copying is not allowed except the 
  <li><a target=_blank href='https://eylenburg.github.io/im_comparison.htm'>https://eylenburg.github.io/im_comparison.htm</a>
  <li><a target=_blank href='https://community.signalusers.org/t/wiki-in-depth-feature-comparison-between-private-messaging-apps/12238'>https://community.signalusers.org/t/wiki-in-depth-feature-comparison-between-private-messaging-apps/12238</a>
  <li><a target=_blank href='https://divestos.org/index.php?page=messengers'>https://divestos.org/index.php?page=messengers</a>
+ <li><a target=_blank href='https://privacytests.org/'>https://privacytests.org/</a>
 
 </ul>
 </details>

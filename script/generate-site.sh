@@ -113,7 +113,11 @@ gen_filters() {
   cat <<EOF
 <a href="#" id=all>Show all messengers</a>
 <br>
-<label for=any class=F>any&nbsp;</label><input type=radio id=any name=S checked class="F">
+Use:
+<label for=abbr>abbreviated&nbsp;</label><input type=checkbox id=abbr>
+<br>
+Items:
+<label for=any class=F>any&nbsp;</label><input type=radio id=any name=S checked class=F>
 <label for=proprietary class=F>non-proprietary&nbsp;</label><input type=radio id=proprietary name=S class="F T">
 <label for=t_matrix class=F>matrix&nbsp;</label><input type=radio id=t_matrix name=S class="F T">
 <label for=t_xmpp class=F>xmpp&nbsp;</label><input type=radio id=t_xmpp name=S class="F T">
