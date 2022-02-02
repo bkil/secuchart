@@ -71,7 +71,7 @@ td a {
   background-color: white;
 }
 
-td > details {
+table details {
   min-width: 10em;
   max-width: 20em;
 }
@@ -194,25 +194,45 @@ label {
 
 
 #abbr:checked ~ table td,
-#abbr:checked ~ table tr:first-child th
+#abbr:checked ~ table tr:first-child th:not(:first-child)
 {
-  max-width: 1em;
   overflow: hidden;
+}
+
+#abbr:checked ~ table tr:first-child th:not(:first-child) {
+  max-width: 3em;
+  height: 3em;
+  white-space: nowrap;
+  transform: rotate(-90deg);
+  text-align: left;
+  border: initial;
+  font-size: small;
+}
+
+#abbr:checked ~ table td,
+#abbr:checked ~ table th
+{
+  padding: initial;
 }
 
 #abbr:checked ~ table th details
 {
   min-width: initial;
-  max-width: 10em;
 }
 
-#abbr:checked ~ table tr:not(:first-child) th,
+#abbr:checked ~ table td details
+{
+  display: none;
+}
+
+#abbr:checked ~ table th,
 #abbr:checked ~ table > tbody > tr:not(:first-child) > th > details > summary
 {
   font-weight: normal;
 }
 
 #abbr:checked ~ table td {
+  max-width: 2em;
   white-space: nowrap;
   visibility: hidden;
   vertical-align: baseline;
@@ -224,7 +244,7 @@ label {
 
 #abbr:checked ~ table tr td:before {
   visibility: initial;
-  padding-right: 1em;
+  padding-right: 3em;
 }
 
 #abbr:checked ~ table tr:nth-child(odd) td:before {
