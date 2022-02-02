@@ -23,11 +23,11 @@ Usage without phone number;no;
 Register without app;no;;as a workaround, through the unofficial mautrix-signal matrix bridge with a custom HS
 First release;yes;2014-07-29 https://en.wikipedia.org/wiki/Signal_(software);
 Active development;yes;;
-Company jurisdiction;;USA https://signal.org/legal/
+Vendor jurisdiction;;USA https://signal.org/legal/
 Infrastructure jurisdiction;;USA
 Infrastructure provider;;Amazon
 User can extend network with node;no;;
-Identity not controlled by company;no;;
+Identity not controlled by vendor;no;;
 Account deactivation after device compromise;partial;Only for secondary devices;
 Offline;partial;Compose or read stored messages;
 Servers optional;;FCM https://support.signal.org/hc/en-us/articles/360007318711-Troubleshooting-Notifications https://reddit.com/r/signal/comments/ium7he/no_notifications_on_degoogled_phone_tried/ https://reddit.com/r/degoogle/comments/m9cxax/what_are_your_thoughts_on_this_degoogled_fork_of/;TODO: what else?

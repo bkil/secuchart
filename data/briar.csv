@@ -25,5 +25,5 @@ Offline;yes;https://briarproject.org/how-it-works/;
 Servers required;;Tor https://code.briarproject.org/briar/briar/-/wikis/A-Quick-Overview-of-the-Protocol-Stack;
 Serverless LAN mode;yes;https://briarproject.org/how-it-works/;
 Wireless mode;yes;Bluetooth https://code.briarproject.org/briar/briar/-/wikis/How-Briar-Connects-to-Contacts;
-Tor access of company operated network;yes;N/A;uses Tor connection to peers
+Tor access of vendor operated network;yes;N/A;uses Tor connection to peers
 Third party clients;partial;no alternative client;

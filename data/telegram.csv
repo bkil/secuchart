@@ -23,7 +23,7 @@ Register without app;no;
 First release;yes;2013-08-14 https://en.wikipedia.org/wiki/Telegram_(software);
 Active development;yes;
 User can extend network with node;no;
-Identity not controlled by company;no;
+Identity not controlled by vendor;no;
 Account deactivation after device compromise;partial; Only for secondary devices;
 Offline;partial;Compose or read stored messages;
 Third party clients;yes;

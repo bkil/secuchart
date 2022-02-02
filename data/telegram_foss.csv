@@ -24,6 +24,6 @@ Register without app;no;
 First release;partial;2017-04-18? https://github.com/Telegram-FOSS-Team/Telegram-FOSS/releases/tag/v3.18.0;
 Active development;yes;
 User can extend network with node;no;;
-Identity not controlled by company;no;;
+Identity not controlled by vendor;no;;
 Account deactivation after device compromise;partial; Only for secondary devices;
 Offline;partial;Compose or read stored messages;

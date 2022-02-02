@@ -34,12 +34,12 @@ First release;yes;2012-12 https://en.wikipedia.org/wiki/Threema;
 Transparent financing;yes;individuals: one-time payment;subscriptions for organizations https://threema.ch/en/work and educational institutions https://threema.ch/en/education
 No-cost tier;no;;
 Payment choices;;Wire transfer, MasterCard, Visa, PayPal, Bitcoin https://shop.threema.ch/terms;
-Company jurisdiction;;Switzerland;
+Vendor jurisdiction;;Switzerland;
 Infrastructure jurisdiction;;Switzerland;
 Infrastructure provider;;a colocation data center https://work.threema.ch/docs/threema_privacy-security_en.pdf;
 Isolated self-hosting;partial;https://threema.ch/en/onprem;Directory and push relay are not self-hostable https://threema.ch/press-files/cryptography_whitepaper.pdf
 User can extend network with node;no;;
-Identity not controlled by company;no;;
+Identity not controlled by vendor;no;;
 Account deactivation after device compromise;yes;https://threema.ch/en/faq/revoke;
 Account recovery after device compromise;no;;
 Offline;yes;;TODO: verify and add reference, because it requires many servers to run

@@ -38,12 +38,12 @@ First release;yes;2017 https://delta.chat/en/2017-05-31-blog-created https://del
 Transparent financing;yes;grants, funds and Librepay donations https://delta.chat/en/help#how-are-delta-chat-developments-funded;
 No-cost tier;yes;;
 Payment choices;;N/A;
-Company jurisdiction;;Germany https://delta.chat/en/gdpr;
+Vendor jurisdiction;;Germany https://delta.chat/en/gdpr;
 Infrastructure jurisdiction;;N/A;depends on provider
 Infrastructure provider;;N/A;depends on provider
 Isolated self-hosting;yes;SMTP and IMAP https://delta.chat/en/help#what-are-the-advantages-of-delta-chat-compared-to-other-messengers;
 User can extend network with node;yes;SMTP and IMAP https://delta.chat/en/help#what-are-the-advantages-of-delta-chat-compared-to-other-messengers;
-Identity not controlled by company;yes;SMTP and IMAP https://delta.chat/en/help#what-are-the-advantages-of-delta-chat-compared-to-other-messengers;
+Identity not controlled by vendor;yes;SMTP and IMAP https://delta.chat/en/help#what-are-the-advantages-of-delta-chat-compared-to-other-messengers;
 Account deactivation after device compromise;partial;;probably manually by a revocation certificate and with the help of the mailbox provider
 Account recovery after device compromise;partial;;probably manually by revocation, mailbox provider help, generating new keys and verifying all contacts again
 Spam protection;yes;standard email filters, hides non-contact https://delta.chat/en/help#what-are-the-advantages-of-delta-chat-compared-to-other-messengers;
@@ -55,7 +55,7 @@ Serverless LAN mode;no;;might be feasible in the future
 Network store and forward;yes;https://delta.chat/en/help#how-does-delta-chat-protect-my-metadata;
 Wireless mode;no;;
 IP shielded from peers;partial;usually not, depends on provider https://security.stackexchange.com/questions/237525/ip-address-leaked-in-email-header;
-Tor access of company operated network;yes;N/A;depends on provider
-IPv6 access of company operated network;yes;N/A;depends on provider
-Company operated network inaccessible from countries;;N/A;depends on provider
+Tor access of vendor operated network;yes;N/A;depends on provider
+IPv6 access of vendor operated network;yes;N/A;depends on provider
+Vendor operated network inaccessible from countries;;N/A;depends on provider
 Third party clients;yes;SMTP and IMAP;interoperates with any email client, E2EE uses AutoCrypt https://delta.chat/en/help#which-standards-are-used-for-end-to-end-encryption

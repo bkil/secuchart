@@ -31,12 +31,12 @@ First release;yes;2015-05-19 https://github.com/onionshare/onionshare/releases/t
 Transparent financing;no;;Couldn't find any donation links, previous sponsorship or how supportive their community is https://micahflee.com/
 No-cost tier;yes;;
 Payment choices;;N/A;
-Company jurisdiction;;US;
+Vendor jurisdiction;;US;
 Infrastructure jurisdiction;;global;Tor onion routed network
 Infrastructure provider;;Tor;onion routed network
 Isolated self-hosting;no;Requires Tor;
 User can extend network with node;partial;All networks isolated;A user can either start a separate one or join an existing one
-Identity not controlled by company;yes;Generated when starting server;
+Identity not controlled by vendor;yes;Generated when starting server;
 Account deactivation after device compromise;no;Private key distributed;
 Account recovery after device compromise;no;Private key distributed;
 Spam protection;no;Groups are invite-only;The server could implement filtering in the future
@@ -46,7 +46,7 @@ Serverless LAN mode;no;Requires Tor;
 Network store and forward;no;No chat log https://docs.onionshare.org/2.5/en/features.html#chat-anonymously;
 Wireless mode;no;https://docs.onionshare.org/2.5/en/features.html#chat-anonymously;
 IP shielded from peers;yes;via Tor;
-Tor access of company operated network;yes;N/A;uses Tor connection to peers
-IPv6 access of company operated network;yes;;
-Company operated network inaccessible from countries;;some countries attempt to censor Tor;bridges are available
+Tor access of vendor operated network;yes;N/A;uses Tor connection to peers
+IPv6 access of vendor operated network;yes;;
+Vendor operated network inaccessible from countries;;some countries attempt to censor Tor;bridges are available
 Third party clients;partial;no alternative client;
