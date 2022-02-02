@@ -8,8 +8,8 @@ Web;yes;only client via Tor Browser;JavaScript required
 Languages;yes;many https://hosted.weblate.org/projects/onionshare/#languages;
 Protocol;;unnamed;Built on top of Tor
 Protocol open;partial;not documented;Need to reverse engineer from source code
-Server license;yes;GNU GPL v3 https://github.com/onionshare/onionshare/blob/develop/LICENSE;
-Client license;yes;GNU GPL v3 https://github.com/onionshare/onionshare/blob/develop/LICENSE;
+Server license;yes;GPLv3 https://github.com/onionshare/onionshare/blob/develop/LICENSE;
+Client license;yes;GPLv3 https://github.com/onionshare/onionshare/blob/develop/LICENSE;
 Group chat;yes;https://docs.onionshare.org/2.5/en/features.html#chat-anonymously;
 Voice calls;no;https://docs.onionshare.org/2.5/en/features.html#chat-anonymously;
 Video calls;no;https://docs.onionshare.org/2.5/en/features.html#chat-anonymously;
