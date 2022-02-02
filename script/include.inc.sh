@@ -22,6 +22,12 @@ process_slugs() {
   echo "ok" >&2
 }
 
+get_temp() {
+  TMPNAME="`tempfile -p "secu-" -s ".secuchart.tmp" 2>/dev/null`"
+  [ -n "$TMPNAME" ] || TMPNAME="secu-`date +%s.%N`.$$.`hostname 2>/dev/null`.secuchart.tmp"
+  echo "$TMPNAME"
+}
+
 check_item_syntax() {
   FILE="$1"
 
@@ -80,7 +86,7 @@ check_item_syntax() {
     return 1
   fi
 
-  TMP="`tempfile -s "secu-" -p ".secuchart.tmp.csv"`"
+  TMP="`get_temp`"
   get_property_keys > "$TMP"
   LINES="`grep -vFf "$TMP" "$FILE"`"
   if [ -n "$LINES" ]; then
