@@ -16,6 +16,7 @@ Group calls;yes;via Jitsi https://matrix.org/faq/#what-can-i-actually-do-with-th
 Read public content without registering;;guest participant, room peek preview, static HTML view https://spec.matrix.org/latest/client-server-api/#guest-access https://view.matrix.org/;
 Multiple devices;yes;
 Multiple accounts;no;
+Application locking;yes;Android https://github.com/SchildiChat/SchildiChat-android/blob/sc/vector/src/main/res/xml/vector_settings_pin.xml#L17
 End-to-end encryption;yes;https://matrix.org/faq/#which-matrix-clients-support-e2e;
 Message expiration;no;;
 Usage without phone number;yes;;

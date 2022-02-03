@@ -21,6 +21,7 @@ Power saving;Ensure that device wakes up as few times as possible, filters and b
 Bandwidth frugal;Conservation by lazy loading, previews, adaptive detail, incremental sync, fewer round trips, tokenization, batching transfers to improve compression, tweaked key schedule, multicasting hubs
 Multiple devices;If the same account can be used at the same time from multiple devices, syncing contacts, messages and notifications.
 Multiple accounts;If you can stay logged in with multiple accounts on the same device and application without external isolation techniques
+Application locking;Unlock the account or certain chats with a PIN code, passphrase, fingerprints or facial likeness
 ;Security
 End-to-end encryption;
 E2EE keys shielded from operator;Regardless of this, certain OS vendors might also have access to your keys

@@ -17,6 +17,7 @@ Group calls;yes;via Jitsi https://matrix.org/faq/#what-can-i-actually-do-with-th
 Read public content without registering;yes;guest participant, room peek preview, static HTML view https://spec.matrix.org/latest/client-server-api/#guest-access https://view.matrix.org/;
 Multiple devices;yes;;
 Multiple accounts;yes;Web tabs, Desktop profiles
+Application locking;yes;Android https://github.com/vector-im/element-android/blob/fe9bd38115e080166baaa0c6ebb7d07d53c707a6/vector/src/main/res/xml/vector_settings_pin.xml#L17 iOS https://github.com/vector-im/element-ios/blob/f7a816394741861cb34e5bc44f73350016ca0b29/Riot/Modules/SetPinCode/PinCodePreferences.swift#L33
 End-to-end encryption;yes;https://matrix.org/faq/#which-matrix-clients-support-e2e;
 Metadata protection;no;;
 Perfect forward secrecy;no;;
