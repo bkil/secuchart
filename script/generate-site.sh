@@ -46,14 +46,6 @@ gen_style() {
     while read IT; do
       NAME=`get_item_value "$IT" "name"`
       cat <<EOF
-.P {
-  display: none;
-}
-
-.C:checked ~ .P {
-  display: initial;
-}
-
 #$IT:not(:target) ~ #any:checked ~ .C:checked ~ #_$IT:not(:checked) ~ table tr > *:nth-child($NUM),
 #$IT:not(:target) ~ #any:checked ~ #_$IT:not(:checked) ~ .C:checked ~ table tr > *:nth-child($NUM),
 #$IT:not(:target) ~ #_$IT:not(:checked) ~ #a_$IT,
@@ -83,19 +75,9 @@ EOF
   }
 
   cat <<EOF
-.C:checked ~ .C:checked ~ .P,
-.T:checked ~ .C,
-:target ~ .C,
-:target ~ .F,
-#all
+#DONTCARE
 {
   display: none;
-}
-
-:target ~ #all,
-:target ~ #all ~ .P
-{
-  display: initial;
 }
 </style>
 EOF

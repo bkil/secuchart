@@ -203,7 +203,7 @@ label {
   max-width: 3em;
   height: 3em;
   white-space: nowrap;
-  transform: rotate(-90deg);
+  transform: rotate(-45deg);
   text-align: left;
   border: initial;
   font-size: small;
@@ -231,40 +231,73 @@ label {
   font-weight: normal;
 }
 
+#contrast:checked ~ #abbr:checked ~ table th,
+#contrast:checked ~ #abbr:checked ~ table > tbody > tr:not(:first-child) > th > details > summary
+{
+  font-weight: bold;
+}
+
 #abbr:checked ~ table td {
   max-width: 2em;
   white-space: nowrap;
-  visibility: hidden;
-  vertical-align: baseline;
+  font-size: 0;
+  vertical-align: top;
 }
 
 #abbr:checked ~ table tr:not(:first-child) th {
-  vertical-align: baseline;
+  vertical-align: top;
 }
 
 #abbr:checked ~ table tr td:before {
-  visibility: initial;
+  font-size: initial;
   padding-right: 3em;
+  vertical-align: top;
 }
 
 #abbr:checked ~ table tr:nth-child(odd) td:before {
   content: ' ';
-  background-color: #f8f8f8;
+}
+
+#abbr:checked ~ table tr td:not(:empty):before {
+  content: '. ';
 }
 
 #abbr:checked ~ table tr td.y:before {
   content: '+ ';
-  background-color: lime;
 }
 
 #abbr:checked ~ table tr td.n:before {
   content: '- ';
-  background-color: orange;
 }
 
 #abbr:checked ~ table tr td.p:before {
   content: '~ ';
-  background-color: yellow;
+}
+
+#abbr:checked ~ table td:not(:empty):hover {
+  display: block;
+  position: absolute;
+  padding-right: 1em;
+  padding-bottom: 1em;
+  max-width: 50vw;
+  white-space: initial;
+  font-size: initial;
+}
+
+#abbr:checked ~ table td:hover details {
+  display: initial;
+}
+
+#abbr:checked ~ table tr td:hover:before {
+  padding-right: 2em;
+}
+
+#abbr:checked ~ table td:not(:empty, .y, .n, .p):hover {
+  background-color: white;
+}
+
+#dark:checked ~ #abbr:checked ~ table td:not(:empty, .y, .n, .p):hover {
+  background-color: black;
 }
 
 
@@ -286,7 +319,7 @@ label {
     background-color: #333;
   }
 
-  tr {
+  tr:nth-child(odd) {
     background-color: #080808;
   }
 
@@ -312,6 +345,10 @@ label {
   td.p {
     background-color: #880;
     color: #fff;
+  }
+
+  #abbr:checked ~ table td:not(:empty, .y, .n, .p):hover {
+    background-color: black;
   }
 }
 
@@ -347,10 +384,40 @@ label {
   td.p:before {
     content: "~ ";
   }
+  #abbr:checked ~ table th,
+  #abbr:checked ~ table > tbody > tr:not(:first-child) > th > details > summary
+  {
+    font-weight: bold;
+  }
 }
 </style>
 
 ((style))
+
+<style>
+.P {
+  display: none;
+}
+
+.C:checked ~ .P {
+  display: initial;
+}
+
+.C:checked ~ .C:checked ~ .P,
+.T:checked ~ .C,
+:target ~ .C,
+:target ~ .F,
+#all
+{
+  display: none;
+}
+
+:target ~ #all,
+:target ~ #all ~ .P
+{
+  display: initial;
+}
+</style>
 
 </head>
 <body>
