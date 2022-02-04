@@ -14,6 +14,7 @@ Video calls;yes;WebRTC https://matrix.org/faq/#what-can-i-actually-do-with-this%
 Group calls;yes;via Jitsi https://matrix.org/faq/#what-can-i-actually-do-with-this%3F;
 Multiple devices;yes;
 Multiple accounts;yes;
+Application locking;yes;Android - custom 4 digit PIN;
 End-to-end encryption;yes;https://matrix.org/faq/#which-matrix-clients-support-e2e;
 Message expiration;no;;
 Usage without phone number;yes;;
