@@ -16,6 +16,7 @@ Message expiration;no;;
 Usage without phone number;yes;;
 Register without app;yes;;
 Active development;yes;;
+Identity not controlled by vendor;yes;;
 Account deactivation after device compromise;yes;;
 Account recovery after device compromise;yes;;
 Offline;partial;compose or read stored messages;

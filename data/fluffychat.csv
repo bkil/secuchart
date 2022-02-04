@@ -18,6 +18,7 @@ Application locking;yes;Android - custom 4 digit PIN;
 End-to-end encryption;yes;https://matrix.org/faq/#which-matrix-clients-support-e2e;
 Message expiration;no;;
 Usage without phone number;yes;;
+Identity not controlled by vendor;yes;;
 Account deactivation after device compromise;yes;;
 Account recovery after device compromise;yes;;
 Offline;partial;compose or read recent messages on Mobile/Desktop, no Web startup;Buffered messages on Mobile/Desktop, Fluffychat Web lacks offline startup via Web Workers
