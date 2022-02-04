@@ -16,7 +16,7 @@ Group calls;yes;
 Read public content without registering;no;
 Multiple devices;yes;
 Multiple accounts;yes;
-Application locking;yes;Android - custom 4 digit PIN + system fingerprint;
+Application locking;yes;Android - custom 4 digit PIN + system fingerprint https://telegram.org/blog/photo-editor-and-passcodes;
 End-to-end encryption;partial;Only for 1:1 secret chats (not default) on mobile https://telegram.org/faq#q-how-are-secret-chats-different;
 Message expiration;partial;Only for 1:1 secret chats (not default) on mobile and some media https://telegram.org/faq#q-how-do-self-destructing-messages-work;
 Usage without phone number;no;;
