@@ -10,7 +10,7 @@ Client license;yes;various https://code.briarproject.org/briar/briar/-/blob/mast
 Group chat;yes;;
 Multiple devices;no;
 Multiple accounts;no;
-Application locking;yes;Android's screen lock;
+Application locking;yes;Android's screen lock https://briarproject.org/news/2018-briar-1.1-released/;
 End-to-end encryption;yes;https://briarproject.org/how-it-works/;
 Contact list confidential;yes;https://briarproject.org/how-it-works/;
 Remote message removal;no;;
