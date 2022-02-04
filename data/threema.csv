@@ -17,6 +17,7 @@ Power saving;yes;Push relay & native push;Fetches encrypted content from its own
 Bandwidth frugal;partial;Push relay & native push, group chat via unicast;Fetches encrypted content from its own server in response to a push, optimized binary chat protocol https://threema.ch/press-files/2_documentation/cryptography_whitepaper.pdf
 Multiple devices;partial;as group chat https://threema.ch/en/faq/multidevice;
 Multiple accounts;no;;
+Application locking;yes;Android's System Screen Lock, PIN or Biometric https://threema.ch/en/faq/private_chats;
 End-to-end encryption;yes;https://threema.ch/en/faq/why_secure;
 E2EE keys shielded from operator;yes;https://threema.ch/en/faq/data;
 Deniability;yes;public-key authenticators https://threema.ch/press-files/2_documentation/cryptography_whitepaper.pdf;
