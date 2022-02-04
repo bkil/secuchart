@@ -7,12 +7,48 @@
   <meta name=viewport content='width=device-width, initial-scale=1.0'>
 
 <style>
+body {
+  margin: 0;
+}
+
+html, body, #page {
+  height: 100%;
+}
+
+#page {
+  overflow-x: scroll;
+}
+
+#page::-webkit-scrollbar {
+  width: 0.5em;
+  height: 0.5em;
+  background-color: #888;
+}
+
+#page::-webkit-scrollbar-thumb {
+  background-color: #111;
+}
+
+#page::-webkit-scrollbar-corner {
+  background-color: #888;
+}
+
+#scroll {
+  width: 90vw;
+}
+table {
+  border-spacing: 0px;
+  position: relative;
+  top: 0;
+}
+
 td, th {
   border-bottom-style: solid;
   border-bottom-width: 1px;
   border-right-style: dotted;
   border-right-width: 1px;
   padding: 4px;
+  max-width: 50vw;
 }
 
 th {
@@ -27,20 +63,19 @@ table > tbody > tr:not(:first-child) > th > details > summary {
   font-weight: bold;
 }
 
-table {
-  overflow-x: auto;
-  border-spacing: 0px;
-}
 
 tr:first-child > th {
   position: sticky;
   top: 0;
+  z-index: 2;
 }
 
 th:first-child {
   position: sticky;
   left: 0;
   text-align: left;
+  max-width: 40vw;
+  z-index: 3;
 }
 
 th.section {
@@ -72,8 +107,8 @@ td a {
 }
 
 table details {
-  min-width: 10em;
-  max-width: 20em;
+  min-width: 10vw;
+  max-width: 50vw;
 }
 
 label {
@@ -85,7 +120,7 @@ label {
 #transpose:checked ~ table td,
 #transpose:checked ~ table th {
   min-height: 2em;
-  min-width: 10em;
+  min-width: 10vw;
   display: block;
 }
 
@@ -282,6 +317,7 @@ label {
   max-width: 50vw;
   white-space: initial;
   font-size: initial;
+  z-index: 1;
 }
 
 #abbr:checked ~ table td:hover details {
@@ -422,6 +458,7 @@ label {
 </head>
 <body>
 
+<div id=page>
 <main>
 
 <label for=transpose>transpose table&nbsp;</label><input type=checkbox id=transpose autofocus>
@@ -662,6 +699,7 @@ See the following for sources of inspiration (copying is not allowed except the 
 <nav>
 <a href=LICENSE>Copyright</a> &copy; 2022 <a href='https://gitlab.com/bkil/secuchart'>contributors</a>, <a href='https://matrix.to/#/#securemessagingapps:matrix.org'>chat</a>
 </nav>
+</div>
 
 </body>
 </html>
