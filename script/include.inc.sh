@@ -140,7 +140,7 @@ grep_color_optional() {
 }
 
 grep_colorless_property() {
-  grep -E "^(name|Summary|Payment choices|Vendor jurisdiction|Infrastructure jurisdiction|Infrastructure provider|Servers required|Servers optional|Protocol|Read public content without registering|Vendor operated network inaccessible from countries)(;|$)" "$@"
+  grep -E "^(name|Summary|Payment choices|Vendor jurisdiction|Infrastructure jurisdiction|Infrastructure provider|Servers required|Servers optional|Protocol|Read public content without registering|Vendor operated network inaccessible from countries|Vendor legal entity kind)(;|$)" "$@"
 }
 
 is_colorless_property() {
