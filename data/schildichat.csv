@@ -22,6 +22,7 @@ Message expiration;no;;
 Usage without phone number;yes;;
 First release;yes;2019-07-11 https://github.com/SchildiChat/SchildiChat-android/releases/tag/v0.1.0;
 Active development;yes;
+Identity not controlled by vendor;yes;;
 Account deactivation after device compromise;yes;;
 Account recovery after device compromise;yes;;
 Offline;partial;compose or read recent messages on Android/Desktop, no Web startup;Buffered messages on SchildiChat Android/Desktop, SchildiChat Web lacks offline startup via Web Workers

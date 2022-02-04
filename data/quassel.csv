@@ -22,5 +22,6 @@ Message expiration;no;
 Usage without phone number;yes;
 Register without app;yes;
 First release;yes;2008-08-27 https://en.wikipedia.org/wiki/Quassel_IRC;
+Identity not controlled by vendor;yes;;
 Account deactivation after device compromise;yes;
 Servers required;;IRC server

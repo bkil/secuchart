@@ -20,6 +20,7 @@ Usage without phone number;yes;;
 Register without app;no;;
 First release;yes;2018-05-09 https://en.wikipedia.org/wiki/Briar_(software);
 Active development;yes;;
+Identity not controlled by vendor;yes;;
 Account deactivation after device compromise;no;
 Account recovery after device compromise;no;
 Offline;yes;https://briarproject.org/how-it-works/;
