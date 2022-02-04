@@ -167,7 +167,7 @@ get_item_prop() {
 
 get_prop_status() {
   printf '%s' "$1" |
-  cut -d';' -s -f 1 |
+  cut -d';' -f 1 |
   escape
 }
 

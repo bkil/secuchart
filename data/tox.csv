@@ -1,0 +1,41 @@
+name;;Tox
+Summary;;Nameless DHT messenger https://tox.chat/
+Android Google Play;yes;https://play.google.com/store/apps/details?id=ltd.evilcorp.atox
+Android F-droid/apk;yes;https://f-droid.org/en/packages/com.zoffcc.applications.trifa/ https://f-droid.org/en/packages/ltd.evilcorp.atox/
+Apple iOS;no;https://tox.chat/clients.html
+Desktop;yes;Linux, FreeBSD, Windows, MacOS;https://tox.chat/clients.html https://github.com/qTox/qTox https://github.com/uTox/uTox https://github.com/toxygen-project/toxygen https://github.com/Jfreegman/toxic
+Web;no;https://tox.chat/clients.html
+Protocol;;Tox protocol https://tox.chat/about.html
+Protocol open;yes;https://tox.chat/about.html
+Group chat;partial;invite-only https://github.com/uTox/uTox#user-content-features
+Voice calls;yes;https://wiki.tox.chat/users/techfaq#what_is_used_for_av
+Video calls;yes;https://wiki.tox.chat/users/techfaq#what_is_used_for_av
+Read public content without registering;no;https://wiki.tox.chat/users/techfaq#does_tox_rely_on_central_servers
+End-to-end encryption;yes;https://wiki.tox.chat/users/techfaq#encryption
+E2EE keys shielded from operator;yes;https://wiki.tox.chat/users/techfaq#encryption
+Contact list confidential;yes;https://wiki.tox.chat/users/sharing_ids
+Perfect forward secrecy;yes;https://tox.chat/faq.html#how-tox-privacy
+Public issue tracker;yes;https://github.com/irungentoo/toxcore/issues https://github.com/tux3/qTox/issues https://github.com/notsecure/uTox/issues
+Usage without phone number;yes;https://wiki.tox.chat/users/toxid
+Register without app;no;https://wiki.tox.chat/users/toxid
+First release;yes;2013 https://tox.chat/about.html
+Transparent financing;partial;out of pocket;not currently accepting donations https://tox.chat/about.html
+Active development;yes;https://tox.chat/about.html
+Multi-party development;yes;https://tox.chat/about.html
+No-cost tier;yes;https://tox.chat/download.html
+Payment choices;;N/A
+Vendor legal entity kind;;person
+Isolated self-hosting;yes;probably needs bootstrap;peers can cache and exchange these https://wiki.tox.chat/users/nodes#what_is_the_purpose_of_bootstrap_nodes https://wiki.tox.chat/users/runningnodes
+User can extend network with node;yes;each client is full node https://wiki.tox.chat/users/nodes#what_is_the_purpose_of_bootstrap_nodes
+Identity not controlled by vendor;yes;locally generated https://wiki.tox.chat/users/sharing_ids
+Spam protection;partial;invite code https://wiki.tox.chat/users/toxid#nospam
+Offline;partial;buffering, personal proxy https://wiki.tox.chat/users/offline_messaging https://wiki.tox.chat/users/troubleshooting#both_parties_must_be_online_for_a_friend_request_to_complete https://github.com/irungentoo/toxcore/issues/186
+Servers required;;DHT bootstrap nodes and list;could implement automation to gather these and burn into the app https://wiki.tox.chat/users/nodes#what_is_the_purpose_of_bootstrap_nodes https://tox.chat/faq.html#tox-central-servers https://nodes.tox.chat/
+Servers optional;;DNS;
+Serverless WAN mode;no;needs implementation;LAN mode? https://github.com/Tox/Tox-Docs/blob/master/core_concepts.rst#user-content-connecting-to-the-network peers can cache and exchange peers, but would need a distributed crawler and burn the list into the app https://wiki.tox.chat/users/nodes#what_is_the_purpose_of_bootstrap_nodes https://wiki.tox.chat/users/runningnodes
+Serverless LAN mode;partial;maybe https://github.com/Tox/Tox-Docs/blob/master/core_concepts.rst#user-content-connecting-to-the-network DHT generally needs WAN IP https://wiki.tox.chat/users/techfaq
+Network store and forward;no;https://wiki.tox.chat/users/offline_messaging
+Wireless mode;no;https://wiki.tox.chat/users/techfaq
+IP shielded from peers;no;p2p, not by default;Tox ID resolved through onion routing, Tor optional https://wiki.tox.chat/users/tox_over_tor_tot
+Tor access of vendor operated network;yes;https://tox.chat/faq.html#tox-leak-ip
+Third party clients;yes;https://wiki.tox.chat/clients

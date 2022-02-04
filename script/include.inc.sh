@@ -107,7 +107,7 @@ check_item_syntax() {
 
   LINES="`\
     grep_colorless_property -v "$FILE" |
-    grep "^[^;]*;;"`"
+    grep -E "^[^;]*;;(;?[^;]+)"`"
   if [ -n "$LINES" ]; then
     printf "error: a status is expected in the following lines:\n%s\n" "$LINES" >&2
     return 1

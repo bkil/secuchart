@@ -11,10 +11,10 @@ Protocol;
 Protocol open;yes=can be implemented based on published detailed specification; no=no source published; partial=needs reverse engineering based on rough specs or source code
 Server license;
 Client license;
-Group chat;
+Group chat;Whether they are persistent between restarts, chat log, file transfer, inline images, offline messaging
 Voice calls
 Video calls;
-Group calls;
+Group calls;Audio, video
 Read public content without registering;Provides free tasting to look around before committing to install anything or having to remember another pair of credentials
 CPU idle;no=Proof of work, partial=sluggish due to Idling too little in foreground or measurable amount of processing in background; yes=otherwise
 Power saving;Ensure that device wakes up as few times as possible, filters and batches events on remote side, no open sockets, delegated peer tracking
