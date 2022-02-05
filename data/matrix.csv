@@ -29,8 +29,8 @@ Register without app;yes;;
 Active development;yes;https://github.com/vector-im;
 Multi-party development;yes;https://github.com/vector-im/element-web/pulse/monthly https://github.com/vector-im/element-android/pulse/monthly https://github.com/vector-im/element-ios/pulse/monthly;
 Identity not controlled by vendor;yes;Unless using matrix.org account;vendor also offers various self-hostable or optional services like stickers, bots and bridges
-Account deactivation after device compromise;yes;;
-Account recovery after device compromise;yes;;
+Account deactivation after device compromise;yes;with second device or Web or Desktop;
+Account recovery after device compromise;yes;with second device or Web or Desktop;
 Offline;partial;compose or read recent Desktop messages, no Web startup;Buffered messages on Element Desktop, Element Web lacks offline startup via Web Workers
 Servers required;;Synapse homeserver, notifications push;
 Servers optional;;DNS, Element Web app, identity, integrations, ICE, Jitsi https://gitlab.com/libremonde-org/papers/research/privacy-matrix.org/-/blob/master/part1/README.md;
