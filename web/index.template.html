@@ -79,7 +79,7 @@ th:first-child {
   z-index: 3;
 }
 
-th.section {
+tr.section > th {
   text-align: right;
   font-weight: normal;
 }
@@ -88,6 +88,9 @@ tr:nth-child(odd) {
   background-color: #f8f8f8;
 }
 
+#foss:checked ~ table tr.benefit-foss td.p,
+#tinfoil:checked ~ table tr.benefit-tinfoil td.p,
+#layperson:checked ~ table tr.benefit-layperson td.p,
 td.y {
   background-color: lime;
 }
@@ -96,8 +99,18 @@ td.n {
   background-color: orange;
 }
 
+#foss:checked ~ table tr.benefit-foss td.n,
+#tinfoil:checked ~ table tr.benefit-tinfoil td.n,
+#layperson:checked ~ table tr.benefit-layperson td.n,
 td.p {
   background-color: yellow;
+}
+
+#foss:checked ~ table tr:not(.require-foss, .benefit-foss) td,
+#tinfoil:checked ~ table tr:not(.require-tinfoil, .benefit-tinfoil) td,
+#layperson:checked ~ table tr:not(.require-layperson, .benefit-layperson) td
+{
+  background-color: white;
 }
 
 td a {
@@ -115,6 +128,19 @@ table details {
 label {
   padding-left: 1em;
   white-space: nowrap;
+}
+
+
+#allprop:not(:checked) ~ #foss:checked ~ table tr:not(:first-child, .require-foss, .benefit-foss, .info-foss, .require-all, .benefit-all, .info-all, .section) {
+  display: none;
+}
+
+#allprop:not(:checked) ~ #tinfoil:checked ~ table tr:not(:first-child, .require-tinfoil, .benefit-tinfoil, .info-tinfoil, .require-all, .benefit-all, .info-all, .section) {
+  display: none;
+}
+
+#allprop:not(:checked) ~ #layperson:checked ~ table tr:not(:first-child, .require-layperson, .benefit-layperson, .info-layperson, .require-all, .benefit-all, .info-all, .section) {
+  display: none;
 }
 
 
@@ -172,6 +198,9 @@ label {
   color: #ddd;
 }
 
+#dark:checked ~ #foss:checked ~ table tr.benefit-foss td.p,
+#dark:checked ~ #tinfoil:checked ~ table tr.benefit-tinfoil td.p,
+#dark:checked ~ #layperson:checked ~ table tr.benefit-layperson td.p,
 #dark:checked ~ table td.y {
   background-color: #060;
   color: #fff;
@@ -182,9 +211,19 @@ label {
   color: #fff;
 }
 
+#dark:checked ~ #foss:checked ~ table tr.benefit-foss td.n,
+#dark:checked ~ #tinfoil:checked ~ table tr.benefit-tinfoil td.n,
+#dark:checked ~ #layperson:checked ~ table tr.benefit-layperson td.n,
 #dark:checked ~ table td.p {
   background-color: #880;
   color: #fff;
+}
+
+#dark:checked ~ #foss:checked ~ table tr:not(.require-foss, .benefit-foss) td,
+#dark:checked ~ #tinfoil:checked ~ table tr:not(.require-tinfoil, .benefit-tinfoil) td,
+#dark:checked ~ #layperson:checked ~ table tr:not(.require-layperson, .benefit-layperson) td
+{
+  background-color: black;
 }
 
 
@@ -208,6 +247,9 @@ label {
   background-color: white;
 }
 
+#dark:not(:checked) ~ #contrast:checked ~ #foss:checked ~ table tr.benefit-foss td.p:before,
+#dark:not(:checked) ~ #contrast:checked ~ #tinfoil:checked ~ table tr.benefit-tinfoil td.p:before,
+#dark:not(:checked) ~ #contrast:checked ~ #layperson:checked ~ table tr.benefit-layperson td.p:before,
 #dark:not(:checked) ~ #contrast:checked ~ table td.y:before {
   content: "+ ";
 }
@@ -224,8 +266,18 @@ label {
   background-color: white;
 }
 
+#dark:not(:checked) ~ #contrast:checked ~ #foss:checked ~ table tr.benefit-foss td.n:before,
+#dark:not(:checked) ~ #contrast:checked ~ #tinfoil:checked ~ table tr.benefit-tinfoil td.n:before,
+#dark:not(:checked) ~ #contrast:checked ~ #layperson:checked ~ table tr.benefit-layperson td.n:before,
 #dark:not(:checked) ~ #contrast:checked ~ table td.p:before {
   content: "~ ";
+}
+
+#dark:not(:checked) ~ #contrast:checked ~ #foss:checked ~ table tr:not(.require-foss, .benefit-foss) td:before,
+#dark:not(:checked) ~ #contrast:checked ~ #tinfoil:checked ~ table tr:not(.require-tinfoil, .benefit-tinfoil) td:before,
+#dark:not(:checked) ~ #contrast:checked ~ #layperson:checked ~ table tr:not(.require-layperson, .benefit-layperson) td:before
+{
+  content: "";
 }
 
 
@@ -369,6 +421,9 @@ label {
     color: #ddf;
   }
 
+  #foss:checked ~ table tr.benefit-foss td.p,
+  #tinfoil:checked ~ table tr.benefit-tinfoil td.p,
+  #layperson:checked ~ table tr.benefit-layperson td.p,
   td.y {
     background-color: #060;
     color: #fff;
@@ -379,9 +434,19 @@ label {
     color: #fff;
   }
 
+  #foss:checked ~ table tr.benefit-foss td.n,
+  #tinfoil:checked ~ table tr.benefit-tinfoil td.n,
+  #layperson:checked ~ table tr.benefit-layperson td.n,
   td.p {
     background-color: #880;
     color: #fff;
+  }
+
+  #foss:checked ~ table tr:not(.require-foss, .benefit-foss) td,
+  #tinfoil:checked ~ table tr:not(.require-tinfoil, .benefit-tinfoil) td,
+  #layperson:checked ~ table tr:not(.require-layperson, .benefit-layperson) td
+  {
+    background-color: black;
   }
 
   #abbr:checked ~ table td:not(:empty, .y, .n, .p):hover {
@@ -402,6 +467,9 @@ label {
     background-color: white;
   }
 
+  #foss:checked ~ table tr.benefit-foss td.p:before,
+  #tinfoil:checked ~ table tr.benefit-tinfoil td.p:before,
+  #layperson:checked ~ table tr.benefit-layperson td.p:before,
   td.y:before {
     content: "+ ";
   }
@@ -418,9 +486,20 @@ label {
     background-color: white;
   }
 
+  #foss:checked ~ table tr.benefit-foss td.n:before,
+  #tinfoil:checked ~ table tr.benefit-tinfoil td.n:before,
+  #layperson:checked ~ table tr.benefit-layperson td.n:before,
   td.p:before {
     content: "~ ";
   }
+
+  #foss:checked ~ table tr:not(.require-foss, .benefit-foss) td:before,
+  #tinfoil:checked ~ table tr:not(.require-tinfoil, .benefit-tinfoil) td:before,
+  #layperson:checked ~ table tr:not(.require-layperson, .benefit-layperson) td:before
+  {
+    content: "";
+  }
+
   #abbr:checked ~ table th,
   #abbr:checked ~ table > tbody > tr:not(:first-child) > th > details > summary
   {

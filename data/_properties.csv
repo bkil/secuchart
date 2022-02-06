@@ -1,72 +1,72 @@
-;Platform
-Summary;Highlight in a few words why it is interesting
-Android Google Play;
-Android F-droid/apk;yes=f-droid.org, partial=apk or separate repository
-Apple iOS;
-Desktop;
-Web;
-Languages;The higher the amount of people reachable the better. No=1 language, partial=2-3, yes=many global ones
-;Technical details
-Protocol;
-Protocol open;yes=can be implemented based on published detailed specification; no=no source published; partial=needs reverse engineering based on rough specs or source code
-Server license;
-Client license;
-Group chat;Whether they are persistent between restarts, chat log, file transfer, inline images, offline messaging
-Voice calls
-Video calls;
-Group calls;Audio, video
-Read public content without registering;Provides free tasting to look around before committing to install anything or having to remember another pair of credentials
-CPU idle;no=Proof of work, partial=sluggish due to Idling too little in foreground or measurable amount of processing in background; yes=otherwise
-Power saving;Ensure that device wakes up as few times as possible, filters and batches events on remote side, no open sockets, delegated peer tracking
-Bandwidth frugal;Conservation by lazy loading, previews, adaptive detail, incremental sync, fewer round trips, tokenization, batching transfers to improve compression, tweaked key schedule, multicasting hubs
-Multiple devices;If the same account can be used at the same time from multiple devices, syncing contacts, messages and notifications.
-Multiple accounts;If you can stay logged in with multiple accounts on the same device and application without external isolation techniques
-Application locking;Unlock the account or certain chats with a PIN code, passphrase, fingerprints or facial likeness
-;Security
-End-to-end encryption;
-E2EE keys shielded from operator;Regardless of this, certain OS vendors might also have access to your keys
-Deniability;Deny sending a message, repudiability
-Replay prevention;Of third party buffering nodes
-Downgrade resistance;Mitigation against downgrade attacks
-Contact list confidential;If the client never sends over its contact list to the server
-Metadata protection;
-Perfect forward secrecy;
-Remote message removal;Also called redaction or deletion
-Remote message correction;Also called editing
-Message expiration;Also called retention time or disappearing messages or self-destructing messages
-Security team;yes=regularly scanning for vulnerabilities proactively, found bugs inspected for security implications, partial=reported vulnerabilities promptly fixed and released
-Public issue tracker;Whether outstanding bugs can be viewed by the public. partial=approximated via forum
-Audits;
-Usage without phone number;
-Register without app;
-;Sustainability
-First release;
-Transparent financing;
-Active development;yes=developer availability is not a bottleneck for progress, partial=occasional hobby development or basic maintenance work, no=no development or only ensuring it builds
-Multi-party development;no=one-man show, yes=highest level contributors are exchangeable, equal drivers, partial=regular contributions from multiple people
-No-cost tier;
-Payment choices;
-Vendor legal entity kind;Individual, entrepreneur, non-profit company, single-person for-profit, multi-party for-profit
-Transparency reports;
-Vendor jurisdiction;
-Infrastructure jurisdiction;
-Infrastructure provider;
-Isolated self-hosting;It can be deployed on-premise in a LAN without internet
-User can extend network with node;Improving the scaling of the system and communicate with anyone (i.e., if P2P or federated)
-Identity not controlled by vendor;Will the system still work if the developer goes bankrupt
-Account deactivation after device compromise;Solvable with centralized or federated servers or with revocation certificates in P2P.
-Account recovery after device compromise;Solvable with centralized or federated servers or with subkeys, revocation and secret sharing in P2P.
-Spam protection;If it gained worldwide adoption
-;Topology
-Offline;no=Not useful if disconnected. partial=Only read a few buffered messages or compose new ones. yes=Reboot, add new contacts, past logs, search, cache list of groups or users, settings.
-Servers required;
-Servers optional;
-Serverless WAN mode;If communicating over the internet might scale without (a vast amount of) dedicated servers, i.e. by supernode promotion and DHT
-Serverless LAN mode;If you can communicate without an internet connection and a server
-Network store and forward;You can compose messages to your peer even if the two of you aren't online at the same time
-Wireless mode;Built-in support for peering with nearby nodes over ISM wireless either to sync or as part of a mesh
-IP shielded from peers;
-Tor access of vendor operated network;Yes=Without involving Tor exit nodes, no=Tor exit nodes blocked, limited=otherwise
-IPv6 access of vendor operated network;Still green if only registration is limited to IPv4
-Vendor operated network inaccessible from countries;If it is illegal or blocked here or if the vendor prohibits usage or its infrastructure blocks users from here. Encryption itself is outlawed in many countries, do not list these.
-Third party clients;yes=Multiple full featured clients available;no=Terms of service prohibits access to vendor operated network
+;Platform;;;
+Summary;Highlight in a few words why it is interesting;;;all
+Android Google Play;;;layperson;
+Android F-droid/apk;yes=f-droid.org, partial=apk or separate repository;foss tinfoil;;
+Apple iOS;;;layperson;
+Desktop;;foss;tinfoil;layperson
+Web;;foss layperson;tinfoil;
+Languages;The higher the amount of people reachable the better. No=1 language, partial=2-3, yes=many global ones;;layperson;
+;Technical details;;;
+Protocol;;;;foss tinfoil
+Protocol open;yes=can be implemented based on published detailed specification, no=no source published, partial=needs reverse engineering based on rough specs or source code;foss;tinfoil;
+Server license;;foss;;
+Client license;;foss;tinfoil;
+Group chat;Whether they are persistent between restarts, chat log, file transfer, inline images, offline messaging;all;;
+Voice calls;;foss layperson;tinfoil;
+Video calls;;foss layperson;tinfoil;
+Group calls;Audio, video;foss layperson;tinfoil;
+Read public content without registering;Provides free tasting to look around before committing to install anything or having to remember another pair of credentials;;layperson;foss
+CPU idle;no=Proof of work, partial=sluggish due to Idling too little in foreground or measurable amount of processing in background, yes=otherwise;layperson;foss tinfoil;
+Power saving;Ensure that device wakes up as few times as possible, filters and batches events on remote side, no open sockets, delegated peer tracking;layperson;foss tinfoil;
+Bandwidth frugal;Conservation by lazy loading, previews, adaptive detail, incremental sync, fewer round trips, tokenization, batching transfers to improve compression, tweaked key schedule, multicasting hubs;layperson;foss tinfoil;
+Multiple devices;If the same account can be used at the same time from multiple devices, syncing contacts, messages and notifications.;layperson;foss tinfoil;
+Multiple accounts;If you can stay logged in with multiple accounts on the same device and application without external isolation techniques;layperson;foss tinfoil;
+Application locking;Unlock the account or certain chats with a PIN code, passphrase, fingerprints or facial likeness;layperson;tinfoil;
+;Security;;;
+End-to-end encryption;This is more important for closed or non-self hosted servers;tinfoil;layperson;foss
+E2EE keys shielded from operator;Regardless of this, certain OS vendors might also have access to your keys;tinfoil;layperson;foss
+Deniability;Deny sending a message, repudiability;tinfoil;;
+Replay prevention;Of third party buffering nodes;tinfoil;;
+Downgrade resistance;Mitigation against downgrade attacks;tinfoil;;
+Contact list confidential;If the client never sends over its contact list to the server;tinfoil;;
+Metadata protection;;tinfoil;;
+Perfect forward secrecy;;tinfoil;;
+Remote message removal;Also called redaction or deletion;foss layperson;;
+Remote message correction;Also called editing;foss layperson;;
+Message expiration;Also called retention time or disappearing messages or self-destructing messages;;foss tinfoil;
+Security team;yes=regularly scanning for vulnerabilities proactively, found bugs inspected for security implications, partial=reported vulnerabilities promptly fixed and released;tinfoil;;
+Public issue tracker;Whether outstanding bugs can be viewed by the public. partial=approximated via forum;;foss;tinfoil
+Audits;;tinfoil;;
+Usage without phone number;;tinfoil;foss;
+Register without app;;;;foss
+;Sustainability;;;
+First release;yes=mature, large masses have tested it for years, no=only released recently;;;foss
+Transparent financing;yes=it is clear how the project can operate indefinitely, no=we know nothing, partial=public statements were made but not convincing;;;foss tinfoil
+Active development;yes=developer availability is not a bottleneck for progress, partial=occasional hobby development or basic maintenance work, no=no development or only ensuring it builds;;foss;tinfoil
+Multi-party development;no=one-man show, yes=highest level contributors are exchangeable, equal drivers, partial=regular contributions from multiple people;;;foss
+No-cost tier;;foss layperson;tinfoil;
+Payment choices;yes=cryptocurrency or some other anonymous, partial=lots of inexpensive choices;tinfoil;;
+Vendor legal entity kind;Individual, entrepreneur, non-profit company, single-person for-profit, multi-party for-profit;;;foss tinfoil
+Transparency reports;;;;
+Vendor jurisdiction;;;;tinfoil
+Infrastructure jurisdiction;;;;tinfoil
+Infrastructure provider;;;;tinfoil
+Isolated self-hosting;It can be deployed on-premise in a LAN without internet;foss;;
+User can extend network with node;Improving the scaling of the system and communicate with anyone (i.e., if P2P or federated);foss;;
+Identity not controlled by vendor;Will the system still work if the developer goes bankrupt;foss;layperson;
+Account deactivation after device compromise;Solvable with centralized or federated servers or with revocation certificates in P2P.;layperson;foss tinfoil;
+Account recovery after device compromise;Solvable with centralized or federated servers or with subkeys, revocation and secret sharing in P2P.;tinfoil layperson;;
+Spam protection;If it gained worldwide adoption;all;;
+;Topology;;;
+Offline;no=Not useful if disconnected. partial=Only read a few buffered messages or compose new ones. yes=Reboot, add new contacts, past logs, search, cache list of groups or users, settings.;layperson;foss;
+Servers required;;;;foss
+Servers optional;;;;foss
+Serverless WAN mode;If communicating over the internet might scale without (a vast amount of) dedicated servers, i.e. by supernode promotion and DHT;foss;;
+Serverless LAN mode;If you can communicate without an internet connection and a server;;;
+Network store and forward;You can compose messages to your peer even if the two of you aren't online at the same time;layperson;;
+Wireless mode;Built-in support for peering with nearby nodes over ISM wireless either to sync or as part of a mesh;;tinfoil;
+IP shielded from peers;;tinfoil;;
+Tor access of vendor operated network;Yes=Without involving Tor exit nodes, no=Tor exit nodes blocked, limited=otherwise;tinfoil;;
+IPv6 access of vendor operated network;Still green if only registration is limited to IPv4;foss;;
+Vendor operated network inaccessible from countries;If it is illegal or blocked here or if the vendor prohibits usage or its infrastructure blocks users from here. Encryption itself is outlawed in many countries, do not list these.;tinfoil;;
+Third party clients;yes=Multiple full featured clients available, no=Terms of service prohibits access to vendor operated network;foss;;

@@ -18,9 +18,9 @@ gen_index() {
   LIMITITEMS="$1"
   IN="$WEB/index.template.html"
 
-  sed "s~^~_~" "$IN" |
-  while read REPL; do
-    REPLY="`printf '%s' "$REPL" | sed "s~^_~~"`"
+  TAB="`printf "\t"`"
+  cat "$IN" |
+  while IFS="$TAB" read REPLY; do
     if [ "$REPLY" = "((style))" ]; then
       gen_style "$LIMITITEMS"
     elif [ "$REPLY" = "((filters))" ]; then
@@ -44,7 +44,8 @@ gen_style() {
     XMPP=""
     NUM=2
     while read IT; do
-      NAME=`get_item_value "$IT" "name"`
+      echo "style $IT" >&2
+      NAME="`get_item_value "$IT" "name"`"
       cat <<EOF
 #$IT:not(:target) ~ #any:checked ~ .C:checked ~ #_$IT:not(:checked) ~ table tr > *:nth-child($NUM),
 #$IT:not(:target) ~ #any:checked ~ #_$IT:not(:checked) ~ .C:checked ~ table tr > *:nth-child($NUM),
@@ -53,14 +54,14 @@ gen_style() {
 #$IT:not(:target) ~ :target ~ table tr > *:nth-child($NUM),
 EOF
 
-      SERVERLIC=`get_item_value "$IT" "Server license"`
-      CLIENTLIC=`get_item_value "$IT" "Client license"`
+      SERVERLIC="`get_item_value "$IT" "Server license"`"
+      CLIENTLIC="`get_item_value "$IT" "Client license"`"
       printf '%s' "$SERVERLIC $CLIENTLIC" | grep -q "proprietary" && PROPR="$PROPR $NUM"
       PROTOCOL="`get_item_value "$IT" "Protocol"`"
       printf '%s' "$PROTOCOL" | grep -qi "\<matrix\>" || MATRIX="$MATRIX $NUM"
       printf '%s' "$PROTOCOL" | grep -qi "\<xmpp\>" || XMPP="$XMPP $NUM"
 
-      NUM=`expr $NUM + 1`
+      NUM="`expr $NUM + 1`"
     done
 
     for NUM in $PROPR; do
@@ -93,10 +94,14 @@ gen_filters() {
   echo
 
   cat <<EOF
+<label for=abbr>abbreviated&nbsp;</label><input type=checkbox id=abbr>
+<label for=allprop>all properties&nbsp;</label><input type=checkbox id=allprop>
 <a href="#" id=all>Show all messengers</a>
 <br>
-Use:
-<label for=abbr>abbreviated&nbsp;</label><input type=checkbox id=abbr>
+Use case:
+<label for=foss>FOSS&nbsp;</label><input type=radio id=foss name=u checked>
+<label for=tinfoil>tinfoil&nbsp;</label><input type=radio id=tinfoil name=u>
+<label for=layperson>layperson&nbsp;</label><input type=radio id=layperson name=u>
 <br>
 Items:
 <label for=any class=F>any&nbsp;</label><input type=radio id=any name=S checked class=F>
@@ -109,7 +114,8 @@ EOF
 
   get_items "$LIMITITEMS" |
   while read IT; do
-    NAME=`get_prop_value "$(get_item_prop "$IT" "name")"`
+    echo "filter $IT" >&2
+    NAME="`get_prop_value "$(get_item_prop "$IT" "name")"`"
     printf "<label for=_%s class=C>%s&nbsp;</label><input type=checkbox id=_%s class=C>\n" "$IT" "$NAME" "$IT"
   done
 
@@ -138,20 +144,56 @@ gen_table() {
   COLSPAN="$COLSPAN</td>"
 
   cat "$DATA/_properties.csv" |
-  while read P; do
-    echo "<tr>"
-    K="`printf '%s' "$P" | cut -d';' -f 1`"
-    V="`printf '%s' "$P" | cut -d';' -s -f 2-`"
-    if [ -z "$K" ]; then
-      printf " <th class=section>%s%s\n\n" "$V" "$COLSPAN"
-    elif [ -n "$V" ]; then
-      printf " <th><details><summary>%s</summary>%s</details>\n" "$K" "$V"
-      print_items "$K" 0
-    else
-      printf " <th>%s\n" "$K"
-      print_items "$K" 0
-    fi
-  done
+  {
+    sed -r "
+      s~^(([^;]*;){2})([^; ])~\1require-\3~
+      s~^(([^;]*;){3})([^; ])~\1benefit-\3~
+      s~^(([^;]*;){4})([^; ])~\1info-\3~
+
+      t space_to_comma
+      :space_to_comma
+      s~^(([^;]*;){2}[^ ]*) +~\1,~
+      t space_to_comma
+
+      :a
+      s~^(([^;]*;){2}[^;,]*),+([^;,])~\1 require-\3~
+      t a
+      :b
+      s~^(([^;]*;){3}[^;,]*),+([^;,])~\1 benefit-\3~
+      t b
+      :c
+      s~^(([^;]*;){4}[^;,]*),+([^;,])~\1 info-\3~
+      t c
+      s~^(([^;]*;){2});+~\1~
+
+      t semi_to_space
+      :semi_to_space
+      s~^(([^;]*;){2}[^;]*);+([^;])~\1 \3~
+      t semi_to_space
+      s~;+$~~
+    " |
+    while IFS=";" read K V PERSONA; do
+      if [ -z "$K" ]; then
+        printf "<tr class=section>\n <th>%s%s\n\n" "$V" "$COLSPAN"
+      else
+        if [ -n "$PERSONA" ]; then
+          echo "<tr class='$PERSONA'>"
+        else
+          echo "<tr>"
+        fi
+
+        if [ -n "$V" ]; then
+          echo "property $K" >&2
+          printf " <th><details><summary>%s</summary>%s</details>\n" "$K" "$V"
+          print_items "$K" 0
+        else
+          echo "property $K" >&2
+          printf " <th>%s\n" "$K"
+          print_items "$K" 0
+        fi
+      fi
+    done
+  }
 }
 
 get_item_prop() {
