@@ -99,16 +99,17 @@ gen_filters() {
 <a href="#" id=all>Show all messengers</a>
 <br>
 Use case:
-<label for=foss>FOSS&nbsp;</label><input type=radio id=foss name=u checked>
+<label for=editor>editor&nbsp;</label><input type=radio id=editor name=u checked>
+<label for=foss>FOSS&nbsp;</label><input type=radio id=foss name=u>
 <label for=tinfoil>tinfoil&nbsp;</label><input type=radio id=tinfoil name=u>
 <label for=layperson>layperson&nbsp;</label><input type=radio id=layperson name=u>
-<br>
-Items:
+<br class=F>
+<span class=F>Items:</span>
 <label for=any class=F>any&nbsp;</label><input type=radio id=any name=S checked class=F>
 <label for=proprietary class=F>non-proprietary&nbsp;</label><input type=radio id=proprietary name=S class="F T">
 <label for=t_matrix class=F>matrix&nbsp;</label><input type=radio id=t_matrix name=S class="F T">
 <label for=t_xmpp class=F>xmpp&nbsp;</label><input type=radio id=t_xmpp name=S class="F T">
-<br>
+<br class=C>
 <span class=C>Compare messengers:</span>
 EOF
 

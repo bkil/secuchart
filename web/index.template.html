@@ -131,19 +131,6 @@ label {
 }
 
 
-#allprop:not(:checked) ~ #foss:checked ~ table tr:not(:first-child, .require-foss, .benefit-foss, .info-foss, .require-all, .benefit-all, .info-all, .section) {
-  display: none;
-}
-
-#allprop:not(:checked) ~ #tinfoil:checked ~ table tr:not(:first-child, .require-tinfoil, .benefit-tinfoil, .info-tinfoil, .require-all, .benefit-all, .info-all, .section) {
-  display: none;
-}
-
-#allprop:not(:checked) ~ #layperson:checked ~ table tr:not(:first-child, .require-layperson, .benefit-layperson, .info-layperson, .require-all, .benefit-all, .info-all, .section) {
-  display: none;
-}
-
-
 #transpose:checked ~ table td,
 #transpose:checked ~ table th {
   min-height: 2em;
@@ -519,6 +506,16 @@ label {
   display: initial;
 }
 
+#allprop:not(:checked) ~ #editor:checked ~ table tr:not(
+  .require-foss, .benefit-foss,
+  .require-layperson, .benefit-layperson,
+  .require-tinfoil, .benefit-tinfoil,
+  .require-all, .benefit-all,
+  :first-child,
+  .section),
+#allprop:not(:checked) ~ #foss:checked ~ table tr:not(.require-foss, .benefit-foss, .info-foss, .require-all, .benefit-all, .info-all, :first-child, .section),
+#allprop:not(:checked) ~ #tinfoil:checked ~ table tr:not(.require-tinfoil, .benefit-tinfoil, .info-tinfoil, .require-all, .benefit-all, .info-all, :first-child, .section),
+#allprop:not(:checked) ~ #layperson:checked ~ table tr:not(.require-layperson, .benefit-layperson, .info-layperson, .require-all, .benefit-all, .info-all, :first-child, .section),
 .C:checked ~ .C:checked ~ .P,
 .T:checked ~ .C,
 :target ~ .C,
