@@ -19,6 +19,7 @@ Multiple accounts;no;
 Application locking;yes;Android https://github.com/SchildiChat/SchildiChat-android/blob/sc/vector/src/main/res/xml/vector_settings_pin.xml#L17
 End-to-end encryption;yes;https://matrix.org/faq/#which-matrix-clients-support-e2e;
 Message expiration;no;;
+Public issue tracker;yes;https://github.com/SchildiChat/SchildiChat-android/issues https://github.com/SchildiChat/schildichat-desktop/issues;
 Usage without phone number;yes;;
 First release;yes;2019-07-11 https://github.com/SchildiChat/SchildiChat-android/releases/tag/v0.1.0;
 Active development;yes;

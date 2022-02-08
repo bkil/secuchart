@@ -20,6 +20,7 @@ Multiple accounts;yes;Unlimited;
 Application locking;yes;Android - custom 4 digit PIN + system fingerprint https://telegram.org/blog/photo-editor-and-passcodes;
 End-to-end encryption;partial;Only for 1:1 secret chats (not default) https://telegram.org/faq#q-how-are-secret-chats-different;
 Message expiration;partial;Only for 1:1 secret chats (not default) and some media https://telegram.org/faq#q-how-do-self-destructing-messages-work;
+Public issue tracker;yes;https://github.com/NekoX-Dev/NekoX/issues;
 Usage without phone number;no;;
 Register without app;no;
 First release;partial;2020-04-03? https://github.com/NekoX-Dev/NekoX/releases/tag/v6.0.1.6;
