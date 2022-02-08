@@ -17,6 +17,7 @@ Multiple accounts;yes;
 Application locking;yes;Android - custom 4 digit PIN;
 End-to-end encryption;yes;https://matrix.org/faq/#which-matrix-clients-support-e2e;
 Message expiration;no;;
+Public issue tracker;yes;https://gitlab.com/famedly/fluffychat/-/issues;
 Usage without phone number;yes;;
 Identity not controlled by vendor;yes;;
 Account deactivation after device compromise;yes;;

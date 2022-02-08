@@ -19,6 +19,7 @@ Metadata protection;no;
 Remote message removal;no;
 Remote message correction;no;
 Message expiration;no;
+Public issue tracker;yes;https://git.kuschku.de/justJanne/QuasselDroid-ng/-/issues https://bugs.quassel-irc.org/;
 Usage without phone number;yes;
 Register without app;yes;
 First release;yes;2008-08-27 https://en.wikipedia.org/wiki/Quassel_IRC;
