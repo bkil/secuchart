@@ -95,7 +95,7 @@ gen_filters() {
 
   cat <<EOF
 <label for=abbr>abbreviated&nbsp;</label><input type=checkbox id=abbr>
-<label for=allprop>all properties&nbsp;</label><input type=checkbox id=allprop>
+<label for=allprop>all properties&nbsp;</label><input type=checkbox id=allprop autofocus>
 <a href="#" id=all>Show all messengers</a>
 <br>
 Use case:

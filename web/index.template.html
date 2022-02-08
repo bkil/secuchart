@@ -538,7 +538,7 @@ label {
 <div id=page>
 <main>
 
-<label for=transpose>transpose table&nbsp;</label><input type=checkbox id=transpose autofocus>
+<label for=transpose>transpose table&nbsp;</label><input type=checkbox id=transpose>
 <label for=dark>dark mode&nbsp;</label><input type=checkbox id=dark>
 <label for=contrast>high contrast&nbsp;</label><input type=checkbox id=contrast>
 
@@ -588,6 +588,7 @@ label {
  <li>XMPP blabber.im
  <li>XMPP Movim
  <li>XMPP aTalk
+ <li>XMPP monocles (Conversations and blabber.im fork) https://f-droid.org/en/packages/de.monocles.chat/
  <li>Rocket.Chat
  <li>Status.im
  <li>NextCloud Talk
@@ -674,6 +675,7 @@ Here are some ideas regarding new aspects to research, feel free to factor these
  <li>File transfer;Retry, pause, resume
  <li>Inline images;Supported image formats: png, jpeg, gif, webp, avif
  <li>Inline videos;Supported video formats: mp4, webm, av1
+ <li>Voice messages
  <li>Spell check
  <li>Desktop notifications
  <li>Avatars
@@ -681,6 +683,7 @@ Here are some ideas regarding new aspects to research, feel free to factor these
  <li>Contact blocking
  <li>Profile migration; Import, export, move between devices, whether it is a full backup, encryption
  <li>Proxy support;HTP, Tor, SOCKS5
+ <li>Geolocation as message
 </ul>
 
 Here are some properties we have investigated and deemed redundant or to not be worth our time (at least while the rest of the table is empty):
@@ -698,7 +701,8 @@ Ideas for the interface design:
   <li>Compare properties: `[_]` ... <em>(properties = columns, items = rows if all messengers displayed)</em>
   <li>This options panel should be sticky and have a minimize checkbox as well
   <li>A JavaScript based editor that sends in a MR after you click in a cell
-  <li>default to abbreviated mode on mobile
+  <li>default to abbreviated mode on mobile, e.g., <576px
+  <li>Ranking: average of colors of the properties according to current view, green=100%, yellow=60%, red=10%, empty=0%, multiply by 0.5 if link missing
 </ul>
 
 Persona:
