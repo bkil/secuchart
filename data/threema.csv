@@ -28,6 +28,7 @@ Perfect forward secrecy;partial;only for calls https://threema.ch/press-files/2_
 Remote message removal;no;https://threema.ch/en/messenger-comparison;
 Remote message correction;no;https://threema.ch/en/messenger-comparison;
 Message expiration;no;https://threema.ch/en/messenger-comparison;
+Reproducible builds;yes;Android https://threema.ch/en/open-source/reproducible-builds
 Audits;yes;2020, 2019 https://threema.ch/en/faq/code_audit;
 Usage without phone number;yes;;
 Register without app;no;;

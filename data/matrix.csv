@@ -24,6 +24,7 @@ Perfect forward secrecy;no;;
 Remote message removal;yes;by redaction events https://matrix.org/faq/#what-are-redactions%3F;
 Remote message correction;yes;;
 Message expiration;partial;per room, no GUI, not default;only through slash-commands in Element, need to enable on each Synapse home server and depending on configuration in each room as well https://matrix-org.github.io/synapse/v1.41/message_retention_policies.html
+Reproducible builds;no;https://github.com/vector-im/element-web/issues/11848
 Usage without phone number;yes;;
 Register without app;yes;;
 Active development;yes;https://github.com/vector-im;

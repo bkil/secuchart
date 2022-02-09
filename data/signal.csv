@@ -20,6 +20,7 @@ Multiple accounts;no;;
 Application locking;yes;Android's screen lock https://support.signal.org/hc/en-us/articles/360007059572-Screen-Lock;
 End-to-end encryption;yes;https://support.signal.org/hc/en-us/articles/360007320391-Is-it-private-Can-I-trust-it-
 Message expiration;yes;https://support.signal.org/hc/en-us/articles/360007320771-Set-and-manage-disappearing-messages
+Reproducible builds;yes;Android https://signal.org/blog/reproducible-android/
 Usage without phone number;no;
 Register without app;no;;as a workaround, through the unofficial mautrix-signal matrix bridge with a custom HS
 First release;yes;2014-07-29 https://en.wikipedia.org/wiki/Signal_(software);

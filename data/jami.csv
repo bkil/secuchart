@@ -23,6 +23,7 @@ E2EE keys shielded from operator;yes;https://jami.net/why-is-jami-truly-distribu
 Contact list confidential;partial;not published, but leaks through OpenDHT proxy, Jami name server and ICE https://jami.net/why-is-jami-truly-distributed/ https://linuxkamarada.com/en/2021/05/25/the-jami-messenger/;
 Perfect forward secrecy;yes;https://git.jami.net/savoirfairelinux/jami-project/-/wikis/technical/Technical-overview#user-content-security-privacy;
 Message expiration;no;;
+Reproducible builds;no;https://git.jami.net/savoirfairelinux/jami-packaging/-/issues/45
 Audits;no;
 Usage without phone number;yes;;
 Register without app;no;;

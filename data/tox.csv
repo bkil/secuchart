@@ -16,6 +16,7 @@ E2EE keys shielded from operator;yes;https://wiki.tox.chat/users/techfaq#encrypt
 Contact list confidential;yes;https://wiki.tox.chat/users/sharing_ids
 Perfect forward secrecy;yes;https://tox.chat/faq.html#how-tox-privacy
 Public issue tracker;yes;https://github.com/irungentoo/toxcore/issues https://github.com/tux3/qTox/issues https://github.com/notsecure/uTox/issues
+Reproducible builds;partial;bootstrap daemon https://github.com/TokTok/c-toxcore/issues/85#issuecomment-1029792778
 Usage without phone number;yes;https://wiki.tox.chat/users/toxid
 Register without app;no;https://wiki.tox.chat/users/toxid
 First release;yes;2013 https://tox.chat/about.html

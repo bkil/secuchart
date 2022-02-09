@@ -36,6 +36,7 @@ Remote message correction;Also called editing;foss layperson;;
 Message expiration;Also called retention time or disappearing messages or self-destructing messages;;foss tinfoil;
 Security team;yes=regularly scanning for vulnerabilities proactively, found bugs inspected for security implications, partial=reported vulnerabilities promptly fixed and released;tinfoil;;
 Public issue tracker;Whether outstanding bugs can be viewed by the public. partial=approximated via forum;;foss;tinfoil
+Reproducible builds;;tinfoil;foss;
 Audits;;tinfoil;;
 Usage without phone number;;tinfoil;foss;
 Register without app;;;;foss

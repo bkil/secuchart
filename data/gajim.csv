@@ -6,7 +6,7 @@ Apple iOS;no;;
 Desktop;yes;Windows, MacOS, Linux, FreeBSD Ports https://gajim.org/download/;
 Web;no;;
 Languages;yes;37 https://dev.gajim.org/gajim/gajim/-/wikis/development/devtranslate;4 full, 4 medium, 29 some
-Protocol;yes;Jabber/XMPP;
+Protocol;;Jabber/XMPP;
 Protocol open;yes;;
 Client license;yes;GPLv3 https://dev.gajim.org/gajim/gajim/-/blob/master/COPYING;
 Group chat;yes;;

@@ -17,6 +17,7 @@ Remote message removal;no;;
 Remote message correction;no;;
 Message expiration;yes;Only setting of 7 days possible https://briarproject.org/news/2021-briar-1.3-released/;
 Public issue tracker;yes;https://code.briarproject.org/briar/briar/-/issues https://code.briarproject.org/briar/briar-desktop/-/issues;
+Reproducible builds;yes;https://code.briarproject.org/briar/briar/-/issues/1273
 Usage without phone number;yes;;
 Register without app;no;;
 First release;yes;2018-05-09 https://en.wikipedia.org/wiki/Briar_(software);
