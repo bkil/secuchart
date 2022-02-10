@@ -55,4 +55,5 @@ Vendor operated network inaccessible from countries;partial;possibly China is bl
 Vendor jurisdiction;;Australia;complicated 5 eyes jurisdiction with many anti-privacy and anti-encryption laws	https://optf.ngo/legals/
 Infrastructure jurisdiction;;Australia https://optf.ngo/legals/;
 Infrastructure provider;;Hetzner and OVH, distributed Lokinet;session owned servers are primarily hetzner and ovh, lokinet servers are distributed worldwide in multiple countries and with various isps
+Good ToSDR grade;yes;https://tosdr.org/en/service/3015
 First release;partial;2020-02-06 https://github.com/oxen-io/session-desktop/releases?page=6;

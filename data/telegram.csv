@@ -28,4 +28,5 @@ User can extend network with node;no;
 Identity not controlled by vendor;no;
 Offline;partial;Compose or read stored messages;
 Third party clients;yes;
+Good ToSDR grade;yes;https://tosdr.org/en/service/1946
 First release;yes;2013-08-14 https://en.wikipedia.org/wiki/Telegram_(software);

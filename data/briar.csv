@@ -30,4 +30,5 @@ Serverless LAN mode;yes;https://briarproject.org/how-it-works/;
 Wireless mode;yes;Bluetooth https://code.briarproject.org/briar/briar/-/wikis/How-Briar-Connects-to-Contacts;
 Third party clients;partial;no alternative client;
 Tor access of vendor operated network;yes;N/A;uses Tor connection to peers
+Good ToSDR grade;yes;https://tosdr.org/en/service/2559
 First release;yes;2018-05-09 https://en.wikipedia.org/wiki/Briar_(software);

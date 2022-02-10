@@ -74,6 +74,7 @@ Transparency reports;;;;
 Vendor jurisdiction;;;;tinfoil
 Infrastructure jurisdiction;;;;tinfoil
 Infrastructure provider;;;;tinfoil
+Good ToSDR grade;yes=A,B, partial=C,D, no=E,F;layperson;foss tinfoil
 ;Past events;;;
 First release;yes=mature, large masses have tested it for years, no=only released recently;;;foss
 No past DDoS;no=denial of service happened against vendor operated network;layperson;;
