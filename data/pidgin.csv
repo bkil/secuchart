@@ -9,13 +9,13 @@ Languages;yes;105 https://www.transifex.com/pidgin/pidgin/;
 Protocol;;Jabber/XMPP, multiple;Bonjour, Gadu-Gadu, IRC, Novell GroupWise Messenger, Lotus Sametime, SILC, SIMPLE, Zephyr + extendable via plugins https://pidgin.im/plugins/?publisher=all&query=&type=
 Protocol open;partial;some yes;
 Client license;yes;GPLv2 https://keep.imfreedom.org/pidgin/pidgin/file/tip/COPYING;
+Register without app;yes;
 Group chat;yes;
 Multiple devices;yes;
 Multiple accounts;yes;
-End-to-end encryption;partial;some protocols;
 Message expiration;no;
+End-to-end encryption;partial;some protocols;
 Public issue tracker;yes;https://issues.imfreedom.org/issues/PIDGIN;
 Usage without phone number;yes;
-Register without app;yes;
-First release;yes;1998-12-31 (as Gaim) https://en.wikipedia.org/wiki/Pidgin_%28software%29;
 Active development;yes;https://keep.imfreedom.org/pidgin/pidgin/shortlog/tip;
+First release;yes;1998-12-31 (as Gaim) https://en.wikipedia.org/wiki/Pidgin_%28software%29;

@@ -10,6 +10,7 @@ Protocol;;Matrix;
 Protocol open;yes;https://spec.matrix.org/latest/;
 Server license;yes;Apache 2.0 https://github.com/matrix-org/synapse/blob/develop/LICENSE;
 Client license;yes;Apache 2.0 https://github.com/vector-im/element-web/blob/develop/LICENSE;
+Register without app;yes;;
 Group chat;yes;;
 Voice calls;yes;WebRTC https://matrix.org/faq/#what-can-i-actually-do-with-this%3F;
 Video calls;yes;WebRTC https://matrix.org/faq/#what-can-i-actually-do-with-this%3F;
@@ -18,20 +19,19 @@ Read public content without registering;yes;guest participant, room peek preview
 Multiple devices;yes;;
 Multiple accounts;yes;Web tabs, Desktop profiles
 Application locking;yes;Android https://github.com/vector-im/element-android/blob/fe9bd38115e080166baaa0c6ebb7d07d53c707a6/vector/src/main/res/xml/vector_settings_pin.xml#L17 iOS https://github.com/vector-im/element-ios/blob/f7a816394741861cb34e5bc44f73350016ca0b29/Riot/Modules/SetPinCode/PinCodePreferences.swift#L33
-End-to-end encryption;yes;https://matrix.org/faq/#which-matrix-clients-support-e2e;
-Metadata protection;no;;
-Perfect forward secrecy;no;;
 Remote message removal;yes;by redaction events https://matrix.org/faq/#what-are-redactions%3F;
 Remote message correction;yes;;
 Message expiration;partial;per room, no GUI, not default;only through slash-commands in Element, need to enable on each Synapse home server and depending on configuration in each room as well https://matrix-org.github.io/synapse/v1.41/message_retention_policies.html
+Account deactivation after device compromise;yes;with second device or Web or Desktop;
+Account recovery after device compromise;yes;with second device or Web or Desktop;
+End-to-end encryption;yes;https://matrix.org/faq/#which-matrix-clients-support-e2e;
+Metadata protection;no;;
+Perfect forward secrecy;no;;
 Reproducible builds;no;https://github.com/vector-im/element-web/issues/11848
 Usage without phone number;yes;;
-Register without app;yes;;
 Active development;yes;https://github.com/vector-im;
 Multi-party development;yes;https://github.com/vector-im/element-web/pulse/monthly https://github.com/vector-im/element-android/pulse/monthly https://github.com/vector-im/element-ios/pulse/monthly;
 Identity not controlled by vendor;yes;Unless using matrix.org account;vendor also offers various self-hostable or optional services like stickers, bots and bridges
-Account deactivation after device compromise;yes;with second device or Web or Desktop;
-Account recovery after device compromise;yes;with second device or Web or Desktop;
 Offline;partial;compose or read recent Desktop messages, no Web startup;Buffered messages on Element Desktop, Element Web lacks offline startup via Web Workers
 Servers required;;Synapse homeserver, notifications push;
 Servers optional;;DNS, Element Web app, identity, integrations, ICE, Jitsi https://gitlab.com/libremonde-org/papers/research/privacy-matrix.org/-/blob/master/part1/README.md;

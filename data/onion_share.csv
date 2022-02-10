@@ -10,43 +10,43 @@ Protocol;;unnamed;Built on top of Tor
 Protocol open;partial;not documented;Need to reverse engineer from source code
 Server license;yes;GPLv3 https://github.com/onionshare/onionshare/blob/develop/LICENSE;
 Client license;yes;GPLv3 https://github.com/onionshare/onionshare/blob/develop/LICENSE;
+Register without app;partial;clients connect via Tor Browser;JavaScript required, accounts are per group, not per user, but the server does need an app to create each group account https://docs.onionshare.org/2.5/en/features.html#chat-anonymously
 Group chat;yes;https://docs.onionshare.org/2.5/en/features.html#chat-anonymously;
 Voice calls;no;https://docs.onionshare.org/2.5/en/features.html#chat-anonymously;
 Video calls;no;https://docs.onionshare.org/2.5/en/features.html#chat-anonymously;
 Group calls;no;https://docs.onionshare.org/2.5/en/features.html#chat-anonymously;
 Read public content without registering;no;https://docs.onionshare.org/2.5/en/features.html#chat-anonymously;
+Multiple devices;yes;just paste the private key on each https://docs.onionshare.org/2.5/en/features.html#chat-anonymously;
+Multiple accounts;partial;;could connect via multiple Tor browser instances
+Spam protection;no;Groups are invite-only;The server could implement filtering in the future
+Account deactivation after device compromise;no;Private key distributed;
+Account recovery after device compromise;no;Private key distributed;
 CPU idle;yes;uses Tor browser;
 Power saving;yes;uses Tor browser;
 Bandwidth frugal;yes;uses Tor browser;
-Multiple devices;yes;just paste the private key on each https://docs.onionshare.org/2.5/en/features.html#chat-anonymously;
-Multiple accounts;partial;;could connect via multiple Tor browser instances
 End-to-end encryption;no;Tor hidden service hub;MITM possible, separate encrypted Tor channels between the server and clients https://docs.onionshare.org/2.5/en/features.html#how-does-the-encryption-work
 Deniability;partial;;TODO: couldn't the server correlate messages of a client?
 Replay prevention;no;;Trivial to repeat a message as it's anonymous with chosen display name
 Downgrade resistance;yes;;
 Contact list confidential;yes;;TODO: Are we sure a server running multiple rooms or clients connecting to multiple rooms aren't able to correlate their peers?
 Usage without phone number;yes;https://docs.onionshare.org/2.5/en/features.html#chat-anonymously;
-Register without app;partial;clients connect via Tor Browser;JavaScript required, accounts are per group, not per user, but the server does need an app to create each group account https://docs.onionshare.org/2.5/en/features.html#chat-anonymously
-First release;yes;2015-05-19 https://github.com/onionshare/onionshare/releases/tag/0.7;
 Transparent financing;no;;Couldn't find any donation links, previous sponsorship or how supportive their community is https://micahflee.com/
 No-cost tier;yes;;
 Payment choices;;N/A;
-Vendor jurisdiction;;US;
-Infrastructure jurisdiction;;global;Tor onion routed network
-Infrastructure provider;;Tor;onion routed network
 Isolated self-hosting;no;Requires Tor;
 User can extend network with node;partial;All networks isolated;A user can either start a separate one or join an existing one
 Identity not controlled by vendor;yes;Generated when starting server;
-Account deactivation after device compromise;no;Private key distributed;
-Account recovery after device compromise;no;Private key distributed;
-Spam protection;no;Groups are invite-only;The server could implement filtering in the future
 Servers required;;Tor, OnionShare;
 Serverless WAN mode;no;Requires Tor;
 Serverless LAN mode;no;Requires Tor;
 Network store and forward;no;No chat log https://docs.onionshare.org/2.5/en/features.html#chat-anonymously;
 Wireless mode;no;https://docs.onionshare.org/2.5/en/features.html#chat-anonymously;
 IP shielded from peers;yes;via Tor;
+Third party clients;partial;no alternative client;
 Tor access of vendor operated network;yes;N/A;uses Tor connection to peers
 IPv6 access of vendor operated network;yes;;
 Vendor operated network inaccessible from countries;;some countries attempt to censor Tor;bridges are available
-Third party clients;partial;no alternative client;
+Vendor jurisdiction;;US;
+Infrastructure jurisdiction;;global;Tor onion routed network
+Infrastructure provider;;Tor;onion routed network
+First release;yes;2015-05-19 https://github.com/onionshare/onionshare/releases/tag/0.7;

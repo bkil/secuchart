@@ -10,40 +10,36 @@ Protocol;;Session protocol, fork of Signal protocol https://getsession.org/blog/
 Protocol open;partial;prose, source;out of date in prose https://getsession.org/blog/session-protocol-technical-information https://www.getsession.org/blog/session-protocol-explained need to reverse engineer from source
 Server license;yes;GPLv3 https://github.com/oxen-io/lokinet/blob/dev/LICENSE.txt MIT https://github.com/oxen-io/oxen-storage-server/blob/dev/LICENSE;
 Client license;yes;GPLv3 https://github.com/oxen-io/session-desktop/blob/clearnet/LICENSE;
+Register without app;no;;
 Group chat;yes;closed groups (private) e2ee, open groups (public) not e2ee https://getsession.org/faq;
 Voice calls;yes;beta test, p2p, ip exposed https://getsession.org/blog/calls-on-session-how-to-opt-in;
 Video calls;yes;beta test, p2p, ip exposed https://getsession.org/blog/calls-on-session-how-to-opt-in;
 Group calls;no;;
 Read public content without registering;partial;5 official rooms are bridged https://open.getsession.org/;
+Multiple devices;yes;still not functioning properly;
+Multiple accounts;no;;
+Remote message removal;no;;
+Remote message correction;no;;
+Message expiration;yes;disappearing messages (local) 5 sec - 1 week options, server keeps all messages for 14 days;
+Spam protection;no;proof of work,unlimited account ids can be generated almost instantly;
+Account deactivation after device compromise;no;account ids are random generated 2^128 keys;
+Account recovery after device compromise;partial;accound ids can be recovered with seed phrase, 12 words + 1 check word;
 CPU idle;no;Uses proof of work to combat spam;
 Power saving;no;Constantly transfers in the background;
 Bandwidth frugal;no;Constantly transfers a lot in the background;36MB/hour in our Desktop test in 2022
-Multiple devices;yes;still not functioning properly;
-Multiple accounts;no;;
 End-to-end encryption;partial;yes in private conversations and closed groups, no in open groups https://getsession.org/faq;
 E2EE keys shielded from operator;yes;2^128 generated locally https://getsession.org/faq;
 Contact list confidential;partial;;
 Metadata protection;partial;;
 Perfect forward secrecy;no;was explicitly removed from Session protocol https://getsession.org/blog/session-protocol-technical-information;
-Remote message removal;no;;
-Remote message correction;no;;
-Message expiration;yes;disappearing messages (local) 5 sec - 1 week options, server keeps all messages for 14 days;
 Audits;yes;one completed, covered only session protocol;network and servers have not been audited https://blog.quarkslab.com/resources/2021-05-04_audit-of-session-secure-messaging-application/20-08-Oxen-REP-v1.4.pdf
 Usage without phone number;yes;Random 2^128 key generated as account id https://getsession.org/faq;
-Register without app;no;;
-First release;partial;2020-02-06 https://github.com/oxen-io/session-desktop/releases?page=6;
 Transparent financing;no;complex financial structure with no clear answers;network is financed by oxen crypto, financial disclosures haven't been published since 2019 https://optf.ngo/annual-reports/
 No-cost tier;yes;;
 Payment choices;;none;
-Vendor jurisdiction;;Australia;complicated 5 eyes jurisdiction with many anti-privacy and anti-encryption laws	https://optf.ngo/legals/
-Infrastructure jurisdiction;;Australia https://optf.ngo/legals/;
-Infrastructure provider;;Hetzner and OVH, distributed Lokinet;session owned servers are primarily hetzner and ovh, lokinet servers are distributed worldwide in multiple countries and with various isps
 Isolated self-hosting;no;;
 User can extend network with node;no;;
 Identity not controlled by vendor;partial;;
-Account deactivation after device compromise;no;account ids are random generated 2^128 keys;
-Account recovery after device compromise;partial;accound ids can be recovered with seed phrase, 12 words + 1 check word;
-Spam protection;no;proof of work,unlimited account ids can be generated almost instantly;
 Offline;yes;https://getsession.org/faq;
 Servers required;;session/lokinet onion routing network required https://getsession.org/faq;
 Servers optional;;https://getsession.org/faq;
@@ -52,7 +48,11 @@ Serverless LAN mode;no;https://getsession.org/faq;
 Network store and forward;yes;messages are stored on session servers for 14 days https://getsession.org/faq;
 Wireless mode;no;https://getsession.org/faq;
 IP shielded from peers;partial;onion requests in private, group server operators, voice calls and video calls are p2p https://getsession.org/faq;private conversations and closed groups are sent using onion requests, open groups are possibly visible by open group server operators, voice calls and video calls are p2p and ips are visible by all users, attachments, pictures, videos, files, etc. are not onion routed and are sent directly to and stored on session owned servers, avatars and user display names are possibly still uploaded directly to and stored on session owned servers, github contacted directly during account setup and when app checks for updates https://getsession.org/faq
+Third party clients;partial;no alternative client;
 Tor access of vendor operated network;no;session/lokinet were designed to be non-compatible with tor;
 IPv6 access of vendor operated network;no;session is not currently compatible with ipv6, may be in future;
 Vendor operated network inaccessible from countries;partial;possibly China is blocking access to Session and Lokinet;
-Third party clients;partial;no alternative client;
+Vendor jurisdiction;;Australia;complicated 5 eyes jurisdiction with many anti-privacy and anti-encryption laws	https://optf.ngo/legals/
+Infrastructure jurisdiction;;Australia https://optf.ngo/legals/;
+Infrastructure provider;;Hetzner and OVH, distributed Lokinet;session owned servers are primarily hetzner and ovh, lokinet servers are distributed worldwide in multiple countries and with various isps
+First release;partial;2020-02-06 https://github.com/oxen-io/session-desktop/releases?page=6;

@@ -15,13 +15,13 @@ Group calls;yes;via Jitsi https://matrix.org/faq/#what-can-i-actually-do-with-th
 Multiple devices;yes;
 Multiple accounts;yes;
 Application locking;yes;Android - custom 4 digit PIN;
-End-to-end encryption;yes;https://matrix.org/faq/#which-matrix-clients-support-e2e;
 Message expiration;no;;
+Account deactivation after device compromise;yes;;
+Account recovery after device compromise;yes;;
+End-to-end encryption;yes;https://matrix.org/faq/#which-matrix-clients-support-e2e;
 Public issue tracker;yes;https://gitlab.com/famedly/fluffychat/-/issues;
 Usage without phone number;yes;;
 Identity not controlled by vendor;yes;;
-Account deactivation after device compromise;yes;;
-Account recovery after device compromise;yes;;
 Offline;partial;compose or read recent messages on Mobile/Desktop, no Web startup;Buffered messages on Mobile/Desktop, Fluffychat Web lacks offline startup via Web Workers
 Servers required;;Matrix homeserver e.g. Synapse, Dendride, Conduit, notifications push via FCM or Unified push;
 Serverless WAN mode;no;;

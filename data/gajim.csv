@@ -9,17 +9,17 @@ Languages;yes;37 https://dev.gajim.org/gajim/gajim/-/wikis/development/devtransl
 Protocol;;Jabber/XMPP;
 Protocol open;yes;;
 Client license;yes;GPLv3 https://dev.gajim.org/gajim/gajim/-/blob/master/COPYING;
+Register without app;yes;;
 Group chat;yes;;
 Voice calls;no;https://dev.gajim.org/gajim/gajim/-/wikis/help/gajimfaq#does-gajim-support-audiovideo;
 Video calls;no;https://dev.gajim.org/gajim/gajim/-/wikis/help/gajimfaq#does-gajim-support-audiovideo;
 Group calls;no;;
 Multiple devices;yes;;
 Multiple accounts;yes;;
-End-to-end encryption;yes;XEP-0384 OMEMO plugin https://dev.gajim.org/gajim/gajim/-/wikis/help/gajimfaq#does-gajim-support-omemo-encryption;also XEP-0373 OpenPGP plugin https://gajim.org/support/extensions/
 Message expiration;no;;
+End-to-end encryption;yes;XEP-0384 OMEMO plugin https://dev.gajim.org/gajim/gajim/-/wikis/help/gajimfaq#does-gajim-support-omemo-encryption;also XEP-0373 OpenPGP plugin https://gajim.org/support/extensions/
 Public issue tracker;yes;https://dev.gajim.org/gajim/gajim/-/issues;
 Usage without phone number;yes;;
-Register without app;yes;;
-First release;yes;2004-05-21 https://dev.gajim.org/gajim/gajim/blob/master/ChangeLog;
 Active development;yes;https://dev.gajim.org/gajim/gajim/-/commits/master/;
 Multi-party development;partial;;
+First release;yes;2004-05-21 https://dev.gajim.org/gajim/gajim/blob/master/ChangeLog;

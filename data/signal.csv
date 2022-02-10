@@ -10,27 +10,23 @@ Protocol;;Signal Protocol https://signal.org/docs/
 Protocol open;yes;https://signal.org/docs/
 Server license;yes;AGPLv3 https://github.com/signalapp/Signal-Server/blob/master/LICENSE
 Client license;yes;Android GPLv3 https://github.com/signalapp/Signal-Android/blob/master/LICENSE iOS GPLv3 https://github.com/signalapp/Signal-iOS/blob/master/LICENSE Desktop AGPLv3 https://github.com/signalapp/Signal-Desktop/blob/development/LICENSE
+Register without app;no;;as a workaround, through the unofficial mautrix-signal matrix bridge with a custom HS
 Group chat;yes;https://support.signal.org/hc/en-us/articles/360007319331-Group-chats
 Voice calls;yes;https://support.signal.org/hc/en-us/articles/360007060492-Voice-or-Video-Calling-with-Screen-Sharing;
 Video calls;yes;https://support.signal.org/hc/en-us/articles/360007060492-Voice-or-Video-Calling-with-Screen-Sharing;
 Group calls;yes;https://support.signal.org/hc/en-us/articles/360052977792-Group-Calling-Voice-or-Video-with-Screen-Sharing;
-Power saving;yes;;Polling without FCM https://reddit.com/r/signal/comments/ium7he/no_notifications_on_degoogled_phone_tried/ https://reddit.com/r/degoogle/comments/m9cxax/what_are_your_thoughts_on_this_degoogled_fork_of/, TODO: research
 Multiple devices;partial;Only Desktop as secondary device;
 Multiple accounts;no;;
 Application locking;yes;Android's screen lock https://support.signal.org/hc/en-us/articles/360007059572-Screen-Lock;
-End-to-end encryption;yes;https://support.signal.org/hc/en-us/articles/360007320391-Is-it-private-Can-I-trust-it-
 Message expiration;yes;https://support.signal.org/hc/en-us/articles/360007320771-Set-and-manage-disappearing-messages
+Account deactivation after device compromise;partial;Only for secondary devices;
+Power saving;yes;;Polling without FCM https://reddit.com/r/signal/comments/ium7he/no_notifications_on_degoogled_phone_tried/ https://reddit.com/r/degoogle/comments/m9cxax/what_are_your_thoughts_on_this_degoogled_fork_of/, TODO: research
+End-to-end encryption;yes;https://support.signal.org/hc/en-us/articles/360007320391-Is-it-private-Can-I-trust-it-
 Reproducible builds;yes;Android https://signal.org/blog/reproducible-android/
 Usage without phone number;no;
-Register without app;no;;as a workaround, through the unofficial mautrix-signal matrix bridge with a custom HS
-First release;yes;2014-07-29 https://en.wikipedia.org/wiki/Signal_(software);
 Active development;yes;;
-Vendor jurisdiction;;USA https://signal.org/legal/
-Infrastructure jurisdiction;;USA
-Infrastructure provider;;Amazon
 User can extend network with node;no;;
 Identity not controlled by vendor;no;;
-Account deactivation after device compromise;partial;Only for secondary devices;
 Offline;partial;Compose or read stored messages;
 Servers optional;;FCM https://support.signal.org/hc/en-us/articles/360007318711-Troubleshooting-Notifications https://reddit.com/r/signal/comments/ium7he/no_notifications_on_degoogled_phone_tried/ https://reddit.com/r/degoogle/comments/m9cxax/what_are_your_thoughts_on_this_degoogled_fork_of/;TODO: what else?
 Serverless WAN mode;no;
@@ -39,3 +35,7 @@ Network store and forward;yes;
 Wireless mode;no;
 IP shielded from peers;yes;
 Third party clients;no;https://github.com/LibreSignal/LibreSignal/blob/master/README.md https://github.com/LibreSignal/LibreSignal/issues/37#issuecomment-217211165 https://lwn.net/Articles/687294/;
+Vendor jurisdiction;;USA https://signal.org/legal/
+Infrastructure jurisdiction;;USA
+Infrastructure provider;;Amazon
+First release;yes;2014-07-29 https://en.wikipedia.org/wiki/Signal_(software);

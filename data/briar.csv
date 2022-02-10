@@ -7,27 +7,27 @@ Languages;yes;many https://code.briarproject.org/briar/briar/-/tree/master/briar
 Protocol;;Bramble;
 Protocol open;yes;https://code.briarproject.org/briar/briar/-/wikis/home#protocol;
 Client license;yes;various https://code.briarproject.org/briar/briar/-/blob/master/LICENSE.txt https://code.briarproject.org/briar/briar-desktop/-/blob/main/LICENSE.md;
+Register without app;no;;
 Group chat;yes;;
 Multiple devices;no;
 Multiple accounts;no;
 Application locking;yes;Android's screen lock https://briarproject.org/news/2018-briar-1.1-released/;
-End-to-end encryption;yes;https://briarproject.org/how-it-works/;
-Contact list confidential;yes;https://briarproject.org/how-it-works/;
 Remote message removal;no;;
 Remote message correction;no;;
 Message expiration;yes;Only setting of 7 days possible https://briarproject.org/news/2021-briar-1.3-released/;
+Account deactivation after device compromise;no;
+Account recovery after device compromise;no;
+End-to-end encryption;yes;https://briarproject.org/how-it-works/;
+Contact list confidential;yes;https://briarproject.org/how-it-works/;
 Public issue tracker;yes;https://code.briarproject.org/briar/briar/-/issues https://code.briarproject.org/briar/briar-desktop/-/issues;
 Reproducible builds;yes;https://code.briarproject.org/briar/briar/-/issues/1273
 Usage without phone number;yes;;
-Register without app;no;;
-First release;yes;2018-05-09 https://en.wikipedia.org/wiki/Briar_(software);
 Active development;yes;;
 Identity not controlled by vendor;yes;;
-Account deactivation after device compromise;no;
-Account recovery after device compromise;no;
 Offline;yes;https://briarproject.org/how-it-works/;
 Servers required;;Tor https://code.briarproject.org/briar/briar/-/wikis/A-Quick-Overview-of-the-Protocol-Stack;
 Serverless LAN mode;yes;https://briarproject.org/how-it-works/;
 Wireless mode;yes;Bluetooth https://code.briarproject.org/briar/briar/-/wikis/How-Briar-Connects-to-Contacts;
-Tor access of vendor operated network;yes;N/A;uses Tor connection to peers
 Third party clients;partial;no alternative client;
+Tor access of vendor operated network;yes;N/A;uses Tor connection to peers
+First release;yes;2018-05-09 https://en.wikipedia.org/wiki/Briar_(software);

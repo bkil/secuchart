@@ -8,16 +8,22 @@ Languages;yes;16 https://threema.ch/en/faq/languages;
 Protocol open;partial;ARP open https://github.com/threema-ch/app-remote-protocol others in prose https://threema.ch/press-files/2_documentation/cryptography_whitepaper.pdf;
 Server license;partial;proprietary: Chat, Directory, Media;
 Client license;yes;AGPLv3 but paid;
+Register without app;no;;
 Group chat;yes;implemented with unicast https://threema.ch/press-files/cryptography_whitepaper.pdf;
 Voice calls;yes;;
 Video calls;yes;;
 Read public content without registering;no;;
-CPU idle;yes;;
-Power saving;yes;Push relay & native push;Fetches encrypted content from its own server in response to a push, group chat via unicast https://threema.ch/press-files/2_documentation/cryptography_whitepaper.pdf Polling without FCM https://threema.ch/en/faq/privacy_push
-Bandwidth frugal;partial;Push relay & native push, group chat via unicast;Fetches encrypted content from its own server in response to a push, optimized binary chat protocol https://threema.ch/press-files/2_documentation/cryptography_whitepaper.pdf
 Multiple devices;partial;as group chat https://threema.ch/en/faq/multidevice;
 Multiple accounts;no;;
 Application locking;yes;Android's System Screen Lock, PIN or Biometric https://threema.ch/en/faq/private_chats;
+Remote message removal;no;https://threema.ch/en/messenger-comparison;
+Remote message correction;no;https://threema.ch/en/messenger-comparison;
+Message expiration;no;https://threema.ch/en/messenger-comparison;
+Account deactivation after device compromise;yes;https://threema.ch/en/faq/revoke;
+Account recovery after device compromise;no;;
+CPU idle;yes;;
+Power saving;yes;Push relay & native push;Fetches encrypted content from its own server in response to a push, group chat via unicast https://threema.ch/press-files/2_documentation/cryptography_whitepaper.pdf Polling without FCM https://threema.ch/en/faq/privacy_push
+Bandwidth frugal;partial;Push relay & native push, group chat via unicast;Fetches encrypted content from its own server in response to a push, optimized binary chat protocol https://threema.ch/press-files/2_documentation/cryptography_whitepaper.pdf
 End-to-end encryption;yes;https://threema.ch/en/faq/why_secure;
 E2EE keys shielded from operator;yes;https://threema.ch/en/faq/data;
 Deniability;yes;public-key authenticators https://threema.ch/press-files/2_documentation/cryptography_whitepaper.pdf;
@@ -25,25 +31,15 @@ Replay prevention;yes;nonce accumulation https://threema.ch/press-files/2_docume
 Contact list confidential;yes;stored on device, optional address book import https://threema.ch/en/faq/addressbook_data;
 Metadata protection;yes;https://threema.ch/en/faq/privacy_protection;
 Perfect forward secrecy;partial;only for calls https://threema.ch/press-files/2_documentation/cryptography_whitepaper.pdf;
-Remote message removal;no;https://threema.ch/en/messenger-comparison;
-Remote message correction;no;https://threema.ch/en/messenger-comparison;
-Message expiration;no;https://threema.ch/en/messenger-comparison;
 Reproducible builds;yes;Android https://threema.ch/en/open-source/reproducible-builds
 Audits;yes;2020, 2019 https://threema.ch/en/faq/code_audit;
 Usage without phone number;yes;;
-Register without app;no;;
-First release;yes;2012-12 https://en.wikipedia.org/wiki/Threema;
 Transparent financing;yes;individuals: one-time payment;subscriptions for organizations https://threema.ch/en/work and educational institutions https://threema.ch/en/education
 No-cost tier;no;;
 Payment choices;;Wire transfer, MasterCard, Visa, PayPal, Bitcoin https://shop.threema.ch/terms;
-Vendor jurisdiction;;Switzerland;
-Infrastructure jurisdiction;;Switzerland;
-Infrastructure provider;;a colocation data center https://work.threema.ch/docs/threema_privacy-security_en.pdf;
 Isolated self-hosting;partial;https://threema.ch/en/onprem;Directory and push relay are not self-hostable https://threema.ch/press-files/cryptography_whitepaper.pdf
 User can extend network with node;no;;
 Identity not controlled by vendor;no;;
-Account deactivation after device compromise;yes;https://threema.ch/en/faq/revoke;
-Account recovery after device compromise;no;;
 Offline;yes;;TODO: verify and add reference, because it requires many servers to run
 Servers required;;Chat, Directory (identity), Media, WebRTC, Web push relay https://threema.ch/press-files/cryptography_whitepaper.pdf;APN required on iOS, https://threema.ch/en/faq/privacy_push
 Servers optional;;FCM https://threema.ch/en/faq/privacy_push, Threema Safe https://threema.ch/press-files/cryptography_whitepaper.pdf;
@@ -53,3 +49,7 @@ Network store and forward;yes;;
 Wireless mode;no;;
 IP shielded from peers;yes;not if STUN calls are enabled https://threema.ch/press-files/cryptography_whitepaper.pdf;
 Third party clients;partial;openMittsu https://github.com/blizzard4591/openMittsu#does-the-threema-gmbh-allow-this-project;It is "tolerated" as of now
+Vendor jurisdiction;;Switzerland;
+Infrastructure jurisdiction;;Switzerland;
+Infrastructure provider;;a colocation data center https://work.threema.ch/docs/threema_privacy-security_en.pdf;
+First release;yes;2012-12 https://en.wikipedia.org/wiki/Threema;

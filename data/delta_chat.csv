@@ -10,16 +10,23 @@ Protocol;;SMTP and IMAP with AutoCrypt https://github.com/deltachat/deltachat-co
 Protocol open;yes;https://github.com/deltachat/deltachat-core-rust/blob/master/standards.md#standards-used-in-delta-chat;
 Server license;yes;various (any SMTP and IMAP server);
 Client license;yes;GPLv3+;
+Register without app;yes;supports existing mailbox provider accounts https://delta.chat/en/help#does-delta-chat-work-with-my-e-mail-provider;
 Group chat;yes;;https://delta.chat/en/help#groups membership change is unicast
 Voice calls;partial;via embedding jitsi, talky.io, appear.in https://delta.chat/en/2020-07-30-summer-update#video-chats;
 Video calls;partial;via embedding jitsi, talky.io, appear.in https://delta.chat/en/2020-07-30-summer-update#video-chats;
 Group calls;partial;via embedding jitsi, talky.io, appear.in https://delta.chat/en/2020-07-30-summer-update#video-chats;
 Read public content without registering;no;;
+Multiple devices;yes;https://delta.chat/en/help#can-i-use-delta-chat-on-multiple-devices-at-the-same-time;
+Multiple accounts;yes;https://delta.chat/en/2021-08-24-updates#multi-account-added-or-improved;
+Remote message removal;no;https://support.delta.chat/t/retract-edit-sent-messages/1918/7;
+Remote message correction;no;https://support.delta.chat/t/retract-edit-sent-messages/1918/7;
+Message expiration;yes;https://delta.chat/en/2020-07-30-summer-update#disappearing-messages;
+Spam protection;yes;standard email filters, hides non-contact https://delta.chat/en/help#what-are-the-advantages-of-delta-chat-compared-to-other-messengers;
+Account deactivation after device compromise;partial;;probably manually by a revocation certificate and with the help of the mailbox provider
+Account recovery after device compromise;partial;;probably manually by revocation, mailbox provider help, generating new keys and verifying all contacts again
 CPU idle;yes;;
 Power saving;partial;IMAP IDLE keeps a socket open;
 Bandwidth frugal;partial;group messages are unicast;should use selective IMAP fetches and compression
-Multiple devices;yes;https://delta.chat/en/help#can-i-use-delta-chat-on-multiple-devices-at-the-same-time;
-Multiple accounts;yes;https://delta.chat/en/2021-08-24-updates#multi-account-added-or-improved;
 End-to-end encryption;yes;https://delta.chat/en/help#does-delta-chat-support-end-to-end-encryption;
 E2EE keys shielded from operator;yes;https://delta.chat/en/help#does-delta-chat-support-end-to-end-encryption;
 Deniability;no;;https://nixfaq.org/2020/09/delta-chat-a-libre-decentralized-chat-over-email-end-to-end-encrypted-messaging-solution.html DKIM and received mail headers reduce feasibility
@@ -28,25 +35,14 @@ Downgrade resistance;no;;should warn when encryption disabled https://support.de
 Contact list confidential;partial;not published, but leaks through mail headers https://delta.chat/en/help#which-messages-do-appear-in-delta-chat;
 Metadata protection;partial;encrypts certain email headers https://delta.chat/en/help#how-does-delta-chat-protect-my-metadata;recipients and time in the clear
 Perfect forward secrecy;no;https://delta.chat/en/help#does-delta-chat-support-perfect-forward-secrecy;
-Remote message removal;no;https://support.delta.chat/t/retract-edit-sent-messages/1918/7;
-Remote message correction;no;https://support.delta.chat/t/retract-edit-sent-messages/1918/7;
-Message expiration;yes;https://delta.chat/en/2020-07-30-summer-update#disappearing-messages;
 Audits;yes;2019 https://delta.chat/assets/1907-otf-deltachat-rpgp-rustrsa-gb-reportv1.pdf;
 Usage without phone number;yes;depending on mailbox provider;
-Register without app;yes;supports existing mailbox provider accounts https://delta.chat/en/help#does-delta-chat-work-with-my-e-mail-provider;
-First release;yes;2017 https://delta.chat/en/2017-05-31-blog-created https://delta.chat/en/help#how-are-delta-chat-developments-funded;
 Transparent financing;yes;grants, funds and Librepay donations https://delta.chat/en/help#how-are-delta-chat-developments-funded;
 No-cost tier;yes;;
 Payment choices;;N/A;
-Vendor jurisdiction;;Germany https://delta.chat/en/gdpr;
-Infrastructure jurisdiction;;N/A;depends on provider
-Infrastructure provider;;N/A;depends on provider
 Isolated self-hosting;yes;SMTP and IMAP https://delta.chat/en/help#what-are-the-advantages-of-delta-chat-compared-to-other-messengers;
 User can extend network with node;yes;SMTP and IMAP https://delta.chat/en/help#what-are-the-advantages-of-delta-chat-compared-to-other-messengers;
 Identity not controlled by vendor;yes;SMTP and IMAP https://delta.chat/en/help#what-are-the-advantages-of-delta-chat-compared-to-other-messengers;
-Account deactivation after device compromise;partial;;probably manually by a revocation certificate and with the help of the mailbox provider
-Account recovery after device compromise;partial;;probably manually by revocation, mailbox provider help, generating new keys and verifying all contacts again
-Spam protection;yes;standard email filters, hides non-contact https://delta.chat/en/help#what-are-the-advantages-of-delta-chat-compared-to-other-messengers;
 Offline;yes;https://delta.chat/en/2020-03-06-delta-1.2;
 Servers required;;DNS, SMTP, IMAP;
 Servers optional;;jitsi, talky.io, appear.in https://delta.chat/en/2020-07-30-summer-update#video-chats;
@@ -55,7 +51,11 @@ Serverless LAN mode;no;;might be feasible in the future
 Network store and forward;yes;https://delta.chat/en/help#how-does-delta-chat-protect-my-metadata;
 Wireless mode;no;;
 IP shielded from peers;partial;usually not, depends on provider https://security.stackexchange.com/questions/237525/ip-address-leaked-in-email-header;
+Third party clients;yes;SMTP and IMAP;interoperates with any email client, E2EE uses AutoCrypt https://delta.chat/en/help#which-standards-are-used-for-end-to-end-encryption
 Tor access of vendor operated network;yes;N/A;depends on provider
 IPv6 access of vendor operated network;yes;N/A;depends on provider
 Vendor operated network inaccessible from countries;;N/A;depends on provider
-Third party clients;yes;SMTP and IMAP;interoperates with any email client, E2EE uses AutoCrypt https://delta.chat/en/help#which-standards-are-used-for-end-to-end-encryption
+Vendor jurisdiction;;Germany https://delta.chat/en/gdpr;
+Infrastructure jurisdiction;;N/A;depends on provider
+Infrastructure provider;;N/A;depends on provider
+First release;yes;2017 https://delta.chat/en/2017-05-31-blog-created https://delta.chat/en/help#how-are-delta-chat-developments-funded;
