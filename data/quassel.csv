@@ -21,8 +21,8 @@ Account deactivation after device compromise;yes;
 End-to-end encryption;no;
 Deniability;no;
 Metadata protection;no;
-Public issue tracker;yes;https://git.kuschku.de/justJanne/QuasselDroid-ng/-/issues https://bugs.quassel-irc.org/;
 Usage without phone number;yes;
 Identity not controlled by vendor;yes;;
 Servers required;;IRC server
 First release;yes;2008-08-27 https://en.wikipedia.org/wiki/Quassel_IRC;
+Public issue tracker;yes;https://git.kuschku.de/justJanne/QuasselDroid-ng/-/issues https://bugs.quassel-irc.org/;

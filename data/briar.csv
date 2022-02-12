@@ -19,7 +19,6 @@ Account deactivation after device compromise;no;
 Account recovery after device compromise;no;
 End-to-end encryption;yes;https://briarproject.org/how-it-works/;
 Contact list confidential;yes;https://briarproject.org/how-it-works/;
-Public issue tracker;yes;https://code.briarproject.org/briar/briar/-/issues https://code.briarproject.org/briar/briar-desktop/-/issues;
 Reproducible builds;yes;https://code.briarproject.org/briar/briar/-/issues/1273
 Usage without phone number;yes;;
 Active development;yes;;
@@ -32,3 +31,4 @@ Third party clients;partial;no alternative client;
 Tor access of vendor operated network;yes;N/A;uses Tor connection to peers
 Good ToSDR grade;yes;https://tosdr.org/en/service/2559
 First release;yes;2018-05-09 https://en.wikipedia.org/wiki/Briar_(software);
+Public issue tracker;yes;https://code.briarproject.org/briar/briar/-/issues https://code.briarproject.org/briar/briar-desktop/-/issues;

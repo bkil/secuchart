@@ -21,7 +21,6 @@ Message expiration;no;;
 Account deactivation after device compromise;yes;;
 Account recovery after device compromise;yes;;
 End-to-end encryption;yes;https://matrix.org/faq/#which-matrix-clients-support-e2e;
-Public issue tracker;yes;https://github.com/SchildiChat/SchildiChat-android/issues https://github.com/SchildiChat/schildichat-desktop/issues;
 Reproducible builds;no;https://github.com/vector-im/element-web/issues/11848
 Usage without phone number;yes;;
 Active development;yes;
@@ -33,3 +32,4 @@ Serverless LAN mode;no;;
 IP shielded from peers;yes;Not during calls if you enable WebRTC;
 Good ToSDR grade;yes;https://tosdr.org/en/service/3388
 First release;yes;2019-07-11 https://github.com/SchildiChat/SchildiChat-android/releases/tag/v0.1.0;
+Public issue tracker;yes;https://github.com/SchildiChat/SchildiChat-android/issues https://github.com/SchildiChat/schildichat-desktop/issues;

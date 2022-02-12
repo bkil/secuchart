@@ -17,7 +17,6 @@ End-to-end encryption;yes;https://wiki.tox.chat/users/techfaq#encryption
 E2EE keys shielded from operator;yes;https://wiki.tox.chat/users/techfaq#encryption
 Contact list confidential;yes;https://wiki.tox.chat/users/sharing_ids
 Perfect forward secrecy;yes;https://tox.chat/faq.html#how-tox-privacy
-Public issue tracker;yes;https://github.com/irungentoo/toxcore/issues https://github.com/tux3/qTox/issues https://github.com/notsecure/uTox/issues
 Reproducible builds;partial;bootstrap daemon https://github.com/TokTok/c-toxcore/issues/85#issuecomment-1029792778
 Usage without phone number;yes;https://wiki.tox.chat/users/toxid
 Transparent financing;partial;out of pocket;not currently accepting donations https://tox.chat/about.html
@@ -40,3 +39,4 @@ Third party clients;yes;https://wiki.tox.chat/clients
 Tor access of vendor operated network;yes;https://tox.chat/faq.html#tox-leak-ip
 Vendor legal entity kind;;person
 First release;yes;2013 https://tox.chat/about.html
+Public issue tracker;yes;https://github.com/irungentoo/toxcore/issues https://github.com/tux3/qTox/issues https://github.com/notsecure/uTox/issues

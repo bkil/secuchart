@@ -19,7 +19,6 @@ Message expiration;no;;
 Account deactivation after device compromise;yes;;
 Account recovery after device compromise;yes;;
 End-to-end encryption;yes;https://matrix.org/faq/#which-matrix-clients-support-e2e;
-Public issue tracker;yes;https://gitlab.com/famedly/fluffychat/-/issues;
 Usage without phone number;yes;;
 Identity not controlled by vendor;yes;;
 Offline;partial;compose or read recent messages on Mobile/Desktop, no Web startup;Buffered messages on Mobile/Desktop, Fluffychat Web lacks offline startup via Web Workers
@@ -27,3 +26,4 @@ Servers required;;Matrix homeserver e.g. Synapse, Dendride, Conduit, notificatio
 Serverless WAN mode;no;;
 Serverless LAN mode;no;;
 IP shielded from peers;yes;Not during calls if you enable WebRTC;
+Public issue tracker;yes;https://gitlab.com/famedly/fluffychat/-/issues;

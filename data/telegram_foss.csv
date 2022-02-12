@@ -22,10 +22,10 @@ Application locking;yes;Android - custom 4 digit PIN + system fingerprint https:
 Message expiration;partial;Only for 1:1 secret chats (not default) and some media https://telegram.org/faq#q-how-do-self-destructing-messages-work;
 Account deactivation after device compromise;partial; Only for secondary devices;
 End-to-end encryption;partial;Only for 1:1 secret chats (not default) https://telegram.org/faq#q-how-are-secret-chats-different;
-Public issue tracker;yes;https://github.com/Telegram-FOSS-Team/Telegram-FOSS/issues;
 Usage without phone number;no;;
 Active development;yes;
 User can extend network with node;no;;
 Identity not controlled by vendor;no;;
 Offline;partial;Compose or read stored messages;
 First release;partial;2017-04-18? https://github.com/Telegram-FOSS-Team/Telegram-FOSS/releases/tag/v3.18.0;
+Public issue tracker;yes;https://github.com/Telegram-FOSS-Team/Telegram-FOSS/issues;

@@ -16,7 +16,7 @@ Multiple accounts;yes;
 Message expiration;no;
 Account deactivation after device compromise;yes;;
 End-to-end encryption;partial;some protocols;
-Public issue tracker;yes;https://issues.imfreedom.org/issues/PIDGIN;
 Usage without phone number;yes;
 Active development;yes;https://keep.imfreedom.org/pidgin/pidgin/shortlog/tip;
 First release;yes;1998-12-31 (as Gaim) https://en.wikipedia.org/wiki/Pidgin_%28software%29;
+Public issue tracker;yes;https://issues.imfreedom.org/issues/PIDGIN;

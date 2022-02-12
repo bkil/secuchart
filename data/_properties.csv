@@ -55,7 +55,6 @@ Contact list confidential;If the client never sends over its contact list to the
 Metadata protection;;tinfoil;;
 Perfect forward secrecy;;tinfoil;;
 Security team;yes=regularly scanning for vulnerabilities proactively, found bugs inspected for security implications, partial=reported vulnerabilities promptly fixed and released;tinfoil;;
-Public issue tracker;Whether outstanding bugs can be viewed by the public. partial=approximated via forum;;foss;tinfoil
 Large bug bounty;;;tinfoil;
 Reproducible builds;;tinfoil;foss;
 Audits;;tinfoil;;
@@ -95,6 +94,7 @@ Infrastructure provider;;;;tinfoil
 Good ToSDR grade;yes=A,B, partial=C,D, no=E,F;layperson;foss tinfoil;
 ;Reputation;;;
 First release;yes=mature, large masses have tested it for years, no=only released recently;;;foss
+Public issue tracker;Whether outstanding bugs can be viewed by the public. partial=approximated via forum;;foss;tinfoil
 Support team;yes=Dedicated, friendly, sufficient compared to user base;layperson;;
 No past DDoS;no=denial of service happened against vendor operated network;layperson;;
 No past client vulnerabilities;no=security exploits in client or server side;all;;

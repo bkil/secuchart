@@ -21,7 +21,6 @@ Remote message correction;no;;
 Message expiration;no;;
 Account deactivation after device compromise;yes;;
 End-to-end encryption;yes;XEP-0384 OMEMO https://conversations.im/omemo/;also OpenPGP
-Public issue tracker;yes;https://github.com/iNPUTmice/Conversations/issues;
 Usage without phone number;yes;;
 Active development;yes;https://github.com/iNPUTmice/Conversations/commits/master;
 Multi-party development;no;;
@@ -32,3 +31,4 @@ Network store and forward;yes;if server and contact client support XEP-0313 MAM;
 Wireless mode;no;;
 IP shielded from peers;yes;not for STUN calls;
 First release;yes;2014-03-24 https://github.com/iNPUTmice/Conversations/releases/tag/0.1;
+Public issue tracker;yes;https://github.com/iNPUTmice/Conversations/issues;
