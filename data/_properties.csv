@@ -35,6 +35,7 @@ Remote message removal;Also called redaction or deletion;foss layperson;;
 Remote message correction;Also called editing;foss layperson;;
 Message expiration;Also called retention time or disappearing messages or self-destructing messages;;foss tinfoil;
 Presence status;This can actually be a privacy breach for tinfoil;;layperson;
+Presence not mandatory;If has presence broadcasting, can it be hidden when online;tinfoil;;
 Typing notifications;;;layperson;
 ;Qualities;;;
 Vendor can't curate content;no=vendor can influence who can access which content, remove spam and vandalism;foss;tinfoil;
