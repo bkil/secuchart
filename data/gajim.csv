@@ -17,6 +17,7 @@ Group calls;no;;
 Multiple devices;yes;;
 Multiple accounts;yes;;
 Message expiration;no;;
+Account deactivation after device compromise;yes;;
 End-to-end encryption;yes;XEP-0384 OMEMO plugin https://dev.gajim.org/gajim/gajim/-/wikis/help/gajimfaq#does-gajim-support-omemo-encryption;also XEP-0373 OpenPGP plugin https://gajim.org/support/extensions/
 Public issue tracker;yes;https://dev.gajim.org/gajim/gajim/-/issues;
 Usage without phone number;yes;;
