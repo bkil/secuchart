@@ -72,8 +72,8 @@ User can extend network with node;Improving the scaling of the system and commun
 Identity not controlled by vendor;Will the system still work if the developer goes bankrupt;foss;layperson;
 ;Topology;;;
 Offline;no=Not useful if disconnected. partial=Only read a few buffered messages or compose new ones. yes=Reboot, add new contacts, past logs, search, cache list of groups or users, settings.;layperson;foss;
-Servers required;;;;foss
-Servers optional;;;;foss
+Servers required;List all server software or instance by name that are mandatory to keep this network running or to host it in isolation;;;foss
+Servers optional;List all server software or instance by name that can provide extra features when using this network;;;foss
 Serverless WAN mode;If communicating over the internet might scale without (a vast amount of) dedicated servers, i.e. by supernode promotion and DHT;foss;;
 Serverless LAN mode;If you can communicate without an internet connection and a server;;;
 Network store and forward;You can compose messages to your peer even if the two of you aren't online at the same time;layperson;;
