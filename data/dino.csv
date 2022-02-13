@@ -11,7 +11,6 @@ Protocol open;yes;;
 Client license;yes;GPLv3+ https://github.com/dino/dino/blob/master/README.md https://github.com/dino/dino/blob/master/LICENSE;
 Register without app;yes;;
 Group chat;yes;https://github.com/dino/dino/wiki/Frequently-asked-questions-(FAQ)#how-to-create-a-group-chat;
-Voice calls;;;
 Video calls;yes;https://dino.im/blog/2022/02/dino-0.3-release/;
 Group calls;yes;https://dino.im/blog/2022/02/dino-0.3-release/;
 File transfer;yes;https://dino.im/blog/2020/11/dino-0.2-release/;

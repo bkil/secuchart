@@ -22,7 +22,6 @@ Remote message removal;no;;
 Remote message correction;no;;
 Message expiration;no;;
 Presence status;yes;;
-Presence not mandatory;;;
 Account deactivation after device compromise;yes;;
 End-to-end encryption;yes;XEP-0384 OMEMO https://conversations.im/omemo/;also OpenPGP
 Usage without phone number;yes;;
