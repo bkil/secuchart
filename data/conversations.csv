@@ -14,11 +14,15 @@ Group chat;yes;;
 Voice calls;yes;https://gist.github.com/iNPUTmice/a28c438d9bbf3f4a3d4c663ffaa224d9#file-conversations-av-notes-md;
 Video calls;yes;https://gist.github.com/iNPUTmice/a28c438d9bbf3f4a3d4c663ffaa224d9#file-conversations-av-notes-md;
 Group calls;no;;
+File transfer;yes;;
+Emoticons in message;yes;;
 Multiple devices;yes;;
 Multiple accounts;yes;;
 Remote message removal;no;;
 Remote message correction;no;;
 Message expiration;no;;
+Presence status;yes;;
+Presence not mandatory;;;
 Account deactivation after device compromise;yes;;
 End-to-end encryption;yes;XEP-0384 OMEMO https://conversations.im/omemo/;also OpenPGP
 Usage without phone number;yes;;
