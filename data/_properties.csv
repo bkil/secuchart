@@ -36,11 +36,11 @@ Application locking;Unlock the account or certain chats with a PIN code, passphr
 Remote message removal;Also called redaction or deletion;foss layperson;;
 Remote message correction;Also called editing;foss layperson;;
 Message expiration;Also called retention time or disappearing messages or self-destructing messages;;foss tinfoil;
-Presence status;This can actually be a privacy breach for tinfoil;;layperson;
+Presence status;Whether it is supported. This can actually be a privacy breach for tinfoil;;layperson;
 Presence not mandatory;If has presence broadcasting, can it be hidden when online;tinfoil;;
-Typing indication;;;layperson;
-Read receipts;;;layperson;
-Receipts not mandatory;;;tinfoil;
+Typing indication;Whether sending and showing is supported. Mention in the explanation whether it can be disabled and its default state;;layperson;
+Read receipts;Whether sending and showing is supported;;layperson;
+Receipts not mandatory;yes=they can be disabled, note default value;;tinfoil;
 ;Qualities;;;
 Vendor can't curate content;no=vendor can influence who can access which content, remove spam and vandalism;foss;tinfoil;
 Spam protection;If it gained worldwide adoption;all;;
