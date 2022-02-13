@@ -2,7 +2,7 @@
 Summary;Highlight in a few words why it is interesting;;;all
 Android Google Play;;;layperson;
 Android F-droid/apk;yes=f-droid.org, partial=apk or separate repository;foss tinfoil;;
-Other Android;Alternative app stores like KaiOS;;tinfoil;layperson
+Other mobile;Alternative app stores like KaiOS;;tinfoil;layperson
 Apple iOS;;;layperson;
 Desktop;;foss;tinfoil;layperson
 Web;;foss layperson;tinfoil;
