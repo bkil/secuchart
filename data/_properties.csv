@@ -22,7 +22,10 @@ Voice messages;Ideally push to talk, may be useful where voice call is not suppo
 Screen sharing;;foss layperson;;
 Audio filtering;Noise cancellation, gain control, voice activity detection;foss layperson;;
 File transfer;Retry, pause, resume;layperson;foss tinfoil;
-Emoticons in message;Compose, show;layperson;;
+Emoticons in message;Deprecated, please refine with below properties! Compose, show;layperson;;
+Unicode support;yes=can both send & receive text containing any valid Unicode code point, usually via utf8mb4, partial=does not support 4-byte+ UTF-8, certain characters or combiners;;;
+Emoji composer;yes=rich dialog with search, partial=replaces a few emotes or aliases with Unicode before sending;;;
+Emoji reception;yes=color Unicode display of all, mention in details if animated, partial=monochromatic, only a subset or replaces received emoticons with pictures;;;
 Sticker packs;Whether they are animated;;layperson;
 Inline images;Supported image formats: png, jpeg, gif, webp, avif;;;
 Inline videos;Supported video formats: mp4, webm, av1;;;
