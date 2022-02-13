@@ -15,8 +15,13 @@ Group chat;yes;;
 Voice calls;yes;WebRTC https://matrix.org/faq/#what-can-i-actually-do-with-this%3F;
 Video calls;yes;WebRTC https://matrix.org/faq/#what-can-i-actually-do-with-this%3F;
 Group calls;yes;via Jitsi https://matrix.org/faq/#what-can-i-actually-do-with-this%3F;
+File transfer;yes;;
+Inline images;yes;;
+Inline videos;yes;;
+Polls;yes;;
 Read public content without registering;yes;guest participant, room peek preview, static HTML view https://spec.matrix.org/latest/client-server-api/#guest-access https://view.matrix.org/;
 Multiple devices;yes;;
+Online account replica;yes;;
 Multiple accounts;yes;Web tabs, Desktop profiles
 Application locking;yes;Android https://github.com/vector-im/element-android/blob/fe9bd38115e080166baaa0c6ebb7d07d53c707a6/vector/src/main/res/xml/vector_settings_pin.xml#L17 iOS https://github.com/vector-im/element-ios/blob/f7a816394741861cb34e5bc44f73350016ca0b29/Riot/Modules/SetPinCode/PinCodePreferences.swift#L33
 Remote message removal;yes;by redaction events https://matrix.org/faq/#what-are-redactions%3F;
