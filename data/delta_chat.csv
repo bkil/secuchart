@@ -15,6 +15,7 @@ Group chat;yes;;https://delta.chat/en/help#groups membership change is unicast
 Voice calls;partial;via embedding jitsi, talky.io, appear.in https://delta.chat/en/2020-07-30-summer-update#video-chats;
 Video calls;partial;via embedding jitsi, talky.io, appear.in https://delta.chat/en/2020-07-30-summer-update#video-chats;
 Group calls;partial;via embedding jitsi, talky.io, appear.in https://delta.chat/en/2020-07-30-summer-update#video-chats;
+Emoticons in message;yes;;
 Read public content without registering;partial;;online public mailing list archives
 Multiple devices;yes;https://delta.chat/en/help#can-i-use-delta-chat-on-multiple-devices-at-the-same-time;
 Multiple accounts;yes;https://delta.chat/en/2021-08-24-updates#multi-account-added-or-improved;

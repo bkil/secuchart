@@ -15,6 +15,7 @@ Group chat;yes;https://support.signal.org/hc/en-us/articles/360007319331-Group-c
 Voice calls;yes;https://support.signal.org/hc/en-us/articles/360007060492-Voice-or-Video-Calling-with-Screen-Sharing;
 Video calls;yes;https://support.signal.org/hc/en-us/articles/360007060492-Voice-or-Video-Calling-with-Screen-Sharing;
 Group calls;yes;https://support.signal.org/hc/en-us/articles/360052977792-Group-Calling-Voice-or-Video-with-Screen-Sharing;
+Emoticons in message;yes;;
 Multiple devices;partial;Only Desktop as secondary device;
 Multiple accounts;no;;
 Application locking;yes;Android's screen lock https://support.signal.org/hc/en-us/articles/360007059572-Screen-Lock;
