@@ -23,14 +23,14 @@ Screen sharing;;foss layperson;;
 Audio filtering;Noise cancellation, gain control, voice activity detection;foss layperson;;
 File transfer;Retry, pause, resume;layperson;foss tinfoil;
 Emoticons in message;Deprecated, please refine with below properties! Compose, show;layperson;;
-Unicode support;yes=can both send & receive text containing any valid Unicode code point, usually via utf8mb4, partial=does not support 4-byte+ UTF-8, certain characters or combiners;;;
-Emoji composer;yes=rich dialog with search, partial=replaces a few emotes or aliases with Unicode before sending;;;
-Emoji reception;yes=color Unicode display of all, mention in details if animated, partial=monochromatic, only a subset or replaces received emoticons with pictures;;;
+Unicode support;yes=can both send & receive text containing any valid Unicode code point, usually via utf8mb4, partial=does not support 4-byte+ UTF-8, certain characters or combiners;layperson;foss tinfoil;
+Emoji composer;yes=rich dialog with search, partial=replaces a few emotes or aliases with Unicode before sending;layperson;;
+Emoji reception;yes=color Unicode display of all, mention in details if animated, partial=monochromatic, only a subset or replaces received emoticons with pictures;layperson;foss;
 Sticker packs;Whether they are animated;;layperson;
 Inline images;Supported image formats: png, jpeg, gif, webp, avif;;;
 Inline videos;Supported video formats: mp4, webm, av1;;;
 Polls;Multiple choice voting;;layperson;
-Reactions;yes=Emoticons, partial=only upvoting;;layperson;
+Reactions;yes=Various emoji, partial=only upvoting;;layperson;
 Read public content without registering;Provides free tasting to look around before committing to install anything or having to remember another pair of credentials;;layperson;foss
 Multiple devices;If the same account can be used at the same time from multiple devices, syncing contacts, messages and notifications.;layperson;foss tinfoil;
 Online account replica;yes=everything available in the cloud from any device, partial=not all of credentials, profile, settings, contacts or conversations;layperson;;
