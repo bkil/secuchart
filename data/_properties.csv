@@ -30,6 +30,7 @@ Polls;Multiple choice voting;;layperson;
 Reactions;yes=Emoticons, partial=only upvoting;;layperson;
 Read public content without registering;Provides free tasting to look around before committing to install anything or having to remember another pair of credentials;;layperson;foss
 Multiple devices;If the same account can be used at the same time from multiple devices, syncing contacts, messages and notifications.;layperson;foss tinfoil;
+Online account replica;yes=everything available in the cloud from any device, partial=not all of credentials, profile, settings, contacts or conversations;layperson;;
 Multiple accounts;If you can stay logged in with multiple accounts on the same device and application without external isolation techniques;layperson;foss tinfoil;
 Application locking;Unlock the account or certain chats with a PIN code, passphrase, fingerprints or facial likeness;layperson;tinfoil;
 Remote message removal;Also called redaction or deletion;foss layperson;;
