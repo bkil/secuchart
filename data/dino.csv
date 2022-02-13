@@ -1,0 +1,28 @@
+name;;Dino;
+Summary;;Jabber/XMPP client;
+Android Google Play;no;;
+Android F-droid/apk;no;;
+Apple iOS;no;;
+Desktop;yes;Linux, FreeBSD https://github.com/dino/dino/wiki/Distribution-Packages;unsupported macOS Homebrew https://github.com/dino/dino/wiki/macOS
+Web;no;;
+Languages;yes;39 https://github.com/dino/dino/wiki/Translations;29 full, 4 medium, 6 some
+Protocol;;Jabber/XMPP;
+Protocol open;yes;;
+Client license;yes;GPLv3+ https://github.com/dino/dino/blob/master/README.md https://github.com/dino/dino/blob/master/LICENSE;
+Register without app;yes;;
+Group chat;yes;https://github.com/dino/dino/wiki/Frequently-asked-questions-(FAQ)#how-to-create-a-group-chat;
+Voice calls;;;
+Video calls;yes;https://dino.im/blog/2022/02/dino-0.3-release/;
+Group calls;yes;https://dino.im/blog/2022/02/dino-0.3-release/;
+File transfer;yes;https://dino.im/blog/2020/11/dino-0.2-release/;
+Multiple devices;yes;;
+Multiple accounts;yes;https://dino.im/blog/2020/01/dino-0.1-release/;
+Remote message correction;partial;last message https://dino.im/blog/2020/11/dino-0.2-release/;
+Message expiration;no;;
+Account deactivation after device compromise;yes;;
+End-to-end encryption;yes;XEP-0384 OMEMO https://github.com/dino/dino/wiki/Supported-XEPs;also OpenPGP
+Usage without phone number;yes;;
+Active development;yes;https://github.com/dino/dino/commits/master;
+Multi-party development;partial;https://github.com/dino/dino/pulse/monthly;
+First release;partial;2020-01-29 https://github.com/dino/dino/releases/tag/v0.1.0;initial commit 2017-03-02 https://github.com/dino/dino/commit/56bc45ce4d07a7a9a415e9dc8ad2f7c3f3c9e48d
+Public issue tracker;yes;https://github.com/dino/dino/issues;
