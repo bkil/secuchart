@@ -10,6 +10,7 @@ Protocol open;yes;https://spec.matrix.org/latest/;
 Client license;yes;GPLv3 https://github.com/Nheko-Reborn/nheko/blob/master/COPYING;
 Register without app;yes;;
 Group chat;yes;;
+Emoticons in message;yes;;
 Multiple devices;yes;;
 Multiple accounts;no;;
 Message expiration;no;;
