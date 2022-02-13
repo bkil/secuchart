@@ -16,6 +16,7 @@ Voice calls;yes;WebRTC https://matrix.org/faq/#what-can-i-actually-do-with-this%
 Video calls;yes;WebRTC https://matrix.org/faq/#what-can-i-actually-do-with-this%3F;
 Group calls;yes;via Jitsi https://matrix.org/faq/#what-can-i-actually-do-with-this%3F;
 File transfer;yes;;
+Emoticons in message;yes;;
 Inline images;yes;;
 Inline videos;yes;;
 Polls;yes;;

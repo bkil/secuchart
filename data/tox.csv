@@ -11,6 +11,7 @@ Register without app;no;https://wiki.tox.chat/users/toxid
 Group chat;partial;invite-only https://github.com/uTox/uTox#user-content-features
 Voice calls;yes;https://wiki.tox.chat/users/techfaq#what_is_used_for_av
 Video calls;yes;https://wiki.tox.chat/users/techfaq#what_is_used_for_av
+Emoticons in message;yes;;
 Read public content without registering;no;https://wiki.tox.chat/users/techfaq#does_tox_rely_on_central_servers
 Spam protection;partial;invite code https://wiki.tox.chat/users/toxid#nospam
 End-to-end encryption;yes;https://wiki.tox.chat/users/techfaq#encryption

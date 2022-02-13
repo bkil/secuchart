@@ -9,6 +9,7 @@ Protocol open;yes;https://code.briarproject.org/briar/briar/-/wikis/home#protoco
 Client license;yes;various https://code.briarproject.org/briar/briar/-/blob/master/LICENSE.txt https://code.briarproject.org/briar/briar-desktop/-/blob/main/LICENSE.md;
 Register without app;no;;
 Group chat;yes;;
+Emoticons in message;yes;;
 Multiple devices;no;
 Multiple accounts;no;
 Application locking;yes;Android's screen lock https://briarproject.org/news/2018-briar-1.1-released/;

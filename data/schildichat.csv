@@ -13,6 +13,7 @@ Group chat;yes;;
 Voice calls;yes;WebRTC https://matrix.org/faq/#what-can-i-actually-do-with-this%3F;
 Video calls;yes;WebRTC https://matrix.org/faq/#what-can-i-actually-do-with-this%3F;
 Group calls;yes;via Jitsi https://matrix.org/faq/#what-can-i-actually-do-with-this%3F;
+Emoticons in message;yes;;
 Read public content without registering;;guest participant, room peek preview, static HTML view https://spec.matrix.org/latest/client-server-api/#guest-access https://view.matrix.org/;
 Multiple devices;yes;
 Multiple accounts;no;
