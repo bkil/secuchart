@@ -13,7 +13,10 @@ Group chat;yes;https://code.briarproject.org/briar/briar/-/wikis/FAQ#when-do-pos
 Voice calls;no;https://code.briarproject.org/briar/briar/-/issues/985
 Video calls;no;https://code.briarproject.org/briar/briar/-/issues/985
 Group calls;no;https://code.briarproject.org/briar/briar/-/issues/985
-Voice messages;no;https://code.briarproject.org/briar/briar/-/issues/985
+Voice messages;no;https://code.briarproject.org/briar/briar/-/issues/1954
+Screen sharing;no;https://code.briarproject.org/briar/briar/-/issues/985
+Audio filtering;no;https://code.briarproject.org/briar/briar/-/issues/985
+File transfer;no;https://code.briarproject.org/briar/briar/-/issues/407
 Emoticons in message;yes;;
 Multiple devices;no;https://code.briarproject.org/briar/briar/-/wikis/FAQ#can-i-use-the-same-account-with-several-devices
 Online account replica;no;https://code.briarproject.org/briar/briar/-/wikis/FAQ#how-do-i-backup-my-account
@@ -30,7 +33,7 @@ Reproducible builds;yes;https://code.briarproject.org/briar/briar/-/issues/1273
 Usage without phone number;yes;;
 Active development;yes;;
 Identity not controlled by vendor;yes;;
-Offline;yes;https://briarproject.org/how-it-works/;
+Offline;yes;;https://briarproject.org/how-it-works/ adding contacts must happen within 48 hours, but introductions do not carry a time limit https://code.briarproject.org/briar/briar/-/wikis/FAQ#is-there-a-timeout-for-introductions https://code.briarproject.org/briar/briar/-/wikis/FAQ#is-it-safe-to-publish-my-briar-link-publicly
 Servers required;;Tor https://code.briarproject.org/briar/briar/-/wikis/A-Quick-Overview-of-the-Protocol-Stack;
 Serverless LAN mode;yes;https://briarproject.org/how-it-works/;
 Wireless mode;yes;Bluetooth https://code.briarproject.org/briar/briar/-/wikis/How-Briar-Connects-to-Contacts;
