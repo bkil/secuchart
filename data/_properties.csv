@@ -18,7 +18,7 @@ Group chat;Whether they are persistent between restarts, chat log, file transfer
 Voice calls;;foss layperson;tinfoil;
 Video calls;;foss layperson;tinfoil;
 Group calls;Audio, video;foss layperson;tinfoil;
-Voice messages;Ideally push to talk, may be useful where voice call is not supported;;;
+Voice messages;Ideally push to talk, may be useful where voice call is not supported. Also voice notes;;;layperson foss
 Screen sharing;;foss layperson;;
 Audio filtering;Noise cancellation, gain control, voice activity detection;foss layperson;;
 File transfer;Retry, pause, resume;layperson;foss tinfoil;
