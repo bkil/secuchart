@@ -130,8 +130,20 @@ extend_reorder() {
   TMP="$OUT.tmp"
   get_property_keys |
   while read PROP; do
-    grep -E "^$PROP;" "$OUT" || printf "%s;\n" "$PROP"
-  done > "$TMP"
+    grep -E "^$PROP;" "$OUT" || printf "%s;;;\n" "$PROP"
+  done |
+  sed -r "
+    s~  +~ ~g
+    s~ *; *~;~g
+    s~ *$~~
+
+    t start
+    :start
+    s~^[^;]*;[^;]*$~&;;~
+    t end
+    s~^[^;]*(;[^;]*){2}$~&;~
+    :end
+  " > "$TMP"
   mv "$TMP" "$OUT"
 }
 
