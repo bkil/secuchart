@@ -26,8 +26,8 @@ Spam protection;no;proof of work,unlimited account ids can be generated almost i
 Account deactivation after device compromise;no;account ids are random generated 2^128 keys;
 Account recovery after device compromise;partial;accound ids can be recovered with seed phrase, 12 words + 1 check word;
 CPU idle;no;Uses proof of work to combat spam;
-Power saving;no;Constantly transfers in the background;
-Bandwidth frugal;no;Constantly transfers a lot in the background;36MB/hour in our Desktop test in 2022
+Power saving;no;Constantly transfers in the background;open groups use polling https://github.com/oxen-io/session-ios/issues/217#issuecomment-647924528
+Bandwidth frugal;no;Constantly transfers a lot in the background;36MB/hour in our Desktop test in 2022, open groups use polling https://github.com/oxen-io/session-ios/issues/217#issuecomment-647924528
 End-to-end encryption;partial;yes in private conversations and closed groups, no in open groups https://getsession.org/faq;
 E2EE keys shielded from operator;yes;2^128 generated locally https://getsession.org/faq;
 Contact list confidential;partial;;
