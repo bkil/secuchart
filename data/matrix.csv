@@ -1,5 +1,5 @@
 name;;Matrix Synapse & Element;
-Summary;;Protocol that bridges all
+Summary;;Protocol that bridges all;
 Android Google Play;yes;https://matrix.org/docs/projects/client/element-android;
 Android F-droid/apk;yes;https://f-droid.org/en/packages/im.vector.app/;
 Apple iOS;yes;https://matrix.org/docs/projects/client/element-ios;
@@ -23,8 +23,8 @@ Polls;yes;;
 Read public content without registering;yes;guest participant, room peek preview, static HTML view https://spec.matrix.org/latest/client-server-api/#guest-access https://view.matrix.org/;
 Multiple devices;yes;;
 Online account replica;yes;;
-Multiple accounts;yes;Web tabs, Desktop profiles
-Application locking;yes;Android https://github.com/vector-im/element-android/blob/fe9bd38115e080166baaa0c6ebb7d07d53c707a6/vector/src/main/res/xml/vector_settings_pin.xml#L17 iOS https://github.com/vector-im/element-ios/blob/f7a816394741861cb34e5bc44f73350016ca0b29/Riot/Modules/SetPinCode/PinCodePreferences.swift#L33
+Multiple accounts;yes;Web tabs, Desktop profiles;
+Application locking;yes;Android https://github.com/vector-im/element-android/blob/fe9bd38115e080166baaa0c6ebb7d07d53c707a6/vector/src/main/res/xml/vector_settings_pin.xml#L17 iOS https://github.com/vector-im/element-ios/blob/f7a816394741861cb34e5bc44f73350016ca0b29/Riot/Modules/SetPinCode/PinCodePreferences.swift#L33;
 Remote message removal;yes;by redaction events https://matrix.org/faq/#what-are-redactions%3F;
 Remote message correction;yes;;
 Message expiration;partial;per room, no GUI, not default;only through slash-commands in Element, need to enable on each Synapse home server and depending on configuration in each room as well https://matrix-org.github.io/synapse/v1.41/message_retention_policies.html
@@ -33,7 +33,7 @@ Account recovery after device compromise;yes;with second device or Web or Deskto
 End-to-end encryption;yes;https://matrix.org/faq/#which-matrix-clients-support-e2e;
 Metadata protection;no;;
 Perfect forward secrecy;no;;
-Reproducible builds;no;https://github.com/vector-im/element-web/issues/11848
+Reproducible builds;no;https://github.com/vector-im/element-web/issues/11848;
 Usage without phone number;yes;;
 Active development;yes;https://github.com/vector-im;
 Multi-party development;yes;https://github.com/vector-im/element-web/pulse/monthly https://github.com/vector-im/element-android/pulse/monthly https://github.com/vector-im/element-ios/pulse/monthly;

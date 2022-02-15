@@ -1,35 +1,35 @@
 name;;Briar;
-Summary;;Anonymous chat
+Summary;;Anonymous chat;
 Android Google Play;yes;https://briarproject.org/download-briar/;
 Android F-droid/apk;yes;https://f-droid.org/en/packages/org.briarproject.briar.android/ https://briarproject.org/installing-briar-via-f-droid/;
-Apple iOS;no;https://code.briarproject.org/briar/briar/-/wikis/FAQ#will-there-be-an-ios-version-of-briar https://code.briarproject.org/briar/briar/-/issues/445
+Apple iOS;no;https://code.briarproject.org/briar/briar/-/wikis/FAQ#will-there-be-an-ios-version-of-briar https://code.briarproject.org/briar/briar/-/issues/445;
 Desktop;partial;Linux;Not full featured https://code.briarproject.org/briar/briar-desktop/
 Languages;yes;many https://code.briarproject.org/briar/briar/-/tree/master/briar-android/src/main/res;
 Protocol;;Bramble;
 Protocol open;yes;https://code.briarproject.org/briar/briar/-/wikis/home#protocol;
 Client license;yes;various https://code.briarproject.org/briar/briar/-/blob/master/LICENSE.txt https://code.briarproject.org/briar/briar-desktop/-/blob/main/LICENSE.md;
 Register without app;no;;
-Group chat;yes;https://code.briarproject.org/briar/briar/-/wikis/FAQ#when-do-posts-in-forumsgroupsblogs-get-shared-with-others
-Voice calls;no;https://code.briarproject.org/briar/briar/-/issues/985
-Video calls;no;https://code.briarproject.org/briar/briar/-/issues/985
-Group calls;no;https://code.briarproject.org/briar/briar/-/issues/985
-Voice messages;no;https://code.briarproject.org/briar/briar/-/issues/1954
-Screen sharing;no;https://code.briarproject.org/briar/briar/-/issues/985
-Audio filtering;no;https://code.briarproject.org/briar/briar/-/issues/985
-File transfer;no;https://code.briarproject.org/briar/briar/-/issues/407
+Group chat;yes;https://code.briarproject.org/briar/briar/-/wikis/FAQ#when-do-posts-in-forumsgroupsblogs-get-shared-with-others;
+Voice calls;no;https://code.briarproject.org/briar/briar/-/issues/985;
+Video calls;no;https://code.briarproject.org/briar/briar/-/issues/985;
+Group calls;no;https://code.briarproject.org/briar/briar/-/issues/985;
+Voice messages;no;https://code.briarproject.org/briar/briar/-/issues/1954;
+Screen sharing;no;https://code.briarproject.org/briar/briar/-/issues/985;
+Audio filtering;no;https://code.briarproject.org/briar/briar/-/issues/985;
+File transfer;no;https://code.briarproject.org/briar/briar/-/issues/407;
 Emoticons in message;yes;;
-Multiple devices;no;https://code.briarproject.org/briar/briar/-/wikis/FAQ#can-i-use-the-same-account-with-several-devices
-Online account replica;no;https://code.briarproject.org/briar/briar/-/wikis/FAQ#how-do-i-backup-my-account
-Multiple accounts;no;https://code.briarproject.org/briar/briar/-/wikis/FAQ#can-i-have-multiple-identitiesprofilesaccounts
+Multiple devices;no;https://code.briarproject.org/briar/briar/-/wikis/FAQ#can-i-use-the-same-account-with-several-devices;
+Online account replica;no;https://code.briarproject.org/briar/briar/-/wikis/FAQ#how-do-i-backup-my-account;
+Multiple accounts;no;https://code.briarproject.org/briar/briar/-/wikis/FAQ#can-i-have-multiple-identitiesprofilesaccounts;
 Application locking;yes;Android's screen lock https://briarproject.org/news/2018-briar-1.1-released/;
 Remote message removal;no;;
 Remote message correction;no;;
 Message expiration;yes;Only setting of 7 days possible https://briarproject.org/news/2021-briar-1.3-released/;
-Account deactivation after device compromise;no;
-Account recovery after device compromise;no;https://code.briarproject.org/briar/briar/-/wikis/FAQ#how-do-i-backup-my-account
+Account deactivation after device compromise;no;;
+Account recovery after device compromise;no;https://code.briarproject.org/briar/briar/-/wikis/FAQ#how-do-i-backup-my-account;
 End-to-end encryption;yes;https://briarproject.org/how-it-works/;
 Contact list confidential;yes;https://briarproject.org/how-it-works/;
-Reproducible builds;yes;https://code.briarproject.org/briar/briar/-/issues/1273
+Reproducible builds;yes;https://code.briarproject.org/briar/briar/-/issues/1273;
 Usage without phone number;yes;;
 Active development;yes;;
 Identity not controlled by vendor;yes;;
@@ -39,6 +39,6 @@ Serverless LAN mode;yes;https://briarproject.org/how-it-works/;
 Wireless mode;yes;Bluetooth https://code.briarproject.org/briar/briar/-/wikis/How-Briar-Connects-to-Contacts;
 Third party clients;partial;no alternative client;
 Tor access of vendor operated network;yes;N/A;uses Tor connection to peers
-Good ToSDR grade;yes;https://tosdr.org/en/service/2559
+Good ToSDR grade;yes;https://tosdr.org/en/service/2559;
 First release;yes;2018-05-09 https://en.wikipedia.org/wiki/Briar_(software);
 Public issue tracker;yes;https://code.briarproject.org/briar/briar/-/issues https://code.briarproject.org/briar/briar-desktop/-/issues;

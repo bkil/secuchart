@@ -19,5 +19,5 @@ Message expiration;no;;
 End-to-end encryption;partial;unclear https://support.skype.com/en/faq/FA31/does-skype-use-encryption;
 Deniability;no;;
 Identity not controlled by vendor;no;;
-Good ToSDR grade;no;https://tosdr.org/en/service/244
+Good ToSDR grade;no;https://tosdr.org/en/service/244;
 First release;yes;2003-08-29 https://en.wikipedia.org/wiki/Skype;

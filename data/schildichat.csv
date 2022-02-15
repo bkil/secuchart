@@ -15,22 +15,22 @@ Video calls;yes;WebRTC https://matrix.org/faq/#what-can-i-actually-do-with-this%
 Group calls;yes;via Jitsi https://matrix.org/faq/#what-can-i-actually-do-with-this%3F;
 Emoticons in message;yes;;
 Read public content without registering;;guest participant, room peek preview, static HTML view https://spec.matrix.org/latest/client-server-api/#guest-access https://view.matrix.org/;
-Multiple devices;yes;
-Multiple accounts;no;
-Application locking;yes;Android https://github.com/SchildiChat/SchildiChat-android/blob/sc/vector/src/main/res/xml/vector_settings_pin.xml#L17
+Multiple devices;yes;;
+Multiple accounts;no;;
+Application locking;yes;Android https://github.com/SchildiChat/SchildiChat-android/blob/sc/vector/src/main/res/xml/vector_settings_pin.xml#L17;
 Message expiration;no;;
 Account deactivation after device compromise;yes;;
 Account recovery after device compromise;yes;;
 End-to-end encryption;yes;https://matrix.org/faq/#which-matrix-clients-support-e2e;
-Reproducible builds;no;https://github.com/vector-im/element-web/issues/11848
+Reproducible builds;no;https://github.com/vector-im/element-web/issues/11848;
 Usage without phone number;yes;;
-Active development;yes;
+Active development;yes;;
 Identity not controlled by vendor;yes;;
 Offline;partial;compose or read recent messages on Android/Desktop, no Web startup;Buffered messages on SchildiChat Android/Desktop, SchildiChat Web lacks offline startup via Web Workers
 Servers required;;Matrix homeserver e.g. Synapse, Dendride, Conduit, notifications push, Unified push, backround synchronization service;
 Serverless WAN mode;no;;
 Serverless LAN mode;no;;
 IP shielded from peers;yes;Not during calls if you enable WebRTC;
-Good ToSDR grade;yes;https://tosdr.org/en/service/3388
+Good ToSDR grade;yes;https://tosdr.org/en/service/3388;
 First release;yes;2019-07-11 https://github.com/SchildiChat/SchildiChat-android/releases/tag/v0.1.0;
 Public issue tracker;yes;https://github.com/SchildiChat/SchildiChat-android/issues https://github.com/SchildiChat/schildichat-desktop/issues;

@@ -13,8 +13,8 @@ Voice calls;yes;WebRTC https://matrix.org/faq/#what-can-i-actually-do-with-this%
 Video calls;yes;WebRTC https://matrix.org/faq/#what-can-i-actually-do-with-this%3F;
 Group calls;yes;via Jitsi https://matrix.org/faq/#what-can-i-actually-do-with-this%3F;
 Emoticons in message;yes;;
-Multiple devices;yes;
-Multiple accounts;yes;
+Multiple devices;yes;;
+Multiple accounts;yes;;
 Application locking;yes;Android - custom 4 digit PIN;
 Message expiration;no;;
 Account deactivation after device compromise;yes;;
