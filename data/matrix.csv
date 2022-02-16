@@ -44,7 +44,7 @@ Account recovery after device compromise;yes;with second device or Web or Deskto
 End-to-end encryption;yes;https://matrix.org/faq/#which-matrix-clients-support-e2e;
 Metadata protection;no;;
 Perfect forward secrecy;no;;
-Security team;yes;https://matrix.org/security-disclosure-policy/;
+Security team;yes;https://matrix.org/security-disclosure-policy/;bad opsec in 2019 https://matrix.org/blog/2019/05/08/post-mortem-and-remediations-for-apr-11-security-incident
 Large bug bounty;partial;third-party https://app.intigriti.com/programs/matrix/matrix/detail;
 Reproducible builds;no;https://github.com/vector-im/element-web/issues/11848;
 Audits;partial;crypto library in 2016 https://matrix.org/blog/2016/11/21/matrixs-olm-end-to-end-encryption-security-assessment-released-and-implemented-cross-platform-on-riot-at-last;
