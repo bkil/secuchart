@@ -30,7 +30,7 @@ main() {
     echo "warning: $SLUG already referenced in $ITEMS" >&2
   else
     echo "$SLUG" >> "$ITEMS"
-    echo "created $ITEMS" >&2
+    echo "created $OUT" >&2
   fi
 }
 
