@@ -2,6 +2,7 @@ name;;Matrix Synapse & Element;
 Summary;;Protocol that bridges all;
 Android Google Play;yes;https://matrix.org/docs/projects/client/element-android;
 Android F-droid/apk;yes;https://f-droid.org/en/packages/im.vector.app/;
+Other mobile;no;KaiOS unsupported https://github.com/vector-im/element-web/issues/13800#issuecomment-633658482;
 Apple iOS;yes;https://matrix.org/docs/projects/client/element-ios;
 Desktop;yes;https://matrix.org/docs/projects/client/element;
 Web;yes;https://matrix.org/clients/;
@@ -11,15 +12,19 @@ Protocol open;yes;https://spec.matrix.org/latest/;
 Server license;yes;Apache 2.0 https://github.com/matrix-org/synapse/blob/develop/LICENSE;
 Client license;yes;Apache 2.0 https://github.com/vector-im/element-web/blob/develop/LICENSE;
 Register without app;yes;;
+Spell check;yes;;
 Group chat;yes;;
 Voice calls;yes;WebRTC https://matrix.org/faq/#what-can-i-actually-do-with-this%3F;
 Video calls;yes;WebRTC https://matrix.org/faq/#what-can-i-actually-do-with-this%3F;
 Group calls;yes;via Jitsi https://matrix.org/faq/#what-can-i-actually-do-with-this%3F;
+Screen sharing;yes;https://ems-docs.element.io/Create-a-Conference-Call-in-a-Room.html#screen-sharing;
 File transfer;yes;;
 Emoticons in message;yes;;
+Sticker packs;yes;mostly through vendor https://github.com/vector-im/element-web/issues/2950#issuecomment-393079408 https://github.com/vector-im/element-web/issues/6534 https://github.com/matrix-org/matrix-doc/pull/1951;
 Inline images;yes;;
 Inline videos;yes;;
 Polls;yes;;
+Reactions;yes;all common Unicode emoji;no custom images, custom text in certain clients
 Read public content without registering;yes;guest participant, room peek preview, static HTML view https://spec.matrix.org/latest/client-server-api/#guest-access https://view.matrix.org/;
 Multiple devices;yes;;
 Online account replica;yes;;
@@ -28,13 +33,23 @@ Application locking;yes;Android https://github.com/vector-im/element-android/blo
 Remote message removal;yes;by redaction events https://matrix.org/faq/#what-are-redactions%3F;
 Remote message correction;yes;;
 Message expiration;partial;per room, no GUI, not default;only through slash-commands in Element, need to enable on each Synapse home server and depending on configuration in each room as well https://matrix-org.github.io/synapse/v1.41/message_retention_policies.html
+Presence status;yes;with performance issues https://github.com/vector-im/element-web/issues/2667#issuecomment-787104015;
+Presence not mandatory;no;;some optional in Syphon https://github.com/syphon-org/syphon https://github.com/vector-im/element-web/issues/4706
+Typing indication;yes;;
+Read receipts;yes;;
+Receipts not mandatory;no;https://github.com/vector-im/element-web/issues/2527;
+Vendor can't curate content;yes;self-hosting;
 Account deactivation after device compromise;yes;with second device or Web or Desktop;
 Account recovery after device compromise;yes;with second device or Web or Desktop;
 End-to-end encryption;yes;https://matrix.org/faq/#which-matrix-clients-support-e2e;
 Metadata protection;no;;
 Perfect forward secrecy;no;;
+Security team;yes;https://matrix.org/security-disclosure-policy/;
+Large bug bounty;partial;third-party https://app.intigriti.com/programs/matrix/matrix/detail;
 Reproducible builds;no;https://github.com/vector-im/element-web/issues/11848;
+Audits;partial;crypto library in 2016 https://matrix.org/blog/2016/11/21/matrixs-olm-end-to-end-encryption-security-assessment-released-and-implemented-cross-platform-on-riot-at-last;
 Usage without phone number;yes;;
+No-cost tier;yes;https://element.io/personal;
 Active development;yes;https://github.com/vector-im;
 Multi-party development;yes;https://github.com/vector-im/element-web/pulse/monthly https://github.com/vector-im/element-android/pulse/monthly https://github.com/vector-im/element-ios/pulse/monthly;
 Identity not controlled by vendor;yes;Unless using matrix.org account;vendor also offers various self-hostable or optional services like stickers, bots and bridges
@@ -44,4 +59,16 @@ Servers optional;;DNS, Element Web app, identity, integrations, ICE, Jitsi https
 Serverless WAN mode;no;;
 Serverless LAN mode;no;;
 IP shielded from peers;yes;Not during calls if you enable WebRTC;
+Proxy support;no;https://github.com/vector-im/element-web/issues/3320;
 Third party clients;yes;https://matrix.org/clients/;
+Bots available;yes;https://element.io/element-matrix-store#bots;
+User addons;yes;https://element.io/element-matrix-store#widgets;
+Vendor operated network inaccessible from countries;;China https://www.binwang.me/2020-09-08-Build-An-Instant-Messaging-System-without-Censorship-Deployment-Options.html#conclusion;
+Vendor legal entity kind;;For-profit PLC https://find-and-update.company-information.service.gov.uk/company/10873661;
+Vendor jurisdiction;;UK with subsidiaries in France & US;
+Infrastructure jurisdiction;;Netherlands & Sweden, various for EMS https://element.io/privacy;
+Infrastructure provider;;AWS, Cloudflare;
+Good ToSDR grade;yes;B https://tosdr.org/en/service/2498;
+First release;yes;2016-06-09 https://medium.com/@RiotChat/say-hello-to-vector-2d33b23a787;
+Public issue tracker;yes;https://github.com/vector-im/element-web/issues https://github.com/vector-im/element-ios/issues https://github.com/vector-im/element-android/issues;
+No past client vulnerabilities;yes;not exploited in the wild https://github.com/vector-im/element-desktop/security/advisories https://github.com/vector-im/element-android/security/advisories;
