@@ -29,6 +29,9 @@ gen_index() {
       gen_spans "$LIMITITEMS"
     elif [ "$REPLY" = "((table))" ]; then
       gen_table "$LIMITITEMS"
+    elif [ "$REPLY" = "((date))" ]; then
+      DATE="`date "+%Y-%m-%d"`"
+      printf "<span id=date>%s</span>" "$DATE"
     else
       printf "%s\n" "$REPLY"
     fi

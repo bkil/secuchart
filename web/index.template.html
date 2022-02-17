@@ -553,6 +553,10 @@ label {
   border-width: 1px;
 }
 
+#date {
+  margin-left: 2em;
+}
+
 </style>
 
 </head>
@@ -564,6 +568,7 @@ label {
 <div id=page>
 <a href=# id=c_chart>Comparison chart</a>
 <a href=#about id=c_about>About this site</a>
+((date))
 
 <main id=v_chart>
 
@@ -717,7 +722,7 @@ Ideas for the interface design:
   <li>`(x)`bright mode, `(_)`dark mode, `(_)`high contrast
   <li><em>(Perhaps some other comparison tables, e.g. Android forks, browsers)</em>
   <li>Use case: `(x)`FOSS, `(_)`tinfoil, `(_)`layperson, `[_]`all properties, `[_]`expand explanations, `[_]`abbreviated, `[_]`pro & con
-  <li>Protocol filter: `[_]`Matrix, `[_]`XMP, `[_]`SIP, `[_]`email, `[_]`Tox, `[_]`ActivityPub
+  <li>Protocol filter: `[_]`Matrix, `[_]`XMPP, `[_]`SIP, `[_]`email, `[_]`Tox, `[_]`ActivityPub
   <li>License filter: `[_]`FOSS, `[_]`proprietary
   <li>Topology filter: `[_]`anonymization, `[_]`DHT, `[_]`F2F, `[_]`cryptocurrency, `[_]`federated, `[_]`centralized
   <li>Other filter: `[_]`non-textual only
@@ -727,7 +732,7 @@ Ideas for the interface design:
   <li>A JavaScript based editor that sends in a MR after you click in a cell
   <li>default to abbreviated mode on mobile, e.g., &lt;576px
   <li>Ranking: average of colors of the properties according to current view, green=100%, yellow=60%, red=10%, empty=0%, multiply by 0.5 if link missing
-  <li>Provide a way through which we can track when each call was last reviewed and by which editors (could be tracked via a character using git history, a separate full review log CSV or a table of reviewer name vs. cell ID showing last review date)
+  <li>Provide a way through which we can track when each cell was last reviewed and by which editors (could be tracked via a character using git history, a separate full review log CSV or a table of reviewer name vs. cell ID showing last review date)
 </ul>
 
 Persona:
