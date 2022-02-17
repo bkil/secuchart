@@ -25,6 +25,8 @@ gen_index() {
       gen_style "$LIMITITEMS"
     elif [ "$REPLY" = "((filters))" ]; then
       gen_filters "$LIMITITEMS"
+    elif [ "$REPLY" = "((spans))" ]; then
+      gen_spans "$LIMITITEMS"
     elif [ "$REPLY" = "((table))" ]; then
       gen_table "$LIMITITEMS"
     else
@@ -47,11 +49,11 @@ gen_style() {
       echo "style $IT" >&2
       NAME="`get_item_value "$IT" "name"`"
       cat <<EOF
-#$IT:not(:target) ~ #any:checked ~ .C:checked ~ #_$IT:not(:checked) ~ table tr > *:nth-child($NUM),
-#$IT:not(:target) ~ #any:checked ~ #_$IT:not(:checked) ~ .C:checked ~ table tr > *:nth-child($NUM),
-#$IT:not(:target) ~ #_$IT:not(:checked) ~ #a_$IT,
-:target ~ #$IT:not(:target) ~ table tr > *:nth-child($NUM),
-#$IT:not(:target) ~ :target ~ table tr > *:nth-child($NUM),
+#$IT:not(:target) ~ #page > #v_chart > #any:checked ~ .C:checked ~ #_$IT:not(:checked) ~ table tr > *:nth-child($NUM),
+#$IT:not(:target) ~ #page > #v_chart > #any:checked ~ #_$IT:not(:checked) ~ .C:checked ~ table tr > *:nth-child($NUM),
+#$IT:not(:target) ~ #page > #v_chart > #_$IT:not(:checked) ~ #a_$IT,
+:target ~ #$IT:not(:target) ~ #page > #v_chart > table tr > *:nth-child($NUM),
+#$IT:not(:target) ~ :target ~ #page > #v_chart > table tr > *:nth-child($NUM),
 EOF
 
       SERVERLIC="`get_item_value "$IT" "Server license"`"
@@ -84,14 +86,19 @@ EOF
 EOF
 }
 
-gen_filters() {
+gen_spans() {
   LIMITITEMS="$1"
 
   get_items "$LIMITITEMS" |
   while read IT; do
     echo "<span id=$IT></span>"
   done
+
   echo
+}
+
+gen_filters() {
+  LIMITITEMS="$1"
 
   cat <<EOF
 <label for=abbr>abbreviated&nbsp;</label><input type=checkbox id=abbr>
