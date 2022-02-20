@@ -6,12 +6,11 @@ Apple iOS;yes;https://keybase.io/_/download/keybase-for-ios;
 Desktop;yes;macOS https://keybase.io/docs/the_app/install_macos Windows https://keybase.io/docs/the_app/install_windows Linux https://keybase.io/docs/the_app/install_linux;
 Web;partial;some account functionality and encrypting/decrypting messages;Account changes can be locked to be only possible through client apps https://book.keybase.io/docs/lockdown
 Languages;no;English only;
-Protocol;yes;SaltPack, NaCl + MessagePack https://book.keybase.io/docs/chat/crypto https://book.keybase.io/docs/crypto;
-Protocol open;yes;;
-Server license;proprietary;;
+Protocol;;SaltPack, NaCl + MessagePack https://book.keybase.io/docs/crypto;
+Protocol open;yes;https://book.keybase.io/docs/chat/crypto;
+Server license;no;proprietary;
 Client license;yes;New BSD 3-Clause;
 Register without app;yes;Web;
-;Topology;;;
 Spell check;yes;;
 Group chat;yes;https://book.keybase.io/docs/chat https://book.keybase.io/docs/teams;
 Voice calls;no;;
@@ -36,7 +35,6 @@ Message expiration;yes;https://book.keybase.io/docs/chat/ephemeral;
 Presence status;no;;
 Typing indication;yes;can be disabled;
 Read receipts;no;;
-;Qualities;;;
 Vendor can't curate content;yes;;
 Spam protection;partial;blocking and reporting https://book.keybase.io/privacy#blocking-and-reporting;
 Account deactivation after device compromise;yes;device revocation https://book.keybase.io/account#revoking-devices;
@@ -51,12 +49,11 @@ Audits;yes;2018 https://book.keybase.io/security#keybase-is-reviewed-by-global-c
 Usage without phone number;yes;;
 Transparent financing;no;;
 No-cost tier;yes;;
-Active development;partial;https://github.com/keybase/client/graphs/commit-activity;
+Active development;partial;maintenance mode https://github.com/keybase/client/graphs/commit-activity;
 Multi-party development;partial;https://github.com/keybase/client/pulse/monthly;
 Isolated self-hosting;no;;
 User can extend network with node;no;;
 Identity not controlled by vendor;no;;
-;Topology;;;
 Offline;no;;
 Serverless WAN mode;no;;
 Serverless LAN mode;no;;
@@ -64,18 +61,20 @@ Network store and forward;no;;
 Wireless mode;no;;
 IP shielded from peers;yes;not when using Jitsi, Zoom, Google meetings;
 Proxy support;yes;HTTP, SOCKS5;
-;Vendor;;;
 Third party clients;partial;proof of concept TUI client exists https://github.com/Rudi9719/kbtui;
 Bots available;yes;https://book.keybase.io/chat#bots;
 User addons;yes;as bots;
 Hosted bots and addons;no;;
-Tor access of vendor operated network;limited;;
-Vendor legal entity kind;entrepreneur;Zoom;
+Tor access of vendor operated network;partial;;the website also has an onion address
+Vendor legal entity kind;;company;Zoom Inc. https://keybase.io/jobs
 Transparency reports;no;;
-Vendor jurisdiction;;US;
+Vendor jurisdiction;;US;California https://keybase.io/docs/california-ccpa
 Infrastructure jurisdiction;;US;
 Infrastructure provider;;Amazon AWS;
-;Reputation;;;
 First release;yes;2015-11-06 https://github.com/keybase/client/releases/tag/v1.0.0-45;
 Public issue tracker;yes;https://github.com/keybase/client/issues;
 Support team;partial;friendly but few;
+No past client vulnerabilities;no;https://theguardian.com/technology/2020/apr/02/zoom-technology-security-coronavirus-video-conferencing;
+No past server vulnerabilities;no;https://vice.com/en/article/k7e95m/zoom-leaking-email-addresses-photos;
+Ethical financing in the past;no;Stripe cryptocurrency, A16Z VC https://vicki.substack.com/p/keybase-and-the-chaos-of-crypto;
+No past privacy glitches;no;;Zoom iOS https://vice.com/en_us/article/k7e599/zoom-ios-app-sends-data-to-facebook-even-if-you-dont-have-a-facebook-account attorney https://www.nytimes.com/2020/03/30/technology/new-york-attorney-general-zoom-privacy.html https://blogs.harvard.edu/doc/2020/03/27/zoom/
