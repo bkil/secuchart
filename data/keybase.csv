@@ -17,7 +17,7 @@ Voice calls;no;;
 Video calls;partial;Jitsi Bot https://keybase.io/jitsibot Zoom Bot https://keybase.io/zoombot Google Meet Bot;
 Group calls;partial;Jitsi Bot https://keybase.io/jitsibot Zoom Bot https://keybase.io/zoombot Google Meet Bot;
 Voice messages;no;;
-File transfer;yes;;
+File transfer;yes;;additionally E2EE storage and shares https://book.keybase.io/files
 Emoji composer;yes;;
 Emoji reception;yes;;
 Inline images;yes;;
@@ -42,8 +42,8 @@ Account recovery after device compromise;yes;second device or paper key https://
 End-to-end encryption;yes;https://book.keybase.io/security#everything-you-store-or-share-on-keybase-is-end-to-end-encrypted;
 E2EE keys shielded from operator;yes;https://book.keybase.io/security#your-private-keys-are-only-stored-on-your-devices;
 Contact list confidential;no;;
-Metadata protection;partial;;Servers know team names, users and roles but not contents of chats. Servers know which KBFS folders are shared with whom, but not private contents
-Perfect forward secrecy;partial;on ephemeral exploding messages https://keybase.io/blog/keybase-exploding-messages;
+Metadata protection;partial;https://book.keybase.io/docs/chat/crypto#metadata;Servers know team names, users and roles but not contents of chats. Servers know which KBFS folders are shared with whom, but not private contents https://book.keybase.io/docs/files#metadata-and-security
+Perfect forward secrecy;partial;on ephemeral exploding messages https://keybase.io/blog/keybase-exploding-messages;not for other messages https://book.keybase.io/docs/chat/crypto#forward-secrecy
 Security team;partial;;
 Audits;yes;2018 https://book.keybase.io/security#keybase-is-reviewed-by-global-cyber-security-experts;
 Usage without phone number;yes;;
@@ -60,12 +60,12 @@ Serverless LAN mode;no;;
 Network store and forward;no;;
 Wireless mode;no;;
 IP shielded from peers;yes;not when using Jitsi, Zoom, Google meetings;
-Proxy support;yes;HTTP, SOCKS5;
-Third party clients;partial;proof of concept TUI client exists https://github.com/Rudi9719/kbtui;
+Proxy support;yes;HTTP, SOCKS5;command line client supports Tor https://book.keybase.io/guides/command-line#tor-support
+Third party clients;partial;proof of concept TUI client based on Keybase CLI exists https://github.com/Rudi9719/kbtui Open API available https://book.keybase.io/docs/server#keybase-client-integrity;
 Bots available;yes;https://book.keybase.io/chat#bots;
-User addons;yes;as bots;
+User addons;yes;as bots https://book.keybase.io/docs/bots;
 Hosted bots and addons;no;;
-Tor access of vendor operated network;partial;;the website also has an onion address
+Tor access of vendor operated network;partial;CLI https://book.keybase.io/guides/command-line#tor-support;the website also has an onion address
 Vendor legal entity kind;;company;Zoom Inc. https://keybase.io/jobs
 Transparency reports;no;;
 Vendor jurisdiction;;US;California https://keybase.io/docs/california-ccpa
