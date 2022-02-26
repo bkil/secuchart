@@ -153,7 +153,7 @@ function addRadio(div, text, checked, cl) {
   i.type = 'radio';
   i.className = 'is-status-' + cl;
   if (checked) {
-    i.toggleAttribute('checked');
+    i.setAttribute('checked', '');
   }
   label.innerText = text;
   label.appendChild(i);
