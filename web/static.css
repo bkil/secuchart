@@ -1,0 +1,603 @@
+body {
+  margin: 0;
+}
+
+input {
+  margin-left: 0;
+}
+
+html, body, #page {
+  height: 100%;
+}
+
+#page {
+  overflow-x: scroll;
+}
+
+#page::-webkit-scrollbar {
+  width: 0.5em;
+  height: 0.5em;
+  background-color: #888;
+}
+
+#page::-webkit-scrollbar-thumb {
+  background-color: #111;
+}
+
+#page::-webkit-scrollbar-corner {
+  background-color: #888;
+}
+
+#scroll {
+  width: 90vw;
+}
+
+table {
+  border-spacing: 0px;
+  position: relative;
+  top: 0;
+}
+
+td, th {
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+  border-right-style: dotted;
+  border-right-width: 1px;
+  padding: 4px;
+  max-width: 50vw;
+}
+
+th {
+  background-color: #f0f0f0;
+}
+
+table > tbody > tr:not(:first-child) > th > details {
+  font-weight: normal;
+}
+
+table > tbody > tr:not(:first-child) > th > details > summary {
+  font-weight: bold;
+}
+
+
+tr:first-child > th {
+  position: sticky;
+  top: 0;
+  z-index: 2;
+}
+
+th:first-child {
+  position: sticky;
+  left: 0;
+  text-align: left;
+  max-width: 40vw;
+  z-index: 3;
+}
+
+tr.section > th {
+  text-align: right;
+  font-weight: normal;
+}
+
+tr:nth-child(odd) {
+  background-color: #f8f8f8;
+}
+
+#foss:checked ~ table tr.benefit-foss td.p,
+#tinfoil:checked ~ table tr.benefit-tinfoil td.p,
+#layperson:checked ~ table tr.benefit-layperson td.p,
+td.y {
+  background-color: lime;
+}
+
+td.n {
+  background-color: orange;
+}
+
+#foss:checked ~ table tr.benefit-foss td.n,
+#tinfoil:checked ~ table tr.benefit-tinfoil td.n,
+#layperson:checked ~ table tr.benefit-layperson td.n,
+td.p {
+  background-color: yellow;
+}
+
+#foss:checked ~ table tr:not(.require-foss, .benefit-foss) td,
+#tinfoil:checked ~ table tr:not(.require-tinfoil, .benefit-tinfoil) td,
+#layperson:checked ~ table tr:not(.require-layperson, .benefit-layperson) td
+{
+  background-color: white;
+}
+
+td a {
+  padding-left: 0.2em;
+  padding-right: 0.2em;
+  margin-left: 0.4em;
+  background-color: white;
+}
+
+table details {
+  min-width: 10vw;
+  max-width: 50vw;
+}
+
+label {
+  padding-left: 1em;
+  white-space: nowrap;
+}
+
+
+#transpose:checked ~ table td,
+#transpose:checked ~ table th {
+  min-height: 2em;
+  min-width: 10vw;
+  display: block;
+}
+
+#transpose:checked ~ table tr {
+  display: inline-block;
+  float: left;
+}
+
+#transpose:checked ~ table {
+  overflow-x: initial;
+  width: max-content;
+}
+
+#transpose:checked ~ table details[open] {
+  display: block;
+  position: absolute;
+  background-color: white;
+  padding-left: 0.5em;
+  padding-right: 0.5em;
+  padding-bottom: 0.5em;
+}
+
+
+#dark:checked ~ * {
+  background-color: black;
+  color: #ddd;
+}
+
+#transpose:checked ~ #dark:checked ~ table details[open] {
+  background-color: black;
+}
+
+#dark:checked ~ table td,
+#dark:checked ~ table th {
+  border-color: #222;
+}
+
+#dark:checked ~ table th {
+  background-color: #333;
+}
+
+#dark:checked ~ table tr:nth-child(odd) {
+  background-color: #080808;
+}
+
+#dark:checked ~ table td a {
+  background-color: #222;
+  color: #ddd;
+}
+
+#dark:checked ~ #foss:checked ~ table tr.benefit-foss td.p,
+#dark:checked ~ #tinfoil:checked ~ table tr.benefit-tinfoil td.p,
+#dark:checked ~ #layperson:checked ~ table tr.benefit-layperson td.p,
+#dark:checked ~ table td.y {
+  background-color: #060;
+  color: #fff;
+}
+
+#dark:checked ~ table td.n {
+  background-color: #600;
+  color: #fff;
+}
+
+#dark:checked ~ #foss:checked ~ table tr.benefit-foss td.n,
+#dark:checked ~ #tinfoil:checked ~ table tr.benefit-tinfoil td.n,
+#dark:checked ~ #layperson:checked ~ table tr.benefit-layperson td.n,
+#dark:checked ~ table td.p {
+  background-color: #880;
+  color: #fff;
+}
+
+#dark:checked ~ #foss:checked ~ table tr:not(.require-foss, .benefit-foss) td,
+#dark:checked ~ #tinfoil:checked ~ table tr:not(.require-tinfoil, .benefit-tinfoil) td,
+#dark:checked ~ #layperson:checked ~ table tr:not(.require-layperson, .benefit-layperson) td
+{
+  background-color: black;
+}
+
+
+#dark:not(:checked) ~ #contrast:checked ~ * {
+  font-weight: bold;
+}
+
+#dark:not(:checked) ~ #contrast:checked ~ table th {
+  background-color: white;
+}
+
+#dark:not(:checked) ~ #contrast:checked ~ table tr {
+  background-color: white;
+}
+
+#dark:not(:checked) ~ #contrast:checked ~ table td a {
+  color: black;
+}
+
+#dark:not(:checked) ~ #contrast:checked ~ table td.y {
+  background-color: white;
+}
+
+#dark:not(:checked) ~ #contrast:checked ~ #foss:checked ~ table tr.benefit-foss td.p:before,
+#dark:not(:checked) ~ #contrast:checked ~ #tinfoil:checked ~ table tr.benefit-tinfoil td.p:before,
+#dark:not(:checked) ~ #contrast:checked ~ #layperson:checked ~ table tr.benefit-layperson td.p:before,
+#dark:not(:checked) ~ #contrast:checked ~ table td.y:before {
+  content: "+ ";
+}
+
+#dark:not(:checked) ~ #contrast:checked ~ table td.n {
+  background-color: white;
+}
+
+#dark:not(:checked) ~ #contrast:checked ~ table td.n:before {
+  content: "- ";
+}
+
+#dark:not(:checked) ~ #contrast:checked ~ table td.p {
+  background-color: white;
+}
+
+#dark:not(:checked) ~ #contrast:checked ~ #foss:checked ~ table tr.benefit-foss td.n:before,
+#dark:not(:checked) ~ #contrast:checked ~ #tinfoil:checked ~ table tr.benefit-tinfoil td.n:before,
+#dark:not(:checked) ~ #contrast:checked ~ #layperson:checked ~ table tr.benefit-layperson td.n:before,
+#dark:not(:checked) ~ #contrast:checked ~ table td.p:before {
+  content: "~ ";
+}
+
+#dark:not(:checked) ~ #contrast:checked ~ #foss:checked ~ table tr:not(.require-foss, .benefit-foss) td:before,
+#dark:not(:checked) ~ #contrast:checked ~ #tinfoil:checked ~ table tr:not(.require-tinfoil, .benefit-tinfoil) td:before,
+#dark:not(:checked) ~ #contrast:checked ~ #layperson:checked ~ table tr:not(.require-layperson, .benefit-layperson) td:before
+{
+  content: "";
+}
+
+
+#abbr:checked ~ table td,
+#abbr:checked ~ table tr:first-child th:not(:first-child)
+{
+  overflow: hidden;
+}
+
+#abbr:checked ~ table tr:first-child th:not(:first-child) {
+  max-width: 3em;
+  height: 3em;
+  white-space: nowrap;
+  transform: rotate(-45deg);
+  text-align: left;
+  border: initial;
+  font-size: small;
+}
+
+#abbr:checked ~ table td,
+#abbr:checked ~ table th
+{
+  padding: initial;
+}
+
+#abbr:checked ~ table th details
+{
+  min-width: initial;
+}
+
+#abbr:checked ~ table td details
+{
+  display: none;
+}
+
+#abbr:checked ~ table th,
+#abbr:checked ~ table > tbody > tr:not(:first-child) > th > details > summary
+{
+  font-weight: normal;
+}
+
+#contrast:checked ~ #abbr:checked ~ table th,
+#contrast:checked ~ #abbr:checked ~ table > tbody > tr:not(:first-child) > th > details > summary
+{
+  font-weight: bold;
+}
+
+#abbr:checked ~ table td {
+  max-width: 2em;
+  white-space: nowrap;
+  font-size: 0;
+  vertical-align: top;
+}
+
+#abbr:checked ~ table tr:not(:first-child) th {
+  vertical-align: top;
+}
+
+#abbr:checked ~ table tr td:before {
+  font-size: initial;
+  padding-right: 3em;
+  vertical-align: top;
+}
+
+#abbr:checked ~ table tr:nth-child(odd) td:before {
+  content: ' ';
+}
+
+#abbr:checked ~ table tr td:not(:empty):before {
+  content: '. ';
+}
+
+#abbr:checked ~ table tr td.y:before {
+  content: '+ ';
+}
+
+#abbr:checked ~ table tr td.n:before {
+  content: '- ';
+}
+
+#abbr:checked ~ table tr td.p:before {
+  content: '~ ';
+}
+
+#abbr:checked ~ table td:not(:empty):hover {
+  display: block;
+  position: absolute;
+  padding-right: 1em;
+  padding-bottom: 1em;
+  max-width: 50vw;
+  white-space: initial;
+  font-size: initial;
+  z-index: 1;
+}
+
+#abbr:checked ~ table td:hover details {
+  display: initial;
+}
+
+#abbr:checked ~ table tr td:hover:before {
+  padding-right: 2em;
+}
+
+#abbr:checked ~ table td:not(:empty, .y, .n, .p):hover {
+  background-color: white;
+}
+
+#dark:checked ~ #abbr:checked ~ table td:not(:empty, .y, .n, .p):hover {
+  background-color: black;
+}
+
+
+@media (prefers-color-scheme: dark) {
+  html {
+    background-color: black;
+    color: #ddd;
+  }
+
+  #transpose:checked ~ table details[open] {
+    background-color: black;
+  }
+
+  td, th {
+    border-color: #222;
+  }
+
+  th {
+    background-color: #333;
+  }
+
+  tr:nth-child(odd) {
+    background-color: #080808;
+  }
+
+  td a {
+    background-color: #222;
+    color: #eee;
+  }
+
+  nav > a {
+    color: #ddf;
+  }
+
+  #foss:checked ~ table tr.benefit-foss td.p,
+  #tinfoil:checked ~ table tr.benefit-tinfoil td.p,
+  #layperson:checked ~ table tr.benefit-layperson td.p,
+  td.y {
+    background-color: #060;
+    color: #fff;
+  }
+
+  td.n {
+    background-color: #600;
+    color: #fff;
+  }
+
+  #foss:checked ~ table tr.benefit-foss td.n,
+  #tinfoil:checked ~ table tr.benefit-tinfoil td.n,
+  #layperson:checked ~ table tr.benefit-layperson td.n,
+  td.p {
+    background-color: #880;
+    color: #fff;
+  }
+
+  #foss:checked ~ table tr:not(.require-foss, .benefit-foss) td,
+  #tinfoil:checked ~ table tr:not(.require-tinfoil, .benefit-tinfoil) td,
+  #layperson:checked ~ table tr:not(.require-layperson, .benefit-layperson) td
+  {
+    background-color: black;
+  }
+
+  #abbr:checked ~ table td:not(:empty, .y, .n, .p):hover {
+    background-color: black;
+  }
+}
+
+@media (prefers-contrast: more) {
+  tr, th {
+    background-color: white;
+  }
+
+  td a {
+    color: black;
+  }
+
+  td.y {
+    background-color: white;
+  }
+
+  #foss:checked ~ table tr.benefit-foss td.p:before,
+  #tinfoil:checked ~ table tr.benefit-tinfoil td.p:before,
+  #layperson:checked ~ table tr.benefit-layperson td.p:before,
+  td.y:before {
+    content: "+ ";
+  }
+
+  td.n {
+    background-color: white;
+  }
+
+  td.n:before {
+    content: "- ";
+  }
+
+  td.p {
+    background-color: white;
+  }
+
+  #foss:checked ~ table tr.benefit-foss td.n:before,
+  #tinfoil:checked ~ table tr.benefit-tinfoil td.n:before,
+  #layperson:checked ~ table tr.benefit-layperson td.n:before,
+  td.p:before {
+    content: "~ ";
+  }
+
+  #foss:checked ~ table tr:not(.require-foss, .benefit-foss) td:before,
+  #tinfoil:checked ~ table tr:not(.require-tinfoil, .benefit-tinfoil) td:before,
+  #layperson:checked ~ table tr:not(.require-layperson, .benefit-layperson) td:before
+  {
+    content: "";
+  }
+
+  #abbr:checked ~ table th,
+  #abbr:checked ~ table > tbody > tr:not(:first-child) > th > details > summary
+  {
+    font-weight: bold;
+  }
+}
+
+.P {
+  display: none;
+}
+
+.C:checked ~ .P {
+  display: initial;
+}
+
+#allprop:not(:checked) ~ #editor:checked ~ table tr:not(
+  .require-foss, .benefit-foss,
+  .require-layperson, .benefit-layperson,
+  .require-tinfoil, .benefit-tinfoil,
+  .require-all, .benefit-all,
+  :first-child,
+  .section),
+#allprop:not(:checked) ~ #foss:checked ~ table tr:not(.require-foss, .benefit-foss, .info-foss, .require-all, .benefit-all, .info-all, :first-child, .section),
+#allprop:not(:checked) ~ #tinfoil:checked ~ table tr:not(.require-tinfoil, .benefit-tinfoil, .info-tinfoil, .require-all, .benefit-all, .info-all, :first-child, .section),
+#allprop:not(:checked) ~ #layperson:checked ~ table tr:not(.require-layperson, .benefit-layperson, .info-layperson, .require-all, .benefit-all, .info-all, :first-child, .section),
+.C:checked ~ .C:checked ~ .P,
+.T:checked ~ .C,
+:target ~ #page > #v_chart > .C,
+:target ~ #page > #v_chart > .F,
+#about:target ~ #page > #v_chart,
+#about:not(:target) ~ #page > #v_about,
+#all,
+body:not(.is-js) .js-needed
+{
+  display: none;
+}
+
+:target ~ #page > #v_chart > #all,
+:target ~ #page > #v_chart > #all ~ .P
+{
+  display: initial;
+}
+
+#about:target ~ #page > #c_about,
+#about:target ~ #page > #c_about:visited,
+#about:not(:target) ~ #page > #c_chart,
+#about:not(:target) ~ #page > #c_chart:visited
+{
+  cursor: default;
+  pointer-events: none;
+  color: initial;
+  text-decoration: none;
+}
+
+.button {
+  margin-left: 2em;
+  margin-right: 2em;
+  padding: 3px;
+  padding-bottom: 1px;
+  border-style: solid;
+  border-width: 1px;
+  cursor: pointer;
+}
+
+.top_tab, .button {
+  margin-left: 2em;
+}
+
+
+/* editor */
+
+pre {
+  display: inline-block;
+  margin: 1em;
+  padding: 1em;
+  outline: auto;
+}
+
+body.is-js:not(.is-state-view) .js-state-view,
+body.is-js:not(.is-state-edit) .js-state-edit,
+body.is-js:not(.is-state-save-review) .js-state-save-review,
+#about:target ~ * .js-needed
+{
+  display: none;
+}
+
+.is-state-edit tr:not(.section) td {
+  cursor: pointer;
+}
+
+.is-state-edit tr:not(.section) td:hover {
+  outline: auto;
+}
+
+.is-state-edit td a {
+  pointer-events: none;
+}
+
+.is-state-save-review main {
+  display: none;
+}
+
+td.is-modified {
+  font-style: italic;
+  font-weight: bold;
+}
+
+.is-cell-editor > div {
+  width: 50vw;
+}
+
+.is-teaser {
+  width: 90%;
+}
+
+.is-details {
+  width: 95%;
+  height: 5em;
+}

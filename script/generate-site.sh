@@ -31,7 +31,11 @@ gen_index() {
       gen_table "$LIMITITEMS"
     elif [ "$REPLY" = "((date))" ]; then
       DATE="`date "+%Y-%m-%d"`"
-      printf "<span id=date>%s</span>" "$DATE"
+      printf "<span class='js-state-view date'>%s</span>" "$DATE"
+    elif [ "$REPLY" = "((script))" ]; then
+      cat "$WEB/edit.js"
+    elif [ "$REPLY" = "((static_style))" ]; then
+      cat "$WEB/static.css"
     else
       printf "%s\n" "$REPLY"
     fi
