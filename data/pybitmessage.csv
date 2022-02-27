@@ -1,0 +1,31 @@
+name;;PyBitmessage;
+Android Google Play;no;https://wiki.bitmessage.org/;
+Android F-droid/apk;yes;2018;https://github.com/Dissem/Abit https://github.com/Bitmessage/PyBitmessage/blob/v0.6/buildscripts/androiddev.sh beta, requires server
+Other mobile;no;https://wiki.bitmessage.org/;
+Apple iOS;no;https://wiki.bitmessage.org/;
+Desktop;yes;2018 OS X, Windows https://github.com/Bitmessage/PyBitmessage/releases Linux https://wiki.bitmessage.org/index.php/Compiling_instructions;AppImage in the future https://github.com/Bitmessage/PyBitmessage/blob/v0.6/buildscripts/appimage.sh
+Web;no;https://wiki.bitmessage.org/;defunct https://wiki.bitmessage.org/index.php/Developer_Reference#Web_Clients
+Protocol;;BitMessage https://wiki.bitmessage.org/index.php/PyBitmessage_Help#Clarification;
+Protocol open;yes;https://wiki.bitmessage.org/index.php/Protocol_specification;
+Client license;yes;MIT https://github.com/Bitmessage/PyBitmessage/blob/v0.6/COPYING;
+Group chat;yes;https://wiki.bitmessage.org/index.php/DML#Issues_with_regular_Mailing_Lists;
+Voice calls;no;https://wiki.bitmessage.org/index.php/FAQ#How_does_Bitmessage_compare_to_other_messaging_methods;
+Video calls;no;https://wiki.bitmessage.org/index.php/FAQ#How_does_Bitmessage_compare_to_other_messaging_methods;
+Group calls;no;https://wiki.bitmessage.org/index.php/FAQ#How_does_Bitmessage_compare_to_other_messaging_methods;
+File transfer;yes;up to 220kB https://wiki.bitmessage.org/index.php/FAQ#How_does_Bitmessage_compare_to_other_messaging_methods;
+Message formatting;yes;https://wiki.bitmessage.org/index.php/FAQ#How_do_I_format_my_messages;
+Message expiration;yes;up to 28 days https://wiki.bitmessage.org/index.php/Protocol_specification#object;
+Spam protection;yes;proof of work https://wiki.bitmessage.org/index.php/Proof_of_work;
+CPU idle;no;proof of work https://wiki.bitmessage.org/index.php/Proof_of_work;
+Contact list confidential;yes;https://wiki.bitmessage.org/index.php/Keys.dat#Address_Sections;
+Audits;no;https://wiki.bitmessage.org/;
+Active development;no;no release since 2018 https://github.com/Bitmessage/PyBitmessage/releases;lots of new commits https://github.com/Bitmessage/PyBitmessage/commits/v0.6
+Offline;yes;up to 28 days https://wiki.bitmessage.org/index.php/FAQ#How_does_Bitmessage_compare_to_other_messaging_methods;
+Servers required;;live nodes on the preloaded list https://wiki.bitmessage.org/index.php/FAQ#How_does_Bitmessage_work https://wiki.bitmessage.org/index.php/Knownnodes.dat;
+Serverless WAN mode;partial;can preload a node list https://wiki.bitmessage.org/index.php/Knownnodes.dat;there is no automated mechanism for updating or spreading this preload list with the client
+Network store and forward;yes;up to 2 days https://wiki.bitmessage.org/index.php/FAQ#Can_I_send_a_message_to_someone_that_is_offline;
+Tor access of vendor operated network;yes;https://wiki.bitmessage.org/index.php/TOR;
+First release;yes;2012 https://wiki.bitmessage.org/index.php?title=Changelog&action=history https://bitmessage.org/bitmessage.pdf;
+Public issue tracker;yes;https://github.com/Bitmessage/PyBitmessage/issues;
+Support team;partial;community https://pay.reddit.com/r/bitmessage/;its own forum is offline
+No past client vulnerabilities;no;remote execution https://github.com/Bitmessage/PyBitmessage/releases/tag/v0.6.3;
