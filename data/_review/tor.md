@@ -1,6 +1,6 @@
 # Tor
 
-Let's first clear up some common questions. How decentralized is Tor? Is it serverless? Can it operate?
+Let's first clear up some common questions. How decentralized is Tor? Is it serverless? Can it continue to operate when its principal vendor loses interest? Can it stay operational without any financing at all?
 
 If you use Tor or the app you sue under the hood, it first connects to 10 servers called "Directory authority nodes" to get a node list. Their IP address are hard coded in the application.
 
