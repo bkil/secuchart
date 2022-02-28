@@ -45,7 +45,12 @@ function save_review_clicked() {
         text += "+++ data/" + item + ".csv\n";
       }
 
-      var property = cell.parentNode.firstElementChild.innerText;
+      var property = cell.parentNode.firstElementChild;
+      if (property.firstElementChild) {
+        property = property.firstElementChild.firstElementChild;
+      }
+      property = property.innerText;
+
       var new_value = cell.getAttribute('data-new')
       var old_value = cell.getAttribute('data-old')
       var csvIndex = j - headingCount + 1;
