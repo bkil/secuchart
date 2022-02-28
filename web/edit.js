@@ -27,7 +27,12 @@ function save_review_clicked() {
   var rows = document.getElementsByClassName('js-chart')[0].rows;
   for (var i = 0; i < items.length; i++) {
     var firstProperty = true;
+    var headingCount = 0;
     for (var j = 1; j < rows.length; j++) {
+      if (rows[j].classList.contains('section')) {
+        headingCount++;
+        continue
+      }
       var cell = rows[j].children[i + 1];
       if (!cell.classList.contains('is-modified')) {
         continue
@@ -49,7 +54,8 @@ function save_review_clicked() {
       }
       var new_value = cell.getAttribute('data-new')
       var old_value = cell.getAttribute('data-old')
-      text += '@@ -' + j + ',1 +' + j + ",1 @@\n";
+      var csvIndex = j - headingCount + 1;
+      text += '@@ -' + csvIndex + ',1 +' + csvIndex + ",1 @@\n";
       text += '-' + property + ';' + old_value + "\n";
       text += '+' + property + ';' + new_value + "\n";
     }
@@ -118,9 +124,6 @@ function activate_cell_editor(cell) {
   var status = document.createElement('div');
   var cl = cell.parentNode.className;
   var optional = (cl.indexOf('benefit-') < 0) && (cl.indexOf('require-') < 0);
-  console.log(status);
-  console.log(parsed);
-  console.log(empty);
   addRadio(status, 'yes', parsed[0] === 'y', 'yes');
   addRadio(status, 'partial', parsed[0] === 'p');
   addRadio(status, 'no', parsed[0] === 'n');
