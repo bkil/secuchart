@@ -40,7 +40,13 @@ function save_review_clicked() {
         text += "+++ data/" + item + ".csv\n";
       }
 
-      var property = cell.parentNode.firstElementChild.innerText;
+      var prop = cell.parentNode.firstElementChild;
+      var property;
+      if (prop.nodeType == document.TEXT_NODE) {
+        property = prop.innerText;
+      } else {
+        property = prop.firstChild.innerText;
+      }
       var new_value = cell.getAttribute('data-new')
       var old_value = cell.getAttribute('data-old')
       text += '@@ -' + j + ',1 +' + j + ",1 @@\n";
