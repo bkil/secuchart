@@ -147,7 +147,7 @@ function activate_cell_editor(cell) {
   details.appendChild(t);
   cell.appendChild(details);
 
-  t.focus();
+  teaser.focus();
 
   last_edited_cell = cell;
 }
