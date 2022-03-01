@@ -110,8 +110,8 @@ function is_synthetic_row(tr) {
 
 function activate_cell_editor(cell) {
   var parsed = parse_cell(cell);
-  if (parsed === null) {
-    alert("error: Cell parsing failed, please report this bug");
+  if (!parsed) {
+    alert("error: parse_cell() failed, please report this bug");
     return
   }
 
@@ -251,7 +251,9 @@ function status_prefix(teaser, status) {
 
 function render_cell_html(cell, text) {
   var col = /^([^;]*);([^;]*);([^;]*)$/.exec(text);
-  if (col === null) {
+  if (!col) {
+    cell.innerText = text;
+    alert("error: render_cell_html() failed, please report this bug");
     return
   }
   var status = col[1];
