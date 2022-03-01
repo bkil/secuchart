@@ -29,7 +29,6 @@ Some of these may be investigated in the future by volunteers. Others may be add
 * Matrix Hydrogen (beta)
 * Matrix Cinny
 * Cabal
-* Cwtch
 * Tinfoil Chat
 * Freenet
 * I2P
