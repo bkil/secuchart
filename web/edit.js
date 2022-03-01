@@ -115,7 +115,7 @@ function activate_cell_editor(cell) {
     return
   }
 
-  var text = render_cell_row(parsed);
+  var text = render_cell_row(status_to_word(parsed[0]), parsed[1], parsed[2]);
 
   var empty = (parsed[0] + parsed[1] + parsed[2]) === '';
   var status = document.createElement('div');
@@ -185,7 +185,7 @@ function save_last_edited_cell() {
     var teaser = last_edited_cell.getElementsByClassName('is-teaser')[0].value;
     var details = last_edited_cell.getElementsByClassName('is-details')[0].value;
     details = details.replace(/ *\n */g, ' ');
-    var text = status + ';' + teaser + ';' + details;
+    var text = render_cell_row(status, teaser, details);
 
     if (text === last_edited_cell.getAttribute('data-old')) {
       last_edited_cell.removeAttribute('data-old');
@@ -230,8 +230,16 @@ function word_to_status(state) {
   return map[state];
 }
 
-function render_cell_row(parsed) {
-  return status_to_word(parsed[0]) + ';' + parsed[1] + ';' + parsed[2];
+function render_cell_row(status, teaser, details) {
+  return status + ';' + teaser.replace(/;/g, ',') + ';' + details.replace(/;/g, ',');
+}
+
+function parse_cell_row(text) {
+  var col = /^([^;]*);([^;]*);([^;]*)$/.exec(text);
+  if (!col) {
+    return
+  }
+  return [col[1], col[2], col[3]];
 }
 
 function status_prefix(teaser, status) {
@@ -248,18 +256,19 @@ function status_prefix(teaser, status) {
 }
 
 function render_cell_html(cell, text) {
-  var col = /^([^;]*);([^;]*);([^;]*)$/.exec(text);
+  var col = parse_cell_row(text);
   if (!col) {
     cell.innerText = text;
     alert("error: render_cell_html() failed, please report this bug");
     return
   }
-  var status = col[1];
+
+  var status = col[0];
   if (status) {
     cell.classList.add(word_to_status(status));
   }
-  var teaser = linkify(status_prefix(col[2], status));
-  var details = linkify(col[3]);
+  var teaser = linkify(status_prefix(col[1], status));
+  var details = linkify(col[2]);
 
   if (details) {
     cell.innerHTML = '<details><summary>' + teaser + '</summary>' + details + '</details>';
