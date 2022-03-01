@@ -283,7 +283,7 @@ function parse_cell(cell) {
   }
   teaser = unlinkify(teaser);
   var word_status = status_to_word(status);
-  teaser = teaser.replace(RegExp('^' + word_status + ' *'), '');
+  teaser = teaser.replace(RegExp('^' + word_status + ' *(((http|ftp)s?:[^ ]+ *)*)$'), '$1');
   parsed = [status, teaser, details];
   return parsed;
 }
