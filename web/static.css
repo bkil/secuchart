@@ -590,11 +590,11 @@ body.is-js:not(.is-state-save-review) .js-state-save-review,
   display: none;
 }
 
-.is-state-edit tr:not(.section) td {
+.is-state-edit tr:not(.section, .js-no-edit) td {
   cursor: pointer;
 }
 
-.is-state-edit tr:not(.section) td:hover {
+.is-state-edit tr:not(.section, .js-no-edit) td:hover {
   outline: auto;
 }
 

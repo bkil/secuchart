@@ -284,8 +284,10 @@ gen_table() {
       if [ -z "$K" ]; then
         printf "<tr class=section>\n <th>%s%s\n\n" "$V" "$COLSPAN"
       else
+        EDIT=""
+        [ "$K" = "Analysis" ] && EDIT=" js-no-edit"
         if [ -n "$PERSONA" ]; then
-          echo "<tr class='$PERSONA'>"
+          echo "<tr class='$PERSONA$EDIT'>"
         else
           echo "<tr>"
         fi

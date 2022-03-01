@@ -29,7 +29,7 @@ function save_review_clicked() {
     var firstProperty = true;
     var headingCount = 0;
     for (var j = 1; j < rows.length; j++) {
-      if (rows[j].classList.contains('section')) {
+      if (is_synthetic_row(rows[j])) {
         headingCount++;
         continue
       }
@@ -97,11 +97,15 @@ function chart_clicked() {
 
   save_last_edited_cell();
 
-  if (cell.parentNode.className === 'section') {
+  if (is_synthetic_row(cell.parentNode)) {
     return
   }
 
   activate_cell_editor(cell);
+}
+
+function is_synthetic_row(tr) {
+  return (tr.classList.contains('section')) || (tr.classList.contains('js-no-edit'));
 }
 
 function activate_cell_editor(cell) {
