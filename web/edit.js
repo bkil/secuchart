@@ -270,6 +270,10 @@ function render_cell_html(cell, text) {
   }
 }
 
+function unentity(html) {
+  return html.replace(/&lt;/g, '<').replace(/&gt;/g, '>').replace(/&quot;/g, '"').replace(/&amp;/g, '&');
+}
+
 function parse_cell(cell) {
   var parsed = null;
   var c = cell.classList;
@@ -279,15 +283,14 @@ function parse_cell(cell) {
   var maybeDetails = /^<details( [^>]*)?><summary>(.*)<\/summary>(.*)( |\n)*<\/details>$/m.exec(cell.innerHTML);
   if (maybeDetails !== null) {
     teaser = maybeDetails[2];
-    details = unlinkify(maybeDetails[3]);
+    details = unentity(unlinkify(maybeDetails[3]));
   } else {
     teaser = cell.innerHTML;
   }
-  teaser = unlinkify(teaser);
+  teaser = unentity(unlinkify(teaser));
   var word_status = status_to_word(status);
   teaser = teaser.replace(RegExp('^' + word_status + ' *(((http|ftp)s?:[^ ]+ *)*)$'), '$1');
-  parsed = [status, teaser, details];
-  return parsed;
+  return [status, teaser, details];
 }
 
 function alter_state(old, next) {
