@@ -8,18 +8,18 @@ It then discovers the address of manually operated relay servers from the public
 
 If you are using proxies or bridges, you are using even more intermediate servers:
 
-- the WebRTC Snowflake also needs a central tracker,
-- domain fronting additionally relies on Azure CDN and DNS
-- more intermediaries may be involved
+* the WebRTC Snowflake also needs a central tracker,
+* domain fronting additionally relies on Azure CDN and DNS
+* more intermediaries may be involved
 
 If your destination lies outside the Tor network, you will also have to discover and utilize exit relays.
 
-References:
+## References
 
-- https://en.wikipedia.org/wiki/Tor_network#Consensus_blocking
-- https://community.torproject.org/relay/types-of-relays/
-- https://tb-manual.torproject.org/circumvention/
-- https://blog.torproject.org/domain-fronting-critical-open-web/
-- https://gitlab.torproject.org/legacy/trac/-/wikis/doc/meek
-- https://www.bamsoftware.com/papers/fronting/
-- https://wiki.malloc.dog/posts/domain-fronting/
+* https://en.wikipedia.org/wiki/Tor_network#Consensus_blocking
+* https://community.torproject.org/relay/types-of-relays/
+* https://tb-manual.torproject.org/circumvention/
+* https://blog.torproject.org/domain-fronting-critical-open-web/
+* https://gitlab.torproject.org/legacy/trac/-/wikis/doc/meek
+* https://www.bamsoftware.com/papers/fronting/
+* https://wiki.malloc.dog/posts/domain-fronting/

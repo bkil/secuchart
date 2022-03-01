@@ -10,7 +10,8 @@ main() {
   ITEMS="$DATA/_items.csv"
 
   mkdir -p "$DIST" || exit 1
-  cp -at "$DIST" "$O/../LICENSE" || exit 1
+  cp -a "$O/../LICENSE" "$DIST/LICENSE" || exit 1
+  cp -a "$O/../data/LICENSE" "$DIST/LICENSE.data" || exit 1
   gen_index "$LIMITITEMS" > "$DIST/index.html" || exit 1
 }
 
@@ -34,6 +35,8 @@ gen_index() {
       printf "<span class='js-state-view date'>%s</span>" "$DATE"
     elif [ "$REPLY" = "((script))" ]; then
       cat "$WEB/edit.js"
+    elif [ "$REPLY" = "((articles))" ]; then
+      gen_articles
     elif [ "$REPLY" = "((static_style))" ]; then
       cat "$WEB/static.css"
     else
@@ -84,6 +87,11 @@ EOF
     done
   }
 
+  get_doc_names |
+  while read IT; do
+    printf "#%s:not(:target) ~ #page > #v_%s,\n" "$IT" "$IT"
+  done
+
   cat <<EOF
 #DONTCARE
 {
@@ -93,8 +101,21 @@ EOF
 EOF
 }
 
+get_doc_names() {
+  ls -1 "$DATA/_doc"/*.md |
+  sed "s~\.md$~~ ; s~^.*/~~"
+}
+
 gen_spans() {
   LIMITITEMS="$1"
+
+  {
+    echo "documentation"
+    get_doc_names
+  } |
+  while read IT; do
+    echo "<span id=$IT class=c_documentation></span>"
+  done
 
   get_items "$LIMITITEMS" |
   while read IT; do
@@ -142,6 +163,77 @@ EOF
   while read IT; do
     printf "<a href=#%s class=P id=a_%s>Permalink #%s</a>\n" "$IT" "$IT" "$IT"
   done
+}
+
+gen_articles() {
+  cat <<EOF
+<div class=documentation id=v_documentation>
+<ul>
+EOF
+
+  get_doc_names |
+  while read IT; do
+    local DOC="$DATA/_doc/$IT.md"
+    local TITLE="`grep -o -m1 "[^# ].*" "$DOC"`"
+    printf "<li><a href=#%s>%s</a>\n" "$IT" "$TITLE"
+  done
+
+  cat << EOF
+</ul>
+</div>
+EOF
+
+  get_doc_names |
+  while read IT; do
+    echo ""
+    printf "<div class=documentation id=v_%s>\n" "$IT"
+    markdown2html "$DATA/_doc/$IT.md"
+    echo "</div>"
+  done
+}
+
+# this is mostly compatible with gemini
+markdown2html() {
+  local IN="$1"
+  sed -nr "
+    :loop
+    s~^### *([^ ].*)~<h3>\1</h3>~
+    t p
+    s~^## *([^ ].*)~<h2>\1</h2>~
+    t p
+    s~^# *([^ ].*)~<h1>\1</h1>~
+    t p
+    s~^> *([^ ].*)~<blockquote>\1</blockquote>~
+    t p
+    s~^=> *([^ ]*)$~<p><a href='\1'>\1</a></p>~
+    t p
+    s~^=> *([^ ]*) (.*)~<p><a href='\1'>\2</a></p>~
+    t p
+    s~^([*] *)?(((https?|ftps?|file)://|(mailto|tel):)[^ ]*)~<p><a href='\2'>\2</a></p>~
+    t p
+    s~^([*] *)?(((https?|ftps?|file)://|(mailto|tel):)[^ ]*) (.*)~<p><a href='\2'>\6</a></p>~
+    t p
+
+    s~^[*] *([^ ].*)~<ul>\n<li>\1</li>~
+    T no_list
+    :list
+    p
+    n
+    s~(^)[*] *([^ ].*)~\1<li>\2</li>~
+    t list
+    h
+    s~.*~</ul>~
+    p
+    g
+    t loop
+
+    :no_list
+    s~.+~<p>&</p>~
+    T e
+    :p
+    p
+    :e
+  " "$IN"
 }
 
 gen_table() {

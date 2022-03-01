@@ -511,8 +511,8 @@ label {
 .T:checked ~ .C,
 :target ~ #page > #v_chart > .C,
 :target ~ #page > #v_chart > .F,
-#about:target ~ #page > #v_chart,
-#about:not(:target) ~ #page > #v_about,
+.c_documentation:target ~ #page > #v_chart,
+#documentation:not(:target) ~ #page > #v_documentation,
 #all,
 body:not(.is-js) .js-needed
 {
@@ -525,15 +525,24 @@ body:not(.is-js) .js-needed
   display: initial;
 }
 
-#about:target ~ #page > #c_about,
-#about:target ~ #page > #c_about:visited,
-#about:not(:target) ~ #page > #c_chart,
-#about:not(:target) ~ #page > #c_chart:visited
+#documentation:target ~ #page > #c_documentation,
+#documentation:target ~ #page > #c_documentation:visited,
+#c_chart,
+#c_chart:visited
 {
   cursor: default;
   pointer-events: none;
   color: initial;
   text-decoration: none;
+}
+
+.c_documentation:target ~ #page > #c_chart,
+.c_documentation:target ~ #page > #c_chart:visited
+{
+  cursor: pointer;
+  pointer-events: initial;
+  color: initial;
+  text-decoration: underline;
 }
 
 .button {
@@ -550,6 +559,19 @@ body:not(.is-js) .js-needed
   margin-left: 2em;
 }
 
+.documentation {
+  margin: 1em;
+  padding: 1em;
+}
+
+.documentation > p > a {
+  padding-left: 1em;
+}
+
+blockquote {
+  border-left-style: solid;
+  padding-left: 1em;
+}
 
 /* editor */
 
@@ -563,7 +585,7 @@ pre {
 body.is-js:not(.is-state-view) .js-state-view,
 body.is-js:not(.is-state-edit) .js-state-edit,
 body.is-js:not(.is-state-save-review) .js-state-save-review,
-#about:target ~ * .js-needed
+.c_documentation:target ~ * .js-needed
 {
   display: none;
 }
