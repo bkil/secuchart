@@ -133,7 +133,7 @@ gen_filters() {
 <label for=allprop>all properties&nbsp;</label><input type=checkbox id=allprop checked autofocus>
 <a href="#" id=all>Show all messengers</a>
 <br>
-Use case:
+Use case <a href=#persona>[?]</a>:
 <label for=editor>editor&nbsp;</label><input type=radio id=editor name=u checked>
 <label for=foss>FOSS&nbsp;</label><input type=radio id=foss name=u>
 <label for=tinfoil>tinfoil&nbsp;</label><input type=radio id=tinfoil name=u>
@@ -172,6 +172,7 @@ gen_articles() {
 EOF
 
   get_doc_names |
+  grep -v "_review$" |
   while read IT; do
     local DOC="$DATA/_doc/$IT.md"
     local TITLE="`grep -o -m1 "[^# ].*" "$DOC"`"
@@ -307,11 +308,16 @@ get_item_prop() {
   ITEMNAME="$1"
   FINDKEY="$2"
 
-  DE="$DATA/$ITEMNAME.csv"
-  [ -f "$DE" ] || { echo "error: missing $DE" >&2; exit 1; }
-  grep -m1 "^${FINDKEY};" "$DE" |
-  cut -d';' -s -f 2-
-  VALUE="`printf '%s' "$PROP" | cut -d';' -f 1 | sed -r "s~(&[a-zA-Z]+),~\1;~g"`"
+  if [ "$FINDKEY" = "Analysis" ]; then
+    DE="$DATA/_doc/${ITEMNAME}_review.md"
+    [ -f "$DE" ] || return
+    printf ";#%s_review\n" "$ITEMNAME"
+  else
+    DE="$DATA/$ITEMNAME.csv"
+    [ -f "$DE" ] || { echo "error: missing $DE" >&2; exit 1; }
+    grep -m1 "^${FINDKEY};" "$DE" |
+    cut -d';' -s -f 2-
+  fi
 }
 
 get_prop_status() {
@@ -321,7 +327,10 @@ get_prop_status() {
 }
 
 linkify() {
-  sed -r "s~\<((http|ftp)s?://[^ ]*)~<a href='\1' target=_blank>w</a>~g"
+  sed -r "
+    s~(^| )(#[^ ]*)~\1<a href=\2>\2</a>~g
+    s~\<((http|ftp)s?://[^ ]*)~<a href='\1' target=_blank>w</a>~g
+    "
 }
 
 escape() {

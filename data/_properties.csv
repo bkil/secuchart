@@ -1,4 +1,5 @@
 ;Availability;;;
+Analysis;Textual review that can not be compared objectively through properties;;;all
 Summary;Highlight in a few words why it is interesting;;;all
 Android Google Play;;;layperson;
 Android F-droid/apk;yes=f-droid.org, partial=apk or separate repository;foss tinfoil;;
