@@ -133,7 +133,7 @@ gen_filters() {
 <label for=allprop>all properties&nbsp;</label><input type=checkbox id=allprop checked autofocus>
 <a href="#" id=all>Show all messengers</a>
 <br>
-Use case <a href=#persona>[?]</a>:
+Use case <a class=js-state-view href=#persona>[?]</a>:
 <label for=editor>editor&nbsp;</label><input type=radio id=editor name=u checked>
 <label for=foss>FOSS&nbsp;</label><input type=radio id=foss name=u>
 <label for=tinfoil>tinfoil&nbsp;</label><input type=radio id=tinfoil name=u>
