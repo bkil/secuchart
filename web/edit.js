@@ -116,12 +116,6 @@ function activate_cell_editor(cell) {
   }
 
   var text = render_cell_row(parsed);
-  if (!cell.hasAttribute('data-old')) {
-    cell.setAttribute('data-old', text);
-  }
-
-  cell.className = 'is-cell-editor';
-  cell.innerHTML = '';
 
   var empty = (parsed[0] + parsed[1] + parsed[2]) === '';
   var status = document.createElement('div');
@@ -132,15 +126,12 @@ function activate_cell_editor(cell) {
   addRadio(status, 'no', parsed[0] === 'n');
   addRadio(status, 'N/A', parsed[0] === '', 'na');
 
-  cell.appendChild(status);
-
   var teaser = document.createElement('div');
   var i = document.createElement('input');
   i.className = 'is-teaser';
   i.placeholder = 'few words of teaser';
   i.value = parsed[1];
   teaser.appendChild(i);
-  cell.appendChild(teaser);
 
   var details = document.createElement('div');
   var t = document.createElement('textarea');
@@ -148,10 +139,17 @@ function activate_cell_editor(cell) {
   t.placeholder = 'explanation and links';
   t.value = parsed[2];
   details.appendChild(t);
+
+  if (!cell.hasAttribute('data-old')) {
+    cell.setAttribute('data-old', text);
+  }
+  cell.className = 'is-cell-editor';
+  cell.innerHTML = '';
+  cell.appendChild(status);
+  cell.appendChild(teaser);
   cell.appendChild(details);
 
   i.focus();
-
   last_edited_cell = cell;
 }
 
