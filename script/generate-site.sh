@@ -172,8 +172,9 @@ gen_articles() {
 EOF
 
   get_doc_names |
-  grep -v "_review$" |
   while read IT; do
+    local CHART="$DATA/`echo "$IT" | sed "s/_review$//"`.csv"
+    [ -f "$CHART" ] && continue
     local DOC="$DATA/_doc/$IT.md"
     local TITLE="`grep -o -m1 "[^# ].*" "$DOC"`"
     printf "<li><a href=#%s>%s</a>\n" "$IT" "$TITLE"
