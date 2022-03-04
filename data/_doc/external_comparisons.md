@@ -31,3 +31,4 @@ See the following for sources of inspiration (copying is not allowed except the 
 * https://digdeeper.neocities.org/ghost/browsers.html
 * https://tilde.club/~acz/shadow_wiki/browsers.xhtml
 * https://spyware.neocities.org/articles/discord.html
+* https://matrix.org/clients-matrix/
