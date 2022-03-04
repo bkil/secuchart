@@ -88,8 +88,8 @@ EOF
   }
 
   get_doc_names |
-  while read IT; do
-    printf "#%s:not(:target) ~ #page > #v_%s,\n" "$IT" "$IT"
+  while read BASE IT; do
+    printf "#%s:not(:target) ~ #page > #v_%s,\n" "$BASE" "$BASE"
   done
 
   cat <<EOF
@@ -103,7 +103,7 @@ EOF
 
 get_doc_names() {
   ls -1 "$DATA/_doc"/*.md |
-  sed "s~\.md$~~ ; s~^.*/~~"
+  sed -r "s~^.*/([0-9-]*)([^/0-9-][^/]*)\.md~\2 \1\2~"
 }
 
 gen_spans() {
@@ -113,8 +113,8 @@ gen_spans() {
     echo "documentation"
     get_doc_names
   } |
-  while read IT; do
-    echo "<span id=$IT class=c_documentation></span>"
+  while read BASE IT; do
+    echo "<span id=$BASE class=c_documentation></span>"
   done
 
   get_items "$LIMITITEMS" |
@@ -172,12 +172,12 @@ gen_articles() {
 EOF
 
   get_doc_names |
-  while read IT; do
+  while read BASE IT; do
     local CHART="$DATA/`echo "$IT" | sed "s/_review$//"`.csv"
     [ -f "$CHART" ] && continue
     local DOC="$DATA/_doc/$IT.md"
     local TITLE="`grep -o -m1 "[^# ].*" "$DOC"`"
-    printf "<li><a href=#%s>%s</a>\n" "$IT" "$TITLE"
+    printf "<li><a href=#%s>%s</a>\n" "$BASE" "$TITLE"
   done
 
   cat << EOF
@@ -186,9 +186,9 @@ EOF
 EOF
 
   get_doc_names |
-  while read IT; do
+  while read BASE IT; do
     echo ""
-    printf "<div class=documentation id=v_%s>\n" "$IT"
+    printf "<div class=documentation id=v_%s>\n" "$BASE"
     markdown2html "$DATA/_doc/$IT.md"
     echo "</div>"
   done
