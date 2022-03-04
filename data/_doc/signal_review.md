@@ -24,3 +24,12 @@ As such contact discovery can be pretty hard on the server side, federated serve
 Note that secure, zero-knowledge contact discovery can be an issue for any alternative system even if it used some other identifier, like an email address (or matrix ID, Friendica profile URL, etc.
 
 Stepping back from a theoretically sound solution to one where you must trust a vendor that also happens to have a sketchy safety record is dubious at best.
+
+## EU hardening guide
+
+* https://twitter.com/CERTEU/status/1499389080387338241
+* https://media.cert.europa.eu/static/WhitePapers/TLP-WHITE-CERT-EU_Security_Guidance-22-002_v1_0.pdf
+
+## Opinions
+
+* https://dt.gl/the-2022-review-of-messaging-service-providers-signal/
