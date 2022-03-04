@@ -1,4 +1,4 @@
-# External comparisons
+# External comparison charts
 
 See the following for sources of inspiration (copying is not allowed except the license-compatible Wikipedia and we need references to each cell value anyway)
 
@@ -24,11 +24,11 @@ See the following for sources of inspiration (copying is not allowed except the 
 * https://wiki.tox.chat/include/clients_features
 * https://secushare.org/comparison
 * https://secushare.org/features
-* https://privacytests.org/
-* https://www.privacytools.io/#messaging
 * https://wiki.bitmessage.org/index.php/FAQ#How_does_Bitmessage_compare_to_other_messaging_methods
-* https://dt.gl/tag/messengers/
+* https://matrix.org/clients-matrix/
+
+## Browsers
+
+* https://privacytests.org/
 * https://digdeeper.neocities.org/ghost/browsers.html
 * https://tilde.club/~acz/shadow_wiki/browsers.xhtml
-* https://spyware.neocities.org/articles/discord.html
-* https://matrix.org/clients-matrix/
