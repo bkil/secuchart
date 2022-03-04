@@ -31,3 +31,4 @@ Offline;partial;Compose or read stored messages;
 Third party clients;yes;;
 Good ToSDR grade;yes;https://tosdr.org/en/service/1946;
 First release;yes;2013-08-14 https://en.wikipedia.org/wiki/Telegram_(software);
+No past client vulnerabilities;no;;https://words.filippo.io/dispatches/telegram-ecdh/ "THE MOST BACKDOOR-LOOKING BUG I’VE EVER SEEN: discovered and fixed in Telegram's self-rolled cryptographic protocol about seven years ago"
