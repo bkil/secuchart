@@ -59,11 +59,15 @@ gen_style() {
       echo "style $IT" >&2
       NAME="`get_item_value "$IT" "name"`"
       cat <<EOF
-#$IT:not(:target) ~ #page > #v_chart > #any:checked ~ .C:checked ~ #_$IT:not(:checked) ~ table tr > *:nth-child($NUM),
-#$IT:not(:target) ~ #page > #v_chart > #any:checked ~ #_$IT:not(:checked) ~ .C:checked ~ table tr > *:nth-child($NUM),
-#$IT:not(:target) ~ #page > #v_chart > #_$IT:not(:checked) ~ #a_$IT,
-:target ~ #$IT:not(:target) ~ #page > #v_chart > table tr > *:nth-child($NUM),
-#$IT:not(:target) ~ :target ~ #page > #v_chart > table tr > *:nth-child($NUM),
+#$IT:not(:target) ~ #page #any:checked ~ .C:checked ~ #_$IT:not(:checked) ~ table th:nth-child($NUM),
+#$IT:not(:target) ~ #page #any:checked ~ .C:checked ~ #_$IT:not(:checked) ~ table td:nth-child($NUM),
+#$IT:not(:target) ~ #page #any:checked ~ #_$IT:not(:checked) ~ .C:checked ~ table th:nth-child($NUM),
+#$IT:not(:target) ~ #page #any:checked ~ #_$IT:not(:checked) ~ .C:checked ~ table td:nth-child($NUM),
+#$IT:not(:target) ~ #page #_$IT:not(:checked) ~ #a_$IT,
+:target ~ #$IT:not(:target) ~ #page table th:nth-child($NUM),
+:target ~ #$IT:not(:target) ~ #page table td:nth-child($NUM),
+#$IT:not(:target) ~ :target ~ #page table th:nth-child($NUM),
+#$IT:not(:target) ~ :target ~ #page table td:nth-child($NUM),
 EOF
 
       SERVERLIC="`get_item_value "$IT" "Server license"`"
@@ -77,13 +81,16 @@ EOF
     done
 
     for NUM in $PROPR; do
-      printf "#proprietary:checked ~ table tr > *:nth-child(%d),\n" "$NUM"
+      printf "#proprietary:checked ~ table th:nth-child(%d),\n" "$NUM"
+      printf "#proprietary:checked ~ table td:nth-child(%d),\n" "$NUM"
     done
     for NUM in $MATRIX; do
-      printf "#t_matrix:checked ~ table tr > *:nth-child(%d),\n" "$NUM"
+      printf "#t_matrix:checked ~ table th:nth-child(%d),\n" "$NUM"
+      printf "#t_matrix:checked ~ table td:nth-child(%d),\n" "$NUM"
     done
     for NUM in $XMPP; do
-      printf "#t_xmpp:checked ~ table tr > *:nth-child(%d),\n" "$NUM"
+      printf "#t_xmpp:checked ~ table th:nth-child(%d),\n" "$NUM"
+      printf "#t_xmpp:checked ~ table td:nth-child(%d),\n" "$NUM"
     done
   }
 
@@ -131,9 +138,9 @@ gen_filters() {
   cat <<EOF
 <label for=abbr>abbreviated&nbsp;</label><input type=checkbox id=abbr>
 <label for=allprop>all properties&nbsp;</label><input type=checkbox id=allprop checked autofocus>
-<a href="#" id=all>Show all messengers</a>
+<a href="#" id=all class=il>Show all messengers</a>
 <br>
-Use case <a class=js-state-view href=#persona>[?]</a>:
+Use case <a class=js-state-view href=#persona class=il>[?]</a>:
 <label for=editor>editor&nbsp;</label><input type=radio id=editor name=u checked>
 <label for=foss>FOSS&nbsp;</label><input type=radio id=foss name=u>
 <label for=tinfoil>tinfoil&nbsp;</label><input type=radio id=tinfoil name=u>
@@ -161,7 +168,7 @@ EOF
 
   get_items "$LIMITITEMS" |
   while read IT; do
-    printf "<a href=#%s class=P id=a_%s>Permalink #%s</a>\n" "$IT" "$IT" "$IT"
+    printf "<a href=#%s class=P id=a_%s class=il>Permalink #%s</a>\n" "$IT" "$IT" "$IT"
   done
 }
 
@@ -177,7 +184,7 @@ EOF
     [ -f "$CHART" ] && continue
     local DOC="$DATA/_doc/$IT.md"
     local TITLE="`grep -o -m1 "[^# ].*" "$DOC"`"
-    printf "<li><a href=#%s>%s</a>\n" "$BASE" "$TITLE"
+    printf "<li><a href=#%s class=il>%s</a>\n" "$BASE" "$TITLE"
   done
 
   cat << EOF
@@ -199,21 +206,24 @@ markdown2html() {
   local IN="$1"
   sed -nr "
     :loop
+    s~^=> *([^ ]*)$~<p><a href='\1' class=bl>\1</a></p>~
+    t p
+    s~^=> *([^ ]*) (.*)~<p><a href='\1' class=bl>\2</a></p>~
+    t p
     s~^### *([^ ].*)~<h3>\1</h3>~
     t p
     s~^## *([^ ].*)~<h2>\1</h2>~
     t p
     s~^# *([^ ].*)~<h1>\1</h1>~
     t p
+
+    s~\<(((https?|ftps?|file)://|(mailto|tel):)[^ ]*)~<a href='\1' target=_blank class=bl>\1</a>~g
+    t linked
+    s~(^| )(#[a-zA-Z0-9_-]+)~\1<a href='\2' class=il>\2</a>~g
+    t linked
+
+    :linked
     s~^> *([^ ].*)~<blockquote>\1</blockquote>~
-    t p
-    s~^=> *([^ ]*)$~<p><a href='\1'>\1</a></p>~
-    t p
-    s~^=> *([^ ]*) (.*)~<p><a href='\1'>\2</a></p>~
-    t p
-    s~^([*] *)?(((https?|ftps?|file)://|(mailto|tel):)[^ ]*)~<p><a href='\2'>\2</a></p>~
-    t p
-    s~^([*] *)?(((https?|ftps?|file)://|(mailto|tel):)[^ ]*) (.*)~<p><a href='\2'>\6</a></p>~
     t p
 
     s~^[*] *([^ ].*)~<ul>\n<li>\1</li>~
@@ -221,6 +231,13 @@ markdown2html() {
     :list
     p
     n
+
+    s~\<(((https?|ftps?|file)://|(mailto|tel):)[^ ]*)~<a href='\1' target=_blank class=bl>\1</a>~g
+    t linked_list
+    s~(^| )(#[a-zA-Z0-9_-]+)~\1<a href='\2' class=il>\2</a>~g
+    t linked_list
+    :linked_list
+
     s~(^)[*] *([^ ].*)~\1<li>\2</li>~
     t list
     h
@@ -241,7 +258,7 @@ markdown2html() {
 gen_table() {
   LIMITITEMS="$1"
 
-  printf "<tr>\n <th>Feature\n"
+  printf "<tr>\n <th class=th-pr>Feature\n"
 
   print_items "name" 1
 
@@ -283,7 +300,7 @@ gen_table() {
     " |
     while IFS=";" read K V PERSONA; do
       if [ -z "$K" ]; then
-        printf "<tr class=section>\n <th>%s%s\n\n" "$V" "$COLSPAN"
+        printf "<tr class=section>\n <th class=th-sect>%s%s\n\n" "$V" "$COLSPAN"
       else
         EDIT=""
         [ "$K" = "Analysis" ] && EDIT=" js-no-edit"
@@ -295,11 +312,11 @@ gen_table() {
 
         if [ -n "$V" ]; then
           echo "property $K" >&2
-          printf " <th><details><summary>%s</summary>%s</details>\n" "$K" "$V"
+          printf " <th class=th-pr><details class=prop-det><summary class=prop-sum>%s</summary>%s</details>\n" "$K" "$V"
           print_items "$K" 0
         else
           echo "property $K" >&2
-          printf " <th>%s\n" "$K"
+          printf " <th class=th-pr>%s\n" "$K"
           print_items "$K" 0
         fi
       fi
@@ -331,8 +348,8 @@ get_prop_status() {
 
 linkify() {
   sed -r "
-    s~(^| )(#[^ ]*)~\1<a href=\2>\2</a>~g
-    s~\<((http|ftp)s?://[^ ]*)~<a href='\1' target=_blank>w</a>~g
+    s~(^| )(#[^ ]*)~\1<a href=\2 class=a>\2</a>~g
+    s~\<((http|ftp)s?://[^ ]*)~<a href='\1' target=_blank class=a>w</a>~g
     "
 }
 
@@ -413,9 +430,14 @@ print_items() {
     [ "$ISHEAD" = 1 ] &&  [ -z "$PROP" ] && PROP="$FINDKEY"
     VALUE="`get_prop_value "$PROP"`"
 
-    CLASS="`get_entry_status_class "$FINDKEY" "$PROP"`"
-    ATTR=""
-    [ -n "$CLASS" ] && ATTR=" class='$CLASS'"
+    if [ "$ISHEAD" = 1 ]; then
+      ATTR=" class=th-it"
+    else
+      CLASS="`get_entry_status_class "$FINDKEY" "$PROP"`"
+      ATTR=""
+      [ -n "$CLASS" ] && ATTR=" class='$CLASS'"
+    fi
+
     printf " <%s%s>%s</%s>\n" "$ADDTAG" "$ATTR" "$VALUE" "$ADDTAG"
   done
   echo ""

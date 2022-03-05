@@ -18,22 +18,23 @@
 ((spans))
 
 <div id=page>
-<a href=# class='js-state-view button' id=c_chart>Comparison chart</a>
-<a href=#documentation class='js-state-view button' id=c_documentation>Documentation</a>
+<a href=# class='js-state-view button il' id=c_chart>Comparison chart</a>
+<a href=#documentation class='js-state-view button il' id=c_documentation>Documentation</a>
 ((date))
 
 <span class=js-needed>
-  <span class='js-start-edit js-state-view button'>Edit chart</span>
-  <span class='js-save-review js-state-edit button'>Review edits</span>
-  <span class='js-save-back js-state-save-review button'>Resume editing</span>
-  <span class='js-save-undo js-state-save-review button'>View chart</span>
+  <span class='js-start-edit js-state-view button il'>Edit chart</span>
+  <span class='js-save-review js-state-edit button il'>Review edits</span>
+  <span class='js-save-back js-state-save-review button il'>Resume editing</span>
+  <span class='js-save-undo js-state-save-review button il'>View chart</span>
 </span>
 
 <main id=v_chart>
 
 <label for=transpose>transpose table&nbsp;</label><input type=checkbox id=transpose>
-<label for=dark>dark mode&nbsp;</label><input type=checkbox id=dark>
-<label for=contrast>high contrast&nbsp;</label><input type=checkbox id=contrast>
+<label for=bright>bright mode&nbsp;</label><input type=radio name=d id=bright checked>
+<label for=dark>dark mode&nbsp;</label><input type=radio name=d id=dark>
+<label for=contrast>high contrast&nbsp;</label><input type=radio name=d id=contrast>
 
 ((filters))
 

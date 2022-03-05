@@ -119,6 +119,7 @@ function activate_cell_editor(cell) {
 
   var empty = (parsed[0] + parsed[1] + parsed[2]) === '';
   var status = document.createElement('div');
+  status.className = 'is-cell-div';
   var cl = cell.parentNode.className;
   var optional = (cl.indexOf('benefit-') < 0) && (cl.indexOf('require-') < 0);
   addRadio(status, 'yes', parsed[0] === 'y', 'yes');
@@ -127,6 +128,7 @@ function activate_cell_editor(cell) {
   addRadio(status, 'N/A', parsed[0] === '', 'na');
 
   var teaser = document.createElement('div');
+  teaser.className = 'is-cell-div';
   var i = document.createElement('input');
   i.className = 'is-teaser';
   i.placeholder = 'few words of teaser';
@@ -134,6 +136,7 @@ function activate_cell_editor(cell) {
   teaser.appendChild(i);
 
   var details = document.createElement('div');
+  details.className = 'is-cell-div';
   var t = document.createElement('textarea');
   t.className = 'is-details';
   t.placeholder = 'explanation and links';
@@ -201,11 +204,11 @@ function save_last_edited_cell() {
 }
 
 function unlinkify(html) {
-  return html.replace(/<a href=['"]([^['"]*)['"] target=['"]?_blank['"]?>[^<]*<\/a>/g, '$1');
+  return html.replace(/<a href=['"]([^['"]*)['"] target=['"]?_blank['"]? class=['"]?a['"]?>[^<]*<\/a>/g, '$1');
 }
 
 function linkify(text) {
-  return text.replace(/\b((http|ftp)s?:\/\/[^ ]*)/g, "<a href='$1' target=_blank>w</a>");
+  return text.replace(/\b((http|ftp)s?:\/\/[^ ]*)/g, "<a href='$1' target=_blank class=a>w</a>");
 }
 
 function status_to_word(state) {
