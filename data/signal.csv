@@ -16,6 +16,7 @@ Voice calls;yes;https://support.signal.org/hc/en-us/articles/360007060492-Voice-
 Video calls;yes;https://support.signal.org/hc/en-us/articles/360007060492-Voice-or-Video-Calling-with-Screen-Sharing;
 Group calls;yes;https://support.signal.org/hc/en-us/articles/360052977792-Group-Calling-Voice-or-Video-with-Screen-Sharing;
 Emoticons in message;yes;;
+Link preview;yes;;only HTTPS, the sender downloads it via a Signal proxy, can be disabled in settings https://signal.org/blog/i-link-therefore-i-am/
 Multiple devices;partial;Only Desktop as secondary device;
 Multiple accounts;no;;
 Application locking;yes;Android's screen lock https://support.signal.org/hc/en-us/articles/360007059572-Screen-Lock;

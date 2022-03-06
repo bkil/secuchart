@@ -26,6 +26,7 @@ Unicode support;yes;;
 Emoji composer;yes;;
 Emoji reception;yes;;
 Sticker packs;yes;mostly through vendor https://github.com/vector-im/element-web/issues/2950#issuecomment-393079408 https://github.com/vector-im/element-web/issues/6534 https://github.com/matrix-org/matrix-doc/pull/1951;
+Link preview;yes;;the server of the recipient generates it optionally, disabled by default in E2EE rooms https://matrix.org/blog/2021/10/20/synapse-1-45-1-released/#support-for-oembed-autodiscovery
 Inline images;yes;;
 Inline videos;yes;;
 Polls;yes;;

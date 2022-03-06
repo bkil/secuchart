@@ -29,6 +29,7 @@ Unicode support;yes=can both send & receive text containing any valid Unicode co
 Emoji composer;yes=rich dialog with search, partial=replaces a few emotes or aliases with Unicode before sending;layperson;;
 Emoji reception;yes=color Unicode display of all, mention in details if animated, partial=monochromatic, only a subset or replaces received emoticons with pictures;layperson;foss;
 Sticker packs;Whether they are animated;;layperson;
+Link preview;Unfurling: who downloads the page, the sender, recipient or the server of one or the other;;layperson;tinfoil
 Inline images;Supported image formats: png, jpeg, gif, webp, avif;;;
 Inline videos;Supported video formats: mp4, webm, av1;;;
 Polls;Multiple choice voting;;layperson;
