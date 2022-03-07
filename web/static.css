@@ -375,12 +375,24 @@ label {
 
 .c_documentation:target ~ #page > #c_chart,
 .c_documentation:target ~ #page > #c_chart:visited,
-.il,
-.il:visited
+.button,
+.button:visited,
+.il
 {
   color: #117;
 }
 
+.bl {
+  color: #11f;
+}
+
+.il:visited {
+  color: #505;
+}
+
+.bl:visited {
+  color: #500;
+}
 
 @media (prefers-color-scheme: dark) {
   html {
@@ -419,12 +431,25 @@ label {
 
   .c_documentation:target ~ #page > #c_chart,
   .c_documentation:target ~ #page > #c_chart:visited,
-  .il,
-  .il:visited,
-  .bl,
-  .bl:visited
+  .button,
+  .button:visited,
+  .il
   {
     color: #ddf;
+  }
+
+  .bl {
+    color: #bbf;
+  }
+
+  .il:visited
+  {
+    color: #fdf;
+  }
+
+  .bl:visited
+  {
+    color: #fdd;
   }
 
   #foss:checked ~ table > tbody > .benefit-foss > .p,
@@ -564,7 +589,7 @@ body:not(.is-js) .js-needed
 
 .documentation .il,
 .bl {
-  padding-left: 1em;
+  margin-left: 1em;
 }
 
 blockquote {

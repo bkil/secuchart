@@ -140,7 +140,7 @@ gen_filters() {
 <label for=allprop>all properties&nbsp;</label><input type=checkbox id=allprop checked autofocus>
 <a href="#" id=all class=il>Show all messengers</a>
 <br>
-Use case <a class=js-state-view href=#persona class=il>[?]</a>:
+Use case <a class='js-state-view il' href=#persona>[?]</a>:
 <label for=editor>editor&nbsp;</label><input type=radio id=editor name=u checked>
 <label for=foss>FOSS&nbsp;</label><input type=radio id=foss name=u>
 <label for=tinfoil>tinfoil&nbsp;</label><input type=radio id=tinfoil name=u>
@@ -168,7 +168,7 @@ EOF
 
   get_items "$LIMITITEMS" |
   while read IT; do
-    printf "<a href=#%s class=P id=a_%s class=il>Permalink #%s</a>\n" "$IT" "$IT" "$IT"
+    printf "<a href=#%s class='P il' id=a_%s>Permalink #%s</a>\n" "$IT" "$IT" "$IT"
   done
 }
 
