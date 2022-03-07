@@ -118,6 +118,10 @@ details {
   max-width: 50vw;
 }
 
+summary {
+  cursor: pointer;
+}
+
 label {
   padding-left: 1em;
   white-space: nowrap;
