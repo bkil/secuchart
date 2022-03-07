@@ -1,5 +1,16 @@
 # Using VPN services
 
+## Advantages
+
+* If you or someone within your friends, family and special interest trust circle hosts it
+* If you can't control or know the first hop in any way (e.g., free public wifi)
+* If your ISP does not grant you a dynamically changing IP address
+* Your coarse location can be kept confidential: the same could be achieved via routing shady sites over cellular broadband.
+
+## Disadvantages
+
+If you intersperse your clearnet vs. Tor/VPN access patterns, one with a bird's eye view can actually correlate it pretty easily (i.e., state actors and funded malicious organizations). If you are using certain sites for longer stretches or even register on some, this can even be achieved purely with local inference.
+
 You place ultimate trust in what a VPN provider says because there is no way to verify it, except after the fact if they were exploited. You can't influence whether they use encryption or turn off logging for example.
 
 In case of going through a VPN, your ISP can still log the timing & size metadata (along with DNS, NTP and other leaking things if not set up correctly on any of your nodes), and then the ISP of the VPN can log (and MITM) everything that could have been logged in the first place.
