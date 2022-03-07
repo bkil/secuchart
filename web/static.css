@@ -150,12 +150,19 @@ label {
   padding-bottom: 0.5em;
 }
 
-#dark:checked ~ table {
+
+#dark:checked ~ table,
+textarea,
+input
+{
   color: #ddd;
 }
 
 #dark:checked ~ table > tbody > tr:nth-child(even),
-#transpose:checked ~ #dark:checked ~ table details[open] {
+#transpose:checked ~ #dark:checked ~ table details[open],
+textarea,
+input
+{
   background-color: black;
 }
 
@@ -395,7 +402,7 @@ label {
 }
 
 @media (prefers-color-scheme: dark) {
-  html {
+  html, textarea, input {
     background-color: black;
     color: #ddd;
   }
