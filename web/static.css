@@ -156,16 +156,16 @@ label {
 
 
 #dark:checked ~ table,
-textarea,
-input
+#dark:checked ~ table textarea,
+#dark:checked ~ table input
 {
   color: #ddd;
 }
 
 #dark:checked ~ table > tbody > tr:nth-child(even),
 #transpose:checked ~ #dark:checked ~ table details[open],
-textarea,
-input
+#dark:checked ~ table textarea,
+#dark:checked ~ table input
 {
   background-color: black;
 }
