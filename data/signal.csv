@@ -42,6 +42,6 @@ Third party clients;no;https://github.com/LibreSignal/LibreSignal/blob/master/RE
 Vendor jurisdiction;;USA https://signal.org/legal/;
 Infrastructure jurisdiction;;USA;
 Infrastructure provider;;Amazon;
-Good ToSDR grade;yes;https://tosdr.org/en/service/528;
+Good ToSDR grade;yes;B https://tosdr.org/en/service/528;
 First release;yes;2014-07-29 https://en.wikipedia.org/wiki/Signal_(software);
 No past client vulnerabilities;no;remote listening https://adware.guru/signal-vulnerability-spying-on-users/;

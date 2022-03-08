@@ -17,10 +17,10 @@ Group chat;yes;;
 Voice calls;yes;WebRTC https://matrix.org/faq/#what-can-i-actually-do-with-this%3F;
 Video calls;yes;WebRTC https://matrix.org/faq/#what-can-i-actually-do-with-this%3F;
 Group calls;yes;via Jitsi https://matrix.org/faq/#what-can-i-actually-do-with-this%3F;
-Voice messages;yes;;https://element.io/blog/introducing-voice-messages-and-so-much-more/
+Voice messages;yes;https://element.io/blog/introducing-voice-messages-and-so-much-more/;
 Screen sharing;yes;https://ems-docs.element.io/Create-a-Conference-Call-in-a-Room.html#screen-sharing;
 File transfer;yes;;
-Message formatting;yes;supports commonmark-flavored markdown;https://commonmark.org/help/
+Message formatting;yes;CommonMark-flavored markdown https://commonmark.org/help/ https://gitlab.com/bkil/freedom-fighters/-/blob/master/hu/client/matrix-html-syntax.md#element-web-teszt%C3%BCzenet-1;
 Emoticons in message;yes;;
 Unicode support;yes;;
 Emoji composer;yes;;
@@ -50,8 +50,8 @@ Account deactivation after device compromise;yes;with second device or Web or De
 Account recovery after device compromise;yes;with second device or Web or Desktop;
 End-to-end encryption;yes;https://matrix.org/faq/#which-matrix-clients-support-e2e;
 Metadata protection;no;;
-Perfect forward secrecy;partial;for 1-on-1 conversations, yes. group conversations, partial;https://www.nccgroup.com/globalassets/our-research/us/public-reports/2016/november/ncc_group_olm_cryptogrpahic_review_2016_11_01.pdf
-Security team;yes;https://matrix.org/security-disclosure-policy/;bad opsec in 2019 https://matrix.org/blog/2019/05/08/post-mortem-and-remediations-for-apr-11-security-incident
+Perfect forward secrecy;partial;1-on-1 yes, groups partial;yes for 1-on-1 conversations. partial for group conversations https://www.nccgroup.com/globalassets/our-research/us/public-reports/2016/november/ncc_group_olm_cryptogrpahic_review_2016_11_01.pdf
+Security team;partial;;https://matrix.org/security-disclosure-policy/ bad opsec in 2019 https://matrix.org/blog/2019/05/08/post-mortem-and-remediations-for-apr-11-security-incident
 Large bug bounty;partial;third-party https://app.intigriti.com/programs/matrix/matrix/detail;
 Reproducible builds;no;https://github.com/vector-im/element-web/issues/11848;
 Audits;partial;crypto library in 2016 https://matrix.org/blog/2016/11/21/matrixs-olm-end-to-end-encryption-security-assessment-released-and-implemented-cross-platform-on-riot-at-last;
@@ -67,7 +67,7 @@ Serverless WAN mode;no;;
 Serverless LAN mode;no;;
 Network store and forward;yes;;
 IP shielded from peers;yes;Not during calls if you enable WebRTC;
-Proxy support;partial;yes, but requires CLI argument;https://github.com/vector-im/element-web/issues/3320
+Proxy support;partial;yes, through CLI argument https://github.com/vector-im/element-web/issues/3320;
 Third party clients;yes;https://matrix.org/clients/;
 Bots available;yes;https://element.io/element-matrix-store#bots;
 User addons;yes;https://element.io/element-matrix-store#widgets;

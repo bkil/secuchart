@@ -1,5 +1,5 @@
 name;;Telegram FOSS;
-Summary;;FOSS-friendly soft fork of the original Telegram Android;
+Summary;;FOSS-friendly soft fork of Telegram Android;
 Android Google Play;no;;
 Android F-droid/apk;yes;https://f-droid.org/en/packages/org.telegram.messenger/;
 Apple iOS;no;;
@@ -20,7 +20,7 @@ Read public content without registering;no;;
 Multiple devices;yes;;
 Multiple accounts;yes;3;
 Application locking;yes;Android - custom 4 digit PIN + system fingerprint https://telegram.org/blog/photo-editor-and-passcodes;
-Message expiration;partial;Only for 1:1 secret chats (not default) and some media https://telegram.org/faq#q-how-do-self-destructing-messages-work;
+Message expiration;partial;1:1 secret chats and some media, only on mobile;Only for 1:1 secret chats (not default) on mobile and media in private cloud chats https://telegram.org/faq#q-how-do-self-destructing-messages-work
 Account deactivation after device compromise;partial;Only for secondary devices;
 End-to-end encryption;partial;Only for 1:1 secret chats (not default) https://telegram.org/faq#q-how-are-secret-chats-different;
 Usage without phone number;no;;

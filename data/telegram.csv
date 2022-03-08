@@ -19,7 +19,7 @@ Read public content without registering;no;;
 Multiple devices;yes;;
 Multiple accounts;yes;3;
 Application locking;yes;Android - custom 4 digit PIN + system fingerprint https://telegram.org/blog/photo-editor-and-passcodes;
-Message expiration;partial;Only for 1:1 secret chats (not default) on mobile and some media https://telegram.org/faq#q-how-do-self-destructing-messages-work;
+Message expiration;partial;1:1 secret chats and some media, only on mobile;Only for 1:1 secret chats (not default) on mobile and media in private cloud chats https://telegram.org/faq#q-how-do-self-destructing-messages-work
 Account deactivation after device compromise;partial;Only for secondary devices;
 End-to-end encryption;partial;Only for 1:1 secret chats (not default) on mobile https://telegram.org/faq#q-how-are-secret-chats-different;
 Reproducible builds;yes;iOS, Android https://core.telegram.org/reproducible-builds;
@@ -29,6 +29,6 @@ User can extend network with node;no;;
 Identity not controlled by vendor;no;;
 Offline;partial;Compose or read stored messages;
 Third party clients;yes;;
-Good ToSDR grade;yes;https://tosdr.org/en/service/1946;
+Good ToSDR grade;yes;B https://tosdr.org/en/service/1946;
 First release;yes;2013-08-14 https://en.wikipedia.org/wiki/Telegram_(software);
 No past client vulnerabilities;no;;https://words.filippo.io/dispatches/telegram-ecdh/ "THE MOST BACKDOOR-LOOKING BUG I’VE EVER SEEN: discovered and fixed in Telegram's self-rolled cryptographic protocol about seven years ago"

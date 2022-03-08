@@ -20,7 +20,7 @@ Multiple devices;partial;still not functioning properly;
 Multiple accounts;no;;
 Remote message removal;no;;
 Remote message correction;no;;
-Message expiration;yes;disappearing messages (local) 5 sec - 1 week options, server keeps all messages for 14 days;
+Message expiration;yes;up to 7 days client side, server mirrors for 14 days;disappearing messages (local) 5 sec - 1 week options, server keeps all messages for 14 days
 Typing indication;partial;does not work on desktop;shown and sent by default but can be switched off https://github.com/oxen-io/session-android/issues/728
 Spam protection;no;proof of work,unlimited account ids can be generated almost instantly;
 Account deactivation after device compromise;no;account ids are random generated 2^128 keys;
@@ -48,7 +48,7 @@ Serverless WAN mode;no;https://getsession.org/faq;
 Serverless LAN mode;no;https://getsession.org/faq;
 Network store and forward;yes;messages are stored on session servers for 14 days https://getsession.org/faq;
 Wireless mode;no;https://getsession.org/faq;
-IP shielded from peers;partial;onion requests in private, group server operators, voice calls and video calls are p2p https://getsession.org/faq;private conversations and closed groups are sent using onion requests, open groups are possibly visible by open group server operators, voice calls and video calls are p2p and ips are visible by all users, attachments, pictures, videos, files, etc. are not onion routed and are sent directly to and stored on session owned servers, avatars and user display names are possibly still uploaded directly to and stored on session owned servers, github contacted directly during account setup and when app checks for updates https://getsession.org/faq
+IP shielded from peers;partial;onion requests in private, group server operators, voice calls and video calls are p2p;private conversations and closed groups are sent using onion requests, open groups are possibly visible by open group server operators, voice calls and video calls are p2p and ips are visible by all users, attachments, pictures, videos, files, etc. are not onion routed and are sent directly to and stored on session owned servers, avatars and user display names are possibly still uploaded directly to and stored on session owned servers, github contacted directly during account setup and when app checks for updates https://getsession.org/faq
 Third party clients;partial;no alternative client;
 Tor access of vendor operated network;no;session/lokinet were designed to be non-compatible with tor;
 IPv6 access of vendor operated network;no;session is not currently compatible with ipv6, may be in future;
@@ -56,5 +56,5 @@ Vendor operated network inaccessible from countries;partial;possibly China is bl
 Vendor jurisdiction;;Australia;complicated 5 eyes jurisdiction with many anti-privacy and anti-encryption laws	https://optf.ngo/legals/
 Infrastructure jurisdiction;;Australia https://optf.ngo/legals/;
 Infrastructure provider;;Hetzner and OVH, distributed Lokinet;session owned servers are primarily hetzner and ovh, lokinet servers are distributed worldwide in multiple countries and with various isps
-Good ToSDR grade;yes;https://tosdr.org/en/service/3015;
+Good ToSDR grade;yes;B https://tosdr.org/en/service/3015;
 First release;partial;2020-02-06 https://github.com/oxen-io/session-desktop/releases?page=6;

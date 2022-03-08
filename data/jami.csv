@@ -22,19 +22,19 @@ Spam protection;no;;
 Account deactivation after device compromise;yes;https://git.jami.net/savoirfairelinux/jami-project/-/wikis/technical/Technical-overview#user-content-usages;
 Account recovery after device compromise;no;https://jami.net/help/#answer5;
 Power saving;no;partial offload by OpenDHT proxy https://jami.net/why-is-jami-truly-distributed/;background transfers deplete the battery faster noticeably
-Bandwidth frugal;no;transfers constantly in the background according to experience;
+Bandwidth frugal;no;transfers constantly in the background;according to testing by editors
 End-to-end encryption;yes;https://jami.net/why-is-jami-truly-distributed/ https://linuxkamarada.com/en/2021/05/25/the-jami-messenger/;
 E2EE keys shielded from operator;yes;https://jami.net/why-is-jami-truly-distributed/ https://linuxkamarada.com/en/2021/05/25/the-jami-messenger/;
-Contact list confidential;partial;not published, but leaks through OpenDHT proxy, Jami name server and ICE https://jami.net/why-is-jami-truly-distributed/ https://linuxkamarada.com/en/2021/05/25/the-jami-messenger/;
+Contact list confidential;partial;not published, but leaks;leaks through OpenDHT proxy, Jami name server and ICE https://jami.net/why-is-jami-truly-distributed/ https://linuxkamarada.com/en/2021/05/25/the-jami-messenger/
 Perfect forward secrecy;yes;https://git.jami.net/savoirfairelinux/jami-project/-/wikis/technical/Technical-overview#user-content-security-privacy;
 Reproducible builds;no;https://git.jami.net/savoirfairelinux/jami-packaging/-/issues/45;
 Audits;no;;
 Usage without phone number;yes;;
-Transparent financing;yes;official GNU project with EFF funding in the past, PayPal donations https://jami.net/ https://www.fsf.org/campaigns/priority-projects/voicevideochat https://opensource.com/article/20/5/free-software-communication;
+Transparent financing;yes;donations, GNU/EFF in the past;official GNU project with EFF funding in the past, PayPal donations https://jami.net/ https://www.fsf.org/campaigns/priority-projects/voicevideochat https://opensource.com/article/20/5/free-software-communication
 No-cost tier;yes;;
 Payment choices;;N/A;
 Isolated self-hosting;yes;complicated https://jami.net/why-is-jami-truly-distributed/;
-User can extend network with node;yes;OpenDHT proxy, bootstrap, TURN, Jami blockchain, Jami name server https://jami.net/why-is-jami-truly-distributed/;
+User can extend network with node;yes;many parts self-hostable;OpenDHT proxy, bootstrap, TURN, Jami blockchain, Jami name server https://jami.net/why-is-jami-truly-distributed/
 Identity not controlled by vendor;yes;names are optional and stored on a blockchain https://jami.net/why-is-jami-truly-distributed/ https://linuxkamarada.com/en/2021/05/25/the-jami-messenger/;
 Offline;yes;https://linuxkamarada.com/en/2021/05/25/the-jami-messenger/;
 Servers required;;DNS, OpenDHT proxy, GCN/Apple push, bootstrap, TURN https://jami.net/why-is-jami-truly-distributed/;
