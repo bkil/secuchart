@@ -6,8 +6,12 @@
 * If you can't control or know the first hop in any way (e.g., free public wifi)
 * If your ISP does not grant you a dynamically changing IP address
 * Your coarse location can be kept confidential: the same could be achieved via routing shady sites over cellular broadband.
+* If your ISP (or country) blocks accessing a certain site
+* If a certain site blocks your ISP (or country)
 
 ## Disadvantages
+
+It is possible to detect and block Tor/VPN users either by the target website or the ISP.
 
 If you intersperse your clearnet vs. Tor/VPN access patterns, one with a bird's eye view can actually correlate it pretty easily (i.e., state actors and funded malicious organizations). If you are using certain sites for longer stretches or even register on some, this can even be achieved purely with local inference.
 
