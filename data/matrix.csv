@@ -67,7 +67,7 @@ Serverless WAN mode;no;;
 Serverless LAN mode;no;;
 Network store and forward;yes;;
 IP shielded from peers;yes;Not during calls if you enable WebRTC;
-Proxy support;partial;yes, through CLI argument https://github.com/vector-im/element-web/issues/3320;
+Proxy support;partial;yes, through CLI argument;should have a GUI setting https://github.com/vector-im/element-web/issues/3320 TODO auth https://github.com/vector-im/element-meta/issues/200
 Third party clients;yes;https://matrix.org/clients/;
 Bots available;yes;https://element.io/element-matrix-store#bots;
 User addons;yes;https://element.io/element-matrix-store#widgets;
