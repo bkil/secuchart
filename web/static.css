@@ -65,7 +65,7 @@ th {
   z-index: 2;
 }
 
-.th-pr {
+.th-pr, .th-sect {
   left: 0;
   text-align: left;
   max-width: 40vw;
@@ -130,14 +130,28 @@ label {
 
 #transpose:checked ~ table > tbody > tr > td,
 #transpose:checked ~ table th {
-  min-height: 2em;
-  min-width: 10vw;
+  min-height: 1.5em;
   display: block;
 }
 
 #transpose:checked ~ table tr {
   display: inline-block;
   float: left;
+}
+
+#transpose:checked ~ table .tr-th {
+  position: sticky;
+  left: 0;
+  z-index: 3;
+}
+
+#transpose:checked ~ table .th-pr,
+#transpose:checked ~ table .th-sect
+{
+  left: initial;
+  top: 0;
+  max-width: initial;
+  z-index: 2;
 }
 
 #transpose:checked ~ table {

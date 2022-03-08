@@ -258,7 +258,7 @@ markdown2html() {
 gen_table() {
   LIMITITEMS="$1"
 
-  printf "<tr>\n <th class=th-pr>Feature\n"
+  printf "<tr class=tr-th>\n <th class=th-pr>Feature\n"
 
   print_items "name" 1
 
