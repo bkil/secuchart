@@ -168,6 +168,14 @@ label {
   padding-bottom: 0.5em;
 }
 
+#transpose:checked ~ table .is-editor-container {
+  position: absolute;
+  background-color: white;
+  padding-left: 0.5em;
+  padding-right: 0.5em;
+  padding-bottom: 0.5em;
+}
+
 
 #dark:checked ~ table,
 #dark:checked ~ table textarea,
@@ -178,6 +186,7 @@ label {
 
 #dark:checked ~ table > tbody > tr:nth-child(even),
 #transpose:checked ~ #dark:checked ~ table details[open],
+#transpose:checked ~ #dark:checked ~ table .is-editor-container,
 #dark:checked ~ table textarea,
 #dark:checked ~ table input
 {
@@ -425,7 +434,8 @@ label {
     color: #ddd;
   }
 
-  #transpose:checked ~ table details[open] {
+  #transpose:checked ~ table details[open],
+  #transpose:checked ~ table .is-editor-container {
     background-color: black;
   }
 

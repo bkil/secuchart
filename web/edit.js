@@ -118,6 +118,9 @@ function activate_cell_editor(cell) {
   var text = render_cell_row(status_to_word(parsed[0]), parsed[1], parsed[2]);
 
   var empty = (parsed[0] + parsed[1] + parsed[2]) === '';
+  var container = document.createElement('div');
+  container.className = 'is-editor-container';
+
   var status = document.createElement('div');
   status.className = 'is-cell-div';
   var cl = cell.parentNode.className;
@@ -126,6 +129,7 @@ function activate_cell_editor(cell) {
   addRadio(status, 'partial', parsed[0] === 'p');
   addRadio(status, 'no', parsed[0] === 'n');
   addRadio(status, 'N/A', parsed[0] === '', 'na');
+  container.appendChild(status);
 
   var teaser = document.createElement('div');
   teaser.className = 'is-cell-div';
@@ -134,6 +138,7 @@ function activate_cell_editor(cell) {
   i.placeholder = 'few words of teaser';
   i.value = parsed[1];
   teaser.appendChild(i);
+  container.appendChild(teaser);
 
   var details = document.createElement('div');
   details.className = 'is-cell-div';
@@ -142,15 +147,15 @@ function activate_cell_editor(cell) {
   t.placeholder = 'explanation and links';
   t.value = parsed[2];
   details.appendChild(t);
+  container.appendChild(details);
 
   if (!cell.hasAttribute('data-old')) {
     cell.setAttribute('data-old', text);
   }
+
   cell.className = 'is-cell-editor';
   cell.innerHTML = '';
-  cell.appendChild(status);
-  cell.appendChild(teaser);
-  cell.appendChild(details);
+  cell.appendChild(container);
 
   i.focus();
   last_edited_cell = cell;
