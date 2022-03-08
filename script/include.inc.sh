@@ -129,6 +129,7 @@ extend_reorder() {
 
   TMP="$OUT.tmp"
   get_property_keys |
+  grep -v "^Analysis$" |
   while read PROP; do
     grep -E "^$PROP;" "$OUT" || printf "%s;;;\n" "$PROP"
   done |
