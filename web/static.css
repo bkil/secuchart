@@ -122,6 +122,10 @@ summary {
   cursor: pointer;
 }
 
+details[open] > summary {
+  border-bottom: 1px solid;
+}
+
 label {
   padding-left: 1em;
   white-space: nowrap;
