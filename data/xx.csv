@@ -1,13 +1,13 @@
 name;;Elixxir xx;
 Android Google Play;yes;https://play.google.com/store/apps/details?id=io.xxlabs.messenger;
-Android F-droid/apk;no;;
+Android F-droid/apk;partial;apk yes, F-droid no.;the apk is a bit hard to find on the website. look for "android source code" section, there it is.
 Apple iOS;yes;https://apps.apple.com/rs/app/xx-messenger/id1593670957;
 Desktop;no;https://xx.network/messenger/;
 Web;no;https://xx.network/messenger/;
 Languages;no;1 https://apps.apple.com/rs/app/xx-messenger/id1593670957;
 Protocol;;blockchain and mixnet;xx blockchain coin based on Praxxis with xx cMix mixnet privacy layer
 Server license;no;proprietary;
-Client license;no;proprietary;
+Client license;no;BSD;
 Audits;no;;
 Transparent financing;no;cryptocoin backed by VC https://xx.network/coin/ https://pitchbook.com/profiles/vendor/266442-76;
 No-cost tier;no;https://xx.network/coin/;
