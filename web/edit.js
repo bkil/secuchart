@@ -117,14 +117,12 @@ function activate_cell_editor(cell) {
 
   var text = render_cell_row(status_to_word(parsed[0]), parsed[1], parsed[2]);
 
-  var empty = (parsed[0] + parsed[1] + parsed[2]) === '';
   var container = document.createElement('div');
   container.className = 'is-editor-container';
 
   var status = document.createElement('div');
   status.className = 'is-cell-div';
   var cl = cell.parentNode.className;
-  var optional = (cl.indexOf('benefit-') < 0) && (cl.indexOf('require-') < 0);
   addRadio(status, 'yes', parsed[0] === 'y', 'yes');
   addRadio(status, 'partial', parsed[0] === 'p');
   addRadio(status, 'no', parsed[0] === 'n');
