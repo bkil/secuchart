@@ -17,6 +17,8 @@ Multiple accounts;yes;;
 Remote message removal;no;;
 Remote message correction;no;;
 Message expiration;no;;
+Presence status;yes;;Standard IRC protocol status
+Presence not mandatory;yes;;Standard IRC protocol status
 Account deactivation after device compromise;yes;;
 End-to-end encryption;no;;
 Deniability;no;;

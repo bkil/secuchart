@@ -20,6 +20,8 @@ Multiple devices;yes;;
 Multiple accounts;yes;3;
 Application locking;yes;Android - custom 4 digit PIN + system fingerprint https://telegram.org/blog/photo-editor-and-passcodes;
 Message expiration;partial;1:1 secret chats and some media, only on mobile;Only for 1:1 secret chats (not default) on mobile and media in private cloud chats https://telegram.org/faq#q-how-do-self-destructing-messages-work
+Presence status;yes;;
+Presence not mandatory;yes;https://telegram.org/blog/privacy-revolution;
 Account deactivation after device compromise;partial;Only for secondary devices;
 End-to-end encryption;partial;Only for 1:1 secret chats (not default) on mobile https://telegram.org/faq#q-how-are-secret-chats-different;
 Reproducible builds;yes;iOS, Android https://core.telegram.org/reproducible-builds;
