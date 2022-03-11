@@ -17,6 +17,8 @@ Multiple devices;yes;;
 Multiple accounts;yes;;
 Application locking;yes;Android - custom 4 digit PIN;
 Message expiration;no;;
+Read receipts;yes;;
+Receipts not mandatory;no;;
 Account deactivation after device compromise;yes;;
 Account recovery after device compromise;yes;;
 End-to-end encryption;yes;https://matrix.org/faq/#which-matrix-clients-support-e2e;
