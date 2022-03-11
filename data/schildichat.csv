@@ -19,6 +19,8 @@ Multiple devices;yes;;
 Multiple accounts;no;;
 Application locking;yes;Android https://github.com/SchildiChat/SchildiChat-android/blob/sc/vector/src/main/res/xml/vector_settings_pin.xml#L17;
 Message expiration;no;;
+Read receipts;yes;;
+Receipts not mandatory;no;can be hidden on client only;
 Account deactivation after device compromise;yes;;
 Account recovery after device compromise;yes;;
 End-to-end encryption;yes;https://matrix.org/faq/#which-matrix-clients-support-e2e;
