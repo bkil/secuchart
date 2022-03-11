@@ -16,6 +16,8 @@ Group calls;yes;;
 Multiple devices;yes;;
 Multiple accounts;no;;
 Message expiration;no;;
+Presence status;yes;;
+Presence not mandatory;yes;https://support.skype.com/en/faq/FA34699/what-are-the-possible-skype-statuses;
 End-to-end encryption;partial;unclear https://support.skype.com/en/faq/FA31/does-skype-use-encryption;
 Deniability;no;;
 Identity not controlled by vendor;no;;

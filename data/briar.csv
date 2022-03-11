@@ -25,6 +25,8 @@ Application locking;yes;Android's screen lock https://briarproject.org/news/2018
 Remote message removal;no;;
 Remote message correction;no;;
 Message expiration;yes;Only setting of 7 days possible https://briarproject.org/news/2021-briar-1.3-released/;
+Presence status;yes;for groups only contacts https://code.briarproject.org/briar/briar/-/issues/826;
+Presence not mandatory;no;;
 Account deactivation after device compromise;no;;
 Account recovery after device compromise;no;https://code.briarproject.org/briar/briar/-/wikis/FAQ#how-do-i-backup-my-account;
 End-to-end encryption;yes;https://briarproject.org/how-it-works/;

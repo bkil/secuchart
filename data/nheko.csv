@@ -14,6 +14,7 @@ Emoticons in message;yes;;
 Multiple devices;yes;;
 Multiple accounts;no;;
 Message expiration;no;;
+Presence status;yes;https://github.com/Nheko-Reborn/nheko/blob/master/CHANGELOG.md;- Shows online status of the people you are talking to. - You can define a custom status message to tell others what you are currently up to. - The status message appears next to the usernames in the timeline. - Your server needs to have presence enabled for this to work.
 Account deactivation after device compromise;yes;;
 Account recovery after device compromise;yes;;
 End-to-end encryption;yes;https://github.com/Nheko-Reborn/nheko#features;
