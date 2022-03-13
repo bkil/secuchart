@@ -2,7 +2,7 @@
 
 ## Opinions
 
-* https://infosec-handbook.eu/articles/xmpp-aitm/
+* https://web.archive.org/web/20211113101802/https://infosec-handbook.eu/articles/xmpp-aitm/
 
 > XMPP: Admin-in-the-middle: Server-side parties can transparently modify, log, and monitor nearly everything when communicating via XMPP
 
