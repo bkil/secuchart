@@ -19,6 +19,7 @@ Remote message correction;no;;
 Message expiration;no;;
 Presence status;yes;;Standard IRC protocol status
 Presence not mandatory;yes;;Standard IRC protocol status
+Typing indication;no;;
 Read receipts;no;;
 Account deactivation after device compromise;yes;;
 End-to-end encryption;no;;

@@ -19,6 +19,7 @@ Multiple devices;yes;;
 Multiple accounts;no;;
 Application locking;yes;Android https://github.com/SchildiChat/SchildiChat-android/blob/sc/vector/src/main/res/xml/vector_settings_pin.xml#L17;
 Message expiration;no;;
+Typing indication;yes;can be disabled;
 Read receipts;yes;;
 Receipts not mandatory;no;can be hidden on client only;
 Account deactivation after device compromise;yes;;

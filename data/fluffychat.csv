@@ -17,6 +17,7 @@ Multiple devices;yes;;
 Multiple accounts;yes;;
 Application locking;yes;Android - custom 4 digit PIN;
 Message expiration;no;;
+Typing indication;partial;cannot be disabled https://gitlab.com/famedly/fluffychat/-/issues/877;
 Read receipts;yes;;
 Receipts not mandatory;no;;
 Account deactivation after device compromise;yes;;
