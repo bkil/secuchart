@@ -16,7 +16,7 @@ Group chat;yes;https://book.keybase.io/docs/chat https://book.keybase.io/docs/te
 Voice calls;no;;
 Video calls;partial;Jitsi Bot https://keybase.io/jitsibot Zoom Bot https://keybase.io/zoombot Google Meet Bot;
 Group calls;partial;Jitsi Bot https://keybase.io/jitsibot Zoom Bot https://keybase.io/zoombot Google Meet Bot;
-Voice messages;no;;
+Voice messages;partial;only in mobile client;Or even only Android?
 File transfer;yes;;additionally E2EE storage and shares https://book.keybase.io/files
 Emoji composer;yes;;
 Emoji reception;yes;;
