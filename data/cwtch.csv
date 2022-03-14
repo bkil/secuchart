@@ -15,15 +15,29 @@ Voice calls;no;not yet https://cwtch.im/ http://cwtchim3z2gdsyb27acfc26lup5aqbeg
 Video calls;no;not yet https://cwtch.im/ http://cwtchim3z2gdsyb27acfc26lup5aqbegjrjsqulzrnkuoalq5h4gmcid.onion/;
 Group calls;no;not yet https://cwtch.im/ http://cwtchim3z2gdsyb27acfc26lup5aqbegjrjsqulzrnkuoalq5h4gmcid.onion/;
 File transfer;yes;experimental https://cwtch.im/;
+Inline images;partial;only sender, not for recepeint;
+Polls;no;;
 Reactions;no;;
 Multiple devices;no;not yet https://cwtch.im/;
+Online account replica;no;;
+Multiple accounts;yes;;
+Application locking;partial;mandatory unlock of each account on app start;no other type of locking at the moment
+Remote message removal;no;;
+Remote message correction;no;;
+Presence status;partial;1/1 chats show when contact offline;For 1/1 chats it's not possible to send message when contact offline, when online text input is available. No indication in group chat about members status.
+Typing indication;no;;
+Read receipts;no;only delivery receipt;
+Account deactivation after device compromise;no;;
+Account recovery after device compromise;no;;
 No-cost tier;yes;;
 Payment choices;;N/A;
 Active development;yes;;
+User can extend network with node;yes;Applicable to group chats only https://git.openprivacy.ca/cwtch.im/server;
 Servers required;;Tor, Cwtch;
 Serverless WAN mode;no;Requires Tor;
 Serverless LAN mode;no;Requires Tor;
 IP shielded from peers;yes;via Tor;
+Bots available;yes;https://git.openprivacy.ca/sarah/cwtchbot;
 Tor access of vendor operated network;yes;N/A uses Tor connection to peers;
 IPv6 access of vendor operated network;yes;;
 Vendor jurisdiction;;canada https://openprivacy.ca/ http://openpravyvc6spbd4flzn4g2iqu4sxzsizbtb5aqec25t76dnoo5w7yd.onion/;
