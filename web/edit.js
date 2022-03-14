@@ -162,8 +162,10 @@ function activate_cell_editor(cell) {
   cell.appendChild(container);
 
   yes.onfocus = partial.onfocus = no.onfocus = na.onfocus = i.onfocus = t.onfocus = function() {
-    this.parentElement.parentElement.parentElement.scrollIntoViewIfNeeded()
+    var td = this.parentElement.parentElement.parentElement;
+    td.scrollIntoView({'block': 'end', 'inline': 'end'});
   }
+
   i.focus();
   last_edited_cell = cell;
 }
