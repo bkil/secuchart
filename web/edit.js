@@ -10,6 +10,12 @@ function init() {
   var list = document.getElementsByTagName('body')[0].classList;
   list.add('is-js');
   list.add('is-state-view');
+
+  document.onkeyup = function(event) {
+    if (event.keyCode === 27) {
+      save_last_edited_cell();
+    }
+  }
 }
 
 function start_editing_clicked() {
