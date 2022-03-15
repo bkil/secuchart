@@ -25,6 +25,7 @@
 <span class=js-needed>
   <span class='js-start-edit js-state-view button'>Edit chart</span>
   <span class='js-save-review js-state-edit button'>Review edits</span>
+  <span class='js-save-review js-state-edit'><em>Not</em> saved automatically!</span>
   <span class='js-save-back js-state-save-review button'>Resume editing</span>
   <span class='js-save-undo js-state-save-review button'>View chart</span>
 </span>
@@ -46,12 +47,15 @@
 </table>
 </main>
 
-((articles))
-
 <div class='js-needed js-state-save-review'>
-  <p>Please review your changes below</p>
+  <h1>Please review your changes below</h1>
+  <p>Note that it will get lost if you reload this page!
+  You need to copy &amp; paste this manually to share your changes.</p>
+  <p>You may either open a pull/merge request on <strong>GitLab</strong>, GitHub or Codeberg or send this snippet over in the Matrix chat room so one of our commiters can do that for you.</p>
   <pre class=js-changes></pre>
 </div>
+
+((articles))
 
 </div>
 

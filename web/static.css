@@ -669,6 +669,10 @@ body.is-state-save-review main {
   display: none;
 }
 
+body.is-state-save-review #about_project ~ #page > #v_about_project {
+  display: initial;
+}
+
 .is-modified {
   font-style: italic;
   font-weight: bold;
