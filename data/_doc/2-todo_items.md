@@ -116,3 +116,5 @@ Some of these may be investigated in the future by volunteers. Others may be add
 * https://en.wikipedia.org/wiki/Online_chat#Software_and_protocols
 * https://en.wikipedia.org/wiki/Web_chat#Web-based_chat_services
 * https://changelog.complete.org/archives/10205-roundup-of-secure-messengers-with-off-the-grid-capabilities-distributed-mesh-messengers
+* Quicksy: Conversations fork with phone numbers as names https://en.wikipedia.org/wiki/Conversations_(software)#Quicksy
+* revolt.chat https://github.com/revoltchat https://developers.revolt.chat/faq/federation
