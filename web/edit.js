@@ -7,15 +7,17 @@ function init() {
   document.getElementsByClassName('js-save-review')[0].onclick = save_review_clicked;
   document.getElementsByClassName('js-save-back')[0].onclick = save_back_clicked;
   document.getElementsByClassName('js-save-undo')[0].onclick = save_undo_clicked;
-  var list = document.getElementsByTagName('body')[0].classList;
-  list.add('is-js');
-  list.add('is-state-view');
+  window.onbeforeunload = on_before_unload;
 
   document.onkeyup = function(event) {
     if (event.keyCode === 27) {
       save_last_edited_cell();
     }
   }
+
+  var list = document.getElementsByTagName('body')[0].classList;
+  list.add('is-js');
+  list.add('is-state-view');
 }
 
 function start_editing_clicked() {
@@ -75,6 +77,20 @@ function get_diff() {
     }
   }
   return text;
+}
+
+function on_before_unload(e) {
+  save_last_edited_cell();
+  var diff = get_diff();
+  if (diff === '') {
+    delete e['returnValue'];
+    return undefined;
+  } else {
+    e.preventDefault();
+    var message = 'Close without saving changes?';
+    e.returnValue = message;
+    return message;
+  }
 }
 
 function save_undo_clicked() {
