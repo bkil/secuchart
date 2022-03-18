@@ -129,10 +129,10 @@ function activate_cell_editor(cell) {
   var status = document.createElement('div');
   status.className = 'is-cell-div';
   var cl = cell.parentNode.className;
-  var yes = addRadio(status, 'yes', parsed[0] === 'y', 'yes');
-  var partial = addRadio(status, 'partial', parsed[0] === 'p');
-  var no = addRadio(status, 'no', parsed[0] === 'n');
-  var na = addRadio(status, 'N/A', parsed[0] === '', 'na');
+  var yes = add_radio(status, 'yes', parsed[0] === 'y', 'yes');
+  var partial = add_radio(status, 'partial', parsed[0] === 'p');
+  var no = add_radio(status, 'no', parsed[0] === 'n');
+  var na = add_radio(status, 'N/A', parsed[0] === '', 'na');
   container.appendChild(status);
 
   var teaser = document.createElement('div');
@@ -170,7 +170,7 @@ function activate_cell_editor(cell) {
   last_edited_cell = cell;
 }
 
-function addRadio(div, text, checked, cl) {
+function add_radio(div, text, checked, cl) {
   if (!cl) {
     cl = text;
   }
