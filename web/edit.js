@@ -27,7 +27,16 @@ function save_review_clicked() {
   save_last_edited_cell();
 
   var text = "```\nscript/extend-item.sh && \npatch -p 0 <<EOF &&\n";
+  text += get_diff();
+  text += "EOF\nscript/reduce-item.sh\n```";
 
+  var pre = document.getElementsByClassName('js-changes')[0];
+  pre.innerText = text;
+  alter_state('is-state-edit', 'is-state-save-review');
+}
+
+function get_diff() {
+  var text = '';
   var items = document.querySelectorAll('span.C ~ input.C');
 
   var rows = document.getElementsByClassName('js-chart')[0].rows;
@@ -65,12 +74,7 @@ function save_review_clicked() {
       text += '+' + property + ';' + new_value + "\n";
     }
   }
-
-  text += "EOF\nscript/reduce-item.sh\n```";
-
-  var pre = document.getElementsByClassName('js-changes')[0];
-  pre.innerText = text;
-  alter_state('is-state-edit', 'is-state-save-review');
+  return text;
 }
 
 function save_undo_clicked() {
