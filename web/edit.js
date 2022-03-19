@@ -239,11 +239,11 @@ function save_last_edited_cell() {
 }
 
 function unlinkify(html) {
-  return html.replace(/<a href=['"]([^['"]*)['"] target=['"]?_blank['"]? class=['"]?a['"]?>[^<]*<\/a>/g, '$1');
+  return html.replace(/<a href=['"]([^'"]*)['"] target=['"]?_blank['"]? rel=['"]?noopener['"]? class=['"]?a['"]?>[^<]*<\/a>/g, '$1');
 }
 
 function linkify(text) {
-  return text.replace(/\b((http|ftp)s?:\/\/[^ ]*)/g, "<a href='$1' target=_blank class=a>w</a>");
+  return text.replace(/\b((http|ftp)s?:\/\/[^ ]*)/g, "<a href='$1' target=_blank rel=noopener class=a>w</a>");
 }
 
 function status_to_word(state) {

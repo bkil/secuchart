@@ -217,7 +217,7 @@ markdown2html() {
     s~^# *([^ ].*)~<h1>\1</h1>~
     t p
 
-    s~\<(((https?|ftps?|file)://|(mailto|tel):)[^ ]*)~<a href='\1' target=_blank class=bl>\1</a>~g
+    s~\<(((https?|ftps?|file)://|(mailto|tel):)[^ ]*)~<a href='\1' target=_blank rel=noopener class=bl>\1</a>~g
     t linked
     s~(^| )(#[a-zA-Z0-9_-]+)~\1<a href='\2' class=il>\2</a>~g
     t linked
@@ -232,7 +232,7 @@ markdown2html() {
     p
     n
 
-    s~\<(((https?|ftps?|file)://|(mailto|tel):)[^ ]*)~<a href='\1' target=_blank class=bl>\1</a>~g
+    s~\<(((https?|ftps?|file)://|(mailto|tel):)[^ ]*)~<a href='\1' target=_blank rel=noopener class=bl>\1</a>~g
     t linked_list
     s~(^| )(#[a-zA-Z0-9_-]+)~\1<a href='\2' class=il>\2</a>~g
     t linked_list
@@ -349,7 +349,7 @@ get_prop_status() {
 linkify() {
   sed -r "
     s~(^| )(#[^ ]*)~\1<a href=\2 class=a>\2</a>~g
-    s~\<((http|ftp)s?://[^ ]*)~<a href='\1' target=_blank class=a>w</a>~g
+    s~\<((http|ftp)s?://[^ ]*)~<a href='\1' target=_blank rel=noopener class=a>w</a>~g
     "
 }
 
