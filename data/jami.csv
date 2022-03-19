@@ -27,6 +27,7 @@ End-to-end encryption;yes;https://jami.net/why-is-jami-truly-distributed/ https:
 E2EE keys shielded from operator;yes;https://jami.net/why-is-jami-truly-distributed/ https://linuxkamarada.com/en/2021/05/25/the-jami-messenger/;
 Contact list confidential;partial;not published, but leaks;leaks through OpenDHT proxy, Jami name server and ICE https://jami.net/why-is-jami-truly-distributed/ https://linuxkamarada.com/en/2021/05/25/the-jami-messenger/
 Perfect forward secrecy;yes;https://git.jami.net/savoirfairelinux/jami-project/-/wikis/technical/Technical-overview#user-content-security-privacy;
+Security team;no;bugs not categorized based on security impact https://git.jami.net/savoirfairelinux/jami-client-qt/-/issues?scope=all&state=all&label_name[]=security;
 Reproducible builds;no;https://git.jami.net/savoirfairelinux/jami-packaging/-/issues/45;
 Audits;no;;
 Usage without phone number;yes;;

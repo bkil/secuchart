@@ -30,3 +30,4 @@ Active development;yes;https://dev.gajim.org/gajim/gajim/-/commits/master/;
 Multi-party development;partial;;
 First release;yes;2004-05-21 https://dev.gajim.org/gajim/gajim/blob/master/ChangeLog;
 Public issue tracker;yes;https://dev.gajim.org/gajim/gajim/-/issues;
+No past client vulnerabilities;no;2012 https://lwn.net/Articles/492655/ 2021 https://cvedetails.com/cve/CVE-2021-41055/;

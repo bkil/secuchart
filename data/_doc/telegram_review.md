@@ -1,5 +1,9 @@
 # Telegram
 
+## Bans
+
+* https://9to5mac.com/2022/03/18/telegram-banned-in-brazil-following-supreme-court-order-app-may-be-removed-from-app-store/
+
 ## Opinions
 
 * https://mtpsym.github.io/
