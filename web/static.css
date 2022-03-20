@@ -82,6 +82,7 @@ tr:nth-child(odd) {
 }
 
 #TEMPLATE_PERSONA:checked ~ table > tbody > .benefit-TEMPLATE_PERSONA > .p,
+.benefit-all > .p,
 .y {
   background-color: lime;
 }
@@ -91,11 +92,12 @@ tr:nth-child(odd) {
 }
 
 #TEMPLATE_PERSONA:checked ~ table > tbody > .benefit-TEMPLATE_PERSONA > .n,
+.benefit-all > .n,
 .p {
   background-color: yellow;
 }
 
-#TEMPLATE_PERSONA:checked ~ table > tbody > :not(.require-TEMPLATE_PERSONA, .benefit-TEMPLATE_PERSONA) > td,
+#TEMPLATE_PERSONA:checked ~ table > tbody > :not(.require-TEMPLATE_PERSONA, .benefit-TEMPLATE_PERSONA, .require-all, .benefit-all) > td,
 #DONTCARE
 {
   background-color: white;
@@ -211,6 +213,7 @@ label {
 }
 
 #dark:checked ~ #TEMPLATE_PERSONA:checked ~ table > tbody > .benefit-TEMPLATE_PERSONA > .p,
+#dark:checked ~ table > tbody > .benefit-all > .p,
 #dark:checked ~ table .y {
   background-color: #060;
   color: #fff;
@@ -222,12 +225,13 @@ label {
 }
 
 #dark:checked ~ #TEMPLATE_PERSONA:checked ~ table > tbody > .benefit-TEMPLATE_PERSONA > .n,
+#dark:checked ~ table > tbody > .benefit-all > .n,
 #dark:checked ~ table .p {
   background-color: #880;
   color: #fff;
 }
 
-#dark:checked ~ #TEMPLATE_PERSONA:checked ~ table > tbody > :not(.require-TEMPLATE_PERSONA, .benefit-TEMPLATE_PERSONA) > td,
+#dark:checked ~ #TEMPLATE_PERSONA:checked ~ table > tbody > :not(.require-TEMPLATE_PERSONA, .benefit-TEMPLATE_PERSONA, .require-all, .benefit-all) > td,
 #DONTCARE
 {
   background-color: black;
@@ -252,6 +256,7 @@ label {
 }
 
 #contrast:checked ~ #TEMPLATE_PERSONA:checked ~ table > tbody > .benefit-TEMPLATE_PERSONA > .p:before,
+#contrast:checked ~ table > tbody > .benefit-all > .p:before,
 #contrast:checked ~ table .y:before {
   content: "+ ";
 }
@@ -261,11 +266,12 @@ label {
 }
 
 #contrast:checked ~ #TEMPLATE_PERSONA:checked ~ table > tbody > .benefit-TEMPLATE_PERSONA > .n:before,
+#contrast:checked ~ table > tbody > .benefit-all > .n:before,
 #contrast:checked ~ table .p:before {
   content: "~ ";
 }
 
-#contrast:checked ~ #TEMPLATE_PERSONA:checked ~ table > tbody > :not(.require-TEMPLATE_PERSONA, .benefit-TEMPLATE_PERSONA) > td:before,
+#contrast:checked ~ #TEMPLATE_PERSONA:checked ~ table > tbody > :not(.require-TEMPLATE_PERSONA, .benefit-TEMPLATE_PERSONA, .require-all, .benefit-all) > td:before,
 #DONTCARE
 {
   content: "";
@@ -477,6 +483,7 @@ label {
   }
 
   #TEMPLATE_PERSONA:checked ~ table > tbody > .benefit-TEMPLATE_PERSONA > .p,
+  .benefit-all > .p,
   .y {
     background-color: #060;
     color: #fff;
@@ -488,12 +495,13 @@ label {
   }
 
   #TEMPLATE_PERSONA:checked ~ table > tbody > .benefit-TEMPLATE_PERSONA > .n,
+  .benefit-all > .n,
   .p {
     background-color: #880;
     color: #fff;
   }
 
-  #TEMPLATE_PERSONA:checked ~ table > tbody > :not(.require-TEMPLATE_PERSONA, .benefit-TEMPLATE_PERSONA) > td,
+  #TEMPLATE_PERSONA:checked ~ table > tbody > :not(.require-TEMPLATE_PERSONA, .benefit-TEMPLATE_PERSONA, .require-all, .benefit-all) > td,
   #DONTCARE
   {
     background-color: black;
@@ -518,6 +526,7 @@ label {
   }
 
   #TEMPLATE_PERSONA:checked ~ table > tbody > .benefit-TEMPLATE_PERSONA > .p:before,
+  .benefit-all > .p:before,
   .y:before {
     content: "+ ";
   }
@@ -527,11 +536,12 @@ label {
   }
 
   #TEMPLATE_PERSONA:checked ~ table > tbody > .benefit-TEMPLATE_PERSONA > .n:before,
+  .benefit-all > .n:before,
   .p:before {
     content: "~ ";
   }
 
-  #TEMPLATE_PERSONA:checked ~ table > tbody > :not(.require-TEMPLATE_PERSONA, .benefit-TEMPLATE_PERSONA) > td:before,
+  #TEMPLATE_PERSONA:checked ~ table > tbody > :not(.require-TEMPLATE_PERSONA, .benefit-TEMPLATE_PERSONA, .require-all, .benefit-all) > td:before,
   #DONTCARE
   {
     content: "";
