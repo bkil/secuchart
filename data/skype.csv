@@ -25,3 +25,4 @@ Deniability;no;;
 Identity not controlled by vendor;no;;
 Good ToSDR grade;no;E https://tosdr.org/en/service/244;
 First release;yes;2003-08-29 https://en.wikipedia.org/wiki/Skype;
+No past client vulnerabilities;no;surreptitious sharing https://threatpost.com/surreptitious-sharing-android-api-flaw-leaks-data-private-keys/117174/;

@@ -58,3 +58,4 @@ Vendor jurisdiction;;Switzerland;
 Infrastructure jurisdiction;;Switzerland;
 Infrastructure provider;;a colocation data center https://work.threema.ch/docs/threema_privacy-security_en.pdf;
 First release;yes;2012-12 https://en.wikipedia.org/wiki/Threema;
+No past client vulnerabilities;no;surreptitious sharing https://threatpost.com/surreptitious-sharing-android-api-flaw-leaks-data-private-keys/117174/;

@@ -15,3 +15,9 @@
 * https://restoreprivacy.com/secure-encrypted-messaging-apps/telegram/
 
 > Telegram Messenger Review - January 19, 2021 By Heinrich Long
+
+## Vulnerability analysis
+
+* https://words.filippo.io/dispatches/telegram-ecdh/
+
+> THE MOST BACKDOOR-LOOKING BUG I’VE EVER SEEN: discovered and fixed in Telegram's self-rolled cryptographic protocol about seven years ago
