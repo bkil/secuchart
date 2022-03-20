@@ -23,15 +23,15 @@ Voice messages;Ideally push to talk, may be useful where voice call is not suppo
 Screen sharing;;foss layperson;;
 Audio filtering;Noise cancellation, gain control, voice activity detection;foss layperson;;
 File transfer;Retry, pause, resume;layperson;foss tinfoil;
-Message formatting;Font size, bold, italic, underline, list, blockquote, code, pre, colors, clickable link, table, subscript, superscript, line break;;layperson foss
+Message formatting;Font size, bold, italic, underline, list, blockquote, code, pre, colors, clickable link, table, subscript, superscript, line break;;layperson foss;
 Emoticons in message;Deprecated, please refine with below properties! Compose, show;layperson;;
 Unicode support;yes=can both send & receive text containing any valid Unicode code point, usually via utf8mb4, partial=does not support 4-byte+ UTF-8, certain characters or combiners;layperson;foss tinfoil;
 Emoji composer;yes=rich dialog with search, partial=replaces a few emotes or aliases with Unicode before sending;layperson;;
 Emoji reception;yes=color Unicode display of all, mention in details if animated, partial=monochromatic, only a subset or replaces received emoticons with pictures;layperson;foss;
 Sticker packs;Whether they are animated;;layperson;
 Link preview;Unfurling: who downloads the page, the sender, recipient or the server of one or the other;;layperson;tinfoil
-Inline images;Supported image formats: png, jpeg, gif, webp, avif;;;
-Inline videos;Supported video formats: mp4, webm, av1;;;
+Inline images;Supported image formats: png, jpeg, gif, webp, avif;;layperson;
+Inline videos;Supported video formats: mp4, webm, av1;;layperson;
 Polls;Multiple choice voting;;layperson;
 Reactions;yes=Various emoji, partial=only upvoting;;layperson;
 Read public content without registering;Provides free tasting to look around before committing to install anything or having to remember another pair of credentials;;layperson;foss
@@ -107,8 +107,8 @@ First release;yes=mature, large masses have tested it for years, no=only release
 Public issue tracker;Whether outstanding bugs can be viewed by the public. partial=approximated via forum;;foss;tinfoil
 Support team;yes=Dedicated, friendly, sufficient compared to user base;layperson;;
 No past DDoS;no=denial of service happened against vendor operated network;layperson;;
-No past client vulnerabilities;no=security exploits in client or server side;all;;
-No past server vulnerabilities;no=exploits in self-hostable server or data leaks by vendor;all;;
+No past client vulnerabilities;no=security exploits in client or server side;foss tinfoil layperson;;
+No past server vulnerabilities;no=exploits in self-hostable server or data leaks by vendor;foss tinfoil layperson;;
 No past financing hiccups;no=development can intermittently stop due to lack of funds;layperson;;
 Ethical financing in the past;no=tax evasion;foss;;
 Ethical business in the past;no=anti-trust investigations, bribes, hurting customers in other way;foss;;
