@@ -164,6 +164,7 @@ https://tilde.club/~acz/shadow_wiki/browsers.xhtml
 * Update after software is updated
 * Reassess in case we want to split or reword the property
 * Source for introducing new properties
+* Should ideally use #anchor linking to specific claims
 
 ## References: Sources
 
@@ -171,7 +172,7 @@ https://tilde.club/~acz/shadow_wiki/browsers.xhtml
 * Previous question on official issue tracker or mailing list
 * Screenshots
 * Source code
-* Lacking all of the above: external reviews and user comments
+* Lacking all of the above: Wikipedia, external reviews and user comments
 
 ## Features: Property and value details
 
