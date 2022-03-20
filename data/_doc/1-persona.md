@@ -33,6 +33,15 @@
 * can usually understand high level metrics such as effect on battery time, overheating, and abnormal amount of data transfer costs
 * quality of life features are paramount: VoIP, video chat, group meetings
 
+## crowd
+
+* as in "crowdsourcing" or "citizen science"
+* https://en.wikipedia.org/wiki/Citizen_science
+* strive for sustainability (via FOSS) even after every major player went bankrupt
+* separate resources (donating hardware and bandwidth resources) from authority (abuse control, moderation, peer discovery)
+* scale through friend to friend networking and/or through best effort reputation, web of trust and elected supernode promotion
+* https://en.wikipedia.org/wiki/Friend_to_friend
+
 ## Private
 
 * need to communicate sensitive information in the way you can whisper to someone or meet them in person
