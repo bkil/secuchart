@@ -2,11 +2,10 @@
 . "`dirname "$0"`/include.inc.sh"
 
 main() {
-  PROPS="$O/../data/_properties.csv"
-
+  PROPS="$DATA/_properties.csv"
   NAME="([^;]+)"
   DESC="([^;]*)"
-  TAG="(all|foss|tinfoil|layperson)"
+  TAG="(all|`get_all_persona_regexp`)"
   TAGS="($TAG( $TAG)*)"
   TAGCOL="(;$TAGS?)"
   NUMTAGCOLS=3
@@ -21,6 +20,12 @@ main() {
     return 1
   fi
   echo "ok" >&2
+}
+
+get_all_persona_regexp() {
+  get_all_persona |
+  sed ":l; N; s~\n~|~; t l" |
+  sed "s~^~(~; s~$~)~"
 }
 
 main "$@"

@@ -38,7 +38,7 @@ gen_index() {
     elif [ "$REPLY" = "((articles))" ]; then
       gen_articles
     elif [ "$REPLY" = "((static_style))" ]; then
-      cat "$WEB/static.css"
+      gen_templated_static_style
     else
       printf "%s\n" "$REPLY"
     fi
@@ -108,6 +108,24 @@ EOF
 EOF
 }
 
+gen_templated_static_style() {
+  TAB="`printf "\t"`"
+  cat "$WEB/static.css" |
+  while IFS="$TAB" read REPLY; do
+    case $REPLY in
+      *TEMPLATE_PERSONA*)
+        get_all_persona |
+        while read P; do
+          printf "%s\n" "$REPLY" |
+          sed "s~TEMPLATE_PERSONA~$P~g"
+        done
+        ;;
+      *)
+        printf "%s\n" "$REPLY"
+    esac
+  done
+}
+
 get_doc_names() {
   ls -1 "$DATA/_doc"/*.md |
   sed -r "s~^.*/([0-9-]*)([^/0-9-][^/]*)\.md~\2 \1\2~"
@@ -142,9 +160,14 @@ gen_filters() {
 <br>
 Use case <a class='js-state-view il' href=#persona>[?]</a>:
 <label for=editor>editor&nbsp;</label><input type=radio id=editor name=u checked>
-<label for=foss>FOSS&nbsp;</label><input type=radio id=foss name=u>
-<label for=tinfoil>tinfoil&nbsp;</label><input type=radio id=tinfoil name=u>
-<label for=layperson>layperson&nbsp;</label><input type=radio id=layperson name=u>
+EOF
+
+  get_all_persona |
+  while read P; do
+    printf "<label for=%s>%s&nbsp;</label><input type=radio id=%s name=u>\n" "$P" "$P" "$P"
+  done
+
+  cat <<EOF
 <br class=F>
 <span class=F>Items:</span>
 <label for=any class=F>any&nbsp;</label><input type=radio id=any name=S checked class=F>

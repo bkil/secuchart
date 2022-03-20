@@ -160,3 +160,7 @@ is_colorless_property() {
   printf '%s' "$FINDKEY" |
   grep_colorless_property > /dev/null
 }
+
+get_all_persona() {
+  cat "$DATA/_persona.csv"
+}
