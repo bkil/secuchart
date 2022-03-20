@@ -100,15 +100,15 @@ Some of these may be investigated in the future by volunteers. Others may be add
 * XMPP Tigase https://github.com/tigase/tigase-server/blob/master/src/main/asciidoc/admin/text/admin/FeaturesXMPP.asciidoc
 * XMPP Vysper https://mina.apache.org/vysper-project/standards_supported.html
 * XMPP xmpp-rs https://github.com/Freyskeyd/xmpp-rs#xeps
-* http://goldbug.sourceforge.net/ https://textbrowser.github.io/spot-on/ https://textbrowser.github.io/smoke/ https://www.mail-archive.com/cypherpunks@lists.cpunks.org/msg24308.html https://www.mail-archive.com/cypherpunks@lists.cpunks.org/msg24329.html https://www.mail-archive.com/cypherpunks@lists.cpunks.org/msg05942.html
+* GoldBug, built on research of Echo: Spot-On, Smoke http://goldbug.sourceforge.net/ https://textbrowser.github.io/spot-on/ https://textbrowser.github.io/smoke/ https://www.mail-archive.com/cypherpunks@lists.cpunks.org/msg24308.html https://www.mail-archive.com/cypherpunks@lists.cpunks.org/msg24329.html https://www.mail-archive.com/cypherpunks@lists.cpunks.org/msg05942.html
 * https://simplex.chat/
 * https://gitlab.com/Ilka.Schulz/mailchat a chat application that communicates over email - uses Qt Widget toolkit and QtWebKit for HTML mail and rich text editing
 * email https://www.pep.software/android/
 * email https://k9mail.app/
-* https://f-droid.org/en/packages/eu.faircode.email/
-* https://f-droid.org/en/packages/de.monocles.mail/
-* https://github.com/SomajitDey/ipfs-chat
-* https://github.com/kryptokrona/hugin-messenger blockchain
+* FairEmail https://f-droid.org/en/packages/eu.faircode.email/
+* Monocles, fork of K-9 https://f-droid.org/en/packages/de.monocles.mail/
+* IPFS-chat https://github.com/SomajitDey/ipfs-chat
+* Hugin, blockchain https://github.com/kryptokrona/hugin-messenger
 * TeleGuard
 * unmaintained: https://en.wikipedia.org/wiki/Miranda_IM
 * unmaintained Ricochet (original)
