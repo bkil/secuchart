@@ -12,15 +12,13 @@
 * Which messenger is the best for your security and privacy?
 * Depends on your threat model and use case
 * Decouple objective truth from value judgment ("goodness")
-
-## Persona identified so far
-
-## Possible future persona
+* Exhaustive analysis - up to 200 x 200 cells
 
 ## Licensing
 
 * Import referenced data from Wikipedia
 * Goal: generate table views for Wikipedia
+* CC-BY-SA / MIT
 
 ## Competition: types
 
@@ -82,7 +80,7 @@ https://messenger-matrix.de/messenger-matrix.html
 
 https://securechatguide.org/featuresmatrix.html
 
-## Competition: docs
+## Competition: dessalines docs
 
 https://docs.google.com/spreadsheets/d/1-UlA4-tslROBDS9IqHalWVztqZo7uxlCeKPQ-8uoFOU/htmlview
 
@@ -123,6 +121,10 @@ https://github.com/JayXT/MessengerComparison
 
 https://wiki.tox.chat/include/clients_features
 
+## Competition: Matrix clients
+
+https://matrix.org/clients-matrix/
+
 ## Competition: PrivacyGuides
 
 https://privacyguides.org/real-time-communication/
@@ -155,13 +157,21 @@ https://digdeeper.neocities.org/ghost/browsers.html
 
 https://tilde.club/~acz/shadow_wiki/browsers.xhtml
 
-## References
+## References: Motivation
 
 * Each cell value should be backed up by one or more URL
 * To verify truthfulness
 * Update after software is updated
 * Reassess in case we want to split or reword the property
 * Source for introducing new properties
+
+## References: Sources
+
+* Statement on official website or in documentation
+* Previous question on official issue tracker or mailing list
+* Screenshots
+* Source code
+* Lacking all of the above: external reviews and user comments
 
 ## Features: Property and value details
 
@@ -232,7 +242,6 @@ https://tilde.club/~acz/shadow_wiki/browsers.xhtml
 ## Features: Transposed table
 
 * Exchanges functionality of rows and columns
-* TODO: Its stickiness broke just recently
 * TODO: Will be integrated into property comparison mode
 
 ## Features: Property-judgment mapping
@@ -254,6 +263,8 @@ https://tilde.club/~acz/shadow_wiki/browsers.xhtml
 
 ## Features: Layperson persona
 
+## Features: Crowd persona
+
 ## Features: Other suggested persona
 
 * Private, Community, Public
@@ -262,11 +273,62 @@ https://tilde.club/~acz/shadow_wiki/browsers.xhtml
 * teleworkers within colleagues and the company
 * friends collaborating in the context of a shared interest group
 
+## Features: Documentation
+
+* about page with repository links
+* explanation for persona (use case)
+* item todo
+* property todo
+* UX todo
+* similar external comparison charts
+
+## Documentation: Rendering of gemini, markdown
+
+Also looks good enough on GitLab as markdown:
+
+* Heading
+* Paragraphs
+* Blockquote
+* Links: limited autolinking, coloring `:visited`
+* Preformatted (unused)
+
+## Documentation: Messenger analysis pages
+
+* *_review.md
+
 ## Features: Edit via JavaScript
 
 * Viewing is full featured with CSS
 * Changes shown as a raw textual patch diff
 * Can be copy & pasted by a developer for publishing
+
+## JavaScript editor: motivation
+
+* reduce difficulty of contribution
+* encourage changes when spotting errors
+* real time visual preview
+* improve syntax adherence
+* motivate shorter teaser
+
+## JavaScript editor: edit widget
+
+* resolve clicking
+* reconstruct source from formatted HTML cell
+* create editor widgets
+* convert modified editor widget values to source form
+* store old and new source data in DOM between cell changes
+
+## JavaScript editor: review mode
+
+* reconstruct CSV lines from from modified cells
+* format as diff
+* contributor can copy & paste it the chat
+* an editor can review, copy & paste and commit it
+
+## JavaScript editor: view mode
+
+* highlight changed values
+* warn before leaving the page with unsaved changes
 
 ## Implementation: Property syntax
 
@@ -298,30 +360,29 @@ CSV columns:
 ## Implementation: Fixed HTML template
 
 * Empty skeleton
-* With manual CSS
 * Some of the checkboxes and labels
-* Detailed persona explanation
-* An about page with developer notes and links to similar charts
 
 ## Implementation: Fixed styles
 
-* For switching between the chart and the about page
 * State based coloring, dark and high contrast mode
 * Stickiness
 * Alternating rows
 * Transposition, explanation expansion
+* Editor window states
 
 ## Implementation: Generated HTML input fields
 
-* Item filters controls and rules
+* Item filter controls and rules
+* Persona filters
 * Permalinks
 
 ## Implementation: Generated table
 
 ## Implementation: Generated styles
 
+* For switching between the chart and the documentation pages
 * Item category filters
-* TODO: move persona filter generation here
+* persona filter generation
 
 ## Implementation: Abbreviated mode
 
