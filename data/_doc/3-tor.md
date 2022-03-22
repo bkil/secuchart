@@ -14,6 +14,8 @@ If you are using proxies or bridges, you are using even more intermediate server
 
 If your destination lies outside the Tor network, you will also have to discover and utilize exit relays.
 
+The general latency, low offered bandwidth and the constant changing of the network topology also makes supporting voice/video calls unfeasible.
+
 ## References
 
 * https://en.wikipedia.org/wiki/Tor_network#Consensus_blocking
