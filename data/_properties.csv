@@ -1,6 +1,7 @@
 ;Availability;;;
 Analysis;Textual review that can not be compared objectively through properties;;;all
 Summary;Highlight in a few words why it is interesting;;;all
+Screeshots;List URLs in the details (TODO: gallery widget);;;layperson
 Android Google Play;;;layperson;crowd
 Android F-droid/apk;yes=f-droid.org, partial=apk or separate repository;foss tinfoil crowd;;
 Other mobile;Alternative app stores like KaiOS;;tinfoil;layperson crowd
