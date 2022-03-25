@@ -28,7 +28,7 @@ End-to-end encryption;yes;XEP-0384 OMEMO plugin https://dev.gajim.org/gajim/gaji
 Usage without phone number;yes;;
 Active development;yes;https://dev.gajim.org/gajim/gajim/-/commits/master/;
 Multi-party development;partial;;
-Serverless LAN mode;yes;;XEP-0174 https://gajim.org/support/extensions/ https://github.com/iNPUTmice/Conversations/issues/1415
+Serverless LAN mode;yes;;XEP-0174 https://gajim.org/support/extensions/ https://dev.gajim.org/gajim/gajim/-/blob/407861a4db63af341fc686d3458de18e21f885e7/ChangeLog#L788 https://dev.gajim.org/gajim/gajim/-/issues?scope=all&state=closed&label_name[]=Serverless%20Messaging%2FZeroconf
 First release;yes;2004-05-21 https://dev.gajim.org/gajim/gajim/blob/master/ChangeLog;
 Public issue tracker;yes;https://dev.gajim.org/gajim/gajim/-/issues;
 No past client vulnerabilities;no;2012 https://lwn.net/Articles/492655/ 2021 https://cvedetails.com/cve/CVE-2021-41055/;
