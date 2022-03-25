@@ -41,6 +41,8 @@
 * separate resources (donating hardware and bandwidth resources) from authority (abuse control, moderation, peer discovery)
 * scale through friend to friend networking and/or through best effort reputation, web of trust and elected supernode promotion
 * https://en.wikipedia.org/wiki/Friend_to_friend
+* It's not a problem if an implementation is of low quality or lacks features, because that gives more opportunity for people to work on
+* The protocol and architecture should support implementing most trendy features or lightweight alternatives (e.g., slideshows and push-to-talk)
 
 ## Private
 
