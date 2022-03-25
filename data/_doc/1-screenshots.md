@@ -42,3 +42,12 @@ Mirrors:
 * https://github.com/bkil/secuchart-assets
 
 (on demand: Codeberg)
+
+## Placeholder assets
+
+If you would like to show mock user generated content on the screen within discussions, it is best to choose public domain material:
+
+* https://en.wikipedia.org/wiki/Lorem_ipsum
+* https://generated.photos/faces
+* https://commons.wikipedia.org/
+* https://defectivebydesign.org/guide/video
