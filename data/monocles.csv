@@ -33,7 +33,7 @@ End-to-end encryption;yes;XEP-0384 OMEMO https://conversations.im/omemo/;also Op
 Usage without phone number;yes;;
 Identity not controlled by vendor;yes;;
 Serverless WAN mode;no;;
-Serverless LAN mode;no;;
+Serverless LAN mode;no;;XEP-0174 unimplemented https://codeberg.org/Arne/monocles_chat/src/branch/master/docs/XEPs.md https://github.com/iNPUTmice/Conversations/issues/1415
 Network store and forward;yes;if server and contact client support XEP-0313 MAM;
 Wireless mode;no;;
 IP shielded from peers;yes;not for STUN calls;

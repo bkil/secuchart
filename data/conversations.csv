@@ -29,7 +29,7 @@ Active development;yes;https://github.com/iNPUTmice/Conversations/commits/master
 Multi-party development;no;;
 Identity not controlled by vendor;yes;;
 Serverless WAN mode;no;;
-Serverless LAN mode;no;;
+Serverless LAN mode;no;;XEP-0174 unimplemented https://github.com/iNPUTmice/Conversations/issues/1415
 Network store and forward;yes;if server and contact client support XEP-0313 MAM;
 Wireless mode;no;;
 IP shielded from peers;yes;not for STUN calls;
