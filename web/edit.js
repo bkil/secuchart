@@ -28,9 +28,10 @@ function start_editing_clicked() {
 function save_review_clicked() {
   save_last_edited_cell();
 
-  var text = "```\nscript/extend-item.sh && \npatch -p 0 <<EOF &&\n";
-  text += get_diff();
-  text += "EOF\nscript/reduce-item.sh\n```";
+  const [diff, files] = get_diff();
+  var text = "```\nscript/extend-item.sh" + files + " && \npatch -p 0 <<EOF &&\n";
+  text += diff;
+  text += "EOF\nscript/reduce-item.sh" + files + "\n```";
 
   var pre = document.getElementsByClassName('js-changes')[0];
   pre.innerText = text;
@@ -38,6 +39,7 @@ function save_review_clicked() {
 }
 
 function get_diff() {
+  var files = [];
   var text = '';
   var items = document.querySelectorAll('span.C ~ input.C');
 
@@ -60,6 +62,7 @@ function get_diff() {
         var item = items[i].id.substr(1);
         text += "--- data/" + item + ".csv\n";
         text += "+++ data/" + item + ".csv\n";
+        files += ' ' + item;
       }
 
       var property = cell.parentNode.firstElementChild;
@@ -76,12 +79,12 @@ function get_diff() {
       text += '+' + property + ';' + new_value + "\n";
     }
   }
-  return text;
+  return [text, files];
 }
 
 function on_before_unload(e) {
   save_last_edited_cell();
-  var diff = get_diff();
+  const [diff, _] = get_diff();
   if (diff === '') {
     delete e['returnValue'];
     return undefined;
