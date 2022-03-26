@@ -21,6 +21,7 @@ Some of these may be investigated in the future by volunteers. Others may be add
 * Slack
 * Secure Scuttlebutt: PatchBay desktop https://github.com/ssbc/patchbay
 * Secure Scuttlebutt: Manyverse mobile https://manyver.se/
+* Secure Scuttlebutt: Oasis  https://github.com/fraction/oasis
 * LoRa hardware https://github.com/TrevorAttema/OTGMessenger
 * LoRa hardware https://meshtastic.org/
 * LoRa hardware https://www.instructables.com/LoRa-Mesh-Radio/
