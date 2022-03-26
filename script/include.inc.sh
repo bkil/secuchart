@@ -1,3 +1,4 @@
+
 #!/bin/sh
 O="`dirname "$0"`"
 DATA="$O/../data"
@@ -14,7 +15,7 @@ process_slugs() {
     done
   else
     for SLUG in "$@"; do
-      OUT="$DATA/$1.csv"
+      OUT="$DATA/$SLUG.csv"
       echo $OUT >&2
       $FUN "$OUT" || exit 1
     done
