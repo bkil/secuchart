@@ -19,7 +19,8 @@ Some of these may be investigated in the future by volunteers. Others may be add
 * iMessage
 * Google Hangouts/Meet
 * Slack
-* Secure Scuttlebutt
+* Secure Scuttlebutt: PatchBay desktop https://github.com/ssbc/patchbay
+* Secure Scuttlebutt: Manyverse mobile https://manyver.se/
 * LoRa hardware https://github.com/TrevorAttema/OTGMessenger
 * LoRa hardware https://meshtastic.org/
 * LoRa hardware https://www.instructables.com/LoRa-Mesh-Radio/
@@ -118,3 +119,4 @@ Some of these may be investigated in the future by volunteers. Others may be add
 * https://changelog.complete.org/archives/10205-roundup-of-secure-messengers-with-off-the-grid-capabilities-distributed-mesh-messengers
 * Quicksy: Conversations fork with phone numbers as names https://en.wikipedia.org/wiki/Conversations_(software)#Quicksy
 * revolt.chat https://github.com/revoltchat https://developers.revolt.chat/faq/federation
+* Secure Scuttlebutt: Patchwork desktop (obsolete) https://github.com/ssbc/patchwork
