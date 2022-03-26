@@ -123,7 +123,8 @@ gen_templated_static_style() {
       *)
         printf "%s\n" "$REPLY"
     esac
-  done
+  done |
+  sed ":l; s~\\\\$~~ ; T e; N; s~\n~~; t l; :e"
 }
 
 get_doc_names() {

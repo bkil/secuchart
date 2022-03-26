@@ -97,7 +97,7 @@ tr:nth-child(odd) {
   background-color: yellow;
 }
 
-#TEMPLATE_PERSONA:checked ~ table > tbody > :not(.require-TEMPLATE_PERSONA, .benefit-TEMPLATE_PERSONA, .require-all, .benefit-all) > td,
+#TEMPLATE_PERSONA:checked ~ table > tbody > :not(.require-TEMPLATE_PERSONA):not(.benefit-TEMPLATE_PERSONA):not(.require-all):not(.benefit-all) > td,
 #DONTCARE
 {
   background-color: white;
@@ -231,7 +231,7 @@ label {
   color: #fff;
 }
 
-#dark:checked ~ #TEMPLATE_PERSONA:checked ~ table > tbody > :not(.require-TEMPLATE_PERSONA, .benefit-TEMPLATE_PERSONA, .require-all, .benefit-all) > td,
+#dark:checked ~ #TEMPLATE_PERSONA:checked ~ table > tbody > :not(.require-TEMPLATE_PERSONA):not(.benefit-TEMPLATE_PERSONA):not(.require-all):not(.benefit-all) > td,
 #DONTCARE
 {
   background-color: black;
@@ -271,7 +271,7 @@ label {
   content: "~ ";
 }
 
-#contrast:checked ~ #TEMPLATE_PERSONA:checked ~ table > tbody > :not(.require-TEMPLATE_PERSONA, .benefit-TEMPLATE_PERSONA, .require-all, .benefit-all) > td:before,
+#contrast:checked ~ #TEMPLATE_PERSONA:checked ~ table > tbody > :not(.require-TEMPLATE_PERSONA):not(.benefit-TEMPLATE_PERSONA):not(.require-all):not(.benefit-all) > td:before,
 #DONTCARE
 {
   content: "";
@@ -374,11 +374,11 @@ label {
   padding-right: 2em;
 }
 
-#abbr:checked ~ table td:not(:empty, .y, .n, .p):hover {
+#abbr:checked ~ table td:not(:empty):not(.y):not(.n):not(.p):hover {
   background-color: white;
 }
 
-#dark:checked ~ #abbr:checked ~ table td:not(:empty, .y, .n, .p):hover {
+#dark:checked ~ #abbr:checked ~ table td:not(:empty):not(.y):not(.n):not(.p):hover {
   background-color: black;
 }
 
@@ -501,13 +501,13 @@ label {
     color: #fff;
   }
 
-  #TEMPLATE_PERSONA:checked ~ table > tbody > :not(.require-TEMPLATE_PERSONA, .benefit-TEMPLATE_PERSONA, .require-all, .benefit-all) > td,
+  #TEMPLATE_PERSONA:checked ~ table > tbody > :not(.require-TEMPLATE_PERSONA):not(.benefit-TEMPLATE_PERSONA):not(.require-all):not(.benefit-all) > td,
   #DONTCARE
   {
     background-color: black;
   }
 
-  #abbr:checked ~ table td:not(:empty, .y, .n, .p):hover {
+  #abbr:checked ~ table td:not(:empty):not(.y):not(.n):not(.p):hover {
     background-color: black;
   }
 }
@@ -541,7 +541,7 @@ label {
     content: "~ ";
   }
 
-  #TEMPLATE_PERSONA:checked ~ table > tbody > :not(.require-TEMPLATE_PERSONA, .benefit-TEMPLATE_PERSONA, .require-all, .benefit-all) > td:before,
+  #TEMPLATE_PERSONA:checked ~ table > tbody > :not(.require-TEMPLATE_PERSONA):not(.benefit-TEMPLATE_PERSONA):not(.require-all):not(.benefit-all) > td:before,
   #DONTCARE
   {
     content: "";
@@ -563,12 +563,10 @@ label {
   display: initial;
 }
 
-#allprop:not(:checked) ~ #editor:checked ~ table tr:not(
-  .require-TEMPLATE_PERSONA, .benefit-TEMPLATE_PERSONA,
-  .require-all, .benefit-all,
-  :first-child,
-  .section),
-#allprop:not(:checked) ~ #TEMPLATE_PERSONA:checked ~ table tr:not(.require-TEMPLATE_PERSONA, .benefit-TEMPLATE_PERSONA, .info-TEMPLATE_PERSONA, .require-all, .benefit-all, .info-all, :first-child, .section),
+#allprop:not(:checked) ~ #editor:checked ~ table tr\\
+:not(.require-TEMPLATE_PERSONA):not(.benefit-TEMPLATE_PERSONA)\\
+:not(.require-all):not(.benefit-all):not(:first-child):not(.section),
+#allprop:not(:checked) ~ #TEMPLATE_PERSONA:checked ~ table tr:not(.require-TEMPLATE_PERSONA):not(.benefit-TEMPLATE_PERSONA):not(.info-TEMPLATE_PERSONA):not(.require-all):not(.benefit-all):not(.info-all):not(:first-child):not(.section),
 .C:checked ~ .C:checked ~ .P,
 .T:checked ~ .C,
 :target ~ #page > #v_chart > .C,
@@ -634,11 +632,11 @@ body.is-js:not(.is-state-save-review) .js-state-save-review,
   display: none;
 }
 
-body.is-state-edit tr:not(.section, .js-no-edit) > td {
+body.is-state-edit tr:not(.section):not(.js-no-edit) > td {
   cursor: pointer;
 }
 
-body.is-state-edit tr:not(.section, .js-no-edit) > td:hover {
+body.is-state-edit tr:not(.section):not(.js-no-edit) > td:hover {
   outline: auto;
 }
 
