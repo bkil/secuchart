@@ -12,8 +12,8 @@ Server license;yes;GPLv3 https://git.jami.net/savoirfairelinux/jami-nameservice 
 Client license;yes;GPLv3+;
 Register without app;no;;
 Group chat;no;https://forum.jami.net/t/am-i-able-to-create-group-chats/123;
-Voice calls;yes;https://jami.net/help/#answer11;
-Video calls;yes;https://jami.net/help/#answer11;
+Voice calls;partial;https://jami.net/help/#answer11;Have tested Jami for about a year, and calls are not working reliably, if at all.
+Video calls;partial;https://jami.net/help/#answer11;Just like with calls, Jami isn't intercepting video-calls reliably
 Group calls;partial;by forwarding by the initiator https://jami.net/help/#answer12 https://jami.net/the-jami-conferencing-system/;
 Read public content without registering;no;;
 Multiple devices;yes;https://jami.net/the-jami-quirks/#connecting-multiple-devices-to-the-same-account;
