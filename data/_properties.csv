@@ -48,6 +48,7 @@ Presence not mandatory;If has presence broadcasting, can it be hidden when onlin
 Typing indication;Whether sending and showing is supported. Mention in the explanation whether it can be disabled and its default state;;layperson;
 Read receipts;Whether sending and showing is supported;;layperson;
 Receipts not mandatory;yes=they can be disabled, note default value;;tinfoil;
+Themes;no=1, partial=2, yes=more - Appearance, dark scheme, night mode, OLED, prefers contrast, reduced motion, color blind, custom base color, large fonts, visual style presets, automatic switching;;layperson;
 ;Qualities;;;
 Vendor can't curate content;no=vendor can influence who can access which content, remove spam and vandalism;foss crowd;tinfoil;
 Spam protection;If it gained worldwide adoption;all;;
