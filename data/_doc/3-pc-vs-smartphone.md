@@ -12,6 +12,24 @@ A PC is a platform where:
 * of which a meaningful proportion of parts can be cheaply swapped out for fixes or when upgrading to improve its performance over time
 * where supporting productivity is a default, not an extension (keyboard, pointing device and various connectors for peripheral and communication)
 
+## Google Play
+
+Drawbacks (compared to F-droid):
+
+* censors (corporation only cares about profit or currying favour with the sitting government/potential profit)
+* may allow for centralized operations/backdoors or listening in against targeted individuals (since the 90's if you are not from the US, your communication will be wiretapped whenever possible)
+* single point of failure (can also be throttled or limited by country and/or in times of unrest)
+* monopolizes advertising and some other services in your apps
+* has a one-time developer registration fee
+* tracks you as a developer and collect various data
+* has built-in incentives and a legal framework that favors apps that are maintained by a single company, not one which can be collaboratively improved by many
+* attempts to justify that trading in private data for free services is okay
+* tracks you as a user through as many channels as possible (install, updates, sync, backup, notifications, network based location, misc, ...)
+
+Google advantages:
+
+* virus scanner
+
 ## Former mobile exploits
 
 If you are using an out of date version of a mobile OS, because perhaps the vendor did not produce as update for you, you may still be affected by some of these.
