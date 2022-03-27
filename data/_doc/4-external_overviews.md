@@ -8,3 +8,9 @@
 * https://privacyguides.org/real-time-communication/
 * https://www.privacytools.io/#messaging
 * https://dt.gl/tag/messengers/
+* https://switching.software/
+* https://prism-break.gitlab.io/prism-break/en/categories/gnu-linux/#instant-messaging
+* https://myshadow.org/resources#
+* https://github.com/nikitavoloboev/privacy-respecting#user-content-messengers
+* https://github.com/KevinColemanInc/awesome-privacy#user-content-chat
+* https://github.com/pluja/awesome-privacy#user-content-instant-messaging

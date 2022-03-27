@@ -31,7 +31,7 @@ Some of these may be investigated in the future by volunteers. Others may be add
 * Matrix Hydrogen (beta)
 * Matrix Cinny
 * Cabal
-* Tinfoil Chat
+* Tinfoil Chat (Tor and Hardware) https://github.com/maqp/tfc
 * Freenet
 * I2P
 * Twister

@@ -33,3 +33,11 @@ Stepping back from a theoretically sound solution to one where you must trust a 
 ## Opinions
 
 * https://dt.gl/the-2022-review-of-messaging-service-providers-signal/
+* https://freedombone.net/faq.html
+> Why not use Signal for mobile chat?
+
+## TLS proxy issue censorship
+
+* https://godecrypt.com/news/security/signal-ignores-proxy-censorship-vulnerability-bans-researchers/
+* https://i.reddit.com/r/cybersecurity/comments/leoz5m/signal_ignores_proxy_censorship_vulnerability/
+* https://github.com/net4people/bbs/issues/60

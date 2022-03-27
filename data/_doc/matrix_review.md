@@ -12,6 +12,10 @@ https://matrix.org/clients-matrix/
 
 > XMPP with OMEMO is similar to Matrix MEGOLM for E2EE
 
+* https://matrix.org/faq/#why-are-large-public-rooms-like-matrixmatrixorg-not-encrypted
+
+> Why are large public rooms not encrypted?
+
 ## Opinions
 
 * https://web.archive.org/web/20210804205638/https://serpentsec.1337.cx/matrix

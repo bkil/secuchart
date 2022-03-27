@@ -44,7 +44,7 @@ Serverless WAN mode;no;only data traffic is P2P;(TODO: with IP and SIP?) https:/
 Serverless LAN mode;no;https://jami.net/why-is-jami-truly-distributed/;
 Network store and forward;no;https://jami.net/why-is-jami-truly-distributed/ https://linuxkamarada.com/en/2021/05/25/the-jami-messenger/;
 Wireless mode;no;https://jami.net/why-is-jami-truly-distributed/;
-IP shielded from peers;yes;not over STUN https://jami.net/establishing-peer-to-peer-connections-with-jami/;
+IP shielded from peers;partial;not over ICE;calls and file transfers reveal the IP https://jami.net/establishing-peer-to-peer-connections-with-jami/ https://git.jami.net/savoirfairelinux/ring-project/wikis/tutorials/Frequently-Asked-Questions/#when-do-public-ips-get-exposed
 Third party clients;partial;no alternative client;
 IPv6 access of vendor operated network;no;https://git.jami.net/savoirfairelinux/jami-project/-/issues/847;
 Vendor jurisdiction;;Canada with two offices in France;
