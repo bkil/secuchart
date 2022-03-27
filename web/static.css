@@ -2,8 +2,8 @@ body {
   margin: 0;
 }
 
-input {
-  margin-left: 0;
+#page > input {
+  display: none;
 }
 
 html, body, #page {
@@ -32,7 +32,8 @@ html, body, #page {
 table {
   border-spacing: 0px;
   position: relative;
-  top: 0;
+  top: 2em;
+  min-width: 100%;
 }
 
 td, th {
@@ -61,7 +62,7 @@ th {
 }
 
 .th-it {
-  top: 0;
+  top: 2em;
   z-index: 2;
 }
 
@@ -129,6 +130,28 @@ label {
 }
 
 
+h1 {
+  margin-top: 1.5em;
+}
+
+#_nav {
+  position: fixed;
+  background-color: white;
+  z-index: 5;
+  width: 99%;
+}
+
+#_top {
+  padding-bottom: 1em;
+}
+
+#_filters {
+  padding: 1em;
+  border-style: solid;
+  border-width: 1px;
+}
+
+
 #transpose:checked ~ table > tbody > tr > td,
 #transpose:checked ~ table th {
   min-height: 1.5em;
@@ -149,8 +172,8 @@ label {
 #transpose:checked ~ table .th-pr,
 #transpose:checked ~ table .th-sect
 {
+  top: 2em;
   left: initial;
-  top: 0;
   max-width: initial;
   z-index: 2;
 }
@@ -178,6 +201,7 @@ label {
 }
 
 
+#dark:checked ~ #_nav,
 #dark:checked ~ table,
 #dark:checked ~ table textarea,
 #dark:checked ~ table input
@@ -185,6 +209,7 @@ label {
   color: #ddd;
 }
 
+#dark:checked ~ #_nav,
 #dark:checked ~ table > tbody > tr:nth-child(even),
 #transpose:checked ~ #dark:checked ~ table details[open],
 #transpose:checked ~ #dark:checked ~ table .is-editor-container,
@@ -383,8 +408,8 @@ label {
 }
 
 
-#documentation:target ~ #page > #c_documentation,
-#documentation:target ~ #page > #c_documentation:visited,
+#documentation:target ~ #page #c_documentation,
+#documentation:target ~ #page #c_documentation:visited,
 #c_chart,
 #c_chart:visited
 {
@@ -394,16 +419,16 @@ label {
   text-decoration: none;
 }
 
-.c_documentation:target ~ #page > #c_chart,
-.c_documentation:target ~ #page > #c_chart:visited
+.c_documentation:target ~ #page #c_chart,
+.c_documentation:target ~ #page #c_chart:visited
 {
   cursor: pointer;
   pointer-events: initial;
   text-decoration: underline;
 }
 
-.c_documentation:target ~ #page > #c_chart,
-.c_documentation:target ~ #page > #c_chart:visited,
+.c_documentation:target ~ #page #c_chart,
+.c_documentation:target ~ #page #c_chart:visited,
 .button,
 .button:visited,
 .il
@@ -424,11 +449,12 @@ label {
 }
 
 @media (prefers-color-scheme: dark) {
-  html, textarea, input {
+  #_nav, html, textarea, input {
     background-color: black;
     color: #ddd;
   }
 
+  #_nav,
   #transpose:checked ~ table details[open],
   #transpose:checked ~ table .is-editor-container {
     background-color: black;
@@ -451,16 +477,16 @@ label {
     color: #eee;
   }
 
-  #documentation:target ~ #page > #c_documentation,
-  #documentation:target ~ #page > #c_documentation:visited,
+  #documentation:target ~ #page #c_documentation,
+  #documentation:target ~ #page #c_documentation:visited,
   #c_chart,
   #c_chart:visited
   {
     color: #ddd;
   }
 
-  .c_documentation:target ~ #page > #c_chart,
-  .c_documentation:target ~ #page > #c_chart:visited,
+  .c_documentation:target ~ #page #c_chart,
+  .c_documentation:target ~ #page #c_chart:visited,
   .button,
   .button:visited,
   .il
@@ -555,11 +581,25 @@ label {
   }
 }
 
+@media (max-width: 480px) {
+  table {
+    top: 4em;
+  }
+
+  .th-it {
+    top: 4em;
+  }
+
+  #transpose:checked ~ table .th-pr,
+  #transpose:checked ~ table .th-sect {
+    top: 4em;
+  }
+}
 .P {
   display: none;
 }
 
-.C:checked ~ .P {
+.C:checked ~ #_nav .P {
   display: initial;
 }
 
@@ -567,20 +607,23 @@ label {
 :not(.require-TEMPLATE_PERSONA):not(.benefit-TEMPLATE_PERSONA)\\
 :not(.require-all):not(.benefit-all):not(:first-child):not(.section),
 #allprop:not(:checked) ~ #TEMPLATE_PERSONA:checked ~ table tr:not(.require-TEMPLATE_PERSONA):not(.benefit-TEMPLATE_PERSONA):not(.info-TEMPLATE_PERSONA):not(.require-all):not(.benefit-all):not(.info-all):not(:first-child):not(.section),
-.C:checked ~ .C:checked ~ .P,
-.T:checked ~ .C,
-:target ~ #page > #v_chart > .C,
-:target ~ #page > #v_chart > .F,
-.c_documentation:target ~ #page > #v_chart,
+.C:checked ~ .C:checked ~ #_nav .P,
+.T:checked ~ #_nav .C,
+:target ~ #page #_nav .C,
+:target ~ #page #_nav .F,
+.c_documentation:target ~ #page #v_chart,
+.c_documentation:target ~ #page #_filters,
+.c_documentation:target ~ #page [for="_expand"],
 #documentation:not(:target) ~ #page > #v_documentation,
 #all,
+#_expand:not(:checked) ~ #_nav #_filters,
 body:not(.is-js) .js-needed
 {
   display: none;
 }
 
-:target ~ #page > #v_chart > #all,
-:target ~ #page > #v_chart > #all ~ .P
+:target ~ #page #_nav #all,
+:target ~ #page #_nav #all ~ .P
 {
   display: initial;
 }
@@ -644,7 +687,10 @@ body.is-state-edit .a {
   pointer-events: none;
 }
 
-body.is-state-save-review main {
+body.is-state-save-review #v_chart,
+body.is-state-save-review #_filters,
+body.is-state-save-review [for="_expand"]
+{
   display: none;
 }
 

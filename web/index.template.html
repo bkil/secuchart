@@ -2,7 +2,7 @@
 <html lang=en>
 <head>
   <meta charset=utf-8>
-  <title>SecuChart - secure messenger comparison</title>
+  <title>SecuChart - secure messenger feature comparison</title>
   <link rel='shortcut icon' type=image/x-icon href=data:image/x-icon;,>
   <meta name=viewport content='width=device-width, initial-scale=1.0'>
 
@@ -18,34 +18,14 @@
 ((spans))
 
 <div id=page>
-<a href=# class='js-state-view button' id=c_chart>Comparison chart</a>
-<a href=#documentation class='js-state-view button' id=c_documentation>Documentation</a>
-((date))
-
-<span class=js-needed>
-  <span class='js-start-edit js-state-view button'>Edit chart</span>
-  <span class='js-save-review js-state-edit button'>Review edits</span>
-  <span class='js-save-review js-state-edit'><em>Not</em> saved automatically!</span>
-  <span class='js-save-back js-state-save-review button'>Resume editing</span>
-  <span class='js-save-undo js-state-save-review button'>View chart</span>
-</span>
-
-<main id=v_chart>
-
-<label for=transpose>transpose table&nbsp;</label><input type=checkbox id=transpose>
-<label for=bright>bright mode&nbsp;</label><input type=radio name=d id=bright checked>
-<label for=dark>dark mode&nbsp;</label><input type=radio name=d id=dark>
-<label for=contrast>high contrast&nbsp;</label><input type=radio name=d id=contrast>
 
 ((filters))
 
-<table class=js-chart>
-<caption>Messenger vs. feature comparison</caption>
+<table id=v_chart class=js-chart>
 
 ((table))
 
 </table>
-</main>
 
 <div class='js-needed js-state-save-review'>
   <h1>Please review your changes below</h1>

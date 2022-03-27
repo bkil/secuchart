@@ -30,9 +30,6 @@ gen_index() {
       gen_spans "$LIMITITEMS"
     elif [ "$REPLY" = "((table))" ]; then
       gen_table "$LIMITITEMS"
-    elif [ "$REPLY" = "((date))" ]; then
-      DATE="`date "+%Y-%m-%d"`"
-      printf "<span class='js-state-view date'>%s</span>" "$DATE"
     elif [ "$REPLY" = "((script))" ]; then
       cat "$WEB/edit.js"
     elif [ "$REPLY" = "((articles))" ]; then
@@ -63,7 +60,7 @@ gen_style() {
 #$IT:not(:target) ~ #page #any:checked ~ .C:checked ~ #_$IT:not(:checked) ~ table td:nth-child($NUM),
 #$IT:not(:target) ~ #page #any:checked ~ #_$IT:not(:checked) ~ .C:checked ~ table th:nth-child($NUM),
 #$IT:not(:target) ~ #page #any:checked ~ #_$IT:not(:checked) ~ .C:checked ~ table td:nth-child($NUM),
-#$IT:not(:target) ~ #page #_$IT:not(:checked) ~ #a_$IT,
+#$IT:not(:target) ~ #page #_$IT:not(:checked) ~ #_nav #a_$IT,
 :target ~ #$IT:not(:target) ~ #page table th:nth-child($NUM),
 :target ~ #$IT:not(:target) ~ #page table td:nth-child($NUM),
 #$IT:not(:target) ~ :target ~ #page table th:nth-child($NUM),
@@ -153,47 +150,136 @@ gen_spans() {
 
 gen_filters() {
   LIMITITEMS="$1"
+  TMP="$DIST/tmp.html"
+
+  gen_filters_core "$LIMITITEMS" > "$TMP"
+
+  echo "<style>"
+
+  sed -rn "
+    s~.*<input type=([^ ]+)\>.*\<id=([^ >]+)[ >].*~\1 \2~
+    T e
+    p
+    :e
+  " "$TMP" |
+  while read TYPE ID; do
+    if [ "$TYPE" = "radio" ]; then
+    cat << EOF
+[for="$ID"]::before { content: "(.) " }
+#$ID:checked ~ #_nav [for="$ID"]::before { content: "(o) " }
+EOF
+    else
+    cat << EOF
+[for="$ID"]::before { content: "[_] " }
+#$ID:checked ~ #_nav [for="$ID"]::before { content: "[x] " }
+EOF
+    fi
+  done
+
+  echo "</style>"
+
+  cat "$TMP"
+  rm "$TMP"
+}
+
+gen_filters_core() {
+  LIMITITEMS="$1"
 
   cat <<EOF
-<label for=abbr>abbreviated&nbsp;</label><input type=checkbox id=abbr>
-<label for=allprop>all properties&nbsp;</label><input type=checkbox id=allprop checked autofocus>
-<a href="#" id=all class=il>Show all messengers</a>
-<br>
-Use case <a class='js-state-view il' href=#persona>[?]</a>:
-<label for=editor>editor&nbsp;</label><input type=radio id=editor name=u checked>
+<input type=checkbox id=_expand>
+<input type=checkbox id=transpose>
+<input type=radio name=d id=bright checked>
+<input type=radio name=d id=dark>
+<input type=radio name=d id=contrast>
+<input type=checkbox id=abbr>
+<input type=checkbox id=allprop checked autofocus>
+<input type=radio id=editor name=u checked>
 EOF
 
   get_all_persona |
   while read P; do
-    printf "<label for=%s>%s&nbsp;</label><input type=radio id=%s name=u>\n" "$P" "$P" "$P"
+    printf "<input type=radio id=%s name=u>\n" "$P"
   done
 
-  cat <<EOF
-<br class=F>
-<span class=F>Items:</span>
-<label for=any class=F>any&nbsp;</label><input type=radio id=any name=S checked class=F>
-<label for=proprietary class=F>non-proprietary&nbsp;</label><input type=radio id=proprietary name=S class="F T">
-<label for=t_matrix class=F>matrix&nbsp;</label><input type=radio id=t_matrix name=S class="F T">
-<label for=t_xmpp class=F>xmpp&nbsp;</label><input type=radio id=t_xmpp name=S class="F T">
-<br class=C>
-<span class=C>Compare messengers:</span>
+  cat << EOF
+<input type=radio id=any name=S checked class=F>
+<input type=radio id=proprietary name=S class="F T">
+<input type=radio id=t_matrix name=S class="F T">
+<input type=radio id=t_xmpp name=S class="F T">
 EOF
 
   get_items "$LIMITITEMS" |
   while read IT; do
-    echo "filter $IT" >&2
-    NAME="`get_prop_value "$(get_item_prop "$IT" "name")"`"
-    printf "<label for=_%s class=C>%s&nbsp;</label><input type=checkbox id=_%s class=C>\n" "$IT" "$NAME" "$IT"
+    printf "<input type=checkbox id=_%s class=C>\n" "$IT"
+  done
+
+  DATE="`date "+%Y-%m-%d"`"
+
+  cat << EOF
+<div id=_nav>
+  <div id=_top>
+<label for=_expand>Menu</label>
+<a href=# class='js-state-view button' id=c_chart>Comparison chart</a>
+<a href=#documentation class='js-state-view button' id=c_documentation>Documentation</a>
+<span class='js-state-view date'>$DATE</span>
+
+<span class=js-needed>
+  <span class='js-start-edit js-state-view button'>Edit chart</span>
+  <span class='js-save-review js-state-edit button'>Review edits</span>
+  <span class='js-save-review js-state-edit'><em>Not</em> saved automatically!</span>
+  <span class='js-save-back js-state-save-review button'>Resume editing</span>
+  <span class='js-save-undo js-state-save-review button'>View chart</span>
+</span>
+  </div>
+
+  <div id=_filters>
+  <label for=transpose>transpose table</label>
+  <label for=bright>bright mode</label>
+  <label for=dark>dark mode</label>
+  <label for=contrast>high contrast</label>
+  <label for=abbr>abbreviated</label>
+  <label for=allprop>all properties</label>
+  <a href="#" id=all class=il>Show all messengers</a>
+  <br>
+  Use case <a class='js-state-view il' href=#persona>[?]</a>:
+  <label for=editor>editor</label>
+EOF
+
+  get_all_persona |
+  while read P; do
+    printf "<label for=%s>%s</label>\n" "$P" "$P"
   done
 
   cat <<EOF
-<br class=P>
+  <br class=F>
+  <span class=F>Items:</span>
+  <label for=any class=F>any&nbsp;</label>
+  <label for=proprietary class=F>non-proprietary</label>
+  <label for=t_matrix class=F>matrix</label>
+  <label for=t_xmpp class=F>xmpp</label>
+  <br class=C>
+  <span class=C>Compare messengers:</span>
+EOF
+
+  get_items "$LIMITITEMS" |
+  while read IT; do
+    NAME="`get_prop_value "$(get_item_prop "$IT" "name")"`"
+    printf "<label for=_%s class=C>%s</label>\n" "$IT" "$NAME"
+  done
+
+  cat <<EOF
+  <br class=P>
 EOF
 
   get_items "$LIMITITEMS" |
   while read IT; do
     printf "<a href=#%s class='P il' id=a_%s>Permalink #%s</a>\n" "$IT" "$IT" "$IT"
   done
+
+  cat << EOF
+  </div>
+</div>
+EOF
 }
 
 gen_articles() {

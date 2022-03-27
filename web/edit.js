@@ -41,7 +41,7 @@ function save_review_clicked() {
 function get_diff() {
   var files = [];
   var text = '';
-  var items = document.querySelectorAll('span.C ~ input.C');
+  var items = document.querySelectorAll('input.C');
 
   var rows = document.getElementsByClassName('js-chart')[0].rows;
   for (var i = 0; i < items.length; i++) {
