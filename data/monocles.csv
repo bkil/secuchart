@@ -13,7 +13,7 @@ Voice calls;yes;;
 Video calls;yes;;
 File transfer;yes;;
 Emoji composer;no;;
-Link preview;yes;;
+Link preview;yes;https://bkil.gitlab.io/secuchart-assets/screenshots/monocles/v1.5_settings_security.jpg;
 Inline images;yes;https://codeberg.org/Arne/monocles_chat/raw/branch/master/fastlane/metadata/android/en-US/phoneScreenshots/05.png;
 Inline videos;yes;;
 Polls;no;;
@@ -25,9 +25,10 @@ Remote message correction;partial;last message;
 Message expiration;no;;
 Presence status;yes;;
 Presence not mandatory;yes;;
-Typing indication;yes;can be disabled;
-Read receipts;yes;;
-Receipts not mandatory;yes;;
+Typing indication;yes;can be disabled https://bkil.gitlab.io/secuchart-assets/screenshots/monocles/v1.5_settings_security.jpg;
+Read receipts;yes;https://bkil.gitlab.io/secuchart-assets/screenshots/monocles/v1.5_settings_security.jpg;
+Receipts not mandatory;yes;https://bkil.gitlab.io/secuchart-assets/screenshots/monocles/v1.5_settings_security.jpg;
+Themes;yes;https://bkil.gitlab.io/secuchart-assets/screenshots/monocles/v1.5_settings_UI.jpg https://bkil.gitlab.io/secuchart-assets/screenshots/monocles/v1.5_settings_UI_theme.jpg https://bkil.gitlab.io/secuchart-assets/screenshots/monocles/v1.5_settings_UI_theme_color.jpg;light, dark, AMOLED, theme colors
 Account deactivation after device compromise;yes;;
 End-to-end encryption;yes;XEP-0384 OMEMO https://conversations.im/omemo/;also OpenPGP
 Usage without phone number;yes;;
