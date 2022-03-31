@@ -27,7 +27,7 @@ Message expiration;no;https://threema.ch/en/messenger-comparison;
 Account deactivation after device compromise;yes;https://threema.ch/en/faq/revoke;
 Account recovery after device compromise;no;;
 CPU idle;yes;;
-Power saving;yes;Push relay & native push;Fetches encrypted content from its own server in response to a push, group chat via unicast https://threema.ch/press-files/2_documentation/cryptography_whitepaper.pdf Polling without FCM https://threema.ch/en/faq/privacy_push
+Power saving;yes;Push relay & native push;Fetches encrypted content from its own server in response to a push, group chat via unicast https://threema.ch/press-files/2_documentation/cryptography_whitepaper.pdf Formerly polling without FCM https://threema.ch/en/faq/privacy_push Recently own push servers https://threema.ch/en/blog/posts/threema-push
 Bandwidth frugal;partial;Push relay & native push, group chat via unicast;Fetches encrypted content from its own server in response to a push, optimized binary chat protocol https://threema.ch/press-files/2_documentation/cryptography_whitepaper.pdf
 End-to-end encryption;yes;https://threema.ch/en/faq/why_secure;
 E2EE keys shielded from operator;yes;https://threema.ch/en/faq/data;
@@ -47,7 +47,7 @@ User can extend network with node;no;;
 Identity not controlled by vendor;no;;
 Offline;yes;;TODO: verify and add reference, because it requires many servers to run
 Servers required;;Chat, Directory (identity), Media, WebRTC, Web push relay https://threema.ch/press-files/cryptography_whitepaper.pdf;APN required on iOS, https://threema.ch/en/faq/privacy_push
-Servers optional;;FCM https://threema.ch/en/faq/privacy_push, Threema Safe https://threema.ch/press-files/cryptography_whitepaper.pdf;
+Servers optional;;FCM https://threema.ch/en/faq/privacy_push or Threema Push https://threema.ch/en/blog/posts/threema-push , Threema Safe https://threema.ch/press-files/cryptography_whitepaper.pdf;
 Serverless WAN mode;no;;
 Serverless LAN mode;no;;
 Network store and forward;yes;;
