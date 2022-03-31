@@ -22,6 +22,7 @@ Message expiration;no;;
 Typing indication;yes;can be disabled;
 Read receipts;yes;;
 Receipts not mandatory;no;can be hidden on client only;
+Themes;yes;https://bkil.gitlab.io/secuchart-assets/screenshots/schildichat/v_1.4.4_settings_themes.jpg https://bkil.gitlab.io/secuchart-assets/screenshots/schildichat/v_1.4.4_settings_themes_advanced.jpg https://bkil.gitlab.io/secuchart-assets/screenshots/schildichat/v_1.4.4_settings_themes_bubbles.jpg;light, dark, AMOLED, accent color, message bubbles
 Account deactivation after device compromise;yes;;
 Account recovery after device compromise;yes;;
 End-to-end encryption;yes;https://matrix.org/faq/#which-matrix-clients-support-e2e;

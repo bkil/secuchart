@@ -25,9 +25,10 @@ Remote message removal;no;;
 Remote message correction;no;;
 Message expiration;no;;
 Presence status;yes;;
-Typing indication;yes;can be disabled;
-Read receipts;yes;;
-Receipts not mandatory;yes;;
+Typing indication;yes;can be disabled https://bkil.gitlab.io/secuchart-assets/screenshots/cheogram/v2.10.3_settings.jpg;
+Read receipts;yes;https://bkil.gitlab.io/secuchart-assets/screenshots/cheogram/v2.10.3_settings.jpg;
+Receipts not mandatory;yes;https://bkil.gitlab.io/secuchart-assets/screenshots/cheogram/v2.10.3_settings.jpg;
+Themes;partial;https://bkil.gitlab.io/secuchart-assets/screenshots/cheogram/v2.10.3_settings_theme.jpg;
 Account deactivation after device compromise;yes;;
 End-to-end encryption;yes;XEP-0384 OMEMO https://conversations.im/omemo/;also OpenPGP
 Usage without phone number;yes;;
