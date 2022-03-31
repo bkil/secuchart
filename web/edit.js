@@ -186,7 +186,7 @@ function activate_cell_editor(cell) {
 
   yes.onfocus = partial.onfocus = no.onfocus = na.onfocus = i.onfocus = t.onfocus = function() {
     var td = this.parentElement.parentElement.parentElement;
-    td.scrollIntoView({'block': 'end', 'inline': 'end'});
+    td.scrollIntoView({'behavior': 'smooth', 'block': 'end', 'inline': 'end'});
   }
 
   i.focus();
