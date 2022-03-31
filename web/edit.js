@@ -14,6 +14,7 @@ function init() {
       save_last_edited_cell();
     }
   }
+  window.addEventListener('resize', onResize);
 
   var list = document.getElementsByTagName('body')[0].classList;
   list.add('is-js');
@@ -185,12 +186,51 @@ function activate_cell_editor(cell) {
   cell.appendChild(container);
 
   yes.onfocus = partial.onfocus = no.onfocus = na.onfocus = i.onfocus = t.onfocus = function() {
-    var td = this.parentElement.parentElement.parentElement;
-    td.scrollIntoView({'behavior': 'smooth', 'block': 'end', 'inline': 'end'});
+    scrollIntoView(this.parentElement.parentElement.parentElement);
   }
 
   i.focus();
   last_edited_cell = cell;
+}
+
+function onResize() {
+  if (last_edited_cell !== null) {
+    scrollIntoView(last_edited_cell);
+  }
+}
+function scrollIntoView(td) {
+  const tr = td.parentElement;
+  const tbody = tr.parentElement;
+  const table = tbody.parentElement;
+  const page = table.parentElement;
+  const leftX = tr.firstElementChild.scrollWidth;
+  const topY = table.offsetTop + tbody.firstElementChild.firstElementChild.scrollHeight;
+  const rect = td.getBoundingClientRect();
+  const pageHeight = page.clientHeight;
+  const pageWidth = page.clientWidth;
+  var x = 0;
+  var y = 0;
+
+  if (rect.top < topY) {
+    y = rect.top - topY;
+  }
+  if (rect.left < leftX) {
+    x = rect.left - leftX;
+  }
+  if (rect.bottom > pageHeight) {
+    y = rect.bottom - pageHeight;
+  }
+  if (rect.right > pageWidth) {
+    x = rect.right - pageWidth;
+  }
+
+  if ((x !== 0) || (y !== 0)) {
+    page.scrollBy({
+      left: x,
+      top: y,
+      behavior: 'smooth'
+    });
+  }
 }
 
 function add_radio(div, text, checked, cl) {
