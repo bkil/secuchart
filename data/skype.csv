@@ -20,6 +20,7 @@ Presence status;yes;;
 Presence not mandatory;yes;https://support.skype.com/en/faq/FA34699/what-are-the-possible-skype-statuses;
 Read receipts;yes;https://support.skype.com/en/faq/FA34852/what-are-read-receipts-in-skype;
 Receipts not mandatory;yes;https://support.skype.com/en/faq/FA34852/what-are-read-receipts-in-skype;
+Themes;partial;https://support.skype.com/en/faq/FA34854/how-do-i-change-my-theme-in-skype;light/dark
 End-to-end encryption;partial;unclear https://support.skype.com/en/faq/FA31/does-skype-use-encryption;
 Deniability;no;;
 Identity not controlled by vendor;no;;

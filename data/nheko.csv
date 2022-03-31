@@ -18,6 +18,7 @@ Presence status;yes;https://github.com/Nheko-Reborn/nheko/blob/master/CHANGELOG.
 Typing indication;yes;can be disabled;
 Read receipts;yes;;
 Receipts not mandatory;no;can be hidden on client only;
+Themes;partial;https://github.com/Nheko-Reborn/nheko;light/dark
 Account deactivation after device compromise;yes;;
 Account recovery after device compromise;yes;;
 End-to-end encryption;yes;https://github.com/Nheko-Reborn/nheko#features;

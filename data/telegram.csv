@@ -25,6 +25,7 @@ Presence not mandatory;yes;https://telegram.org/blog/privacy-revolution;
 Typing indication;partial;cannot be disabled https://bugs.telegram.org/c/991;
 Read receipts;yes;https://telegram.org/faq#q-what-do-the-check-marks-mean;
 Receipts not mandatory;no;;
+Themes;yes;https://telegram.org/blog/android-themes;full customization
 Account deactivation after device compromise;partial;Only for secondary devices;
 End-to-end encryption;partial;Only for 1:1 secret chats (not default) on mobile https://telegram.org/faq#q-how-are-secret-chats-different;
 Reproducible builds;yes;iOS, Android https://core.telegram.org/reproducible-builds;
