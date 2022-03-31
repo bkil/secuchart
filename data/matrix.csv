@@ -1,5 +1,5 @@
-name;;Matrix Synapse & Element;
-Summary;;Protocol that bridges all;
+name;;Matrix Element;
+Summary;;Protocol that bridges all;Assume using Matrix Synapse as server
 Android Google Play;yes;https://matrix.org/docs/projects/client/element-android;
 Android F-droid/apk;yes;https://f-droid.org/en/packages/im.vector.app/;
 Other mobile;no;KaiOS unsupported https://github.com/vector-im/element-web/issues/13800#issuecomment-633658482;
