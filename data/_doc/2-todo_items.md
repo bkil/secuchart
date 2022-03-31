@@ -59,7 +59,6 @@ Some of these may be investigated in the future by volunteers. Others may be add
 * Wickr
 * Olvid
 * SOMA
-* Discord
 * Hushed
 * Beeper
 * FireChat
