@@ -21,3 +21,10 @@
 * https://words.filippo.io/dispatches/telegram-ecdh/
 
 > THE MOST BACKDOOR-LOOKING BUG I’VE EVER SEEN: discovered and fixed in Telegram's self-rolled cryptographic protocol about seven years ago
+
+## Alternatives
+
+MTProto server reimplementation
+
+* https://github.com/nebula-chat/community-server
+* https://nebula.chat/
