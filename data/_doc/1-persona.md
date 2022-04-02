@@ -43,6 +43,7 @@
 * https://en.wikipedia.org/wiki/Friend_to_friend
 * It's not a problem if an implementation is of low quality or lacks features, because that gives more opportunity for people to work on
 * The protocol and architecture should support implementing most trendy features or lightweight alternatives (e.g., slideshows and push-to-talk)
+* #wan_crowdsourcing
 
 ## Private
 
