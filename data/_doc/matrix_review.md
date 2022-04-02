@@ -36,6 +36,12 @@ https://matrix.org/clients-matrix/
 
 * https://gitlab.com/libremonde-org/papers/research/privacy-matrix.org
 
+Reasoning Why Disroot went back to XMPP in 2018:
+
+* https://disroot.org/en/blog/matrix-closure
+
+> Matrix Closure
+
 ## Deployment
 
 * https://sifted.eu/articles/element-germany-deal/

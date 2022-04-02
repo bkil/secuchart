@@ -17,3 +17,9 @@
 * https://joinjabber.org/faqs/advanced/#faq-advanced-matrix
 
 > XMPP vs. Matrix
+
+Reasoning Why Disroot went back to XMPP in 2018:
+
+* https://disroot.org/en/blog/matrix-closure
+
+> Matrix Closure
