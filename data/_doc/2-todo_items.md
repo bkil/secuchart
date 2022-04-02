@@ -119,3 +119,11 @@ Some of these may be investigated in the future by volunteers. Others may be add
 * Quicksy: Conversations fork with phone numbers as names https://en.wikipedia.org/wiki/Conversations_(software)#Quicksy
 * revolt.chat https://github.com/revoltchat https://developers.revolt.chat/faq/federation
 * Secure Scuttlebutt: Patchwork desktop (obsolete) https://github.com/ssbc/patchwork
+* Speek! - A Decentralized and Anonymous Messenger Utilizing Tor hidden services, file sharing https://speek.network/
+* https://panquake.com/
+* https://github.com/LukeSmithxyz/shadowchat
+* https://github.com/simplex-chat/simplex-chat
+* https://github.com/arj03/groupies (author is part of SSB community)
+* https://letsconvene.im/ (from https://guardianproject.info/ which we can trust)
+* http://sphinx.chat/
+* https://salty.im/ (on matrix #salty.im:libera.chat), from same tech stack than https://yarn.social/ (which is more a social app on a decentralized protocol with a microblogging inspiration)
