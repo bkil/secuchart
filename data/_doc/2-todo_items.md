@@ -122,7 +122,6 @@ Some of these may be investigated in the future by volunteers. Others may be add
 * Speek! - A Decentralized and Anonymous Messenger Utilizing Tor hidden services, file sharing https://speek.network/
 * https://panquake.com/
 * https://github.com/LukeSmithxyz/shadowchat
-* https://github.com/simplex-chat/simplex-chat
 * https://github.com/arj03/groupies (author is part of SSB community)
 * https://letsconvene.im/ (from https://guardianproject.info/ which we can trust)
 * http://sphinx.chat/
