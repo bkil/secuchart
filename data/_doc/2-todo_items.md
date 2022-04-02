@@ -102,7 +102,6 @@ Some of these may be investigated in the future by volunteers. Others may be add
 * XMPP Vysper https://mina.apache.org/vysper-project/standards_supported.html
 * XMPP xmpp-rs https://github.com/Freyskeyd/xmpp-rs#xeps
 * GoldBug, built on research of Echo: Spot-On, Smoke http://goldbug.sourceforge.net/ https://textbrowser.github.io/spot-on/ https://textbrowser.github.io/smoke/ https://www.mail-archive.com/cypherpunks@lists.cpunks.org/msg24308.html https://www.mail-archive.com/cypherpunks@lists.cpunks.org/msg24329.html https://www.mail-archive.com/cypherpunks@lists.cpunks.org/msg05942.html
-* https://simplex.chat/
 * https://gitlab.com/Ilka.Schulz/mailchat a chat application that communicates over email - uses Qt Widget toolkit and QtWebKit for HTML mail and rich text editing
 * email https://www.pep.software/android/
 * email https://k9mail.app/
