@@ -21,7 +21,7 @@ See the following for sources of inspiration (copying is not allowed except the 
 * https://community.signalusers.org/t/wiki-in-depth-feature-comparison-between-private-messaging-apps/12238
 * https://divestos.org/index.php?page=messengers
 * https://jayxt.github.io/MessengerComparison/en/
-* https://wiki.tox.chat/include/clients_features
+* https://wiki.tox.chat/include/clients_features#features
 * https://secushare.org/comparison
 * https://secushare.org/features
 * https://wiki.bitmessage.org/index.php/FAQ#How_does_Bitmessage_compare_to_other_messaging_methods
