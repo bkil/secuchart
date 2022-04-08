@@ -99,3 +99,20 @@ It debuted with a `Twisted>=14.0.0` dependency that was released on 2014-05-12
 2016-06-09 Vector (Android)
 
 * https://medium.com/@RiotChat/say-hello-to-vector-2d33b23a787
+
+2018-01-29 $5M investment by Jarrad Hope's Status:
+
+* https://venturebeat.com/2018/01/29/status-invests-5-million-in-matrix-to-create-a-blockchain-messaging-superpower/
+
+> to expand its team significantly over the course of 2018 and continue development of both the Matrix protocol and improving the Riot.im client
+> create a bridge between Matrix and Whisper — Ethereum’s own real-time communication protocol — and allow Status dApps to be integrated as widgets within Riot.im. It also allows the Status Network token to be used, enabling cryptocurrency payment mechanisms in Riot.im.
+> Status migrated its community from Slack to Riot.im last year,
+
+2019-10-10 $8.5M investment by Notion Capital, Dawn Capital and European seed fund Firstminute Capital:
+
+* https://web.archive.org/web/20210707191110/https://techcrunch.com/2019/10/10/new-vector-scores-8-5m-to-plug-more-users-into-its-open-decentralized-messaging-matrix/
+
+> improving the user experience in Riot for the app to be, as Hodgson puts it, “properly mainstream” — aka: “a genuine alternative to WhatsApp and Slack for groups who need secure communication which is entirely within their control, rather than run by Facebook or Slack”.
+> they’ll be turning on end-to-end encryption by default for all private conversations.
+> building out their flagship Matrix hosting platform (Modular.im) and building it into Riot — “so that groups of users can easily hop onto their own self-sovereign servers”.
+> they intend to work on combating abuse [...] the question of how you moderate hateful communications could easily get overlooked.
