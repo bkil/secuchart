@@ -116,3 +116,28 @@ It debuted with a `Twisted>=14.0.0` dependency that was released on 2014-05-12
 > they’ll be turning on end-to-end encryption by default for all private conversations.
 > building out their flagship Matrix hosting platform (Modular.im) and building it into Riot — “so that groups of users can easily hop onto their own self-sovereign servers”.
 > they intend to work on combating abuse [...] the question of how you moderate hateful communications could easily get overlooked.
+
+2020-05-21 $5M investment by Automattic (WordPress.com)
+
+* https://matrix.org/blog/2020/05/21/welcoming-automattic-to-matrix/
+
+> Automattic just opened up a role for a Matrix.org/WordPress Integrations Engineer
+> we should expect to see Automattic’s communities migrating over to Matrix in the coming months
+> Imagine if every WP site automatically came with its own Matrix room or community?
+> Imagine if all content in WP automatically was published into Matrix as well as the Web?
+> Imagine there was an excellent Matrix client available as a WordPress plugin for embedding realtime chat into your site?
+> Imagine if Tumblr became decentralised!?
+
+2021-07-27 $30M investment by Protocol Labs and Metaplanet (Jaan Tallinn of Skype and Kazaa):
+
+* https://matrix.org/blog/2021/07/27/element-raises-30-m-to-boost-matrix/
+
+> transforming the Element app
+> finish building out P2P Matrix and get it live (including finishing Dendrite)
+> implement native decentralised E2EE voip/video conferencing for Matrix
+> fully build out our relative decentralised reputation system in order to combat abuse in Matrix.
+> getting Spaces out of beta
+> adding Threading to Element
+> speeding up room joins over federation
+> creating 'sync v3' to lazy-load all content and make the API super-snappy
+> lots of little long-overdue fun bits and pieces (yes, custom emoji, we're looking at you).
