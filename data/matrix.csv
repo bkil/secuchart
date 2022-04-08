@@ -77,6 +77,6 @@ Vendor jurisdiction;;UK with subsidiaries in France & US;
 Infrastructure jurisdiction;;Netherlands & Sweden, various for EMS https://element.io/privacy;
 Infrastructure provider;;AWS, Cloudflare;
 Good ToSDR grade;yes;B https://tosdr.org/en/service/2498;
-First release;yes;2016-06-09 https://medium.com/@RiotChat/say-hello-to-vector-2d33b23a787;
+First release;yes;2014-08-12 https://github.com/matrix-org/synapse/commit/4f475c7697722e946e39e42f38f3dd03a95d8765 https://matrix.org/blog/2014/09/03/hello-world/;
 Public issue tracker;yes;https://github.com/vector-im/element-web/issues https://github.com/vector-im/element-ios/issues https://github.com/vector-im/element-android/issues;
 No past client vulnerabilities;yes;not exploited in the wild https://github.com/vector-im/element-desktop/security/advisories https://github.com/vector-im/element-android/security/advisories;

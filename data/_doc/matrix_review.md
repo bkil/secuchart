@@ -67,3 +67,35 @@ Reasoning Why Disroot went back to XMPP in 2018:
 * https://joinjabber.org/faqs/advanced/#faq-advanced-matrix
 
 > XMPP vs. Matrix
+
+## History
+
+2014-08-12 Synapse server v0.1 with integrated webclient (+48k SLOC imported from unknown source):
+
+* https://github.com/matrix-org/synapse/commit/4f475c7697722e946e39e42f38f3dd03a95d8765
+* https://github.com/matrix-org/synapse/tree/4f475c7697722e946e39e42f38f3dd03a95d8765/webclient
+* https://github.com/matrix-org/syutil/commit/90500bfb6d7dbdd9f93ec1534cb129942f3ee749
+
+It debuted with a `Twisted>=14.0.0` dependency that was released on 2014-05-12
+
+* https://labs.twistedmatrix.com/2014/05/twisted-1400-released.html
+
+2014-09-03 Public announcement:
+
+* https://matrix.org/blog/2014/09/03/hello-world/
+
+2014-09-30 Riot Android SDK:
+
+* https://github.com/matrix-org/matrix-android-sdk/commit/18506e179e02925619bf86cc04fa1e8b392ee413
+
+2015-06-02 Riot Android, probably forked from the Android SDK (+14k SLOC imported)
+
+* https://github.com/vector-im/riot-android/commit/d8dde0c78b2a4dea1de61e9ee0e105d4f3ff9f58
+
+2015-06-09 Riot Web (React JS SDK):
+
+* https://github.com/vector-im/element-web/commit/c42733ec951e1492bec746ebf337d3ec5f538e8d
+
+2016-06-09 Vector (Android)
+
+* https://medium.com/@RiotChat/say-hello-to-vector-2d33b23a787
