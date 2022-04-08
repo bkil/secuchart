@@ -16,6 +16,14 @@ https://matrix.org/clients-matrix/
 
 > Why are large public rooms not encrypted?
 
+## Plans
+
+We should not copy & paste each and every blog post they broadcast, but may want to link to things that are frequently asked.
+
+* https://arewep2pyet.com/
+
+> Are We P2P Yet?
+
 ## Opinions
 
 * https://web.archive.org/web/20210804205638/https://serpentsec.1337.cx/matrix
