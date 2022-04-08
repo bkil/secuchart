@@ -141,3 +141,8 @@ It debuted with a `Twisted>=14.0.0` dependency that was released on 2014-05-12
 > speeding up room joins over federation
 > creating 'sync v3' to lazy-load all content and make the API super-snappy
 > lots of little long-overdue fun bits and pieces (yes, custom emoji, we're looking at you).
+
+Amount of cryptocurrency donations:
+
+* https://blockchain.com/eth/address/0xA5f9a4f9E024F6D727f7afdA9257e22329A97485
+* https://blockchain.com/btc/address/1LxowEgsquZ3UPZ68wHf8v2MDZw82dVmAE
