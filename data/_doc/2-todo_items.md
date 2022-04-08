@@ -36,8 +36,8 @@ Some of these may be investigated in the future by volunteers. Others may be add
 * I2P
 * Twister
 * GNUnet Chat
-* Berty
-* Anonymous messenger
+* Berty https://berty.tech/blog/blockchain-berty/ they claim, p2p, e2ee, pfs, based on ipfs, zero metadata
+* Anonymous messenger https://f-droid.org/packages/com.dx.anonymousmessenger/
 * XMPP blabber.im
 * XMPP Movim
 * XMPP aTalk
@@ -69,6 +69,7 @@ Some of these may be investigated in the future by volunteers. Others may be add
 * Ventrilo
 * HipChat
 * Ricochet refresh https://github.com/blueprint-freespeech/ricochet-refresh
+* Speek! - A Decentralized and Anonymous Messenger Utilizing Tor hidden services, file sharing https://speek.network/ https://github.com/Speek-App/Speek/blob/main/src/LICENSE implemented in C++, QML and C, based on Ricochet-Refresh https://news.ycombinator.com/item?id=30803592
 * Serval Project
 * otr.im
 * Molly.im - fork of Signal https://opencollective.com/mollyim
@@ -119,7 +120,6 @@ Some of these may be investigated in the future by volunteers. Others may be add
 * Quicksy: Conversations fork with phone numbers as names https://en.wikipedia.org/wiki/Conversations_(software)#Quicksy
 * revolt.chat https://github.com/revoltchat https://developers.revolt.chat/faq/federation
 * Secure Scuttlebutt: Patchwork desktop (obsolete) https://github.com/ssbc/patchwork
-* Speek! - A Decentralized and Anonymous Messenger Utilizing Tor hidden services, file sharing https://speek.network/
 * https://panquake.com/
 * https://github.com/LukeSmithxyz/shadowchat
 * https://github.com/arj03/groupies (author is part of SSB community)
