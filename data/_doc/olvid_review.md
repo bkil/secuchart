@@ -1,5 +1,9 @@
 # Olvid
 
+## TODO
+
+https://www.olvid.io/assets/documents/2020-12-15_Olvid-specifications.pdf
+
 ## 2022-03-28 trackers
 
 https://matrix.to/#/!sOLQNHloevPHIEWcYN:matrix.org/$-RvqSCyOvxk3PAYFKpJptizTLlHUoPETydYgaunwL40?via=matrix.org&via=tchncs.de&via=midov.pl&via=grin.hu&systemtest.tk&via=altillimity.com
