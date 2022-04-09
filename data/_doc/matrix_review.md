@@ -146,3 +146,8 @@ Amount of cryptocurrency donations:
 
 * https://blockchain.com/eth/address/0xA5f9a4f9E024F6D727f7afdA9257e22329A97485
 * https://blockchain.com/btc/address/1LxowEgsquZ3UPZ68wHf8v2MDZw82dVmAE
+
+
+Financial statements of company:
+
+* https://find-and-update.company-information.service.gov.uk/company/10873661/filing-history
