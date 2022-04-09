@@ -36,6 +36,10 @@ Stepping back from a theoretically sound solution to one where you must trust a 
 * https://freedombone.net/faq.html
 > Why not use Signal for mobile chat?
 
+* https://medium.com/@pepelephew/a-look-at-how-private-messengers-handle-key-changes-5fd4334b809a
+
+> A look at how private messengers handle key changes
+
 ## TLS proxy issue censorship
 
 * https://godecrypt.com/news/security/signal-ignores-proxy-censorship-vulnerability-bans-researchers/

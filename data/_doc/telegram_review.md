@@ -16,6 +16,10 @@
 
 > Telegram Messenger Review - January 19, 2021 By Heinrich Long
 
+* https://medium.com/@pepelephew/a-look-at-how-private-messengers-handle-key-changes-5fd4334b809a
+
+> A look at how private messengers handle key changes
+
 ## Vulnerability analysis
 
 * https://words.filippo.io/dispatches/telegram-ecdh/
