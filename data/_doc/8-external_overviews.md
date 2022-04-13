@@ -14,3 +14,4 @@
 * https://github.com/nikitavoloboev/privacy-respecting#user-content-messengers
 * https://github.com/KevinColemanInc/awesome-privacy#user-content-chat
 * https://github.com/pluja/awesome-privacy#user-content-instant-messaging
+* https://restoreprivacy.com/secure-encrypted-messaging-apps/
