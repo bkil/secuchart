@@ -10,6 +10,7 @@ See the following for sources of inspiration (copying is not allowed except the 
 * https://www.securemessagingapps.com/
 * https://www.messenger-matrix.de/messenger-matrix-en.html
 * https://www.messenger-matrix.de/messenger-matrix.html
+* https://sodom.neocities.org/matrix/Matrix.html
 * https://securechatguide.org/featuresmatrix.html
 * https://docs.google.com/spreadsheets/d/1-UlA4-tslROBDS9IqHalWVztqZo7uxlCeKPQ-8uoFOU/htmlview
 * https://github.com/dessalines/Messaging-Services-Comparison
