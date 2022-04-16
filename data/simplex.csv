@@ -25,6 +25,7 @@ Reactions;no;;
 Multiple devices;no;;
 Multiple accounts;partial;;one can run multiple terminal sessions as multiple OS users to have multiple accounts
 Application locking;no;;
+Remote message correction;partial;https://github.com/simplex-chat/simplex-chat/pull/514;terminal/cli client supports editing last message only.
 Account deactivation after device compromise;no;;
 Account recovery after device compromise;no;;
 End-to-end encryption;yes;https://simplex.chat/#problem-explained https://github.com/simplex-chat/simplexmq/blob/master/protocol/simplex-messaging.md https://github.com/simplex-chat/simplexmq/blob/master/protocol/overview-tjr.md#encryption-primitives-used;
@@ -33,5 +34,6 @@ Audits;no;not yet https://github.com/simplex-chat/simplex-chat;
 Usage without phone number;yes;;
 User can extend network with node;yes;https://github.com/simplex-chat/simplexmq#using-smp-server-and-smp-agent;
 Servers required;;SMP https://github.com/simplex-chat/simplexmq#using-smp-server-and-smp-agent;
+Bots available;partial;https://github.com/simplex-chat/simplex-chat/tree/stable/apps;few examples so far
 First release;no;2021-05-02 https://github.com/simplex-chat/simplex-chat/releases/tag/v0.2.0;
 Public issue tracker;yes;https://github.com/simplex-chat/simplex-chat/issues;
