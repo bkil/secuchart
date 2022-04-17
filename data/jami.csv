@@ -51,3 +51,4 @@ Vendor jurisdiction;;Canada with two offices in France;
 Infrastructure jurisdiction;;Canada;
 Infrastructure provider;;Savoir-faire Linux (default);
 First release;yes;2004-12-22 (as SFLphone) http://freshmeat.sourceforge.net/projects/sflphone/releases?page=3;
+Public issue tracker;yes;https://git.jami.net/groups/savoirfairelinux/-/issues;
