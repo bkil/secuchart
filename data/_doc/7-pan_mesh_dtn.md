@@ -1,5 +1,9 @@
 # PAN messengers via mesh and delay tolerant networking
 
+Main article:
+
+* #p2p
+
 ## Direct connection
 
 You only have a direct connection between two clients if they are:
@@ -37,7 +41,7 @@ LoRa is not very spectral efficient given high density
 
 ## DTN
 
-I think for this specific use case, a DTN would be more meaningful. I.e., a mesh necessitates having a certain amount of nodes online to maintain a spanning tree. This will be problematic when power & coms goes down in certain towns.
+A mesh necessitates having a certain amount of nodes online to maintain a spanning tree. This will be problematic when power & communications links go down in certain towns.
 
 On the other hand, if you focused more on gossip & opportunistic replication and building F2F based on real world web of trust, information could spread much better. This is something that every network gets wrong that is developed in the first world as a "hobby" (or via grant, VC, crowdfunding, etc).
 

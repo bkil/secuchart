@@ -1,5 +1,9 @@
 # Dedicated hardware communication solutions
 
+Main article:
+
+* #p2p
+
 ## Costs
 
 * It requires purchasing a special-purpose hardware device to participate.
