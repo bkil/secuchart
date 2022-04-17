@@ -60,3 +60,4 @@ Vendor jurisdiction;;Germany https://delta.chat/en/gdpr;
 Infrastructure jurisdiction;;N/A;depends on provider
 Infrastructure provider;;N/A;depends on provider
 First release;yes;2017 https://delta.chat/en/2017-05-31-blog-created https://delta.chat/en/help#how-are-delta-chat-developments-funded;
+Public issue tracker;yes;https://github.com/deltachat/deltachat-desktop/issues https://github.com/deltachat/deltachat-android/issues https://github.com/deltachat/deltachat-ios/issues;

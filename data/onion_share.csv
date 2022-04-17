@@ -50,3 +50,4 @@ Vendor jurisdiction;;US;
 Infrastructure jurisdiction;;global;Tor onion routed network
 Infrastructure provider;;Tor;onion routed network
 First release;yes;2015-05-19 https://github.com/onionshare/onionshare/releases/tag/0.7;
+Public issue tracker;yes;https://github.com/onionshare/onionshare/issues;
