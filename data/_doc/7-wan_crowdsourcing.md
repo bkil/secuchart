@@ -1,6 +1,8 @@
 # Crowdsourced citizen science WAN messengers
 
-Main article:
+It would be feasible to implement a hybrid P2P/F2F system where as much roles would be delegated to supernodes and friends as possible and the only remaining duty of the central server would be to sign new releases & the peer database pyramid before they get injected to the P2P storage network. I postulate that you could serve the whole world from even a VPS costing a few dollars (or a free PaaS even) if implemented right.
+
+Parent article:
 
 * #p2p
 
@@ -26,7 +28,7 @@ Main article:
 * account replica (online backup and sync between devices)
 * account recovery and deactivation in case of exploit
 * ephemeral buffering of direct messages
-* persistent group hosting
+* persistent group hosting, forwarding of messages
 * abuse reduction: account registration via proof of work, CAPTCHA, verified email, phone, other account, IP blocklists
 * ICE: STUN, TURN
 * mapping of reachable nodes: friends, DHT, bootstrapping this structure
@@ -79,3 +81,36 @@ A mostly static web server with a few lines of PHP or CGI could suffice. You cou
 A custom rendezvous server could also be replaced by a bot connecting to some other popular available server, whatever is common within a given community: a mailing list, forum, matrix chat, bulletin board, whatever you and at least some of your friends already have access to. Lacking that, you could sometimes even run a tiny dedicated server piggybacked onto some other system, as in:
 
 https://gitlab.com/bkil/freedom-fighters/-/blob/master/hu/service/game-backend.md
+
+## Friend-to-Friend topology
+
+Existing messengers advertised as P2P always use a supporting underlying network of dedicated servers that are pretty expensive to maintain, hence why 90% of the new alternatives that pop up always involve a cryptocurrency for monetization.
+
+F2F would be an alternative as a way for users to maintain reputation among each other and to refrain from committing abuse without consequences.
+
+Consider that if you only ever link to your friends directly and you trust them, metadata collection (it terms of keeping logs or deleting expired or retracted messages according to gentleman's agreement) wouldn't be an issue at all.
+
+* https://en.wikipedia.org/wiki/Citizen_science
+* https://en.wikipedia.org/wiki/Friend_to_friend
+* https://pdos.csail.mit.edu/~jinyang/pub/iptps-f2f.pdf
+* https://en.wikipedia.org/wiki/Gentlemen%27s_agreement
+
+It could be useful for:
+
+* NAT traversal
+* store and forward buffering
+* push notifications
+
+## NAT traversal
+
+In the framework of WebRTC/ICE, STUN & TURN are used together, because STUN itself can only connect a subset of nodes (up to 90%, but it's much worse among mobiles). And bandwidth (CPU?) costs at TURN relays can be quite significant, hence why it is a central point of failure.
+
+But nothing would keep a hypothetical real P2P network from building up a spanning tree via F2F to forward packets and distribute routes among static volunteers and/or dynamically established pairs. And STUN/TURN is kind of an anonymous, stateless service. With global deployment, it needs either funding, or credentials to access it and/or F2F authorization. It also requires an independent signalling path via which you forward peer invites, and that is also usually some kind of central server on presently implemented systems.
+
+Skype did it decades ago with automatic super node promotion, but I have yet to find another messenger (or data sync or social networking service solution) that is capable of anything like that.
+
+The basic design flaw of many messengers is that the only way to reach users who are not publicly routable is through relays, and only a few nodes are TCP relays (optional setting) a lot like if it went over TURN. Rather, this should be the default (and detected during runtime even), and it should be modelled after ICE - select between STUN alternatives and only resort back to something like TURN if there is no solution otherwise. This would reduce the load on relays tenfold at least.
+
+## Store and forward buffering
+
+I think solving store & forward in a decentralized system is best done through a friend-to-friend topology. I.e., not only your own devices store your messages, but also some owned by your circles. And having to run a separate 24/7 mailbox/relay hardware peripheral isn't going to cut it either (what about e-waste and wasting power - see why shared hosting is the best for the world)

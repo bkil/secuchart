@@ -24,42 +24,9 @@ You can scan a QR in Jami, Tox or RetroShare as well, and the invitation also us
 
 You can actually have a sustainable P2P/F2F communication platform without relying on any kind of additional server specific to the given project or purpose whose demise could lead to the downfall of the whole network and all messengers in question.
 
-## NAT traversal
-
-In the framework of WebRTC/ICE, STUN & TURN are used together, because STUN itself can only connect a subset of nodes (like 90% or something, but much lower ratio among mobiles). And bandwidth (CPU?) costs at TURN relays can be quite significant, hence why it is a central point of failure.
-
-But nothing would keep a hypothetical real P2P network from building up a spanning tree via F2F to forward packets and distribute routes among static volunteers and/or dynamically established pairs. And STUN/TURN is kind of an anonymous, stateless service. With global deployment, it needs either funding, or credentials to access it and/or F2F authorization. It also requires an independent signalling path via which you forward peer invites, and that is also usually some kind of central server on presently implemented systems.
-
-ICE, STUN, TURN
-
-Skype did it decades ago with automatic super node promotion, but I have yet to find another messenger (or data sync or social networking service solution) that is capable of anything like that.
-Everyone is lazy and just use ICE/TURN/STUN out of the box, but that is recentralizing everything yet again.
-
-Yep, you could be lazy about implementing your messenger if you could outsource implementation of such difficult questions to underlying overlay networks like Tor, Yggdrasil, I2P, Freenet, GNUnet, ... but someone has to pay the piper in the end. I.e., someone will have to operate custom servers and take care of resilient bootstrapping (and/or check the boxes I came up with above)
-
-The basic design flaw as noted is that the only way to reach users who are not publicly routable is through relays, and only a few nodes are TCP relays (optional setting) a lot like if it went over TURN. Rather, this should be the default (and detected during runtime even), and it should be modelled after ICE - select between STUN alternatives and only resort back to something like TURN if there is no solution otherwise. This would reduce the load on relays tenfold at least, but it was clearly not a priority for them.
-
-I think solving store & forward in a decentralized system is best done through a friend-to-friend topology. I.e., not only your own devices store your messages, but also some owned by your circles. And having to run a separate 24/7 mailbox/relay hardware peripheral isn't going to cut it either (what about e-waste and wasting power - see why shared hosting is the best for the world)
-
-It would be theoretically possible to implement push notifications in a decentralized way via F2F buffering and pushing.
-
-## Friend-to-Friend topology
-
-F2F was a big thing a few decades ago, but then somehow more trendy things came along. It's disturbing how various seemingly good solutions come and go like fashion items.
-
-* https://en.wikipedia.org/wiki/Citizen_science
-* https://en.wikipedia.org/wiki/Friend_to_friend
-* https://pdos.csail.mit.edu/~jinyang/pub/iptps-f2f.pdf
-
-F2F is not only beneficial for storage use cases. Consider that if you only ever link to your friends directly and you trust them, metadata collection (it terms of keeping logs or deleting expired or retracted messages according to gentleman's agreement) wouldn't be an issue at all.
-
-* https://en.wikipedia.org/wiki/Gentlemen%27s_agreement
-
 ##
 
-You can find WebRTC examples in a couple of lines for P2P voice calls (this is literally the most common example you can find on the net)
-
-Minimalistic serverless communication apps are non-existent. The present solutions always use a supporting underlying network of dedicated servers that are pretty expensive to maintain, hence why 90% of the new alternatives that pop up always involve a cryptocurrency for monetization (and "direct" P2P isn't a thing either). What _would_ be possible however is to implement a hybrid P2P/F2F system where as much roles would be delegated to supernodes and friends as possible and the only remaining duty of the central server would be to sign new releases & the peer database pyramid before they get injected to the P2P storage network. I postulate that you could serve the whole world from even a VPS costing a few dollars (or a free PaaS even) if implemented right. That's something I haven't seen before
+You could be lazy about implementing your messenger if you could outsource implementation of such difficult questions to underlying overlay networks like Tor, Yggdrasil, I2P, Freenet, GNUnet, ... but someone has to pay the piper in the end. I.e., someone will have to operate custom servers and take care of resilient bootstrapping (and/or check the boxes I came up with above)
 
 You can find WebRTC examples in a couple of lines for P2P voice calls (this is literally the most common example you can find on the net)
 
