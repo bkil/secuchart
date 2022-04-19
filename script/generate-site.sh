@@ -226,7 +226,7 @@ EOF
 <span class=js-needed>
   <span class='js-start-edit js-state-view button'>Edit chart</span>
   <span class='js-save-review js-state-edit button'>Review edits</span>
-  <span class='js-save-review js-state-edit'><em>Not</em> saved automatically!</span>
+  <span class='js-save-review js-state-edit save-warn'><em>Not</em> saved automatically!</span>
   <span class='js-save-back js-state-save-review button'>Resume editing</span>
   <span class='js-save-undo js-state-save-review button'>View chart</span>
 </span>
