@@ -3,7 +3,7 @@
 * `(x)`bright mode, `(_)`dark mode, `(_)`high contrast
 * <em>(Perhaps some other comparison tables, e.g. Android forks, browsers)</em>
 * Use case: `(x)`FOSS, `(_)`tinfoil, `(_)`layperson, `(_)`crowd, `[x]`all properties, `[_]`expand explanations, `[_]`abbreviated, `[_]`pro & con
-* Protocol filter: `[_]`Matrix, `[_]`XMPP, `[_]`SIP, `[_]`email, `[_]`Tox, `[_]`ActivityPub
+* Protocol filter: `[_]`Matrix, `[_]`XMPP, `[_]`SIP, `[_]`email, `[_]`Tox, `[_]`ActivityPub, `[_]` non-standard
 * License filter: `[_]`FOSS, `[_]`proprietary
 * Topology filter: `[_]`anonymization, `[_]`DHT, `[_]`F2F, `[_]`cryptocurrency, `[_]`federated, `[_]`centralized
 * Other filter: `[_]`non-textual only

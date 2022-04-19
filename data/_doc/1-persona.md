@@ -1,9 +1,9 @@
 # Persona
 
-## FLOSS
+## foss
 
 * altruist, cares about others, the wider society and our future
-* believes in local sustainability, lives in a DFSG island
+* believes in local sustainability, lives in a DFSG island (free libre software)
 * writes and reviews code for her community, shares changes upstream
 * can accept compromises in usability, willing to learn
 * flexible in circle of trust if it serves independence
