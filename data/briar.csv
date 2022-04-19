@@ -4,11 +4,13 @@ Android Google Play;yes;https://briarproject.org/download-briar/;
 Android F-droid/apk;yes;https://f-droid.org/en/packages/org.briarproject.briar.android/ https://briarproject.org/installing-briar-via-f-droid/;
 Apple iOS;no;https://code.briarproject.org/briar/briar/-/wikis/FAQ#will-there-be-an-ios-version-of-briar https://code.briarproject.org/briar/briar/-/issues/445;
 Desktop;partial;Linux;Not full featured https://code.briarproject.org/briar/briar-desktop/
+Web;no;no;Only app, no web client
 Languages;yes;many https://code.briarproject.org/briar/briar/-/tree/master/briar-android/src/main/res;
 Protocol;;Bramble;
 Protocol open;yes;https://code.briarproject.org/briar/briar/-/wikis/home#protocol;
 Client license;yes;various https://code.briarproject.org/briar/briar/-/blob/master/LICENSE.txt https://code.briarproject.org/briar/briar-desktop/-/blob/main/LICENSE.md;
 Register without app;no;;
+Spell check;no;no;No spell check
 Group chat;yes;https://code.briarproject.org/briar/briar/-/wikis/FAQ#when-do-posts-in-forumsgroupsblogs-get-shared-with-others;
 Voice calls;no;https://code.briarproject.org/briar/briar/-/issues/985;
 Video calls;no;https://code.briarproject.org/briar/briar/-/issues/985;
@@ -18,6 +20,9 @@ Screen sharing;no;https://code.briarproject.org/briar/briar/-/issues/985;
 Audio filtering;no;https://code.briarproject.org/briar/briar/-/issues/985;
 File transfer;no;https://code.briarproject.org/briar/briar/-/issues/407;
 Emoticons in message;yes;;
+Sticker packs;no;no;
+Polls;no;;
+Reactions;no;;
 Multiple devices;no;https://code.briarproject.org/briar/briar/-/wikis/FAQ#can-i-use-the-same-account-with-several-devices;
 Online account replica;no;https://code.briarproject.org/briar/briar/-/wikis/FAQ#how-do-i-backup-my-account;
 Multiple accounts;no;https://code.briarproject.org/briar/briar/-/wikis/FAQ#can-i-have-multiple-identitiesprofilesaccounts;
@@ -34,9 +39,12 @@ Account deactivation after device compromise;no;;
 Account recovery after device compromise;no;https://code.briarproject.org/briar/briar/-/wikis/FAQ#how-do-i-backup-my-account;
 End-to-end encryption;yes;https://briarproject.org/how-it-works/;
 Contact list confidential;yes;https://briarproject.org/how-it-works/;
+Metadata protection;yes;yes;via onion routing
+Perfect forward secrecy;yes;https://code.briarproject.org/briar/briar-spec/-/blob/master/protocols/BTP.md;Frmo Briar room by akwizgran - The part of the briar protocol stack that provides forward secrecy is the transport security protocol, btp, in short, btp provides forward secrecy by rotating the symmetric encryption and authentication keys periodically how often this is done depends on the latency of the transport - keys are rotated more often for low-latency transports like tor, and less often for high-latency transports like removable drives, so that the data has time to arrive before the recipient deletes the key.
 Reproducible builds;yes;https://code.briarproject.org/briar/briar/-/issues/1273;
 Audits;yes;2017 https://briarproject.org/news/2017-beta-released-security-audit/;
 Usage without phone number;yes;;
+Transparent financing;yes;yes;https://briarproject.org/about-us/#funding
 Active development;yes;;
 Identity not controlled by vendor;yes;;
 Offline;yes;;https://briarproject.org/how-it-works/ adding contacts must happen within 48 hours, but introductions do not carry a time limit https://code.briarproject.org/briar/briar/-/wikis/FAQ#is-there-a-timeout-for-introductions https://code.briarproject.org/briar/briar/-/wikis/FAQ#is-it-safe-to-publish-my-briar-link-publicly
