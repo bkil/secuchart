@@ -241,7 +241,7 @@ EOF
   <label for=allprop>all properties</label>
   <a href="#" id=all class=il>Show all messengers</a>
   <br>
-  Use case <a class='js-state-view il' href=#persona>[?]</a>:
+  <span class=group>Use case <a class='js-state-view il' href=#persona>[?]</a>:</span>
   <label for=editor>editor</label>
 EOF
 
@@ -252,13 +252,13 @@ EOF
 
   cat <<EOF
   <br class=F>
-  <span class=F>Items:</span>
+  <span class='F group'>Items:</span>
   <label for=any class=F>any&nbsp;</label>
   <label for=proprietary class=F>non-proprietary</label>
   <label for=t_matrix class=F>matrix</label>
   <label for=t_xmpp class=F>xmpp</label>
   <br class=C>
-  <span class=C>Compare messengers:</span>
+  <span class='C group'>Compare messengers:</span>
 EOF
 
   get_items "$LIMITITEMS" |
