@@ -134,6 +134,10 @@ label {
   white-space: nowrap;
 }
 
+label[for="transpose"] {
+  padding-left: 0;
+}
+
 
 h1 {
   margin-top: 1.5em;
