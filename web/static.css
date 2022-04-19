@@ -140,7 +140,9 @@ h1 {
 }
 
 #_nav {
-  position: fixed;
+  position: sticky;
+  left: 0;
+  top: 0;
   background-color: white;
   z-index: 5;
   width: 99%;
