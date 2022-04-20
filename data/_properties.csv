@@ -4,7 +4,8 @@ Summary;Highlight in a few words why it is interesting;;;all
 Screeshots;List URLs in the details (TODO: gallery widget);;;layperson
 Android Google Play;;;layperson;crowd
 Android F-droid/apk;yes=f-droid.org, partial=apk or separate repository;foss tinfoil crowd;;
-Other mobile;Alternative app stores like KaiOS;;tinfoil;layperson crowd
+Other mobile;Alternative phones like KaiStore, Blackberry, OpenStore, PureOS, Microsoft Store;;tinfoil;layperson crowd
+Other Android;Alternative app stores like Amazon Appstore, Huawei App Gallery, Samsung Galaxy Store, Opera Mobile Store, Aptoide, GetJar, Uptodown, Applivery;;tinfoil;layperson crowd
 Apple iOS;;;layperson;crowd
 Desktop;;foss;tinfoil;layperson crowd
 Web;;foss layperson crowd;tinfoil;
