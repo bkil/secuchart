@@ -651,6 +651,23 @@ blockquote {
   padding-left: 1em;
 }
 
+#_font-system-ui:checked ~ * {
+  font-family: system-ui;
+}
+
+#_font-sans:checked ~ * {
+  font-family: sans-serif;
+}
+
+#_font-cursive:checked ~ * {
+  font-family: cursive;
+}
+
+#_font-mono:checked ~ * {
+  font-family: "OCRA", monospace;
+}
+
+
 @media (max-width: 450px) {
   label {
     padding-left: 0;

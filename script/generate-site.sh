@@ -193,6 +193,11 @@ gen_filters_core() {
 <input type=radio name=d id=contrast>
 <input type=checkbox id=abbr>
 <input type=checkbox id=allprop checked autofocus>
+<input type=radio id=_font_default name=f checked>
+<input type=radio id=_font-system-ui name=f>
+<input type=radio id=_font-sans name=f>
+<input type=radio id=_font-cursive name=f>
+<input type=radio id=_font-mono name=f>
 <input type=radio id=editor name=u checked>
 EOF
 
@@ -240,7 +245,14 @@ EOF
   <label for=abbr>abbreviated</label>
   <label for=allprop>all properties</label>
   <a href="#" id=all class=il>Show all messengers</a>
-  <br>
+
+  <span class=group>Font:</span>
+  <label for=_font_default>default</label>
+  <label for=_font-system-ui>system-ui</label>
+  <label for=_font-sans>sans-serif</label>
+  <label for=_font-cursive>cursive</label>
+  <label for=_font-mono>monospace</label>
+
   <span class=group>Use case <a class='js-state-view il' href=#persona>[?]</a>:</span>
   <label for=editor>editor</label>
 EOF
@@ -251,13 +263,11 @@ EOF
   done
 
   cat <<EOF
-  <br class=F>
   <span class='F group'>Items:</span>
   <label for=any class=F>any&nbsp;</label>
   <label for=proprietary class=F>non-proprietary</label>
   <label for=t_matrix class=F>matrix</label>
   <label for=t_xmpp class=F>xmpp</label>
-  <br class=C>
   <span class='C group'>Compare messengers:</span>
 EOF
 
