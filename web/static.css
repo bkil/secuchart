@@ -73,9 +73,12 @@ th {
 
 .th-pr, .th-sect {
   left: 0;
-  text-align: left;
   max-width: 40vw;
   z-index: 3;
+}
+
+.th-pr {
+  text-align: left;
 }
 
 .th-sect {
