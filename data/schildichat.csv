@@ -19,6 +19,8 @@ Multiple devices;yes;;
 Multiple accounts;no;;
 Application locking;yes;Android https://github.com/SchildiChat/SchildiChat-android/blob/sc/vector/src/main/res/xml/vector_settings_pin.xml#L17;
 Message expiration;no;;
+Presence status;yes;HS capability;
+Presence not mandatory;partial;;Android can disable it - https://github.com/vector-im/element-android/releases/tag/v1.4.12
 Typing indication;yes;can be disabled;
 Read receipts;yes;;
 Receipts not mandatory;no;can be hidden on client only;
