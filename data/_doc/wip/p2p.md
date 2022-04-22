@@ -57,3 +57,7 @@ Cabal also requires servers over the WAN (Dat)
 Discovery in the LAN might also work through multicast DNS:
 
 * https://dat-ecosystem-archive.github.io/how-dat-works/#local-network-discovery
+
+* https://blog.mauve.moe/posts/protocol-comparisons
+
+> Comparing BitTorrent, IPFS, Secure Scuttlebutt and Hypercore (Dat)

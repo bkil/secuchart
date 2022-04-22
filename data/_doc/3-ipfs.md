@@ -15,3 +15,7 @@ Most of the world might have trouble reaching IPFS because it is not very good w
 The workarounds might be good enough for those fortunate enough to be able to forward ports, but those could already just as well run a normal FTP/SFTP/Synching/rsync server for the same effort.
 
 It probably solves various problems pretty well, like synchronization between your data centers or creating virtual clouds this way, but it is hardly what will solve the problem of decentralizing computation to the hardware of users if it gained worldwide traction.
+
+* https://blog.mauve.moe/posts/protocol-comparisons
+
+> Comparing BitTorrent, IPFS, Secure Scuttlebutt and Hypercore (Dat)

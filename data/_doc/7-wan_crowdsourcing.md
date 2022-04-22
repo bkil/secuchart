@@ -31,7 +31,7 @@ Parent article:
 * persistent group hosting, forwarding of messages
 * abuse reduction: account registration via proof of work, CAPTCHA, verified email, phone, other account, IP blocklists
 * ICE: STUN, TURN
-* mapping of reachable nodes: friends, DHT, bootstrapping this structure
+* mapping of reachable nodes and data blocks: friends, DHT, bootstrapping this structure
 * power saving push notification delivery
 
 ## Why not fix an existing solution
@@ -68,9 +68,17 @@ Basically what would be a big win if the application was continuously updated wi
 
 For example, as the package for pybitmessages hasn't seen an update since 2018 (and most similar apps are rarely updated more than once every few months and usually manually), such a dynamic list would not work except for listing the mostly-on nodes possibly added manually (that incidentally Tox is also doing, but they admit that it's not enough). CI/CD has been a thing for decades now, so it's kind of appalling to see that few FOSS projects are doing it to this day.
 
+See the Peer Exchang BitTorrent extension:
+
+http://bittorrent.org/beps/bep_0011.html
+
 ## Peer discovery
 
 It might be feasible to infrequently scan neighboring IPs for possible peers on well known ports. Many ISPs already assign IP ranges in a kind of cartographic locality, so it would provide low latency paths automatically if you scanned in increasing distance from your own WAN IP (and/or its "aliases" over the virtual allocation range). This would only be feasible if a sizable proportion of the population would have it installed, let's say 1%, otherwise it's considered spamming.
+
+See the Local Service Discovery BitTorrent extension:
+
+https://www.bittorrent.org/beps/bep_0014.html
 
 ## Rendezvous server
 
@@ -81,6 +89,10 @@ A mostly static web server with a few lines of PHP or CGI could suffice. You cou
 A custom rendezvous server could also be replaced by a bot connecting to some other popular available server, whatever is common within a given community: a mailing list, forum, matrix chat, bulletin board, whatever you and at least some of your friends already have access to. Lacking that, you could sometimes even run a tiny dedicated server piggybacked onto some other system, as in:
 
 https://gitlab.com/bkil/freedom-fighters/-/blob/master/hu/service/game-backend.md
+
+See also the Holepunch BitTorrent extension:
+
+https://www.bittorrent.org/beps/bep_0055.html
 
 ## Friend-to-Friend topology
 
