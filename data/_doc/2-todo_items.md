@@ -30,6 +30,9 @@ Some of these may be investigated in the future by volunteers. Others may be add
 * proprietary https://en.wikipedia.org/wiki/Bridgefy
 * Matrix Hydrogen (beta)
 * Matrix Cinny
+* Fritter, a Dat-based Twitter clone https://github.com/beakerbrowser/libfritter
+* Aether https://getaether.net/ https://github.com/aethereans/aether-app
+* GUN-Eco https://gun.eco/docs/DAM
 * Cabal
 * Tinfoil Chat (Tor and Hardware) https://github.com/maqp/tfc
 * Freenet
