@@ -8,6 +8,10 @@ https://matrix.org/clients-matrix/
 
 * https://blog.jabberhead.tk/2019/03/10/a-look-at-matrix-orgs-olm-megolm-encryption-protocol/
 
+* https://gitlab.matrix.org/matrix-org/olm/-/blob/2f23d9942402a8e250bb20bbf0dc81f6898e4e11/docs/megolm.md#user-content-partial-forward-secrecy
+
+> Megolm group ratchet: Partial Forward Secrecy
+
 * https://soundcloud.com/user-98066669/205-five-shows-in-one
 
 > XMPP with OMEMO is similar to Matrix MEGOLM for E2EE
