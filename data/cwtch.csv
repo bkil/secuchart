@@ -15,6 +15,7 @@ Voice calls;no;not yet https://cwtch.im/ http://cwtchim3z2gdsyb27acfc26lup5aqbeg
 Video calls;no;not yet https://cwtch.im/ http://cwtchim3z2gdsyb27acfc26lup5aqbegjrjsqulzrnkuoalq5h4gmcid.onion/;
 Group calls;no;not yet https://cwtch.im/ http://cwtchim3z2gdsyb27acfc26lup5aqbegjrjsqulzrnkuoalq5h4gmcid.onion/;
 File transfer;yes;experimental https://cwtch.im/;
+Message formatting;yes;experimental https://openprivacy.ca/discreet-log/28-message-text-formatting/ https://cwtch.im/changelog/;bold, italic, code, superscript, subscript, strike through
 Inline images;partial;only sender, not for recepeint;
 Polls;no;;
 Reactions;no;;
@@ -29,6 +30,8 @@ Typing indication;no;;
 Read receipts;no;only delivery receipt;
 Account deactivation after device compromise;no;;
 Account recovery after device compromise;no;;
+End-to-end encryption;yes;https://docs.openprivacy.ca/cwtch-security-handbook/cwtch-overview.html;
+Perfect forward secrecy;partial;1-1 yes https://docs.openprivacy.ca/cwtch-security-handbook/authentication_protocol.html groups no https://docs.openprivacy.ca/cwtch-security-handbook/groups.html;
 No-cost tier;yes;;
 Payment choices;;N/A;
 Active development;yes;;
