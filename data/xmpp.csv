@@ -8,3 +8,4 @@ Offline;yes;;
 Serverless LAN mode;yes;https://xmpp.org/extensions/xep-0174.html#impl-wide https://stackoverflow.com/questions/5632955/is-xmpp-peer-to-peer-connection-without-server-possible;
 IP shielded from peers;yes;Not during STUN calls;
 Third party clients;yes;https://xmpp.org/software/clients/;
+Bots available;yes;https://github.com/topics/xmpp-bot;

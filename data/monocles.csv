@@ -38,4 +38,5 @@ Serverless LAN mode;no;;XEP-0174 unimplemented https://codeberg.org/Arne/monocle
 Network store and forward;yes;if server and contact client support XEP-0313 MAM;
 Wireless mode;no;;
 IP shielded from peers;yes;not for STUN calls;
+Bots available;yes;https://github.com/topics/xmpp-bot;
 Public issue tracker;yes;https://codeberg.org/Arne/monocles_chat/issues;

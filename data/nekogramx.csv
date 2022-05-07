@@ -33,5 +33,6 @@ Active development;yes;;
 User can extend network with node;no;;
 Identity not controlled by vendor;no;;
 Offline;partial;Compose or read stored messages;
+Bots available;yes;https://core.telegram.org/bots https://telegramchannels.me/bots;
 First release;partial;2020-04-03? https://github.com/NekoX-Dev/NekoX/releases/tag/v6.0.1.6;
 Public issue tracker;yes;https://github.com/NekoX-Dev/NekoX/issues;

@@ -27,4 +27,5 @@ Active development;yes;;
 Identity not controlled by vendor;yes;;
 Offline;partial;compose or read stored messages;
 Servers required;;Matrix homeserver;
+Bots available;yes;https://matrix.org/bots/;
 Public issue tracker;yes;https://github.com/Nheko-Reborn/nheko/issues;

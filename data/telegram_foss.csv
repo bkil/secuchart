@@ -34,5 +34,6 @@ Active development;yes;;
 User can extend network with node;no;;
 Identity not controlled by vendor;no;;
 Offline;partial;Compose or read stored messages;
+Bots available;yes;https://core.telegram.org/bots https://telegramchannels.me/bots;
 First release;partial;2017-04-18? https://github.com/Telegram-FOSS-Team/Telegram-FOSS/releases/tag/v3.18.0;
 Public issue tracker;yes;https://github.com/Telegram-FOSS-Team/Telegram-FOSS/issues;

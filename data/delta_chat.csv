@@ -53,6 +53,7 @@ Network store and forward;yes;https://delta.chat/en/help#how-does-delta-chat-pro
 Wireless mode;no;;
 IP shielded from peers;partial;usually not, depends on provider https://security.stackexchange.com/questions/237525/ip-address-leaked-in-email-header;
 Third party clients;yes;SMTP and IMAP;interoperates with any email client, E2EE uses AutoCrypt https://delta.chat/en/help#which-standards-are-used-for-end-to-end-encryption
+Bots available;yes;https://bots.delta.chat/;
 Tor access of vendor operated network;yes;N/A;depends on provider
 IPv6 access of vendor operated network;yes;N/A;depends on provider
 Vendor operated network inaccessible from countries;;N/A;depends on provider
