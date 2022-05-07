@@ -30,4 +30,5 @@ Servers required;;Matrix homeserver e.g. Synapse, Dendride, Conduit, notificatio
 Serverless WAN mode;no;;
 Serverless LAN mode;no;;
 IP shielded from peers;yes;Not during calls if you enable WebRTC;
+Bots available;yes;https://matrix.org/bots/;
 Public issue tracker;yes;https://gitlab.com/famedly/fluffychat/-/issues;

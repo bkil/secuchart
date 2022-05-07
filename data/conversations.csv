@@ -33,5 +33,6 @@ Serverless LAN mode;no;;XEP-0174 unimplemented https://github.com/iNPUTmice/Conv
 Network store and forward;yes;if server and contact client support XEP-0313 MAM;
 Wireless mode;no;;
 IP shielded from peers;yes;not for STUN calls;
+Bots available;yes;https://github.com/topics/xmpp-bot;
 First release;yes;2014-03-24 https://github.com/iNPUTmice/Conversations/releases/tag/0.1;
 Public issue tracker;yes;https://github.com/iNPUTmice/Conversations/issues;

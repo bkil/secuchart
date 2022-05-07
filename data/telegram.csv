@@ -35,6 +35,7 @@ User can extend network with node;no;;
 Identity not controlled by vendor;no;;
 Offline;partial;Compose or read stored messages;
 Third party clients;yes;;
+Bots available;yes;https://core.telegram.org/bots https://telegramchannels.me/bots;
 Good ToSDR grade;yes;B https://tosdr.org/en/service/1946;
 First release;yes;2013-08-14 https://en.wikipedia.org/wiki/Telegram_(software);
 No past client vulnerabilities;no;;surreptitious sharing https://threatpost.com/surreptitious-sharing-android-api-flaw-leaks-data-private-keys/117174/ https://words.filippo.io/dispatches/telegram-ecdh/

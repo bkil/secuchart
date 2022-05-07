@@ -25,6 +25,7 @@ Usage without phone number;yes;;
 Active development;yes;https://github.com/dino/dino/commits/master;
 Multi-party development;partial;https://github.com/dino/dino/pulse/monthly;
 Serverless LAN mode;no;;XEP-0174 unimplemented https://github.com/dino/dino/issues/170
+Bots available;yes;https://github.com/topics/xmpp-bot;
 First release;partial;2020-01-29;https://github.com/dino/dino/releases/tag/v0.1.0 initial commit 2017-03-02 https://github.com/dino/dino/commit/56bc45ce4d07a7a9a415e9dc8ad2f7c3f3c9e48d
 Public issue tracker;yes;https://github.com/dino/dino/issues;
 No past client vulnerabilities;no;2019 https://debian.org/security/2019/dsa-4524 2021 https://dino.im/security/cve-2021-33896/;

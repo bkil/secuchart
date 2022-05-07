@@ -37,6 +37,7 @@ Servers required;;Matrix homeserver e.g. Synapse, Dendride, Conduit, notificatio
 Serverless WAN mode;no;;
 Serverless LAN mode;no;;
 IP shielded from peers;yes;Not during calls if you enable WebRTC;
+Bots available;yes;https://matrix.org/bots/;
 Good ToSDR grade;yes;A https://tosdr.org/en/service/3388;
 First release;yes;2019-07-11 https://github.com/SchildiChat/SchildiChat-android/releases/tag/v0.1.0;
 Public issue tracker;yes;https://github.com/SchildiChat/SchildiChat-android/issues https://github.com/SchildiChat/schildichat-desktop/issues;
