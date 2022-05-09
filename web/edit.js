@@ -37,6 +37,7 @@ function save_review_clicked() {
   var pre = document.getElementsByClassName('js-changes')[0];
   pre.innerText = text;
   alter_state('is-state-edit', 'is-state-save-review');
+  pre.parentNode.parentNode.scrollTo(0, 0);
 }
 
 function get_diff() {
