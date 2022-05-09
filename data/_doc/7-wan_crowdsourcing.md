@@ -68,7 +68,7 @@ Basically what would be a big win if the application was continuously updated wi
 
 For example, as the package for pybitmessages hasn't seen an update since 2018 (and most similar apps are rarely updated more than once every few months and usually manually), such a dynamic list would not work except for listing the mostly-on nodes possibly added manually (that incidentally Tox is also doing, but they admit that it's not enough). CI/CD has been a thing for decades now, so it's kind of appalling to see that few FOSS projects are doing it to this day.
 
-See the Peer Exchang BitTorrent extension:
+See the Peer Exchange BitTorrent extension:
 
 http://bittorrent.org/beps/bep_0011.html
 
