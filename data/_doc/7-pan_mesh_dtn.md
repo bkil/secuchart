@@ -49,7 +49,6 @@ On the other hand, if you focused more on gossip & opportunistic replication and
 * https://en.wikipedia.org/wiki/Store_and_forward
 * https://en.wikipedia.org/wiki/FidoNet#Echomail
 * https://en.wikipedia.org/wiki/Sneakernet
-* https://en.wikipedia.org/wiki/IP_over_Avian_Carriers
 * https://en.wikipedia.org/wiki/Semaphore_Flag_Signaling_System
 * https://en.wikipedia.org/wiki/Victorian_Internet
 * https://en.wikipedia.org/wiki/Datacasting
@@ -59,3 +58,14 @@ On the other hand, if you focused more on gossip & opportunistic replication and
 * https://en.wikipedia.org/wiki/Citizens_band_radio
 * https://en.wikipedia.org/wiki/RBDS#Group_type_2_-_Radio_text
 * https://en.wikipedia.org/wiki/Teletext
+
+### Avian carriers
+
+This started as a joke, but pigeons can actually be thought to complete two round trips per day autonomously by placing their food up to 160 km away from their nest.
+
+If coupled with either low tech monitoring of their arrival or wireless sync and charging and a constant and planned stream of backup birds and hardware, it could provide a commercially viable decentralized alternative to erecting and maintaining expensive relay sites over long distances.
+
+* https://en.wikipedia.org/wiki/IP_over_Avian_Carriers
+* https://en.wikipedia.org/wiki/Homing_pigeon#History
+* https://en.wikipedia.org/wiki/Pigeon_post
+* https://en.wikipedia.org/wiki/War_pigeon
