@@ -35,6 +35,7 @@ Some of these may be investigated in the future by volunteers. Others may be add
 * GUN-Eco https://gun.eco/docs/DAM
 * Cabal
 * Tinfoil Chat (Tor and Hardware) https://github.com/maqp/tfc
+* hardware: https://disaster.radio/ LoRa + ESP32
 * Freenet
 * I2P
 * Twister
