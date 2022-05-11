@@ -15,17 +15,18 @@ Voice calls;no;;
 Video calls;no;;
 Group calls;no;;
 Voice messages;no;;
-File transfer;no;;
+File transfer;yes;;
 Message formatting;partial;basic https://github.com/simplex-chat/simplex-chat/issues/307;
 Emoticons in message;no;;
 Link preview;no;;
-Inline images;no;;
+Inline images;yes;;mobile
 Inline videos;no;;
 Reactions;no;;
 Multiple devices;no;;
 Multiple accounts;partial;;one can run multiple terminal sessions as multiple OS users to have multiple accounts
 Application locking;no;;
-Remote message correction;partial;https://github.com/simplex-chat/simplex-chat/pull/514;terminal/cli client supports editing last message only.
+Remote message removal;yes;;mobile, in console there's whole history visible e.g. 21:37 a11> ff 21:37 a11> [deleted] ff
+Remote message correction;yes;;
 Read receipts;no;only delivery receipt (mobile);
 Account deactivation after device compromise;no;;
 Account recovery after device compromise;no;;
@@ -36,6 +37,7 @@ Audits;no;not yet https://github.com/simplex-chat/simplex-chat;
 Usage without phone number;yes;;
 Active development;yes;;
 User can extend network with node;yes;https://github.com/simplex-chat/simplexmq#using-smp-server-and-smp-agent;
+Identity not controlled by vendor;yes;https://github.com/simplex-chat/simplex-chat/releases/tag/v2.0.0;self-hosted servers defined in the apps
 Servers required;;SMP https://github.com/simplex-chat/simplexmq#using-smp-server-and-smp-agent;
 Bots available;partial;https://github.com/simplex-chat/simplex-chat/tree/stable/apps;few examples so far
 First release;no;2021-05-02 https://github.com/simplex-chat/simplex-chat/releases/tag/v0.2.0;
