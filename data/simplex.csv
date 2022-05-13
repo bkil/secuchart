@@ -15,11 +15,11 @@ Voice calls;no;;
 Video calls;no;;
 Group calls;no;;
 Voice messages;no;;
-File transfer;yes;;
+File transfer;yes;https://github.com/simplex-chat/simplex-chat/blob/master/blog/20220511-simplex-chat-v2-images-files.md;
 Message formatting;partial;basic https://github.com/simplex-chat/simplex-chat/issues/307;
 Emoticons in message;no;;
 Link preview;no;;
-Inline images;yes;;mobile
+Inline images;yes;https://github.com/simplex-chat/simplex-chat/blob/master/blog/20220511-simplex-chat-v2-images-files.md;mobile
 Inline videos;no;;
 Reactions;no;;
 Multiple devices;no;;
