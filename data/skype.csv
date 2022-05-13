@@ -21,7 +21,7 @@ Presence not mandatory;yes;https://support.skype.com/en/faq/FA34699/what-are-the
 Read receipts;yes;https://support.skype.com/en/faq/FA34852/what-are-read-receipts-in-skype;
 Receipts not mandatory;yes;https://support.skype.com/en/faq/FA34852/what-are-read-receipts-in-skype;
 Themes;partial;https://support.skype.com/en/faq/FA34854/how-do-i-change-my-theme-in-skype;light/dark
-End-to-end encryption;partial;unclear https://support.skype.com/en/faq/FA31/does-skype-use-encryption;
+End-to-end encryption;partial;Only for "Private converstations" (not default) https://support.skype.com/en/faq/FA34824/what-are-skype-private-conversations https://support.skype.com/en/faq/FA31/does-skype-use-encryption;
 Deniability;no;;
 Identity not controlled by vendor;no;;
 Good ToSDR grade;no;E https://tosdr.org/en/service/244;
