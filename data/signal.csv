@@ -2,8 +2,8 @@ name;;Signal;
 Summary;;Secure chat with phone numbers;
 Android Google Play;yes;https://signal.org/download/;
 Android F-droid/apk;partial;apk https://signal.org/android/apk/;avoids f-droid https://community.signalusers.org/t/wiki-signal-android-app-on-f-droid-store-f-droid-status/28581
-Apple iOS;yes;https://signal.org/download/;
-Desktop;yes;https://signal.org/download/;
+Apple iOS;yes;https://signal.org/download/;iPad as a secondary device https://support.signal.org/hc/en-us/articles/360007320551-Linked-Devices#link_ipad
+Desktop;partial;as secondary device https://signal.org/download/ https://support.signal.org/hc/en-us/articles/360007320551-Linked-Devices#link_desktop https://support.signal.org/hc/en-us/articles/360008216551#install_desktop;
 Web;no;;
 Languages;yes;100+ https://www.transifex.com/signalapp/signal-android/ https://www.transifex.com/signalapp/signal-desktop/ https://www.transifex.com/signalapp/signal-ios/;
 Protocol;;Signal Protocol https://signal.org/docs/;
@@ -20,6 +20,7 @@ Link preview;yes;;only HTTPS, the sender downloads it via a Signal proxy, can be
 Multiple devices;partial;Only Desktop as secondary device;
 Multiple accounts;no;;
 Application locking;yes;Android's screen lock https://support.signal.org/hc/en-us/articles/360007059572-Screen-Lock;
+Remote message removal;partial;within 3 hours https://support.signal.org/hc/en-us/articles/360050426432-Delete-for-everyone;
 Message expiration;yes;https://support.signal.org/hc/en-us/articles/360007320771-Set-and-manage-disappearing-messages;
 Presence status;no;https://community.signalusers.org/t/optional-online-last-seen-indicator/4375;
 Typing indication;yes;;showing and sending can be switched off together https://support.signal.org/hc/en-us/articles/360020798451-Typing-Indicators
