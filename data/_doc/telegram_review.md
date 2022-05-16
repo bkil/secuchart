@@ -20,6 +20,10 @@
 
 > A look at how private messengers handle key changes
 
+* https://tomsguide.com/news/signal-vs-telegram
+
+> Signal vs. Telegram: Which encrypted messaging app wins?
+
 ## Vulnerability analysis
 
 * https://words.filippo.io/dispatches/telegram-ecdh/

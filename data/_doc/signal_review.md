@@ -34,11 +34,16 @@ Stepping back from a theoretically sound solution to one where you must trust a 
 
 * https://dt.gl/the-2022-review-of-messaging-service-providers-signal/
 * https://freedombone.net/faq.html
+
 > Why not use Signal for mobile chat?
 
 * https://medium.com/@pepelephew/a-look-at-how-private-messengers-handle-key-changes-5fd4334b809a
 
 > A look at how private messengers handle key changes
+
+* https://tomsguide.com/news/signal-vs-telegram
+
+> Signal vs. Telegram: Which encrypted messaging app wins?
 
 ## TLS proxy issue censorship
 
