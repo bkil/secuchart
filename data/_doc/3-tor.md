@@ -16,6 +16,10 @@ If your destination lies outside the Tor network, you will also have to discover
 
 The general latency, low offered bandwidth and the constant changing of the network topology also makes supporting voice/video calls unfeasible.
 
+## Attacks
+
+* https://blog.malwarebytes.com/reports/2021/12/was-threat-actor-kax17-de-anonymizing-the-tor-network/
+
 ## References
 
 * https://en.wikipedia.org/wiki/Tor_network#Consensus_blocking
