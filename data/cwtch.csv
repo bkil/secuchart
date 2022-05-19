@@ -30,15 +30,18 @@ Remote message correction;no;;
 Presence status;partial;1/1 chats show when contact offline;For 1/1 chats it's not possible to send message when contact offline, when online text input is available. No indication in group chat about members status.
 Typing indication;no;;
 Read receipts;no;only delivery receipt;
+Spam protection;partial;https://docs.openprivacy.ca/cwtch-security-handbook/ui.html?highlight=spam#denial-of-service-through-spamming;Could result in an increase in network bandwidth which may be intolerable or undesired for many people - especially those on metered connections
 Account deactivation after device compromise;no;;
 Account recovery after device compromise;no;;
 End-to-end encryption;yes;https://docs.openprivacy.ca/cwtch-security-handbook/cwtch-overview.html;
+Metadata protection;yes;https://docs.openprivacy.ca/cwtch-security-handbook/risk.html?highlight=metadata#threat-model;
 Perfect forward secrecy;partial;1-1 yes https://docs.openprivacy.ca/cwtch-security-handbook/authentication_protocol.html groups no https://docs.openprivacy.ca/cwtch-security-handbook/groups.html;
 Usage without phone number;yes;;
 Transparent financing;yes;https://openprivacy.ca/reports/ https://openprivacy.ca/our-supplychain/ https://openprivacy.ca/donate/;
 No-cost tier;yes;;
 Payment choices;;N/A;
 Active development;yes;;
+Multi-party development;partial;https://git.openprivacy.ca/cwtch.im;
 User can extend network with node;yes;Applicable to group chats only https://git.openprivacy.ca/cwtch.im/server;
 Servers required;;Tor, Cwtch;
 Serverless WAN mode;no;Requires Tor;
@@ -53,3 +56,5 @@ Infrastructure jurisdiction;;global Tor onion routed network;
 Infrastructure provider;;Tor onion routed network;
 First release;no;2021-06-25 https://git.openprivacy.ca/cwtch.im/cwtch-ui/releases;
 Public issue tracker;yes;https://git.openprivacy.ca/cwtch.im/cwtch-ui/issues;
+No past client vulnerabilities;yes;https://docs.openprivacy.ca/cwtch-security-handbook/profile_encryption_and_storage.html;exploitation requires full device compromise, bad actor requires password
+No past privacy glitches;yes;;
