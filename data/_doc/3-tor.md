@@ -20,6 +20,12 @@ The general latency, low offered bandwidth and the constant changing of the netw
 
 * https://blog.malwarebytes.com/reports/2021/12/was-threat-actor-kax17-de-anonymizing-the-tor-network/
 
+> Was threat actor KAX17 de-anonymizing the Tor network?
+
+* https://github.com/Attacks-on-Tor/Attacks-on-Tor
+
+> Thirteen Years of Tor Attacks
+
 ## References
 
 * https://en.wikipedia.org/wiki/Tor_network#Consensus_blocking
