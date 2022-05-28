@@ -130,3 +130,4 @@ Some of these may be investigated in the future by volunteers. Others may be add
 * https://letsconvene.im/ (from https://guardianproject.info/ which we can trust)
 * http://sphinx.chat/
 * https://salty.im/ (on matrix #salty.im:libera.chat), from same tech stack than https://yarn.social/ (which is more a social app on a decentralized protocol with a microblogging inspiration)
+* Mesh router https://github.com/markqvist/Sideband https://github.com/markqvist/lxmf https://github.com/markqvist/reticulum
