@@ -3,7 +3,7 @@ Summary;;Anonymous chat;
 Android Google Play;yes;https://briarproject.org/download-briar/;
 Android F-droid/apk;yes;https://f-droid.org/en/packages/org.briarproject.briar.android/ https://briarproject.org/installing-briar-via-f-droid/;
 Apple iOS;no;https://code.briarproject.org/briar/briar/-/wikis/FAQ#will-there-be-an-ios-version-of-briar https://code.briarproject.org/briar/briar/-/issues/445;
-Desktop;partial;Linux;Not full featured https://code.briarproject.org/briar/briar-desktop/
+Desktop;partial;Linux;Not full featured https://briarproject.org/download-briar-desktop/ https://code.briarproject.org/briar/briar-desktop/ https://flathub.org/apps/details/org.briarproject.Briar
 Web;no;no;Only app, no web client
 Languages;yes;many https://code.briarproject.org/briar/briar/-/tree/master/briar-android/src/main/res;
 Protocol;;Bramble;
