@@ -13,8 +13,8 @@ Client license;no;Proprietary;
 Register without app;partial;Attached to Apple ID;If you have an Apple ID you already have an iMessage and just have to enable iMessage with that account on whatever apple device you are on. You can also have a phone sim with a phone number, in which case iOS will automatically register you for iMessage with that number upon boot.
 Spell check;yes;Included in all the platforms that iMessage supports;
 Group chat;yes;;
-Voice calls;yes;Provided through facetime integration;
-Video calls;yes;Provided through facetime integration;
+Voice calls;yes;Provided through facetime integration;encrypted https://zdnet.com/article/rumor-apple-capturing-information-on-facetime-calls-updated-with-apple-response/
+Video calls;yes;Provided through facetime integration;encrypted https://zdnet.com/article/rumor-apple-capturing-information-on-facetime-calls-updated-with-apple-response/
 Group calls;yes;;
 Voice messages;yes;;
 Screen sharing;yes;requires iOS or iPados 15.1 or later;https://support.apple.com/en-me/HT212734
@@ -44,7 +44,7 @@ Receipts not mandatory;yes;;
 Themes;partial;Light and dark mode with system;
 Account deactivation after device compromise;yes;various;support aided https://support.apple.com/en-us/HT204921 recovery contacts https://support.apple.com/en-us/HT212515 email, phone number and 2FA recovery keys https://support.apple.com/en-us/HT201487
 Account recovery after device compromise;yes;various;support aided https://support.apple.com/en-us/HT204921 recovery contacts https://support.apple.com/en-us/HT212515 email, phone number and 2FA recovery keys https://support.apple.com/en-us/HT201487
-End-to-end encryption;yes;;https://support.apple.com/en-us/HT202303
+End-to-end encryption;yes;;https://support.apple.com/en-us/HT202303 https://zdnet.com/article/rumor-apple-capturing-information-on-facetime-calls-updated-with-apple-response/
 E2EE keys shielded from operator;partial;Key included in iCloud backup of device;The backups are not client-side encrypted. When you disable backup a new key is generated so Apple doesn't have access to your past messages any more https://support.apple.com/en-us/HT202303#messages
 Metadata protection;no;;
 Security team;yes;included as part of the system;
@@ -58,7 +58,7 @@ Isolated self-hosting;no;;
 User can extend network with node;no;Proprietary system;
 Identity not controlled by vendor;no;;
 Offline;yes;;
-IP shielded from peers;yes;;
+IP shielded from peers;partial;unsure, FaceTime may use STUN;https://support.apple.com/en-us/HT202078
 Third party clients;no;;
 User addons;yes;Install through app store;https://developer.apple.com/imessage/
 Vendor jurisdiction;;USA;
