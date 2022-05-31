@@ -1,2 +1,44 @@
 name;;Apple iMessage;
 Summary;;Default on Apple platforms;
+Screenshots;;;screenshot of conversation on ios 15.5 https://pbs.twimg.com/media/FUG0QXFVsAAQY5Z?format=jpg&name=large
+Android Google Play;no;;
+Android F-droid/apk;no;;
+Apple iOS;yes;;
+Desktop;partial;Included in MacOS;Not downloadable or available on other platforms
+Web;no;;
+Protocol;;iMessage;
+Protocol open;no;;
+Server license;no;Proprietary;
+Client license;no;Proprietary;
+Register without app;partial;Attached to Apple ID;If you have an Apple ID you already have an iMessage and just have to enable iMessage with that account on whatever apple device you are on. You can also have a phone sim with a phone number, in which case iOS will automatically register you for iMessage with that number upon boot.
+Spell check;yes;Included in all the platforms that iMessage supports;
+Group chat;yes;;
+Voice calls;yes;Provided through facetime integration;
+Video calls;yes;Provided through facetime integration;
+Group calls;yes;;
+Voice messages;yes;;
+Screen sharing;yes;requires iOS or iPados 15.1 or later;https://support.apple.com/en-me/HT212734
+Audio filtering;partial;no controls;Appears to filter audio by default, no apparent controls over this
+Message formatting;no;;
+Emoticons in message;yes;;
+Emoji composer;yes;Built into keyboard;All platforms that iMessage support after around iOS 6 support some way to open an emote keyboard from a keyboard button/shortcut. After iOS 14 you can search through the emote keyboard. Somewhere around this same time Apple implemented emote suggestions in the keyboard suggested text buttons.
+Emoji reception;yes;;Yes, assuming device is up to date as emotes are rendered through the operating system
+Sticker packs;yes;Built in;Includes some by default, install more and iMessage extensions through the app store
+Link preview;yes;Downloads sender side before message is sent to Apple;
+Inline images;yes;;
+Inline videos;yes;;
+Polls;no;Potentially available through iMessage extension;
+Reactions;partial;Few reaction options;
+Read public content without registering;no;Must have an apple device to use;
+Multiple devices;yes;Sync through icloud;You can sync messages through iCloud e2ee, however contacts etc. are not e2ee when synced, and the encryption key is included in iCloud backups (not e2ee) of the device if enabled https://support.apple.com/en-us/HT202303
+Online account replica;partial;iCloud backup required;Requires iCloud backup of device which is not e2ee https://support.apple.com/en-us/HT202303
+Multiple accounts;no;;
+Application locking;no;;
+Remote message removal;no;;
+Remote message correction;no;;
+Message expiration;no;Only on voice messages*;Message expiration only occurs on voice messages and it is set to either 2 minutes or never by the receiving party, and there is a keep message button (that notifies the sending party "_ kept a voice message")
+Presence status;no;;
+Typing indication;yes;Can't be disabled;
+Read receipts;yes;;
+Receipts not mandatory;yes;;
+Themes;partial;Light and dark mode with system;

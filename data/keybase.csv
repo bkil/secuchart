@@ -20,6 +20,7 @@ Voice messages;partial;only in mobile client;Or even only Android? seems like no
 File transfer;yes;;additionally E2EE storage and shares https://book.keybase.io/files
 Emoji composer;yes;;
 Emoji reception;yes;;
+Link preview;yes;;
 Inline images;yes;;
 Inline videos;yes;;
 Polls;no;;
