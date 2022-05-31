@@ -61,3 +61,6 @@ Offline;yes;;
 IP shielded from peers;yes;;
 Third party clients;no;;
 User addons;yes;Install through app store;https://developer.apple.com/imessage/
+Vendor jurisdiction;;USA;
+Infrastructure provider;;Amazon AWS;https://www.theverge.com/2019/4/22/18511148/apple-icloud-cloud-services-amazon-aws-30-million-per-month
+Good ToSDR grade;partial;D;https://tosdr.org/en/service/291
