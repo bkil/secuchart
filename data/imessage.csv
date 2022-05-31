@@ -42,3 +42,22 @@ Typing indication;yes;Can't be disabled;
 Read receipts;yes;;
 Receipts not mandatory;yes;;
 Themes;partial;Light and dark mode with system;
+Account deactivation after device compromise;yes;various;support aided https://support.apple.com/en-us/HT204921 recovery contacts https://support.apple.com/en-us/HT212515 email, phone number and 2FA recovery keys https://support.apple.com/en-us/HT201487
+Account recovery after device compromise;yes;various;support aided https://support.apple.com/en-us/HT204921 recovery contacts https://support.apple.com/en-us/HT212515 email, phone number and 2FA recovery keys https://support.apple.com/en-us/HT201487
+End-to-end encryption;yes;;https://support.apple.com/en-us/HT202303
+E2EE keys shielded from operator;partial;Key included in iCloud backup of device;The backups are not client-side encrypted. When you disable backup a new key is generated so Apple doesn't have access to your past messages any more https://support.apple.com/en-us/HT202303#messages
+Metadata protection;no;;
+Security team;yes;included as part of the system;
+Large bug bounty;yes;;https://developer.apple.com/security-bounty/
+Reproducible builds;no;Not FOSS;
+Usage without phone number;yes;Requires email attached to Apple ID to be public instead;
+No-cost tier;yes;Only paid content would be third party extensions;
+Payment choices;;Apple Pay or any payment app with an iMessage extension;
+Active development;yes;;
+Isolated self-hosting;no;;
+User can extend network with node;no;Proprietary system;
+Identity not controlled by vendor;no;;
+Offline;yes;;
+IP shielded from peers;yes;;
+Third party clients;no;;
+User addons;yes;Install through app store;https://developer.apple.com/imessage/
