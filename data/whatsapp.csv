@@ -1,6 +1,30 @@
 name;;WhatsApp;
+Android Google Play;yes;;https://play.google.com/store/apps/details?id=com.whatsapp&gl=US
+Apple iOS;yes;;https://apps.apple.com/us/app/whatsapp-messenger/id310633997
+Desktop;yes;;https://www.whatsapp.com/download/
+Web;yes;;web.whatsapp.com
 Server license;no;proprietary;
 Client license;no;proprietary;
+Group chat;yes;up to 256 members (higher with exploits);https://social.techjunkie.com/whatsapp-group-limit/
+Voice calls;yes;;
+Video calls;yes;;
+Group calls;yes;;
+Voice messages;yes;;
+File transfer;yes;;
+Message formatting;no;;
+Link preview;yes;;
+Inline images;yes;;
+Inline videos;yes;;
+Reactions;yes;limited reactions;
+Remote message removal;yes;;
+Message expiration;yes;;
+Typing indication;yes;;
+Read receipts;yes;;
+Receipts not mandatory;partial;all or nothing;You have to disable read receipts completely and then you wont be able to see other's receipts. Also they are always sent in group chats. https://www.techbout.com/turn-off-whatsapp-read-receipts-iphone-android-21235/
+End-to-end encryption;yes;;https://faq.whatsapp.com/general/security-and-privacy/end-to-end-encryption/?lang=en
+Metadata protection;no;;
+Usage without phone number;no;Phone number based;
+No-cost tier;yes;;
 Identity not controlled by vendor;no;;
 Third party clients;no;banned https://www.newsbytesapp.com/news/science/whatsapp-bans-use-of-third-party-apps-details-here/story;
 Good ToSDR grade;no;E https://tosdr.org/en/service/198;
