@@ -51,6 +51,7 @@ gen_style() {
     PROPR=""
     MATRIX=""
     XMPP=""
+    TELEGRAM=""
     NUM=2
     while read IT; do
       echo "style $IT" >&2
@@ -71,8 +72,9 @@ EOF
       CLIENTLIC="`get_item_value "$IT" "Client license"`"
       printf '%s' "$SERVERLIC $CLIENTLIC" | grep -q "proprietary" && PROPR="$PROPR $NUM"
       PROTOCOL="`get_item_value "$IT" "Protocol"`"
-      printf '%s' "$PROTOCOL" | grep -qi "\<matrix\>" || MATRIX="$MATRIX $NUM"
-      printf '%s' "$PROTOCOL" | grep -qi "\<xmpp\>" || XMPP="$XMPP $NUM"
+      printf '%s' "$PROTOCOL" | grep -qi "\<Matrix\>" || MATRIX="$MATRIX $NUM"
+      printf '%s' "$PROTOCOL" | grep -qi "\<XMPP\>" || XMPP="$XMPP $NUM"
+      printf '%s' "$PROTOCOL" | grep -qi "\<MTProto\>" || TELEGRAM="$TELEGRAM $NUM"
 
       NUM="`expr $NUM + 1`"
     done
@@ -88,6 +90,10 @@ EOF
     for NUM in $XMPP; do
       printf "#t_xmpp:checked ~ table th:nth-child(%d),\n" "$NUM"
       printf "#t_xmpp:checked ~ table td:nth-child(%d),\n" "$NUM"
+    done
+    for NUM in $TELEGRAM; do
+      printf "#t_telegram:checked ~ table th:nth-child(%d),\n" "$NUM"
+      printf "#t_telegram:checked ~ table td:nth-child(%d),\n" "$NUM"
     done
   }
 
@@ -211,6 +217,7 @@ EOF
 <input type=radio id=proprietary name=S class="F T">
 <input type=radio id=t_matrix name=S class="F T">
 <input type=radio id=t_xmpp name=S class="F T">
+<input type=radio id=t_telegram name=S class="F T">
 EOF
 
   get_items "$LIMITITEMS" |
@@ -268,6 +275,7 @@ EOF
   <label for=proprietary class=F>non-proprietary</label>
   <label for=t_matrix class=F>matrix</label>
   <label for=t_xmpp class=F>xmpp</label>
+  <label for=t_telegram class=F>telegram</label>
   <span class='C group'>Compare messengers:</span>
 EOF
 
