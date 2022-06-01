@@ -11,8 +11,8 @@ Server license;yes;AGPL v3 https://github.com/simplex-chat/simplexmq/blob/master
 Client license;yes;AGPL v3 https://github.com/simplex-chat/simplex-chat/blob/stable/LICENSE;
 Register without app;no;;
 Group chat;no;;
-Voice calls;no;;
-Video calls;no;;
+Voice calls;partial;experimental https://github.com/simplex-chat/simplex-chat/releases/tag/v2.2.0;terminal app via WebRTC in browser
+Video calls;partial;experimental https://github.com/simplex-chat/simplex-chat/releases/tag/v2.2.0;terminal app via WebRTC in browser
 Group calls;no;;
 Voice messages;no;;
 File transfer;yes;https://github.com/simplex-chat/simplex-chat/blob/master/blog/20220511-simplex-chat-v2-images-files.md;
@@ -24,7 +24,7 @@ Inline videos;no;;
 Reactions;no;;
 Multiple devices;no;;
 Multiple accounts;partial;;one can run multiple terminal sessions as multiple OS users to have multiple accounts
-Application locking;no;;
+Application locking;yes;https://github.com/simplex-chat/simplex-chat/releases/tag/v2.2.0;Native mobile platform lock.
 Remote message removal;yes;;mobile, in console there's whole history visible e.g. 21:37 a11> ff 21:37 a11> [deleted] ff
 Remote message correction;yes;;
 Read receipts;no;only delivery receipt (mobile);
