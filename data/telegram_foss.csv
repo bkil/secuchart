@@ -15,11 +15,23 @@ Group chat;yes;;
 Voice calls;yes;;
 Video calls;yes;;
 Group calls;yes;;
+Voice messages;yes;;https://ik4.es/en/how-to-send-audio-on-telegram-and-record-voice-message/
+Screen sharing;yes;;https://www.androidauthority.com/telegram-group-video-calls-screen-sharing-1239553/ there is also a way to do it using obs, but citation needed.
+File transfer;yes;;note it does compress images and video by default https://www.makeuseof.com/send-uncompressed-photos-videos-telegram/
+Message formatting;partial;https://tgraph.io/markdown-07-07 https://core.telegram.org/bots/api#markdownv2-style;basic
 Emoticons in message;yes;;
+Emoji composer;yes;;emote button and use : and start typing to put emotes quickly
+Sticker packs;yes;;https://telegramchannels.me/stickers
+Link preview;yes;https://telegram.org/blog/link-preview;
+Inline images;yes;;
+Inline videos;yes;;
+Polls;yes;;https://telegram.org/blog/polls-2-0-vmq
+Reactions;yes;https://telegram.org/blog/reactions-spoilers-translations;
 Read public content without registering;no;;
 Multiple devices;yes;;
 Multiple accounts;yes;3;
 Application locking;yes;Android - custom 4 digit PIN + system fingerprint https://telegram.org/blog/photo-editor-and-passcodes;
+Remote message removal;partial;https://www.howtogeek.com/710375/how-to-delete-telegram-messages-and-chat-histories/;
 Message expiration;partial;1:1 secret chats and some media, only on mobile;Only for 1:1 secret chats (not default) on mobile and media in private cloud chats https://telegram.org/faq#q-how-do-self-destructing-messages-work
 Presence status;yes;;
 Presence not mandatory;yes;https://telegram.org/blog/privacy-revolution;
@@ -30,10 +42,12 @@ Themes;yes;https://telegram.org/blog/android-themes;full customization
 Account deactivation after device compromise;partial;Only for secondary devices;
 End-to-end encryption;partial;Only for 1:1 secret chats (not default) https://telegram.org/faq#q-how-are-secret-chats-different;
 Usage without phone number;no;;
+No-cost tier;yes;;
 Active development;yes;;
 User can extend network with node;no;;
 Identity not controlled by vendor;no;;
 Offline;partial;Compose or read stored messages;
+Third party clients;yes;;
 Bots available;yes;https://core.telegram.org/bots https://telegramchannels.me/bots;
 First release;partial;2017-04-18? https://github.com/Telegram-FOSS-Team/Telegram-FOSS/releases/tag/v3.18.0;
 Public issue tracker;yes;https://github.com/Telegram-FOSS-Team/Telegram-FOSS/issues;
