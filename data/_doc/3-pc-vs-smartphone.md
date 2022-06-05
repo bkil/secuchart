@@ -53,3 +53,15 @@ This could also be interpreted as a flaw within each vulnerable application itse
 > Over The Air - Vol. 2, Pt. 3: Exploiting The Wi-Fi Stack on Apple Devices
 > In this blog post we’ll complete our goal of achieving remote kernel code execution on the iPhone 7, by means of Wi-Fi communication alone.
 > Posted by Gal Beniamini, Project Zero
+
+### 2022 UNISOC
+
+* https://tenable.com/cve/CVE-2022-27250
+* https://kryptowire.com/news/kryptowire-identifies-vulnerability-in-unisoc-chipset/
+
+> Kryptowire Identifies Security and Privacy Vulnerability in Mobile Device Chipset from China [...] allows malicious actors to take control over user data and device functionality.
+
+* https://research.checkpoint.com/2022/vulnerability-within-the-unisoc-baseband/
+* https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-20210
+
+> found a vulnerability which can be used to disrupt the device’s radio communication through a malformed packet.
