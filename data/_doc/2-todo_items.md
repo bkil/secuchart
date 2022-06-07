@@ -39,7 +39,6 @@ Some of these may be investigated in the future by volunteers. Others may be add
 * Freenet
 * I2P
 * Twister
-* GNUnet Chat
 * Berty https://berty.tech/blog/blockchain-berty/ they claim, p2p, e2ee, pfs, based on ipfs, zero metadata
 * Anonymous messenger https://f-droid.org/packages/com.dx.anonymousmessenger/
 * XMPP blabber.im
