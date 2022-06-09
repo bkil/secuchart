@@ -30,6 +30,13 @@
 
 > THE MOST BACKDOOR-LOOKING BUG I’VE EVER SEEN: discovered and fixed in Telegram's self-rolled cryptographic protocol about seven years ago
 
+## Law enforcement
+
+* https://www.androidpolice.com/telegram-germany-user-data-surrendered/
+
+> Telegram reportedly surrendered user data to authorities despite insisting '0 bytes' had ever been shared
+> Government pressure may have finally won out
+
 ## Alternatives
 
 MTProto server reimplementation
