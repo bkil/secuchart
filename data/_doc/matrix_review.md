@@ -4,6 +4,21 @@
 
 https://matrix.org/clients-matrix/
 
+## E2EE in public rooms
+
+Why should you not enable E2EE in public rooms?
+
+* As anyone can join, so can logger bots for the authorities that you want to hide against, so it only provides a false sense of security
+* Guests, new members and room preview can't read room history
+* It won't be indexed on https://view.matrix.org/
+* A member may lose the ability to decode messages while all of their sessions are signed out (e.g., closing an incognito browser window) and until the encryption keys are not recovered manually following a new login
+* Various members regularly report bugs that causes them to lose ability to decode certain messages (as recently as May 2022)
+* It requires regularly exchanging more messages, resulting in increasing latency, data transfer and battery consumption
+* Searching in the chat log is not possible using Element Web
+* Many events are still not encrypted in E2EE rooms: membership and its changes, reactions (along with their content!), metadata of reply chains, editing, kicking, banning, redaction, presence status, read receipts and more
+* It is difficult to be implemented by third parties, hence many custom bots lack the ability to participate in such rooms
+* https://matrix.org/faq/#why-are-large-public-rooms-like-matrixmatrixorg-not-encrypted
+
 ## Algorithms
 
 * https://blog.jabberhead.tk/2019/03/10/a-look-at-matrix-orgs-olm-megolm-encryption-protocol/
@@ -104,6 +119,8 @@ It debuted with a `Twisted>=14.0.0` dependency that was released on 2014-05-12
 
 * https://medium.com/@RiotChat/say-hello-to-vector-2d33b23a787
 
+## Financing
+
 2018-01-29 $5M investment by Jarrad Hope's Status:
 
 * https://venturebeat.com/2018/01/29/status-invests-5-million-in-matrix-to-create-a-blockchain-messaging-superpower/
@@ -150,7 +167,6 @@ Amount of cryptocurrency donations:
 
 * https://blockchain.com/eth/address/0xA5f9a4f9E024F6D727f7afdA9257e22329A97485
 * https://blockchain.com/btc/address/1LxowEgsquZ3UPZ68wHf8v2MDZw82dVmAE
-
 
 Financial statements of company:
 
