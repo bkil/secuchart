@@ -7,6 +7,7 @@ function init() {
   document.getElementsByClassName('js-save-review')[0].onclick = save_review_clicked;
   document.getElementsByClassName('js-save-back')[0].onclick = save_back_clicked;
   document.getElementsByClassName('js-save-undo')[0].onclick = save_undo_clicked;
+  document.getElementById('c_documentation').onclick = documentation_clicked;
   window.onbeforeunload = on_before_unload;
 
   document.onkeyup = function(event) {
@@ -19,6 +20,10 @@ function init() {
   var list = document.getElementsByTagName('body')[0].classList;
   list.add('is-js');
   list.add('is-state-view');
+}
+
+function documentation_clicked() {
+  document.getElementById('page').scrollTo(0, 0);
 }
 
 function start_editing_clicked() {
