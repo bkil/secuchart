@@ -17,8 +17,8 @@ Voice calls;no;not yet https://cwtch.im/ http://cwtchim3z2gdsyb27acfc26lup5aqbeg
 Video calls;no;not yet https://cwtch.im/ http://cwtchim3z2gdsyb27acfc26lup5aqbegjrjsqulzrnkuoalq5h4gmcid.onion/;
 Group calls;no;not yet https://cwtch.im/ http://cwtchim3z2gdsyb27acfc26lup5aqbegjrjsqulzrnkuoalq5h4gmcid.onion/;
 File transfer;yes;experimental https://cwtch.im/;
-Message formatting;yes;experimental https://openprivacy.ca/discreet-log/28-message-text-formatting/ https://cwtch.im/changelog/;bold, italic, code, superscript, subscript, strike through
-Inline images;partial;only sender, not for recepeint;
+Message formatting;yes;experimental https://openprivacy.ca/discreet-log/28-message-text-formatting/ https://cwtch.im/changelog/;Via toolbar or direct markdown - bold, italic, code, superscript, subscript, strike through
+Inline images;yes;;
 Polls;no;;
 Reactions;no;;
 Multiple devices;no;not yet https://cwtch.im/;
