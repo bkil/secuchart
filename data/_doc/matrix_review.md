@@ -69,6 +69,10 @@ Reasoning Why Disroot went back to XMPP in 2018:
 
 > Matrix Closure
 
+* https://anarc.at/blog/2022-06-17-matrix-notes/
+
+> Matrix notes - anarcat
+
 ## Deployment
 
 * https://sifted.eu/articles/element-germany-deal/
@@ -86,6 +90,10 @@ Reasoning Why Disroot went back to XMPP in 2018:
 * https://joinjabber.org/faqs/advanced/#faq-advanced-matrix
 
 > XMPP vs. Matrix
+
+* https://www.cr-online.de/blog/2022/06/02/ein-fehler-in-der-matrix/
+
+> Ein Fehler in der Matrix (German lawyer regarding GDPR compliance)
 
 ## History
 
