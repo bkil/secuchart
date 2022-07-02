@@ -38,6 +38,7 @@ Themes;partial;https://briarproject.org/news/2018-briar-1.1-released/;light/dark
 Account deactivation after device compromise;no;;
 Account recovery after device compromise;no;https://code.briarproject.org/briar/briar/-/wikis/FAQ#how-do-i-backup-my-account;
 End-to-end encryption;yes;https://briarproject.org/how-it-works/;
+Deniability;yes;https://briarproject.org/raw/BRP-01-report.pdf;
 Contact list confidential;yes;https://briarproject.org/how-it-works/;
 Metadata protection;yes;yes;via onion routing
 Perfect forward secrecy;yes;https://code.briarproject.org/briar/briar-spec/-/blob/master/protocols/BTP.md;Frmo Briar room by akwizgran - The part of the briar protocol stack that provides forward secrecy is the transport security protocol, btp, in short, btp provides forward secrecy by rotating the symmetric encryption and authentication keys periodically how often this is done depends on the latency of the transport - keys are rotated more often for low-latency transports like tor, and less often for high-latency transports like removable drives, so that the data has time to arrive before the recipient deletes the key.
