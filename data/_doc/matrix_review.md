@@ -95,6 +95,21 @@ Reasoning Why Disroot went back to XMPP in 2018:
 
 > Ein Fehler in der Matrix (German lawyer regarding GDPR compliance)
 
+## Protocol utilization
+
+* https://github.com/opentower/populus-viewer
+
+> Populus-Viewer is a tool for decentralized social annotation, built on pdfjs, wavesurfer.js and the Matrix protocol. You can use it to read PDFs, listen to audio, or watch videos, and have rich discussions in the margins, with your friends, classmates, or scholarly collaborators.
+
+* https://gitlab.com/minestrix/minestrix-flutter
+* https://gitlab.com/minestrix/minestrix-doc
+
+> A privacy focused social media based on Matrix
+
+* https://github.com/yousefED/matrix-crdt
+
+> Matrix-CRDT enables you to use Matrix as a backend for distributed, real-time collaborative web applications that sync automatically. The MatrixProvider is a sync provider for Yjs, a proven, high performance CRDT implementation.
+
 ## History
 
 2014-08-12 Synapse server v0.1 with integrated webclient (+48k SLOC imported from unknown source):
