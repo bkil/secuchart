@@ -21,7 +21,7 @@ Message formatting;yes;experimental https://openprivacy.ca/discreet-log/28-messa
 Inline images;yes;;
 Polls;no;;
 Reactions;no;;
-Multiple devices;partial;not yet https://cwtch.im/ https://git.openprivacy.ca/cwtch.im/cwtch/wiki/Storage-DRAFT;There's a way to run the same profile on different devices (desktop and mobile) but it requires transfer of the profile through ADB which, by some, may be considered insecure.
+Multiple devices;no;not yet https://cwtch.im/ https://git.openprivacy.ca/cwtch.im/cwtch/wiki/Storage-DRAFT;There's a way to run the same profile on different devices (desktop and mobile) but it requires transfer of the profile through ADB (which by some, may be considered insecure) and only the device which initiated communication receives messages from other party.
 Online account replica;partial;;
 Multiple accounts;yes;;
 Application locking;partial;passphrase on app start;no other type of locking at the moment
