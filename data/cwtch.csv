@@ -12,19 +12,19 @@ Server license;yes;MIT https://git.openprivacy.ca/cwtch.im/server/src/branch/tru
 Client license;yes;MIT https://git.openprivacy.ca/cwtch.im/cwtch-ui/src/branch/trunk/LICENSE;
 Register without app;no;;
 Spell check;no;not yet https://git.openprivacy.ca/cwtch.im/cwtch-ui/issues/386;
-Group chat;yes;experimental https://cwtch.im/;
+Group chat;yes;experimental https://cwtch.im/ group chats https://git.openprivacy.ca/cwtch.im/cwtch/wiki/HYBRID-GROUPS-DRAFT#encryption;
 Voice calls;no;not yet https://cwtch.im/ http://cwtchim3z2gdsyb27acfc26lup5aqbegjrjsqulzrnkuoalq5h4gmcid.onion/;
 Video calls;no;not yet https://cwtch.im/ http://cwtchim3z2gdsyb27acfc26lup5aqbegjrjsqulzrnkuoalq5h4gmcid.onion/;
 Group calls;no;not yet https://cwtch.im/ http://cwtchim3z2gdsyb27acfc26lup5aqbegjrjsqulzrnkuoalq5h4gmcid.onion/;
-File transfer;yes;experimental https://cwtch.im/;
+File transfer;yes;experimental https://openprivacy.ca/discreet-log/17-filesharing-faq/;
 Message formatting;yes;experimental https://openprivacy.ca/discreet-log/28-message-text-formatting/ https://cwtch.im/changelog/;Via toolbar or direct markdown - bold, italic, code, superscript, subscript, strike through
 Inline images;yes;;
 Polls;no;;
 Reactions;no;;
-Multiple devices;no;not yet https://cwtch.im/;
-Online account replica;no;;
+Multiple devices;partial;not yet https://cwtch.im/ https://git.openprivacy.ca/cwtch.im/cwtch/wiki/Storage-DRAFT;There's a way to run the same profile on different devices (desktop and mobile) but it requires transfer of the profile through ADB which, by some, may be considered insecure.
+Online account replica;partial;;
 Multiple accounts;yes;;
-Application locking;partial;mandatory unlock of each account on app start;no other type of locking at the moment
+Application locking;partial;passphrase on app start;no other type of locking at the moment
 Remote message removal;no;;
 Remote message correction;no;;
 Presence status;partial;1/1 chats show when contact offline;For 1/1 chats it's not possible to send message when contact offline, when online text input is available. No indication in group chat about members status.
@@ -33,7 +33,7 @@ Read receipts;no;only delivery receipt;
 Spam protection;partial;https://docs.openprivacy.ca/cwtch-security-handbook/ui.html?highlight=spam#denial-of-service-through-spamming;Could result in an increase in network bandwidth which may be intolerable or undesired for many people - especially those on metered connections
 Account deactivation after device compromise;no;;
 Account recovery after device compromise;no;;
-End-to-end encryption;yes;https://docs.openprivacy.ca/cwtch-security-handbook/cwtch-overview.html;
+End-to-end encryption;yes;Profiles are stored locally on disk and encrypted https://docs.openprivacy.ca/cwtch-security-handbook/profile_encryption_and_storage.html;
 Metadata protection;yes;https://docs.openprivacy.ca/cwtch-security-handbook/risk.html?highlight=metadata#threat-model;
 Perfect forward secrecy;partial;1-1 yes https://docs.openprivacy.ca/cwtch-security-handbook/authentication_protocol.html groups no https://docs.openprivacy.ca/cwtch-security-handbook/groups.html;
 Usage without phone number;yes;;
@@ -48,7 +48,7 @@ Serverless WAN mode;no;Requires Tor;
 Serverless LAN mode;no;Requires Tor;
 IP shielded from peers;yes;via Tor;
 Bots available;yes;https://git.openprivacy.ca/sarah/cwtchbot;
-Tor access of vendor operated network;yes;N/A uses Tor connection to peers;
+Tor access of vendor operated network;yes;routing and connections;
 IPv6 access of vendor operated network;yes;;
 Transparency reports;yes;https://openprivacy.ca/reports/ https://openprivacy.ca/our-supplychain/;
 Vendor jurisdiction;;canada https://openprivacy.ca/ http://openpravyvc6spbd4flzn4g2iqu4sxzsizbtb5aqec25t76dnoo5w7yd.onion/;
@@ -56,5 +56,6 @@ Infrastructure jurisdiction;;global Tor onion routed network;
 Infrastructure provider;;Tor onion routed network;
 First release;no;2021-06-25 https://git.openprivacy.ca/cwtch.im/cwtch-ui/releases;
 Public issue tracker;yes;https://git.openprivacy.ca/cwtch.im/cwtch-ui/issues;
+No past DDoS;partial;;The Cwtch application utilizes Tor which has been subject to much stress in the past.
 No past client vulnerabilities;yes;https://docs.openprivacy.ca/cwtch-security-handbook/profile_encryption_and_storage.html;exploitation requires full device compromise, bad actor requires password
 No past privacy glitches;yes;;
