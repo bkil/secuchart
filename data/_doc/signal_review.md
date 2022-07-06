@@ -45,8 +45,8 @@ Stepping back from a theoretically sound solution to one where you must trust a 
 
 > Signal vs. Telegram: Which encrypted messaging app wins?
 
-## TLS proxy issue censorship
+## TLS proxy censorship issue
 
 * https://godecrypt.com/news/security/signal-ignores-proxy-censorship-vulnerability-bans-researchers/
-* https://i.reddit.com/r/cybersecurity/comments/leoz5m/signal_ignores_proxy_censorship_vulnerability/
+* https://reddit.com/r/cybersecurity/comments/leoz5m/signal_ignores_proxy_censorship_vulnerability/
 * https://github.com/net4people/bbs/issues/60

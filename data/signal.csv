@@ -8,7 +8,7 @@ Web;no;;
 Languages;yes;100+ https://www.transifex.com/signalapp/signal-android/ https://www.transifex.com/signalapp/signal-desktop/ https://www.transifex.com/signalapp/signal-ios/;
 Protocol;;Signal Protocol https://signal.org/docs/;
 Protocol open;yes;https://signal.org/docs/;
-Server license;yes;AGPLv3 https://github.com/signalapp/Signal-Server/blob/master/LICENSE;
+Server license;partial;AGPLv3 https://github.com/signalapp/Signal-Server/blob/master/LICENSE;missing sources for CDN0 S3/CDN2 GCS and abuse control https://signal.org/blog/keeping-spam-off-signal/
 Client license;yes;Android GPLv3 https://github.com/signalapp/Signal-Android/blob/master/LICENSE iOS GPLv3 https://github.com/signalapp/Signal-iOS/blob/master/LICENSE Desktop AGPLv3 https://github.com/signalapp/Signal-Desktop/blob/development/LICENSE;
 Register without app;no;;as a workaround, through the unofficial mautrix-signal matrix bridge with a custom HS
 Group chat;yes;https://support.signal.org/hc/en-us/articles/360007319331-Group-chats;
@@ -40,18 +40,18 @@ Isolated self-hosting;no;;
 User can extend network with node;no;;
 Identity not controlled by vendor;no;;
 Offline;partial;Compose or read stored messages;
-Servers required;;Signal, Storage, Contact Discovery, ICE, Google ReCAPTCHA;https://github.com/signalapp/Signal-Server https://github.com/signalapp/storage-service https://github.com/signalapp/ContactDiscoveryService https://signal.org/blog/ice-forking/ https://signal.org/blog/keeping-spam-off-signal/
-Servers optional;;FCM https://support.signal.org/hc/en-us/articles/360007318711-Troubleshooting-Notifications https://reddit.com/r/signal/comments/ium7he/no_notifications_on_degoogled_phone_tried/ https://reddit.com/r/degoogle/comments/m9cxax/what_are_your_thoughts_on_this_degoogled_fork_of/;
+Servers required;;Signal, Storage, Contact Discovery, Key backup, ICE, ReCAPTCHA;https://github.com/signalapp/Signal-Server https://github.com/signalapp/storage-service https://github.com/signalapp/ContactDiscoveryService https://github.com/signalapp/SecureValueRecovery https://signal.org/blog/ice-forking/ https://signal.org/blog/signal-video-calls/ https://signal.org/blog/keeping-spam-off-signal/ https://github.com/signalapp/Signal-Android/blob/9d8e9a3a14015cc3fbded43e0cfb89af6614ba50/app/build.gradle#L207 storage must be hosted within GCP, also used by key backup
+Servers optional;;Google STUN https://github.com/signalapp/Signal-Android/blob/c4bc2162f23e0fd6bc25941af8fb7454d91a4a35/app/src/main/java/org/thoughtcrime/securesms/service/webrtc/SignalCallManager.java#L854 FCM https://support.signal.org/hc/en-us/articles/360007318711-Troubleshooting-Notifications https://reddit.com/r/signal/comments/ium7he/no_notifications_on_degoogled_phone_tried/ https://reddit.com/r/degoogle/comments/m9cxax/what_are_your_thoughts_on_this_degoogled_fork_of/ giphy proxy https://github.com/signalapp/Signal-Android/blob/c4bc2162f23e0fd6bc25941af8fb7454d91a4a35/app/src/main/java/org/thoughtcrime/securesms/net/ContentProxySelector.java#L25 https://github.com/signalapp/Signal-TLS-Proxy;can't disable Google STUN or giphy proxy, but should still work if blocked over the network
 Serverless WAN mode;no;;
 Serverless LAN mode;no;;
 Network store and forward;yes;;
 Wireless mode;no;;
-IP shielded from peers;partial;not by default;can set to always relay calls, otherwise shares IP with outgoing calls and contacts https://signal.org/blog/signal-video-calls/ https://signal.org/blog/ice-forking/
+IP shielded from peers;partial;not by default;can set to always relay calls, otherwise shares IP with outgoing calls and contacts https://signal.org/blog/signal-video-calls/ https://signal.org/blog/ice-forking/ https://github.com/signalapp/Signal-Android/blob/c4bc2162f23e0fd6bc25941af8fb7454d91a4a35/app/src/main/java/org/thoughtcrime/securesms/service/webrtc/IncomingCallActionProcessor.java#L94
 Third party clients;no;https://github.com/LibreSignal/LibreSignal/blob/master/README.md https://github.com/LibreSignal/LibreSignal/issues/37#issuecomment-217211165 https://lwn.net/Articles/687294/;
 Vendor legal entity kind;;non-profit company;
 Vendor jurisdiction;;USA https://signal.org/legal/;
 Infrastructure jurisdiction;;USA;
-Infrastructure provider;;Amazon;
+Infrastructure provider;;Amazon https://github.com/signalapp/Signal-Android/blob/4eddeb74c515453698dc3eebaf1ce512e9706e61/libsignal/service/src/main/java/org/whispersystems/signalservice/internal/push/PushServiceSocket.java#L1306 https://reddit.com/r/signal/comments/ue0mx5/are_you_guys_worried_that_signal_is_hosted_on_aws/ GCP (BigTable https://github.com/signalapp/storage-service/blob/db092e636e65d252fb2bd6edab7864f38f9ca1c5/src/main/java/org/signal/storageservice/StorageServiceConfiguration.java ) Fastly https://github.com/signalapp/Signal-Android/blob/f63ed8f2698c05c4bb1465c01e0c79353835f6ac/app/src/main/java/org/thoughtcrime/securesms/push/SignalServiceNetworkAccess.kt#L72;
 Good ToSDR grade;yes;B https://tosdr.org/en/service/528;
 First release;yes;2014-07-29 https://en.wikipedia.org/wiki/Signal_(software);
 Public issue tracker;yes;https://github.com/signalapp/Signal-Desktop/issues https://github.com/signalapp/Signal-Android/issues https://github.com/signalapp/Signal-iOS/issues;
