@@ -7,6 +7,7 @@ Desktop;yes;Linux, FreeBSD, Windows, MacOS;https://tox.chat/clients.html https:/
 Web;no;https://tox.chat/clients.html;
 Protocol;;Tox protocol https://tox.chat/about.html;
 Protocol open;yes;https://tox.chat/about.html;
+Server license;yes;GPLv3 https://github.com/TokTok/c-toxcore/blob/master/LICENSE;
 Register without app;no;https://wiki.tox.chat/users/toxid;
 Group chat;partial;invite-only https://github.com/uTox/uTox#user-content-features;
 Voice calls;yes;https://wiki.tox.chat/users/techfaq#what_is_used_for_av;
@@ -41,3 +42,4 @@ Tor access of vendor operated network;yes;https://tox.chat/faq.html#tox-leak-ip;
 Vendor legal entity kind;;person;
 First release;yes;2013 https://tox.chat/about.html;
 Public issue tracker;yes;https://github.com/irungentoo/toxcore/issues https://github.com/tux3/qTox/issues https://github.com/notsecure/uTox/issues;
+No past server vulnerabilities;no;https://github.com/TokTok/c-toxcore/issues/426;
