@@ -51,6 +51,9 @@ Identity not controlled by vendor;no;;
 Offline;partial;Compose or read stored messages;
 Third party clients;yes;;
 Bots available;yes;https://core.telegram.org/bots https://telegramchannels.me/bots;
+Vendor operated network inaccessible from countries;;many and changing https://en.wikipedia.org/wiki/Government_censorship_of_Telegram_Messenger;
 Good ToSDR grade;yes;B https://tosdr.org/en/service/1946;
 First release;yes;2013-08-14 https://en.wikipedia.org/wiki/Telegram_(software);
-No past client vulnerabilities;no;;surreptitious sharing https://threatpost.com/surreptitious-sharing-android-api-flaw-leaks-data-private-keys/117174/ https://words.filippo.io/dispatches/telegram-ecdh/
+No past client vulnerabilities;no;;surreptitious sharing https://threatpost.com/surreptitious-sharing-android-api-flaw-leaks-data-private-keys/117174/ https://words.filippo.io/dispatches/telegram-ecdh/ RCE https://shielder.com/blog/2021/02/hunting-for-bugs-in-telegrams-animated-stickers-remote-attack-surface/
+No past server vulnerabilities;no;https://democratic-europe.eu/2021/07/20/cryptographers-uncover-four-vulnerabilities-in-telegram/ https://en.wikipedia.org/wiki/Telegram_(software)#Security;
+No past privacy glitches;no;;https://en.wikipedia.org/wiki/Telegram_(software)#Security group chat preview leak https://twitlonger.com/show/n_1ss24a6
