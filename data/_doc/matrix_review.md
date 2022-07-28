@@ -73,6 +73,10 @@ Reasoning Why Disroot went back to XMPP in 2018:
 
 > Matrix notes - anarcat
 
+* https://www.aminda.eu/blog/english/2021/08/03/matrix-perfect-privacy-not.html#you-mentioned-privacy
+* https://www.aminda.eu/blog/english/2021/12/05/matrix-community-abuse-security-by-obscurity.html
+* https://www.aminda.eu/discuss.html#a-couple-of-words-on-protocols
+
 ## Deployment
 
 * https://sifted.eu/articles/element-germany-deal/
