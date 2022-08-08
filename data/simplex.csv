@@ -6,11 +6,11 @@ Apple iOS;yes;https://apps.apple.com/us/app/simplex-chat/id1605771084;
 Desktop;yes;termninal only https://github.com/simplex-chat/simplex-chat/releases https://github.com/simplex-chat/simplex-chat/issues/425;
 Web;no;;
 Protocol;;SMP;
-Protocol open;yes;https://github.com/simplex-chat/simplexmq/blob/master/protocol/simplex-messaging.md https://github.com/simplex-chat/simplexmq;
+Protocol open;yes;https://github.com/simplex-chat/simplexmq/blob/master/protocol/simplex-messaging.md https://github.com/simplex-chat/simplexmq https://github.com/simplex-chat/simplex-chat/blob/stable/docs/protocol/simplex-chat.md;
 Server license;yes;AGPL v3 https://github.com/simplex-chat/simplexmq/blob/master/LICENSE;
 Client license;yes;AGPL v3 https://github.com/simplex-chat/simplex-chat/blob/stable/LICENSE;
 Register without app;no;;
-Group chat;no;;
+Group chat;yes;https://github.com/simplex-chat/simplex-chat/blob/stable/blog/20220808-simplex-chat-v3.1-chat-groups.md;
 Voice calls;partial;experimental https://github.com/simplex-chat/simplex-chat/releases/tag/v2.2.0;terminal app via WebRTC in browser
 Video calls;partial;experimental https://github.com/simplex-chat/simplex-chat/releases/tag/v2.2.0;terminal app via WebRTC in browser
 Group calls;no;;
@@ -39,6 +39,7 @@ Active development;yes;;
 User can extend network with node;yes;https://github.com/simplex-chat/simplexmq#using-smp-server-and-smp-agent;
 Identity not controlled by vendor;yes;https://github.com/simplex-chat/simplex-chat/releases/tag/v2.0.0;self-hosted servers defined in the apps
 Servers required;;SMP https://github.com/simplex-chat/simplexmq#using-smp-server-and-smp-agent;
+Proxy support;yes;SOCKS https://github.com/simplex-chat/simplex-chat/blob/stable/blog/20220808-simplex-chat-v3.1-chat-groups.md;
 Bots available;partial;https://github.com/simplex-chat/simplex-chat/tree/stable/apps;few examples so far
 First release;no;2021-05-02 https://github.com/simplex-chat/simplex-chat/releases/tag/v0.2.0;
 Public issue tracker;yes;https://github.com/simplex-chat/simplex-chat/issues;
