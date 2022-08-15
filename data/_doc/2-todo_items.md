@@ -49,6 +49,7 @@ Some of these may be investigated in the future by volunteers. Others may be add
 * Status.im
 * NextCloud Talk
 * Wire
+* Quiet https://www.tryquiet.org/ https://github.com/TryQuiet/quiet
 * BeeBEEP LAN messenger https://sourceforge.net/projects/beebeep/
 * CryptoDog (Cryptocat)
 * Mumble
