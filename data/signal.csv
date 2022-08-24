@@ -32,6 +32,7 @@ Power saving;yes;;Polling without FCM https://reddit.com/r/signal/comments/ium7h
 End-to-end encryption;yes;https://support.signal.org/hc/en-us/articles/360007320391-Is-it-private-Can-I-trust-it-;
 Contact list confidential;partial;;the whole contact list in your phone is sent over to a server protected by SGX enclaves https://blog.cryptographyengineering.com/2020/07/10/a-few-thoughts-about-signals-secure-value-recovery/ https://signal.org/blog/private-contact-discovery/ https://github.com/signalapp/ContactDiscoveryService
 Reproducible builds;yes;Android https://signal.org/blog/reproducible-android/;
+Audits;yes;multiple https://community.signalusers.org/t/overview-of-third-party-security-audits/13243;
 Usage without phone number;no;;
 No-cost tier;yes;https://signal.org/donate/;
 Payment choices;;Google Pay, Apple Pay, cryptocurrency https://signal.org/donate/;
