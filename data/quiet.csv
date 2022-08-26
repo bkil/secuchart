@@ -1,0 +1,5 @@
+name;;quiet;
+Summary;;Alternative to team chats, all data syncs directly between a team's devices over Tor with no server required;
+Other Android;no;not yet https://github.com/TryQuiet/quiet/wiki/Quiet-FAQ#does-quiet-work-on-mobile;
+Apple iOS;no;not yet https://github.com/TryQuiet/quiet/wiki/Quiet-FAQ#does-quiet-work-on-mobile;
+Desktop;yes;Linux, Mac, Windows https://github.com/TryQuiet/quiet;
