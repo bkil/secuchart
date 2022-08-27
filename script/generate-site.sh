@@ -334,6 +334,20 @@ markdown2html() {
   local IN="$1"
   sed -nr "
     :loop
+    s~^\`\`\`~<pre>~
+    T no_pre
+    N
+    s~\n\`\`\`$~</pre>~
+    t p
+    s~\n~~
+    t pre
+    :pre
+    N
+    s~\n\`\`\`$~</pre>~
+    T pre
+    b p
+
+    :no_pre
     s~^=> *([^ ]*)$~<p><a href='\1' class=bl>\1</a></p>~
     t p
     s~^=> *([^ ]*) (.*)~<p><a href='\1' class=bl>\2</a></p>~
