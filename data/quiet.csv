@@ -3,3 +3,27 @@ Summary;;Alternative to team chats, all data syncs directly between a team's dev
 Other Android;no;not yet https://github.com/TryQuiet/quiet/wiki/Quiet-FAQ#does-quiet-work-on-mobile;
 Apple iOS;no;not yet https://github.com/TryQuiet/quiet/wiki/Quiet-FAQ#does-quiet-work-on-mobile;
 Desktop;yes;Linux, Mac, Windows https://github.com/TryQuiet/quiet;
+Web;no;;
+Protocol;;libp2p/IPFS;https://github.com/TryQuiet/quiet/wiki/Quiet-FAQ#what-protocol-do-peers-connect-with https://github.com/TryQuiet/quiet/wiki/Quiet-FAQ#how-does-sending-and-receiving-messages-work-in-quiet https://github.com/TryQuiet/quiet/wiki/Quiet-FAQ#how-does-sending-images-and-files-work-in-quiet
+Client license;yes;GPLv3 https://github.com/TryQuiet/quiet/blob/master/packages/desktop/LICENSE;
+Register without app;no;;
+Group chat;partial;One community/team only https://github.com/TryQuiet/quiet/wiki/Quiet-FAQ#why-doesnt-quiet-let-me-join-multiple-communities;
+File transfer;partial;https://github.com/TryQuiet/quiet/issues/836;Right now basic attachement
+Message formatting;no;;
+Emoticons in message;yes;;
+Link preview;no;;
+Inline images;yes;;
+Polls;no;;
+Reactions;no;https://github.com/TryQuiet/quiet/issues/572;
+Multiple devices;no;https://github.com/TryQuiet/quiet/issues/749;
+Remote message removal;no;https://github.com/TryQuiet/quiet/wiki/Quiet-FAQ#can-messages-be-deleted;
+Account deactivation after device compromise;no;;
+Account recovery after device compromise;partial;https://github.com/TryQuiet/quiet/wiki/Quiet-FAQ#how-do-i-regain-access-to-my-quiet-account-if-i-lose-my-device;
+End-to-end encryption;yes;https://github.com/TryQuiet/quiet/wiki/Quiet-FAQ;
+Metadata protection;partial;https://github.com/TryQuiet/quiet/wiki/Quiet-FAQ#does-quiet-have-direct-messages;
+Audits;no;https://github.com/TryQuiet/quiet/wiki/Quiet-FAQ#is-quiet-ready-for-use-in-situations-where-security-and-privacy-are-critical;
+Usage without phone number;yes;;
+Active development;yes;;
+Servers required;;Tor;https://github.com/TryQuiet/quiet/wiki/Quiet-FAQ#why-does-quiet-use-tor-do-you-really-need-anonymity-and-censorship-resistance https://github.com/TryQuiet/quiet/wiki/Quiet-FAQ#could-quiet-work-without-tor-someday
+First release;no;2022-01-25 https://github.com/TryQuiet/quiet/releases/tag/%40quiet%2Fidentity%400.1.0-alpha.0;
+Public issue tracker;yes;https://github.com/TryQuiet/quiet/issues;
