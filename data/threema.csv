@@ -1,6 +1,6 @@
 name;;Threema;
 Android Google Play;yes;;
-Android F-droid/apk;partial;apk https://shop.threema.ch/;
+Android F-droid/apk;partial;own F-Droid repository https://threema.ch/en/faq/libre_installation apk https://shop.threema.ch/; Threema Libre version in own F-Droid repository without Google services https://threema.ch/en/blog/posts/threema-libre
 Apple iOS;yes;;
 Desktop;partial;only if mobile online;
 Web;partial;only if mobile online;
