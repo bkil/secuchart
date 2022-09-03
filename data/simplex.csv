@@ -18,7 +18,7 @@ Voice messages;no;;
 File transfer;yes;https://github.com/simplex-chat/simplex-chat/blob/master/blog/20220511-simplex-chat-v2-images-files.md;
 Message formatting;partial;basic https://github.com/simplex-chat/simplex-chat/issues/307;
 Emoticons in message;no;;
-Link preview;no;;
+Link preview;partial;mobile only;User setting to generate link preview upon sending.
 Inline images;yes;https://github.com/simplex-chat/simplex-chat/blob/master/blog/20220511-simplex-chat-v2-images-files.md;mobile
 Inline videos;no;;
 Reactions;no;;
