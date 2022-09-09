@@ -31,15 +31,24 @@ Read receipts;no;only delivery receipt (mobile);
 Account deactivation after device compromise;no;;
 Account recovery after device compromise;no;;
 End-to-end encryption;yes;https://simplex.chat/#problem-explained https://github.com/simplex-chat/simplexmq/blob/master/protocol/simplex-messaging.md https://github.com/simplex-chat/simplexmq/blob/master/protocol/overview-tjr.md#encryption-primitives-used;
+E2EE keys shielded from operator;yes;https://github.com/simplex-chat/simplex-chat/blob/stable/docs/SIMPLEX.md#full-privacy-of-your-identity-profile-contacts-and-metadata https://github.com/simplex-chat/simplex-chat#privacy-technical-details-and-limitations;
+Deniability;yes;https://github.com/simplex-chat/simplex-chat#privacy-technical-details-and-limitations;
+Replay prevention;yes;https://github.com/simplex-chat/simplex-chat#privacy-technical-details-and-limitations;
 Contact list confidential;yes;https://simplex.chat/#problem-intro;
+Metadata protection;yes;https://github.com/simplex-chat/simplex-chat/blob/stable/docs/SIMPLEX.md#full-privacy-of-your-identity-profile-contacts-and-metadata;
 Perfect forward secrecy;yes;https://github.com/simplex-chat/simplexmq/blob/master/protocol/simplex-messaging.md#cryptographic-algorithms;
 Audits;no;not yet https://github.com/simplex-chat/simplex-chat;
 Usage without phone number;yes;;
+No-cost tier;yes;;
 Active development;yes;;
 User can extend network with node;yes;https://github.com/simplex-chat/simplexmq#using-smp-server-and-smp-agent;
 Identity not controlled by vendor;yes;https://github.com/simplex-chat/simplex-chat/releases/tag/v2.0.0;self-hosted servers defined in the apps
+Offline;partial;not possible add contact;
 Servers required;;SMP https://github.com/simplex-chat/simplexmq#using-smp-server-and-smp-agent;
+Network store and forward;yes;;
+IP shielded from peers;yes;https://github.com/simplex-chat/simplex-chat#privacy-technical-details-and-limitations https://github.com/simplex-chat/simplex-chat/blob/stable/blog/20220808-simplex-chat-v3.1-chat-groups.md#access-to-messaging-servers-via-tor;
 Proxy support;yes;SOCKS https://github.com/simplex-chat/simplex-chat/blob/stable/blog/20220808-simplex-chat-v3.1-chat-groups.md;
 Bots available;partial;https://github.com/simplex-chat/simplex-chat/tree/stable/apps;few examples so far
+Tor access of vendor operated network;yes;https://github.com/simplex-chat/simplex-chat/blob/stable/blog/20220808-simplex-chat-v3.1-chat-groups.md#access-to-messaging-servers-via-tor;
 First release;no;2021-05-02 https://github.com/simplex-chat/simplex-chat/releases/tag/v0.2.0;
 Public issue tracker;yes;https://github.com/simplex-chat/simplex-chat/issues;
