@@ -123,20 +123,20 @@ Programming errors occur frequently in native apps as well (be it email or other
 
 > Send email to victim
 
-- https://www.secu.ninja/2018/12/04/how-to-accidentally-find-a-xss-in-protonmail-ios-app/
+* https://www.secu.ninja/2018/12/04/how-to-accidentally-find-a-xss-in-protonmail-ios-app/
 
 > How to accidentally find a XSS in ProtonMail iOS app
 
 ```
-$body = "<html><head>"
-$body += "<title>test</title></head>"
-$body += "test`">`'><i>I</script>&lt;script&gt;alert(1)</script>testscript</i>"
-$body += "</body></html>"`
+$body = "&lt;html&gt;&lt;head&gt;"
+$body += "&lt;title&gt;test&lt;/title&gt;&lt;/head&gt;"
+$body += "test`"&gt;`'&gt;&lt;i&gt;I&lt;/script&gt;&lt;script&gt;alert(1)&lt;/script&gt;testscript&lt;/i&gt;"
+$body += "&lt;/body&gt;&lt;/html&gt;"`
 ```
 
 And neither one was HTML email - they were just plain text!
 
-- https://www.theregister.com/2014/07/07/protonmail_fail_javascript/
+* https://www.theregister.com/2014/07/07/protonmail_fail_javascript/
 
 > Vid shows how to easily hack 'anti-spy' webmail (sorry, ProtonMail)
 > Filtering evil JavaScript is tricky if you're encrypting in the browser
