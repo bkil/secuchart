@@ -21,7 +21,7 @@ gen_index() {
 
   TAB="`printf "\t"`"
   cat "$IN" |
-  while IFS="$TAB" read REPLY; do
+  while IFS="$TAB" read -r REPLY; do
     if [ "$REPLY" = "((style))" ]; then
       gen_style "$LIMITITEMS"
     elif [ "$REPLY" = "((filters))" ]; then
@@ -53,7 +53,7 @@ gen_style() {
     XMPP=""
     TELEGRAM=""
     NUM=2
-    while read IT; do
+    while read -r IT; do
       echo "style $IT" >&2
       NAME="`get_item_value "$IT" "name"`"
       cat <<EOF
@@ -98,7 +98,7 @@ EOF
   }
 
   get_doc_names |
-  while read BASE IT; do
+  while read -r BASE IT; do
     printf "#%s:not(:target) ~ #page > #v_%s,\n" "$BASE" "$BASE"
   done
 
@@ -114,11 +114,11 @@ EOF
 gen_templated_static_style() {
   TAB="`printf "\t"`"
   cat "$WEB/static.css" |
-  while IFS="$TAB" read REPLY; do
+  while IFS="$TAB" read -r REPLY; do
     case $REPLY in
       *TEMPLATE_PERSONA*)
         get_all_persona |
-        while read P; do
+        while read -r P; do
           printf "%s\n" "$REPLY" |
           sed "s~TEMPLATE_PERSONA~$P~g"
         done
@@ -142,12 +142,12 @@ gen_spans() {
     echo "documentation"
     get_doc_names
   } |
-  while read BASE IT; do
+  while read -r BASE IT; do
     echo "<span id=$BASE class=c_documentation></span>"
   done
 
   get_items "$LIMITITEMS" |
-  while read IT; do
+  while read -r IT; do
     echo "<span id=$IT></span>"
   done
 
@@ -168,7 +168,7 @@ gen_filters() {
     p
     :e
   " "$TMP" |
-  while read TYPE ID; do
+  while read -r TYPE ID; do
     if [ "$TYPE" = "radio" ]; then
     cat << EOF
 [for="$ID"]::before { content: "(.) " }
@@ -208,7 +208,7 @@ gen_filters_core() {
 EOF
 
   get_all_persona |
-  while read P; do
+  while read -r P; do
     printf "<input type=radio id=%s name=u>\n" "$P"
   done
 
@@ -221,7 +221,7 @@ EOF
 EOF
 
   get_items "$LIMITITEMS" |
-  while read IT; do
+  while read -r IT; do
     printf "<input type=checkbox id=_%s class=C>\n" "$IT"
   done
 
@@ -265,7 +265,7 @@ EOF
 EOF
 
   get_all_persona |
-  while read P; do
+  while read -r P; do
     printf "<label for=%s>%s</label>\n" "$P" "$P"
   done
 
@@ -280,7 +280,7 @@ EOF
 EOF
 
   get_items "$LIMITITEMS" |
-  while read IT; do
+  while read -r IT; do
     NAME="`get_prop_value "$(get_item_prop "$IT" "name")"`"
     printf "<label for=_%s class=C>%s</label>\n" "$IT" "$NAME"
   done
@@ -290,7 +290,7 @@ EOF
 EOF
 
   get_items "$LIMITITEMS" |
-  while read IT; do
+  while read -r IT; do
     printf "<a href=#%s class='P il' id=a_%s>Permalink #%s</a>\n" "$IT" "$IT" "$IT"
   done
 
@@ -307,7 +307,7 @@ gen_articles() {
 EOF
 
   get_doc_names |
-  while read BASE IT; do
+  while read -r BASE IT; do
     local CHART="$DATA/`echo "$IT" | sed "s/_review$//"`.csv"
     [ -f "$CHART" ] && continue
     local DOC="$DATA/_doc/$IT.md"
@@ -321,7 +321,7 @@ EOF
 EOF
 
   get_doc_names |
-  while read BASE IT; do
+  while read -r BASE IT; do
     echo ""
     printf "<div class=documentation id=v_%s>\n" "$BASE"
     markdown2html "$DATA/_doc/$IT.md"
@@ -440,7 +440,7 @@ gen_table() {
       t semi_to_space
       s~;+$~~
     " |
-    while IFS=";" read K V PERSONA; do
+    while IFS=";" read -r K V PERSONA; do
       if [ -z "$K" ]; then
         printf "<tr class=section>\n <th class=th-sect>%s%s\n\n" "$V" "$COLSPAN"
       else
@@ -566,7 +566,7 @@ print_items() {
   [ "$ISHEAD" = 1 ] && ADDTAG="th"
 
   get_items "$LIMITITEMS" |
-  while read IT; do
+  while read -r IT; do
     PROP="`get_item_prop "$IT" "$FINDKEY"`"
 
     [ "$ISHEAD" = 1 ] &&  [ -z "$PROP" ] && PROP="$FINDKEY"
