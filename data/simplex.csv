@@ -48,7 +48,7 @@ Servers required;;SMP https://github.com/simplex-chat/simplexmq#using-smp-server
 Network store and forward;yes;;
 IP shielded from peers;yes;https://github.com/simplex-chat/simplex-chat#privacy-technical-details-and-limitations https://github.com/simplex-chat/simplex-chat/blob/stable/blog/20220808-simplex-chat-v3.1-chat-groups.md#access-to-messaging-servers-via-tor;
 Proxy support;yes;SOCKS https://github.com/simplex-chat/simplex-chat/blob/stable/blog/20220808-simplex-chat-v3.1-chat-groups.md;
-Bots available;partial;https://github.com/simplex-chat/simplex-chat/tree/stable/apps;few examples so far
+Bots available;partial;https://github.com/simplex-chat/simplex-chat/tree/stable/apps https://github.com/simplex-chat/simplex-chat/pull/1036;few examples so far
 Tor access of vendor operated network;yes;https://github.com/simplex-chat/simplex-chat/blob/stable/blog/20220808-simplex-chat-v3.1-chat-groups.md#access-to-messaging-servers-via-tor;
 First release;no;2021-05-02 https://github.com/simplex-chat/simplex-chat/releases/tag/v0.2.0;
 Public issue tracker;yes;https://github.com/simplex-chat/simplex-chat/issues;
