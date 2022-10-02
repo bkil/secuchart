@@ -41,3 +41,4 @@ Bots available;yes;https://matrix.org/bots/;
 Good ToSDR grade;yes;A https://tosdr.org/en/service/3388;
 First release;yes;2019-07-11 https://github.com/SchildiChat/SchildiChat-android/releases/tag/v0.1.0;
 Public issue tracker;yes;https://github.com/SchildiChat/SchildiChat-android/issues https://github.com/SchildiChat/schildichat-desktop/issues;
+No past client vulnerabilities;no;not exploited in the wild https://matrix.org/blog/2022/09/28/upgrade-now-to-address-encryption-vulns-in-matrix-sdks-and-clients https://nebuchadnezzar-megolm.github.io/;
