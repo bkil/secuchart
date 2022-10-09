@@ -1,7 +1,7 @@
 name;;Session;
 Summary;;Signal fork, no phone numbers;
 Android Google Play;yes;https://play.google.com/store/apps/details?id=network.loki.messenger;
-Android F-droid/apk;yes;https://fdroid.getsession.org/ https://github.com/oxen-io/session-android/releases;
+Android F-droid/apk;yes;https://f-droid.org/en/packages/network.loki.messenger.fdroid/ https://fdroid.getsession.org/ https://github.com/oxen-io/session-android/releases;
 Apple iOS;yes;https://apps.apple.com/us/app/session-private-messenger/id1470168868;
 Desktop;yes;Linux and Windows https://github.com/oxen-io/session-desktop/releases;
 Web;no;;

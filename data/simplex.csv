@@ -1,7 +1,7 @@
 name;;SimpleX Chat;
 Summary;;https://simplex.chat/;
 Android Google Play;yes;https://play.google.com/store/apps/details?id=chat.simplex.app;
-Android F-droid/apk;yes;https://app.simplex.chat/;
+Android F-droid/apk;partial;https://app.simplex.chat/;
 Apple iOS;yes;https://apps.apple.com/us/app/simplex-chat/id1605771084;
 Desktop;yes;termninal only https://github.com/simplex-chat/simplex-chat/releases https://github.com/simplex-chat/simplex-chat/issues/425;
 Web;no;;

@@ -1,6 +1,6 @@
 name;;PyBitmessage;
 Android Google Play;no;https://wiki.bitmessage.org/;
-Android F-droid/apk;yes;2018;https://github.com/Dissem/Abit https://github.com/Bitmessage/PyBitmessage/blob/v0.6/buildscripts/androiddev.sh beta, requires server
+Android F-droid/apk;partial;2018;https://github.com/Dissem/Abit https://github.com/Bitmessage/PyBitmessage/blob/v0.6/buildscripts/androiddev.sh beta, requires server
 Other mobile;no;https://wiki.bitmessage.org/;
 Apple iOS;no;https://wiki.bitmessage.org/;
 Desktop;yes;2018 OS X, Windows https://github.com/Bitmessage/PyBitmessage/releases Linux https://wiki.bitmessage.org/index.php/Compiling_instructions;AppImage in the future https://github.com/Bitmessage/PyBitmessage/blob/v0.6/buildscripts/appimage.sh
