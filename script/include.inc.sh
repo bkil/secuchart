@@ -2,6 +2,7 @@
 #!/bin/sh
 O="`dirname "$0"`"
 DATA="$O/../data"
+DIST="$O/../dist"
 
 process_slugs() {
   FUN="$1"
@@ -164,4 +165,13 @@ is_colorless_property() {
 
 get_all_persona() {
   cat "$DATA/_persona.csv"
+}
+
+get_items() {
+  if [ -n "$1" ]; then
+    echo "$1" |
+    sed -r "s~ +~\n~g"
+  else
+    cat "$ITEMS"
+  fi
 }

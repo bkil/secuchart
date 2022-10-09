@@ -5,7 +5,6 @@ set -e
 
 main() {
   LIMITITEMS="$*"
-  DIST="$O/../dist"
   WEB="$O/../web"
   ITEMS="$DATA/_items.csv"
 
@@ -583,16 +582,6 @@ print_items() {
     printf " <%s%s>%s</%s>\n" "$ADDTAG" "$ATTR" "$VALUE" "$ADDTAG"
   done
   echo ""
-}
-
-get_items() {
-  LIMITITEMS="$1"
-  if [ -n "$LIMITITEMS" ]; then
-    echo "$LIMITITEMS" |
-    sed -r "s~ +~\n~g"
-  else
-    cat "$ITEMS"
-  fi
 }
 
 main "$@"
