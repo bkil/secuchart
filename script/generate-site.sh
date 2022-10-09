@@ -476,7 +476,12 @@ get_item_prop() {
   else
     DE="$DATA/$ITEMNAME.csv"
     [ -f "$DE" ] || { echo "error: missing $DE" >&2; exit 1; }
-    grep -m1 "^${FINDKEY};" "$DE" |
+
+    {
+      cat "$DE"
+      cat "$DATA/cache/$ITEMNAME.csv" 2>/dev/null
+    } |
+    grep -m1 "^${FINDKEY};" |
     cut -d';' -s -f 2-
   fi
 }
