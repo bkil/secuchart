@@ -40,6 +40,7 @@ Typing indication;partial;cannot be disabled https://bugs.telegram.org/c/991;
 Read receipts;yes;https://telegram.org/faq#q-what-do-the-check-marks-mean;
 Receipts not mandatory;no;;
 Themes;yes;https://telegram.org/blog/android-themes;full customization
+Spam protection;partial;limiting messaging non-contacts;https://telegram.org/faq#can-39t-send-messages-to-non-contacts
 Account deactivation after device compromise;partial;Only for secondary devices;
 End-to-end encryption;partial;Only for 1:1 secret chats (not default) on mobile https://telegram.org/faq#q-how-are-secret-chats-different;
 Reproducible builds;yes;iOS, Android https://core.telegram.org/reproducible-builds;
@@ -49,9 +50,13 @@ Active development;yes;;
 User can extend network with node;no;;
 Identity not controlled by vendor;no;;
 Offline;partial;Compose or read stored messages;
+Servers required;;FCM;
+Servers optional;;Google voice-to-text, Translate, Login;https://telegram.org/privacy#8-5-transcription-of-voice-messages-at-the-request-of-the-user https://telegram.org/privacy#8-4-translation-of-messages-at-the-request-of-the-user
 Third party clients;yes;;
 Bots available;yes;https://core.telegram.org/bots https://telegramchannels.me/bots;
 Vendor operated network inaccessible from countries;;many and changing https://en.wikipedia.org/wiki/Government_censorship_of_Telegram_Messenger;
+Infrastructure jurisdiction;;Netherlands, USA, Singapore;Netherlands for UK/EEA https://telegram.org/privacy#4-1-storing-data USA, Singapore https://docs.pyrogram.org/faq/what-are-the-ip-addresses-of-telegram-data-centers Maybe UK as a proxy https://reddit.com/r/Telegram/comments/q81kg8/where_are_telegrams_data_centers/
+Infrastructure provider;;dedicated within data center & unknown;dedicated servers within a shared data center for UK/EEA, unknown otherwise
 Good ToSDR grade;yes;B https://tosdr.org/en/service/1946;
 First release;yes;2013-08-14 https://en.wikipedia.org/wiki/Telegram_(software);
 No past client vulnerabilities;no;;surreptitious sharing https://threatpost.com/surreptitious-sharing-android-api-flaw-leaks-data-private-keys/117174/ https://words.filippo.io/dispatches/telegram-ecdh/ RCE https://shielder.com/blog/2021/02/hunting-for-bugs-in-telegrams-animated-stickers-remote-attack-surface/
