@@ -30,7 +30,7 @@ enrich_metadata() {
     {
       read RELEASE ANDROID
       [ -n "$RELEASE" ] && [ -n "$ANDROID" ] &&
-        printf "F-droid version;;%s on Android %s\n" "$RELEASE" "$ANDROID" >> "$OUT"
+        printf "F-droid version;;%s (Android %s+)\n" "$RELEASE" "$ANDROID" >> "$OUT"
     }
   fi
 }
@@ -49,7 +49,7 @@ download_fdroid_metadata() {
 
   if ! [ -f "$HTML" ]; then
     curl \
-      -A "get-api-versions.sh/0.1 (https://github.com/bkil/secuchart)" \
+      -A "enrich-metadata.sh/0.1 (https://github.com/bkil/secuchart)" \
       "$URL" > "$HTML"
     sleep 1
   fi
