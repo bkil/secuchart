@@ -36,7 +36,7 @@ enrich_metadata() {
 }
 
 find_fdroid_url() {
-  grep -Eo -m1 "https://f-droid.org/([^/]{2,}/)?packages/.*" "$@" 2>/dev/null |
+  grep -Eo -m1 "https://f-droid.org/([^/; ]{2,}/)?packages/.*" "$@" 2>/dev/null |
   grep -o "^[^; ]*"
 }
 
