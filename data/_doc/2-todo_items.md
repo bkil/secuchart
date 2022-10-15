@@ -14,7 +14,7 @@ Some of these may be investigated in the future by volunteers. Others may be add
 * 260M Viber
 * XMPP Siskin
 * XMPP ejabberd https://www.process-one.net/en/ejabberd/protocols/
-* XMPP Prosody IM (Snikket) https://github.com/bjc/prosody/blob/master/doc/doap.xml
+* XMPP Prosody IM (Snikket) https://github.com/bjc/prosody/blob/master/doc/doap.xml https://f-droid.org/en/packages/org.snikket.android/
 * Microsoft Teams
 * iMessage
 * Google Hangouts/Meet
@@ -46,7 +46,7 @@ Some of these may be investigated in the future by volunteers. Others may be add
 * XMPP aTalk
 * XMPP monocles (Conversations and blabber.im fork) https://f-droid.org/en/packages/de.monocles.chat/
 * Rocket.Chat
-* Status.im
+* Status.im https://f-droid.org/en/packages/im.status.ethereum
 * NextCloud Talk
 * Wire
 * Quiet https://www.tryquiet.org/ https://github.com/TryQuiet/quiet
@@ -133,3 +133,4 @@ Some of these may be investigated in the future by volunteers. Others may be add
 * Mesh router https://github.com/markqvist/Sideband https://github.com/markqvist/lxmf https://github.com/markqvist/reticulum
 * https://github.com/harmony-development
 * https://github.com/nostr-protocol/nostr
+* Meshenger VoIP LAN https://f-droid.org/en/packages/d.d.meshenger/
