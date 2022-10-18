@@ -94,6 +94,8 @@ See also the Holepunch BitTorrent extension:
 
 https://www.bittorrent.org/beps/bep_0055.html
 
+It could also be implemented as a supernode feature - built into the default client so nodes with publicly routable address could volunteer automatically.
+
 ## Friend-to-Friend topology
 
 Existing messengers advertised as P2P always use a supporting underlying network of dedicated servers that are pretty expensive to maintain, hence why 90% of the new alternatives that pop up always involve a cryptocurrency for monetization.
@@ -121,7 +123,7 @@ But nothing would keep a hypothetical real P2P network from building up a spanni
 
 Skype did it decades ago with automatic super node promotion, but I have yet to find another messenger (or data sync or social networking service solution) that is capable of anything like that.
 
-The basic design flaw of many messengers is that the only way to reach users who are not publicly routable is through relays, and only a few nodes are TCP relays (optional setting) a lot like if it went over TURN. Rather, this should be the default (and detected during runtime even), and it should be modelled after ICE - select between STUN alternatives and only resort back to something like TURN if there is no solution otherwise. This would reduce the load on relays tenfold at least.
+The basic design flaw of many messengers is that the only way to reach users who are not publicly routable is through relays, and only a few nodes are TCP relays (optional setting) a lot like if it went over TURN. Rather, this should be the default (and detected during runtime even), and it should be modelled after ICE - select between STUN alternatives and only resort to something like TURN if there is no solution otherwise. This would reduce the load on relays tenfold at least.
 
 ## Store and forward buffering
 
