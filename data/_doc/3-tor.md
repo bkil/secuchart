@@ -1,10 +1,12 @@
 # Tor
 
-Let's first clear up some common questions. How decentralized is Tor? Is it serverless? Can it continue to operate when its principal vendor loses interest? Can it stay operational without any financing at all?
+## Intermediaries
 
-If you use Tor or the app you sue under the hood, it first connects to 10 servers called "Directory authority nodes" to get a node list. Their IP address are hard coded in the application.
+How decentralized is Tor? Is it serverless? Can it continue to operate when its principal vendor loses interest? Can it stay operational without any financing at all?
 
-It then discovers the address of manually operated relay servers from the public Tor directory and attempts to connect to some of those.
+If you use Tor or an app uses it under the hood, it first connects to 10 servers called "Directory authority nodes" to get a node list. Their IP address are hard coded in the application. They are probably ran by the Tor Foundation.
+
+It then discovers the address of relay servers operated by select volunteers from the public Tor directory and attempts to connect to some of those.
 
 If you are using proxies or bridges, you are using even more intermediate servers:
 
@@ -15,6 +17,16 @@ If you are using proxies or bridges, you are using even more intermediate server
 If your destination lies outside the Tor network, you will also have to discover and utilize exit relays.
 
 The general latency, low offered bandwidth and the constant changing of the network topology also makes supporting voice/video calls unfeasible.
+
+## Topology
+
+The directory authority nodes can be interpreted to form a centralized high-availability core.
+
+Tor relays and exit nodes can be interpreted to be forming a closed internal federation whose services can be utilized without registration. The admittance of their operators is subject to undisclosed criteria of curation by the foundation and automated monitoring.
+
+Not all nodes are equally privileged. Your messenger is only a Tor client, while volunteers or funding is needed to run Tor relays (and other Tor servers) around the globe to keep it running. This separation precludes automatic scaling of the system by growing capacity along with an increasing user base of the client.
+
+Let's trivialize the traffic flowing towards the directory servers. The traffic volume flowing towards the few relays and exits is huge and is amplified sixfold by forming circuits. This means that there exist built-in limiting cost centers - bandwidth choke points not correlated with how many people install the messenger clients themselves.
 
 ## Attacks
 
