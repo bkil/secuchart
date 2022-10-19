@@ -1,3 +1,4 @@
 name;;aTalk;
-Android F-droid/apk;yes;https://f-droid.org/en/packages/org.atalk.android/
+Android F-droid/apk;yes;https://f-droid.org/en/packages/org.atalk.android/;
 Bots available;yes;https://github.com/topics/xmpp-bot;
+Threat model;no;;
