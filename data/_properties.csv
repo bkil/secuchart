@@ -60,6 +60,7 @@ CPU idle;no=Proof of work, partial=sluggish due to Idling too little in foregrou
 Power saving;Ensure that device wakes up as few times as possible, filters and batches events on remote side, no open sockets, delegated peer tracking;layperson;foss tinfoil;
 Bandwidth frugal;Conservation by lazy loading, previews, adaptive detail, incremental sync, fewer round trips, tokenization, batching transfers to improve compression, tweaked key schedule, multicasting hubs;layperson;foss tinfoil;crowd
 ;Security;;;
+Threat model;yes=maintainers have made the <a class=il href=#threat_model>#threat_model</a> accessible and/or obvious;tinfoil;layperson;
 End-to-end encryption;This is more important for closed or non-self hosted servers;tinfoil;layperson;foss
 E2EE keys shielded from operator;Regardless of this, certain OS vendors might also have access to your keys;tinfoil;layperson;foss
 Deniability;Deny sending a message, repudiability;tinfoil;;
@@ -118,4 +119,3 @@ Ethical financing in the past;no=tax evasion;foss;;
 Ethical business in the past;no=anti-trust investigations, bribes, hurting customers in other way;foss;;
 No past conflicts of interest;no=shady ownership changes, investor may benefit from breaching privacy or project failure;tinfoil;foss;
 No past privacy glitches;no=uncovered cases when vendor secretly exploited user data;tinfoil layperson;;
-Threat model;yes=maintainers have made the <a class=il href=#threat_model>#threat_model</a> accessible and/or obvious;tinfoil;layperson;
