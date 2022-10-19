@@ -6,6 +6,7 @@ Protecting yourself:
 
 Helping how to define your own "threat model":
 
+* #threat_model
 * https://ssd.eff.org/en/module/your-security-plan
 * https://medium.com/@nikitavoloboev/like-a-dog-on-a-leash-c0cdb8839079
 * https://harvardlawreview.org/2013/05/what-privacy-is-for/

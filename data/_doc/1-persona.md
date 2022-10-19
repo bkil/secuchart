@@ -21,7 +21,7 @@
 * public enemy, national threat actor, criminal
 * wouldn't trust a family member or a friend to operate a service to share with her
 * trust nobody (except developers and build system operators and their significant others, their own circles of social networking influence, the hardware manufacturer, their infrastructure provider)
-* attempts to shield against all previously published theoretical threats, regardless of a cohesive threat model
+* attempts to shield against all previously published theoretical threats, regardless of a cohesive threat model (which every app, program, device, etc, must have)
 * Actors with a bad reputation should be boycotted, but otherwise it doesn't matter who runs the show in the given year - if one opportunity closes down, just try to find another one.
 
 ## layperson
