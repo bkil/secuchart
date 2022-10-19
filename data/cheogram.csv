@@ -12,8 +12,12 @@ Group chat;yes;;
 Voice calls;yes;;
 Video calls;yes;;
 Group calls;no;;
+Voice messages;yes;;
 File transfer;yes;;
+Message formatting;yes;;
+Emoticons in message;yes;;
 Emoji composer;no;;
+Emoji reception;yes;;
 Link preview;no;;
 Inline images;yes;https://f-droid.org/repo/com.cheogram.android/en-US/phoneScreenshots/conversation.png https://git.singpolyma.net/cheogram-android/refs/2.10.3-1;
 Inline videos;yes;https://git.singpolyma.net/cheogram-android/refs/2.10.3-1;
@@ -21,23 +25,33 @@ Polls;no;;
 Reactions;no;;
 Multiple devices;yes;;
 Multiple accounts;yes;;
-Remote message removal;no;;
-Remote message correction;no;;
+Remote message removal;yes;;
+Remote message correction;yes;;
 Message expiration;no;;
 Presence status;yes;;
 Typing indication;yes;can be disabled https://bkil.gitlab.io/secuchart-assets/screenshots/cheogram/v2.10.3_settings.jpg;
 Read receipts;yes;https://bkil.gitlab.io/secuchart-assets/screenshots/cheogram/v2.10.3_settings.jpg;
 Receipts not mandatory;yes;https://bkil.gitlab.io/secuchart-assets/screenshots/cheogram/v2.10.3_settings.jpg;
 Themes;partial;https://bkil.gitlab.io/secuchart-assets/screenshots/cheogram/v2.10.3_settings_theme.jpg;
+Vendor can't curate content;yes;;
+Spam protection;yes;;
 Account deactivation after device compromise;yes;;
+Account recovery after device compromise;yes;;
 End-to-end encryption;yes;XEP-0384 OMEMO https://conversations.im/omemo/;also OpenPGP
+Contact list confidential;no;Contacts are stored on the server.;Self hosting of ones own server is easy and recommended.
+Security team;partial;;While there is no dedicated security team, code reviews are in place as well as any reported vulnarabilities will be fixed ASAP.
 Usage without phone number;yes;;
+Transparent financing;yes;Funded by MBOA and JMP.chat;https://jmp.chat MBOA is the development team behind JMP and Sopranica.
+Active development;yes;;
+Multi-party development;partial;;One main developer, but contributions from others are readily accepted.
 Identity not controlled by vendor;yes;;
 Serverless WAN mode;no;;
 Serverless LAN mode;no;;XEP-0174 unimplemented in Conversations https://github.com/iNPUTmice/Conversations/issues/1415
 Network store and forward;yes;if server and contact client support XEP-0313 MAM;
 Wireless mode;no;;
 IP shielded from peers;yes;not for STUN calls;
+Proxy support;yes;;
 Bots available;yes;https://github.com/topics/xmpp-bot;
 First release;no;2022-03-15 https://git.singpolyma.net/cheogram-android/refs/2.10.3-1;
 Public issue tracker;yes;https://soprani.ca/todo;
+Support team;yes;;
