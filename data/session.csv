@@ -20,7 +20,7 @@ Multiple devices;partial;still not functioning properly;
 Multiple accounts;no;;
 Remote message removal;no;;
 Remote message correction;no;;
-Message expiration;yes;up to 7 days client side, server mirrors for 14 days;disappearing messages (local) 5 sec - 1 week options, server keeps all messages for 14 days
+Message expiration;yes;up to 7 days client side, server mirrors for 14 days;disappearing messages (local) 5 sec - 1 week options, server keeps all messages for 14 days https://getsession.org/blog/self-deleting-messages
 Typing indication;partial;does not work on desktop;shown and sent by default but can be switched off https://github.com/oxen-io/session-android/issues/728
 Spam protection;no;proof of work,unlimited account ids can be generated almost instantly;
 Account deactivation after device compromise;no;account ids are random generated 2^128 keys;
