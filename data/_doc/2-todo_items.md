@@ -4,19 +4,15 @@ Some of these may be investigated in the future by volunteers. Others may be add
 
 * SIP/SIMPLE: Linphone
 * RetroShare
-* 2000M WhatsApp
 * 1112M WeChat
 * 1300M Meta (Facebook) Messenger
 * 823M Tencent QQ
 * 700M Line
 * 350M Discord
-* 294M SnapChat
-* 260M Viber
 * XMPP Siskin
 * XMPP ejabberd https://www.process-one.net/en/ejabberd/protocols/
 * XMPP Prosody IM (Snikket) https://github.com/bjc/prosody/blob/master/doc/doap.xml https://f-droid.org/en/packages/org.snikket.android/
 * Microsoft Teams
-* iMessage
 * Google Hangouts/Meet
 * Slack
 * Secure Scuttlebutt: PatchBay desktop https://github.com/ssbc/patchbay
@@ -43,16 +39,11 @@ Some of these may be investigated in the future by volunteers. Others may be add
 * Anonymous messenger https://f-droid.org/packages/com.dx.anonymousmessenger/
 * XMPP blabber.im
 * XMPP Movim
-* XMPP aTalk
-* XMPP monocles (Conversations and blabber.im fork) https://f-droid.org/en/packages/de.monocles.chat/
 * Rocket.Chat
 * Status.im https://f-droid.org/en/packages/im.status.ethereum
 * NextCloud Talk
-* Wire
-* Quiet https://www.tryquiet.org/ https://github.com/TryQuiet/quiet
 * BeeBEEP LAN messenger https://sourceforge.net/projects/beebeep/
 * CryptoDog (Cryptocat)
-* Mumble
 * Mattermost
 * Jitsi
 * Zulip
@@ -60,7 +51,6 @@ Some of these may be investigated in the future by volunteers. Others may be add
 * Instagram
 * FaceTime
 * Zoom
-* Wickr
 * Olvid
 * SOMA
 * Hushed
@@ -76,7 +66,6 @@ Some of these may be investigated in the future by volunteers. Others may be add
 * Speek! - A Decentralized and Anonymous Messenger Utilizing Tor hidden services, file sharing https://speek.network/ https://github.com/Speek-App/Speek/blob/main/src/LICENSE implemented in C++, QML and C, based on Ricochet-Refresh https://news.ycombinator.com/item?id=30803592
 * Serval Project
 * otr.im
-* Molly.im - fork of Signal https://opencollective.com/mollyim
 * Signal FOSS https://www.twinhelix.com/apps/signal-foss/
 * IM+
 * Dust
