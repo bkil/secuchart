@@ -3,7 +3,7 @@ Summary;;Jabber/XMPP client;
 Android Google Play;no;;
 Android F-droid/apk;no;;
 Apple iOS;no;;
-Desktop;yes;Linux, FreeBSD https://github.com/dino/dino/wiki/Distribution-Packages;unsupported macOS Homebrew https://github.com/dino/dino/wiki/macOS
+Desktop;yes;Linux, FreeBSD https://github.com/dino/dino/wiki/Distribution-Packages;unsupported macOS Homebrew https://github.com/dino/dino/wiki/macOS "official unofficial" Windows client: https://github.com/dino/dino/issues/309 https://github.com/LAGonauta/dino help and bugreports: xmpp:dino-win@chat.diebesban.de?join
 Web;no;;
 Languages;yes;39 https://github.com/dino/dino/wiki/Translations;29 full, 4 medium, 6 some
 Protocol;;Jabber/XMPP;
