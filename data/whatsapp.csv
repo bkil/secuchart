@@ -41,4 +41,4 @@ Identity not controlled by vendor;no;;
 Offline;partial;Compose or read stored messages;
 Third party clients;no;banned https://www.newsbytesapp.com/news/science/whatsapp-bans-use-of-third-party-apps-details-here/story;
 Good ToSDR grade;no;E https://tosdr.org/en/service/198;
-No past client vulnerabilities;no;https://census-labs.com/news/2021/04/14/whatsapp-mitd-remote-exploitation-CVE-2021-24027/;
+No past client vulnerabilities;no;;man-in-the-disk https://census-labs.com/news/2021/04/14/whatsapp-mitd-remote-exploitation-CVE-2021-24027/ geolocation by timing https://restoreprivacy.com/timing-attacks-on-whatsapp-signal-threema-reveal-user-location/

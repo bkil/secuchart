@@ -56,4 +56,4 @@ Infrastructure provider;;Amazon https://github.com/signalapp/Signal-Android/blob
 Good ToSDR grade;yes;B https://tosdr.org/en/service/528;
 First release;yes;2014-07-29 https://en.wikipedia.org/wiki/Signal_(software);
 Public issue tracker;yes;https://github.com/signalapp/Signal-Desktop/issues https://github.com/signalapp/Signal-Android/issues https://github.com/signalapp/Signal-iOS/issues;
-No past client vulnerabilities;no;;remote listening https://adware.guru/signal-vulnerability-spying-on-users/ surreptitious sharing https://threatpost.com/surreptitious-sharing-android-api-flaw-leaks-data-private-keys/117174/
+No past client vulnerabilities;no;;remote listening https://adware.guru/signal-vulnerability-spying-on-users/ surreptitious sharing https://threatpost.com/surreptitious-sharing-android-api-flaw-leaks-data-private-keys/117174/ geolocation by timing https://restoreprivacy.com/timing-attacks-on-whatsapp-signal-threema-reveal-user-location/
