@@ -33,6 +33,7 @@ Read receipts;no;only delivery receipt;
 Spam protection;partial;https://docs.openprivacy.ca/cwtch-security-handbook/ui.html?highlight=spam#denial-of-service-through-spamming;Could result in an increase in network bandwidth which may be intolerable or undesired for many people - especially those on metered connections
 Account deactivation after device compromise;no;;
 Account recovery after device compromise;no;;
+Threat model;yes;https://docs.openprivacy.ca/cwtch-security-handbook/risk.html;
 End-to-end encryption;yes;Profiles are stored locally on disk and encrypted https://docs.openprivacy.ca/cwtch-security-handbook/profile_encryption_and_storage.html;
 Metadata protection;yes;https://docs.openprivacy.ca/cwtch-security-handbook/risk.html?highlight=metadata#threat-model;
 Perfect forward secrecy;partial;1-1 yes https://docs.openprivacy.ca/cwtch-security-handbook/authentication_protocol.html groups no https://docs.openprivacy.ca/cwtch-security-handbook/groups.html;
