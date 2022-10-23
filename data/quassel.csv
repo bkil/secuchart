@@ -22,6 +22,7 @@ Presence not mandatory;yes;;Standard IRC protocol status
 Typing indication;no;;
 Read receipts;no;;
 Account deactivation after device compromise;yes;;
+Disallow screenshots;no;;
 End-to-end encryption;no;;
 Deniability;no;;
 Metadata protection;no;;
