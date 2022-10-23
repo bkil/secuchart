@@ -22,6 +22,7 @@ Read receipts;yes;;
 Receipts not mandatory;no;;
 Account deactivation after device compromise;yes;;
 Account recovery after device compromise;yes;;
+Disallow screenshots;no;;
 End-to-end encryption;yes;https://matrix.org/faq/#which-matrix-clients-support-e2e;
 Usage without phone number;yes;;
 Identity not controlled by vendor;yes;;

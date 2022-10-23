@@ -20,6 +20,7 @@ Multiple accounts;yes;https://dino.im/blog/2020/01/dino-0.1-release/;
 Remote message correction;partial;last message https://dino.im/blog/2020/11/dino-0.2-release/;
 Message expiration;no;;
 Account deactivation after device compromise;yes;;
+Disallow screenshots;no;;
 End-to-end encryption;yes;XEP-0384 OMEMO https://github.com/dino/dino/wiki/Supported-XEPs;also OpenPGP
 Usage without phone number;yes;;
 Active development;yes;https://github.com/dino/dino/commits/master;

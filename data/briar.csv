@@ -37,6 +37,7 @@ Read receipts;no;only delivery receipt https://code.briarproject.org/briar/briar
 Themes;partial;https://briarproject.org/news/2018-briar-1.1-released/;light/dark
 Account deactivation after device compromise;no;;
 Account recovery after device compromise;no;https://code.briarproject.org/briar/briar/-/wikis/FAQ#how-do-i-backup-my-account;
+Disallow screenshots;yes;Android https://code.briarproject.org/briar/briar/-/issues/2310;
 Threat model;yes;https://code.briarproject.org/briar/briar/-/wikis/threat-model;
 End-to-end encryption;yes;https://briarproject.org/how-it-works/;
 Deniability;yes;https://briarproject.org/raw/BRP-01-report.pdf;

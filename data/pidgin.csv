@@ -16,6 +16,7 @@ Multiple accounts;yes;;
 Message expiration;no;;
 Presence status;yes;;
 Account deactivation after device compromise;yes;;
+Disallow screenshots;no;;
 End-to-end encryption;partial;some protocols;
 Security team;no;lacking security tagging https://issues.imfreedom.org/issues/PIDGIN;blog contained advisories between 2004-2017 https://pidgin.im/about/security/advisories/
 Usage without phone number;yes;;
