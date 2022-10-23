@@ -18,19 +18,21 @@ Group calls;partial;via embedding jitsi, talky.io, appear.in https://delta.chat/
 Voice messages;yes;https://delta.chat/en/2018-02-27-delta-chat-0.15.0-voice-messages;
 Emoticons in message;yes;;
 Sticker packs;yes;with EweStickers from F-Droid;https://delta.chat/en/2021-11-17-releases#all-that-you-say-could-be-true-what-else
-Polls;yes;via webxdc;https://webxdc.org/
+Polls;yes;via webxdc;https://webxdc.org/ https://github.com/webxdc/poll
 Read public content without registering;partial;;online public mailing list archives
 Multiple devices;yes;https://delta.chat/en/help#can-i-use-delta-chat-on-multiple-devices-at-the-same-time;
 Multiple accounts;yes;https://delta.chat/en/2021-08-24-updates#multi-account-added-or-improved;
 Remote message removal;no;https://support.delta.chat/t/retract-edit-sent-messages/1918/7;
 Remote message correction;no;https://support.delta.chat/t/retract-edit-sent-messages/1918/7;
 Message expiration;yes;https://delta.chat/en/2020-07-30-summer-update#disappearing-messages;
+Presence status;partial;simulated last message + 10m;https://github.com/deltachat/deltachat-android/blob/35f16c80aced4c7f07565bfd0379b2cebb47ce10/CHANGELOG.md#user-content-v1340 https://github.com/deltachat/deltachat-core-rust/blob/434e53e922a49f348856b665d70eebda2645d5ce/src/receive_imf.rs#L201
 Spam protection;yes;standard email filters, hides non-contact https://delta.chat/en/help#what-are-the-advantages-of-delta-chat-compared-to-other-messengers;
 Account deactivation after device compromise;partial;;probably manually by a revocation certificate and with the help of the mailbox provider
 Account recovery after device compromise;partial;;probably manually by revocation, mailbox provider help, generating new keys and verifying all contacts again
 CPU idle;yes;;
 Power saving;partial;IMAP IDLE keeps a socket open;
 Bandwidth frugal;partial;group messages are unicast;should use selective IMAP fetches and compression
+Disallow screenshots;partial;only for yourself https://github.com/deltachat/deltachat-android/blob/7d13b71b0b6c9e44bf01050773986356dbeaccbc/src/org/thoughtcrime/securesms/BaseActionBarActivity.java#L52 https://github.com/deltachat/deltachat-android/blob/829bb4ea6c9aa727da297691e4c23a473af06a22/res/values/strings.xml#L572;
 End-to-end encryption;yes;https://delta.chat/en/help#does-delta-chat-support-end-to-end-encryption;
 E2EE keys shielded from operator;yes;https://delta.chat/en/help#does-delta-chat-support-end-to-end-encryption;
 Deniability;no;;https://nixfaq.org/2020/09/delta-chat-a-libre-decentralized-chat-over-email-end-to-end-encrypted-messaging-solution.html DKIM and received mail headers reduce feasibility

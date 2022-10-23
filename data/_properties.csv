@@ -59,6 +59,7 @@ Account recovery after device compromise;Solvable with centralized or federated 
 CPU idle;no=Proof of work, partial=sluggish due to Idling too little in foreground or measurable amount of processing in background, yes=otherwise;layperson;foss tinfoil;
 Power saving;Ensure that device wakes up as few times as possible, filters and batches events on remote side, no open sockets, delegated peer tracking;layperson;foss tinfoil;
 Bandwidth frugal;Conservation by lazy loading, previews, adaptive detail, incremental sync, fewer round trips, tokenization, batching transfers to improve compression, tweaked key schedule, multicasting hubs;layperson;foss tinfoil;crowd
+Disallow screenshots;partial=Only for yourself, yes=Ask peers to not take screenshots of message or conversation. Also called screen security;;layperson;
 ;Security;;;
 Threat model;yes=maintainers have made the <a class=il href=#threat_model>#threat_model</a> accessible and/or obvious;tinfoil;layperson;
 End-to-end encryption;This is more important for closed or non-self hosted servers;tinfoil;layperson;foss
