@@ -37,6 +37,7 @@ Vendor can't curate content;yes;;
 Spam protection;yes;;
 Account deactivation after device compromise;yes;;
 Account recovery after device compromise;yes;;
+Threat model;yes;https://blog.jmp.chat/b/2022-privacy-threat-modelling https://jmp.chat/privacy;
 End-to-end encryption;yes;XEP-0384 OMEMO https://conversations.im/omemo/;also OpenPGP
 Contact list confidential;no;Contacts are stored on the server.;Self hosting of ones own server is easy and recommended.
 Security team;partial;;While there is no dedicated security team, code reviews are in place as well as any reported vulnarabilities will be fixed ASAP.
@@ -55,4 +56,3 @@ Bots available;yes;https://github.com/topics/xmpp-bot;
 First release;no;2022-03-15 https://git.singpolyma.net/cheogram-android/refs/2.10.3-1;
 Public issue tracker;yes;https://soprani.ca/todo;
 Support team;yes;;
-Threat model;yes;https://blog.jmp.chat/b/2022-privacy-threat-modelling https://jmp.chat/privacy;
