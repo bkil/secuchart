@@ -48,6 +48,7 @@ Vendor can't curate content;yes;self-hosting;
 Spam protection;partial;;provided through third-party tools, such as Mjolnir: https://github.com/matrix-org/mjolnir
 Account deactivation after device compromise;yes;with second device or Web or Desktop;
 Account recovery after device compromise;yes;with second device or Web or Desktop;
+Disallow screenshots;partial;only for yourself https://github.com/vector-im/element-android/issues/1027 https://github.com/vector-im/element-ios/issues/4359;
 End-to-end encryption;yes;https://matrix.org/faq/#which-matrix-clients-support-e2e;
 Metadata protection;no;;
 Perfect forward secrecy;partial;1-on-1 yes, groups partial;yes for 1-on-1 conversations. partial for group conversations https://www.nccgroup.com/globalassets/our-research/us/public-reports/2016/november/ncc_group_olm_cryptogrpahic_review_2016_11_01.pdf

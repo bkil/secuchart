@@ -27,6 +27,7 @@ Receipts not mandatory;no;can be hidden on client only;
 Themes;yes;https://bkil.gitlab.io/secuchart-assets/screenshots/schildichat/v_1.4.4_settings_themes.jpg https://bkil.gitlab.io/secuchart-assets/screenshots/schildichat/v_1.4.4_settings_themes_advanced.jpg https://bkil.gitlab.io/secuchart-assets/screenshots/schildichat/v_1.4.4_settings_themes_bubbles.jpg;light, dark, AMOLED, accent color, message bubbles
 Account deactivation after device compromise;yes;;
 Account recovery after device compromise;yes;;
+Disallow screenshots;partial;only for yourself https://github.com/vector-im/element-android/issues/1027 https://github.com/vector-im/element-ios/issues/4359;
 End-to-end encryption;yes;https://matrix.org/faq/#which-matrix-clients-support-e2e;
 Reproducible builds;no;https://github.com/vector-im/element-web/issues/11848;
 Usage without phone number;yes;;
