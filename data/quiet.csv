@@ -19,6 +19,7 @@ Multiple devices;no;https://github.com/TryQuiet/quiet/issues/749;
 Remote message removal;no;https://github.com/TryQuiet/quiet/wiki/Quiet-FAQ#can-messages-be-deleted;
 Account deactivation after device compromise;no;;
 Account recovery after device compromise;partial;https://github.com/TryQuiet/quiet/wiki/Quiet-FAQ#how-do-i-regain-access-to-my-quiet-account-if-i-lose-my-device;
+Threat model;yes;https://github.com/TryQuiet/quiet/wiki/Threat-Model;
 End-to-end encryption;yes;https://github.com/TryQuiet/quiet/wiki/Quiet-FAQ;
 Metadata protection;partial;https://github.com/TryQuiet/quiet/wiki/Quiet-FAQ#does-quiet-have-direct-messages;
 Audits;no;https://github.com/TryQuiet/quiet/wiki/Quiet-FAQ#is-quiet-ready-for-use-in-situations-where-security-and-privacy-are-critical;
