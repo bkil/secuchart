@@ -1,4 +1,5 @@
 name;;Telegram;
+Summary;;Chat, calls and in-app blogging platform with opt-in E2EE https://telegram.org/;Client is open source, server is not. E2E encryption isn't enabled by default
 Android Google Play;yes;https://play.google.com/store/apps/details?id=org.telegram.messenger;
 Android F-droid/apk;no;;
 Apple iOS;yes;https://apps.apple.com/us/app/telegram-messenger/id686449807;

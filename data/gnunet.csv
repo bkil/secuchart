@@ -1,5 +1,5 @@
 name;;GNUnet Messenger-GTK;
-Summary;;Convergent GTK messaging application using the GNUnet Messenger service.;Early alpha stage. In development. Not ready for usage beyond developers. "The goal is to provide private and secure communication between any group of devices." https://www.gnunet.org/en/applications.html 2022-05 https://www.gnunet.org/en/news/2022-05-messenger-gtk-0.7.0.html
+Summary;;Convergent GTK messaging application using the GNUnet Messenger service. https://www.gnunet.org/en/applications.html;Early alpha stage. In development. Not ready for usage beyond developers. "The goal is to provide private and secure communication between any group of devices." https://www.gnunet.org/en/applications.html 2022-05 https://www.gnunet.org/en/news/2022-05-messenger-gtk-0.7.0.html
 Screenshots;;https://flathub.org/apps/details/org.gnunet.Messenger;
 Android Google Play;no;;
 Android F-droid/apk;no;;
