@@ -1,5 +1,5 @@
 name;;Telegram FOSS;
-Summary;;FOSS-friendly soft fork of Telegram Android;
+Summary;;FOSS-friendly soft fork of Telegram Android https://github.com/Telegram-FOSS-Team/Telegram-FOSS;
 Android Google Play;no;;
 Android F-droid/apk;yes;https://f-droid.org/en/packages/org.telegram.messenger/;
 Apple iOS;no;;

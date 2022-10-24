@@ -1,5 +1,5 @@
 name;;Session;
-Summary;;Signal fork, no phone numbers;
+Summary;;Signal fork, no phone numbers, onion-like routing through "oxen network" https://getsession.org/;oxen network https://oxen.io/ Lokinet onion router https://lokinet.org/ overview in FAQ https://getsession.org/faq#onion-routing
 Android Google Play;yes;https://play.google.com/store/apps/details?id=network.loki.messenger;
 Android F-droid/apk;yes;https://f-droid.org/en/packages/network.loki.messenger.fdroid/ https://fdroid.getsession.org/ https://github.com/oxen-io/session-android/releases;
 Apple iOS;yes;https://apps.apple.com/us/app/session-private-messenger/id1470168868;

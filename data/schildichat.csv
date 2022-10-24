@@ -1,5 +1,5 @@
 name;;SchildiChat;
-Summary;;Element with classic look;soft fork with message bubbles, unified chat list, bigger room list items https://github.com/SchildiChat/schildichat-desktop#user-content-schildichat-webdesktop
+Summary;;Matrix client, soft fork of Element with classic look https://schildi.chat/;soft fork with message bubbles, unified chat list, bigger room list items https://github.com/SchildiChat/schildichat-desktop#user-content-schildichat-webdesktop
 Android Google Play;yes;https://play.google.com/store/apps/details?id=de.spiritcroc.riotx;
 Android F-droid/apk;yes;https://f-droid.org/en/packages/de.spiritcroc.riotx/ https://schildi.chat/android/;
 Apple iOS;no;;

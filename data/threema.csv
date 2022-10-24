@@ -1,4 +1,5 @@
 name;;Threema;
+Summary;;Paid and proprietary end-to-end encrypted instant messaging service. https://threema.ch/;
 Android Google Play;yes;;
 Android F-droid/apk;partial;own F-Droid repository https://threema.ch/en/faq/libre_installation apk https://shop.threema.ch/;Threema Libre version in own F-Droid repository without Google services https://threema.ch/en/blog/posts/threema-libre
 Apple iOS;yes;;
