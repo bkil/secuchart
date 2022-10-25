@@ -1,5 +1,14 @@
 name;;aTalk;
 Summary;;Jabber/XMPP client for android with video calls and GPS features https://cmeng-git.github.io/atalk/;
 Android F-droid/apk;yes;https://f-droid.org/en/packages/org.atalk.android/;
+Protocol;;Jabber/XMPP;
+Protocol open;yes;;
+Client license;yes;Apache-2.0 https://github.com/cmeng-git/atalk-android/blob/master/LICENSE;
+Register without app;yes;;
 Threat model;no;;
+End-to-end encryption;yes;https://cmeng-git.github.io/atalk/index.html;End-to-End encryption with OMEMO or OTR
+Active development;yes;;
+Identity not controlled by vendor;yes;;
 Bots available;yes;https://github.com/topics/xmpp-bot;
+First release;yes;2018-01-07? https://github.com/cmeng-git/atalk-android/releases/tag/1.0.1;
+Public issue tracker;yes;https://github.com/cmeng-git/atalk-android/issues;
