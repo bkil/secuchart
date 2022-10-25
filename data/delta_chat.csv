@@ -33,6 +33,7 @@ CPU idle;yes;;
 Power saving;partial;IMAP IDLE keeps a socket open;
 Bandwidth frugal;partial;group messages are unicast;should use selective IMAP fetches and compression
 Disallow screenshots;partial;only for yourself https://github.com/deltachat/deltachat-android/blob/7d13b71b0b6c9e44bf01050773986356dbeaccbc/src/org/thoughtcrime/securesms/BaseActionBarActivity.java#L52 https://github.com/deltachat/deltachat-android/blob/829bb4ea6c9aa727da297691e4c23a473af06a22/res/values/strings.xml#L572;
+Threat model;yes;https://support.delta.chat/t/security-goals-of-delta-chat/999 https://countermitm.readthedocs.io/en/latest/new.html;
 End-to-end encryption;yes;https://delta.chat/en/help#does-delta-chat-support-end-to-end-encryption;
 E2EE keys shielded from operator;yes;https://delta.chat/en/help#does-delta-chat-support-end-to-end-encryption;
 Deniability;no;;https://nixfaq.org/2020/09/delta-chat-a-libre-decentralized-chat-over-email-end-to-end-encrypted-messaging-solution.html DKIM and received mail headers reduce feasibility
