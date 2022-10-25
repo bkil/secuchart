@@ -40,6 +40,7 @@ Vendor can't curate content;yes;;
 Spam protection;partial;blocking and reporting https://book.keybase.io/privacy#blocking-and-reporting;
 Account deactivation after device compromise;yes;device revocation https://book.keybase.io/account#revoking-devices;
 Account recovery after device compromise;yes;second device or paper key https://book.keybase.io/account#adding-paper-keys;
+Threat model;yes;https://book.keybase.io/docs/crypto/kbfs;
 End-to-end encryption;yes;https://book.keybase.io/security#everything-you-store-or-share-on-keybase-is-end-to-end-encrypted;
 E2EE keys shielded from operator;yes;https://book.keybase.io/security#your-private-keys-are-only-stored-on-your-devices;
 Contact list confidential;no;;
