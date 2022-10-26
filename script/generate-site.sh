@@ -69,7 +69,7 @@ EOF
 
       SERVERLIC="`get_item_value "$IT" "Server license"`"
       CLIENTLIC="`get_item_value "$IT" "Client license"`"
-      printf '%s' "$SERVERLIC $CLIENTLIC" | grep -q "proprietary" && PROPR="$PROPR $NUM"
+      printf '%s' "$SERVERLIC $CLIENTLIC" | grep -qi "proprietary" && PROPR="$PROPR $NUM"
       PROTOCOL="`get_item_value "$IT" "Protocol"`"
       printf '%s' "$PROTOCOL" | grep -qi "\<Matrix\>" || MATRIX="$MATRIX $NUM"
       printf '%s' "$PROTOCOL" | grep -qi "\<XMPP\>" || XMPP="$XMPP $NUM"
