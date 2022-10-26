@@ -123,3 +123,4 @@ Some of these may be investigated in the future by volunteers. Others may be add
 * https://github.com/harmony-development
 * https://github.com/nostr-protocol/nostr
 * Meshenger VoIP LAN https://f-droid.org/en/packages/d.d.meshenger/
+* SafeUM
