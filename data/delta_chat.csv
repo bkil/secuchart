@@ -25,7 +25,7 @@ Multiple accounts;yes;https://delta.chat/en/2021-08-24-updates#multi-account-add
 Remote message removal;no;https://support.delta.chat/t/retract-edit-sent-messages/1918/7;
 Remote message correction;no;https://support.delta.chat/t/retract-edit-sent-messages/1918/7;
 Message expiration;yes;https://delta.chat/en/2020-07-30-summer-update#disappearing-messages;
-Presence status;partial;simulated last message + 10m;https://github.com/deltachat/deltachat-android/blob/35f16c80aced4c7f07565bfd0379b2cebb47ce10/CHANGELOG.md#user-content-v1340 https://github.com/deltachat/deltachat-core-rust/blob/434e53e922a49f348856b665d70eebda2645d5ce/src/receive_imf.rs#L201
+Presence status;partial;simulated last message + 10m;https://github.com/deltachat/deltachat-android/blob/35f16c80aced4c7f07565bfd0379b2cebb47ce10/CHANGELOG.md#user-content-v1340 https://github.com/deltachat/deltachat-core-rust/blob/434e53e922a49f348856b665d70eebda2645d5ce/src/receive_imf.rs#L201 https://support.delta.chat/t/about-the-option-to-disable-recently-online-indicator/2282
 Spam protection;yes;standard email filters, hides non-contact https://delta.chat/en/help#what-are-the-advantages-of-delta-chat-compared-to-other-messengers;
 Account deactivation after device compromise;partial;;probably manually by a revocation certificate and with the help of the mailbox provider
 Account recovery after device compromise;partial;;probably manually by revocation, mailbox provider help, generating new keys and verifying all contacts again
