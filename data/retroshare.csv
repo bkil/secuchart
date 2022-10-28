@@ -1,0 +1,11 @@
+name;;RetroShare;
+Summary;;RetroShare is a Free and Open Source cross-platform, Friend-2-Friend and secure decentralised communication platform. https://retroshare.cc/;
+Android Google Play;no;;
+Android F-droid/apk;no;;
+F-droid version;no;;
+Other mobile;no;;
+Other Android;no;;
+Apple iOS;no;;
+Desktop;yes;Windows, MacOS, Linux, FreeBSD Ports https://retroshare.cc/downloads.html;
+First release;yes;2006 https://retroshare.cc/#about;
+Public issue tracker;yes;https://github.com/RetroShare/RetroShare/issues;
