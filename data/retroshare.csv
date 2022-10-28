@@ -5,7 +5,7 @@ Android F-droid/apk;no;;
 F-droid version;no;;
 Other mobile;no;;
 Other Android;partial;https://github.com/RetroShare/retroshare-mobile https://github.com/RetroShare/RetroShare/issues/2489;
-Apple iOS;no;;
+Apple iOS;partial;https://github.com/RetroShare/retroshare-mobile https://github.com/RetroShare/RetroShare/issues/2489;
 Desktop;yes;Windows, MacOS, Linux, FreeBSD Ports https://retroshare.cc/downloads.html;
 Web;partial;https://github.com/RetroShare/RSNewWebUI https://github.com/RetroShare/RetroShare/issues/2491;
 First release;yes;2006 https://retroshare.cc/#about;
