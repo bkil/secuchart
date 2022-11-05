@@ -48,6 +48,7 @@ User can extend network with node;yes;Applicable to group chats only https://git
 Servers required;;Tor, Cwtch;
 Serverless WAN mode;no;Requires Tor;
 Serverless LAN mode;no;Requires Tor;
+Themes;yes;Several: Light, Dark, ...;https://docs.cwtch.im/docs/settings/appearance/light-dark-mode
 IP shielded from peers;yes;via Tor;
 Bots available;yes;https://git.openprivacy.ca/sarah/cwtchbot;
 Tor access of vendor operated network;yes;routing and connections;
