@@ -44,6 +44,7 @@ Presence not mandatory;partial;;some optional in Syphon https://github.com/sypho
 Typing indication;yes;;
 Read receipts;yes;;
 Receipts not mandatory;no;https://github.com/vector-im/element-web/issues/2527;
+Themes;yes;;several themes, message bubbles, irc style etc
 Vendor can't curate content;yes;self-hosting;
 Spam protection;partial;;provided through third-party tools, such as Mjolnir: https://github.com/matrix-org/mjolnir
 Account deactivation after device compromise;yes;with second device or Web or Desktop;
