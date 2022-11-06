@@ -35,6 +35,7 @@ Account deactivation after device compromise;yes;;
 Account recovery after device compromise;yes;;
 Disallow screenshots;partial;only for yourself on Android https://github.com/vector-im/element-android/issues/1027 https://github.com/vector-im/element-ios/issues/4359;
 End-to-end encryption;yes;https://matrix.org/faq/#which-matrix-clients-support-e2e;
+Reproducible builds;no;https://matrix.to/#/!bfebJVBOZMnORmkVdO:matrix.org/?via=schildi.chat&via=matrix.org&via=tchncs.de;
 Usage without phone number;yes;;
 Active development;yes;https://github.com/SchildiChat;
 Identity not controlled by vendor;yes;;

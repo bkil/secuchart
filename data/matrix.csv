@@ -55,7 +55,7 @@ Metadata protection;no;;
 Perfect forward secrecy;partial;1-on-1 yes, groups partial;yes for 1-on-1 conversations. partial for group conversations https://www.nccgroup.com/globalassets/our-research/us/public-reports/2016/november/ncc_group_olm_cryptogrpahic_review_2016_11_01.pdf
 Security team;partial;;https://matrix.org/security-disclosure-policy/ bad opsec in 2019 https://matrix.org/blog/2019/05/08/post-mortem-and-remediations-for-apr-11-security-incident
 Large bug bounty;partial;third-party https://app.intigriti.com/programs/matrix/matrix/detail;
-Reproducible builds;no;https://github.com/vector-im/element-web/issues/11848;
+Reproducible builds;no;https://github.com/vector-im/element-web/issues/11848 https://github.com/vector-im/element-android/issues/6421;
 Audits;partial;crypto library in 2016 https://matrix.org/blog/2016/11/21/matrixs-olm-end-to-end-encryption-security-assessment-released-and-implemented-cross-platform-on-riot-at-last;
 Usage without phone number;yes;;
 Transparent financing;yes;VC, merchandise, freemium, donation;https://venturebeat.com/2018/01/29/status-invests-5-million-in-matrix-to-create-a-blockchain-messaging-superpower/ https://web.archive.org/web/20210707191110/https://techcrunch.com/2019/10/10/new-vector-scores-8-5m-to-plug-more-users-into-its-open-decentralized-messaging-matrix/ https://matrix.org/blog/2020/05/21/welcoming-automattic-to-matrix/ https://matrix.org/blog/2021/07/27/element-raises-30-m-to-boost-matrix/ https://matrix.org/faq/#how-is-matrixorg-funded https://element.io/matrix-services/ems-pricing https://shop.matrix.org/ https://patreon.com/matrixdotorg https://liberapay.com/matrixdotorg https://paypal.me/matrixdotorg and Bitcoin, Ethereum
