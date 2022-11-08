@@ -38,7 +38,7 @@ Replay prevention;yes;https://github.com/simplex-chat/simplex-chat#privacy-techn
 Contact list confidential;yes;https://simplex.chat/#problem-intro;
 Metadata protection;yes;https://github.com/simplex-chat/simplex-chat/blob/stable/docs/SIMPLEX.md#full-privacy-of-your-identity-profile-contacts-and-metadata;
 Perfect forward secrecy;yes;https://github.com/simplex-chat/simplexmq/blob/master/protocol/simplex-messaging.md#cryptographic-algorithms;
-Audits;no;not yet https://github.com/simplex-chat/simplex-chat;
+Audits;yes;2022-11-03 by Trail of Bits https://simplex.chat/blog/20221108-simplex-chat-v4.2-security-audit-new-website.html https://raw.githubusercontent.com/simplex-chat/simplex-chat/stable/docs/SimpleX_Chat_Final_Report_11_03_2022.pdf;
 Usage without phone number;yes;;
 No-cost tier;yes;;
 Active development;yes;;
