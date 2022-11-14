@@ -3,7 +3,7 @@ Summary;;Decentralized messenger focusing on meta-data protection and getting ri
 Android Google Play;yes;https://play.google.com/store/apps/details?id=chat.simplex.app;
 Android F-droid/apk;partial;https://app.simplex.chat/;
 Apple iOS;yes;https://apps.apple.com/us/app/simplex-chat/id1605771084;
-Desktop;yes;termninal only https://github.com/simplex-chat/simplex-chat/releases https://github.com/simplex-chat/simplex-chat/issues/425;
+Desktop;yes;terminal only https://github.com/simplex-chat/simplex-chat/releases https://github.com/simplex-chat/simplex-chat/issues/425;
 Web;no;;
 Protocol;;SMP;
 Protocol open;yes;https://github.com/simplex-chat/simplexmq/blob/master/protocol/simplex-messaging.md https://github.com/simplex-chat/simplexmq https://github.com/simplex-chat/simplex-chat/blob/stable/docs/protocol/simplex-chat.md;
