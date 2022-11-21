@@ -30,6 +30,7 @@ Remote message correction;no;;
 Presence status;partial;1/1 chats show when contact offline;For 1/1 chats it's not possible to send message when contact offline, when online text input is available. No indication in group chat about members status.
 Typing indication;no;;
 Read receipts;no;only delivery receipt;
+Themes;yes;Several: Light, Dark, ...;https://docs.cwtch.im/docs/settings/appearance/light-dark-mode
 Spam protection;partial;https://docs.openprivacy.ca/cwtch-security-handbook/ui.html?highlight=spam#denial-of-service-through-spamming;Could result in an increase in network bandwidth which may be intolerable or undesired for many people - especially those on metered connections
 Account deactivation after device compromise;no;;
 Account recovery after device compromise;no;;
@@ -48,7 +49,6 @@ User can extend network with node;yes;Applicable to group chats only https://git
 Servers required;;Tor, Cwtch;
 Serverless WAN mode;no;Requires Tor;
 Serverless LAN mode;no;Requires Tor;
-Themes;yes;Several: Light, Dark, ...;https://docs.cwtch.im/docs/settings/appearance/light-dark-mode
 IP shielded from peers;yes;via Tor;
 Bots available;yes;https://git.openprivacy.ca/sarah/cwtchbot;
 Tor access of vendor operated network;yes;routing and connections;
