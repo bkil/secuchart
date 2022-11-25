@@ -122,5 +122,4 @@ Some of these may be investigated in the future by volunteers. Others may be add
 * Mesh router https://github.com/markqvist/Sideband https://github.com/markqvist/lxmf https://github.com/markqvist/reticulum
 * https://github.com/harmony-development
 * https://github.com/nostr-protocol/nostr
-* Meshenger VoIP LAN https://f-droid.org/en/packages/d.d.meshenger/
 * SafeUM

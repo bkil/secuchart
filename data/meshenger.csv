@@ -1,0 +1,26 @@
+name;;Meshenger;
+Summary;;P2P Voice/Video phone App over local networks https://github.com/meshenger-app/meshenger-android;
+Android Google Play;yes;https://play.google.com/store/apps/details?id=app.meshenger;
+Android F-droid/apk;yes;https://f-droid.org/packages/d.d.meshenger/;
+Other mobile;no;;
+Other Android;yes;https://github.com/meshenger-app/meshenger-android/releases;
+Apple iOS;no;;
+Desktop;no;;
+Web;no;;
+Languages;yes;7 https://github.com/meshenger-app/meshenger-android/tree/master/app/src/main/res;
+Client license;yes;GPLv3 https://github.com/meshenger-app/meshenger-android/blob/master/LICENSE;
+Group chat;no;;
+Voice calls;yes;;
+Video calls;yes;;
+Group calls;no;;
+Multiple devices;no;;
+Application locking;yes;password on start-up;
+Presence status;yes;;
+Presence not mandatory;no;;
+Themes;partial;;light/dark
+Usage without phone number;yes;;
+Active development;yes;https://github.com/meshenger-app/meshenger-android/commits/master;
+Servers optional;;ICE;
+Serverless LAN mode;yes;https://github.com/meshenger-app/meshenger-android/blob/master/docs/faq.md;
+First release;yes;2018-08-14 https://blog.freifunk.net/2018/08/14/meshenger-p2p-local-network-messenger-final-update/;
+Public issue tracker;yes;https://github.com/meshenger-app/meshenger-android/issues;
