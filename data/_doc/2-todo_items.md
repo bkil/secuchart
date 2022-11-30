@@ -124,3 +124,4 @@ Some of these may be investigated in the future by volunteers. Others may be add
 * https://github.com/nostr-protocol/nostr
 * SafeUM
 * Ryft https://ryftapp.com/ right now closed beta, might get opensourced one day or never
+* Qaul LAN & Bluetooth cross platform mesh app https://github.com/qaul/qaul.net/blob/main/docs/qaul/rust/security.md#user-content-lan--internet-connections
