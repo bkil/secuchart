@@ -13,6 +13,7 @@ Register without app;no;;
 Group chat;yes;implemented with unicast https://threema.ch/press-files/cryptography_whitepaper.pdf;
 Voice calls;yes;https://threema.ch/en/faq/calls_info;
 Video calls;yes;https://threema.ch/en/faq/calls_info;
+Group calls;partial;on Android https://threema.ch/en/blog/posts/group-calls-threema-android;
 File transfer;yes;https://threema.ch/en/faq/file_message;
 Emoticons in message;yes;;
 Inline images;yes;https://threema.ch/en/faq/file_message;
@@ -36,7 +37,7 @@ Deniability;yes;public-key authenticators https://threema.ch/press-files/2_docum
 Replay prevention;yes;nonce accumulation https://threema.ch/press-files/2_documentation/cryptography_whitepaper.pdf;
 Contact list confidential;yes;stored on device, optional address book import https://threema.ch/en/faq/addressbook_data;
 Metadata protection;yes;https://threema.ch/en/faq/privacy_protection;
-Perfect forward secrecy;partial;only for calls https://threema.ch/press-files/2_documentation/cryptography_whitepaper.pdf;
+Perfect forward secrecy;partial;for single chats on Android https://threema.ch/en/faq/perfect_forward_secrecy and calls https://threema.ch/press-files/2_documentation/cryptography_whitepaper.pdf;
 Reproducible builds;yes;Android https://threema.ch/en/open-source/reproducible-builds;
 Audits;yes;2020, 2019 https://threema.ch/en/faq/code_audit;
 Usage without phone number;yes;;
