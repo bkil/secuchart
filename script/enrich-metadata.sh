@@ -28,9 +28,9 @@ enrich_metadata() {
   if [ -n "$FURL" ]; then
     download_fdroid_metadata "$FURL" "$ITEMNAME" |
     {
-      read RELEASE ANDROID
-      [ -n "$RELEASE" ] && [ -n "$ANDROID" ] &&
-        printf "F-droid version;;%s (Android %s+)\n" "$RELEASE" "$ANDROID" >> "$OUT"
+      read RELEASE ANDROID SIZE
+      [ -n "$RELEASE" ] && [ -n "$ANDROID" ] && [ -n "$SIZE" ] &&
+        printf "F-droid version;;%s %s (Android %s+)\n" "$RELEASE" "$SIZE" "$ANDROID" >> "$OUT"
     }
   fi
 }
@@ -56,17 +56,40 @@ download_fdroid_metadata() {
 
   sed -rn "
     s~^\t{5}<b>Version ([^<>]*)</b> \([^)]*\)$~\1~
-    T next
+    T not_release
     p
-    b end
-    :next
+    b continue
+    :not_release
+
     s~^\t{5}This version requires Android ([^ ]+) or newer\.$~\1~
-    T end
+    T not_android
     p
+    b continue
+    :not_android
+
+    s~^\t{5}([0-9]+(\.[0-9]+)?) (MiB)$~\1\3~
+    T not_size
+    p
+    b continue
+    :not_size
+
+    s~^\t{3}</li>$~&~
+    T continue
+    n
+    s~^$~&~
+    T continue
+    n
+    s~^\t{3}$~&~
+    T continue
+    n
+    s~^\t{3}<li class=\"package-version\" >$~&~
+    T continue
+
+    :exit
     q
-    :end
+    :continue
   " "$HTML" |
-  xargs printf "%s %s"
+  xargs printf "%s %s %s"
 }
 
 main "$@"
