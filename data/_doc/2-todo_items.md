@@ -125,3 +125,4 @@ Some of these may be investigated in the future by volunteers. Others may be add
 * SafeUM
 * Ryft https://ryftapp.com/ right now closed beta, might get opensourced one day or never
 * Qaul LAN & Bluetooth cross platform mesh app https://github.com/qaul/qaul.net/blob/main/docs/qaul/rust/security.md#user-content-lan--internet-connections
+* galacteek is a multi-platform Qt5-based browser and a P2P dapps (aka distributed apps) platform for the distributed web https://galacteek.gitlab.io/features/
