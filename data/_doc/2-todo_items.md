@@ -127,3 +127,4 @@ Some of these may be investigated in the future by volunteers. Others may be add
 * Qaul LAN & Bluetooth cross platform mesh app https://github.com/qaul/qaul.net/blob/main/docs/qaul/rust/security.md#user-content-lan--internet-connections
 * galacteek is a multi-platform Qt5-based browser and a P2P dapps (aka distributed apps) platform for the distributed web https://galacteek.gitlab.io/features/
 * https://github.com/TechnitiumSoftware/Mesh https://mesh.im/ anonymous, peer-to-peer, end-to-end encryption, over Tor
+* Fosscord https://fosscord.com/ https://github.com/fosscord/fosscord is a free open source selfhostable discord compatible chat, voice and video platform
