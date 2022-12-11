@@ -51,6 +51,7 @@ gen_style() {
     MATRIX=""
     XMPP=""
     TELEGRAM=""
+    SIGNAL=""    
     NUM=2
     while read -r IT; do
       echo "style $IT" >&2
@@ -74,6 +75,7 @@ EOF
       printf '%s' "$PROTOCOL" | grep -qi "\<Matrix\>" || MATRIX="$MATRIX $NUM"
       printf '%s' "$PROTOCOL" | grep -qi "\<XMPP\>" || XMPP="$XMPP $NUM"
       printf '%s' "$PROTOCOL" | grep -qi "\<MTProto\>" || TELEGRAM="$TELEGRAM $NUM"
+      printf '%s' "$PROTOCOL" | grep -qi "\<Signal\>" || SIGNAL="$SIGNAL $NUM"
 
       NUM="`expr $NUM + 1`"
     done
@@ -93,6 +95,10 @@ EOF
     for NUM in $TELEGRAM; do
       printf "#t_telegram:checked ~ table th:nth-child(%d),\n" "$NUM"
       printf "#t_telegram:checked ~ table td:nth-child(%d),\n" "$NUM"
+    done
+    for NUM in $SIGNAL; do
+      printf "#t_signal:checked ~ table th:nth-child(%d),\n" "$NUM"
+      printf "#t_signal:checked ~ table td:nth-child(%d),\n" "$NUM"
     done
   }
 
@@ -217,6 +223,7 @@ EOF
 <input type=radio id=t_matrix name=S class="F T">
 <input type=radio id=t_xmpp name=S class="F T">
 <input type=radio id=t_telegram name=S class="F T">
+<input type=radio id=t_signal name=S class="F T">
 EOF
 
   get_items "$LIMITITEMS" |
@@ -273,8 +280,9 @@ EOF
   <label for=any class=F>any&nbsp;</label>
   <label for=proprietary class=F>non-proprietary</label>
   <label for=t_matrix class=F>matrix</label>
-  <label for=t_xmpp class=F>xmpp</label>
+  <label for=t_signal class=F>signal</label>
   <label for=t_telegram class=F>telegram</label>
+  <label for=t_xmpp class=F>xmpp</label>
   <span class='C group'>Compare messengers:</span>
 EOF
 
