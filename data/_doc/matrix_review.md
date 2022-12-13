@@ -66,6 +66,12 @@ Reasoning Why Disroot went back to XMPP in 2018:
 * https://www.aminda.eu/blog/english/2021/12/05/matrix-community-abuse-security-by-obscurity.html
 * https://www.aminda.eu/discuss.html#a-couple-of-words-on-protocols
 
+> Aminda
+
+* https://dimension.sh/~novaburst/ac3bf733.htm
+
+> Matrix - The Mossad Facade that fooled the privacy community
+
 ## Deployment
 
 * https://sifted.eu/articles/element-germany-deal/
