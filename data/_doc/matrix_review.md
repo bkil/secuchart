@@ -68,9 +68,28 @@ Reasoning Why Disroot went back to XMPP in 2018:
 
 > Aminda
 
-* https://dimension.sh/~novaburst/ac3bf733.htm
+### Novaburst
+
+https://dimension.sh/~novaburst/ac3bf733.htm
 
 > Matrix - The Mossad Facade that fooled the privacy community
+
+Replies:
+
+* 1/a & 4/a: It is "bloated" because their explicit goal was for Matrix to act as a sufficient intermediary protocol to bridge all other chat systems transparently, and you necessarily will need to provide a superset of their features. Certain parts of the S2S and C2S specs are clearly marked as optional with well defined return code for unsupported operations. Since Matrix started in 2014, XMPP actually picked up a few ideas from Matrix and other messengers on popular demand.
+* 4/b: I would call Slack more of an inspiration for Matrix Element than Discord - the former was started 1 year before them, while the latter in the following year.
+* 1/b: Anyone can contribute extensions via the spec proposal process https://github.com/matrix-org/matrix-spec-proposals/
+* 1/c: Full and global defederation is not likely (it doesn't even have code to do this). Certain single rooms may choose to place a server ACL against you if you either produce spam or don't comply with authorization rules. If you have implemented an earlier room version vulnerable to certain abuse (e.g., v1) only your server would be in trouble so others wouldn't care anyway and only in the single room in question.
+* 2/a: Yes. PRs welcome.
+* 2/b: Dendrite and Conduit are already beta.
+* 2/c: Not a supercomputer, actually. About 50GB of storage and ~4GB RAM should be sufficient for light use (according to the documentation, recommends 1GB RAM free other than what your database daemon uses). Its architecture is vastly different from XMPP or IRC that mainly act as a networking hub of connecting participants. It is more about event and state replication similar to git, Secure Scuttlebutt, RetroShare and the like.
+* 3/a: You can find some not using JavaScript: https://matrix.org/clients
+* 3/b: What do you call full featured? There exist a bunch of ones supporting E2EE already (what most consider as a landmark in compatibility)
+* 3/c: Element Web works on Firefox for me, it was possibly some intermittent regression you've seen due to less testing done there. I think you won't find many realtime chat apps that don't require JavaScript (except for PoC). Not sure what "issue" you talk here that a fork could fix, though.
+* 3/d: Other than bugs, the official Mobile client is actually considered practically full featured. I acknowledge it was not like that around the full rewrite last year or so. The faster you progress the more mistakes you will make - life is like that. And I hear good things about third party mobile clients as well.
+* 5: Yes, it's always like that, see the user distribution on The Fediverse or Yarn. The more difficult a server is set up, the less of it you will see deployed, so there could be work done. But why would you want to ditch the kid with the bathwater instead of just putting in an effort? Quite a few HS had been deployed over the years, the-federation lists 1684 today, second only to "The" most hyped server ever: https://the-federation.info/#protocols
+* https://matrix-org.github.io/synapse/latest/setup/installation.html#installing-as-a-python-module-from-pypi
+* https://matrix-org.github.io/synapse/latest/usage/administration/admin_faq.html#help-synapse-is-slow-and-eats-all-my-ramcpu
 
 ## Deployment
 
