@@ -1,9 +1,9 @@
 name;;SimpleX Chat;
 Summary;;Decentralized messenger focusing on meta-data protection and getting rid of user identifiers https://simplex.chat/;
 Android Google Play;yes;https://play.google.com/store/apps/details?id=chat.simplex.app;
-Android F-droid/apk;partial;https://app.simplex.chat/;
+Android F-droid/apk;yes;https://f-droid.org/en/packages/chat.simplex.app/ https://app.simplex.chat/ https://github.com/simplex-chat/simplex-chat/releases/latest;
 Apple iOS;yes;https://apps.apple.com/us/app/simplex-chat/id1605771084;
-Desktop;yes;terminal only https://github.com/simplex-chat/simplex-chat/releases https://github.com/simplex-chat/simplex-chat/issues/425;
+Desktop;yes;terminal only https://github.com/simplex-chat/simplex-chat/blob/stable/docs/CLI.md;
 Web;no;;
 Protocol;;SMP;
 Protocol open;yes;https://github.com/simplex-chat/simplexmq/blob/master/protocol/simplex-messaging.md https://github.com/simplex-chat/simplexmq https://github.com/simplex-chat/simplex-chat/blob/stable/docs/protocol/simplex-chat.md;
@@ -11,13 +11,14 @@ Server license;yes;AGPL v3 https://github.com/simplex-chat/simplexmq/blob/master
 Client license;yes;AGPL v3 https://github.com/simplex-chat/simplex-chat/blob/stable/LICENSE;
 Register without app;no;;
 Group chat;yes;https://github.com/simplex-chat/simplex-chat/blob/stable/blog/20220808-simplex-chat-v3.1-chat-groups.md;
-Voice calls;partial;experimental https://github.com/simplex-chat/simplex-chat/releases/tag/v2.2.0;terminal app via WebRTC in browser
-Video calls;partial;experimental https://github.com/simplex-chat/simplex-chat/releases/tag/v2.2.0;terminal app via WebRTC in browser
+Voice calls;yes;https://simplex.chat/blog/20220711-simplex-chat-v3-released-ios-notifications-audio-video-calls-database-export-import-protocol-improvements.html;terminal app via WebRTC in browser
+Video calls;yes;https://simplex.chat/blog/20220711-simplex-chat-v3-released-ios-notifications-audio-video-calls-database-export-import-protocol-improvements.html;terminal app via WebRTC in browser
 Group calls;no;;
-Voice messages;no;;
+Voice messages;yes;;https://simplex.chat/blog/20221206-simplex-chat-v4.3-voice-messages.html
 File transfer;yes;https://github.com/simplex-chat/simplex-chat/blob/master/blog/20220511-simplex-chat-v2-images-files.md;
-Message formatting;partial;basic https://github.com/simplex-chat/simplex-chat/issues/307;
+Message formatting;yes;markdown https://github.com/simplex-chat/simplex-chat/issues/307;
 Emoticons in message;no;;
+Unicode support;yes;;
 Link preview;partial;mobile only;User setting to generate link preview upon sending.
 Inline images;yes;https://github.com/simplex-chat/simplex-chat/blob/master/blog/20220511-simplex-chat-v2-images-files.md;mobile
 Inline videos;no;;
@@ -27,25 +28,29 @@ Multiple accounts;partial;;one can run multiple terminal sessions as multiple OS
 Application locking;yes;https://github.com/simplex-chat/simplex-chat/releases/tag/v2.2.0;Native mobile platform lock.
 Remote message removal;yes;;mobile, in console there's whole history visible e.g. 21:37 a11> ff 21:37 a11> [deleted] ff
 Remote message correction;yes;;
-Read receipts;no;only delivery receipt (mobile);
+Read receipts;partial;only server acceptance receipt (mobile);
+Vendor can't curate content;yes;;
 Account deactivation after device compromise;no;;
 Account recovery after device compromise;no;;
-Disallow screenshots;no;https://github.com/simplex-chat/simplex-chat/pull/657;
+Disallow screenshots;partial;only for yourself, Android https://simplex.chat/blog/20221206-simplex-chat-v4.3-voice-messages.html;
 Threat model;yes;https://github.com/simplex-chat/simplexmq/blob/stable/protocol/overview-tjr.md#threat-model;
-End-to-end encryption;yes;https://simplex.chat/#problem-explained https://github.com/simplex-chat/simplexmq/blob/master/protocol/simplex-messaging.md https://github.com/simplex-chat/simplexmq/blob/master/protocol/overview-tjr.md#encryption-primitives-used;
+End-to-end encryption;yes;2 layers https://simplex.chat/#problem-explained https://github.com/simplex-chat/simplexmq/blob/master/protocol/simplex-messaging.md https://github.com/simplex-chat/simplexmq/blob/master/protocol/overview-tjr.md#encryption-primitives-used;
 E2EE keys shielded from operator;yes;https://github.com/simplex-chat/simplex-chat/blob/stable/docs/SIMPLEX.md#full-privacy-of-your-identity-profile-contacts-and-metadata https://github.com/simplex-chat/simplex-chat#privacy-technical-details-and-limitations;
 Deniability;yes;https://github.com/simplex-chat/simplex-chat#privacy-technical-details-and-limitations;
 Replay prevention;yes;https://github.com/simplex-chat/simplex-chat#privacy-technical-details-and-limitations;
+Downgrade resistance;yes;https://github.com/simplex-chat/simplex-chat#privacy-technical-details-and-limitations;
 Contact list confidential;yes;https://simplex.chat/#problem-intro;
 Metadata protection;yes;https://github.com/simplex-chat/simplex-chat/blob/stable/docs/SIMPLEX.md#full-privacy-of-your-identity-profile-contacts-and-metadata;
 Perfect forward secrecy;yes;https://github.com/simplex-chat/simplexmq/blob/master/protocol/simplex-messaging.md#cryptographic-algorithms;
+Reproducible builds;yes;;
 Audits;yes;2022-11-03 by Trail of Bits https://simplex.chat/blog/20221108-simplex-chat-v4.2-security-audit-new-website.html https://raw.githubusercontent.com/simplex-chat/simplex-chat/stable/docs/SimpleX_Chat_Final_Report_11_03_2022.pdf;
 Usage without phone number;yes;;
 No-cost tier;yes;;
 Active development;yes;;
+Isolated self-hosting;yes;;
 User can extend network with node;yes;https://github.com/simplex-chat/simplexmq#using-smp-server-and-smp-agent;
 Identity not controlled by vendor;yes;https://github.com/simplex-chat/simplex-chat/releases/tag/v2.0.0;self-hosted servers defined in the apps
-Offline;partial;not possible add contact;
+Offline;partial;not possible to add contact;
 Servers required;;SMP https://github.com/simplex-chat/simplexmq#using-smp-server-and-smp-agent;
 Network store and forward;yes;;
 IP shielded from peers;yes;https://github.com/simplex-chat/simplex-chat#privacy-technical-details-and-limitations https://github.com/simplex-chat/simplex-chat/blob/stable/blog/20220808-simplex-chat-v3.1-chat-groups.md#access-to-messaging-servers-via-tor;
