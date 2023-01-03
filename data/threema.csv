@@ -59,6 +59,7 @@ Third party clients;partial;openMittsu https://github.com/blizzard4591/openMitts
 Vendor jurisdiction;;Switzerland;
 Infrastructure jurisdiction;;Switzerland;
 Infrastructure provider;;a colocation data center https://work.threema.ch/docs/threema_privacy-security_en.pdf;
+Good ToSDR grade;no;unrated https://tosdr.org/en/service/594 https://tosdr.org/en/service/3629;
 First release;yes;2012-12 https://en.wikipedia.org/wiki/Threema;
 Public issue tracker;partial;web only https://github.com/threema-ch/threema-web/issues;
 No past client vulnerabilities;no;;surreptitious sharing https://threatpost.com/surreptitious-sharing-android-api-flaw-leaks-data-private-keys/117174/ geolocation by timing https://restoreprivacy.com/timing-attacks-on-whatsapp-signal-threema-reveal-user-location/
