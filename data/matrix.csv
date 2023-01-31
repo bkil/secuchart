@@ -1,6 +1,6 @@
 name;;Matrix Element;
 Summary;;Protocol that bridges all https://matrix.org/;Assume using Matrix Synapse as server Element matrix client https://element.io/
-Android Google Play;yes;https://matrix.org/docs/projects/client/element-android;
+Android Google Play;yes;https://play.google.com/store/apps/details?id=im.vector.app https://matrix.org/docs/projects/client/element-android;
 Android F-droid/apk;yes;https://f-droid.org/en/packages/im.vector.app/;
 Other mobile;no;KaiOS unsupported https://github.com/vector-im/element-web/issues/13800#issuecomment-633658482;
 Apple iOS;yes;https://matrix.org/docs/projects/client/element-ios;

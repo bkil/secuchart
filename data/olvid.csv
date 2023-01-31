@@ -1,3 +1,5 @@
 name;;Olvid;
+Android Google Play;yes;https://play.google.com/store/apps/details?id=io.olvid.messenger;
+Android F-droid/apk;no;https://www.olvid.io/faq/how-to-install-olvid/#availability-on-f-droid-and-other-alternative-stores;discussing it
 Large bug bounty;yes;https://blog.yeswehack.com/customer-stories/olvid-the-ultra-secure-messaging-app-moves-to-public-bug-bounty-program/;
 Audits;yes;2020 https://eprint.iacr.org/2020/808;

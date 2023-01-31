@@ -19,7 +19,7 @@ main() {
 }
 
 enrich_metadata() {
-  local ITEMPROPS OUT FURL RELEASE ANDROID
+  local ITEMPROPS OUT FURL GURL DATE DATES RELEASE ANDROID SIZE
   readonly ITEMPROPS="$DATA/$ITEMNAME.csv"
   readonly OUT="$DATA/cache/$ITEMNAME.csv"
   rm "$OUT" 2>/dev/null
@@ -28,9 +28,20 @@ enrich_metadata() {
   if [ -n "$FURL" ]; then
     download_fdroid_metadata "$FURL" "$ITEMNAME" |
     {
-      read RELEASE ANDROID SIZE
-      [ -n "$RELEASE" ] && [ -n "$ANDROID" ] && [ -n "$SIZE" ] &&
-        printf "F-droid version;;%s %s (Android %s+)\n" "$RELEASE" "$SIZE" "$ANDROID" >> "$OUT"
+      read DATE RELEASE ANDROID SIZE
+      [ -n "$DATE" ] && [ -n "$RELEASE" ] && [ -n "$ANDROID" ] && [ -n "$SIZE" ] &&
+        printf "F-droid version;;%s: %s %s (Android %s+)\n" "$DATE" "$RELEASE" "$SIZE" "$ANDROID" >> "$OUT"
+    }
+  fi
+
+  readonly GURL="`find_google_play_url "$ITEMPROPS"`"
+  if [ -n "$GURL" ]; then
+    download_google_play_metadata "$GURL" "$ITEMNAME" |
+    {
+      read DATE RELEASE ANDROID SIZE
+      readonly DATES="`printf %s "$DATE" | tr "_" " "`"
+      [ -n "$DATES" ] && [ -n "$RELEASE" ] && [ -n "$ANDROID" ] && [ -n "$SIZE" ] &&
+        printf "Google Play version;;%s: %s %s (Android %s+)\n" "$DATES" "$RELEASE" "$SIZE" "$ANDROID" >> "$OUT"
     }
   fi
 }
@@ -40,19 +51,19 @@ find_fdroid_url() {
   grep -o "^[^; ]*"
 }
 
+find_google_play_url() {
+  grep -Eo -m1 "https://play.google.com/store/apps/details.*" "$@" 2>/dev/null |
+  grep -o "^[^;& ]*"
+}
+
 download_fdroid_metadata() {
-  local URL HTML
+  local URL HTML DATE RELEASE OS SIZE
   readonly URL="$1"
   readonly HTML="$DIST/fdroid-$2.html"
 
   printf "%s\n" "$URL" >&2
 
-  if ! [ -f "$HTML" ]; then
-    curl \
-      -A "enrich-metadata.sh/0.1 (https://github.com/bkil/secuchart)" \
-      "$URL" > "$HTML"
-    sleep 1
-  fi
+  curl2 "$HTML" "$URL"
 
   sed -rn "
     s~^\t{5}<b>Version ([^<>]*)</b> \([^)]*\)$~\1~
@@ -73,6 +84,12 @@ download_fdroid_metadata() {
     b continue
     :not_size
 
+    s~^\t{5}Added on ([^<>]+)$~\1~
+    T not_date
+    p
+    b continue
+    :not_date
+
     s~^\t{3}</li>$~&~
     T continue
     n
@@ -89,7 +106,95 @@ download_fdroid_metadata() {
     q
     :continue
   " "$HTML" |
-  xargs printf "%s %s %s"
+  {
+    read RELEASE
+    read DATE
+    read OS
+    read SIZE
+    printf "%s %s %s %s" "$DATE" "$RELEASE" "$OS" "$SIZE"
+  }
+}
+
+download_google_play_metadata() {
+  local OGURL HTML URL
+  readonly OGURL="$1"
+  readonly HTML="$DIST/google-play-$2.html"
+  readonly URL="`printf "%s" "$OGURL" | sed "s~^https://play\.google\.com/store/apps/details[?]id=~https://apkpure.com/0/~"`"
+
+  printf "%s\n" "$URL" >&2
+
+  curl2 "$HTML" "$URL" --location
+
+  sed "s~\r~~g" "$HTML" |
+  sed -rn "
+    s~^<p itemprop=\"datePublished\">([^<>]+)</p>$~date\t\1~
+    t print
+    s~^<span class=\"update\">([^<>]+)</span>~date\t\1~
+    t print
+
+    s~^<div class=\"details-sdk\"><span itemprop=\"version\">([^<>]*[^<> ]) *</span>for Android</div>$~rel\t\1~
+    t print
+    s~^<div class=\"ver-info-top\"><strong>.*</strong> ([^ <>()]+)( *\([0-9]+\))?</div>.*$~rel\t\1~
+    t print
+    s~^<a class=\"version-item .* data-dt-version=\"([^<>\"]+)\".*$~rel\t\1~
+    t print
+
+    s~^<p>(Android )?([0-9]+\.[0-9]+)( and up|[+])?</p>$~os\t\2~
+    t print
+    s~^<p><strong>Requires Android: </strong>Android ([^()<>]*[^()<>+ ])[+]?( *\([^<>]*\))?</p>$~os\t\1~
+    t print
+    s~^<p class=\"additional-info\">Android ([^<>+]+)[+]?</p>$~os\t\1~
+    t print
+
+    s~^<p><strong>File Size: </strong>([^<>]+) (MB)</p>$~size\t\1\2~
+    t print
+    s~^<span class=\"(size|ver-item-s)\">([^<>]+) (MB)</span>$~size\t\2\3~
+    t print
+
+    b continue
+    :print
+    s~ ~_~g
+    p
+    :continue
+  " |
+
+  awk -F "\t" '
+    BEGIN {
+      date = "?";
+      rel = "?";
+      size = "?";
+      os = "?";
+    }
+    {
+      if ((date == "?") && ($1 == "date")) {
+        date = $2;
+      } else if ((rel == "?") && ($1 == "rel")) {
+        rel = $2;
+      } else if ((size == "?") && ($1 == "size")) {
+        size = $2;
+      } else if ((os == "?") && ($1 == "os")) {
+        os = $2;
+      }
+    }
+    END {
+      if ((date != "?") || (rel != "?") || (size != "?") || (os != "?")) {
+        printf("%s %s %s %s\n", date, rel, os, size);
+      }
+    }
+  '
+}
+
+curl2() {
+  local CURLFILE
+  readonly CURLFILE="$1"
+  shift 1
+
+  if ! [ -f "$CURLFILE" ]; then
+    curl \
+      -A "enrich-metadata.sh/0.1 (https://github.com/bkil/secuchart)" \
+      "$@" > "$CURLFILE"
+    sleep 1
+  fi
 }
 
 main "$@"

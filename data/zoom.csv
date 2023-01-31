@@ -1,5 +1,6 @@
 name;;Zoom;
 Summary;;proprietary freemium videotelephony app https://zoom.us/;
+Android Google Play;yes;https://play.google.com/store/apps/details?id=us.zoom.videomeetings;
 Good ToSDR grade;no;E https://tosdr.org/en/service/2198;
 No past client vulnerabilities;no;https://theguardian.com/technology/2020/apr/02/zoom-technology-security-coronavirus-video-conferencing;
 No past server vulnerabilities;no;https://vice.com/en/article/k7e95m/zoom-leaking-email-addresses-photos;

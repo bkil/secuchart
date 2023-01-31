@@ -1,5 +1,6 @@
 name;;Cheogram;
 Summary;;Jabber/XMPP. Fork of Conversations to implement features of use to the Sopranica project https://cheogram.com/;
+Android Google Play;no;https://cheogram.com/;
 Android F-droid/apk;yes;https://f-droid.org/en/packages/com.cheogram.android/;
 Apple iOS;no;;
 Desktop;no;;
