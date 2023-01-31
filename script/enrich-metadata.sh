@@ -47,7 +47,7 @@ enrich_metadata() {
 }
 
 find_fdroid_url() {
-  grep -Eo -m1 "https://f-droid.org/([^/; ]{2,}/)?packages/.*" "$@" 2>/dev/null |
+  grep -Eo -m1 "https://f-droid.org/([^/; ]{2,}/)?(packages|app)/.*" "$@" 2>/dev/null |
   grep -o "^[^; ]*"
 }
 
@@ -123,7 +123,7 @@ download_google_play_metadata() {
 
   printf "%s\n" "$URL" >&2
 
-  curl2 "$HTML" "$URL" --location
+  curl2 "$HTML" "$URL"
 
   sed "s~\r~~g" "$HTML" |
   sed -rn "
@@ -192,6 +192,7 @@ curl2() {
   if ! [ -f "$CURLFILE" ]; then
     curl \
       -A "enrich-metadata.sh/0.1 (https://github.com/bkil/secuchart)" \
+      --location \
       "$@" > "$CURLFILE"
     sleep 1
   fi
