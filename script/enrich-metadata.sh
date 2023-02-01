@@ -19,7 +19,7 @@ main() {
 }
 
 enrich_metadata() {
-  local ITEMPROPS OUT FURL GURL DATE DATES RELEASE ANDROID SIZE
+  local ITEMPROPS OUT FURL GURL DATE RELEASE ANDROID SIZE
   readonly ITEMPROPS="$DATA/$ITEMNAME.csv"
   readonly OUT="$DATA/cache/$ITEMNAME.csv"
   rm "$OUT" 2>/dev/null
@@ -39,9 +39,8 @@ enrich_metadata() {
     download_google_play_metadata "$GURL" "$ITEMNAME" |
     {
       read DATE RELEASE ANDROID SIZE
-      readonly DATES="`printf %s "$DATE" | tr "_" " "`"
-      [ -n "$DATES" ] && [ -n "$RELEASE" ] && [ -n "$ANDROID" ] && [ -n "$SIZE" ] &&
-        printf "Google Play version;;%s: %s %s (Android %s+)\n" "$DATES" "$RELEASE" "$SIZE" "$ANDROID" >> "$OUT"
+      [ -n "$DATE" ] && [ -n "$RELEASE" ] && [ -n "$ANDROID" ] && [ -n "$SIZE" ] &&
+        printf "Google Play version;;%s: %s %s (Android %s+)\n" "$DATE" "$RELEASE" "$SIZE" "$ANDROID" >> "$OUT"
     }
   fi
 }
@@ -129,8 +128,25 @@ download_google_play_metadata() {
   sed -rn "
     s~^<p itemprop=\"datePublished\">([^<>]+)</p>$~date\t\1~
     t print
-    s~^<span class=\"update\">([^<>]+)</span>~date\t\1~
-    t print
+    s~^<span class=\"update\">([A-Z][a-z]{2} [0-9]{1,2}, [0-9]{4})</span>~\1~
+    T not_date_update
+    s~^Jan~01~
+    s~^Feb~02~
+    s~^Mar~03~
+    s~^Apr~04~
+    s~^May~05~
+    s~^Jun~06~
+    s~^Jul~07~
+    s~^Aug~08~
+    s~^Sep~09~
+    s~^Oct~10~
+    s~^Nov~11~
+    s~^Dec~12~
+    s~^([0-9]+) ([0-9]+), ([0-9]+)$~\3-\1-\2~
+    s~-([0-9])$~-0\1~
+    s~^~date\t~
+    b print
+    :not_date_update
 
     s~^<div class=\"details-sdk\"><span itemprop=\"version\">([^<>]*[^<> ]) *</span>for Android</div>$~rel\t\1~
     t print
