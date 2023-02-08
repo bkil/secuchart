@@ -27,7 +27,7 @@ Inline images;yes;https://github.com/simplex-chat/simplex-chat/blob/master/blog/
 Inline videos;no;;
 Reactions;no;;
 Multiple devices;no;;
-Multiple accounts;partial;;one can run multiple terminal sessions as multiple OS users to have multiple accounts
+Multiple accounts;yes;https://simplex.chat/blog/20230204-simplex-chat-v4-5-user-chat-profiles.html#multiple-chat-profiles;
 Application locking;yes;https://github.com/simplex-chat/simplex-chat/releases/tag/v2.2.0;Native mobile platform lock.
 Remote message removal;yes;;mobile, in console there's whole history visible e.g. 21:37 a11> ff 21:37 a11> [deleted] ff
 Remote message correction;yes;;
