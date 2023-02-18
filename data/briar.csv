@@ -8,7 +8,7 @@ Web;no;no;Only app, no web client
 Languages;yes;many https://code.briarproject.org/briar/briar/-/tree/master/briar-android/src/main/res;
 Protocol;;Bramble;
 Protocol open;yes;https://code.briarproject.org/briar/briar/-/wikis/home#protocol;
-Client license;yes;various https://code.briarproject.org/briar/briar/-/blob/master/LICENSE.txt https://code.briarproject.org/briar/briar-desktop/-/blob/main/LICENSE.md;
+Client license;yes;GPL-3.0-or-later https://code.briarproject.org/briar/briar/-/blob/master/LICENSE.txt Desktop AGPL-3.0 https://code.briarproject.org/briar/briar-desktop/-/blob/main/LICENSE.md;
 Register without app;no;;
 Spell check;no;no;No spell check
 Group chat;yes;https://code.briarproject.org/briar/briar/-/wikis/FAQ#when-do-posts-in-forumsgroupsblogs-get-shared-with-others;

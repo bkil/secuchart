@@ -7,7 +7,7 @@ Apple iOS;no;not yet https://github.com/TryQuiet/quiet/wiki/Quiet-FAQ#does-quiet
 Desktop;yes;Linux, Mac, Windows https://github.com/TryQuiet/quiet;
 Web;no;;
 Protocol;;libp2p/IPFS;https://github.com/TryQuiet/quiet/wiki/Quiet-FAQ#what-protocol-do-peers-connect-with https://github.com/TryQuiet/quiet/wiki/Quiet-FAQ#how-does-sending-and-receiving-messages-work-in-quiet https://github.com/TryQuiet/quiet/wiki/Quiet-FAQ#how-does-sending-images-and-files-work-in-quiet
-Client license;yes;GPLv3 https://github.com/TryQuiet/quiet/blob/master/packages/desktop/LICENSE;
+Client license;yes;GPL-3.0-only https://github.com/TryQuiet/quiet/blob/master/packages/desktop/LICENSE;
 Register without app;no;;
 Group chat;partial;One community/team only https://github.com/TryQuiet/quiet/wiki/Quiet-FAQ#why-doesnt-quiet-let-me-join-multiple-communities;
 File transfer;partial;https://github.com/TryQuiet/quiet/issues/836;Right now basic attachement

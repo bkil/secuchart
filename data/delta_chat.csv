@@ -9,7 +9,7 @@ Languages;yes;14-48 https://www.transifex.com/delta-chat/public/ https://github.
 Protocol;;SMTP and IMAP with AutoCrypt https://github.com/deltachat/deltachat-core-rust/blob/master/standards.md#standards-used-in-delta-chat;
 Protocol open;yes;https://github.com/deltachat/deltachat-core-rust/blob/master/standards.md#standards-used-in-delta-chat;
 Server license;yes;various (any SMTP and IMAP server);
-Client license;yes;GPLv3+;
+Client license;yes;GPL-3.0-or-later;
 Register without app;yes;supports existing mailbox provider accounts https://delta.chat/en/help#does-delta-chat-work-with-my-e-mail-provider;
 Group chat;yes;;https://delta.chat/en/help#groups membership change is unicast
 Voice calls;partial;via embedding jitsi, talky.io, appear.in https://delta.chat/en/2020-07-30-summer-update#video-chats;

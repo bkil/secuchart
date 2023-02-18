@@ -6,7 +6,7 @@ Apple iOS;yes;https://apps.apple.com/us/app/iquassel-for-quassel-cores/id5668442
 Desktop;yes;https://quassel-irc.org/downloads;
 Protocol;;IRC;
 Protocol open;yes;https://www.ietf.org/rfc/rfc1459.txt;
-Client license;yes;GPLv3 https://github.com/quassel/quassel/blob/master/gpl-3.0.txt https://git.kuschku.de/justJanne/QuasselDroid-ng/-/blob/main/LICENSE.md;
+Client license;yes;GPL-3.0-only https://github.com/quassel/quassel/blob/master/gpl-3.0.txt https://git.kuschku.de/justJanne/QuasselDroid-ng/-/blob/main/LICENSE.md;
 Register without app;yes;;
 Group chat;yes;;
 Voice calls;no;;

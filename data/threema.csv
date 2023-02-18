@@ -8,7 +8,7 @@ Web;partial;only if mobile online;
 Languages;yes;16 https://threema.ch/en/faq/languages;
 Protocol open;partial;ARP open https://github.com/threema-ch/app-remote-protocol others in prose https://threema.ch/press-files/2_documentation/cryptography_whitepaper.pdf;
 Server license;partial;proprietary: Chat, Directory, Media;
-Client license;yes;AGPLv3 but paid;
+Client license;yes;AGPL-3.0-only but paid;
 Register without app;no;;
 Group chat;yes;implemented with unicast https://threema.ch/press-files/cryptography_whitepaper.pdf;
 Voice calls;yes;https://threema.ch/en/faq/calls_info;

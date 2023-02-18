@@ -8,7 +8,7 @@ Web;no;https://xx.network/messenger/;
 Languages;no;1 https://apps.apple.com/rs/app/xx-messenger/id1593670957;
 Protocol;;blockchain and mixnet;xx blockchain coin based on Praxxis with xx cMix mixnet privacy layer
 Server license;no;proprietary;
-Client license;yes;BSD https://git.xx.network/elixxir/client-android https://git.xx.network/elixxir/client-ios;
+Client license;yes;BSD-2-Clause https://git.xx.network/elixxir/client-android https://git.xx.network/elixxir/client-ios;
 Audits;no;;
 Transparent financing;no;cryptocoin backed by VC https://xx.network/coin/ https://pitchbook.com/profiles/vendor/266442-76;
 No-cost tier;no;https://xx.network/coin/;

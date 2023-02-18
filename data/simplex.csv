@@ -9,8 +9,8 @@ Web;no;;
 Languages;yes;4 https://hosted.weblate.org/projects/simplex-chat/#languages;
 Protocol;;SMP https://github.com/simplex-chat/simplexmq/blob/stable/protocol/overview-tjr.md;
 Protocol open;yes;https://github.com/simplex-chat/simplexmq/blob/master/protocol/simplex-messaging.md https://github.com/simplex-chat/simplexmq https://github.com/simplex-chat/simplex-chat/blob/stable/docs/protocol/simplex-chat.md;
-Server license;yes;AGPL v3 https://github.com/simplex-chat/simplexmq/blob/master/LICENSE;
-Client license;yes;AGPL v3 https://github.com/simplex-chat/simplex-chat/blob/stable/LICENSE;
+Server license;yes;AGPL-3.0-only https://github.com/simplex-chat/simplexmq/blob/master/LICENSE;
+Client license;yes;AGPL-3.0-only https://github.com/simplex-chat/simplex-chat/blob/stable/LICENSE;
 Register without app;no;;
 Group chat;yes;https://github.com/simplex-chat/simplex-chat/blob/stable/blog/20220808-simplex-chat-v3.1-chat-groups.md;
 Voice calls;yes;https://simplex.chat/blog/20220711-simplex-chat-v3-released-ios-notifications-audio-video-calls-database-export-import-protocol-improvements.html;terminal app via WebRTC in browser

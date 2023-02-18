@@ -8,7 +8,7 @@ Web;yes;https://app.schildi.chat/;
 Languages;yes;many https://weblate.bubu1.eu/projects/schildichat/schildichat-android/;
 Protocol;;Matrix;
 Protocol open;yes;https://spec.matrix.org/latest/;
-Client license;yes;Apache 2.0 https://github.com/SchildiChat/SchildiChat-android/blob/sc/LICENSE https://github.com/SchildiChat/schildichat-desktop/blob/sc/LICENSE;
+Client license;yes;Apache-2.0 https://github.com/SchildiChat/SchildiChat-android/blob/sc/LICENSE https://github.com/SchildiChat/schildichat-desktop/blob/sc/LICENSE;
 Register without app;yes;;
 Group chat;yes;;
 Voice calls;yes;WebRTC https://matrix.org/faq/#what-can-i-actually-do-with-this%3F;

@@ -11,7 +11,7 @@ Web;no;;
 Languages;no;English;
 Protocol;;GNUnet https://www.gnunet.org/;
 Protocol open;yes;https://docs.gnunet.org/handbook/gnunet.html#Key-Concepts https://www.gnunet.org/en/livingstandards.html;
-Client license;yes;AGPLv3 https://git.gnunet.org/messenger-gtk.git/tree/COPYING;
+Client license;yes;AGPL-3.0-only https://git.gnunet.org/messenger-gtk.git/tree/COPYING;
 Register without app;no;;
 Group chat;yes;https://www.gnunet.org/en/news/2022-05-messenger-gtk-0.7.0.html;
 Voice messages;yes;https://www.gnunet.org/en/news/2022-05-messenger-gtk-0.7.0.html;

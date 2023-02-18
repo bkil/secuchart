@@ -7,7 +7,7 @@ Desktop;no;;
 Web;no;;
 Protocol;;Jabber/XMPP;
 Protocol open;yes;;
-Client license;yes;GPLv3 https://git.singpolyma.net/cheogram-android/tree/master/item/LICENSE;
+Client license;yes;GPL-3.0-only https://git.singpolyma.net/cheogram-android/tree/master/item/LICENSE;
 Register without app;yes;;
 Group chat;yes;;
 Voice calls;yes;;

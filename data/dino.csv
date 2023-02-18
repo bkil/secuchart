@@ -8,7 +8,7 @@ Web;no;;
 Languages;yes;39 https://github.com/dino/dino/wiki/Translations;29 full, 4 medium, 6 some
 Protocol;;Jabber/XMPP;
 Protocol open;yes;;
-Client license;yes;GPLv3+ https://github.com/dino/dino/blob/master/README.md https://github.com/dino/dino/blob/master/LICENSE;
+Client license;yes;GPL-3.0-or-later https://github.com/dino/dino/blob/master/README.md https://github.com/dino/dino/blob/master/LICENSE;
 Register without app;yes;;
 Group chat;yes;https://github.com/dino/dino/wiki/Frequently-asked-questions-(FAQ)#how-to-create-a-group-chat;
 Video calls;yes;https://dino.im/blog/2022/02/dino-0.3-release/;

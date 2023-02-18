@@ -9,7 +9,7 @@ Languages;yes;many https://translations.telegram.org/;
 Protocol;;MTProto https://core.telegram.org/mtproto;
 Protocol open;yes;https://core.telegram.org/mtproto;
 Server license;no;proprietary;
-Client license;yes;GPLv2 / GPLv3 https://github.com/DrKLO/Telegram/blob/master/LICENSE https://github.com/overtake/TelegramSwift/blob/master/LICENSE https://github.com/telegramdesktop/tdesktop/blob/dev/LICENSE;
+Client license;yes;GPL-2.0-only https://github.com/DrKLO/Telegram/blob/master/LICENSE TelegramSwift GPL-2.0-only https://github.com/overtake/TelegramSwift/blob/master/LICENSE Desktop GPL-3.0-only https://github.com/telegramdesktop/tdesktop/blob/dev/LICENSE;
 Register without app;no;;
 Group chat;yes;;
 Voice calls;yes;;
