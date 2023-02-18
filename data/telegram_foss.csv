@@ -9,7 +9,7 @@ Languages;yes;many https://translations.telegram.org/;
 Protocol;;MTProto https://core.telegram.org/mtproto;
 Protocol open;yes;https://core.telegram.org/mtproto;
 Server license;no;proprietary;
-Client license;yes;GPLv2 https://github.com/Telegram-FOSS-Team/Telegram-FOSS/blob/master/LICENSE;
+Client license;yes;GPL-2.0-only https://github.com/Telegram-FOSS-Team/Telegram-FOSS/blob/master/LICENSE;
 Register without app;no;;
 Group chat;yes;;
 Voice calls;yes;;

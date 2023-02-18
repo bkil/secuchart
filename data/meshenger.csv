@@ -12,7 +12,7 @@ Languages;yes;7 https://github.com/meshenger-app/meshenger-android/tree/master/a
 Protocol;;WebRTC https://github.com/meshenger-app/meshenger-android#user-content-documentation;
 Protocol open;partial;undocumented;
 Server license;yes;N/A;
-Client license;yes;GPLv3 https://github.com/meshenger-app/meshenger-android/blob/master/LICENSE;
+Client license;yes;GPL-3.0-only https://github.com/meshenger-app/meshenger-android/blob/master/LICENSE;
 Register without app;no;;
 Group chat;no;https://github.com/meshenger-app/meshenger-android/issues/7;
 Voice calls;yes;https://github.com/meshenger-app/meshenger-android/blob/master/docs/Documentation.md#user-content-calls;

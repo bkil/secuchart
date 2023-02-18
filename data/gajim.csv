@@ -8,7 +8,7 @@ Web;no;;
 Languages;yes;37 https://dev.gajim.org/gajim/gajim/-/wikis/development/devtranslate;4 full, 4 medium, 29 some
 Protocol;;Jabber/XMPP;
 Protocol open;yes;;
-Client license;yes;GPLv3 https://dev.gajim.org/gajim/gajim/-/blob/master/COPYING;
+Client license;yes;GPL-3.0-only https://dev.gajim.org/gajim/gajim/-/blob/master/COPYING;
 Register without app;yes;;
 Group chat;yes;;
 Voice calls;no;https://dev.gajim.org/gajim/gajim/-/wikis/help/gajimfaq#does-gajim-support-audiovideo;

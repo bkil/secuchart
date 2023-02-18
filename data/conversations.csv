@@ -8,7 +8,7 @@ Web;no;;
 Languages;yes;54 (21 full) https://www.transifex.com/siacs/conversations/;
 Protocol;;Jabber/XMPP;
 Protocol open;yes;;
-Client license;yes;GPLv3 https://github.com/iNPUTmice/Conversations/blob/master/LICENSE;
+Client license;yes;GPL-3.0-only https://github.com/iNPUTmice/Conversations/blob/master/LICENSE;
 Register without app;yes;;
 Group chat;yes;;
 Voice calls;yes;https://gist.github.com/iNPUTmice/a28c438d9bbf3f4a3d4c663ffaa224d9#file-conversations-av-notes-md;

@@ -7,7 +7,7 @@ Desktop;yes;Linux, FreeBSD, Windows, MacOS;https://tox.chat/clients.html https:/
 Web;no;https://tox.chat/clients.html;
 Protocol;;Tox protocol https://tox.chat/about.html;
 Protocol open;yes;https://tox.chat/about.html;
-Server license;yes;GPLv3 https://github.com/TokTok/c-toxcore/blob/master/LICENSE;
+Server license;yes;GPL-3.0-only https://github.com/TokTok/c-toxcore/blob/master/LICENSE;
 Register without app;no;https://wiki.tox.chat/users/toxid;
 Group chat;partial;invite-only https://github.com/uTox/uTox#user-content-features;
 Voice calls;yes;https://wiki.tox.chat/users/techfaq#what_is_used_for_av;

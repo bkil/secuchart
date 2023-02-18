@@ -8,8 +8,8 @@ Web;no;;
 Languages;yes;100+ https://www.transifex.com/signalapp/signal-android/;
 Protocol;;Signal Protocol https://signal.org/docs/;
 Protocol open;yes;https://signal.org/docs/;
-Server license;partial;AGPLv3 https://github.com/signalapp/Signal-Server/blob/master/LICENSE;missing sources for CDN0 S3/CDN2 GCS and abuse control https://signal.org/blog/keeping-spam-off-signal/
-Client license;yes;GPLv3 https://github.com/tw-hx/Signal-Android/blob/main/LICENSE;
+Server license;partial;AGPL-3.0-only https://github.com/signalapp/Signal-Server/blob/master/LICENSE;missing sources for CDN0 S3/CDN2 GCS and abuse control https://signal.org/blog/keeping-spam-off-signal/
+Client license;yes;GPL-3.0-only https://github.com/tw-hx/Signal-Android/blob/main/LICENSE;
 Register without app;no;;as a workaround, through the unofficial mautrix-signal matrix bridge with a custom HS
 Group chat;yes;https://support.signal.org/hc/en-us/articles/360007319331-Group-chats;
 Voice calls;yes;https://support.signal.org/hc/en-us/articles/360007060492-Voice-or-Video-Calling-with-Screen-Sharing;

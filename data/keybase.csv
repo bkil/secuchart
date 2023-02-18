@@ -9,7 +9,7 @@ Languages;no;English only;
 Protocol;;SaltPack, NaCl + MessagePack https://book.keybase.io/docs/crypto;
 Protocol open;yes;https://book.keybase.io/docs/chat/crypto;
 Server license;no;proprietary;
-Client license;yes;New BSD 3-Clause https://github.com/keybase/client/blob/master/LICENSE;
+Client license;yes;BSD-3-Clause https://github.com/keybase/client/blob/master/LICENSE;
 Register without app;yes;Web;
 Spell check;yes;;
 Group chat;yes;https://book.keybase.io/docs/chat https://book.keybase.io/docs/teams;

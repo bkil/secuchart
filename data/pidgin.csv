@@ -8,7 +8,7 @@ Web;no;;
 Languages;yes;105 https://www.transifex.com/pidgin/pidgin/;
 Protocol;;Jabber/XMPP, multiple;Bonjour, Gadu-Gadu, IRC, Novell GroupWise Messenger, Lotus Sametime, SILC, SIMPLE, Zephyr + extendable via plugins https://pidgin.im/plugins/?publisher=all&query=&type=
 Protocol open;partial;some yes;
-Client license;yes;GPLv2 https://keep.imfreedom.org/pidgin/pidgin/file/tip/COPYING;
+Client license;yes;GPL-2.0-only https://keep.imfreedom.org/pidgin/pidgin/file/tip/COPYING;
 Register without app;yes;;
 Group chat;yes;;
 Multiple devices;yes;;

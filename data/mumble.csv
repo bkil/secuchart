@@ -6,8 +6,8 @@ Apple iOS;partial;unmaintained since 2017 https://apps.apple.com/us/app/mumble/i
 Desktop;yes;Linux, Windows, MacOS https://www.mumble.info/downloads/ https://www.flathub.org/apps/details/info.mumble.Mumble https://snapcraft.io/mumble;
 Protocol;;Mumble https://wiki.mumble.info/wiki/Protocol;
 Protocol open;yes;https://github.com/mumble-voip/mumble/blob/master/src/Mumble.proto https://mumble-protocol.readthedocs.io/en/latest/;
-Server license;yes;BSD https://www.mumble.info/about/ https://www.mumble.info/LICENSE;
-Client license;yes;BSD https://www.mumble.info/about/ https://www.mumble.info/LICENSE;
+Server license;yes;BSD-3-Clause https://www.mumble.info/about/ https://www.mumble.info/LICENSE;
+Client license;yes;BSD-3-Clause https://www.mumble.info/about/ https://www.mumble.info/LICENSE;
 Group chat;partial;ephemeral, no logs https://github.com/mumble-voip/mumble/issues/2560 small images https://wiki.mumble.info/wiki/Murmur.ini#imagemessagelength;
 Voice calls;yes;https://wiki.mumble.info/wiki/FAQ;
 Video calls;no;https://wiki.mumble.info/wiki/FAQ;

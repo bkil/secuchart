@@ -8,7 +8,7 @@ Web;yes;https://fluffychat.im/web;
 Languages;yes;12+ https://gitlab.com/famedly/fluffychat;
 Protocol;;Matrix;
 Protocol open;yes;https://spec.matrix.org/latest/;
-Client license;yes;AGPLv3 https://gitlab.com/famedly/fluffychat/-/blob/main/LICENSE;
+Client license;yes;AGPL-3.0-only https://gitlab.com/famedly/fluffychat/-/blob/main/LICENSE;
 Register without app;yes;;
 Group chat;yes;;
 Voice calls;yes;WebRTC https://matrix.org/faq/#what-can-i-actually-do-with-this%3F;

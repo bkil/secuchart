@@ -9,7 +9,7 @@ Languages;yes;46 https://hosted.weblate.org/engage/nekox/;
 Protocol;;MTProto https://core.telegram.org/mtproto;
 Protocol open;yes;https://core.telegram.org/mtproto;
 Server license;no;proprietary;
-Client license;yes;GPLv3 https://github.com/NekoX-Dev/NekoX/blob/main/LICENSE;
+Client license;yes;GPL-3.0-only https://github.com/NekoX-Dev/NekoX/blob/main/LICENSE;
 Register without app;no;;
 Group chat;yes;;
 Voice calls;yes;;

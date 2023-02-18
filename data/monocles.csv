@@ -7,7 +7,7 @@ Desktop;no;;
 Web;yes;https://interact.monocles.de/;
 Protocol;;Jabber/XMPP;
 Protocol open;yes;;
-Client license;yes;GPLv3 https://codeberg.org/Arne/monocles_chat/src/branch/master/LICENSE;
+Client license;yes;GPL-3.0-only https://codeberg.org/Arne/monocles_chat/src/branch/master/LICENSE;
 Register without app;yes;;
 Group chat;yes;;
 Voice calls;yes;;

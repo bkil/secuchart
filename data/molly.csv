@@ -9,8 +9,8 @@ Web;no;;
 Languages;yes;70+ https://hosted.weblate.org/projects/molly-instant-messenger/molly-app/;
 Protocol;;Signal Protocol https://signal.org/docs/;
 Protocol open;yes;https://signal.org/docs/;
-Server license;partial;AGPLv3 https://github.com/signalapp/Signal-Server/blob/master/LICENSE;missing sources for CDN0 S3/CDN2 GCS and abuse control https://signal.org/blog/keeping-spam-off-signal/
-Client license;yes;GNU GPLv3 https://github.com/mollyim/mollyim-android/blob/main/LICENSE;
+Server license;partial;AGPL-3.0-only https://github.com/signalapp/Signal-Server/blob/master/LICENSE;missing sources for CDN0 S3/CDN2 GCS and abuse control https://signal.org/blog/keeping-spam-off-signal/
+Client license;yes;GPL-3.0-only https://github.com/mollyim/mollyim-android/blob/main/LICENSE;
 Register without app;no;;
 Group chat;yes;https://support.signal.org/hc/en-us/articles/360007319331-Group-chats;
 Voice calls;yes;https://support.signal.org/hc/en-us/articles/360007060492-Voice-or-Video-Calling-with-Screen-Sharing;
