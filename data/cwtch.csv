@@ -39,6 +39,7 @@ Threat model;yes;https://docs.openprivacy.ca/cwtch-security-handbook/risk.html;
 End-to-end encryption;yes;Profiles are stored locally on disk and encrypted https://docs.openprivacy.ca/cwtch-security-handbook/profile_encryption_and_storage.html;
 Metadata protection;yes;https://docs.openprivacy.ca/cwtch-security-handbook/risk.html?highlight=metadata#threat-model;
 Perfect forward secrecy;partial;1-1 yes https://docs.openprivacy.ca/cwtch-security-handbook/authentication_protocol.html groups no https://docs.openprivacy.ca/cwtch-security-handbook/groups.html;
+Reproducible builds;partial;https://docs.cwtch.im/blog/cwtch-bindings-reproducible/ https://docs.cwtch.im/blog/autobindings/;
 Usage without phone number;yes;;
 Transparent financing;yes;https://openprivacy.ca/reports/ https://openprivacy.ca/our-supplychain/ https://openprivacy.ca/donate/;
 No-cost tier;yes;;
