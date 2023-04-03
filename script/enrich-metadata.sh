@@ -128,23 +128,26 @@ download_google_play_metadata() {
   sed -rn "
     s~^<p itemprop=\"datePublished\">([^<>]+)</p>$~date\t\1~
     t print
-    s~^<span class=\"update\">([A-Z][a-z]{2} [0-9]{1,2}, [0-9]{4})</span>~\1~
+
+    s~^<p class=\"date\">([A-Z][a-z]{2} [0-9]{1,2}, [0-9]{4})</p>~date\t\1~
+    t date_update
+    s~^<span class=\"update\">([A-Z][a-z]{2} [0-9]{1,2}, [0-9]{4})</span>~update\t\1~
     T not_date_update
-    s~^Jan~01~
-    s~^Feb~02~
-    s~^Mar~03~
-    s~^Apr~04~
-    s~^May~05~
-    s~^Jun~06~
-    s~^Jul~07~
-    s~^Aug~08~
-    s~^Sep~09~
-    s~^Oct~10~
-    s~^Nov~11~
-    s~^Dec~12~
-    s~^([0-9]+) ([0-9]+), ([0-9]+)$~\3-\1-\2~
+    :date_update
+    s~\tJan~\t01~
+    s~\tFeb~\t02~
+    s~\tMar~\t03~
+    s~\tApr~\t04~
+    s~\tMay~\t05~
+    s~\tJun~\t06~
+    s~\tJul~\t07~
+    s~\tAug~\t08~
+    s~\tSep~\t09~
+    s~\tOct~\t10~
+    s~\tNov~\t11~
+    s~\tDec~\t12~
+    s~\t([0-9]+) ([0-9]+), ([0-9]+)$~\t\3-\1-\2~
     s~-([0-9])$~-0\1~
-    s~^~date\t~
     b print
     :not_date_update
 
@@ -154,12 +157,14 @@ download_google_play_metadata() {
     t print
     s~^<a class=\"version-item .* data-dt-version=\"([^<>\"]+)\".*$~rel\t\1~
     t print
+    s~^<span itemprop=\"version\">([^<>]+)</span> by$~rel\t\1~
+    t print
 
     s~^<p>(Android )?([0-9]+\.[0-9]+)( and up|[+])?</p>$~os\t\2~
     t print
-    s~^<p><strong>Requires Android: </strong>Android ([^()<>]*[^()<>+ ])[+]?( *\([^<>]*\))?</p>$~os\t\1~
+    s~^<p><strong>Requires Android: </strong>Android ([^()<>]*[^()<>+ ])([+]| and up)?( *\([^<>]*\))?</p>$~os\t\1~
     t print
-    s~^<p class=\"additional-info\">Android ([^<>+]+)[+]?</p>$~os\t\1~
+    s~^<p class=\"additional-info\">(Android )?([0-9.]+)([+]| and up)?</p>$~os\t\2~
     t print
 
     s~^<p><strong>File Size: </strong>([^<>]+) (MB)</p>$~size\t\1\2~
@@ -177,6 +182,7 @@ download_google_play_metadata() {
   awk -F "\t" '
     BEGIN {
       date = "?";
+      update = "?";
       rel = "?";
       size = "?";
       os = "?";
@@ -184,6 +190,8 @@ download_google_play_metadata() {
     {
       if ((date == "?") && ($1 == "date")) {
         date = $2;
+      } else if ((update == "?") && ($1 == "update")) {
+        update = $2;
       } else if ((rel == "?") && ($1 == "rel")) {
         rel = $2;
       } else if ((size == "?") && ($1 == "size")) {
@@ -193,6 +201,9 @@ download_google_play_metadata() {
       }
     }
     END {
+      if (update != "?") {
+        date = update;
+      }
       if ((date != "?") || (rel != "?") || (size != "?") || (os != "?")) {
         printf("%s %s %s %s\n", date, rel, os, size);
       }
