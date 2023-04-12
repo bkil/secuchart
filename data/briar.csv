@@ -9,7 +9,7 @@ Languages;yes;many https://code.briarproject.org/briar/briar/-/tree/master/briar
 Protocol;;Bramble;
 Protocol open;yes;https://code.briarproject.org/briar/briar/-/wikis/home#protocol;
 Client license;yes;GPL-3.0-or-later https://code.briarproject.org/briar/briar/-/blob/master/LICENSE.txt Desktop AGPL-3.0 https://code.briarproject.org/briar/briar-desktop/-/blob/main/LICENSE.md;
-Register without app;no;;
+Register without app;;No registration necessary.;
 Spell check;no;no;No spell check
 Group chat;yes;https://code.briarproject.org/briar/briar/-/wikis/FAQ#when-do-posts-in-forumsgroupsblogs-get-shared-with-others;
 Voice calls;no;https://code.briarproject.org/briar/briar/-/issues/985;
