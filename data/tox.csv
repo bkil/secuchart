@@ -6,8 +6,9 @@ Apple iOS;no;https://tox.chat/clients.html;
 Desktop;yes;Linux, FreeBSD, Windows, MacOS;https://tox.chat/clients.html https://github.com/qTox/qTox https://github.com/uTox/uTox https://github.com/toxygen-project/toxygen https://github.com/Jfreegman/toxic
 Web;no;https://tox.chat/clients.html;
 Protocol;;Tox protocol https://tox.chat/about.html;
-Protocol open;yes;https://tox.chat/about.html;
-Server license;yes;GPL-3.0-only https://github.com/TokTok/c-toxcore/blob/master/LICENSE;
+Protocol open;yes;https://tox.chat/about.html https://github.com/Tox/Tox-Client-Standard;
+Server license;yes;AGPL-3.0 https://github.com/Tox/ToxStatus/blob/master/LICENSE https://wiki.tox.chat/users/runningnodes;CC-BY-SA-4.0 for website https://github.com/Tox/tox.chat/blob/master/LICENSE
+Client license;yes;GPL-3.0-only https://github.com/TokTok/c-toxcore/blob/master/LICENSE;
 Register without app;no;https://wiki.tox.chat/users/toxid;
 Group chat;partial;invite-only https://github.com/uTox/uTox#user-content-features;
 Voice calls;yes;https://wiki.tox.chat/users/techfaq#what_is_used_for_av;
@@ -38,6 +39,7 @@ Network store and forward;no;https://wiki.tox.chat/users/offline_messaging;
 Wireless mode;no;https://wiki.tox.chat/users/techfaq;
 IP shielded from peers;no;p2p, not by default;Tox ID resolved through onion routing, Tor optional https://wiki.tox.chat/users/tox_over_tor_tot
 Third party clients;yes;https://wiki.tox.chat/clients;
+Bots available;partial;auto-inviter https://github.com/JFreegman/ToxBot;
 Tor access of vendor operated network;yes;https://tox.chat/faq.html#tox-leak-ip;
 Vendor legal entity kind;;person;
 First release;yes;2013 https://tox.chat/about.html;
