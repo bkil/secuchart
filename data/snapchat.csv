@@ -6,7 +6,7 @@ Apple iOS;yes;https://apps.apple.com/us/app/snapchat/id447188370;
 Desktop;no;;
 Web;no;coming soon to web https://web.snapchat.com/coming-soon;
 Languages;yes;many https://support.snapchat.com/en-US/a/change-language;
-Protocol open;yes;https://chromium.googlesource.com/chromium/src/+/HEAD/net/quic/;
+Protocol open;no;;
 Server license;no;proprietary https://snap.com/en-US/terms;
 Client license;no;proprietary https://snap.com/en-US/terms;
 Register without app;no;;
