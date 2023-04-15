@@ -7,6 +7,8 @@ Desktop;yes;Linux, MacOS, Windows;https://me-download.wickr.com/#/version/me
 Web;no;;
 Protocol;;Wickr Secure Messaging Protocol (Home browed);
 Protocol open;no;;
+Server license;no;proprietary;
+Client license;no;proprietary;
 Register without app;no;;
 Emoticons in message;yes;;
 Perfect forward secrecy;yes;;
