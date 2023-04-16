@@ -5,3 +5,4 @@ Server license;no;proprietary;
 Client license;yes;AGPL-3.0 https://github.com/olvid-io/olvid-android/blob/main/LICENSE https://github.com/olvid-io/olvid-ios/blob/main/LICENSE;
 Large bug bounty;yes;https://blog.yeswehack.com/customer-stories/olvid-the-ultra-secure-messaging-app-moves-to-public-bug-bounty-program/;
 Audits;yes;2020 https://eprint.iacr.org/2020/808;
+Public issue tracker;yes;https://github.com/olvid-io/olvid-android/issues https://github.com/olvid-io/olvid-ios/issues;
