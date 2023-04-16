@@ -2,3 +2,4 @@ name;;smoke;
 Summary;;Echo communications through Android https://textbrowser.github.io/smoke/;Features rundown in digestible format https://smokeappope.sourceforge.io/
 Android Google Play;no;;
 Android F-droid/apk;yes;https://f-droid.org/packages/org.purple.smoke/;
+Public issue tracker;yes;https://github.com/textbrowser/smoke/issues;
