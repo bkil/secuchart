@@ -24,11 +24,11 @@ Unicode support;yes;;
 Sticker packs;partial;via 3rd party keyboards;
 Link preview;partial;mobile only;User setting to generate link preview upon sending.
 Inline images;yes;https://github.com/simplex-chat/simplex-chat/blob/master/blog/20220511-simplex-chat-v2-images-files.md;mobile
-Inline videos;no;;
+Inline videos;yes;https://simplex.chat/blog/20230422-simplex-chat-vision-funding-v5-videos-files-passcode.html#send-videos-and-files-up-to-1gb;
 Reactions;no;;
 Multiple devices;no;;
 Multiple accounts;yes;https://simplex.chat/blog/20230204-simplex-chat-v4-5-user-chat-profiles.html#multiple-chat-profiles;
-Application locking;yes;https://github.com/simplex-chat/simplex-chat/releases/tag/v2.2.0;Native mobile platform lock.
+Application locking;yes;https://github.com/simplex-chat/simplex-chat/releases/tag/v2.2.0 https://simplex.chat/blog/20230422-simplex-chat-vision-funding-v5-videos-files-passcode.html#app-passcode;Native mobile platform lock + app passcode
 Remote message removal;yes;;mobile, in console there's whole history visible e.g. 21:37 a11> ff 21:37 a11> [deleted] ff
 Remote message correction;yes;;
 Message expiration;yes;https://simplex.chat/blog/20230103-simplex-chat-v4.4-disappearing-messages.html;
@@ -50,6 +50,7 @@ Perfect forward secrecy;yes;https://github.com/simplex-chat/simplexmq/blob/maste
 Reproducible builds;yes;https://github.com/simplex-chat/simplex-chat/blob/stable/scripts/android/build-android.sh;
 Audits;yes;2022-11-03 by Trail of Bits https://simplex.chat/blog/20221108-simplex-chat-v4.2-security-audit-new-website.html https://raw.githubusercontent.com/simplex-chat/simplex-chat/stable/docs/SimpleX_Chat_Final_Report_11_03_2022.pdf;
 Usage without phone number;yes;;
+Transparent financing;yes;https://simplex.chat/blog/20230422-simplex-chat-vision-funding-v5-videos-files-passcode.html#how-is-it-funded-and-what-is-the-business-model;
 No-cost tier;yes;;
 Active development;yes;;
 Isolated self-hosting;yes;;
@@ -59,8 +60,9 @@ Offline;partial;not possible to add contact;
 Servers required;;SMP https://github.com/simplex-chat/simplexmq#using-smp-server-and-smp-agent;
 Network store and forward;yes;;
 IP shielded from peers;yes;https://github.com/simplex-chat/simplex-chat#privacy-technical-details-and-limitations https://github.com/simplex-chat/simplex-chat/blob/stable/blog/20220808-simplex-chat-v3.1-chat-groups.md#access-to-messaging-servers-via-tor;
-Proxy support;yes;SOCKS https://github.com/simplex-chat/simplex-chat/blob/stable/blog/20220808-simplex-chat-v3.1-chat-groups.md;
+Proxy support;yes;SOCKS https://github.com/simplex-chat/simplex-chat/blob/stable/blog/20220808-simplex-chat-v3.1-chat-groups.md https://simplex.chat/blog/20230422-simplex-chat-vision-funding-v5-videos-files-passcode.html#networking-improvements;
 Bots available;partial;https://github.com/simplex-chat/simplex-chat/tree/stable/apps https://github.com/simplex-chat/simplex-chat/pull/1036;few examples so far
-Tor access of vendor operated network;yes;https://github.com/simplex-chat/simplex-chat/blob/stable/blog/20220808-simplex-chat-v3.1-chat-groups.md#access-to-messaging-servers-via-tor;
+Tor access of vendor operated network;yes;https://github.com/simplex-chat/simplex-chat/blob/stable/blog/20220808-simplex-chat-v3.1-chat-groups.md#access-to-messaging-servers-via-tor https://simplex.chat/blog/20230422-simplex-chat-vision-funding-v5-videos-files-passcode.html#networking-improvements;
+IPv6 access of vendor operated network;yes;https://simplex.chat/blog/20230422-simplex-chat-vision-funding-v5-videos-files-passcode.html#networking-improvements;
 First release;no;2021-05-02 https://github.com/simplex-chat/simplex-chat/releases/tag/v0.2.0;
 Public issue tracker;yes;https://github.com/simplex-chat/simplex-chat/issues;
