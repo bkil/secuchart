@@ -3,7 +3,7 @@ Summary;;Nameless DHT messenger https://tox.chat/;
 Android Google Play;yes;https://play.google.com/store/apps/details?id=ltd.evilcorp.atox;
 Android F-droid/apk;yes;https://f-droid.org/en/packages/com.zoffcc.applications.trifa/ https://f-droid.org/en/packages/ltd.evilcorp.atox/;
 Apple iOS;no;https://tox.chat/clients.html;
-Desktop;yes;Linux, FreeBSD, Windows, MacOS;https://tox.chat/clients.html https://github.com/qTox/qTox https://github.com/uTox/uTox https://github.com/toxygen-project/toxygen https://github.com/Jfreegman/toxic
+Desktop;yes;Linux, FreeBSD, Windows, MacOS;https://tox.chat/clients.html https://github.com/uTox/uTox https://github.com/toxygen-project/toxygen https://github.com/Jfreegman/toxic qTox https://github.com/qTox/qTox archived since 2023-02-12 and unmaintained
 Web;no;https://tox.chat/clients.html;
 Protocol;;Tox protocol https://tox.chat/about.html;
 Protocol open;yes;https://tox.chat/about.html https://github.com/Tox/Tox-Client-Standard;
