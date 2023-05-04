@@ -44,4 +44,4 @@ Tor access of vendor operated network;yes;https://tox.chat/faq.html#tox-leak-ip;
 Vendor legal entity kind;;person;
 First release;yes;2013 https://tox.chat/about.html;
 Public issue tracker;yes;https://github.com/irungentoo/toxcore/issues https://github.com/tux3/qTox/issues https://github.com/notsecure/uTox/issues;
-No past server vulnerabilities;no;https://github.com/TokTok/c-toxcore/issues/426;
+No past server vulnerabilities;no;https://github.com/TokTok/c-toxcore/issues/426 https://blog.tox.chat/2023/03/redesign-of-toxs-cryptographic-handshake/;
