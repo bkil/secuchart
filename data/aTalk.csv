@@ -2,6 +2,7 @@ name;;aTalk;
 Summary;;Jabber/XMPP client for android with video calls and GPS features https://cmeng-git.github.io/atalk/;
 Android Google Play;yes;https://play.google.com/store/apps/details?id=org.atalk.android;
 Android F-droid/apk;yes;https://f-droid.org/en/packages/org.atalk.android/;
+Languages;yes;7 https://github.com/cmeng-git/atalk-android/tree/master/aTalk/src/main/res;
 Protocol;;Jabber/XMPP;
 Protocol open;yes;;
 Client license;yes;Apache-2.0 https://github.com/cmeng-git/atalk-android/blob/master/LICENSE;
