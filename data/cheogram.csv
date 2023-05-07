@@ -5,6 +5,7 @@ Android F-droid/apk;yes;https://f-droid.org/en/packages/com.cheogram.android/;
 Apple iOS;no;;
 Desktop;no;;
 Web;no;;
+Languages;yes;34 https://git.singpolyma.net/cheogram-android/tree/master/item/src/main/res;
 Protocol;;Jabber/XMPP;
 Protocol open;yes;;
 Client license;yes;GPL-3.0-only https://git.singpolyma.net/cheogram-android/tree/master/item/LICENSE;
