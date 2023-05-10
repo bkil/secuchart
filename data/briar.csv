@@ -1,5 +1,5 @@
 name;;Briar;
-Summary;;Anonymous chat over LAN or TOR https://briarproject.org/;
+Summary;;Chat over LAN, BT or Tor https://briarproject.org/;
 Android Google Play;yes;https://play.google.com/store/apps/details?id=org.briarproject.briar.android;
 Android F-droid/apk;yes;https://f-droid.org/en/packages/org.briarproject.briar.android/ https://briarproject.org/installing-briar-via-f-droid/ https://briarproject.org/apk;
 Apple iOS;no;https://code.briarproject.org/briar/briar/-/wikis/FAQ#will-there-be-an-ios-version-of-briar https://code.briarproject.org/briar/briar/-/issues/445;
@@ -9,7 +9,7 @@ Languages;yes;many https://code.briarproject.org/briar/briar/-/tree/master/briar
 Protocol;;Bramble;
 Protocol open;yes;https://code.briarproject.org/briar/briar/-/wikis/home#protocol;
 Client license;yes;GPL-3.0-or-later https://code.briarproject.org/briar/briar/-/blob/master/LICENSE.txt Desktop AGPL-3.0 https://code.briarproject.org/briar/briar-desktop/-/blob/main/LICENSE.md;
-Register without app;;No registration necessary.;
+Register without app;yes;No registration necessary.;
 Spell check;no;no;No spell check
 Group chat;yes;https://code.briarproject.org/briar/briar/-/wikis/FAQ#when-do-posts-in-forumsgroupsblogs-get-shared-with-others;
 Voice calls;no;https://code.briarproject.org/briar/briar/-/issues/985;
@@ -21,6 +21,7 @@ Audio filtering;no;https://code.briarproject.org/briar/briar/-/issues/985;
 File transfer;no;https://code.briarproject.org/briar/briar/-/issues/407;
 Emoticons in message;yes;;
 Sticker packs;no;no;
+Link preview;no;no;
 Polls;no;;
 Reactions;no;;
 Multiple devices;no;https://code.briarproject.org/briar/briar/-/wikis/FAQ#can-i-use-the-same-account-with-several-devices;
@@ -29,12 +30,13 @@ Multiple accounts;no;https://code.briarproject.org/briar/briar/-/wikis/FAQ#can-i
 Application locking;yes;Android's screen lock https://briarproject.org/news/2018-briar-1.1-released/;
 Remote message removal;no;;
 Remote message correction;no;;
-Message expiration;yes;Only setting of 7 days possible https://briarproject.org/news/2021-briar-1.3-released/;
+Message expiration;yes;Only setting of 7 days possible in private messages https://briarproject.org/news/2021-briar-1.3-released/;
 Presence status;yes;for groups only contacts https://code.briarproject.org/briar/briar/-/issues/826;
 Presence not mandatory;no;;
 Typing indication;no;;
 Read receipts;no;only delivery receipt https://code.briarproject.org/briar/briar/-/issues/1220;
 Themes;partial;https://briarproject.org/news/2018-briar-1.1-released/;light/dark
+Vendor can't curate content;no;;
 Account deactivation after device compromise;no;;
 Account recovery after device compromise;no;https://code.briarproject.org/briar/briar/-/wikis/FAQ#how-do-i-backup-my-account;
 Disallow screenshots;yes;Android https://code.briarproject.org/briar/briar/-/issues/2310;
