@@ -21,6 +21,7 @@ Multiple accounts;yes;command line flag –profile;
 Message expiration;no;;
 Presence status;yes;https://github.com/Nheko-Reborn/nheko/blob/master/CHANGELOG.md;- Shows online status of the people you are talking to. - You can define a custom status message to tell others what you are currently up to. - The status message appears next to the usernames in the timeline. - Your server needs to have presence enabled for this to work.
 Presence not mandatory;yes;;
+Typing indication;yes;can be disabled;
 Read receipts;yes;;
 Receipts not mandatory;no;can be hidden on client only;
 Themes;partial;https://github.com/Nheko-Reborn/nheko;light/dark
