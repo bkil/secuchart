@@ -45,7 +45,7 @@ Identity not controlled by vendor;no;;
 Offline;partial;Compose or read stored messages;
 Vendor jurisdiction;;USA https://www.snap.com/en-US/safety/safety-enforcement;
 Good ToSDR grade;no;E https://tosdr.org/en/service/311;
-First release;yes;2011-10-29 originally named “Picaboo”;
+First release;yes;2011-10-29 originally named "Picaboo";
 Public issue tracker;partial;only in-app reporting via "shake to report" https://support.snapchat.com/en-US/a/shake-to-report;
 Support team;yes;;
 No past DDoS;no;DoS using the API for Android and iOS https://www.theregister.com/2014/02/10/snapchat_token_bug_creates_dos_attack_for_ios_android/;

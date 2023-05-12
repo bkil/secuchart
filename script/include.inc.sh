@@ -115,6 +115,12 @@ check_item_syntax() {
     return 1
   fi
 
+  LINES="`LC_ALL=c grep "[^ -~]" "$FILE"`"
+  if [ -n "$LINES" ]; then
+    printf "error: non-ASCII characters detected:\n%s\n" "$LINES" >&2
+    return 1
+  fi
+
   return 0
 }
 

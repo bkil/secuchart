@@ -34,7 +34,7 @@ Typing indication;partial;cannot be disabled https://gitlab.com/famedly/fluffych
 Read receipts;yes;;
 Receipts not mandatory;no;;
 Themes;partial;;dark/light with accent color
-Vendor can't curate content;yes;Vendor doesn’t provide a homeserver;
+Vendor can't curate content;yes;Vendor doesn't provide a homeserver;
 Account deactivation after device compromise;yes;;
 Account recovery after device compromise;yes;;
 Disallow screenshots;no;;

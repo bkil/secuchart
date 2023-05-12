@@ -53,7 +53,7 @@ Third party clients;partial;no alternative client;
 Tor access of vendor operated network;no;session/lokinet were designed to be non-compatible with tor;
 IPv6 access of vendor operated network;no;session is not currently compatible with ipv6, may be in future;
 Vendor operated network inaccessible from countries;partial;possibly China is blocking access to Session and Lokinet;
-Vendor jurisdiction;;Australia;complicated 5 eyes jurisdiction with many anti-privacy and anti-encryption laws	https://optf.ngo/legals/
+Vendor jurisdiction;;Australia;complicated 5 eyes jurisdiction with many anti-privacy and anti-encryption laws https://optf.ngo/legals/
 Infrastructure jurisdiction;;Australia https://optf.ngo/legals/;
 Infrastructure provider;;Hetzner and OVH, distributed Lokinet;session owned servers are primarily hetzner and ovh, lokinet servers are distributed worldwide in multiple countries and with various isps
 Good ToSDR grade;yes;B https://tosdr.org/en/service/3015;

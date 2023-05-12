@@ -10,7 +10,7 @@ Protocol;;https://docs.openprivacy.ca/cwtch-security-handbook/;
 Protocol open;yes;https://git.openprivacy.ca/cwtch.im/cwtch https://docs.openprivacy.ca/cwtch-security-handbook/tapir.html;
 Server license;yes;MIT https://git.openprivacy.ca/cwtch.im/server/src/branch/trunk/LICENSE;
 Client license;yes;MIT https://git.openprivacy.ca/cwtch.im/cwtch-ui/src/branch/trunk/LICENSE;
-Register without app;;No registration necessary.;
+Register without app;yes;No registration necessary.;
 Spell check;no;not yet https://git.openprivacy.ca/cwtch.im/cwtch-ui/issues/386;
 Group chat;yes;experimental https://cwtch.im/ group chats https://git.openprivacy.ca/cwtch.im/cwtch/wiki/HYBRID-GROUPS-DRAFT#encryption;
 Voice calls;no;not yet https://cwtch.im/ http://cwtchim3z2gdsyb27acfc26lup5aqbegjrjsqulzrnkuoalq5h4gmcid.onion/;
