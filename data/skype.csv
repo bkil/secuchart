@@ -25,6 +25,22 @@ Themes;partial;https://support.skype.com/en/faq/FA34854/how-do-i-change-my-theme
 End-to-end encryption;partial;Only for "Private converstations" (not default) https://support.skype.com/en/faq/FA34824/what-are-skype-private-conversations https://support.skype.com/en/faq/FA31/does-skype-use-encryption;
 Deniability;no;;
 Identity not controlled by vendor;no;;
+Serverless WAN mode;no;;
+Serverless LAN mode;no;;
+Wireless mode;no;;
+Bots available;yes;;https://beebom.com/best-skype-bots/
+User addons;yes;;https://www.thewindowsclub.com/skype-plug-ins-tools-software
+Transparency reports;no;Transparanty is nonexistent;https://www.microsoft.com/en-us/corporate-responsibility/law-enforcement-requests-report
+Vendor jurisdiction;;Depends on the region, but every vendor reports to headquarter in USA;
+Infrastructure jurisdiction;;Depends on the region, but every vendor reports to headquarter in USA;
+Infrastructure provider;;Amazon, Azure + others;
 Good ToSDR grade;no;E https://tosdr.org/en/service/244;
 First release;yes;2003-08-29 https://en.wikipedia.org/wiki/Skype;
+Public issue tracker;no;;
+Support team;no;;
+No past DDoS;no;;https://www.zdnet.com/article/microsoft-heres-how-we-stopped-the-biggest-ever-ddos-attack/
 No past client vulnerabilities;no;surreptitious sharing https://threatpost.com/surreptitious-sharing-android-api-flaw-leaks-data-private-keys/117174/;
+Ethical financing in the past;no;;Microsoft is paying little to no Tax in Scandinavia
+Ethical business in the past;no;;
+No past conflicts of interest;no;;
+No past privacy glitches;no;;

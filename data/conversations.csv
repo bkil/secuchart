@@ -18,6 +18,7 @@ File transfer;yes;;
 Emoticons in message;yes;;
 Multiple devices;yes;;
 Multiple accounts;yes;;
+Application locking;no;;
 Remote message removal;no;;
 Remote message correction;no;;
 Message expiration;no;;
@@ -29,6 +30,7 @@ Usage without phone number;yes;;
 Active development;yes;https://github.com/iNPUTmice/Conversations/commits/master;
 Multi-party development;no;;
 Identity not controlled by vendor;yes;;
+Offline;no;;
 Serverless WAN mode;no;;
 Serverless LAN mode;no;;XEP-0174 unimplemented https://github.com/iNPUTmice/Conversations/issues/1415
 Network store and forward;yes;if server and contact client support XEP-0313 MAM;

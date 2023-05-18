@@ -4,10 +4,22 @@ Android Google Play;yes;https://play.google.com/store/apps/details?id=com.viber.
 Android F-droid/apk;no;https://www.viber.com/en/download/;
 Other Android;yes;Huawei https://appgallery.huawei.com/#/app/C101130285;
 Apple iOS;yes;https://apps.apple.com/us/app/viber-messenger-chats-calls/id382617920/;
+Desktop;no;only a remote/sync;No full or partial desktop client, app is phone centric
+Web;no;;
+Languages;yes;;
+Protocol;;homebrew;Viber's security protocol was based on the "double ratchet" protocol found in Open Whisper Systems Signal application, with our own proprietary implementation and additions. Our entire security overview is available here. https://www.viber.com/en/security/
 Protocol open;no;;
 Server license;no;proprietary;
 Client license;no;proprietary;
+Register without app;no;;
 Group chat;yes;https://viber.com/en/blog/2021-01-27/securitips-how-to-play-it-safe-on-viber-and-how-your-chats-are-kept-private/;
+Voice calls;yes;;
+Video calls;yes;;
+Group calls;yes;;
+Voice messages;yes;;
+File transfer;yes;;
+Emoji composer;yes;https://www.viber.com/en/features/;
+Sticker packs;yes;;
 Application locking;yes;also on desktop, individual chats too https://viber.com/en/blog/2021-01-27/securitips-how-to-play-it-safe-on-viber-and-how-your-chats-are-kept-private/;
 Message expiration;yes;https://viber.com/en/blog/2021-01-27/securitips-how-to-play-it-safe-on-viber-and-how-your-chats-are-kept-private/;
 Spam protection;yes;spam checker, limit invites;select who can add you to group chats https://viber.com/en/blog/2021-01-27/securitips-how-to-play-it-safe-on-viber-and-how-your-chats-are-kept-private/

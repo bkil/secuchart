@@ -3,6 +3,8 @@ Summary;;Decentralized end-to-end encrypted messenger focusing on meta-data prot
 Screenshots;;https://f-droid.org/en/packages/chat.simplex.app/;
 Android Google Play;yes;https://play.google.com/store/apps/details?id=chat.simplex.app;
 Android F-droid/apk;yes;https://f-droid.org/en/packages/chat.simplex.app/ https://app.simplex.chat/ https://github.com/simplex-chat/simplex-chat/releases/latest;
+Other mobile;no;;
+Other Android;yes;;
 Apple iOS;yes;https://apps.apple.com/us/app/simplex-chat/id1605771084;
 Desktop;yes;terminal only https://github.com/simplex-chat/simplex-chat/blob/stable/docs/CLI.md;
 Web;no;;
@@ -17,6 +19,7 @@ Voice calls;yes;https://simplex.chat/blog/20220711-simplex-chat-v3-released-ios-
 Video calls;yes;https://simplex.chat/blog/20220711-simplex-chat-v3-released-ios-notifications-audio-video-calls-database-export-import-protocol-improvements.html;terminal app via WebRTC in browser
 Group calls;no;;
 Voice messages;yes;;https://simplex.chat/blog/20221206-simplex-chat-v4.3-voice-messages.html
+Screen sharing;no;;
 File transfer;yes;https://github.com/simplex-chat/simplex-chat/blob/master/blog/20220511-simplex-chat-v2-images-files.md;
 Message formatting;yes;markdown https://github.com/simplex-chat/simplex-chat/issues/307;
 Emoticons in message;yes;;
