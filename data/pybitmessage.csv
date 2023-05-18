@@ -1,5 +1,5 @@
 name;;PyBitmessage;
-Summary;;Decentralized trustless P2P communication protocol https://wiki.bitmessage.org/ https://pybitmessage.readthedocs.io/;
+Summary;;P2P chat over a blockchain;Decentralized trustless P2P communication protocol https://wiki.bitmessage.org/ https://pybitmessage.readthedocs.io/
 Android Google Play;no;https://wiki.bitmessage.org/;
 Android F-droid/apk;partial;2018;https://github.com/Dissem/Abit https://github.com/Bitmessage/PyBitmessage/blob/v0.6/buildscripts/androiddev.sh beta, requires server
 Other mobile;no;https://wiki.bitmessage.org/;

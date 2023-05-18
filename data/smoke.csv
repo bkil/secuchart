@@ -1,5 +1,6 @@
 name;;smoke;
-Summary;;Echo communications through Android https://textbrowser.github.io/smoke/;Features rundown in digestible format https://smokeappope.sourceforge.io/
+Summary;;P2P on WAN relay or LAN;Echo communications through Android https://textbrowser.github.io/smoke/ Features rundown in digestible format https://smokeappope.sourceforge.io/
 Android Google Play;no;;
 Android F-droid/apk;yes;https://f-droid.org/packages/org.purple.smoke/;
+Protocol;;Echo https://textbrowser.github.io/smoke/;
 Public issue tracker;yes;https://github.com/textbrowser/smoke/issues;

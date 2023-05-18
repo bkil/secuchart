@@ -1,5 +1,5 @@
 name;;Signal-FOSS;
-Summary;;Soft fork of Signal for Android with proprietary Google binary blobs removed, uses OpenStreetMap for maps and a websocket server connection https://www.twinhelix.com/apps/signal-foss/;
+Summary;;Libre Signal fork, no blobs;Soft fork of Signal for Android with proprietary Google binary blobs removed, uses OpenStreetMap for maps and a websocket server connection https://www.twinhelix.com/apps/signal-foss/
 Android Google Play;no;;
 Android F-droid/apk;partial;repo https://www.twinhelix.com/apps/signal-foss/ apk https://github.com/tw-hx/Signal-Android/releases;
 Apple iOS;no;;

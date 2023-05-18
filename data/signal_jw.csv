@@ -1,5 +1,5 @@
 name;;Signal-JW;
-Summary;;Signal-JW is a custom build of Signal for Android https://johanw.home.xs4all.nl/Signal/signal-jw.html;
+Summary;;Signal fork with more options;Signal for Android with additional options and small customization features https://johanw.home.xs4all.nl/Signal/signal-jw.html
 Android Google Play;no;;
 Android F-droid/apk;partial;apk https://github.com/johanw666/Signal-Android/releases;
 Apple iOS;no;;

@@ -1,5 +1,5 @@
 name;;quiet;
-Summary;;Alternative to team chats, all data syncs directly between a team's devices over Tor with no server required https://www.tryquiet.org/;
+Summary;;P2P team chat on Tor;Alternative to team chats, all data syncs directly between a team's devices over Tor with no server required https://www.tryquiet.org/
 Android Google Play;yes;https://play.google.com/store/apps/details?id=com.quietmobile;
 Android F-droid/apk;no;https://tryquiet.org/#Features https://github.com/TryQuiet/quiet/issues/1342;support is on the way
 Other Android;no;not yet https://github.com/TryQuiet/quiet/wiki/Quiet-FAQ#does-quiet-work-on-mobile;

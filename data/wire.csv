@@ -1,5 +1,5 @@
 name;;wire;
-Summary;;E2EE cross-platform chat, voice and video calls messenger with an option to register w/o phone number. Also optional paid tiers https://wire.com/;
+Summary;;Chat, video calls for work;E2EE cross-platform chat, voice and video calls messenger with an option to register w/o phone number. Also optional paid tiers https://wire.com/
 Android Google Play;yes;https://play.google.com/store/apps/details?id=com.wire;
 Android F-droid/apk;yes;https://f-droid.org/en/packages/com.wire/;
 Public issue tracker;yes;https://github.com/wireapp/wire-android/issues https://github.com/wireapp/wire-ios/issues https://github.com/wireapp/wire-desktop https://github.com/wireapp/wire-webapp https://github.com/wireapp/wire-server;

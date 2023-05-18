@@ -1,5 +1,5 @@
 name;;XMPP;
-Summary;;Communication protocol. Features as spec extensions https://xmpp.org/;
+Summary;;Features as spec extensions;Communication protocol that multiple clients use in this chart. https://xmpp.org/
 Protocol;;XMPP;
 Protocol open;yes;https://xmpp.org/extensions/;
 Server license;yes;various;

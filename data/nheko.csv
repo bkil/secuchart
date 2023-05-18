@@ -1,5 +1,5 @@
 name;;Nheko;
-Summary;;Matrix client written in C++ https://nheko-reborn.github.io/;
+Summary;;Native desktop Matrix app;C++20 and Qt, to compete with mainstream proprietary messengers https://nheko-reborn.github.io/
 Android Google Play;no;;
 Android F-droid/apk;no;;
 Apple iOS;no;;

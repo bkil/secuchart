@@ -1,5 +1,5 @@
 name;;Quassel;
-Summary;;IRC client with bouncer https://quassel-irc.org/;Modern, cross-platform, distributed IRC client with local server backend
+Summary;;IRC client and bouncer;Modern, cross-platform, distributed IRC client with local server backend https://quassel-irc.org/
 Android Google Play;yes;https://play.google.com/store/apps/details?id=com.iskrembilen.quasseldroid;
 Android F-droid/apk;yes;https://f-droid.org/en/packages/com.iskrembilen.quasseldroid/;
 Apple iOS;yes;https://apps.apple.com/us/app/iquassel-for-quassel-cores/id566844252;

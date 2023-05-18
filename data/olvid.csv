@@ -1,4 +1,5 @@
 name;;Olvid;
+Summary;;Chat over untrusted server;no centralized user directory https://github.com/olvid-io/olvid-android#user-content-olvid
 Android Google Play;yes;https://play.google.com/store/apps/details?id=io.olvid.messenger;
 Android F-droid/apk;no;https://www.olvid.io/faq/how-to-install-olvid/#availability-on-f-droid-and-other-alternative-stores;discussing it
 Server license;no;proprietary;
