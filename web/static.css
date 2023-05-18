@@ -44,7 +44,8 @@ table {
 td, th {
   border-bottom-style: solid;
   border-bottom-width: 1px;
-  border-right-style: dotted;
+  border-right-style: solid;
+  border-right-color: #888;
   border-right-width: 1px;
   padding: 4px;
   max-width: 50vw;
@@ -69,6 +70,19 @@ th {
 .th-it {
   top: 2em;
   z-index: 2;
+}
+
+.section td,
+.section th {
+  border-right-style: initial;
+}
+
+.section td {
+  text-align: center;
+}
+
+.section td::after {
+  content: '-';
 }
 
 .th-pr, .th-sect {
