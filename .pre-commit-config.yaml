@@ -29,3 +29,11 @@ repos:
         entry: script/check-props.sh
         language: system
         types: [csv]
+
+  - repo: local
+    hooks:
+      - id: git-diff
+        name: git diff
+        entry: git diff --exit-code
+        language: system
+        always_run: true
