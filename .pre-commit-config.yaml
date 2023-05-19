@@ -19,7 +19,7 @@ repos:
         name: script/reduce-item.sh
         entry: script/reduce-item.sh
         language: system
-        types: [csv]
+        files: '^data/[^_][^/]*\.csv$'
 
   - repo: local
     hooks:
@@ -27,7 +27,7 @@ repos:
         name: script/check-props.sh
         entry: script/check-props.sh
         language: system
-        types: [csv]
+        files: '^data/_properties\.csv$'
 
   - repo: local
     hooks:
