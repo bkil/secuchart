@@ -2,7 +2,7 @@ image: python:alpine
 pre-commit:
   stage: build
   before_script:
-  - apk update && apk add git gcc
+  - apk update && apk add git gcc musl-dev
   - pip install pre-commit
   script:
   - pre-commit run --all-files
