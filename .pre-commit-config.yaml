@@ -14,13 +14,13 @@ repos:
       - id: trailing-whitespace
         exclude_types: [markdown]
 
-  # - repo: local
-  #   hooks:
-  #     - id: reduce-item
-  #       name: script/reduce-item.sh
-  #       entry: script/reduce-item.sh
-  #       language: system
-  #       types: [csv]
+  - repo: local
+    hooks:
+      - id: reduce-item
+        name: script/reduce-item.sh
+        entry: script/reduce-item.sh
+        language: system
+        types: [csv]
 
   - repo: local
     hooks:
