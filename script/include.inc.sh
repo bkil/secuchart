@@ -1,4 +1,3 @@
-
 #!/bin/sh
 O="`dirname "$0"`"
 DATA="$O/../data"
@@ -10,9 +9,11 @@ process_slugs() {
   [ -d "$DATA" ] || exit 1
 
   if [ $# -eq 0 ]; then
-    for OUT in "$DATA"/[^_]*.csv; do
-      echo $OUT >&2
-      $FUN "$OUT" || exit 1
+    ls "$DATA" |
+    grep "^[^_].*\.csv$" |
+    while read OUT; do
+      echo $DATA/$OUT >&2
+      $FUN "$DATA/$OUT" || exit 1
     done
   else
     for SLUG in "$@"; do
