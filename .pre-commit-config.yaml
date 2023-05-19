@@ -9,18 +9,17 @@ repos:
       - id: check-added-large-files
       - id: check-case-conflict
       - id: check-executables-have-shebangs
-      - id: check-shebang-scripts-are-executable
       - id: fix-byte-order-marker
       - id: trailing-whitespace
         exclude_types: [markdown]
 
-  # - repo: local
-  #   hooks:
-  #     - id: reduce-item
-  #       name: script/reduce-item.sh
-  #       entry: script/reduce-item.sh
-  #       language: system
-  #       types: [csv]
+  - repo: local
+    hooks:
+      - id: reduce-item
+        name: script/reduce-item.sh
+        entry: script/reduce-item.sh
+        language: system
+        files: '^data/[^_][^/]*\.csv$'
 
   - repo: local
     hooks:
@@ -28,7 +27,7 @@ repos:
         name: script/check-props.sh
         entry: script/check-props.sh
         language: system
-        types: [csv]
+        files: '^data/_properties\.csv$'
 
   - repo: local
     hooks:
