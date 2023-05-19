@@ -1,11 +1,20 @@
 image: python:alpine
+pre-commit:
+  stage: build
+  before_script:
+  - pip install pre-commit
+  script:
+  - pre-commit run --all-files
+  variables:
+    PRE_COMMIT_HOME: ${CI_PROJECT_DIR}/.cache/pre-commit
+  cache:
+    paths:
+      - ${PRE_COMMIT_HOME}
 pages:
   stage: deploy
   before_script:
   - apk update && apk add brotli
-  - pip install pre-commit
   script:
-  - pre-commit run --all-files
   - script/generate-site.sh
   - find dist -type f -regex '.*\.\(htm\|html\|txt\|text\|js\|css\|json\|dz\|index\|csv\)$\|.*/LICENSE$' -exec gzip -9 -f -k {} \;
   - find dist -type f -regex '.*\.\(htm\|html\|txt\|text\|js\|css\|json\|dz\|index\|csv\)$\|.*/LICENSE$' -exec brotli -f -k {} \;
@@ -17,8 +26,3 @@ pages:
     expire_in: 1 day
   only:
   - master
-  variables:
-    PRE_COMMIT_HOME: ${CI_PROJECT_DIR}/.cache/pre-commit
-  cache:
-    paths:
-      - ${PRE_COMMIT_HOME}
