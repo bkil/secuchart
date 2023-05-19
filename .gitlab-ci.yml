@@ -11,6 +11,8 @@ pre-commit:
   cache:
     paths:
       - ${PRE_COMMIT_HOME}
+  rules:
+    - if: '$CI_PIPELINE_SOURCE == "merge_request_event"'
 pages:
   stage: deploy
   before_script:
