@@ -1,4 +1,18 @@
-image: alpine:latest
+image: python:alpine
+pre-commit:
+  stage: build
+  before_script:
+  - apk update && apk add git gcc musl-dev
+  - pip install pre-commit
+  script:
+  - pre-commit run --all-files
+  variables:
+    PRE_COMMIT_HOME: ${CI_PROJECT_DIR}/.cache/pre-commit
+  cache:
+    paths:
+      - ${PRE_COMMIT_HOME}
+  rules:
+    - if: '$CI_PIPELINE_SOURCE == "merge_request_event"'
 pages:
   stage: deploy
   before_script:
