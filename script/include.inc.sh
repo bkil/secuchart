@@ -4,7 +4,8 @@ DATA="$O/../data"
 DIST="$O/../dist"
 
 process_slugs() {
-  FUN="$1"
+  local SLUG FUN OUT
+  readonly FUN="$1"
   shift 1
   [ -d "$DATA" ] || exit 1
 
@@ -17,7 +18,19 @@ process_slugs() {
     done
   else
     for SLUG in "$@"; do
-      OUT="$DATA/$SLUG.csv"
+      case "$SLUG" in
+        */*.csv)
+          OUT="$SLUG"
+          ;;
+        */*)
+          OUT="$SLUG.csv"
+          ;;
+        *.csv)
+          OUT="$DATA/$SLUG"
+          ;;
+        *)
+          OUT="$DATA/$SLUG.csv"
+      esac
       echo $OUT >&2
       $FUN "$OUT" || exit 1
     done
@@ -26,20 +39,22 @@ process_slugs() {
 }
 
 get_temp() {
+  local TMPNAME
   TMPNAME="`tempfile -p "secu-" -s ".secuchart.tmp" 2>/dev/null`"
   [ -n "$TMPNAME" ] || TMPNAME="secu-`date +%s.%N`.$$.`hostname 2>/dev/null`.secuchart.tmp"
   echo "$TMPNAME"
 }
 
 check_item_syntax() {
-  FILE="$1"
+  local FILE GOODBODY GOODHEAD BADBODY LINES TMP
+  readonly FILE="$1"
 
   if ! [ -f "$FILE" ]; then
     echo "error: $FILE missing" >&2
     return 1
   fi
 
-  GOODBODY="^[^ ;][^;]*[^ ;];(|yes|no|partial)(;[^;]*){0,2}$"
+  readonly GOODBODY="^[^ ;][^;]*[^ ;];(|yes|no|partial)(;[^;]*){0,2}$"
   if
     tail -n +2 "$FILE" |
     grep -vqE "$GOODBODY"
@@ -52,7 +67,7 @@ check_item_syntax() {
     return 1
   fi
 
-  GOODHEAD="^name;;[^ ;][^;]*;?$"
+  readonly GOODHEAD="^name;;[^ ;][^;]*;?$"
   if
     head -n 1 "$FILE" |
     grep -vqE "$GOODHEAD"
@@ -65,7 +80,7 @@ check_item_syntax() {
     return 1
   fi
 
-  BADBODY="^[^;]+; *;(yes|no|partial)\>"
+  readonly BADBODY="^[^;]+; *;(yes|no|partial)\>"
   if
     tail -n +2 "$FILE" |
     grep -qE "$BADBODY"
@@ -89,7 +104,7 @@ check_item_syntax() {
     return 1
   fi
 
-  TMP="`get_temp`"
+  readonly TMP="`get_temp`"
   get_property_keys > "$TMP"
   LINES="`grep -vFf "$TMP" "$FILE"`"
   if [ -n "$LINES" ]; then
@@ -133,10 +148,11 @@ get_property_keys() {
 }
 
 extend_reorder() {
-  OUT="$1"
+  local OUT TMP
+  readonly OUT="$1"
   check_item_syntax "$OUT" || exit 1
 
-  TMP="$OUT.tmp"
+  readonly TMP="$OUT.tmp"
   get_property_keys |
   grep -v "^Analysis$" |
   while read PROP; do
