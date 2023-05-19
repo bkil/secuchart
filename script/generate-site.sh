@@ -51,7 +51,7 @@ gen_style() {
     MATRIX=""
     XMPP=""
     TELEGRAM=""
-    SIGNAL=""    
+    SIGNAL=""
     NUM=2
     while read -r IT; do
       echo "style $IT" >&2
