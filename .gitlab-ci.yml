@@ -5,7 +5,7 @@ pre-commit:
   - apk update && apk add git gcc musl-dev
   - pip install pre-commit
   script:
-  - pre-commit run --all-files
+  - pre-commit run --all-files --hook-stage manual
   variables:
     PRE_COMMIT_HOME: ${CI_PROJECT_DIR}/.cache/pre-commit
   cache:
