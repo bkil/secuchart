@@ -36,3 +36,4 @@ repos:
         entry: git diff --exit-code
         language: system
         always_run: true
+        stages: [manual]
