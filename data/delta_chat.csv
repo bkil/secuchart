@@ -62,7 +62,7 @@ Contact list confidential;partial;not published, but leaks through mail headers 
 Metadata protection;partial;encrypts certain email headers https://delta.chat/en/help#how-does-delta-chat-protect-my-metadata;recipients and time in the clear
 Perfect forward secrecy;no;https://delta.chat/en/help#does-delta-chat-support-perfect-forward-secrecy;
 Security team;yes;https://delta.chat/en/help#was-delta-chat-independently-audited-for-security-vulnerabilities;
-Audits;yes;2019 https://delta.chat/assets/1907-otf-deltachat-rpgp-rustrsa-gb-reportv1.pdf 2020 https://delta.chat/assets/blog/2020-second-security-review.pdf 2023 https://delta.chat/en/2023-03-23-third-independent-security-audit;
+Audits;yes;2019 https://delta.chat/assets/1907-otf-deltachat-rpgp-rustrsa-gb-reportv1.pdf 2020 https://delta.chat/assets/blog/2020-second-security-review.pdf 2023 https://delta.chat/en/2023-03-23-third-independent-security-audit 2023 https://delta.chat/en/2023-05-22-webxdc-security;
 Usage without phone number;yes;depending on mailbox provider;
 Transparent financing;yes;grants, funds, Liberapay, PayPal, bitcoin https://delta.chat/en/help#how-are-delta-chat-developments-funded;
 No-cost tier;yes;;
