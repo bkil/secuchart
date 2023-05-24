@@ -61,4 +61,4 @@ Tor access of vendor operated network;yes;N/A;uses Tor connection to peers
 Good ToSDR grade;yes;A https://tosdr.org/en/service/2559;
 First release;yes;2018-05-09 https://en.wikipedia.org/wiki/Briar_(software);
 Public issue tracker;yes;https://code.briarproject.org/briar/briar/-/issues https://code.briarproject.org/briar/briar-desktop/-/issues;
-No past client vulnerabilities;partial;issue query https://code.briarproject.org/briar/briar/-/issues?scope=all&state=all&label_name[]=Security;
+No past client vulnerabilities;no;https://briarproject.org/news/2023-three-security-issues-found-and-fixed/ https://ethz.ch/content/dam/ethz/special-interest/infk/inst-infsec/appliedcrypto/education/theses/report_YuanmingSong.pdf + issue tracker query https://code.briarproject.org/briar/briar/-/issues?scope=all&state=all&label_name[]=Security;
