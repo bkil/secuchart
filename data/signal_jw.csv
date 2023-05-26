@@ -15,8 +15,11 @@ Group chat;yes;https://support.signal.org/hc/en-us/articles/360007319331-Group-c
 Voice calls;yes;https://support.signal.org/hc/en-us/articles/360007060492-Voice-or-Video-Calling-with-Screen-Sharing;
 Video calls;yes;https://support.signal.org/hc/en-us/articles/360007060492-Voice-or-Video-Calling-with-Screen-Sharing;
 Group calls;yes;https://support.signal.org/hc/en-us/articles/360052977792-Group-Calling-Voice-or-Video-with-Screen-Sharing;
+Voice messages;yes;;
 Emoticons in message;yes;;
+Sticker packs;yes;https://support.signal.org/hc/en-us/articles/360031836512-Stickers;
 Link preview;yes;;client side by sender, can be disabled in settings https://community.signalusers.org/t/beta-feedback-for-the-upcoming-android-4-69-release/16219/4
+Reactions;yes;https://support.signal.org/hc/en-us/articles/360039929972-Message-Reactions;
 Multiple devices;partial;Only Signal desktop as secondary device;
 Multiple accounts;no;;
 Application locking;yes;Android's screen lock or passphare https://johanw.home.xs4all.nl/Signal/signal-jw.html;
