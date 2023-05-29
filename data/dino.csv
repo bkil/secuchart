@@ -20,12 +20,16 @@ Multiple devices;yes;;
 Multiple accounts;yes;https://dino.im/blog/2020/01/dino-0.1-release/;
 Remote message correction;partial;last message https://dino.im/blog/2020/11/dino-0.2-release/;
 Message expiration;no;;
+Typing indication;yes;https://github.com/dino/dino/wiki/Supported-XEPs;toggle on/off both globally and per conversation
+Read receipts;yes;https://github.com/dino/dino/wiki/Supported-XEPs;
+Receipts not mandatory;yes;https://github.com/dino/dino/wiki/Supported-XEPs;toggle on/off both globally and per conversation
 Account deactivation after device compromise;yes;;
 Disallow screenshots;no;;
 End-to-end encryption;yes;XEP-0384 OMEMO https://github.com/dino/dino/wiki/Supported-XEPs;also OpenPGP
 Usage without phone number;yes;;
 Active development;yes;https://github.com/dino/dino/commits/master;
 Multi-party development;partial;https://github.com/dino/dino/pulse/monthly;
+Identity not controlled by vendor;yes;;
 Serverless LAN mode;no;;XEP-0174 unimplemented https://github.com/dino/dino/issues/170
 Bots available;yes;https://github.com/topics/xmpp-bot;
 First release;partial;2020-01-29;https://github.com/dino/dino/releases/tag/v0.1.0 initial commit 2017-03-02 https://github.com/dino/dino/commit/56bc45ce4d07a7a9a415e9dc8ad2f7c3f3c9e48d
