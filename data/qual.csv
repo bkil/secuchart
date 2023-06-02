@@ -1,0 +1,12 @@
+name;;qual;
+Summary;;Internet Independent Wireless Mesh Communication App https://qaul.net/ https://github.com/qaul/qaul.net;
+Android Google Play;yes;https://play.google.com/store/apps/details?id=net.qaul.qaul_app;
+Android F-droid/apk;partial;apk https://github.com/qaul/qaul.net/releases;
+Apple iOS;partial;TestFlight https://testflight.apple.com/join/Opmxb2Ym;
+Desktop;yes;https://github.com/qaul/qaul.net/releases;
+Server license;yes;AGPL-3.0-only https://github.com/qaul/qaul.net/blob/main/LICENSE;
+Client license;yes;AGPL-3.0-only https://github.com/qaul/qaul.net/blob/main/LICENSE;
+Active development;yes;;
+User can extend network with node;yes;https://qaul.net/tutorials/community-node/;
+Serverless LAN mode;yes;;
+Public issue tracker;yes;https://github.com/qaul/qaul.net/issues;
