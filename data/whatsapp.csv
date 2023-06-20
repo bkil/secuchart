@@ -1,7 +1,7 @@
 name;;WhatsApp;
 Summary;;Chat, video calls by phone number;Popular messaging app by Meta/Facebook https://www.whatsapp.com/
 Android Google Play;yes;;https://play.google.com/store/apps/details?id=com.whatsapp&gl=US
-Android F-droid/apk;no;https://www.whatsapp.com/android/;
+Android F-droid/apk;yes;https://www.whatsapp.com/android/;see "Package installer"
 Apple iOS;yes;;https://apps.apple.com/us/app/whatsapp-messenger/id310633997
 Desktop;yes;;https://www.whatsapp.com/download/
 Web;yes;;web.whatsapp.com
