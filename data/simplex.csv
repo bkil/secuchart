@@ -36,7 +36,8 @@ Remote message removal;yes;;mobile, in console there's whole history visible e.g
 Remote message correction;yes;https://simplex.chat/blog/20230523-simplex-chat-v5-1-message-reactions-self-destruct-passcode.html#message-editing-history;
 Message expiration;yes;https://simplex.chat/blog/20230103-simplex-chat-v4.4-disappearing-messages.html https://simplex.chat/blog/20230523-simplex-chat-v5-1-message-reactions-self-destruct-passcode.html#disappearing-messages-choose-any-time;
 Typing indication;yes;"live" messages https://simplex.chat/blog/20230103-simplex-chat-v4.4-disappearing-messages.html;
-Read receipts;partial;only server acceptance receipt (mobile);
+Read receipts;partial;delivery receipts only https://simplex.chat/blog/20230722-simplex-chat-v5-2-message-delivery-receipts.html#message-delivery-receipts https://simplex.chat/blog/20230722-simplex-chat-v5-2-message-delivery-receipts.html#what-about-read-receipts;
+Receipts not mandatory;partial;https://simplex.chat/blog/20230722-simplex-chat-v5-2-message-delivery-receipts.html#message-delivery-receipts https://simplex.chat/blog/20230722-simplex-chat-v5-2-message-delivery-receipts.html#what-about-read-receipts;
 Themes;yes;https://simplex.chat/blog/20230523-simplex-chat-v5-1-message-reactions-self-destruct-passcode.html#customize-and-share-color-themes;
 Vendor can't curate content;yes;;
 Account deactivation after device compromise;no;;
