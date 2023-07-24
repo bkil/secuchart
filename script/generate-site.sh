@@ -452,9 +452,13 @@ gen_table() {
         printf "<tr class=section>\n <th class=th-sect>%s%s\n\n" "$V" "$COLSPAN"
       else
         EDIT=""
-        [ "$K" = "Analysis" ] && EDIT=" js-no-edit"
+        if [ "$K" = "Analysis" ] || [ "$K" = "Google Play version" ] || [ "$K" = "F-droid version" ]; then
+          EDIT=" js-no-edit"
+        fi
         if [ -n "$PERSONA" ]; then
           echo "<tr class='$PERSONA$EDIT'>"
+        elif [ -n "$EDIT" ]; then
+          echo "<tr class='$EDIT'>"
         else
           echo "<tr>"
         fi
