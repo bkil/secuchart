@@ -6,8 +6,8 @@ Apple iOS;no;https://code.briarproject.org/briar/briar/-/wikis/FAQ#will-there-be
 Desktop;partial;Linux, Windows, macOS;Not full featured https://briarproject.org/news/2023-briar-desktop-0.4.0-released/ https://briarproject.org/download-briar-desktop/ https://code.briarproject.org/briar/briar-desktop/ https://flathub.org/apps/details/org.briarproject.Briar
 Web;no;no;Only app, no web client
 Languages;yes;many https://code.briarproject.org/briar/briar/-/tree/master/briar-android/src/main/res;
-Protocol;;Bramble;
-Protocol open;yes;https://code.briarproject.org/briar/briar/-/wikis/home#protocol;
+Protocol;;Bramble (aka BTP);
+Protocol open;yes;BTP - a transport layer security protocol for delay-tolerant networks https://code.briarproject.org/briar/briar/-/wikis/home#protocol;
 Client license;yes;GPL-3.0-or-later https://code.briarproject.org/briar/briar/-/blob/master/LICENSE.txt Desktop AGPL-3.0 https://code.briarproject.org/briar/briar-desktop/-/blob/main/LICENSE.md;
 Register without app;yes;No registration necessary.;
 Spell check;no;no;No spell check
@@ -39,13 +39,15 @@ Themes;partial;https://briarproject.org/news/2018-briar-1.1-released/;light/dark
 Vendor can't curate content;yes;;
 Account deactivation after device compromise;no;;
 Account recovery after device compromise;no;https://code.briarproject.org/briar/briar/-/wikis/FAQ#how-do-i-backup-my-account;
-Disallow screenshots;yes;Android https://code.briarproject.org/briar/briar/-/issues/2310;
+Bandwidth frugal;no;;
+Disallow screenshots;yes;Android https://code.briarproject.org/briar/briar/-/issues/2310;This does not provide any real world usage, especially for the tinfoil persona. Any conversation partner can use screen-share capabilities to capture and record messages without alerting their chat partner.
 Threat model;yes;https://code.briarproject.org/briar/briar/-/wikis/threat-model;
 End-to-end encryption;yes;https://briarproject.org/how-it-works/;
-Deniability;yes;https://briarproject.org/raw/BRP-01-report.pdf;
+Deniability;yes;https://briarproject.org/raw/BRP-01-report.pdf;via BTP and Tor, conversation participants who have deleted the given time-based key for their conversation, can achieve deniability, but not unobservability or unlinkability unless the participants both use Tor https://code.briarproject.org/briar/briar-spec/-/blob/master/protocols/BTP.md#23-time-periods
+Replay prevention;yes;;BTP achieves forward secrecy by periodically rotating and deleting the temporary keys. This prevents replay attacks, in theory, but only in rotation mode, which provides Forward Secrecy. https://code.briarproject.org/briar/briar-spec/-/blob/master/protocols/BTP.md#24-key-derivation-for-rotation-mode
 Contact list confidential;yes;https://briarproject.org/how-it-works/;
 Metadata protection;yes;yes;via onion routing
-Perfect forward secrecy;yes;https://code.briarproject.org/briar/briar-spec/-/blob/master/protocols/BTP.md;Frmo Briar room by akwizgran - The part of the briar protocol stack that provides forward secrecy is the transport security protocol, btp, in short, btp provides forward secrecy by rotating the symmetric encryption and authentication keys periodically how often this is done depends on the latency of the transport - keys are rotated more often for low-latency transports like tor, and less often for high-latency transports like removable drives, so that the data has time to arrive before the recipient deletes the key.
+Perfect forward secrecy;yes;https://code.briarproject.org/briar/briar-spec/-/blob/master/protocols/BTP.md https://code.briarproject.org/briar/briar-spec/-/blob/master/protocols/BTP.md#21-key-management-modes;From Briar room by akwizgran - BTP, a part of the framework of Briar that provides Forward Secrecy, does so by rotating the symmetric encryption and authentication keys periodically.
 Reproducible builds;yes;https://code.briarproject.org/briar/briar/-/issues/1273;
 Audits;yes;2017 https://briarproject.org/news/2017-beta-released-security-audit/;
 Usage without phone number;yes;;
@@ -61,4 +63,9 @@ Tor access of vendor operated network;yes;N/A;uses Tor connection to peers
 Good ToSDR grade;yes;A https://tosdr.org/en/service/2559;
 First release;yes;2018-05-09 https://en.wikipedia.org/wiki/Briar_(software);
 Public issue tracker;yes;https://code.briarproject.org/briar/briar/-/issues https://code.briarproject.org/briar/briar-desktop/-/issues;
+No past DDoS;partial;;The Tor network, which Briar relies on, is subject to many DDoS attacks. It has mitigated most of them and continues to implement its Vanguard protections ahead of scheduled Tor-core releases. https://github.com/mikeperry-tor/vanguards/blob/master/README_TECHNICAL.md
 No past client vulnerabilities;no;https://briarproject.org/news/2023-three-security-issues-found-and-fixed/ https://ethz.ch/content/dam/ethz/special-interest/infk/inst-infsec/appliedcrypto/education/theses/report_YuanmingSong.pdf + issue tracker query https://code.briarproject.org/briar/briar/-/issues?scope=all&state=all&label_name[]=Security;
+Ethical financing in the past;yes;;
+Ethical business in the past;yes;;
+No past conflicts of interest;yes;;
+No past privacy glitches;yes;;
