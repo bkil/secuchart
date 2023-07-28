@@ -1,9 +1,12 @@
 name;;Sideband;
-Summary;;Anonymous, P2P LXMF client for Android, Linux and macOS over Reticulum networks;Communicate with other people or LXMF-compatible systems over Reticulum networks using LoRa, Packet Radio, Wi-Fi, I2P, Encrypted QR Paper Messages, or anything else Reticulum supports https://reticulum.network/ https://github.com/markqvist/reticulum
-Android F-droid/apk;yes;repo https://apt.izzysoft.de/fdroid/index/apk/io.unsigned.sideband apk https://github.com/markqvist/Sideband/releases;
+Summary;;Anonymous P2P over mesh;Communicate with LXMF-compatible systems over Reticulum networks using LoRa, Packet Radio, Wi-Fi, I2P, Encrypted QR Paper Messages https://reticulum.network/ https://github.com/markqvist/reticulum
+Android Google Play;no;;
+Android F-droid/apk;partial;apk https://github.com/markqvist/Sideband/releases;
+Other Android;partial;IzzySoft https://apt.izzysoft.de/fdroid/index/apk/io.unsigned.sideband;
+Apple iOS;no;;
 Desktop;yes;Linux, Windows and macOS https://github.com/markqvist/Sideband/releases;
 Web;no;;
-Protocol;;Meshnet;infrastructure-less https://reticulum.network/ https://en.wikipedia.org/wiki/Mesh_networking
+Protocol;;Reticulum;infrastructure-less https://reticulum.network/ https://en.wikipedia.org/wiki/Mesh_networking
 Protocol open;yes;https://github.com/markqvist/Reticulum https://reticulum.network/;
 Client license;yes;CC-BY-NC-SA https://github.com/markqvist/Sideband/blob/main/LICENSE;
 Infrastructure provider;;;Sideband uses the peer-to-peer and distributed messaging system LXMF https://github.com/markqvist/lxmf
