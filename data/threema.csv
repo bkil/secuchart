@@ -39,7 +39,7 @@ Contact list confidential;yes;stored on device, optional address book import htt
 Metadata protection;yes;https://threema.ch/en/faq/privacy_protection;
 Perfect forward secrecy;partial;for single chats on Android https://threema.ch/en/faq/perfect_forward_secrecy and calls https://threema.ch/press-files/2_documentation/cryptography_whitepaper.pdf;
 Reproducible builds;yes;Android https://threema.ch/en/open-source/reproducible-builds;
-Audits;yes;2020, 2019 https://threema.ch/en/faq/code_audit;
+Audits;yes;2023, 2020, 2019 https://threema.ch/en/faq/code_audit;
 Usage without phone number;yes;;
 Transparent financing;yes;individuals: one-time payment;subscriptions for organizations https://threema.ch/en/work and educational institutions https://threema.ch/en/education
 No-cost tier;no;;
