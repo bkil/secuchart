@@ -130,3 +130,4 @@ Some of these may be investigated in the future by volunteers. Others may be add
 * Fosscord https://fosscord.com/ https://github.com/fosscord/fosscord is a free open source selfhostable discord compatible chat, voice and video platform
 * bchat https://bchat.beldex.io/ https://belnet.beldex.io/
 * databag https://github.com/balzack/databag A tiny self-hosted federated messenger for the decentralized web
+* Veilid https://veilid.com/framework/ https://gitlab.com/veilid/veilid
