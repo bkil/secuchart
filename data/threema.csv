@@ -43,7 +43,7 @@ Audits;yes;2023, 2020, 2019 https://threema.ch/en/faq/code_audit;
 Usage without phone number;yes;;
 Transparent financing;yes;individuals: one-time payment;subscriptions for organizations https://threema.ch/en/work and educational institutions https://threema.ch/en/education
 No-cost tier;no;;
-Payment choices;;Wire transfer, MasterCard, Visa, PayPal, Bitcoin https://shop.threema.ch/terms;
+Payment choices;;Wire transfer, MasterCard, Visa, PayPal, Bitcoin, Cash https://shop.threema.ch/terms https://threema.ch/en/blog/posts/cash;
 Isolated self-hosting;partial;https://threema.ch/en/onprem;Directory and push relay are not self-hostable https://threema.ch/press-files/cryptography_whitepaper.pdf
 User can extend network with node;no;;
 Identity not controlled by vendor;no;;
