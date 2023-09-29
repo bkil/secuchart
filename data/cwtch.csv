@@ -28,7 +28,7 @@ Application locking;partial;passphrase on app start;no other type of locking at 
 Remote message removal;no;;
 Remote message correction;no;;
 Presence status;partial;1/1 chats show when contact offline;For 1/1 chats it's not possible to send message when contact offline, when online text input is available. No indication in group chat about members status. https://docs.cwtch.im/docs/profiles/availability-status/
-Presence not mandatory;no;https://docs.cwtch.im/docs/profiles/availability-status/;For 1/1 chats it's not possible to send message when contact offline, when online text input is available.
+Presence not mandatory;yes;https://docs.cwtch.im/docs/profiles/availability-status/ https://cwtch.im/changelog/;Appear Offline Mode since 1.13 needs update in main doc
 Typing indication;no;;
 Read receipts;no;only delivery receipt;
 Themes;yes;Several: Light, Dark, ...;https://docs.cwtch.im/docs/settings/appearance/light-dark-mode
