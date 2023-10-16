@@ -13,7 +13,7 @@ Register without app;no;;
 Group chat;yes;implemented with unicast https://threema.ch/press-files/cryptography_whitepaper.pdf;
 Voice calls;yes;https://threema.ch/en/faq/calls_info;
 Video calls;yes;https://threema.ch/en/faq/calls_info;
-Group calls;partial;on Android https://threema.ch/en/blog/posts/group-calls-threema-android;
+Group calls;yes;on Android https://threema.ch/en/blog/posts/group-calls-threema-android and iOS https://threema.ch/en/blog/posts/gc-ios;
 File transfer;yes;https://threema.ch/en/faq/file_message;
 Emoticons in message;yes;;
 Inline images;yes;https://threema.ch/en/faq/file_message;
