@@ -6,7 +6,7 @@ Android F-droid/apk;yes;https://f-droid.org/en/packages/chat.simplex.app/ https:
 Other mobile;no;;
 Other Android;yes;;
 Apple iOS;yes;https://apps.apple.com/us/app/simplex-chat/id1605771084;
-Desktop;yes;Terminal CLI https://github.com/simplex-chat/simplex-chat/blob/stable/docs/CLI.md https://simplex.chat/downloads/#terminal-console-app Desktop https://simplex.chat/downloads/#desktop-app;
+Desktop;yes;Terminal CLI https://github.com/simplex-chat/simplex-chat/blob/stable/docs/CLI.md https://simplex.chat/downloads/#terminal-console-app Desktop https://simplex.chat/downloads/#desktop-app;Desktop 5.3 alpha, chat and attachments only, group-joins, no voice or video calls.
 Web;no;;
 Languages;yes;12-14;English Chinese Czech Dutch French German Italian Japanese Polish Portuguese Russian Spanish https://hosted.weblate.org/projects/simplex-chat/#languages
 Protocol;;SMP https://github.com/simplex-chat/simplexmq/blob/stable/protocol/overview-tjr.md;
