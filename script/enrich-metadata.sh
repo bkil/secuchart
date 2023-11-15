@@ -159,6 +159,8 @@ download_google_play_metadata() {
     t print
     s~^<span itemprop=\"version\">([^<>]+)</span> by$~rel\t\1~
     t print
+    s~<h3>What&#39;s New in the Latest Version ([^<>]+)</h3>~rel\t\1~
+    t print
 
     s~^<p>(Android )?([0-9]+\.[0-9]+)( and up|[+])?</p>$~os\t\2~
     t print
