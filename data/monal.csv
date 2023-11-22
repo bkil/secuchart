@@ -1,0 +1,40 @@
+name;;Monal;
+Summary;;XMPP for iOS;
+Android Google Play;no;https://github.com/monal-im/Monal#releases;
+Android F-droid/apk;no;https://github.com/monal-im/Monal#releases;
+Other mobile;no;https://github.com/monal-im/Monal#releases;
+Apple iOS;yes;;https://apps.apple.com/app/id317711500 https://downloads.monal-im.org/monal-im/alpha/
+Desktop;yes;macOS, brew;https://apps.apple.com/app/id1499227291 https://downloads.monal-im.org/monal-im/alpha/
+Web;no;https://github.com/monal-im/Monal#releases;
+Languages;yes;10;English Basque Chinese French German Italian Polish Spanish Turkish Ukranian https://hosted.weblate.org/projects/monal/#languages
+Protocol;;Jabber/XMPP;https://monal-im.org/install/#implemented-xeps https://github.com/monal-im/Monal/blob/develop/monal.doap
+Protocol open;yes;;
+Client license;yes;2BSD https://github.com/monal-im/Monal/blob/develop/LICENSE;
+Register without app;yes;;
+Group chat;yes;https://github.com/monal-im/Monal/issues/41;
+Voice calls;yes;https://github.com/monal-im/Monal/issues/205 https://github.com/monal-im/Monal/issues/917;
+Video calls;no;https://github.com/monal-im/Monal/issues/41;
+Voice messages;yes;https://github.com/monal-im/Monal/issues/238;
+File transfer;yes;;https://github.com/monal-im/Monal/issues/754 also screenshots https://github.com/monal-im/Monal/issues/331 compression https://github.com/monal-im/Monal/issues/968
+Link preview;yes;recipient client https://github.com/monal-im/Monal/issues/235;
+Reactions;no;https://github.com/monal-im/Monal/issues/554;
+Remote message removal;yes;https://github.com/monal-im/Monal/issues/680 https://monal-im.org/install/#implemented-xeps;
+Remote message correction;yes;https://github.com/monal-im/Monal/issues/941 https://github.com/monal-im/Monal/issues/956 https://github.com/monal-im/Monal/issues/702;
+Read receipts;partial;;https://github.com/monal-im/Monal/issues/226 https://github.com/monal-im/Monal/issues/8 not for MUC https://github.com/monal-im/Monal/issues/914
+Power saving;yes;https://github.com/monal-im/Monal/wiki/What-is-that-Sync-Error-all-about;
+End-to-end encryption;yes;https://github.com/monal-im/Monal/issues/234 https://monal-im.org/install/#implemented-xeps;
+Security team;partial;https://github.com/monal-im/Monal/blob/develop/SECURITY.md;
+Usage without phone number;yes;;
+Transparent financing;yes;GitHub, Libera Pay, SEPA;GitHub Sponsors https://github.com/sponsors/tmolitor-stud-tu , Libera Pay https://liberapay.com/tmolitor , SEPA https://github.com/monal-im/Monal#donations-and-support , NLNet https://monal-im.org/post/00003-nlnet-funding/
+Active development;yes;https://github.com/monal-im/Monal/releases https://github.com/monal-im/Monal/commits/develop;
+Multi-party development;partial;https://monal-im.org/about/#monal-team;
+Identity not controlled by vendor;yes;;
+Servers required;;Ejabberd or Prosody https://github.com/monal-im/Monal/wiki/Considerations-for-XMPP-server-admins#software-versions;
+Serverless LAN mode;no;https://monal-im.org/install/#implemented-xeps;
+Network store and forward;yes;https://monal-im.org/install/#implemented-xeps;
+Wireless mode;no;;
+Bots available;yes;https://github.com/topics/xmpp-bot;
+Vendor legal entity kind;;individuals;
+Vendor jurisdiction;;Germany https://monal-im.org/about/#imprint;
+First release;yes;2014-03-18 https://github.com/monal-im/Monal/releases/tag/Build_76;
+Public issue tracker;yes;https://github.com/monal-im/Monal/issues;
