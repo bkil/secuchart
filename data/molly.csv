@@ -19,7 +19,7 @@ Group calls;yes;https://support.signal.org/hc/en-us/articles/360052977792-Group-
 Message formatting;partial;https://community.signalusers.org/t/font-styling-for-signal-messages-e-g-using-markdown/612;markdown probably later https://community.signalusers.org/t/font-styling-for-signal-messages-e-g-using-markdown/612/278
 Emoticons in message;yes;;
 Link preview;yes;;client side by sender, can be disabled in settings https://community.signalusers.org/t/beta-feedback-for-the-upcoming-android-4-69-release/16219/4
-Multiple devices;no;can only have one active device at a time, one number only;
+Multiple devices;partial;parts buggy or missing;https://github.com/mollyim/mollyim-android/issues/102 https://github.com/mollyim/mollyim-android/pull/157
 Multiple accounts;no;;
 Application locking;yes;Android's screen lock https://support.signal.org/hc/en-us/articles/360007059572-Screen-Lock;
 Remote message removal;partial;within 3 hours https://support.signal.org/hc/en-us/articles/360050426432-Delete-for-everyone;
