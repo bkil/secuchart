@@ -52,6 +52,8 @@ gen_style() {
     XMPP=""
     TELEGRAM=""
     SIGNAL=""
+    PINACTIVE=""
+    NINACTIVE=""
     NUM=2
     while read -r IT; do
       echo "style $IT" >&2
@@ -76,6 +78,17 @@ EOF
       printf '%s' "$PROTOCOL" | grep -qi "\<XMPP\>" || XMPP="$XMPP $NUM"
       printf '%s' "$PROTOCOL" | grep -qi "\<MTProto\>" || TELEGRAM="$TELEGRAM $NUM"
       printf '%s' "$PROTOCOL" | grep -qi "\<Signal\>" || SIGNAL="$SIGNAL $NUM"
+      if
+        [ -n "`get_item_value "$IT" "Server hosted until"`" ] ||
+        [ -n "`get_item_value "$IT" "Server development until"`" ] ||
+        [ -n "`get_item_value "$IT" "Client development until"`" ]
+      then
+        PINACTIVE="$NUM $IT
+$PINACTIVE"
+      else
+        NINACTIVE="$NUM $IT
+$NINACTIVE"
+      fi
 
       NUM="`expr $NUM + 1`"
     done
@@ -99,6 +112,21 @@ EOF
     for NUM in $SIGNAL; do
       printf "#t_signal:checked ~ table th:nth-child(%d),\n" "$NUM"
       printf "#t_signal:checked ~ table td:nth-child(%d),\n" "$NUM"
+    done
+    printf '%s' "$PINACTIVE" |
+    while read NUM NIT; do
+      cat <<EOF
+#$NIT:not(:target) ~ #page #t_inactive:not(:checked) ~ #_$NIT:not(:checked) ~ table th:nth-child($NUM),
+#$NIT:not(:target) ~ #page #t_inactive:not(:checked) ~ #_$NIT:not(:checked) ~ table td:nth-child($NUM),
+EOF
+    done
+
+    printf '%s' "$NINACTIVE" |
+    while read NUM NIT; do
+      cat <<EOF
+#$NIT:not(:target) ~ #page #t_inactive:checked ~ #_$NIT:not(:checked) ~ table th:nth-child($NUM),
+#$NIT:not(:target) ~ #page #t_inactive:checked ~ #_$NIT:not(:checked) ~ table td:nth-child($NUM),
+EOF
     done
   }
 
@@ -224,6 +252,7 @@ EOF
 <input type=radio id=t_xmpp name=S class="F T">
 <input type=radio id=t_telegram name=S class="F T">
 <input type=radio id=t_signal name=S class="F T">
+<input type=radio id=t_inactive name=S class="F T">
 EOF
 
   get_items "$LIMITITEMS" |
@@ -277,12 +306,13 @@ EOF
 
   cat <<EOF
   <span class='F group'>Items:</span>
-  <label for=any class=F>any&nbsp;</label>
+  <label for=any class=F>any</label>
   <label for=proprietary class=F>non-proprietary</label>
   <label for=t_matrix class=F>matrix</label>
   <label for=t_signal class=F>signal</label>
   <label for=t_telegram class=F>telegram</label>
   <label for=t_xmpp class=F>xmpp</label>
+  <label for=t_inactive class=F>inactive</label>
   <span class='C group'>Compare messengers:</span>
 EOF
 

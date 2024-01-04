@@ -121,3 +121,6 @@ Ethical financing in the past;no=tax evasion;foss;;
 Ethical business in the past;no=anti-trust investigations, bribes, hurting customers in other way;foss;;
 No past conflicts of interest;no=shady ownership changes, investor may benefit from breaching privacy or project failure;tinfoil;foss;
 No past privacy glitches;no=uncovered cases when vendor secretly exploited user data;tinfoil layperson;;
+Server hosted until;date of vendor instance discontinuation;all;;
+Server development until;date of abandoning maintenance;all;;
+Client development until;date of abandoning maintenance;all;;
