@@ -1,5 +1,5 @@
 name;;SimpleX Chat;
-Summary;;P2P, protect metadata, random ID;Decentralized end-to-end encrypted messenger focusing on meta-data protection and getting rid of any user profile identifiers https://simplex.chat/
+Summary;;Uses relays, protects metadata, no user profile IDs (not even random);Decentralized end-to-end encrypted messenger focusing on meta-data protection and avoiding any user profile identifiers https://simplex.chat/
 Screenshots;;https://f-droid.org/en/packages/chat.simplex.app/;
 Android Google Play;yes;https://play.google.com/store/apps/details?id=chat.simplex.app;
 Android F-droid/apk;yes;https://f-droid.org/en/packages/chat.simplex.app/ https://app.simplex.chat/ https://github.com/simplex-chat/simplex-chat/releases/latest;
@@ -9,7 +9,7 @@ Apple iOS;yes;https://apps.apple.com/us/app/simplex-chat/id1605771084;
 Desktop;yes;Terminal CLI https://github.com/simplex-chat/simplex-chat/blob/stable/docs/CLI.md https://simplex.chat/downloads/#terminal-console-app Desktop https://simplex.chat/downloads/#desktop-app;Desktop 5.3 alpha, chat and attachments only, group-joins, no voice or video calls.
 Web;no;;
 Languages;yes;12-14;English Chinese Czech Dutch French German Italian Japanese Polish Portuguese Russian Spanish https://hosted.weblate.org/projects/simplex-chat/#languages
-Protocol;;SMP https://github.com/simplex-chat/simplexmq/blob/stable/protocol/overview-tjr.md;
+Protocol;;SMP, Signal Protocol https://github.com/simplex-chat/simplexmq/blob/stable/protocol/overview-tjr.md;
 Protocol open;yes;https://github.com/simplex-chat/simplexmq/blob/master/protocol/simplex-messaging.md https://github.com/simplex-chat/simplexmq https://github.com/simplex-chat/simplex-chat/blob/stable/docs/protocol/simplex-chat.md;
 Server license;yes;AGPL-3.0-only https://github.com/simplex-chat/simplexmq/blob/master/LICENSE;
 Client license;yes;AGPL-3.0-only https://github.com/simplex-chat/simplex-chat/blob/stable/LICENSE;
@@ -25,11 +25,11 @@ Message formatting;yes;markdown https://github.com/simplex-chat/simplex-chat/iss
 Emoticons in message;yes;;
 Unicode support;yes;;
 Sticker packs;partial;via 3rd party keyboards;
-Link preview;partial;mobile only;User setting to generate link preview upon sending.
+Link preview;yes;yes;User setting to generate link preview upon sending.
 Inline images;yes;https://github.com/simplex-chat/simplex-chat/blob/master/blog/20220511-simplex-chat-v2-images-files.md;mobile
 Inline videos;yes;https://simplex.chat/blog/20230422-simplex-chat-vision-funding-v5-videos-files-passcode.html#send-videos-and-files-up-to-1gb;
 Reactions;yes;https://simplex.chat/blog/20230523-simplex-chat-v5-1-message-reactions-self-destruct-passcode.html#message-reactions;
-Multiple devices;no;;
+Multiple devices;partial;Using mobile profiles from desktop;
 Multiple accounts;yes;https://simplex.chat/blog/20230204-simplex-chat-v4-5-user-chat-profiles.html#multiple-chat-profiles;
 Application locking;yes;https://github.com/simplex-chat/simplex-chat/releases/tag/v2.2.0 https://simplex.chat/blog/20230422-simplex-chat-vision-funding-v5-videos-files-passcode.html#app-passcode;Native mobile platform lock + app passcode
 Remote message removal;yes;;mobile, in console there's whole history visible e.g. 21:37 a11> ff 21:37 a11> [deleted] ff
@@ -37,11 +37,10 @@ Remote message correction;yes;https://simplex.chat/blog/20230523-simplex-chat-v5
 Message expiration;yes;https://simplex.chat/blog/20230103-simplex-chat-v4.4-disappearing-messages.html https://simplex.chat/blog/20230523-simplex-chat-v5-1-message-reactions-self-destruct-passcode.html#disappearing-messages-choose-any-time;
 Typing indication;yes;"live" messages https://simplex.chat/blog/20230103-simplex-chat-v4.4-disappearing-messages.html;
 Read receipts;partial;delivery receipts only https://simplex.chat/blog/20230722-simplex-chat-v5-2-message-delivery-receipts.html#message-delivery-receipts https://simplex.chat/blog/20230722-simplex-chat-v5-2-message-delivery-receipts.html#what-about-read-receipts;
-Receipts not mandatory;partial;https://simplex.chat/blog/20230722-simplex-chat-v5-2-message-delivery-receipts.html#message-delivery-receipts https://simplex.chat/blog/20230722-simplex-chat-v5-2-message-delivery-receipts.html#what-about-read-receipts;
+Receipts not mandatory;yes;https://simplex.chat/blog/20230722-simplex-chat-v5-2-message-delivery-receipts.html#message-delivery-receipts https://simplex.chat/blog/20230722-simplex-chat-v5-2-message-delivery-receipts.html#what-about-read-receipts;
 Themes;yes;https://simplex.chat/blog/20230523-simplex-chat-v5-1-message-reactions-self-destruct-passcode.html#customize-and-share-color-themes;
 Vendor can't curate content;yes;;
-Account deactivation after device compromise;no;;
-Account recovery after device compromise;no;;
+Account deactivation after device compromise;no;No user accounts;
 Disallow screenshots;partial;only for yourself, Android https://simplex.chat/blog/20221206-simplex-chat-v4.3-voice-messages.html;
 Threat model;yes;https://github.com/simplex-chat/simplexmq/blob/stable/protocol/overview-tjr.md#threat-model;
 End-to-end encryption;yes;2 layers https://simplex.chat/#problem-explained https://github.com/simplex-chat/simplexmq/blob/master/protocol/simplex-messaging.md https://github.com/simplex-chat/simplexmq/blob/master/protocol/overview-tjr.md#encryption-primitives-used;
@@ -64,10 +63,14 @@ Identity not controlled by vendor;yes;https://github.com/simplex-chat/simplex-ch
 Offline;partial;not possible to add contact;
 Servers required;;SMP https://github.com/simplex-chat/simplexmq#using-smp-server-and-smp-agent;
 Network store and forward;yes;;
-IP shielded from peers;yes;https://github.com/simplex-chat/simplex-chat#privacy-technical-details-and-limitations https://github.com/simplex-chat/simplex-chat/blob/stable/blog/20220808-simplex-chat-v3.1-chat-groups.md#access-to-messaging-servers-via-tor;
+IP shielded from peers;partial;Requires using proxy https://github.com/simplex-chat/simplex-chat#privacy-technical-details-and-limitations https://github.com/simplex-chat/simplex-chat/blob/stable/blog/20220808-simplex-chat-v3.1-chat-groups.md#access-to-messaging-servers-via-tor;
 Proxy support;yes;SOCKS https://github.com/simplex-chat/simplex-chat/blob/stable/blog/20220808-simplex-chat-v3.1-chat-groups.md https://simplex.chat/blog/20230422-simplex-chat-vision-funding-v5-videos-files-passcode.html#networking-improvements;
 Bots available;partial;https://github.com/simplex-chat/simplex-chat/tree/stable/apps https://github.com/simplex-chat/simplex-chat/pull/1036;few examples so far
 Tor access of vendor operated network;yes;https://github.com/simplex-chat/simplex-chat/blob/stable/blog/20220808-simplex-chat-v3.1-chat-groups.md#access-to-messaging-servers-via-tor https://simplex.chat/blog/20230422-simplex-chat-vision-funding-v5-videos-files-passcode.html#networking-improvements;
 IPv6 access of vendor operated network;yes;https://simplex.chat/blog/20230422-simplex-chat-vision-funding-v5-videos-files-passcode.html#networking-improvements;
-First release;no;2021-05-02 https://github.com/simplex-chat/simplex-chat/releases/tag/v0.2.0;
+Infrastructure jurisdiction;;USA;
+Infrastructure provider;;Akamai;
+First release;partial;2021-05-02 https://github.com/simplex-chat/simplex-chat/releases/tag/v0.2.0;
 Public issue tracker;yes;https://github.com/simplex-chat/simplex-chat/issues;
+No past client vulnerabilities;yes;;
+No past server vulnerabilities;yes;;
