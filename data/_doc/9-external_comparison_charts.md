@@ -28,6 +28,7 @@ See the following for sources of inspiration (copying is not allowed except the 
 * https://wiki.bitmessage.org/index.php/FAQ#How_does_Bitmessage_compare_to_other_messaging_methods
 * https://matrix.org/clients-matrix/
 * https://xdaforums.com/t/overview-of-all-secured-orless-messaging-apps.4612087/
+* https://privacyspreadsheet.com/messaging-apps + https://github.com/du82/privacyspreadsheet.com
 
 ## Browsers
 
