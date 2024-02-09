@@ -132,3 +132,4 @@ Some of these may be investigated in the future by volunteers. Others may be add
 * databag https://github.com/balzack/databag A tiny self-hosted federated messenger for the decentralized web
 * Veilid https://veilid.com/framework/ https://gitlab.com/veilid/veilid
 * Tailchat https://tailchat.msgbyte.com/ https://github.com/msgbyte/tailchat
+* Revolt Chat https://revolt.chat/ https://github.com/revoltchat https://rvlt.gg/
