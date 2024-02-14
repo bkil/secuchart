@@ -31,7 +31,7 @@ Presence status;partial;1/1 chats show when contact offline;For 1/1 chats it's n
 Presence not mandatory;yes;https://docs.cwtch.im/docs/profiles/availability-status/ https://cwtch.im/changelog/;Appear Offline Mode since 1.13 needs update in main doc
 Typing indication;no;;
 Read receipts;no;only delivery receipt;
-Themes;yes;Several: Light, Dark, ...;https://docs.cwtch.im/docs/settings/appearance/light-dark-mode
+Themes;yes;built-in + custom;https://docs.cwtch.im/docs/settings/appearance/light-dark-mode + https://docs.cwtch.im/docs/contribute/themes/
 Spam protection;partial;https://docs.openprivacy.ca/cwtch-security-handbook/ui.html?highlight=spam#denial-of-service-through-spamming;Could result in an increase in network bandwidth which may be intolerable or undesired for many people - especially those on metered connections
 Account deactivation after device compromise;no;;
 Account recovery after device compromise;no;;
