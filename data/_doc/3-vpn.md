@@ -25,12 +25,12 @@ At least with your local ISP, you have a signed contract and you kind of know wh
 
 - http://tilde.club/wiki/vpnwhy.html
 
-> DON’T USE VPN SERVICES. Why not?
-> No, seriously, don’t. You’re probably reading this because you’ve asked what VPN service to use, and this is the answer.
+> DON'T USE VPN SERVICES. Why not?
+> No, seriously, don't. You're probably reading this because you've asked what VPN service to use, and this is the answer.
 
 - https://arstechnica.com/gadgets/2021/07/vpn-servers-seized-by-ukrainian-authorities-werent-encrypted/
 
-> VPN servers seized by Ukrainian authorities weren’t encrypted
+> VPN servers seized by Ukrainian authorities weren't encrypted
 > On the disk of those two servers was an OpenVPN server certificate and its private key [...] the company also uses data compression to improve network performance. [...] an attack known as Voracle, [...] uses clues left behind in compression to decrypt data protected by OpenVPN-based VPNs
 
 - https://vice.com/en/article/jg84yy/data-brokers-netflow-data-team-cymru
