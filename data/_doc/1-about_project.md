@@ -8,16 +8,25 @@ Please help us fill in the gaps, or contribute new columns or rows to the table.
 * https://github.com/bkil/secuchart
 * https://codeberg.org/bkil/secuchart
 
+## Contact
+
 Chat with us on Matrix:
 
 * https://matrix.to/#/#securemessagingapps:matrix.org
 
-=> LICENSE
+Chat with us over the relayed XMPP MUC:
 
-=> LICENSE.data
+* xmpp:secuchart@conference.movim.eu
 
-> Copyright &copy; 2022 bkil &amp; contributors
+CC-BY-SA applies to data to remain compatible with Wikipedia:
 
+=> ./LICENSE.data
+
+The MIT License applies to software components:
+
+=> ./LICENSE
+
+> Copyright &copy; 2022-2024 bkil &amp; contributors
 
 ## How to edit the chart, existing grid
 
