@@ -396,7 +396,7 @@ markdown2html() {
     s~^# *([^ ].*)~<h1>\1</h1>~
     t p
 
-    s~\<(((https?|ftps?|file)://|(mailto|tel):)[^ ]*)~<a href='\1' target=_blank rel=noopener class=bl>\1</a>~g
+    s~\<(((https?|ftps?|file)://|(mailto|tel|xmpp):)[^ ]*)~<a href='\1' target=_blank rel=noopener class=bl>\1</a>~g
     t linked
     s~(^| )(#[a-zA-Z0-9_-]+)~\1<a href='\2' class=il>\2</a>~g
     t linked
