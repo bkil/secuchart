@@ -51,16 +51,30 @@ function iterateRec(path, fun, cb) {
   iterateRec0(iterateRec0, path, fun, cb);
 }
 
-function writePlainText(state, cb) {
-  state = JSON_stringify(state);
-  writeFile(distDir + '/all-txt.json', state, function() {
-    state = JSON_stringify(state);
-    var css = '#_:after{content:' + state + '}';
-    writeFile(distDir + '/all-txt.css', css, function() {
+function writeVariants(o, name, cb) {
+  o.state = JSON_stringify(o.state);
+  writeFile(distDir + '/' + name + '.json', o.state, function() {
+    o.state = JSON_stringify(o.state);
+    var css = '#_::after{content:' + o.state + '}';
+    writeFile(distDir + '/' + name + '.css', css, function() {
       css = undefined;
-      state = 'jsonp(' + state + ');';
-      writeFile(distDir + '/all-txt.js', state, cb);
+      o.state = 'jsonp(' + o.state + ');';
+      writeFile(distDir + '/' + name + '.js', o.state, function() {
+        o.state = undefined;
+        cb();
+      });
     });
+  });
+}
+
+function writePlainText(o, cb) {
+  var w = new Object;
+  w.state = new Object;
+  w.state.now = o.state.now;
+  w.state.gitVersion = o.state.gitVersion;
+  writeVariants(w, 'status', function() {
+    w = undefined;
+    writeVariants(o, 'all-txt', cb);
   });
 }
 
@@ -82,7 +96,10 @@ function buildLibInit() {
         },
 
         function() {
-          writePlainText(state, cb);
+          var o = new Object;
+          o.state = state;
+          state = undefined;
+          writePlainText(o, cb);
         });
     }
 
