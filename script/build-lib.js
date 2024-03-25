@@ -67,10 +67,7 @@ function writePlainText(state, cb) {
 function buildLibInit() {
   var cb = function(){};
   readFile(gitDir + '/HEAD', function(head) {
-    console.log(head);
-    head = head.split(' ');
-    head = head[1];
-    readFile(gitDir + '/' + head.trim(), function(ref) {
+    function gotCommit(ref) {
       var state = new Object;
       state.now = new Date / 1000;
       state.txt = new Object;
@@ -87,6 +84,15 @@ function buildLibInit() {
         function() {
           writePlainText(state, cb);
         });
-    });
+    }
+
+    var ref = head.trim();
+    ref = ref.split(' ');
+    ref = ref[1];
+    if (ref) {
+      readFile(gitDir + '/' + ref, gotCommit);
+    } else {
+      gotCommit(head);
+    }
   });
 }
