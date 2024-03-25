@@ -19,6 +19,7 @@ pages:
   before_script:
   - apk add --no-cache brotli
   script:
+  - script/build-js0.sh
   - script/generate-site.sh
   - find dist -type f -regex '.*\.\(htm\|html\|txt\|text\|js\|css\|json\|dz\|index\|csv\)$\|.*/LICENSE$' -exec gzip -9 -f -k {} \;
   - find dist -type f -regex '.*\.\(htm\|html\|txt\|text\|js\|css\|json\|dz\|index\|csv\)$\|.*/LICENSE$' -exec brotli -f -k {} \;
