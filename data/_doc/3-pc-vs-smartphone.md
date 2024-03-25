@@ -40,18 +40,18 @@ This could also be interpreted as a flaw within each vulnerable application itse
 
 * https://threatpost.com/surreptitious-sharing-android-api-flaw-leaks-data-private-keys/117174/
 
-> ‘Surreptitious Sharing’ Android API Flaw Leaks Data, Private Keys: vulnerability in messaging apps [using the API] like Skype and perhaps Signal, and Telegram, that could lead to privilege escalation and data loss, including private keys. The attackers were able to get Threema, and another encrypted messaging app, Signal, to share its database as an audio recording. The researchers claim they were able to retrieve the file, save it, and open it as a database file. The two claim Signal was vulnerable – chiefly because of the way it processed the file – and crashed for them on each start.
+> "Surreptitious Sharing" Android API Flaw Leaks Data, Private Keys: vulnerability in messaging apps [using the API] like Skype and perhaps Signal, and Telegram, that could lead to privilege escalation and data loss, including private keys. The attackers were able to get Threema, and another encrypted messaging app, Signal, to share its database as an audio recording. The researchers claim they were able to retrieve the file, save it, and open it as a database file. The two claim Signal was vulnerable - chiefly because of the way it processed the file - and crashed for them on each start.
 
 ### 2017 Broadcom wifi over the air
 
 * https://googleprojectzero.blogspot.com/2017/04/over-air-exploiting-broadcoms-wi-fi_11.html
 
-> Over The Air: Exploiting Broadcom’s Wi-Fi Stack (Part 2)
+> Over The Air: Exploiting Broadcom's Wi-Fi Stack (Part 2)
 
 * https://googleprojectzero.blogspot.com/2017/10/over-air-vol-2-pt-3-exploiting-wi-fi.html
 
 > Over The Air - Vol. 2, Pt. 3: Exploiting The Wi-Fi Stack on Apple Devices
-> In this blog post we’ll complete our goal of achieving remote kernel code execution on the iPhone 7, by means of Wi-Fi communication alone.
+> In this blog post we'll complete our goal of achieving remote kernel code execution on the iPhone 7, by means of Wi-Fi communication alone.
 > Posted by Gal Beniamini, Project Zero
 
 ### 2022 UNISOC
@@ -64,4 +64,4 @@ This could also be interpreted as a flaw within each vulnerable application itse
 * https://research.checkpoint.com/2022/vulnerability-within-the-unisoc-baseband/
 * https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-20210
 
-> found a vulnerability which can be used to disrupt the device’s radio communication through a malformed packet.
+> found a vulnerability which can be used to disrupt the device's radio communication through a malformed packet.

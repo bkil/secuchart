@@ -29,7 +29,7 @@
 * https://words.filippo.io/dispatches/telegram-ecdh/
 * https://buttondown.email/cryptography-dispatches/archive/cryptography-dispatches-the-most-backdoor-looking/
 
-> THE MOST BACKDOOR-LOOKING BUG I’VE EVER SEEN: discovered and fixed in Telegram's self-rolled cryptographic protocol about seven years ago
+> THE MOST BACKDOOR-LOOKING BUG I'VE EVER SEEN: discovered and fixed in Telegram's self-rolled cryptographic protocol about seven years ago
 
 ## Law enforcement
 
