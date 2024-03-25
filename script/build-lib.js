@@ -67,6 +67,7 @@ function writePlainText(state, cb) {
 function buildLibInit() {
   var cb = function(){};
   readFile(gitDir + '/HEAD', function(head) {
+    console.log(head);
     head = head.split(' ');
     head = head[1];
     readFile(gitDir + '/' + head.trim(), function(ref) {
