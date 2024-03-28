@@ -10,7 +10,9 @@ https://gitlab.com/bkil
 
 new-data, fix-data, review-data, research-data, documentation, build-tools, ui-design, ui-code, moderation, support, boosting
 
-### erAck (Eike Rathke)
+### erAck
+
+https://gitlab.com/erAck
 
 new-data, fix-data, research-data, build-tools, documentation, ui-code, moderation, support, feedback
 
@@ -29,10 +31,6 @@ moderation
 ### Autmnmute
 
 moderation
-
-### Babba27
-
-fix-data
 
 ### Evgeny Poberezkin
 
@@ -55,6 +53,10 @@ moderation, support
 research-data, moderation, support, feedback
 
 ## Bronze level contributors
+
+### Babba27
+
+fix-data
 
 ### cbug
 
