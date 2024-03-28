@@ -18,6 +18,12 @@ Chat with us over the relayed XMPP MUC:
 
 * xmpp:secuchart@conference.movim.eu
 
+## Copyright
+
+The history of the source code repository contains specifics of the individual work done by our past volunteers. We also have tried to outline a summary of who had contributed so far on the following page:
+
+* #credits
+
 CC-BY-SA applies to data to remain compatible with Wikipedia:
 
 => ./LICENSE.data
