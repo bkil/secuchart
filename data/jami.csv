@@ -59,6 +59,6 @@ Domain;yes;https://jami.net/;
 Landing page;yes;https://jami.net/;
 Manual;yes;https://docs.jami.net/;
 Open documentation;yes;https://github.com/savoirfairelinux/opendht/wiki https://git.jami.net/savoirfairelinux/jami-docs;
-Web forum;yes;https://forum.jami.net/ https://lists.gnu.org/mailman/listinfo/jami https://reddit.com/r/jami;
+Web forum;yes;https://forum.jami.net/ https://lists.gnu.org/mailman/listinfo/jami;
 Contact;yes;acct:Jami@mstdn.io irc://irc.libera.chat/jami matrix:r/jami:matrix.org mailto:contact@jami.net;
 Syndication;yes;https://jami.net/rss/;
