@@ -16,3 +16,4 @@
 * https://github.com/pluja/awesome-privacy#user-content-instant-messaging
 * https://restoreprivacy.com/secure-encrypted-messaging-apps/
 * https://supernova.tilde.team/messengers.html
+* https://beebom.com/best-secure-messaging-apps/
