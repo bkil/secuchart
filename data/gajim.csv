@@ -1,5 +1,6 @@
 name;;Gajim;
-Summary;;XMPP chat for desktop;With LAN-mode https://gajim.org/
+Summary;;XMPP chat for desktop;With LAN-mode
+Screenshots;;https://commons.wikimedia.org/wiki/File:Gajim_Screenshot.png https://commons.wikimedia.org/wiki/File:Gajim_chat.png https://commons.wikimedia.org/wiki/File:Screenshot_Gajim.png https://gajim.org/screenshots/;
 Android Google Play;no;;
 Android F-droid/apk;no;;
 Apple iOS;no;;
@@ -33,3 +34,13 @@ Bots available;yes;https://github.com/topics/xmpp-bot;
 First release;yes;2004-05-21 https://dev.gajim.org/gajim/gajim/blob/master/ChangeLog;
 Public issue tracker;yes;https://dev.gajim.org/gajim/gajim/-/issues;
 No past client vulnerabilities;no;2012 https://lwn.net/Articles/492655/ 2021 https://cvedetails.com/cve/CVE-2021-41055/;
+Logo;yes;https://gajim.org/img/favicon.ico https://commons.wikimedia.org/wiki/File:Gajim.svg;
+Wikipedia;yes;https://en.wikipedia.org/wiki/Gajim;
+Wikidata;yes;https://www.wikidata.org/wiki/Q58105;
+Domain;yes;https://gajim.org/;
+Landing page;yes;https://gajim.org/;
+Manual;yes;https://dev.gajim.org/gajim/gajim/-/wikis/help/Help;
+Open documentation;yes;https://dev.gajim.org/gajim/gajim/-/wikis/home;
+Web forum;no;;
+Contact;yes;acct:gajim@fosstodon.org xmpp:gajim@conference.gajim.org;
+Syndication;yes;https://gajim.org/index.xml;

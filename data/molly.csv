@@ -1,5 +1,5 @@
 name;;Molly;
-Summary;;Fork of Signal with hardening https://molly.im/;
+Summary;;Fork of Signal with hardening;
 Android Google Play;no;;
 Android F-droid/apk;partial;https://molly.im/download/fdroid/;
 Other mobile;no;;
@@ -61,3 +61,13 @@ Infrastructure provider;;Signal at present;Amazon https://github.com/signalapp/S
 First release;partial;Feb 24, 2020 https://github.com/mollyim/mollyim-android/releases/tag/v4.55.8-1;
 Public issue tracker;yes;https://github.com/mollyim/mollyim-android/issues;
 No past client vulnerabilities;yes;;none published since forking from Signal
+Logo;yes;https://molly.im/media/icon_hub372f8bacdfbc1af3a0d87f922f701cb_20536_32x32_fill_lanczos_center_3.png;
+Wikipedia;no;;
+Wikidata;no;;
+Domain;yes;https://molly.im/;
+Landing page;yes;https://molly.im/;
+Manual;no;;
+Open documentation;partial;https://github.com/mollyim/mollyim-android/wiki https://github.com/mollyim/mollyim.github.io;
+Web forum;no;;
+Contact;yes;matrix:r/mollyim:matrix.org mailto:valldrac@molly.im acct:mollyim@fosstodon.org;
+Syndication;no;;

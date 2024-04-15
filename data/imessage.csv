@@ -1,6 +1,6 @@
 name;;Apple iMessage;
-Summary;;Default on Apple platforms https://www.apple.com/;
-Screenshots;;;screenshot of conversation on ios 15.5 https://pbs.twimg.com/media/FUG0QXFVsAAQY5Z?format=jpg&name=large
+Summary;;Default on Apple platforms;
+Screenshots;;;conversation on ios 15.5 https://pbs.twimg.com/media/FUG0QXFVsAAQY5Z?format=jpg&name=large https://commons.wikimedia.org/wiki/File:Left_on_read.jpg https://commons.wikimedia.org/wiki/File:I_Love_You-Ambilly-2.jpg https://en.wikipedia.org/wiki/File:IMessage_macOS_Sonoma.png
 Android Google Play;no;;
 Android F-droid/apk;no;;
 Apple iOS;yes;;
@@ -64,3 +64,13 @@ User addons;yes;Install through app store;https://developer.apple.com/imessage/
 Vendor jurisdiction;;USA;
 Infrastructure provider;;Amazon AWS;https://www.theverge.com/2019/4/22/18511148/apple-icloud-cloud-services-amazon-aws-30-million-per-month
 Good ToSDR grade;partial;D;https://tosdr.org/en/service/291
+Logo;yes;https://commons.wikimedia.org/wiki/File:IMessage_logo.svg;
+Wikipedia;yes;https://en.wikipedia.org/wiki/IMessage;
+Wikidata;yes;https://www.wikidata.org/wiki/Q290267;
+Domain;partial;https://apple.com/;
+Landing page;yes;http://support.apple.com/explore/messages;
+Manual;yes;https://support.apple.com/messages;
+Open documentation;no;;
+Web forum;yes;https://discussions.apple.com/community/applications-services/messages;
+Contact;no;;
+Syndication;no;;

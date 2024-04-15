@@ -124,3 +124,13 @@ No past privacy glitches;no=uncovered cases when vendor secretly exploited user 
 Server hosted until;date of vendor instance discontinuation;all;;
 Server development until;date of abandoning maintenance;all;;
 Client development until;date of abandoning maintenance;all;;
+Logo;Avatar, prefer FOSS, externally hosted, Wikimedia URL;;;layperson
+Wikipedia;Passes notability, URL;;foss;layperson
+Wikidata;May not be reliable due to anonymous edits, URL;;;
+Domain;Currently delegated to the vendor, signals sustainability and commitment, URL including protocol;;;foss
+Landing page;Introductory website maintained by vendor, may use SaSS subdomain;;layperson;
+Manual;Knowledge base maintained by the vendor, user manual, tutorial, extensive FAQ, URL;;layperson;
+Open documentation;Copyleft, editable by users through a wiki or source code repository, URL;;;foss
+Web forum;Publicly readable, URL;;layperson;
+Contact;URI including the scheme prefix, preferably of group chat, such as matrix: acct: xmpp: msrp: news: mailto: irc: sip: mumble: ssh:;;layperson;
+Syndication;URL of RSS, Atom, twtxt or gemini text feed;;;layperson tinfoil

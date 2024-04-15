@@ -1,5 +1,6 @@
 name;;Dino;
-Summary;;XMPP video calls for desktop https://dino.im/;
+Summary;;XMPP video calls for desktop;
+Screenshots;;https://dino.im/img/screenshot1-small.png https://dino.im/img/screenshot2-small.png https://dino.im/img/screenshot3-small.png;
 Android Google Play;no;;
 Android F-droid/apk;no;;
 Apple iOS;no;;
@@ -35,3 +36,13 @@ Bots available;yes;https://github.com/topics/xmpp-bot;
 First release;partial;2020-01-29;https://github.com/dino/dino/releases/tag/v0.1.0 initial commit 2017-03-02 https://github.com/dino/dino/commit/56bc45ce4d07a7a9a415e9dc8ad2f7c3f3c9e48d
 Public issue tracker;yes;https://github.com/dino/dino/issues;
 No past client vulnerabilities;no;2019 https://debian.org/security/2019/dsa-4524 2021 https://dino.im/security/cve-2021-33896/;
+Logo;yes;https://dino.im/img/logo.svg https://dino.im/favicon.ico;
+Wikipedia;no;;
+Wikidata;yes;https://www.wikidata.org/wiki/Q84066495;
+Domain;yes;https://dino.im/;
+Landing page;yes;https://dino.im/;
+Manual;partial;https://github.com/dino/dino/wiki;
+Open documentation;yes;https://github.com/dino/dino/wiki;
+Web forum;no;;
+Contact;yes;acct:dino@fosstodon.org xmpp:chat@dino.im;
+Syndication;yes;https://dino.im/index.xml;

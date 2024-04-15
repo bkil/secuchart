@@ -1,5 +1,6 @@
 name;;Matrix Element;
-Summary;;Extensible protocol to bridge all;Assume using Matrix Synapse as server https://matrix.org/ Element matrix client https://element.io/
+Summary;;Extensible protocol to bridge all;Assume using Matrix Synapse as server, Element matrix client
+Screenshots;;https://commons.wikimedia.org/wiki/File:Element_1.11.37_screenshot.png;
 Android Google Play;yes;https://play.google.com/store/apps/details?id=im.vector.app https://matrix.org/docs/projects/client/element-android;
 Android F-droid/apk;yes;https://f-droid.org/en/packages/im.vector.app/;
 Other mobile;no;KaiOS unsupported https://github.com/vector-im/element-web/issues/13800#issuecomment-633658482;
@@ -84,3 +85,13 @@ First release;yes;2014-08-12 https://github.com/matrix-org/synapse/commit/4f475c
 Public issue tracker;yes;https://github.com/vector-im/element-web/issues https://github.com/vector-im/element-ios/issues https://github.com/vector-im/element-android/issues;
 No past client vulnerabilities;no;not exploited in the wild https://github.com/vector-im/element-desktop/security/advisories https://github.com/vector-im/element-android/security/advisories https://matrix.org/blog/2022/09/28/upgrade-now-to-address-encryption-vulns-in-matrix-sdks-and-clients https://nebuchadnezzar-megolm.github.io/;
 No past server vulnerabilities;no;multiple high severity ones https://github.com/matrix-org/synapse/security/advisories;
+Logo;yes;https://commons.wikimedia.org/wiki/File:Element_textlogo.svg https://element.io/images/favicon.png https://matrix.org/assets/favicon.ico;
+Wikipedia;yes;https://en.wikipedia.org/wiki/Element_(software);
+Wikidata;yes;https://www.wikidata.org/wiki/Q47004029;
+Domain;yes;https://element.io/ https://matrix.org/;
+Landing page;yes;https://element.io/;
+Manual;yes;https://element.io/help https://element.io/user-guide https://matrix.org/docs/chat_basics/matrix-for-im/ https://spec.matrix.org/;
+Open documentation;yes;https://github.com/matrix-org/matrix.org https://github.com/matrix-org/matrix-spec;
+Web forum;yes;https://reddit.com/r/elementchat/ https://reddit.com/r/matrixdotorg/;
+Contact;yes;acct:element@mastodon.matrix.org matrix:r/element-dev:matrix.org acct:matrix@mastodon.matrix.org matrix:r/matrix:matrix.org matrix:r/foundation-office:matrix.org mailto:matrix@matrix.org;
+Syndication;yes;https://element.io/blog/rss/ https://matrix.org/atom.xml;

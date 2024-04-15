@@ -1,5 +1,5 @@
 name;;Jami;
-Summary;;P2P chat, video calls and SIP;Decentralized chat, voice calls, videoconferencing and SIP client https://jami.net
+Summary;;P2P chat, video calls and SIP;Decentralized chat, voice calls, videoconferencing and SIP client
 Android Google Play;yes;https://play.google.com/store/apps/details?id=cx.ring;
 Android F-droid/apk;yes;https://f-droid.org/en/packages/cx.ring/;
 Apple iOS;yes;https://git.jami.net/savoirfairelinux/jami-client-ios;
@@ -52,3 +52,13 @@ Infrastructure jurisdiction;;Canada;
 Infrastructure provider;;Savoir-faire Linux (default);
 First release;yes;2004-12-22 (as SFLphone) http://freshmeat.sourceforge.net/projects/sflphone/releases?page=3;
 Public issue tracker;yes;https://git.jami.net/groups/savoirfairelinux/-/issues;
+Logo;yes;https://commons.wikimedia.org/wiki/File:Jami-logo-gnu-package.svg https://commons.wikimedia.org/wiki/File:Logo-jami-net.svg https://jami.net/favicon.png;
+Wikipedia;yes;https://en.wikipedia.org/wiki/Jami_(software);
+Wikidata;yes;https://www.wikidata.org/wiki/Q3459508;
+Domain;yes;https://jami.net/;
+Landing page;yes;https://jami.net/;
+Manual;yes;https://docs.jami.net/;
+Open documentation;yes;https://github.com/savoirfairelinux/opendht/wiki https://git.jami.net/savoirfairelinux/jami-docs;
+Web forum;yes;https://forum.jami.net/ https://lists.gnu.org/mailman/listinfo/jami https://reddit.com/r/jami;
+Contact;yes;acct:Jami@mstdn.io irc://irc.libera.chat/jami matrix:r/jami:matrix.org mailto:contact@jami.net;
+Syndication;yes;https://jami.net/rss/;

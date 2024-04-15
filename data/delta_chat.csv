@@ -1,5 +1,6 @@
 name;;Delta.Chat;
-Summary;;Group chat over email, user apps https://delta.chat/en/;
+Summary;;Group chat over email, user apps;
+Screenshots;;https://commons.wikimedia.org/wiki/File:Delta_Chat_Android_chat_screenshot.png;
 Android Google Play;yes;https://play.google.com/store/apps/details?id=chat.delta;
 Android F-droid/apk;yes;F-droid https://f-droid.org/packages/com.b44t.messenger/ apk https://delta.chat/en/download;
 Other mobile;no;https://delta.chat/en/download;
@@ -96,3 +97,13 @@ Infrastructure provider;;N/A;depends on provider
 First release;yes;2017 https://delta.chat/en/2017-05-31-blog-created https://delta.chat/en/help#how-are-delta-chat-developments-funded;
 Public issue tracker;yes;https://github.com/deltachat/deltachat-desktop/issues https://github.com/deltachat/deltachat-android/issues https://github.com/deltachat/deltachat-ios/issues;
 Support team;yes;issues groomed;no question is left unanswered and they give quick answers, few issues remain open https://github.com/deltachat/deltachat-android/issues https://github.com/deltachat/deltachat-ios/issues https://github.com/deltachat/deltachat-desktop/issues https://support.delta.chat/c/help/5
+Logo;yes;https://commons.wikimedia.org/wiki/File:Delta_chat_(Instant_Messenger)_logo.svg https://raw.githubusercontent.com/deltachat/interface/master/icons/delta-v7-pathed.svg;
+Wikipedia;no;;
+Wikidata;yes;https://www.wikidata.org/wiki/Q93623226;
+Domain;yes;https://delta.chat/;
+Landing page;yes;https://delta.chat/;
+Manual;yes;https://delta.chat/en/help;
+Open documentation;yes;https://github.com/deltachat/deltachat-pages;
+Web forum;yes;https://support.delta.chat/;
+Contact;yes;acct:delta@chaos.social;
+Syndication;yes;https://delta.chat/feed.xml;

@@ -1,5 +1,5 @@
 name;;Cheogram;
-Summary;;Conversations fork with SIP;To implement features of use to the Sopranica project https://cheogram.com/
+Summary;;Conversations fork with SIP;To implement features of use to the Sopranica project
 Android Google Play;no;https://cheogram.com/;
 Android F-droid/apk;yes;https://f-droid.org/en/packages/com.cheogram.android/;
 Apple iOS;no;;
@@ -58,3 +58,13 @@ Bots available;yes;https://github.com/topics/xmpp-bot;
 First release;no;2022-03-15 https://git.singpolyma.net/cheogram-android/refs/2.10.3-1;
 Public issue tracker;yes;https://soprani.ca/todo;
 Support team;yes;;
+Logo;yes;https://cheogram.com/favicon.ico;
+Wikipedia;no;;
+Wikidata;no;;
+Domain;yes;https://cheogram.com/;
+Landing page;yes;https://cheogram.com/;
+Manual;no;;
+Open documentation;no;;
+Web forum;no;;
+Contact;yes;xmpp:discuss@conference.soprani.ca mailto:help@cheogram.com;
+Syndication;no;;
