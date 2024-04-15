@@ -20,7 +20,7 @@ Chat with us over the relayed XMPP MUC:
 
 ## Copyright
 
-The history of the source code repository contains specifics of the individual work done by our past volunteers. We also have tried to outline a summary of who had contributed so far on the following page:
+The history of the source code repository contains specifics of the individual work done by our past volunteers. We have also tried to outline a summary of who had contributed so far on the following page:
 
 * #credits
 
