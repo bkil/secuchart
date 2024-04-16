@@ -412,7 +412,7 @@ markdown2html() {
     p
     n
 
-    s~\<(((https?|ftps?|file)://|(mailto|tel):)[^ ]*)~<a href='\1' target=_blank rel=noopener class=bl>\1</a>~g
+    s~${URIREGEX}~<a href='\1' target=_blank rel=noopener class=bl>\1</a>~g
     t linked_list
     s~(^| )(#[a-zA-Z0-9_-]+)~\1<a href='\2' class=il>\2</a>~g
     t linked_list
@@ -559,7 +559,7 @@ get_prop_value() {
   if [ -z "$SUMMARY" ]; then
     SUMMARY="$STATUS"
   else
-    NOLINK="`printf '%s' "$SUMMARYU" | sed -r "s~\<((http|ftp)s?://[^ ]*)~~g ; s~^ *~~ ; s~ *$~~"`"
+    NOLINK="`printf '%s' "$SUMMARYU" | sed -r "s~${URIREGEX}~~g ; s~^ *~~ ; s~ *$~~"`"
     if [ -z "$NOLINK" ]; then
       SUMMARY="$STATUS $SUMMARY"
     fi
