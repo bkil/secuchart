@@ -46,11 +46,14 @@ Typing indication;yes;;
 Read receipts;yes;;
 Receipts not mandatory;no;https://github.com/vector-im/element-web/issues/2527;
 Themes;yes;;several themes, message bubbles, irc style etc
+Landing page;yes;https://element.io/;
+Manual;yes;https://element.io/help https://element.io/user-guide https://matrix.org/docs/chat_basics/matrix-for-im/ https://spec.matrix.org/;
 Vendor can't curate content;yes;self-hosting;
 Spam protection;partial;;provided through third-party tools, such as Mjolnir: https://github.com/matrix-org/mjolnir
 Account deactivation after device compromise;yes;with second device or Web or Desktop;
 Account recovery after device compromise;yes;with second device or Web or Desktop;
 Disallow screenshots;partial;only for yourself on Android https://github.com/vector-im/element-android/issues/1027 https://github.com/vector-im/element-ios/issues/4359;
+Logo;yes;https://commons.wikimedia.org/wiki/File:Element_textlogo.svg https://element.io/images/favicon.png https://matrix.org/assets/favicon.ico;
 End-to-end encryption;yes;https://matrix.org/faq/#which-matrix-clients-support-e2e;
 Metadata protection;no;;
 Perfect forward secrecy;partial;1-on-1 yes, groups partial;yes for 1-on-1 conversations. partial for group conversations https://www.nccgroup.com/globalassets/our-research/us/public-reports/2016/november/ncc_group_olm_cryptogrpahic_review_2016_11_01.pdf
@@ -64,6 +67,10 @@ No-cost tier;yes;https://element.io/personal;
 Active development;yes;https://github.com/vector-im;
 Multi-party development;yes;https://github.com/vector-im/element-web/pulse/monthly https://github.com/vector-im/element-android/pulse/monthly https://github.com/vector-im/element-ios/pulse/monthly;
 Identity not controlled by vendor;yes;Unless using matrix.org account;vendor also offers various self-hostable or optional services like stickers, bots and bridges
+Open documentation;yes;https://github.com/matrix-org/matrix.org https://github.com/matrix-org/matrix-spec;
+Web forum;yes;https://reddit.com/r/elementchat/ https://reddit.com/r/matrixdotorg/;
+Contact;yes;acct:element@mastodon.matrix.org matrix:r/element-dev:matrix.org acct:matrix@mastodon.matrix.org matrix:r/matrix:matrix.org matrix:r/foundation-office:matrix.org mailto:matrix@matrix.org;
+Syndication;yes;https://element.io/blog/rss/ https://matrix.org/atom.xml;
 Offline;partial;compose or read recent Desktop messages, no Web startup;Buffered messages on Element Desktop, Element Web lacks offline startup via Web Workers
 Servers required;;Synapse homeserver, notifications push;
 Servers optional;;DNS, Element Web app, identity, integrations, ICE, Jitsi https://gitlab.com/libremonde-org/papers/research/privacy-matrix.org/-/blob/master/part1/README.md;
@@ -81,17 +88,10 @@ Vendor jurisdiction;;UK with subsidiaries in France & US;
 Infrastructure jurisdiction;;Netherlands & Sweden, various for EMS https://element.io/privacy;
 Infrastructure provider;;AWS, Cloudflare;
 Good ToSDR grade;yes;B https://tosdr.org/en/service/2498;
+Domain;yes;https://element.io/ https://matrix.org/;
 First release;yes;2014-08-12 https://github.com/matrix-org/synapse/commit/4f475c7697722e946e39e42f38f3dd03a95d8765 https://matrix.org/blog/2014/09/03/hello-world/;
 Public issue tracker;yes;https://github.com/vector-im/element-web/issues https://github.com/vector-im/element-ios/issues https://github.com/vector-im/element-android/issues;
 No past client vulnerabilities;no;not exploited in the wild https://github.com/vector-im/element-desktop/security/advisories https://github.com/vector-im/element-android/security/advisories https://matrix.org/blog/2022/09/28/upgrade-now-to-address-encryption-vulns-in-matrix-sdks-and-clients https://nebuchadnezzar-megolm.github.io/;
 No past server vulnerabilities;no;multiple high severity ones https://github.com/matrix-org/synapse/security/advisories;
-Logo;yes;https://commons.wikimedia.org/wiki/File:Element_textlogo.svg https://element.io/images/favicon.png https://matrix.org/assets/favicon.ico;
 Wikipedia;yes;https://en.wikipedia.org/wiki/Element_(software);
 Wikidata;yes;https://www.wikidata.org/wiki/Q47004029;
-Domain;yes;https://element.io/ https://matrix.org/;
-Landing page;yes;https://element.io/;
-Manual;yes;https://element.io/help https://element.io/user-guide https://matrix.org/docs/chat_basics/matrix-for-im/ https://spec.matrix.org/;
-Open documentation;yes;https://github.com/matrix-org/matrix.org https://github.com/matrix-org/matrix-spec;
-Web forum;yes;https://reddit.com/r/elementchat/ https://reddit.com/r/matrixdotorg/;
-Contact;yes;acct:element@mastodon.matrix.org matrix:r/element-dev:matrix.org acct:matrix@mastodon.matrix.org matrix:r/matrix:matrix.org matrix:r/foundation-office:matrix.org mailto:matrix@matrix.org;
-Syndication;yes;https://element.io/blog/rss/ https://matrix.org/atom.xml;

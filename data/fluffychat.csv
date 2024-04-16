@@ -34,14 +34,21 @@ Typing indication;partial;cannot be disabled https://gitlab.com/famedly/fluffych
 Read receipts;yes;;
 Receipts not mandatory;no;;
 Themes;partial;;dark/light with accent color
+Landing page;yes;https://fluffychat.im/;
+Manual;partial;https://github.com/krille-chan/fluffychat/wiki;
 Vendor can't curate content;yes;Vendor doesn't provide a homeserver;
 Account deactivation after device compromise;yes;;
 Account recovery after device compromise;yes;;
 Disallow screenshots;no;;
+Logo;yes;https://fluffychat.im/favicon.png;
 End-to-end encryption;yes;https://matrix.org/faq/#which-matrix-clients-support-e2e;
 Usage without phone number;yes;;
 Active development;yes;https://gitlab.com/famedly/fluffychat;
 Identity not controlled by vendor;yes;;
+Open documentation;yes;https://github.com/krille-chan/fluffychat/wiki;
+Web forum;no;;
+Contact;yes;matrix:r/fluffychat:matrix.org acct:krille@mastodon.art mailto:christian-pauly@posteo.de;
+Syndication;no;;
 Offline;partial;compose or read recent messages on Mobile/Desktop, no Web startup;Buffered messages on Mobile/Desktop, Fluffychat Web lacks offline startup via Web Workers
 Servers required;;Matrix homeserver e.g. Synapse, Dendride, Conduit, notifications push via FCM or Unified push;
 Serverless WAN mode;no;;
@@ -49,15 +56,8 @@ Serverless LAN mode;no;;
 Network store and forward;yes;;
 IP shielded from peers;yes;Not during calls if you enable WebRTC;
 Bots available;yes;https://matrix.org/bots/;
+Domain;yes;https://fluffychat.im/;
 First release;yes;2020-06-26? https://gitlab.com/famedly/fluffychat/-/releases/release-0.15.0;
 Public issue tracker;yes;https://gitlab.com/famedly/fluffychat/-/issues;
-Logo;yes;https://fluffychat.im/favicon.png;
 Wikipedia;no;;
 Wikidata;no;;
-Domain;yes;https://fluffychat.im/;
-Landing page;yes;https://fluffychat.im/;
-Manual;partial;https://github.com/krille-chan/fluffychat/wiki;
-Open documentation;yes;https://github.com/krille-chan/fluffychat/wiki;
-Web forum;no;;
-Contact;yes;matrix:r/fluffychat:matrix.org acct:krille@mastodon.art mailto:christian-pauly@posteo.de;
-Syndication;no;;

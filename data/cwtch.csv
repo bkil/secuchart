@@ -32,10 +32,13 @@ Presence not mandatory;yes;https://docs.cwtch.im/docs/profiles/availability-stat
 Typing indication;no;;
 Read receipts;no;only delivery receipt;
 Themes;yes;built-in + custom;https://docs.cwtch.im/docs/settings/appearance/light-dark-mode + https://docs.cwtch.im/docs/contribute/themes/
+Landing page;yes;clearnet https://cwtch.im/ Tor http://cwtchim3z2gdsyb27acfc26lup5aqbegjrjsqulzrnkuoalq5h4gmcid.onion/;
+Manual;yes;https://docs.cwtch.im/;
 Spam protection;partial;https://docs.openprivacy.ca/cwtch-security-handbook/ui.html?highlight=spam#denial-of-service-through-spamming;Could result in an increase in network bandwidth which may be intolerable or undesired for many people - especially those on metered connections
 Account deactivation after device compromise;no;;
 Account recovery after device compromise;no;;
 Disallow screenshots;no;;
+Logo;yes;https://cwtch.im/favicon.png;
 Threat model;yes;https://docs.openprivacy.ca/cwtch-security-handbook/risk.html;
 End-to-end encryption;yes;Profiles are stored locally on disk and encrypted https://docs.openprivacy.ca/cwtch-security-handbook/profile_encryption_and_storage.html;
 Metadata protection;yes;https://docs.openprivacy.ca/cwtch-security-handbook/risk.html?highlight=metadata#threat-model;
@@ -48,6 +51,10 @@ Payment choices;;N/A;
 Active development;yes;;
 Multi-party development;partial;https://git.openprivacy.ca/cwtch.im;
 User can extend network with node;yes;Applicable to group chats only https://git.openprivacy.ca/cwtch.im/server;
+Open documentation;yes;https://git.openprivacy.ca/cwtch.im/docs.cwtch.im;
+Web forum;no;;
+Contact;yes;acct:cwtch@fosstodon.org;
+Syndication;yes;https://docs.cwtch.im/blog/atom.xml;
 Servers required;;Tor, Cwtch;
 Serverless WAN mode;no;Requires Tor;
 Serverless LAN mode;no;Requires Tor;
@@ -59,18 +66,11 @@ Transparency reports;yes;https://openprivacy.ca/reports/ https://openprivacy.ca/
 Vendor jurisdiction;;canada https://openprivacy.ca/ http://openpravyvc6spbd4flzn4g2iqu4sxzsizbtb5aqec25t76dnoo5w7yd.onion/;
 Infrastructure jurisdiction;;global Tor onion routed network;
 Infrastructure provider;;Tor onion routed network;
+Domain;yes;https://cwtch.im/;
 First release;no;2021-06-25 https://git.openprivacy.ca/cwtch.im/cwtch-ui/releases;
 Public issue tracker;yes;https://git.openprivacy.ca/cwtch.im/cwtch-ui/issues;
 No past DDoS;partial;;The Cwtch application utilizes Tor which has been subject to much stress in the past.
 No past client vulnerabilities;yes;https://docs.openprivacy.ca/cwtch-security-handbook/profile_encryption_and_storage.html;exploitation requires full device compromise, bad actor requires password
 No past privacy glitches;yes;;
-Logo;yes;https://cwtch.im/favicon.png;
 Wikipedia;no;;
 Wikidata;yes;https://www.wikidata.org/wiki/Q125317880;
-Domain;yes;https://cwtch.im/;
-Landing page;yes;clearnet https://cwtch.im/ Tor http://cwtchim3z2gdsyb27acfc26lup5aqbegjrjsqulzrnkuoalq5h4gmcid.onion/;
-Manual;yes;https://docs.cwtch.im/;
-Open documentation;yes;https://git.openprivacy.ca/cwtch.im/docs.cwtch.im;
-Web forum;no;;
-Contact;yes;acct:cwtch@fosstodon.org;
-Syndication;yes;https://docs.cwtch.im/blog/atom.xml;

@@ -36,11 +36,14 @@ Presence not mandatory;no;;
 Typing indication;no;;
 Read receipts;no;only delivery receipt https://code.briarproject.org/briar/briar/-/issues/1220;
 Themes;partial;https://briarproject.org/news/2018-briar-1.1-released/;light/dark
+Landing page;yes;https://briarproject.org/;
+Manual;yes;https://briarproject.org/manual/ https://briarproject.org/quick-start/;
 Vendor can't curate content;yes;;
 Account deactivation after device compromise;no;;
 Account recovery after device compromise;no;https://code.briarproject.org/briar/briar/-/wikis/FAQ#how-do-i-backup-my-account;
 Bandwidth frugal;no;;
 Disallow screenshots;yes;Android https://code.briarproject.org/briar/briar/-/issues/2310;This does not provide any real world usage, especially for the tinfoil persona. Any conversation partner can use screen-share capabilities to capture and record messages without alerting their chat partner.
+Logo;yes;https://commons.wikimedia.org/wiki/File:Briar_logo.png https://briarproject.org/img/briar_logo_circle.png;
 Threat model;yes;https://code.briarproject.org/briar/briar/-/wikis/threat-model;
 End-to-end encryption;yes;https://briarproject.org/how-it-works/;
 Deniability;yes;https://briarproject.org/raw/BRP-01-report.pdf;via BTP and Tor, conversation participants who have deleted the given time-based key for their conversation, can achieve deniability, but not unobservability or unlinkability unless the participants both use Tor https://code.briarproject.org/briar/briar-spec/-/blob/master/protocols/BTP.md#23-time-periods
@@ -54,6 +57,10 @@ Usage without phone number;yes;;
 Transparent financing;yes;yes;https://briarproject.org/about-us/#funding
 Active development;yes;;
 Identity not controlled by vendor;yes;;
+Open documentation;yes;https://code.briarproject.org/briar/briar/-/wikis/home;
+Web forum;yes;https://sourceforge.net/p/briar/mailman/briar-announce/;
+Contact;yes;acct:briar@fosstodon.org mailto:contact@briarproject.org;
+Syndication;yes;https://briarproject.org/news/index.xml;
 Offline;yes;;https://briarproject.org/how-it-works/ adding contacts must happen within 48 hours, but introductions do not carry a time limit https://code.briarproject.org/briar/briar/-/wikis/FAQ#is-there-a-timeout-for-introductions https://code.briarproject.org/briar/briar/-/wikis/FAQ#is-it-safe-to-publish-my-briar-link-publicly
 Servers required;;Tor https://code.briarproject.org/briar/briar/-/wikis/A-Quick-Overview-of-the-Protocol-Stack;
 Serverless LAN mode;yes;https://briarproject.org/how-it-works/;
@@ -61,6 +68,7 @@ Wireless mode;yes;Bluetooth https://code.briarproject.org/briar/briar/-/wikis/Ho
 Third party clients;partial;no alternative client;
 Tor access of vendor operated network;yes;N/A;uses Tor connection to peers
 Good ToSDR grade;yes;A https://tosdr.org/en/service/2559;
+Domain;yes;https://briarproject.org/;
 First release;yes;2018-05-09 https://en.wikipedia.org/wiki/Briar_(software);
 Public issue tracker;yes;https://code.briarproject.org/briar/briar/-/issues https://code.briarproject.org/briar/briar-desktop/-/issues;
 No past DDoS;partial;;The Tor network, which Briar relies on, is subject to many DDoS attacks. It has mitigated most of them and continues to implement its Vanguard protections ahead of scheduled Tor-core releases. https://github.com/mikeperry-tor/vanguards/blob/master/README_TECHNICAL.md
@@ -69,13 +77,5 @@ Ethical financing in the past;yes;;
 Ethical business in the past;yes;;
 No past conflicts of interest;yes;;
 No past privacy glitches;yes;;
-Logo;yes;https://commons.wikimedia.org/wiki/File:Briar_logo.png https://briarproject.org/img/briar_logo_circle.png;
 Wikipedia;yes;https://en.wikipedia.org/wiki/Briar_(software);
 Wikidata;yes;https://www.wikidata.org/wiki/Q18210428;
-Domain;yes;https://briarproject.org/;
-Landing page;yes;https://briarproject.org/;
-Manual;yes;https://briarproject.org/manual/ https://briarproject.org/quick-start/;
-Open documentation;yes;https://code.briarproject.org/briar/briar/-/wikis/home;
-Web forum;yes;https://sourceforge.net/p/briar/mailman/briar-announce/;
-Contact;yes;acct:briar@fosstodon.org mailto:contact@briarproject.org;
-Syndication;yes;https://briarproject.org/news/index.xml;

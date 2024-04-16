@@ -34,24 +34,24 @@ Typing indication;yes;can be disabled https://bkil.gitlab.io/secuchart-assets/sc
 Read receipts;yes;https://bkil.gitlab.io/secuchart-assets/screenshots/monocles/v1.5_settings_security.jpg;
 Receipts not mandatory;yes;https://bkil.gitlab.io/secuchart-assets/screenshots/monocles/v1.5_settings_security.jpg;
 Themes;yes;https://bkil.gitlab.io/secuchart-assets/screenshots/monocles/v1.5_settings_UI.jpg https://bkil.gitlab.io/secuchart-assets/screenshots/monocles/v1.5_settings_UI_theme.jpg https://bkil.gitlab.io/secuchart-assets/screenshots/monocles/v1.5_settings_UI_theme_color.jpg;light, dark, AMOLED, theme colors
+Landing page;yes;https://docs.monocles.eu/apps/chat.app/;
+Manual;yes;https://codeberg.org/monocles/monocles_chat/src/branch/master/README-en.md https://docs.monocles.eu/apps/chat.app/ https://monocles.wiki/index.php?title=Monocles_Chat;
 Account deactivation after device compromise;yes;;
+Logo;yes;https://codeberg.org/monocles/monocles_chat/src/branch/master/drawable/monocleslogo_chat-signet.svg https://monocles.eu/more/favicon.png;
 End-to-end encryption;yes;XEP-0384 OMEMO https://conversations.im/omemo/;also OpenPGP
 Usage without phone number;yes;;
 Identity not controlled by vendor;yes;;
+Open documentation;yes;https://monocles.wiki/index.php?title=Monocles_Chat https://codeberg.org/monocles/monocles_chat/src/branch/master/docs https://codeberg.org/monocles/pages/src/branch/main/docs/apps/chat.app.md;
+Web forum;no;;
+Contact;yes;acct:monocles@monocles.social xmpp:support@conference.monocles.eu xmpp:development@conference.monocles.de mailto:support@monocles.de;
+Syndication;no;;
 Serverless WAN mode;no;;
 Serverless LAN mode;no;;XEP-0174 unimplemented https://codeberg.org/Arne/monocles_chat/src/branch/master/docs/XEPs.md https://github.com/iNPUTmice/Conversations/issues/1415
 Network store and forward;yes;if server and contact client support XEP-0313 MAM;
 Wireless mode;no;;
 IP shielded from peers;yes;not for STUN calls;
 Bots available;yes;https://github.com/topics/xmpp-bot;
+Domain;yes;https://monocles.eu/ https://monocles.de/ https://monocles.chat/;
 Public issue tracker;yes;https://codeberg.org/Arne/monocles_chat/issues;
-Logo;yes;https://codeberg.org/monocles/monocles_chat/src/branch/master/drawable/monocleslogo_chat-signet.svg https://monocles.eu/more/favicon.png;
 Wikipedia;no;;
 Wikidata;no;;
-Domain;yes;https://monocles.eu/ https://monocles.de/ https://monocles.chat/;
-Landing page;yes;https://docs.monocles.eu/apps/chat.app/;
-Manual;yes;https://codeberg.org/monocles/monocles_chat/src/branch/master/README-en.md https://docs.monocles.eu/apps/chat.app/ https://monocles.wiki/index.php?title=Monocles_Chat;
-Open documentation;yes;https://monocles.wiki/index.php?title=Monocles_Chat https://codeberg.org/monocles/monocles_chat/src/branch/master/docs https://codeberg.org/monocles/pages/src/branch/main/docs/apps/chat.app.md;
-Web forum;no;;
-Contact;yes;acct:monocles@monocles.social xmpp:support@conference.monocles.eu xmpp:development@conference.monocles.de mailto:support@monocles.de;
-Syndication;no;;

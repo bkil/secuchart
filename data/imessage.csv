@@ -42,8 +42,11 @@ Typing indication;yes;Can't be disabled;
 Read receipts;yes;;
 Receipts not mandatory;yes;;
 Themes;partial;Light and dark mode with system;
+Landing page;yes;http://support.apple.com/explore/messages;
+Manual;yes;https://support.apple.com/messages;
 Account deactivation after device compromise;yes;various;support aided https://support.apple.com/en-us/HT204921 recovery contacts https://support.apple.com/en-us/HT212515 email, phone number and 2FA recovery keys https://support.apple.com/en-us/HT201487
 Account recovery after device compromise;yes;various;support aided https://support.apple.com/en-us/HT204921 recovery contacts https://support.apple.com/en-us/HT212515 email, phone number and 2FA recovery keys https://support.apple.com/en-us/HT201487
+Logo;yes;https://commons.wikimedia.org/wiki/File:IMessage_logo.svg;
 End-to-end encryption;yes;;https://support.apple.com/en-us/HT202303 https://zdnet.com/article/rumor-apple-capturing-information-on-facetime-calls-updated-with-apple-response/ https://www.theiphonewiki.com/wiki/FaceTime
 E2EE keys shielded from operator;partial;Key included in iCloud backup of device;The backups are not client-side encrypted. When you disable backup a new key is generated so Apple doesn't have access to your past messages any more https://support.apple.com/en-us/HT202303#messages
 Metadata protection;no;;
@@ -57,6 +60,10 @@ Active development;yes;;
 Isolated self-hosting;no;;
 User can extend network with node;no;Proprietary system;
 Identity not controlled by vendor;no;;
+Open documentation;no;;
+Web forum;yes;https://discussions.apple.com/community/applications-services/messages;
+Contact;no;;
+Syndication;no;;
 Offline;yes;;
 IP shielded from peers;partial;unsure, FaceTime may use STUN;https://support.apple.com/en-us/HT202078 https://www.theiphonewiki.com/wiki/FaceTime
 Third party clients;no;;
@@ -64,13 +71,6 @@ User addons;yes;Install through app store;https://developer.apple.com/imessage/
 Vendor jurisdiction;;USA;
 Infrastructure provider;;Amazon AWS;https://www.theverge.com/2019/4/22/18511148/apple-icloud-cloud-services-amazon-aws-30-million-per-month
 Good ToSDR grade;partial;D;https://tosdr.org/en/service/291
-Logo;yes;https://commons.wikimedia.org/wiki/File:IMessage_logo.svg;
+Domain;partial;https://apple.com/;
 Wikipedia;yes;https://en.wikipedia.org/wiki/IMessage;
 Wikidata;yes;https://www.wikidata.org/wiki/Q290267;
-Domain;partial;https://apple.com/;
-Landing page;yes;http://support.apple.com/explore/messages;
-Manual;yes;https://support.apple.com/messages;
-Open documentation;no;;
-Web forum;yes;https://discussions.apple.com/community/applications-services/messages;
-Contact;no;;
-Syndication;no;;

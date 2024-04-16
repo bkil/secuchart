@@ -45,6 +45,8 @@ Typing indication;no;;
 Read receipts;yes;https://delta.chat/en/help#what-do-the-ticks-shown-beside-outgoing-messages-mean https://github.com/deltachat/deltachat-core-rust/issues/505#user-content-issuecomment-577395828;
 Receipts not mandatory;yes;https://delta.chat/en/help#what-do-the-ticks-shown-beside-outgoing-messages-mean;
 Themes;yes;many;dark/light on Android/iOS https://github.com/deltachat/deltachat-android/blob/f941fd3c535ad30cfec3e3c78de73403d93d4a82/src/org/thoughtcrime/securesms/util/DynamicTheme.java https://support.delta.chat/t/auto-dark-light-theme/924 dark, AMOLED, dark purple, rocket, light and minimal on desktop https://github.com/deltachat/deltachat-desktop/blob/56f4b8aaa4ffd43da1042e32008e19cb646edff8/docs/THEMES.md#user-content-theme-codes
+Landing page;yes;https://delta.chat/;
+Manual;yes;https://delta.chat/en/help;
 Vendor can't curate content;yes;only mailbox provider https://delta.chat/en/help#i-want-to-manage-my-own-e-mail-server-for-delta-chat-what-do-you-recommend https://delta.chat/en/help#how-can-i-change-my-account-to-a-different-e-mail-address;
 Spam protection;yes;standard email filters, hides non-contact https://delta.chat/en/help#what-are-the-advantages-of-delta-chat-compared-to-other-messengers https://delta.chat/en/help#what-if-i-expect-a-message-from-someone-i-didnt-write-to-in-the-past;
 Account deactivation after device compromise;partial;;probably manually by a revocation certificate and with the help of the mailbox provider
@@ -53,6 +55,7 @@ CPU idle;yes;;
 Power saving;partial;IMAP IDLE keeps a socket open;
 Bandwidth frugal;partial;group messages are unicast;should use selective IMAP fetches and compression
 Disallow screenshots;partial;only for yourself https://github.com/deltachat/deltachat-android/blob/7d13b71b0b6c9e44bf01050773986356dbeaccbc/src/org/thoughtcrime/securesms/BaseActionBarActivity.java#L52 https://github.com/deltachat/deltachat-android/blob/829bb4ea6c9aa727da297691e4c23a473af06a22/res/values/strings.xml#L572;
+Logo;yes;https://commons.wikimedia.org/wiki/File:Delta_chat_(Instant_Messenger)_logo.svg https://raw.githubusercontent.com/deltachat/interface/master/icons/delta-v7-pathed.svg;
 Threat model;yes;https://support.delta.chat/t/security-goals-of-delta-chat/999 https://countermitm.readthedocs.io/en/latest/new.html;
 End-to-end encryption;yes;https://delta.chat/en/help#does-delta-chat-support-end-to-end-encryption;
 E2EE keys shielded from operator;yes;https://delta.chat/en/help#does-delta-chat-support-end-to-end-encryption;
@@ -73,6 +76,10 @@ Multi-party development;yes;10 git members https://github.com/orgs/deltachat/peo
 Isolated self-hosting;yes;SMTP and IMAP https://delta.chat/en/help#what-are-the-advantages-of-delta-chat-compared-to-other-messengers;
 User can extend network with node;yes;SMTP and IMAP https://delta.chat/en/serverguide https://delta.chat/en/help#what-are-the-advantages-of-delta-chat-compared-to-other-messengers;
 Identity not controlled by vendor;yes;SMTP and IMAP https://delta.chat/en/help#what-are-the-advantages-of-delta-chat-compared-to-other-messengers;
+Open documentation;yes;https://github.com/deltachat/deltachat-pages;
+Web forum;yes;https://support.delta.chat/;
+Contact;yes;acct:delta@chaos.social;
+Syndication;yes;https://delta.chat/feed.xml;
 Offline;yes;https://delta.chat/en/2020-03-06-delta-1.2;
 Servers required;;DNS, SMTP, IMAP;
 Servers optional;;jitsi, talky.io, appear.in https://delta.chat/en/2020-07-30-summer-update#video-chats;
@@ -94,16 +101,9 @@ Transparency reports;no;;
 Vendor jurisdiction;;Germany https://delta.chat/en/gdpr;
 Infrastructure jurisdiction;;N/A;depends on provider
 Infrastructure provider;;N/A;depends on provider
+Domain;yes;https://delta.chat/;
 First release;yes;2017 https://delta.chat/en/2017-05-31-blog-created https://delta.chat/en/help#how-are-delta-chat-developments-funded;
 Public issue tracker;yes;https://github.com/deltachat/deltachat-desktop/issues https://github.com/deltachat/deltachat-android/issues https://github.com/deltachat/deltachat-ios/issues;
 Support team;yes;issues groomed;no question is left unanswered and they give quick answers, few issues remain open https://github.com/deltachat/deltachat-android/issues https://github.com/deltachat/deltachat-ios/issues https://github.com/deltachat/deltachat-desktop/issues https://support.delta.chat/c/help/5
-Logo;yes;https://commons.wikimedia.org/wiki/File:Delta_chat_(Instant_Messenger)_logo.svg https://raw.githubusercontent.com/deltachat/interface/master/icons/delta-v7-pathed.svg;
 Wikipedia;no;;
 Wikidata;yes;https://www.wikidata.org/wiki/Q93623226;
-Domain;yes;https://delta.chat/;
-Landing page;yes;https://delta.chat/;
-Manual;yes;https://delta.chat/en/help;
-Open documentation;yes;https://github.com/deltachat/deltachat-pages;
-Web forum;yes;https://support.delta.chat/;
-Contact;yes;acct:delta@chaos.social;
-Syndication;yes;https://delta.chat/feed.xml;
