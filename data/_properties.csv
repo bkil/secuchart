@@ -53,13 +53,13 @@ Read receipts;Whether sending and showing is supported;;layperson;
 Receipts not mandatory;yes=they can be disabled, note default value;;tinfoil;
 Themes;no=1, partial=2, yes=more - Appearance, dark scheme, night mode, OLED, prefers contrast, reduced motion, color blind, custom base color, large fonts, visual style presets, automatic switching;;layperson;
 ;Qualities;;;
-Landing page;Introductory website maintained by vendor, may use SaSS subdomain;;layperson;
+Landing page;Introductory website maintained by vendor, may use SaaS subdomain;;layperson;
 Manual;Knowledge base maintained by the vendor, user manual, tutorial, extensive FAQ, URL;;layperson;
 Vendor can't curate content;no=vendor can influence who can access which content, remove spam and vandalism;foss crowd;tinfoil;
 Spam protection;If it gained worldwide adoption;all;;
 Account deactivation after device compromise;Solvable with centralized or federated servers or with revocation certificates in P2P.;layperson;foss tinfoil;
 Account recovery after device compromise;Solvable with centralized or federated servers or with subkeys, revocation and secret sharing in P2P.;tinfoil layperson;;
-CPU idle;no=Proof of work, partial=sluggish due to Idling too little in foreground or measurable amount of processing in background, yes=otherwise;layperson;foss tinfoil;
+CPU idle;no=Proof of work, partial=sluggish due to idling too little in foreground or measurable amount of processing in background, yes=otherwise;layperson;foss tinfoil;
 Power saving;Ensure that device wakes up as few times as possible, filters and batches events on remote side, no open sockets, delegated peer tracking;layperson;foss tinfoil;
 Bandwidth frugal;Conservation by lazy loading, previews, adaptive detail, incremental sync, fewer round trips, tokenization, batching transfers to improve compression, tweaked key schedule, multicasting hubs;layperson;foss tinfoil;crowd
 Disallow screenshots;partial=Only for yourself, yes=Ask peers to not take screenshots of message or conversation. Also called screen security;;layperson;

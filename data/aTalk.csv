@@ -28,7 +28,7 @@ Application locking;no;;
 Presence status;yes;;
 Read receipts;yes;;
 Receipts not mandatory;yes;;Not mandatory
-Landing page;yes;dynamic DNS https://atalk.sytes.net/atalk/ SaSS https://cmeng-git.github.io/atalk/;
+Landing page;yes;dynamic DNS https://atalk.sytes.net/atalk/ SaaS https://cmeng-git.github.io/atalk/;
 Manual;yes;https://cmeng-git.github.io/atalk/faq.html;
 Logo;yes;https://atalk.sytes.net/atalk/img/atalk.png;
 Threat model;no;;
