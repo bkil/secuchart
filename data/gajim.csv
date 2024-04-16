@@ -1,5 +1,6 @@
 name;;Gajim;
-Summary;;XMPP chat for desktop;With LAN-mode https://gajim.org/
+Summary;;XMPP chat for desktop;With LAN-mode
+Screenshots;;https://commons.wikimedia.org/wiki/File:Gajim_Screenshot.png https://commons.wikimedia.org/wiki/File:Gajim_chat.png https://commons.wikimedia.org/wiki/File:Screenshot_Gajim.png https://gajim.org/screenshots/;
 Android Google Play;no;;
 Android F-droid/apk;no;;
 Apple iOS;no;;
@@ -23,13 +24,23 @@ Remote message correction;no;;
 Message expiration;no;;
 Presence status;yes;;
 Presence not mandatory;yes;;
+Landing page;yes;https://gajim.org/;
+Manual;yes;https://dev.gajim.org/gajim/gajim/-/wikis/help/Help;
 Account deactivation after device compromise;yes;;
+Logo;yes;https://gajim.org/img/favicon.ico https://commons.wikimedia.org/wiki/File:Gajim.svg;
 End-to-end encryption;yes;XEP-0384 OMEMO plugin https://dev.gajim.org/gajim/gajim/-/wikis/help/gajimfaq#does-gajim-support-omemo-encryption;also XEP-0373 OpenPGP plugin https://gajim.org/support/extensions/
 Usage without phone number;yes;;
 Active development;yes;https://dev.gajim.org/gajim/gajim/-/commits/master/;
 Multi-party development;partial;;
+Open documentation;yes;https://dev.gajim.org/gajim/gajim/-/wikis/home;
+Web forum;no;;
+Contact;yes;acct:gajim@fosstodon.org xmpp:gajim@conference.gajim.org;
+Syndication;yes;https://gajim.org/index.xml;
 Serverless LAN mode;yes;;XEP-0174 https://gajim.org/support/extensions/ https://dev.gajim.org/gajim/gajim/-/blob/407861a4db63af341fc686d3458de18e21f885e7/ChangeLog#L788 https://dev.gajim.org/gajim/gajim/-/issues?scope=all&state=closed&label_name[]=Serverless%20Messaging%2FZeroconf
 Bots available;yes;https://github.com/topics/xmpp-bot;
+Domain;yes;https://gajim.org/;
 First release;yes;2004-05-21 https://dev.gajim.org/gajim/gajim/blob/master/ChangeLog;
 Public issue tracker;yes;https://dev.gajim.org/gajim/gajim/-/issues;
 No past client vulnerabilities;no;2012 https://lwn.net/Articles/492655/ 2021 https://cvedetails.com/cve/CVE-2021-41055/;
+Wikipedia;yes;https://en.wikipedia.org/wiki/Gajim;
+Wikidata;yes;https://www.wikidata.org/wiki/Q58105;

@@ -1,5 +1,6 @@
 name;;Dino;
-Summary;;XMPP video calls for desktop https://dino.im/;
+Summary;;XMPP video calls for desktop;
+Screenshots;;https://dino.im/img/screenshot1-small.png https://dino.im/img/screenshot2-small.png https://dino.im/img/screenshot3-small.png;
 Android Google Play;no;;
 Android F-droid/apk;no;;
 Apple iOS;no;;
@@ -23,15 +24,25 @@ Message expiration;no;;
 Typing indication;yes;https://github.com/dino/dino/wiki/Supported-XEPs;toggle on/off both globally and per conversation
 Read receipts;yes;https://github.com/dino/dino/wiki/Supported-XEPs;
 Receipts not mandatory;yes;https://github.com/dino/dino/wiki/Supported-XEPs;toggle on/off both globally and per conversation
+Landing page;yes;https://dino.im/;
+Manual;partial;https://github.com/dino/dino/wiki;
 Account deactivation after device compromise;yes;;
 Disallow screenshots;no;;
+Logo;yes;https://dino.im/img/logo.svg https://dino.im/favicon.ico;
 End-to-end encryption;yes;XEP-0384 OMEMO https://github.com/dino/dino/wiki/Supported-XEPs;also OpenPGP
 Usage without phone number;yes;;
 Active development;yes;https://github.com/dino/dino/commits/master;
 Multi-party development;partial;https://github.com/dino/dino/pulse/monthly;
 Identity not controlled by vendor;yes;;
+Open documentation;yes;https://github.com/dino/dino/wiki;
+Web forum;no;;
+Contact;yes;acct:dino@fosstodon.org xmpp:chat@dino.im;
+Syndication;yes;https://dino.im/index.xml;
 Serverless LAN mode;no;;XEP-0174 unimplemented https://github.com/dino/dino/issues/170
 Bots available;yes;https://github.com/topics/xmpp-bot;
+Domain;yes;https://dino.im/;
 First release;partial;2020-01-29;https://github.com/dino/dino/releases/tag/v0.1.0 initial commit 2017-03-02 https://github.com/dino/dino/commit/56bc45ce4d07a7a9a415e9dc8ad2f7c3f3c9e48d
 Public issue tracker;yes;https://github.com/dino/dino/issues;
 No past client vulnerabilities;no;2019 https://debian.org/security/2019/dsa-4524 2021 https://dino.im/security/cve-2021-33896/;
+Wikipedia;no;;
+Wikidata;yes;https://www.wikidata.org/wiki/Q84066495;

@@ -1,6 +1,6 @@
 name;;Meshenger;
-Summary;;P2P video calls for LAN;P2P Voice/Video phone App over local networks https://github.com/meshenger-app/meshenger-android
-Screenshots;;;https://github.com/meshenger-app/meshenger-android/blob/master/docs/settings_3.0.0.png?raw=true https://f-droid.org/repo/d.d.meshenger/en-US/phoneScreenshots/08_address_management_3.0.0.png
+Summary;;P2P video calls for LAN;P2P Voice/Video phone App over local networks
+Screenshots;;;https://github.com/meshenger-app/meshenger-android/blob/master/docs/settings_3.0.0.png?raw=true https://f-droid.org/repo/d.d.meshenger/en-US/phoneScreenshots/08_address_management_3.0.0.png https://github.com/meshenger-app/meshenger-android/tree/master/graphical-assets/phone-screenshots
 Android Google Play;yes;https://play.google.com/store/apps/details?id=app.meshenger;
 Android F-droid/apk;yes;https://f-droid.org/packages/d.d.meshenger/;
 Other mobile;no;;
@@ -47,12 +47,15 @@ Typing indication;no;;
 Read receipts;no;;
 Receipts not mandatory;yes;;
 Themes;partial;;light/dark
+Landing page;partial;https://github.com/meshenger-app/meshenger-android;
+Manual;partial;https://github.com/meshenger-app/meshenger-android/blob/master/docs/documentation.md https://github.com/meshenger-app/meshenger-android/blob/master/docs/faq.md;
 Vendor can't curate content;yes;;
 Spam protection;yes;ignore unsaved https://github.com/dakhnod/Meshenger/commit/4cc813e6a80705e188357ac100eff421c3992faf https://github.com/dakhnod/Meshenger/commit/fa6a20d0f7103fae23da9f6101cdf7a47e919c2e;
 Account deactivation after device compromise;no;;
 Account recovery after device compromise;no;;
 Bandwidth frugal;partial;https://github.com/meshenger-app/meshenger-android/blob/master/docs/faq.md;
 Disallow screenshots;no;;
+Logo;yes;https://raw.githubusercontent.com/meshenger-app/meshenger-android/master/metadata/en-US/images/icon.png;
 Threat model;no;;
 End-to-end encryption;yes;https://github.com/meshenger-app/meshenger-android/blob/master/docs/Documentation.md#user-content-calls;
 E2EE keys shielded from operator;yes;;
@@ -71,6 +74,10 @@ Multi-party development;partial;Hacktoberfest https://github.com/meshenger-app/m
 Isolated self-hosting;yes;;
 User can extend network with node;yes;;
 Identity not controlled by vendor;yes;;
+Open documentation;partial;https://github.com/meshenger-app/meshenger-android/tree/master/docs;
+Web forum;no;;
+Contact;no;;
+Syndication;no;;
 Offline;partial;list&add contacts https://github.com/meshenger-app/meshenger-android/blob/master/docs/Documentation.md#user-content-source-code;
 Servers optional;;ICE (disabled) https://github.com/meshenger-app/meshenger-android/blob/master/docs/Documentation.md#user-content-webrtc https://github.com/meshenger-app/meshenger-android/issues/56;
 Serverless WAN mode;no;;can't cross NAT https://github.com/meshenger-app/meshenger-android/blob/master/docs/faq.md
@@ -90,6 +97,7 @@ Transparency reports;no;;
 Vendor jurisdiction;;Germany https://github.com/mwarning https://mwarning.de/;
 Infrastructure jurisdiction;;N/A;
 Infrastructure provider;;N/A;
+Domain;no;;
 First release;yes;2018-08-14 https://blog.freifunk.net/2018/08/14/meshenger-p2p-local-network-messenger-final-update/;
 Public issue tracker;yes;https://github.com/meshenger-app/meshenger-android/issues;
 Support team;partial;;issues seem to be reacted to, but many requests are rejected https://github.com/meshenger-app/meshenger-android/issues
@@ -101,3 +109,5 @@ Ethical financing in the past;yes;;
 Ethical business in the past;yes;;
 No past conflicts of interest;yes;;
 No past privacy glitches;yes;;
+Wikipedia;no;;
+Wikidata;no;;

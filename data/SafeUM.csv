@@ -1,6 +1,16 @@
 name;;SafeUM;
-Summary;;Chat and calls on Android;Secure Multimedia Messenger https://safeum.com/
+Summary;;Chat and calls on Android;Secure Multimedia Messenger
 Android Google Play;yes;https://play.google.com/store/apps/details?id=com.safeum.android;
 Server license;no;proprietary;
 Client license;no;proprietary;
-Client development until;;2022-10-06;not officially discontinued, but no new release or post https://safeum.com/blog/rss
+Landing page;yes;https://safeum.com/;
+Manual;no;;
+Logo;yes;https://safeum.com/public/favicon.ico;
+Open documentation;no;;
+Web forum;no;;
+Contact;no;;
+Syndication;yes;https://safeum.com/blog/rss;
+Domain;yes;https://safeum.com/;
+Client development until;;2022-10-06;not officially discontinued, but no new release or post
+Wikipedia;no;;
+Wikidata;no;;

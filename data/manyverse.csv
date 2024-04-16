@@ -1,5 +1,18 @@
 name;;Manyverse;
-Summary;;P2P social network on LAN/WAN;P2P social network over LAN or WAN with everything stored on your device, for desktop and mobile https://www.manyver.se/
+Summary;;P2P social network on LAN/WAN;P2P social network over LAN or WAN with everything stored on your device, for desktop and mobile
 Android Google Play;yes;https://play.google.com/store/apps/details?id=se.manyver;
 Android F-droid/apk;yes;https://f-droid.org/packages/se.manyver/ https://www.manyver.se/download/;
+Landing page;yes;https://www.manyver.se/;
+Manual;yes;https://www.manyver.se/faq;
+Logo;yes;https://www.manyver.se/icons-57ae47870b759a4a2af5a4acf68a03ac/favicon.ico;
+Active development;no;https://www.manyver.se/blog/2024-04-05/ https://www.manyver.se/team/;
+Multi-party development;no;https://www.manyver.se/team/;
+Open documentation;yes;https://gitlab.com/staltz/manyverse/-/wikis/home https://gitlab.com/staltz/manyverse-site;
+Web forum;yes;https://manyverse.zulipchat.com/ https://www.reddit.com/r/manyverse/;
+Contact;yes;mailto:contact@staltz.com acct:manyver_se@fosstodon.org;
+Syndication;no;;
+Domain;yes;https://www.manyver.se/;
 Public issue tracker;yes;https://gitlab.com/staltz/manyverse/-/issues;
+Client development until;;2024-04-05;https://www.manyver.se/blog/2024-04-05/
+Wikipedia;no;;
+Wikidata;yes;https://www.wikidata.org/wiki/Q110314712;

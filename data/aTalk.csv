@@ -1,5 +1,5 @@
 name;;aTalk;
-Summary;;XMPP video calls and GPS for Android https://cmeng-git.github.io/atalk/;
+Summary;;XMPP video calls and GPS for Android;
 Screenshots;;https://atalk.sytes.net/atalk/;
 Android Google Play;yes;https://play.google.com/store/apps/details?id=org.atalk.android;
 Android F-droid/apk;yes;https://f-droid.org/en/packages/org.atalk.android/;
@@ -28,6 +28,9 @@ Application locking;no;;
 Presence status;yes;;
 Read receipts;yes;;
 Receipts not mandatory;yes;;Not mandatory
+Landing page;yes;dynamic DNS https://atalk.sytes.net/atalk/ SaSS https://cmeng-git.github.io/atalk/;
+Manual;yes;https://cmeng-git.github.io/atalk/faq.html;
+Logo;yes;https://atalk.sytes.net/atalk/img/atalk.png;
 Threat model;no;;
 End-to-end encryption;yes;https://cmeng-git.github.io/atalk/index.html;End-to-End encryption with OMEMO or OTR
 Perfect forward secrecy;no;;
@@ -38,10 +41,17 @@ Transparent financing;no;;
 Active development;yes;;
 Multi-party development;no;;
 Identity not controlled by vendor;yes;;
+Open documentation;yes;https://github.com/cmeng-git/cmeng-git.github.io/tree/master/atalk;
+Web forum;no;;
+Contact;no;;
+Syndication;no;;
 Offline;no;;Can't be used without internet
 Servers required;;XMPP server;
 Serverless WAN mode;no;;
 Serverless LAN mode;no;;
 Bots available;yes;https://github.com/topics/xmpp-bot;
+Domain;no;;
 First release;yes;2018-01-07? https://github.com/cmeng-git/atalk-android/releases/tag/1.0.1;
 Public issue tracker;yes;https://github.com/cmeng-git/atalk-android/issues;
+Wikipedia;no;;
+Wikidata;no;;

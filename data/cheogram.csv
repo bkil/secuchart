@@ -1,5 +1,5 @@
 name;;Cheogram;
-Summary;;Conversations fork with SIP;To implement features of use to the Sopranica project https://cheogram.com/
+Summary;;Conversations fork with SIP;To implement features of use to the Sopranica project
 Android Google Play;no;https://cheogram.com/;
 Android F-droid/apk;yes;https://f-droid.org/en/packages/com.cheogram.android/;
 Apple iOS;no;;
@@ -35,10 +35,13 @@ Typing indication;yes;can be disabled https://bkil.gitlab.io/secuchart-assets/sc
 Read receipts;yes;https://bkil.gitlab.io/secuchart-assets/screenshots/cheogram/v2.10.3_settings.jpg;
 Receipts not mandatory;yes;https://bkil.gitlab.io/secuchart-assets/screenshots/cheogram/v2.10.3_settings.jpg;
 Themes;partial;https://bkil.gitlab.io/secuchart-assets/screenshots/cheogram/v2.10.3_settings_theme.jpg;
+Landing page;yes;https://cheogram.com/;
+Manual;no;;
 Vendor can't curate content;yes;;
 Spam protection;yes;;
 Account deactivation after device compromise;yes;;
 Account recovery after device compromise;yes;;
+Logo;yes;https://cheogram.com/favicon.ico;
 Threat model;yes;https://blog.jmp.chat/b/2022-privacy-threat-modelling https://jmp.chat/privacy;
 End-to-end encryption;yes;XEP-0384 OMEMO https://conversations.im/omemo/;also OpenPGP
 Contact list confidential;no;Contacts are stored on the server.;Self hosting of ones own server is easy and recommended.
@@ -48,6 +51,10 @@ Transparent financing;yes;Funded by MBOA and JMP.chat;https://jmp.chat MBOA is t
 Active development;yes;;
 Multi-party development;partial;;One main developer, but contributions from others are readily accepted.
 Identity not controlled by vendor;yes;;
+Open documentation;no;;
+Web forum;no;;
+Contact;yes;xmpp:discuss@conference.soprani.ca mailto:help@cheogram.com;
+Syndication;no;;
 Serverless WAN mode;no;;
 Serverless LAN mode;no;;XEP-0174 unimplemented in Conversations https://github.com/iNPUTmice/Conversations/issues/1415
 Network store and forward;yes;if server and contact client support XEP-0313 MAM;
@@ -55,6 +62,9 @@ Wireless mode;no;;
 IP shielded from peers;yes;not for STUN calls;
 Proxy support;yes;;
 Bots available;yes;https://github.com/topics/xmpp-bot;
+Domain;yes;https://cheogram.com/;
 First release;no;2022-03-15 https://git.singpolyma.net/cheogram-android/refs/2.10.3-1;
 Public issue tracker;yes;https://soprani.ca/todo;
 Support team;yes;;
+Wikipedia;no;;
+Wikidata;no;;

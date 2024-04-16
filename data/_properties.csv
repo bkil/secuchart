@@ -53,6 +53,8 @@ Read receipts;Whether sending and showing is supported;;layperson;
 Receipts not mandatory;yes=they can be disabled, note default value;;tinfoil;
 Themes;no=1, partial=2, yes=more - Appearance, dark scheme, night mode, OLED, prefers contrast, reduced motion, color blind, custom base color, large fonts, visual style presets, automatic switching;;layperson;
 ;Qualities;;;
+Landing page;Introductory website maintained by vendor, may use SaSS subdomain;;layperson;
+Manual;Knowledge base maintained by the vendor, user manual, tutorial, extensive FAQ, URL;;layperson;
 Vendor can't curate content;no=vendor can influence who can access which content, remove spam and vandalism;foss crowd;tinfoil;
 Spam protection;If it gained worldwide adoption;all;;
 Account deactivation after device compromise;Solvable with centralized or federated servers or with revocation certificates in P2P.;layperson;foss tinfoil;
@@ -61,6 +63,7 @@ CPU idle;no=Proof of work, partial=sluggish due to Idling too little in foregrou
 Power saving;Ensure that device wakes up as few times as possible, filters and batches events on remote side, no open sockets, delegated peer tracking;layperson;foss tinfoil;
 Bandwidth frugal;Conservation by lazy loading, previews, adaptive detail, incremental sync, fewer round trips, tokenization, batching transfers to improve compression, tweaked key schedule, multicasting hubs;layperson;foss tinfoil;crowd
 Disallow screenshots;partial=Only for yourself, yes=Ask peers to not take screenshots of message or conversation. Also called screen security;;layperson;
+Logo;Avatar, prefer FOSS, externally hosted, Wikimedia URL;;;layperson
 ;Security;;;
 Threat model;yes=maintainers have made the <a class=il href=#threat_model>#threat_model</a> accessible and/or obvious;tinfoil;layperson;
 End-to-end encryption;This is more important for closed or non-self hosted servers;tinfoil;layperson;foss
@@ -85,6 +88,10 @@ Multi-party development;no=one-man show, yes=highest level contributors are exch
 Isolated self-hosting;It can be deployed on-premise in a LAN without internet;foss crowd;;
 User can extend network with node;Improving the scaling of the system and communicate with anyone (i.e., if P2P or federated);foss crowd;;
 Identity not controlled by vendor;Will the system still work if the developer goes bankrupt;foss crowd;layperson;
+Open documentation;Copyleft, editable by users through a wiki or source code repository, URL;;;foss
+Web forum;Publicly readable, URL;;layperson;
+Contact;URI including the scheme prefix, preferably of group chat, such as matrix: acct: xmpp: msrp: news: mailto: irc: sip: mumble: ssh:;;layperson;
+Syndication;URL of RSS, Atom, twtxt or gemini text feed;;;layperson tinfoil
 ;Topology;;;
 Offline;no=Not useful if disconnected. partial=Only read a few buffered messages or compose new ones. yes=Reboot, add new contacts, past logs, search, cache list of groups or users, settings.;layperson crowd;foss;
 Servers required;List all server software or instance by name that are mandatory to keep this network running or to host it in isolation;;;foss crowd
@@ -109,6 +116,7 @@ Vendor jurisdiction;;;;tinfoil
 Infrastructure jurisdiction;;;;tinfoil
 Infrastructure provider;;;;tinfoil
 Good ToSDR grade;yes=A,B, partial=C,D, no=E,F;layperson;foss tinfoil;
+Domain;Currently delegated to the vendor, signals sustainability and commitment, URL including protocol;;;foss
 ;Reputation;;;
 First release;yes=mature, large masses have tested it for years, no=only released recently;;;foss
 Public issue tracker;Whether outstanding bugs can be viewed by the public. partial=approximated via forum;;foss;tinfoil
@@ -124,3 +132,5 @@ No past privacy glitches;no=uncovered cases when vendor secretly exploited user 
 Server hosted until;date of vendor instance discontinuation;all;;
 Server development until;date of abandoning maintenance;all;;
 Client development until;date of abandoning maintenance;all;;
+Wikipedia;Passes notability, URL;;foss;layperson
+Wikidata;May not be reliable due to anonymous edits, URL;;;

@@ -1,5 +1,6 @@
 name;;Keybase;
-Summary;;Chat, files and identity proof;E2EE chat, storage, file sharing and git repositories, can connect with communities from Twitter, Reddit, and elsewhere for account verification https://keybase.io/
+Summary;;Chat, files and identity proof;E2EE chat, storage, file sharing and git repositories, can connect with communities from Twitter, Reddit, and elsewhere for account verification
+Screenshots;;https://commons.wikimedia.org/wiki/File:Keybase_macOS_1.0.16-20160707110020.png;
 Android Google Play;yes;https://play.google.com/store/apps/details?id=io.keybase.ossifrage https://keybase.io/_/download/keybase-for-android;
 Android F-droid/apk;no;;
 Apple iOS;yes;https://keybase.io/_/download/keybase-for-ios;
@@ -36,10 +37,13 @@ Message expiration;yes;https://book.keybase.io/docs/chat/ephemeral;
 Presence status;no;;
 Typing indication;yes;can be disabled;
 Read receipts;no;;
+Landing page;yes;https://keybase.io/ http://keybase5wmilwokqirssclfnsqrjdsi7jdir5wy7y7iu3tanwmtp6oid.onion/;
+Manual;yes;https://book.keybase.io/;
 Vendor can't curate content;yes;;
 Spam protection;partial;blocking and reporting https://book.keybase.io/privacy#blocking-and-reporting;
 Account deactivation after device compromise;yes;device revocation https://book.keybase.io/account#revoking-devices;
 Account recovery after device compromise;yes;second device or paper key https://book.keybase.io/account#adding-paper-keys;
+Logo;yes;https://commons.wikimedia.org/wiki/File:Keybase_logo_official.svg https://raw.githubusercontent.com/keybase/client/master/media/icons/icon-keybase-logo-windows-64.png https://github.com/keybase/client/tree/master/media/icons/Keybase.iconset;
 Threat model;yes;https://book.keybase.io/docs/crypto/kbfs;
 End-to-end encryption;yes;https://book.keybase.io/security#everything-you-store-or-share-on-keybase-is-end-to-end-encrypted;
 E2EE keys shielded from operator;yes;https://book.keybase.io/security#your-private-keys-are-only-stored-on-your-devices;
@@ -56,6 +60,10 @@ Multi-party development;partial;https://github.com/keybase/client/pulse/monthly;
 Isolated self-hosting;no;;
 User can extend network with node;no;;
 Identity not controlled by vendor;no;;
+Open documentation;yes;https://github.com/keybase/book-content;
+Web forum;yes;https://reddit.com/r/Keybase/;
+Contact;no;;
+Syndication;no;;
 Offline;no;;
 Serverless WAN mode;no;;
 Serverless LAN mode;no;;
@@ -73,7 +81,10 @@ Transparency reports;no;;
 Vendor jurisdiction;;US;California https://keybase.io/docs/california-ccpa
 Infrastructure jurisdiction;;US;
 Infrastructure provider;;Amazon AWS;
+Domain;yes;https://keybase.io/;
 First release;yes;2015-11-06 https://github.com/keybase/client/releases/tag/v1.0.0-45;
 Public issue tracker;yes;https://github.com/keybase/client/issues;
 Support team;partial;friendly but few;
 Ethical financing in the past;no;Stripe cryptocurrency, A16Z VC https://vicki.substack.com/p/keybase-and-the-chaos-of-crypto;
+Wikipedia;yes;https://en.wikipedia.org/wiki/Keybase;
+Wikidata;yes;https://www.wikidata.org/wiki/Q28409115;

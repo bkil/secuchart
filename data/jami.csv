@@ -1,5 +1,5 @@
 name;;Jami;
-Summary;;P2P chat, video calls and SIP;Decentralized chat, voice calls, videoconferencing and SIP client https://jami.net
+Summary;;P2P chat, video calls and SIP;Decentralized chat, voice calls, videoconferencing and SIP client
 Android Google Play;yes;https://play.google.com/store/apps/details?id=cx.ring;
 Android F-droid/apk;yes;https://f-droid.org/en/packages/cx.ring/;
 Apple iOS;yes;https://git.jami.net/savoirfairelinux/jami-client-ios;
@@ -18,11 +18,14 @@ Group calls;partial;by forwarding by the initiator https://jami.net/help/#answer
 Read public content without registering;no;;
 Multiple devices;yes;https://jami.net/the-jami-quirks/#connecting-multiple-devices-to-the-same-account;
 Message expiration;no;;
+Landing page;yes;https://jami.net/;
+Manual;yes;https://docs.jami.net/;
 Spam protection;no;;
 Account deactivation after device compromise;yes;https://git.jami.net/savoirfairelinux/jami-project/-/wikis/technical/Technical-overview#user-content-usages;
 Account recovery after device compromise;no;https://jami.net/help/#answer5;
 Power saving;no;partial offload by OpenDHT proxy https://jami.net/why-is-jami-truly-distributed/;background transfers deplete the battery faster noticeably
 Bandwidth frugal;no;transfers constantly in the background;according to testing by editors
+Logo;yes;https://commons.wikimedia.org/wiki/File:Jami-logo-gnu-package.svg https://commons.wikimedia.org/wiki/File:Logo-jami-net.svg https://jami.net/favicon.png;
 End-to-end encryption;yes;https://jami.net/why-is-jami-truly-distributed/ https://linuxkamarada.com/en/2021/05/25/the-jami-messenger/;
 E2EE keys shielded from operator;yes;https://jami.net/why-is-jami-truly-distributed/ https://linuxkamarada.com/en/2021/05/25/the-jami-messenger/;
 Contact list confidential;partial;not published, but leaks;leaks through OpenDHT proxy, Jami name server and ICE https://jami.net/why-is-jami-truly-distributed/ https://linuxkamarada.com/en/2021/05/25/the-jami-messenger/
@@ -37,6 +40,10 @@ Payment choices;;N/A;
 Isolated self-hosting;yes;complicated https://jami.net/why-is-jami-truly-distributed/;
 User can extend network with node;yes;many parts self-hostable;OpenDHT proxy, bootstrap, TURN, Jami blockchain, Jami name server https://jami.net/why-is-jami-truly-distributed/
 Identity not controlled by vendor;yes;names are optional and stored on a blockchain https://jami.net/why-is-jami-truly-distributed/ https://linuxkamarada.com/en/2021/05/25/the-jami-messenger/;
+Open documentation;yes;https://github.com/savoirfairelinux/opendht/wiki https://git.jami.net/savoirfairelinux/jami-docs;
+Web forum;yes;https://forum.jami.net/ https://lists.gnu.org/mailman/listinfo/jami;
+Contact;yes;acct:Jami@mstdn.io irc://irc.libera.chat/jami matrix:r/jami:matrix.org mailto:contact@jami.net;
+Syndication;yes;https://jami.net/rss/;
 Offline;yes;https://linuxkamarada.com/en/2021/05/25/the-jami-messenger/;
 Servers required;;DNS, OpenDHT proxy, GCN/Apple push, bootstrap, TURN https://jami.net/why-is-jami-truly-distributed/;
 Servers optional;;Jami name server https://jami.net/why-is-jami-truly-distributed/;
@@ -50,5 +57,8 @@ IPv6 access of vendor operated network;no;https://git.jami.net/savoirfairelinux/
 Vendor jurisdiction;;Canada with two offices in France;
 Infrastructure jurisdiction;;Canada;
 Infrastructure provider;;Savoir-faire Linux (default);
+Domain;yes;https://jami.net/;
 First release;yes;2004-12-22 (as SFLphone) http://freshmeat.sourceforge.net/projects/sflphone/releases?page=3;
 Public issue tracker;yes;https://git.jami.net/groups/savoirfairelinux/-/issues;
+Wikipedia;yes;https://en.wikipedia.org/wiki/Jami_(software);
+Wikidata;yes;https://www.wikidata.org/wiki/Q3459508;
