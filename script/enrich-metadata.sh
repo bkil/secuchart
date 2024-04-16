@@ -85,6 +85,20 @@ download_fdroid_metadata() {
 
     s~^\t{5}Added on ([^<>]+)$~\1~
     T not_date
+    s~^Jan~01~
+    s~^Feb~02~
+    s~^Mar~03~
+    s~^Apr~04~
+    s~^May~05~
+    s~^Jun~06~
+    s~^Jul~07~
+    s~^Aug~08~
+    s~^Sep~09~
+    s~^Oct~10~
+    s~^Nov~11~
+    s~^Dec~12~
+    s~^([0-9]+) ([0-9]+), ([0-9]+)$~\3-\1-\2~
+    s~-([0-9])$~-0\1~
     p
     b continue
     :not_date
