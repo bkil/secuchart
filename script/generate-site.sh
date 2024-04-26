@@ -16,6 +16,8 @@ main() {
 }
 
 gen_index() {
+  local TODAY
+  readonly TODAY="`date +%m%d`"
   LIMITITEMS="$1"
   IN="$WEB/index.template.html"
 
@@ -31,7 +33,12 @@ gen_index() {
     elif [ "$REPLY" = "((table))" ]; then
       gen_table "$LIMITITEMS"
     elif [ "$REPLY" = "((script))" ]; then
-      cat "$WEB/edit.js"
+      if [ "$TODAY" -lt 0422 ] || [ "$TODAY" -ge 0426 ]; then
+        # https://js-naked-day.org/
+        echo '<script>'
+        cat "$WEB/edit.js"
+        echo '</script>'
+      fi
     elif [ "$REPLY" = "((articles))" ]; then
       gen_articles
     elif [ "$REPLY" = "((static_style))" ]; then
