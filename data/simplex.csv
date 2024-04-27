@@ -28,7 +28,9 @@ Sticker packs;partial;via 3rd party keyboards;
 Link preview;yes;yes;User setting to generate link preview upon sending.
 Inline images;yes;https://github.com/simplex-chat/simplex-chat/blob/master/blog/20220511-simplex-chat-v2-images-files.md;mobile
 Inline videos;yes;https://simplex.chat/blog/20230422-simplex-chat-vision-funding-v5-videos-files-passcode.html#send-videos-and-files-up-to-1gb;
+Polls;no;;
 Reactions;yes;https://simplex.chat/blog/20230523-simplex-chat-v5-1-message-reactions-self-destruct-passcode.html#message-reactions;
+Read public content without registering;no;Install required to accept an open invite;Even if a room has an persistent and public group link (the closest thing to being public), a user needs to install a client and join the room before being able to read messages.
 Multiple devices;partial;Using mobile profiles from desktop;
 Multiple accounts;yes;https://simplex.chat/blog/20230204-simplex-chat-v4-5-user-chat-profiles.html#multiple-chat-profiles;
 Application locking;yes;https://github.com/simplex-chat/simplex-chat/releases/tag/v2.2.0 https://simplex.chat/blog/20230422-simplex-chat-vision-funding-v5-videos-files-passcode.html#app-passcode;Native mobile platform lock + app passcode
@@ -41,6 +43,7 @@ Receipts not mandatory;yes;https://simplex.chat/blog/20230722-simplex-chat-v5-2-
 Themes;yes;https://simplex.chat/blog/20230523-simplex-chat-v5-1-message-reactions-self-destruct-passcode.html#customize-and-share-color-themes;
 Vendor can't curate content;yes;;
 Account deactivation after device compromise;no;No user accounts;
+Bandwidth frugal;no;Very aggressive message padding, group chats are unicast;See https://github.com/simplex-chat/simplex-chat/issues/1515#issuecomment-1342248425
 Disallow screenshots;partial;only for yourself, Android https://simplex.chat/blog/20221206-simplex-chat-v4.3-voice-messages.html;
 Threat model;yes;https://github.com/simplex-chat/simplexmq/blob/stable/protocol/overview-tjr.md#threat-model;
 End-to-end encryption;yes;2 layers https://simplex.chat/#problem-explained https://github.com/simplex-chat/simplexmq/blob/master/protocol/simplex-messaging.md https://github.com/simplex-chat/simplexmq/blob/master/protocol/overview-tjr.md#encryption-primitives-used;
