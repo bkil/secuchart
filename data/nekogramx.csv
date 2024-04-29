@@ -1,5 +1,5 @@
-name;;Nekogram X;
-Summary;;Polished Telegram FOSS fork;Soft fork with proxies, options, actions, ergonomy https://github.com/NekoX-Dev/NekoX
+name;;NekoX;
+Summary;;Polished Telegram FOSS fork;Soft fork with proxies, options, actions, ergonomy, formerly Nekogram X
 Android Google Play;no;;
 Android F-droid/apk;yes;https://f-droid.org/en/packages/nekox.messenger/;
 Apple iOS;no;;
@@ -15,17 +15,17 @@ Group chat;yes;;
 Voice calls;yes;;
 Video calls;yes;;
 Group calls;yes;;
-Voice messages;yes;;https://ik4.es/en/how-to-send-audio-on-telegram-and-record-voice-message/
+Voice messages;yes;https://ik4.es/en/how-to-send-audio-on-telegram-and-record-voice-message/;
 Screen sharing;yes;;https://www.androidauthority.com/telegram-group-video-calls-screen-sharing-1239553/ there is also a way to do it using obs, but citation needed.
 File transfer;yes;;note it does compress images and video by default https://www.makeuseof.com/send-uncompressed-photos-videos-telegram/
-Message formatting;partial;https://tgraph.io/markdown-07-07 https://core.telegram.org/bots/api#markdownv2-style;basic
+Message formatting;partial;basic https://tgraph.io/markdown-07-07 https://core.telegram.org/bots/api#markdownv2-style;
 Emoticons in message;yes;;
 Emoji composer;yes;;emote button and use : and start typing to put emotes quickly
-Sticker packs;yes;;https://telegramchannels.me/stickers
+Sticker packs;yes;https://telegramchannels.me/stickers;
 Link preview;yes;https://telegram.org/blog/link-preview;
 Inline images;yes;;
 Inline videos;yes;;
-Polls;yes;;https://telegram.org/blog/polls-2-0-vmq
+Polls;yes;https://telegram.org/blog/polls-2-0-vmq;
 Reactions;yes;https://telegram.org/blog/reactions-spoilers-translations;
 Read public content without registering;no;;
 Multiple devices;yes;;
@@ -38,16 +38,26 @@ Presence not mandatory;yes;https://telegram.org/blog/privacy-revolution;
 Typing indication;partial;cannot be disabled https://bugs.telegram.org/c/991;
 Read receipts;yes;https://telegram.org/faq#q-what-do-the-check-marks-mean;
 Receipts not mandatory;no;;
-Themes;yes;https://telegram.org/blog/android-themes https://github.com/NekoX-Dev/NekoX;full customization + Built-in Material Design themes / Telegram X style icons
+Themes;yes;;full customization + Built-in Material Design themes / Telegram X style icons https://telegram.org/blog/android-themes https://github.com/NekoX-Dev/NekoX
+Landing page;partial;https://github.com/NekoX-Dev/NekoX#nekox-changes;
+Manual;no;;
 Account deactivation after device compromise;partial;Only for secondary devices;
+Logo;partial;https://raw.githubusercontent.com/NekoX-Dev/NekoX/main/TMessagesProj/src/main/res/drawable-xxxhdpi/ic_launcher_dr.png;
 End-to-end encryption;partial;Only for 1:1 secret chats (not default) https://telegram.org/faq#q-how-are-secret-chats-different;
 Usage without phone number;no;;
 No-cost tier;yes;;
 Active development;yes;;
 User can extend network with node;no;;
 Identity not controlled by vendor;no;;
+Open documentation;no;;
+Web forum;no;;
+Contact;partial;https://t.me/NekoXChat;
+Syndication;no;;
 Offline;partial;Compose or read stored messages;
 Third party clients;yes;;
 Bots available;yes;https://core.telegram.org/bots https://telegramchannels.me/bots;
+Domain;no;;
 First release;partial;2020-04-03? https://github.com/NekoX-Dev/NekoX/releases/tag/v6.0.1.6;
 Public issue tracker;yes;https://github.com/NekoX-Dev/NekoX/issues;
+Wikipedia;no;;
+Wikidata;no;;
