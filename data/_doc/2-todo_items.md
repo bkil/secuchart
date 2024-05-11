@@ -134,3 +134,4 @@ Some of these may be investigated in the future by volunteers. Others may be add
 * Tailchat https://tailchat.msgbyte.com/ https://github.com/msgbyte/tailchat
 * Revolt Chat https://revolt.chat/ https://github.com/revoltchat https://rvlt.gg/
 * Tinode https://tinode.co/ https://github.com/tinode
+* 0xchat https://github.com/0xchat-app 0xchat is a secure chat app built on the Nostr protocol.
