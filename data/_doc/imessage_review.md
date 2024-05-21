@@ -14,3 +14,7 @@
 ## Censorship
 
 * https://github.com/citizenlab/chat-censorship/tree/master/apple
+
+## Freedom
+
+https://stallman.org/apple.html
