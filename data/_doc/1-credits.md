@@ -80,7 +80,7 @@ new-data
 
 ### paciento
 
-support
+support, fix-data
 
 ### Pavel Nedrigailov
 
