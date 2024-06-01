@@ -1,5 +1,5 @@
 name;;Mumble;
-Summary;;Quality group calls with low latency;https://www.mumble.info/about/ https://github.com/mumble-voip/
+Summary;;Quality group calls with low latency;
 Android Google Play;yes;3rd party https://play.google.com/store/apps/details?id=se.lublin.mumla;
 Android F-droid/apk;yes;3rd party https://f-droid.org/packages/se.lublin.mumla/;
 Apple iOS;partial;unmaintained since 2017 https://apps.apple.com/us/app/mumble/id443472808;
