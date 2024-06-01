@@ -78,7 +78,7 @@ User can extend network with node;yes;SMTP and IMAP https://delta.chat/en/server
 Identity not controlled by vendor;yes;SMTP and IMAP https://delta.chat/en/help#what-are-the-advantages-of-delta-chat-compared-to-other-messengers;
 Open documentation;yes;https://github.com/deltachat/deltachat-pages;
 Web forum;yes;https://support.delta.chat/;
-Contact;yes;acct:delta@chaos.social;
+Contact;yes;;acct:delta@chaos.social unofficial matrix:r/Delta.Chat:matrix.org xmpp:deltachat-en@chat.disroot.org https://i.delta.chat/#6CBFF8FFD505C0FDEA20A66674F2916EA8FBEE99&a=invitebot%40nine.testrun.org&g=DC%20Community&x=y6dS91dlLLi&i=0bzEm4zAacX&s=GQQlKuqD-zH
 Syndication;yes;https://delta.chat/feed.xml;
 Offline;yes;https://delta.chat/en/2020-03-06-delta-1.2;
 Servers required;;DNS, SMTP, IMAP;
