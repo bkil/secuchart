@@ -14,7 +14,7 @@
 
 > What are XMPP and Matrix and what makes them special?
 
-* https://joinjabber.org/faqs/advanced/#faq-advanced-matrix
+* https://joinjabber.org/docs/faqs/advanced/#faq-advanced-matrix
 
 > XMPP vs. Matrix
 

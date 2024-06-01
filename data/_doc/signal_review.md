@@ -32,7 +32,7 @@ Stepping back from a theoretically sound solution to one where you must trust a 
 
 ## Opinions
 
-* https://dt.gl/the-2022-review-of-messaging-service-providers-signal/
+* https://web.archive.org/web/20230116181133/https://dt.gl/the-2022-review-of-messaging-service-providers-signal/
 * https://freedombone.net/faq.html
 
 > Why not use Signal for mobile chat?

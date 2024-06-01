@@ -26,4 +26,4 @@
 
 * https://www.amnesty.org/en/press-releases/2016/10/snapchat-skype-among-apps-not-protecting-users-privacy/
 
-> And it doesn't care about your privacy (see also ToSDR: https://tosdr.org/en/service/311)
+> And it doesn't care about your privacy (see also ToSDR: https://tosdr.org/en/service/311 )

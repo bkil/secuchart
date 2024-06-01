@@ -2,7 +2,7 @@
 
 ## Feature support of various clients
 
-https://matrix.org/clients-matrix/
+https://matrix.org/ecosystem/clients/
 
 ## E2EE in public rooms
 
@@ -70,7 +70,7 @@ Reasoning Why Disroot went back to XMPP in 2018:
 
 ### Novaburst
 
-https://dimension.sh/~novaburst/ac3bf733.htm
+https://web.archive.org/web/20230602104826/https://dimension.sh/~novaburst/ac3bf733.htm
 
 > Matrix - The Mossad Facade that fooled the privacy community
 
@@ -107,7 +107,7 @@ Replies:
 
 > What are XMPP and Matrix and what makes them special?
 
-* https://joinjabber.org/faqs/advanced/#faq-advanced-matrix
+* https://joinjabber.org/docs/faqs/advanced/#faq-advanced-matrix
 
 > XMPP vs. Matrix
 
@@ -194,7 +194,7 @@ It debuted with a `Twisted>=14.0.0` dependency that was released on 2014-05-12
 
 2021-07-27 $30M investment by Protocol Labs and Metaplanet (Jaan Tallinn of Skype and Kazaa):
 
-* https://matrix.org/blog/2021/07/27/element-raises-30-m-to-boost-matrix/
+* https://matrix.org/blog/2021/07/27/element-raises-30m-to-boost-matrix/
 
 > transforming the Element app
 > finish building out P2P Matrix and get it live (including finishing Dendrite)

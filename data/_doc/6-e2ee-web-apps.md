@@ -123,7 +123,7 @@ Programming errors occur frequently in native apps as well (be it email or other
 
 > Send email to victim
 
-* https://www.secu.ninja/2018/12/04/how-to-accidentally-find-a-xss-in-protonmail-ios-app/
+* https://web.archive.org/web/20231211181418/https://www.secu.ninja/2018/12/04/how-to-accidentally-find-a-xss-in-protonmail-ios-app/
 
 > How to accidentally find a XSS in ProtonMail iOS app
 

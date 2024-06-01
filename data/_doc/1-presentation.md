@@ -123,11 +123,11 @@ https://wiki.tox.chat/include/clients_features
 
 ## Competition: Matrix clients
 
-https://matrix.org/clients-matrix/
+https://matrix.org/ecosystem/clients/
 
 ## Competition: PrivacyGuides
 
-https://privacyguides.org/real-time-communication/
+https://www.privacyguides.org/en/real-time-communication/
 
 ## Competition: DivestOS
 
@@ -155,7 +155,7 @@ https://digdeeper.neocities.org/ghost/browsers.html
 
 ## Competition: acz shadow browsers
 
-https://tilde.club/~acz/shadow_wiki/browsers.xhtml
+https://web.archive.org/web/20220511020224/https://tilde.club/~acz/shadow_wiki/browsers.xhtml
 
 ## References: Motivation
 
