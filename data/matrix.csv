@@ -4,8 +4,8 @@ Screenshots;;https://commons.wikimedia.org/wiki/File:Element_1.11.37_screenshot.
 Android Google Play;yes;https://play.google.com/store/apps/details?id=im.vector.app https://matrix.org/ecosystem/clients/element/;
 Android F-droid/apk;yes;https://f-droid.org/en/packages/im.vector.app/;
 Other mobile;no;KaiOS unsupported https://github.com/vector-im/element-web/issues/13800#issuecomment-633658482;
-Apple iOS;yes;https://matrix.org/ecosystem/clients/element/;
-Desktop;yes;https://matrix.org/ecosystem/clients/element/;
+Apple iOS;yes;https://matrix.org/ecosystem/clients/element/ https://apps.apple.com/app/vector/id1083446067;
+Desktop;yes;https://matrix.org/ecosystem/clients/element/ https://element.io/download https://flathub.org/apps/details/im.riot.Riot;
 Web;yes;https://matrix.org/clients/;
 Languages;yes;many https://github.com/vector-im/element-web#user-content-translations https://github.com/vector-im/element-web/tree/master/src/i18n/strings;
 Protocol;;Matrix;

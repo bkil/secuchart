@@ -92,7 +92,7 @@ Some of these may be investigated in the future by volunteers. Others may be add
 * XMPP eRisemail https://github.com/uplusware/erisemail
 * XMPP Granite https://github.com/TheFirstLineOfCode/granite
 * XMPP jackal https://github.com/ortuman/jackal#supported-specifications
-* XMPP Tigase https://tigase.net/xmpp-server/
+* XMPP Tigase https://github.com/tigase/tigase-server/blob/master/src/main/restructured/Tigase_Administration/XMPP_Server/Supported_Extension.inc https://tigase.net/xmpp-server/
 * XMPP Vysper https://mina.apache.org/vysper-project/standards_supported.html
 * XMPP xmpp-rs https://github.com/Freyskeyd/xmpp-rs#xeps
 * GoldBug, built on research of Echo: Spot-On, Smoke http://goldbug.sourceforge.net/ https://textbrowser.github.io/spot-on/ https://textbrowser.github.io/smoke/ https://www.mail-archive.com/cypherpunks@lists.cpunks.org/msg24308.html https://www.mail-archive.com/cypherpunks@lists.cpunks.org/msg24329.html https://www.mail-archive.com/cypherpunks@lists.cpunks.org/msg05942.html
