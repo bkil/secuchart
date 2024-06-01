@@ -10,7 +10,7 @@ See the following for sources of inspiration (copying is not allowed except the 
 * https://www.securemessagingapps.com/
 * https://www.messenger-matrix.de/messenger-matrix-en.html
 * https://www.messenger-matrix.de/messenger-matrix.html
-* https://sodom.neocities.org/matrix/Matrix.html
+* https://web.archive.org/web/20220409100157/https://sodom.neocities.org/matrix/Matrix.html
 * https://securechatguide.org/featuresmatrix.html
 * https://docs.google.com/spreadsheets/d/1-UlA4-tslROBDS9IqHalWVztqZo7uxlCeKPQ-8uoFOU/htmlview
 * https://github.com/dessalines/Messaging-Services-Comparison
@@ -26,7 +26,7 @@ See the following for sources of inspiration (copying is not allowed except the 
 * https://secushare.org/comparison
 * https://secushare.org/features
 * https://wiki.bitmessage.org/index.php/FAQ#How_does_Bitmessage_compare_to_other_messaging_methods
-* https://matrix.org/clients-matrix/
+* https://matrix.org/ecosystem/clients/
 * https://xdaforums.com/t/overview-of-all-secured-orless-messaging-apps.4612087/
 * https://privacyspreadsheet.com/messaging-apps + https://github.com/du82/privacyspreadsheet.com
 
@@ -34,4 +34,4 @@ See the following for sources of inspiration (copying is not allowed except the 
 
 * https://privacytests.org/
 * https://digdeeper.neocities.org/ghost/browsers.html
-* https://tilde.club/~acz/shadow_wiki/browsers.xhtml
+* https://web.archive.org/web/20220511020224/https://tilde.club/~acz/shadow_wiki/browsers.xhtml

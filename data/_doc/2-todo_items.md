@@ -90,9 +90,9 @@ Some of these may be investigated in the future by volunteers. Others may be add
 * XMPP Metronome IM https://metronome.im/supported-xeps-list
 * XMPP Citadel https://citadel.org/jabber.html
 * XMPP eRisemail https://github.com/uplusware/erisemail
-* XMPP Granite https://github.com/jelly-b/com.thefirstlineofcode.granite
+* XMPP Granite https://github.com/TheFirstLineOfCode/granite
 * XMPP jackal https://github.com/ortuman/jackal#supported-specifications
-* XMPP Tigase https://github.com/tigase/tigase-server/blob/master/src/main/asciidoc/admin/text/admin/FeaturesXMPP.asciidoc
+* XMPP Tigase https://tigase.net/xmpp-server/
 * XMPP Vysper https://mina.apache.org/vysper-project/standards_supported.html
 * XMPP xmpp-rs https://github.com/Freyskeyd/xmpp-rs#xeps
 * GoldBug, built on research of Echo: Spot-On, Smoke http://goldbug.sourceforge.net/ https://textbrowser.github.io/spot-on/ https://textbrowser.github.io/smoke/ https://www.mail-archive.com/cypherpunks@lists.cpunks.org/msg24308.html https://www.mail-archive.com/cypherpunks@lists.cpunks.org/msg24329.html https://www.mail-archive.com/cypherpunks@lists.cpunks.org/msg05942.html
@@ -111,7 +111,7 @@ Some of these may be investigated in the future by volunteers. Others may be add
 * https://en.wikipedia.org/wiki/Web_chat#Web-based_chat_services
 * https://changelog.complete.org/archives/10205-roundup-of-secure-messengers-with-off-the-grid-capabilities-distributed-mesh-messengers
 * Quicksy: Conversations fork with phone numbers as names https://en.wikipedia.org/wiki/Conversations_(software)#Quicksy
-* revolt.chat https://github.com/revoltchat https://developers.revolt.chat/faq/federation
+* revolt.chat https://github.com/revoltchat https://developers.revolt.chat/faq#admonition-does-revolt-have-federation
 * Secure Scuttlebutt: Patchwork desktop (obsolete) https://github.com/ssbc/patchwork
 * https://panquake.com/
 * https://github.com/LukeSmithxyz/shadowchat
@@ -130,7 +130,7 @@ Some of these may be investigated in the future by volunteers. Others may be add
 * Fosscord https://fosscord.com/ https://github.com/fosscord/fosscord is a free open source selfhostable discord compatible chat, voice and video platform
 * bchat https://bchat.beldex.io/ https://belnet.beldex.io/
 * databag https://github.com/balzack/databag A tiny self-hosted federated messenger for the decentralized web
-* Veilid https://veilid.com/framework/ https://gitlab.com/veilid/veilid
+* Veilid https://veilid.com/ https://gitlab.com/veilid/veilid
 * Tailchat https://tailchat.msgbyte.com/ https://github.com/msgbyte/tailchat
 * Revolt Chat https://revolt.chat/ https://github.com/revoltchat https://rvlt.gg/
 * Tinode https://tinode.co/ https://github.com/tinode

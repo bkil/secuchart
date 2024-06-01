@@ -1,11 +1,11 @@
 name;;Matrix Element;
 Summary;;Extensible protocol to bridge all;Assume using Matrix Synapse as server, Element matrix client
 Screenshots;;https://commons.wikimedia.org/wiki/File:Element_1.11.37_screenshot.png;
-Android Google Play;yes;https://play.google.com/store/apps/details?id=im.vector.app https://matrix.org/docs/projects/client/element-android;
+Android Google Play;yes;https://play.google.com/store/apps/details?id=im.vector.app https://matrix.org/ecosystem/clients/element/;
 Android F-droid/apk;yes;https://f-droid.org/en/packages/im.vector.app/;
 Other mobile;no;KaiOS unsupported https://github.com/vector-im/element-web/issues/13800#issuecomment-633658482;
-Apple iOS;yes;https://matrix.org/docs/projects/client/element-ios;
-Desktop;yes;https://matrix.org/docs/projects/client/element;
+Apple iOS;yes;https://matrix.org/ecosystem/clients/element/;
+Desktop;yes;https://matrix.org/ecosystem/clients/element/;
 Web;yes;https://matrix.org/clients/;
 Languages;yes;many https://github.com/vector-im/element-web#user-content-translations https://github.com/vector-im/element-web/tree/master/src/i18n/strings;
 Protocol;;Matrix;
@@ -27,7 +27,7 @@ Unicode support;yes;;
 Emoji composer;yes;;
 Emoji reception;yes;;
 Sticker packs;yes;mostly through vendor https://github.com/vector-im/element-web/issues/2950#issuecomment-393079408 https://github.com/vector-im/element-web/issues/6534 https://github.com/matrix-org/matrix-doc/pull/1951;
-Link preview;yes;;the server of the recipient generates it optionally, disabled by default in E2EE rooms https://matrix.org/blog/2021/10/20/synapse-1-45-1-released/#support-for-oembed-autodiscovery https://matrix-org.github.io/synapse/latest/development/url_previews.html
+Link preview;yes;;the server of the recipient generates it optionally, disabled by default in E2EE rooms https://matrix.org/blog/2021/10/20/synapse-1-45-1-released/#support-for-oembed-autodiscovery https://element-hq.github.io/synapse/latest/setup/installation.html?highlight=url%20pre#url-previews
 Inline images;yes;;
 Inline videos;yes;;
 Polls;yes;;
@@ -62,7 +62,7 @@ Large bug bounty;partial;third-party https://app.intigriti.com/programs/matrix/m
 Reproducible builds;no;https://github.com/vector-im/element-web/issues/11848 https://github.com/vector-im/element-android/issues/6421;
 Audits;partial;crypto library in 2016 https://matrix.org/blog/2016/11/21/matrixs-olm-end-to-end-encryption-security-assessment-released-and-implemented-cross-platform-on-riot-at-last;
 Usage without phone number;yes;;
-Transparent financing;yes;VC, merchandise, freemium, donation;https://venturebeat.com/2018/01/29/status-invests-5-million-in-matrix-to-create-a-blockchain-messaging-superpower/ https://web.archive.org/web/20210707191110/https://techcrunch.com/2019/10/10/new-vector-scores-8-5m-to-plug-more-users-into-its-open-decentralized-messaging-matrix/ https://matrix.org/blog/2020/05/21/welcoming-automattic-to-matrix/ https://matrix.org/blog/2021/07/27/element-raises-30-m-to-boost-matrix/ https://matrix.org/faq/#how-is-matrixorg-funded https://element.io/matrix-services/ems-pricing https://shop.matrix.org/ https://patreon.com/matrixdotorg https://liberapay.com/matrixdotorg https://paypal.me/matrixdotorg and Bitcoin, Ethereum
+Transparent financing;yes;VC, merchandise, freemium, donation;https://venturebeat.com/2018/01/29/status-invests-5-million-in-matrix-to-create-a-blockchain-messaging-superpower/ https://web.archive.org/web/20210707191110/https://techcrunch.com/2019/10/10/new-vector-scores-8-5m-to-plug-more-users-into-its-open-decentralized-messaging-matrix/ https://matrix.org/blog/2020/05/21/welcoming-automattic-to-matrix/ https://matrix.org/blog/2021/07/27/element-raises-30m-to-boost-matrix/ https://matrix.org/faq/#how-is-matrixorg-funded https://element.io/matrix-services/ems-pricing https://shop.matrix.org/ https://patreon.com/matrixdotorg https://liberapay.com/matrixdotorg https://paypal.me/matrixdotorg and Bitcoin, Ethereum
 No-cost tier;yes;https://element.io/personal;
 Active development;yes;https://github.com/vector-im;
 Multi-party development;yes;https://github.com/vector-im/element-web/pulse/monthly https://github.com/vector-im/element-android/pulse/monthly https://github.com/vector-im/element-ios/pulse/monthly;

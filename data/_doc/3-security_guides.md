@@ -14,7 +14,7 @@ Helping how to define your own "threat model":
 ## News
 
 * https://retroshare.ch/invite Retroshare Chat Server
-* https://www.thetinhat.com/tutorials/messaging/i2p-bote-thunderbird.html
+* https://web.archive.org/web/20230607131954/https://www.thetinhat.com/tutorials/messaging/i2p-bote-thunderbird.html
 * https://old.reddit.com/r/i2p/comments/g06cpt/resurrecting_i2pbote/
 * https://connect.geant.org/2021/01/22/running-you-own-dns-service-there-may-be-changes-ahead
 * https://en.wikipedia.org/wiki/Secure_instant_messaging
