@@ -18,18 +18,23 @@ Video calls;yes;;https://atalk.sytes.net/atalk/
 Group calls;no;;
 Voice messages;no;;
 Screen sharing;no;;
-File transfer;yes;;https://atalk.sytes.net/atalk/
+File transfer;yes;;https://atalk.sytes.net/atalk/ https://github.com/cmeng-git/atalk-android#xmpp-standards-implemented
 Message formatting;no;;
 Emoticons in message;yes;;
 Link preview;yes;;https://atalk.sytes.net/atalk/ Share of social media links are tagged with thumbnail and title
+Reactions;no;;missing XEP-0444 https://github.com/cmeng-git/atalk-android#xmpp-standards-implemented
 Multiple devices;yes;;
 Multiple accounts;yes;;https://atalk.sytes.net/atalk/
 Application locking;no;;
-Presence status;yes;;
+Remote message removal;partial;last message;by editing last message XEP-0308 https://github.com/cmeng-git/atalk-android#xmpp-standards-implemented as XEP-424 and XEP-425 missing
+Remote message correction;partial;last message;XEP-0308 https://github.com/cmeng-git/atalk-android#xmpp-standards-implemented
+Message expiration;no;XEP-0466 missing https://github.com/cmeng-git/atalk-android#xmpp-standards-implemented;
+Presence status;yes;;XEP-0319 https://github.com/cmeng-git/atalk-android#xmpp-standards-implemented
 Read receipts;yes;;
 Receipts not mandatory;yes;;Not mandatory
 Landing page;yes;dynamic DNS https://atalk.sytes.net/atalk/ SaaS https://cmeng-git.github.io/atalk/;
 Manual;yes;https://cmeng-git.github.io/atalk/faq.html;
+Spam protection;no;;XEP-425 missing https://github.com/cmeng-git/atalk-android#xmpp-standards-implemented
 Logo;yes;https://atalk.sytes.net/atalk/img/atalk.png;
 Threat model;no;;
 End-to-end encryption;yes;https://cmeng-git.github.io/atalk/index.html;End-to-End encryption with OMEMO or OTR

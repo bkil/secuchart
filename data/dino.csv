@@ -19,13 +19,15 @@ Emoticons in message;yes;;
 Reactions;yes;https://dino.im/blog/2023/02/dino-0.4-release/;
 Multiple devices;yes;;
 Multiple accounts;yes;https://dino.im/blog/2020/01/dino-0.1-release/;
-Remote message correction;partial;last message https://dino.im/blog/2020/11/dino-0.2-release/;
-Message expiration;no;;
+Remote message removal;partial;last message;only by editing last message, XEP-0424 and XEP-0425 missing https://github.com/dino/dino/issues/1133
+Remote message correction;partial;last message;XEP-0308 https://dino.im/blog/2020/11/dino-0.2-release/
+Message expiration;no;XEP-0466 missing https://github.com/dino/dino/issues/1584;
 Typing indication;yes;https://github.com/dino/dino/wiki/Supported-XEPs;toggle on/off both globally and per conversation
 Read receipts;yes;https://github.com/dino/dino/wiki/Supported-XEPs;
 Receipts not mandatory;yes;https://github.com/dino/dino/wiki/Supported-XEPs;toggle on/off both globally and per conversation
 Landing page;yes;https://dino.im/;
 Manual;partial;https://github.com/dino/dino/wiki;
+Spam protection;no;;
 Account deactivation after device compromise;yes;;
 Disallow screenshots;no;;
 Logo;yes;https://dino.im/img/logo.svg https://dino.im/favicon.ico;
