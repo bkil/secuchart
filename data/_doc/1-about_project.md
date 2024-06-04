@@ -16,7 +16,11 @@ Chat with us on Matrix:
 
 Chat with us over the relayed XMPP MUC:
 
-* xmpp:secuchart@conference.movim.eu
+* xmpp:secuchart@conference.movim.eu?join
+
+Subscribe to the feed of changes via RSS:
+
+* https://gitlab.com/bkil/secuchart/-/commits/master?format=atom
 
 ## Copyright
 
@@ -34,8 +38,11 @@ The MIT License applies to software components:
 
 > Copyright &copy; 2022-2024 bkil &amp; contributors
 
-## How to edit the chart, existing grid
+## How to edit existing cells within the chart
 
-Use the **Edit chart** button, click cells and do changes.
+Use the **Edit chart** button, click the grid and make some changes.
 
-Then when done click **Review edits** and either from the displayed script run create a commit and a pull/merge request if you know how, or copy-paste the entire box content as message in the Matrix room mentioned above, including the ``` markers at top and bottom, and one of the maintainers will merge the change.
+After you are done, click **Review edits** and copy &amp; paste the content of the box showing the commands with the difference. You have two choices to proceed:
+
+* If you are an experienced software developer, run the displayed snippet in a shell at the root of the cloned git repository, create a commit with the changes and open a pull/merge request.
+* Otherwise just paste in the output as a text message in the Matrix room mentioned above, including the ``` markers at the top and bottom, and one of the maintainers will merge the change.
