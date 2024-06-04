@@ -24,11 +24,11 @@ Link preview;no;;
 Inline images;yes;https://f-droid.org/repo/com.cheogram.android/en-US/phoneScreenshots/conversation.png https://git.singpolyma.net/cheogram-android/refs/2.10.3-1;
 Inline videos;yes;https://git.singpolyma.net/cheogram-android/refs/2.10.3-1;
 Polls;no;;
-Reactions;no;;
+Reactions;no;;missing XEP-0444 https://git.singpolyma.net/cheogram-android/tree/master/item/cheogram.doap
 Multiple devices;yes;;
 Multiple accounts;yes;;
-Remote message removal;yes;;
-Remote message correction;yes;;
+Remote message removal;partial;by moderator;only by moderator XEP-0425 https://git.singpolyma.net/cheogram-android/tree/master/item/cheogram.doap or by editing last message XEP-0308 https://gitea.angry.im/PeterCxy/cheogram/src/commit/a0d0ed34ae38f2377fdb3ad2c661b74b85f2df28/CHANGELOG.md https://git.singpolyma.net/cheogram-android/tree/master/item/cheogram.doap
+Remote message correction;partial;last message;XEP-0308 https://gitea.angry.im/PeterCxy/cheogram/src/commit/a0d0ed34ae38f2377fdb3ad2c661b74b85f2df28/CHANGELOG.md https://git.singpolyma.net/cheogram-android/tree/master/item/cheogram.doap
 Message expiration;no;;
 Presence status;yes;;
 Typing indication;yes;can be disabled https://bkil.gitlab.io/secuchart-assets/screenshots/cheogram/v2.10.3_settings.jpg;
@@ -38,7 +38,7 @@ Themes;partial;https://bkil.gitlab.io/secuchart-assets/screenshots/cheogram/v2.1
 Landing page;yes;https://cheogram.com/;
 Manual;no;;
 Vendor can't curate content;yes;;
-Spam protection;yes;;
+Spam protection;partial;;XEP-0425 https://git.singpolyma.net/cheogram-android/tree/master/item/cheogram.doap
 Account deactivation after device compromise;yes;;
 Account recovery after device compromise;yes;;
 Logo;yes;https://cheogram.com/favicon.ico;

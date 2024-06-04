@@ -21,24 +21,25 @@ Link preview;yes;https://bkil.gitlab.io/secuchart-assets/screenshots/monocles/v1
 Inline images;yes;https://codeberg.org/Arne/monocles_chat/raw/branch/master/fastlane/metadata/android/en-US/phoneScreenshots/05.png;
 Inline videos;yes;;
 Polls;no;;
-Reactions;no;;
+Reactions;no;;missing XEP-0444 https://codeberg.org/monocles/monocles_chat/src/branch/master/docs/XEPs.md
 Multiple devices;yes;;
 Multiple accounts;yes;;
 Application locking;no;;
-Remote message removal;yes;;
-Remote message correction;partial;last message;
+Remote message removal;partial;last message;only by editing last message via XEP-0308 as XEP-0424 and XEP-0425 missing https://codeberg.org/monocles/monocles_chat/src/branch/master/docs/XEPs.md
+Remote message correction;partial;last message;XEP-0308 https://codeberg.org/monocles/monocles_chat/src/branch/master/docs/XEPs.md
 Message expiration;no;;
-Presence status;yes;;
+Presence status;yes;;XEP-0319 https://codeberg.org/monocles/monocles_chat/src/branch/master/docs/XEPs.md
 Presence not mandatory;yes;;
 Typing indication;yes;can be disabled https://bkil.gitlab.io/secuchart-assets/screenshots/monocles/v1.5_settings_security.jpg;
-Read receipts;yes;https://bkil.gitlab.io/secuchart-assets/screenshots/monocles/v1.5_settings_security.jpg;
+Read receipts;yes;https://bkil.gitlab.io/secuchart-assets/screenshots/monocles/v1.5_settings_security.jpg https://codeberg.org/monocles/monocles_chat/src/branch/master/docs/XEPs.md;
 Receipts not mandatory;yes;https://bkil.gitlab.io/secuchart-assets/screenshots/monocles/v1.5_settings_security.jpg;
 Themes;yes;https://bkil.gitlab.io/secuchart-assets/screenshots/monocles/v1.5_settings_UI.jpg https://bkil.gitlab.io/secuchart-assets/screenshots/monocles/v1.5_settings_UI_theme.jpg https://bkil.gitlab.io/secuchart-assets/screenshots/monocles/v1.5_settings_UI_theme_color.jpg;light, dark, AMOLED, theme colors
 Landing page;yes;https://docs.monocles.eu/apps/chat.app/;
 Manual;yes;https://codeberg.org/monocles/monocles_chat/src/branch/master/README-en.md https://docs.monocles.eu/apps/chat.app/ https://monocles.wiki/index.php?title=Monocles_Chat;
+Spam protection;partial;;XEP-0377 https://codeberg.org/monocles/monocles_chat/src/branch/master/docs/XEPs.md
 Account deactivation after device compromise;yes;;
 Logo;yes;https://codeberg.org/monocles/monocles_chat/src/branch/master/drawable/monocleslogo_chat-signet.svg https://monocles.eu/more/favicon.png;
-End-to-end encryption;yes;XEP-0384 OMEMO https://conversations.im/omemo/;also OpenPGP
+End-to-end encryption;yes;XEP-0384 OMEMO https://conversations.im/omemo/;https://codeberg.org/monocles/monocles_chat/src/branch/master/docs/XEPs.md also OpenPGP
 Usage without phone number;yes;;
 Identity not controlled by vendor;yes;;
 Open documentation;yes;https://monocles.wiki/index.php?title=Monocles_Chat https://codeberg.org/monocles/monocles_chat/src/branch/master/docs https://codeberg.org/monocles/pages/src/branch/main/docs/apps/chat.app.md;

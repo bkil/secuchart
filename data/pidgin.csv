@@ -11,17 +11,23 @@ Protocol open;partial;some yes;
 Client license;yes;GPL-2.0-only https://keep.imfreedom.org/pidgin/pidgin/file/tip/COPYING;
 Register without app;yes;;
 Group chat;yes;;
+File transfer;yes;;XEP-0363 https://pidgin.im/plugins/ https://github.com/Junker/purple-xmpp-http-upload
+Reactions;no;;missing XEP-0444
 Multiple devices;yes;;
 Multiple accounts;yes;;
+Remote message removal;no;;missing XEP-0308, XEP-0424, XEP-0425 https://pidgin.im/help/protocols/xmpp/supportedxep/
+Remote message correction;no;;missing XEP-0308, XEP-0424, XEP-0425 https://pidgin.im/help/protocols/xmpp/supportedxep/
 Message expiration;no;;
-Presence status;yes;;
+Presence status;yes;;XEP-256 https://pidgin.im/plugins/ https://github.com/tmatz/pidgin-xmpp-muc-presence-plugin https://pidgin.im/help/protocols/xmpp/supportedxep/
+Read receipts;yes;;XEP-0184 https://pidgin.im/plugins/ https://app.assembla.com/spaces/pidgin-xmpp-receipts/git/source
+Spam protection;no;;
 Account deactivation after device compromise;yes;;
 Disallow screenshots;no;;
-End-to-end encryption;partial;some protocols;
+End-to-end encryption;yes;some protocols;XEP-0384 https://github.com/gkdr/lurch https://issues.imfreedom.org/issue/PIDGIN-16801/Add-OMEMO-Encryption-support-to-XMPP
 Security team;no;lacking security tagging https://issues.imfreedom.org/issues/PIDGIN;blog contained advisories between 2004-2017 https://pidgin.im/about/security/advisories/
 Usage without phone number;yes;;
 Active development;yes;https://keep.imfreedom.org/pidgin/pidgin/shortlog/tip;
-Serverless LAN mode;yes;via Bonjour prpl;XEP-0174 https://developer.pidgin.im/wiki/SupportedXEPs https://pidgin.im/help/protocols/bonjour/ https://developer.pidgin.im/wiki/Protocol%20Specific%20Questions#BonjourLink-LocalMessaging https://ubuntubuzz.com/2011/11/use-pidgin-for-chatting-and.html
+Serverless LAN mode;yes;via Bonjour prpl;XEP-0174 https://pidgin.im/help/protocols/xmpp/supportedxep/ https://developer.pidgin.im/wiki/SupportedXEPs https://pidgin.im/help/protocols/bonjour/ https://developer.pidgin.im/wiki/Protocol%20Specific%20Questions#BonjourLink-LocalMessaging https://ubuntubuzz.com/2011/11/use-pidgin-for-chatting-and.html
 Bots available;yes;;and many more for other protocols https://github.com/topics/xmpp-bot
 First release;yes;1998-12-31 (as Gaim) https://en.wikipedia.org/wiki/Pidgin_%28software%29;
 Public issue tracker;yes;https://issues.imfreedom.org/issues/PIDGIN;

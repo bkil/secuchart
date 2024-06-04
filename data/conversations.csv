@@ -14,17 +14,20 @@ Group chat;yes;;
 Voice calls;yes;https://gist.github.com/iNPUTmice/a28c438d9bbf3f4a3d4c663ffaa224d9#file-conversations-av-notes-md;
 Video calls;yes;https://gist.github.com/iNPUTmice/a28c438d9bbf3f4a3d4c663ffaa224d9#file-conversations-av-notes-md;
 Group calls;no;;
-File transfer;yes;;
+File transfer;yes;;XEP-363 https://codeberg.org/iNPUTmice/Conversations#user-content-xmpp-features
 Emoticons in message;yes;;
+Reactions;no;https://github.com/iNPUTmice/Conversations/issues/3874;
 Multiple devices;yes;;
 Multiple accounts;yes;;
 Application locking;no;;
-Remote message removal;no;;
-Remote message correction;no;;
-Message expiration;no;;
+Remote message removal;partial;only show last message edits;view-only XEP-0308 https://github.com/iNPUTmice/Conversations/issues/864 XEP-0424 XEP-0425 missing https://codeberg.org/iNPUTmice/Conversations/issues/14 https://codeberg.org/iNPUTmice/Conversations/issues/20
+Remote message correction;partial;only show last message edits;view-only XEP-0308 https://github.com/iNPUTmice/Conversations/issues/864 XEP-0424 missing https://codeberg.org/iNPUTmice/Conversations/issues/14
+Message expiration;no;XEP-0466 missing https://codeberg.org/iNPUTmice/Conversations/issues/15;
 Presence status;yes;;
+Read receipts;yes;;XEP-0333 https://codeberg.org/iNPUTmice/Conversations#user-content-where-can-i-see-the-status-of-my-contacts-how-can-i-set-a-status-or-priority
 Landing page;yes;https://conversations.im/;
 Manual;partial;https://codeberg.org/iNPUTmice/Conversations/src/branch/master/README.md;
+Spam protection;partial;;with XEP-0191 http://xmpp.org/extensions/xep-0191.html but XEP-0425 missing https://codeberg.org/iNPUTmice/Conversations/issues/20
 Account deactivation after device compromise;yes;;
 Logo;yes;https://commons.wikimedia.org/wiki/File:Conversations_(Instant_Messenger)_Logo.svg https://raw.githubusercontent.com/iNPUTmice/Conversations/master/art/logo.png;
 Threat model;yes;https://conversations.im/omemo/audit.pdf;

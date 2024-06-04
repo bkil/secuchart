@@ -18,14 +18,15 @@ Voice messages;yes;https://github.com/monal-im/Monal/issues/238;
 File transfer;yes;;https://github.com/monal-im/Monal/issues/754 also screenshots https://github.com/monal-im/Monal/issues/331 compression https://github.com/monal-im/Monal/issues/968
 Link preview;yes;recipient client https://github.com/monal-im/Monal/issues/235;
 Reactions;no;https://github.com/monal-im/Monal/issues/554;
-Remote message removal;yes;https://github.com/monal-im/Monal/issues/680 https://monal-im.org/install/#implemented-xeps;
-Remote message correction;yes;https://github.com/monal-im/Monal/issues/941 https://github.com/monal-im/Monal/issues/956 https://github.com/monal-im/Monal/issues/702;
+Remote message removal;yes;both by self and moderator;XEP-0424 XEP-0425 https://github.com/monal-im/Monal/issues/680 https://monal-im.org/install/#implemented-xeps
+Remote message correction;yes;edit last, retract earlier;XEP-0308 XEP-0424 https://github.com/monal-im/Monal/issues/941 https://github.com/monal-im/Monal/issues/956 https://github.com/monal-im/Monal/issues/702
 Read receipts;partial;;https://github.com/monal-im/Monal/issues/226 https://github.com/monal-im/Monal/issues/8 not for MUC https://github.com/monal-im/Monal/issues/914
 Landing page;yes;https://monal-im.org/about/;
 Manual;yes;https://monal-im.org/publications/;
+Spam protection;partial;;XEP-0425 https://monal-im.org/install/#implemented-xeps
 Power saving;yes;https://github.com/monal-im/Monal/wiki/What-is-that-Sync-Error-all-about;
 Logo;yes;https://monal-im.org/favicons/favicon.ico https://github.com/monal-im/monal-im.org/blob/staging/static/favicons/favicon.ico;
-End-to-end encryption;yes;https://github.com/monal-im/Monal/issues/234 https://monal-im.org/install/#implemented-xeps;
+End-to-end encryption;yes;;XEP-0384 XEP-0454 https://github.com/monal-im/Monal/issues/234 https://monal-im.org/install/#implemented-xeps
 Security team;partial;https://github.com/monal-im/Monal/blob/develop/SECURITY.md;
 Usage without phone number;yes;;
 Transparent financing;yes;GitHub, Libera Pay, SEPA;GitHub Sponsors https://github.com/sponsors/tmolitor-stud-tu , Libera Pay https://liberapay.com/tmolitor , SEPA https://github.com/monal-im/Monal#donations-and-support , NLNet https://monal-im.org/post/00003-nlnet-funding/
