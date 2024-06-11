@@ -10,6 +10,7 @@ Protocol;;Jabber/XMPP;
 Protocol open;yes;;
 Client license;yes;GPL-3.0-only https://git.singpolyma.net/cheogram-android/tree/master/item/LICENSE;
 Register without app;yes;;
+Replies;no;;missing XEP-0461 https://git.singpolyma.net/cheogram-android/tree/master/item/cheogram.doap
 Group chat;yes;;
 Voice calls;yes;;
 Video calls;yes;;

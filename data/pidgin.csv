@@ -10,9 +10,10 @@ Protocol;;Jabber/XMPP, multiple;Bonjour, Gadu-Gadu, IRC, Novell GroupWise Messen
 Protocol open;partial;some yes;
 Client license;yes;GPL-2.0-only https://keep.imfreedom.org/pidgin/pidgin/file/tip/COPYING;
 Register without app;yes;;
+Replies;no;;missing XEP-0461 https://pidgin.im/help/protocols/xmpp/supportedxep/
 Group chat;yes;;
 File transfer;yes;;XEP-0363 https://pidgin.im/plugins/ https://github.com/Junker/purple-xmpp-http-upload
-Reactions;no;;missing XEP-0444
+Reactions;no;;missing XEP-0444 https://pidgin.im/help/protocols/xmpp/supportedxep/
 Multiple devices;yes;;
 Multiple accounts;yes;;
 Remote message removal;no;;missing XEP-0308, XEP-0424, XEP-0425 https://pidgin.im/help/protocols/xmpp/supportedxep/

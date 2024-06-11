@@ -11,6 +11,7 @@ Protocol;;Jabber/XMPP;
 Protocol open;yes;;
 Client license;yes;GPL-3.0-or-later https://github.com/dino/dino/blob/master/README.md https://github.com/dino/dino/blob/master/LICENSE;
 Register without app;yes;;
+Replies;partial;replies;XEP-0461 https://github.com/dino/dino/issues/1303
 Group chat;yes;https://github.com/dino/dino/wiki/Frequently-asked-questions-(FAQ)#how-to-create-a-group-chat;
 Video calls;yes;https://dino.im/blog/2022/02/dino-0.3-release/;
 Group calls;yes;https://dino.im/blog/2022/02/dino-0.3-release/;

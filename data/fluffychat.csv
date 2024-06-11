@@ -10,6 +10,7 @@ Protocol;;Matrix;
 Protocol open;yes;https://spec.matrix.org/latest/;
 Client license;yes;AGPL-3.0-only https://gitlab.com/famedly/fluffychat/-/blob/main/LICENSE;
 Register without app;yes;;
+Replies;partial;replies;https://matrix.org/ecosystem/clients/fluffychat/
 Group chat;yes;;
 Voice calls;yes;WebRTC https://matrix.org/faq/#what-can-i-actually-do-with-this%3F;
 Video calls;yes;WebRTC https://matrix.org/faq/#what-can-i-actually-do-with-this%3F;

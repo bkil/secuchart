@@ -13,6 +13,7 @@ Server license;no;proprietary;
 Client license;yes;BSD-3-Clause https://github.com/keybase/client/blob/master/LICENSE;
 Register without app;yes;Web;
 Spell check;yes;;
+Replies;no;https://github.com/keybase/keybase-issues/issues/3057 https://github.com/keybase/keybase-issues/issues/3531;
 Group chat;yes;https://book.keybase.io/docs/chat https://book.keybase.io/docs/teams;
 Voice calls;no;;not natively https://github.com/keybase/client/issues/12767 https://github.com/keybase/keybase-issues/issues/3427 https://github.com/keybase/client/issues/24326
 Video calls;partial;Jitsi Bot https://keybase.io/jitsibot Zoom Bot https://keybase.io/zoombot Google Meet Bot;not natively https://github.com/keybase/client/issues/12767 https://github.com/keybase/keybase-issues/issues/3427 https://github.com/keybase/client/issues/24326

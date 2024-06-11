@@ -14,6 +14,7 @@ Server license;yes;Apache-2.0 https://github.com/matrix-org/synapse/blob/develop
 Client license;yes;Apache-2.0 https://github.com/vector-im/element-web/blob/develop/LICENSE;
 Register without app;yes;;
 Spell check;yes;;
+Replies;yes;https://element.io/blog/introducing-threads-in-beta/ https://matrix.org/blog/2022/09/29/matrix-v-1-4-release/#threads;
 Group chat;yes;;
 Voice calls;yes;WebRTC https://matrix.org/faq/#what-can-i-actually-do-with-this%3F;
 Video calls;yes;WebRTC https://matrix.org/faq/#what-can-i-actually-do-with-this%3F;

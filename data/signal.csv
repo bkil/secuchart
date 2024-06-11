@@ -11,6 +11,7 @@ Protocol open;yes;https://signal.org/docs/;
 Server license;partial;AGPL-3.0-only https://github.com/signalapp/Signal-Server/blob/master/LICENSE;missing sources for CDN0 S3/CDN2 GCS and abuse control https://signal.org/blog/keeping-spam-off-signal/
 Client license;yes;Android GPL-3.0-only https://github.com/signalapp/Signal-Android/blob/master/LICENSE iOS GPL-3.0-only https://github.com/signalapp/Signal-iOS/blob/master/LICENSE Desktop AGPL-3.0-only https://github.com/signalapp/Signal-Desktop/blob/development/LICENSE;
 Register without app;no;;as a workaround, through the unofficial mautrix-signal matrix bridge with a custom HS
+Replies;partial;replies;https://support.signal.org/hc/en-us/articles/6851465208986-Reply-to-a-specific-message
 Group chat;yes;https://support.signal.org/hc/en-us/articles/360007319331-Group-chats;
 Voice calls;yes;https://support.signal.org/hc/en-us/articles/360007060492-Voice-or-Video-Calling;
 Video calls;yes;https://support.signal.org/hc/en-us/articles/360007060492-Voice-or-Video-Calling;

@@ -19,6 +19,7 @@ Client license;;foss crowd;tinfoil;
 Register without app;;;;foss
 ;User features;;;
 Spell check;Grammar correction, languages;all;;
+Replies;no=cite-only, partial=jump to message by ID, yes=thread sidebar by conversation ID;;all;
 Group chat;Whether they are persistent between restarts, chat log, file transfer, inline images, offline messaging;all;;
 Voice calls;;foss layperson;tinfoil;crowd
 Video calls;;foss layperson;tinfoil;
@@ -27,7 +28,7 @@ Voice messages;Ideally push to talk, may be useful where voice call is not suppo
 Screen sharing;;foss layperson;;
 Audio filtering;Noise cancellation, gain control, voice activity detection;foss layperson;;
 File transfer;Retry, pause, resume;layperson;foss tinfoil;
-Message formatting;Font size, bold, italic, underline, list, blockquote, code, pre, colors, clickable link, table, subscript, superscript, line break;;layperson foss;
+Message formatting;Font size, bold, italic, underline, strike-through, list, blockquote, code, pre, colors, clickable link, table, subscript, superscript, line break, horizontal rule;;layperson foss;
 Emoticons in message;Deprecated, please refine with below properties! Compose, show;layperson;;
 Unicode support;yes=can both send & receive text containing any valid Unicode code point, usually via utf8mb4, partial=does not support 4-byte+ UTF-8, certain characters or combiners;layperson;foss tinfoil;
 Emoji composer;yes=rich dialog with search, partial=replaces a few emotes or aliases with Unicode before sending;layperson;;
@@ -43,7 +44,7 @@ Multiple devices;If the same account can be used at the same time from multiple 
 Online account replica;yes=everything available in the cloud from any device, partial=not all of credentials, profile, settings, contacts or conversations;layperson;;
 Multiple accounts;If you can stay logged in with multiple accounts on the same device and application without external isolation techniques;layperson;foss tinfoil;
 Application locking;Unlock the account or certain chats with a PIN code, passphrase, fingerprints or facial likeness;layperson;tinfoil;
-Remote message removal;Also called redaction or deletion;foss layperson;;
+Remote message removal;Also called redaction, retraction or deletion;foss layperson;;
 Remote message correction;Also called editing;foss layperson;;
 Message expiration;Also called retention time, disappearing/ephemeral/self-destructing messages;;foss tinfoil;
 Presence status;Whether it is supported. This can actually be a privacy breach for tinfoil;;layperson;
