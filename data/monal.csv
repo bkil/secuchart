@@ -11,6 +11,7 @@ Protocol;;Jabber/XMPP;https://monal-im.org/install/#implemented-xeps https://git
 Protocol open;yes;;
 Client license;yes;2BSD https://github.com/monal-im/Monal/blob/develop/LICENSE;
 Register without app;yes;;
+Replies;no;cite;missing XEP-0461 https://monal-im.org/install/#implemented-xeps https://github.com/monal-im/Monal/issues/667
 Group chat;yes;https://github.com/monal-im/Monal/issues/41;
 Voice calls;yes;https://github.com/monal-im/Monal/issues/205 https://github.com/monal-im/Monal/issues/917;
 Video calls;no;https://github.com/monal-im/Monal/issues/41;

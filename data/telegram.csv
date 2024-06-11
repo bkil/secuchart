@@ -11,6 +11,7 @@ Protocol open;yes;https://core.telegram.org/mtproto;
 Server license;no;proprietary;
 Client license;yes;GPL-2.0-only https://github.com/DrKLO/Telegram/blob/master/LICENSE TelegramSwift GPL-2.0-only https://github.com/overtake/TelegramSwift/blob/master/LICENSE Desktop GPL-3.0-only https://github.com/telegramdesktop/tdesktop/blob/dev/LICENSE;
 Register without app;no;;
+Replies;yes;https://core.telegram.org/api/threads;
 Group chat;yes;;
 Voice calls;yes;;
 Video calls;yes;;

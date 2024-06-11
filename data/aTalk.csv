@@ -12,6 +12,7 @@ Protocol;;Jabber/XMPP;
 Protocol open;yes;;
 Client license;yes;Apache-2.0 https://github.com/cmeng-git/atalk-android/blob/master/LICENSE;
 Register without app;yes;;
+Replies;no;;missing XEP-0461 https://github.com/cmeng-git/atalk-android#xmpp-standards-implemented
 Group chat;yes;;https://atalk.sytes.net/atalk/ OMEMO encryption in group chat session enhancing privacy and security
 Voice calls;yes;;https://atalk.sytes.net/atalk/
 Video calls;yes;;https://atalk.sytes.net/atalk/

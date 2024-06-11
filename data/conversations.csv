@@ -10,11 +10,12 @@ Protocol;;Jabber/XMPP;
 Protocol open;yes;;
 Client license;yes;GPL-3.0-only https://github.com/iNPUTmice/Conversations/blob/master/LICENSE;
 Register without app;yes;;
+Replies;no;;missing XEP-0461 https://codeberg.org/iNPUTmice/Conversations#user-content-xmpp-features
 Group chat;yes;;
 Voice calls;yes;https://gist.github.com/iNPUTmice/a28c438d9bbf3f4a3d4c663ffaa224d9#file-conversations-av-notes-md;
 Video calls;yes;https://gist.github.com/iNPUTmice/a28c438d9bbf3f4a3d4c663ffaa224d9#file-conversations-av-notes-md;
 Group calls;no;;
-File transfer;yes;;XEP-363 https://codeberg.org/iNPUTmice/Conversations#user-content-xmpp-features
+File transfer;yes;;XEP-0363 https://codeberg.org/iNPUTmice/Conversations#user-content-xmpp-features
 Emoticons in message;yes;;
 Reactions;no;https://github.com/iNPUTmice/Conversations/issues/3874;
 Multiple devices;yes;;

@@ -12,6 +12,7 @@ Server license;yes;MIT https://git.openprivacy.ca/cwtch.im/server/src/branch/tru
 Client license;yes;MIT https://git.openprivacy.ca/cwtch.im/cwtch-ui/src/branch/trunk/LICENSE;
 Register without app;yes;No registration necessary.;
 Spell check;no;not yet https://git.openprivacy.ca/cwtch.im/cwtch-ui/issues/386;
+Replies;no;cite https://docs.cwtch.im/docs/chat/reply-to-message/;
 Group chat;yes;experimental https://cwtch.im/ group chats https://git.openprivacy.ca/cwtch.im/cwtch/wiki/HYBRID-GROUPS-DRAFT#encryption;
 Voice calls;no;not yet https://cwtch.im/ http://cwtchim3z2gdsyb27acfc26lup5aqbegjrjsqulzrnkuoalq5h4gmcid.onion/;
 Video calls;no;not yet https://cwtch.im/ http://cwtchim3z2gdsyb27acfc26lup5aqbegjrjsqulzrnkuoalq5h4gmcid.onion/;

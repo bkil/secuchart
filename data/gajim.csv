@@ -11,6 +11,7 @@ Protocol;;Jabber/XMPP;
 Protocol open;yes;;
 Client license;yes;GPL-3.0-only https://dev.gajim.org/gajim/gajim/-/blob/master/COPYING;
 Register without app;yes;;
+Replies;partial;replies;XEP-0461 https://gajim.org/post/2024-06-10-gajim-1.9.0-released/
 Group chat;yes;;
 Voice calls;no;https://dev.gajim.org/gajim/gajim/-/wikis/help/gajimfaq#does-gajim-support-audiovideo;
 Video calls;no;https://dev.gajim.org/gajim/gajim/-/wikis/help/gajimfaq#does-gajim-support-audiovideo;
@@ -21,7 +22,7 @@ Emoticons in message;yes;;
 Reactions;yes;;https://gajim.org/post/2024-06-10-gajim-1.9.0-released/ XEP-0444 https://gajim.org/support/extensions/ https://dev.gajim.org/gajim/gajim/-/merge_requests/891
 Multiple devices;yes;;
 Multiple accounts;yes;;
-Remote message removal;partial;by moderator;XEP-0425 https://gajim.org/post/2022-05-11-gajim-1.4.0-released/ or by editing last message via XEP-0308 https://gajim.org/support/extensions/
+Remote message removal;partial;by moderator;XEP-0425 https://gajim.org/post/2022-05-11-gajim-1.4.0-released/ https://gajim.org/post/2024-06-10-gajim-1.9.0-released/ or by editing last message via XEP-0308 https://gajim.org/support/extensions/
 Remote message correction;partial;last message;XEP-0308 https://gajim.org/support/extensions/
 Message expiration;no;XEP-0466 missing https://gajim.org/support/extensions/;
 Presence status;yes;XEP-0319 https://xmpp.org/extensions/xep-0333.html;
@@ -29,7 +30,7 @@ Presence not mandatory;yes;;
 Read receipts;yes;;XEP-0184 XEP-0333 https://gajim.org/support/extensions/
 Landing page;yes;https://gajim.org/;
 Manual;yes;https://dev.gajim.org/gajim/gajim/-/wikis/help/Help;
-Spam protection;partial;;XEP-0158 XEP-0377 XEP-0425 https://gajim.org/support/extensions/
+Spam protection;partial;;XEP-0158 XEP-0377 XEP-0425 https://gajim.org/support/extensions/ https://gajim.org/post/2024-06-10-gajim-1.9.0-released/
 Account deactivation after device compromise;yes;;
 Logo;yes;https://gajim.org/img/favicon.ico https://commons.wikimedia.org/wiki/File:Gajim.svg;
 End-to-end encryption;yes;XEP-0384 OMEMO plugin https://dev.gajim.org/gajim/gajim/-/wikis/help/gajimfaq#does-gajim-support-omemo-encryption;XEP-0454 also XEP-0373 OpenPGP plugin https://gajim.org/support/extensions/

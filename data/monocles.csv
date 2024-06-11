@@ -11,6 +11,7 @@ Protocol;;Jabber/XMPP;
 Protocol open;yes;;
 Client license;yes;GPL-3.0-only https://codeberg.org/Arne/monocles_chat/src/branch/master/LICENSE;
 Register without app;yes;;
+Replies;no;;missing XEP-0461 https://codeberg.org/monocles/monocles_chat/src/branch/master/docs/XEPs.md
 Group chat;yes;;
 Voice calls;yes;;
 Video calls;yes;;

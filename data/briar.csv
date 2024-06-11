@@ -11,6 +11,7 @@ Protocol open;yes;BTP - a transport layer security protocol for delay-tolerant n
 Client license;yes;GPL-3.0-or-later https://code.briarproject.org/briar/briar/-/blob/master/LICENSE.txt Desktop AGPL-3.0 https://code.briarproject.org/briar/briar-desktop/-/blob/main/LICENSE.md;
 Register without app;yes;No registration necessary.;
 Spell check;no;no;No spell check
+Replies;yes;https://briarproject.org/manual/;
 Group chat;yes;https://code.briarproject.org/briar/briar/-/wikis/FAQ#when-do-posts-in-forumsgroupsblogs-get-shared-with-others;
 Voice calls;no;https://code.briarproject.org/briar/briar/-/issues/985;
 Video calls;no;https://code.briarproject.org/briar/briar/-/issues/985;
