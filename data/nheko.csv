@@ -10,7 +10,7 @@ Protocol;;Matrix;
 Protocol open;yes;https://spec.matrix.org/latest/;
 Client license;yes;GPL-3.0-only https://github.com/Nheko-Reborn/nheko/blob/master/COPYING;
 Register without app;yes;;
-Replies;yes;;https://matrix.org/blog/2022/09/30/this-week-in-matrix-2022-09-30/#nheko-website https://matrix.org/blog/2022/09/29/matrix-v-1-4-release/#threads
+Replies;yes;https://matrix.org/blog/2022/09/30/this-week-in-matrix-2022-09-30/#nheko-website https://matrix.org/blog/2022/09/29/matrix-v-1-4-release/#threads;
 Group chat;yes;;
 Message formatting;yes;;
 Emoticons in message;yes;;

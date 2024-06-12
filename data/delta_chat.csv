@@ -6,22 +6,22 @@ Android F-droid/apk;yes;F-droid https://f-droid.org/packages/com.b44t.messenger/
 Other mobile;no;https://delta.chat/en/download;
 Other Android;yes;https://www.amazon.com/dp/B0864PKVW3/ https://www.apklis.cu/application/chat.delta https://paskoocheh.com/tools/138/android.html;
 Apple iOS;yes;https://apps.apple.com/us/app/delta-chat/id1459523234;
-Desktop;yes;macOS, Windows, Linux https://delta.chat/en/download;Mac App Store, dmg, Homebrew, Microsoft store, exe, flathub, deb, rpm, AppImage, tar.gz, AUR, Nix
+Desktop;yes;macOS, Windows, Linux;Mac App Store, dmg, Homebrew, Microsoft store, exe, flathub, deb, rpm, AppImage, tar.gz, AUR, Nix https://delta.chat/en/download
 Web;no;https://delta.chat/en/help#are-there-any-plans-for-introducing-a-delta-chat-web-client;
 Languages;yes;14-48 https://www.transifex.com/delta-chat/public/ https://github.com/deltachat/deltachat-android/tree/master/res https://github.com/deltachat/deltachat-android/tree/master/assets/help;
 Protocol;;SMTP and IMAP with AutoCrypt https://github.com/deltachat/deltachat-core-rust/blob/master/standards.md#standards-used-in-delta-chat;
 Protocol open;yes;https://github.com/deltachat/deltachat-core-rust/blob/master/standards.md#standards-used-in-delta-chat;
 Server license;yes;various (any SMTP and IMAP server);
-Client license;yes;GPL-3.0-or-later;
+Client license;yes;GPL-3.0-or-later https://github.com/deltachat/deltachat-android/blob/main/LICENSE;
 Register without app;yes;supports existing mailbox provider accounts https://delta.chat/en/help#does-delta-chat-work-with-my-e-mail-provider;
 Spell check;no;https://support.delta.chat/t/build-in-spell-checking/918 https://support.delta.chat/t/frs-working-with-dc/1332;
-Replies;partial;https://github.com/deltachat/deltachat-desktop/pull/1951 https://support.delta.chat/t/reply-to-message/283 https://support.delta.chat/t/react-reply-to-specific-message/1159;
+Replies;partial;replies https://github.com/deltachat/deltachat-desktop/pull/1951 https://support.delta.chat/t/reply-to-message/283 https://support.delta.chat/t/react-reply-to-specific-message/1159;
 Group chat;yes;;https://delta.chat/en/help#groups membership change is unicast
 Voice calls;partial;via embedding jitsi, talky.io, appear.in https://delta.chat/en/2020-07-30-summer-update#video-chats;
 Video calls;partial;via embedding jitsi, talky.io, appear.in https://delta.chat/en/2020-07-30-summer-update#video-chats;
 Group calls;partial;via embedding jitsi, talky.io, appear.in https://delta.chat/en/2020-07-30-summer-update#video-chats;
 Voice messages;yes;https://delta.chat/en/2018-02-27-delta-chat-0.15.0-voice-messages;
-File transfer;partial;https://github.com/deltachat/deltachat-core-rust/pull/4253;
+File transfer;partial;small files https://github.com/deltachat/deltachat-core-rust/pull/4253;
 Message formatting;partial;sends text https://support.delta.chat/t/markdown-support-in-chat/159/5 renders HTML https://delta.chat/en/help#does-delta-chat-support-html-e-mails https://delta.chat/en/2021-05-05-email-compat#rich-formatted-html-mails https://github.com/deltachat/deltachat-desktop/pull/3110 https://support.delta.chat/t/show-html-email-in-desktop-instead-of-opening-in-browser/2386;
 Emoticons in message;yes;;
 Unicode support;yes;;
@@ -32,7 +32,7 @@ Link preview;no;;can be simulated by a bot in group chat https://support.delta.c
 Inline images;yes;attachments separately;could be implemented within HTML messages https://delta.chat/en/help#does-delta-chat-support-images-videos-and-other-attachments
 Inline videos;yes;attachments separately;could be implemented within HTML messages https://delta.chat/en/help#does-delta-chat-support-images-videos-and-other-attachments
 Polls;yes;via webxdc;https://webxdc.org/ https://github.com/webxdc/poll
-Reactions;no;https://support.delta.chat/t/reactions-to-messages/2001 https://support.delta.chat/t/emoji-reactions-to-messages/2065;
+Reactions;yes;https://github.com/deltachat/deltachat-desktop/pull/2964;
 Read public content without registering;partial;;online public mailing list archives
 Multiple devices;yes;https://delta.chat/en/help#can-i-use-delta-chat-on-multiple-devices-at-the-same-time;
 Online account replica;partial;IMAP + manual backup;the account needs to be exported/imported periodically https://support.delta.chat/t/incremental-automatic-backups/2156
@@ -64,7 +64,7 @@ Deniability;no;;https://nixfaq.org/2020/09/delta-chat-a-libre-decentralized-chat
 Replay prevention;no;;DKIM could already provide all needed information
 Downgrade resistance;no;;should warn when encryption disabled https://support.delta.chat/t/show-end-to-end-encryption-state-of-chat/230 force E2EE https://support.delta.chat/t/force-once-un-encrypted-to-directly-reach-a-classic-mua-after-having-had-a-chat/227
 Contact list confidential;partial;not published, but leaks through mail headers https://delta.chat/en/help#which-messages-do-appear-in-delta-chat;
-Metadata protection;partial;encrypts certain email headers https://delta.chat/en/help#how-does-delta-chat-protect-my-metadata;recipients and time in the clear
+Metadata protection;partial;encrypts certain email headers;recipients and time in the clear https://delta.chat/en/help#how-does-delta-chat-protect-my-metadata
 Perfect forward secrecy;no;https://delta.chat/en/help#does-delta-chat-support-perfect-forward-secrecy;
 Security team;yes;https://delta.chat/en/help#was-delta-chat-independently-audited-for-security-vulnerabilities;
 Audits;yes;2019 https://delta.chat/assets/1907-otf-deltachat-rpgp-rustrsa-gb-reportv1.pdf 2020 https://delta.chat/assets/blog/2020-second-security-review.pdf 2023 https://delta.chat/en/2023-03-23-third-independent-security-audit 2023 https://delta.chat/en/2023-05-22-webxdc-security;
