@@ -11,7 +11,7 @@ Protocol open;yes;https://git.jami.net/savoirfairelinux/jami-project/-/wikis/tec
 Server license;yes;Nameservice GPL-3.0-only https://git.jami.net/savoirfairelinux/jami-nameservice/-/blob/master/COPYING OpenDHT GPL-3.0-or-later https://github.com/savoirfairelinux/opendht;
 Client license;yes;GPL-3.0-or-later;
 Register without app;no;;
-Replies;no;cite;https://docs.jami.net/en_US/user/all-features-by-client.html https://forum.jami.net/t/reply-to-message-function/686 https://git.jami.net/savoirfairelinux/jami-daemon/-/issues/318
+Replies;no;cite https://docs.jami.net/en_US/user/all-features-by-client.html https://forum.jami.net/t/reply-to-message-function/686 https://git.jami.net/savoirfairelinux/jami-daemon/-/issues/318;
 Group chat;no;https://forum.jami.net/t/am-i-able-to-create-group-chats/123;
 Voice calls;partial;https://jami.net/help/#answer11;Have tested Jami for about a year, and calls are not working reliably, if at all.
 Video calls;partial;https://jami.net/help/#answer11;Just like with calls, Jami isn't intercepting video-calls reliably
