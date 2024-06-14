@@ -1,2 +1,63 @@
 name;;keet;
+Summary;;P2P chat, video calls and file sharing;http://keet.io/
+Android Google Play;yes;;https://play.google.com/store/apps/details?id=io.keet.app
+Android F-droid/apk;no;;
+Apple iOS;yes;;https://apps.apple.com/us/app/keet-by-holepunch/id6443880549
+Desktop;yes;macOS Linux Windows https://keet.io;
+Web;no;;
+Protocol;;Keet, Pear https://docs.pears.com/ https://docs.pears.com/apps/keet;
+Protocol open;partial;;
+Client license;partial;Apache 2.0;most of the code used by keet can be found at https://github.com/holepunchto
+Replies;no;;Planned
+Group chat;yes;;
+Voice calls;yes;;
+Video calls;yes;;
+Group calls;yes;;
+Screen sharing;yes;;
+File transfer;yes;;
+Message formatting;yes;;
+Emoticons in message;yes;;
+Emoji composer;yes;;
+Emoji reception;yes;;
+Inline images;yes;;
+Inline videos;yes;;
+Reactions;yes;;
+Multiple devices;yes;;
+Online account replica;yes;;
+Multiple accounts;no;planned;
+Remote message removal;yes;;
+Remote message correction;yes;;
+Message expiration;no;;
+Presence status;no;;
+Presence not mandatory;no;;
+Typing indication;no;;
+Read receipts;no;;
+Receipts not mandatory;no;;
+Themes;no;;
 Landing page;yes;https://keet.io/;
+Vendor can't curate content;no;only in rooms the vendor admins;
+Spam protection;partial;some moderation tools but more coming;
+CPU idle;yes;;
+Power saving;yes;;
+Bandwidth frugal;partial;uses more as p2p;
+Reproducible builds;no;;
+Usage without phone number;yes;;
+Transparent financing;partial;;
+No-cost tier;yes;;
+Active development;yes;;
+Multi-party development;yes;;
+Isolated self-hosting;yes;;
+User can extend network with node;yes;;
+Identity not controlled by vendor;yes;;
+Open documentation;partial;;
+Web forum;yes;;
+Contact;yes;;
+Serverless WAN mode;yes;;
+Serverless LAN mode;yes;;
+Network store and forward;yes;;
+IP shielded from peers;partial;messages can relay via other peers;
+Third party clients;no;;
+Bots available;no;planned;
+User addons;no;planned;
+IPv6 access of vendor operated network;yes;;
+Vendor operated network inaccessible from countries;no;;
