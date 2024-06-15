@@ -32,7 +32,7 @@ Some of these may be investigated in the future by volunteers. Others may be add
 * Cabal
 * Tinfoil Chat (Tor and Hardware) https://github.com/maqp/tfc
 * hardware: https://disaster.radio/ LoRa + ESP32
-* Freenet
+* Freenet + https://github.com/freenet/freenet-core/issues/1115
 * I2P
 * Twister
 * Berty https://berty.tech/blog/blockchain-berty/ they claim, p2p, e2ee, pfs, based on ipfs, zero metadata
@@ -136,3 +136,4 @@ Some of these may be investigated in the future by volunteers. Others may be add
 * Tinode https://tinode.co/ https://github.com/tinode
 * 0xchat https://github.com/0xchat-app 0xchat is a secure chat app built on the Nostr protocol.
 * positive-intentions https://positive-intentions.com/ https://github.com/positive-intentions
+* otr.to https://otr.to/ https://github.com/jermainee/otr.to
