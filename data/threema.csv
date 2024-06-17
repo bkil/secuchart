@@ -15,7 +15,7 @@ Voice calls;yes;https://threema.ch/en/faq/calls_info;
 Video calls;yes;https://threema.ch/en/faq/calls_info;
 Group calls;yes;on Android https://threema.ch/en/blog/posts/group-calls-threema-android and iOS https://threema.ch/en/blog/posts/gc-ios;
 File transfer;yes;https://threema.ch/en/faq/file_message;
-Emoticons in message;yes;;
+Emoji reception;partial;FIXME;
 Inline images;yes;https://threema.ch/en/faq/file_message;
 Inline videos;yes;https://threema.ch/en/faq/file_message;
 Polls;yes;https://threema.ch/en/faq/poll;

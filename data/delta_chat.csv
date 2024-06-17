@@ -23,7 +23,6 @@ Group calls;partial;via embedding jitsi, talky.io, appear.in https://delta.chat/
 Voice messages;yes;https://delta.chat/en/2018-02-27-delta-chat-0.15.0-voice-messages;
 File transfer;partial;small files https://github.com/deltachat/deltachat-core-rust/pull/4253;
 Message formatting;partial;sends text https://support.delta.chat/t/markdown-support-in-chat/159/5 renders HTML https://delta.chat/en/help#does-delta-chat-support-html-e-mails https://delta.chat/en/2021-05-05-email-compat#rich-formatted-html-mails https://github.com/deltachat/deltachat-desktop/pull/3110 https://support.delta.chat/t/show-html-email-in-desktop-instead-of-opening-in-browser/2386;
-Emoticons in message;yes;;
 Unicode support;yes;;
 Emoji composer;partial;https://support.delta.chat/t/emoji-autocompletion/210;
 Emoji reception;yes;bundled or platform https://support.delta.chat/t/more-modern-and-vector-format-emojis-svg/851;
@@ -35,7 +34,7 @@ Polls;yes;via webxdc;https://webxdc.org/ https://github.com/webxdc/poll
 Reactions;yes;https://github.com/deltachat/deltachat-desktop/pull/2964;
 Read public content without registering;partial;;online public mailing list archives
 Multiple devices;yes;https://delta.chat/en/help#can-i-use-delta-chat-on-multiple-devices-at-the-same-time;
-Online account replica;partial;IMAP + manual backup;the account needs to be exported/imported periodically https://support.delta.chat/t/incremental-automatic-backups/2156
+Online account replica;partial;IMAP + manual backup;the account needs to be exported/imported periodically https://support.delta.chat/t/incremental-automatic-backups/2156 set up and keep online a secondary device as an alternative
 Multiple accounts;yes;https://delta.chat/en/2021-08-24-updates#multi-account-added-or-improved https://delta.chat/en/help#multiple-accounts;
 Remote message removal;no;https://support.delta.chat/t/retract-edit-sent-messages/1918/7;
 Remote message correction;no;https://support.delta.chat/t/retract-edit-sent-messages/1918/7;

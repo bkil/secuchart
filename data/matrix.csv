@@ -23,7 +23,6 @@ Voice messages;yes;https://element.io/blog/introducing-voice-messages-and-so-muc
 Screen sharing;yes;https://ems-docs.element.io/Create-a-Conference-Call-in-a-Room.html#screen-sharing;
 File transfer;yes;;
 Message formatting;yes;CommonMark-flavored markdown https://commonmark.org/help/ https://gitlab.com/bkil/freedom-fighters/-/blob/master/hu/client/matrix-html-syntax.md#element-web-teszt%C3%BCzenet-1;
-Emoticons in message;yes;;
 Unicode support;yes;;
 Emoji composer;yes;;
 Emoji reception;yes;;

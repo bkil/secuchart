@@ -10,7 +10,7 @@ Protocol open;no;;
 Server license;no;proprietary;
 Client license;no;proprietary;
 Register without app;no;;
-Emoticons in message;yes;;
+Emoji reception;partial;FIXME;
 Perfect forward secrecy;yes;;
 Usage without phone number;yes;;
 No-cost tier;yes;;

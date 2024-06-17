@@ -15,7 +15,7 @@ Group chat;yes;https://github.com/qaul/qaul.net/issues/357;
 Voice calls;no;https://github.com/qaul/qaul.net/issues/310;
 Video calls;no;https://github.com/qaul/qaul.net/issues/310;
 Message formatting;no;https://github.com/qaul/qaul.net/issues/488;
-Emoticons in message;no;https://github.com/qaul/qaul.net/issues/489;
+Emoji reception;no;FIXME;
 Link preview;no;;
 Inline images;yes;;
 Reactions;no;https://github.com/qaul/qaul.net/issues/489;

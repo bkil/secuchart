@@ -29,7 +29,6 @@ Screen sharing;;foss layperson;;
 Audio filtering;Noise cancellation, gain control, voice activity detection;foss layperson;;
 File transfer;Retry, pause, resume;layperson;foss tinfoil;
 Message formatting;Font size, bold, italic, underline, strike-through, list, blockquote, code, pre, colors, clickable link, table, subscript, superscript, line break, horizontal rule;;layperson foss;
-Emoticons in message;Deprecated, please refine with below properties! Compose, show;layperson;;
 Unicode support;yes=can both send & receive text containing any valid Unicode code point, usually via utf8mb4, partial=does not support 4-byte+ UTF-8, certain characters or combiners;layperson;foss tinfoil;
 Emoji composer;yes=rich dialog with search, partial=replaces a few emotes or aliases with Unicode before sending;layperson;;
 Emoji reception;yes=color Unicode display of all, mention in details if animated, partial=monochromatic, only a subset or replaces received emoticons with pictures;layperson;foss;
@@ -135,3 +134,4 @@ Server development until;date of abandoning maintenance;all;;
 Client development until;date of abandoning maintenance;all;;
 Wikipedia;Passes notability, URL;;foss;layperson
 Wikidata;May not be reliable due to anonymous edits, URL;;;
+Researched;Whether our research about it has concluded or if it is still fixme-todo;;;

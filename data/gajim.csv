@@ -18,7 +18,7 @@ Video calls;no;https://dev.gajim.org/gajim/gajim/-/wikis/help/gajimfaq#does-gaji
 Group calls;no;;
 File transfer;yes;;XEP-0234 XEP-0261 XEP-0363 https://gajim.org/support/extensions/
 Message formatting;partial;XEP-0393 https://gajim.org/post/2022-05-11-gajim-1.4.0-released/;
-Emoticons in message;yes;;
+Emoji reception;partial;FIXME;
 Reactions;yes;;https://gajim.org/post/2024-06-10-gajim-1.9.0-released/ XEP-0444 https://gajim.org/support/extensions/ https://dev.gajim.org/gajim/gajim/-/merge_requests/891
 Multiple devices;yes;;
 Multiple accounts;yes;;

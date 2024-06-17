@@ -15,7 +15,6 @@ Group chat;yes;;
 Voice calls;yes;WebRTC https://matrix.org/faq/#what-can-i-actually-do-with-this%3F;
 Video calls;yes;WebRTC https://matrix.org/faq/#what-can-i-actually-do-with-this%3F;
 Group calls;yes;via Jitsi https://matrix.org/faq/#what-can-i-actually-do-with-this%3F;
-Emoticons in message;yes;;
 Emoji composer;yes;;
 Emoji reception;yes;;
 Inline images;yes;;

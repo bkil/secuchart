@@ -12,7 +12,7 @@ Register without app;no;;
 Group chat;partial;One community/team only https://github.com/TryQuiet/quiet/wiki/Quiet-FAQ#why-doesnt-quiet-let-me-join-multiple-communities;
 File transfer;partial;https://github.com/TryQuiet/quiet/issues/836;Right now basic attachement
 Message formatting;no;https://github.com/TryQuiet/quiet/issues/1088;
-Emoticons in message;yes;;
+Emoji reception;partial;FIXME;
 Link preview;no;;
 Inline images;yes;;
 Inline videos;no;https://github.com/TryQuiet/quiet/issues/573;

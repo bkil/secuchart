@@ -48,10 +48,6 @@ new-data, moderation
 
 moderation, support
 
-### secuencias
-
-research-data, moderation, support, feedback
-
 ## Bronze level contributors
 
 ### Babba27
@@ -153,3 +149,7 @@ moderation
 ### Notupus
 
 moderation
+
+### secuencias
+
+research-data, moderation, support, feedback
