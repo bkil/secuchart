@@ -18,8 +18,8 @@ Group calls;yes;https://support.snapchat.com/en-US/a/video-chat;
 Voice messages;yes;voice notes, limited to certain length;
 Audio filtering;yes;aggressively detect and cancel the background noise;
 File transfer;no;;
-Emoticons in message;yes;;
 Emoji composer;yes;;
+Emoji reception;partial;FIXME;
 Sticker packs;yes;animated sticker packs available;
 Link preview;yes;small embed for link, tapping opens in app browser preview;primarily used for ads
 Inline images;yes;;

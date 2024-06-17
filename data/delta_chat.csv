@@ -23,7 +23,6 @@ Group calls;partial;via embedding jitsi, talky.io, appear.in https://delta.chat/
 Voice messages;yes;https://delta.chat/en/2018-02-27-delta-chat-0.15.0-voice-messages;
 File transfer;partial;small files https://github.com/deltachat/deltachat-core-rust/pull/4253;
 Message formatting;partial;sends text https://support.delta.chat/t/markdown-support-in-chat/159/5 renders HTML https://delta.chat/en/help#does-delta-chat-support-html-e-mails https://delta.chat/en/2021-05-05-email-compat#rich-formatted-html-mails https://github.com/deltachat/deltachat-desktop/pull/3110 https://support.delta.chat/t/show-html-email-in-desktop-instead-of-opening-in-browser/2386;
-Emoticons in message;yes;;
 Unicode support;yes;;
 Emoji composer;partial;https://support.delta.chat/t/emoji-autocompletion/210;
 Emoji reception;yes;bundled or platform https://support.delta.chat/t/more-modern-and-vector-format-emojis-svg/851;

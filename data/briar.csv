@@ -20,7 +20,7 @@ Voice messages;no;https://code.briarproject.org/briar/briar/-/issues/1954;
 Screen sharing;no;https://code.briarproject.org/briar/briar/-/issues/985;
 Audio filtering;no;https://code.briarproject.org/briar/briar/-/issues/985;
 File transfer;no;https://code.briarproject.org/briar/briar/-/issues/407;
-Emoticons in message;yes;;
+Emoji reception;partial;FIXME;
 Sticker packs;no;no;
 Link preview;no;no;
 Polls;no;;

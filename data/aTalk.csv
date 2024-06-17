@@ -21,7 +21,7 @@ Voice messages;no;;
 Screen sharing;no;;
 File transfer;yes;;https://atalk.sytes.net/atalk/ https://github.com/cmeng-git/atalk-android#xmpp-standards-implemented
 Message formatting;no;;
-Emoticons in message;yes;;
+Emoji reception;partial;FIXME;
 Link preview;yes;;https://atalk.sytes.net/atalk/ Share of social media links are tagged with thumbnail and title
 Reactions;no;;missing XEP-0444 https://github.com/cmeng-git/atalk-android#xmpp-standards-implemented
 Multiple devices;yes;;

@@ -22,8 +22,8 @@ Voice messages;yes;;https://simplex.chat/blog/20221206-simplex-chat-v4.3-voice-m
 Screen sharing;no;;
 File transfer;yes;https://github.com/simplex-chat/simplex-chat/blob/master/blog/20220511-simplex-chat-v2-images-files.md;
 Message formatting;yes;markdown https://github.com/simplex-chat/simplex-chat/issues/307;
-Emoticons in message;yes;;
 Unicode support;yes;;
+Emoji reception;partial;FIXME;
 Sticker packs;partial;via 3rd party keyboards;
 Link preview;yes;yes;User setting to generate link preview upon sending.
 Inline images;yes;https://github.com/simplex-chat/simplex-chat/blob/master/blog/20220511-simplex-chat-v2-images-files.md;mobile

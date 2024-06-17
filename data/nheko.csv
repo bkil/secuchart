@@ -13,7 +13,7 @@ Register without app;yes;;
 Replies;yes;https://matrix.org/blog/2022/09/30/this-week-in-matrix-2022-09-30/#nheko-website https://matrix.org/blog/2022/09/29/matrix-v-1-4-release/#threads;
 Group chat;yes;;
 Message formatting;yes;;
-Emoticons in message;yes;;
+Emoji reception;partial;FIXME;
 Sticker packs;yes;;
 Link preview;no;;
 Reactions;yes;;

@@ -16,7 +16,7 @@ Voice calls;yes;https://gist.github.com/iNPUTmice/a28c438d9bbf3f4a3d4c663ffaa224
 Video calls;yes;https://gist.github.com/iNPUTmice/a28c438d9bbf3f4a3d4c663ffaa224d9#file-conversations-av-notes-md;
 Group calls;no;;
 File transfer;yes;;XEP-0363 https://codeberg.org/iNPUTmice/Conversations#user-content-xmpp-features
-Emoticons in message;yes;;
+Emoji reception;partial;FIXME;
 Reactions;no;https://github.com/iNPUTmice/Conversations/issues/3874;
 Multiple devices;yes;;
 Multiple accounts;yes;;

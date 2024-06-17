@@ -21,7 +21,6 @@ Voice messages;yes;;
 Screen sharing;yes;requires iOS or iPados 15.1 or later;https://support.apple.com/en-me/HT212734
 Audio filtering;partial;no controls;Appears to filter audio by default, no apparent controls over this
 Message formatting;no;;
-Emoticons in message;yes;;
 Emoji composer;yes;Built into keyboard;All platforms that iMessage support after around iOS 6 support some way to open an emote keyboard from a keyboard button/shortcut. After iOS 14 you can search through the emote keyboard. Somewhere around this same time Apple implemented emote suggestions in the keyboard suggested text buttons.
 Emoji reception;yes;;Yes, assuming device is up to date as emotes are rendered through the operating system
 Sticker packs;yes;Built in;Includes some by default, install more and iMessage extensions through the app store

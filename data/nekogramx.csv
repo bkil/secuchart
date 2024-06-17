@@ -19,8 +19,8 @@ Voice messages;yes;https://ik4.es/en/how-to-send-audio-on-telegram-and-record-vo
 Screen sharing;yes;;https://www.androidauthority.com/telegram-group-video-calls-screen-sharing-1239553/ there is also a way to do it using obs, but citation needed.
 File transfer;yes;;note it does compress images and video by default https://www.makeuseof.com/send-uncompressed-photos-videos-telegram/
 Message formatting;partial;basic https://tgraph.io/markdown-07-07 https://core.telegram.org/bots/api#markdownv2-style;
-Emoticons in message;yes;;
 Emoji composer;yes;;emote button and use : and start typing to put emotes quickly
+Emoji reception;partial;FIXME;
 Sticker packs;yes;https://telegramchannels.me/stickers;
 Link preview;yes;https://telegram.org/blog/link-preview;
 Inline images;yes;;
