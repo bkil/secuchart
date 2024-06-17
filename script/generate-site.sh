@@ -87,6 +87,7 @@ EOF
       printf '%s' "$PROTOCOL" | grep -qi "\<MTProto\>" || TELEGRAM="$TELEGRAM $NUM"
       printf '%s' "$PROTOCOL" | grep -qi "\<Signal\>" || SIGNAL="$SIGNAL $NUM"
       if
+        [ "no" = "$(get_prop_status "`get_item_prop "$IT" "Researched"`")" ] ||
         [ -n "`get_item_value "$IT" "Server hosted until"`" ] ||
         [ -n "`get_item_value "$IT" "Server development until"`" ] ||
         [ -n "`get_item_value "$IT" "Client development until"`" ]
