@@ -183,7 +183,7 @@ If the same account can be used at the same time from multiple devices, syncing 
 If the user lost all of their devices, can they continue from where they left off after purchasing a new one and at most by typing in a password? Manually cloning the internal storage of the device externally every day and restoring it on a new one is expected to produce a similar result, except if the app locks itself down via DRM (hardware credential store, eSIM, serial number, etc.). Hence, concentrate on features of the messenger that makes full restoration possible without such external manual workarounds.
 
 * yes=everything available in the cloud from any device,
-* partial=not all of credentials, keys, profile, settings, contacts or conversations
+* partial=not all of credentials, keys, profile, settings, contacts, conversations or attachments
 
 ## Multiple accounts
 
@@ -389,9 +389,17 @@ Copyleft, editable by users through a wiki or source code repository, URL
 
 Publicly readable, URL
 
+It is a web site (web page) accessible through the Internet using a web browser without having to install special software or register an account. Both potential and existing users can ask questions here about the item and answer topics of one another. It should have a search facility to find FAQ without having to ask the same things all over again. Web search engines and archives must be able to index it. This would provide a nudge to use the given system.
+
+Common examples of backends include phpBB, FluxBB, Discourse, Friendica, Hubzilla, Lemmy, mailing lists, NNTP, CMS comment threads. Further CMS-based alternatives would be possible to implement.
+
+You can access and search a mailing list archive from a web browser. Even netcat could suffice if the page is frugal, such as in case of Mailman 2. However, we can assume that a user will possess at least Netscape 2.0 or a gemiweb0 browser or implement it themselves if they want to read such web pages.
+
+In contrast, a community group chat room accessible over the given messenger protocol, even if it provides for limited chat log, usually does not qualify as `Web forum`, but rather as a `Contact` method.
+
 ## Contact
 
-URI including the scheme prefix, preferably of group chat, such as matrix: acct: xmpp: msrp: news: mailto: irc: sip: mumble: ssh:
+URI including the scheme prefix, preferably of official group chat, such as matrix: acct: xmpp: msrp: news: mailto: irc: sip: mumble: ssh:
 
 ## Syndication
 
