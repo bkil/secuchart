@@ -98,7 +98,7 @@ User addons;no;;
 Hosted bots and addons;no;;
 Tor access of vendor operated network;no;;
 IPv6 access of vendor operated network;yes;;
-Vendor operated network inaccessible from countries;;FIXME;any peer can bootstrap, however Google Play and Apple censors and we would need to check the initial set of bootstraps in the app
+Vendor operated network inaccessible from countries;;FIXME;any peer can bootstrap, however Google Play and Apple censors and we would need to check the initial set of bootstraps in the app, ToS prohibits usage in countries under US embargo https://keet.io/terms https://keet.io/static/js/main.2e4cba5e.js
 Vendor legal entity kind;;cryptocurrency companies;Bitfinex, Tether, Hypercore
 Transparency reports;no;;
 Vendor jurisdiction;;British Virgin Islands;
