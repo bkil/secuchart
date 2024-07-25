@@ -15,7 +15,7 @@ Server license;yes;N/A;
 Client license;yes;GPL-3.0-only https://github.com/meshenger-app/meshenger-android/blob/master/LICENSE;
 Register without app;no;;
 Group chat;no;https://github.com/meshenger-app/meshenger-android/issues/7;
-Voice calls;yes;https://github.com/meshenger-app/meshenger-android/blob/master/docs/Documentation.md#user-content-calls;
+Voice calls;yes;https://github.com/meshenger-app/meshenger-android/blob/master/docs/documentation.md#user-content-calls;
 Video calls;yes;https://github.com/meshenger-app/meshenger-android/blob/master/docs/faq.md;
 Group calls;no;;
 Voice messages;no;;
