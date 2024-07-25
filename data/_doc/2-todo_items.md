@@ -68,7 +68,7 @@ Some of these may be investigated in the future by volunteers. Others may be add
 * otr.im
 * Signal FOSS https://www.twinhelix.com/apps/signal-foss/
 * IM+
-* Dust
+* Dust ? https://play.google.com/store/apps/details?id=com.radicalapps.cyberdust&hl=en_US https://usedust.com/
 * GroupMe
 * Band
 * VK
@@ -83,7 +83,7 @@ Some of these may be investigated in the future by volunteers. Others may be add
 * Matrix Construct (beta)
 * Matrix Dendrite (beta)
 * Matrix Ligase (late beta)
-* Silence
+* unmaintained: Silence https://silence.im/ https://github.com/SilenceIM/Silence last commit 2020
 * XMPP MongooseIM https://github.com/esl/MongooseIM/blob/master/doc/user-guide/Supported-standards.md
 * XMPP jabberd14 https://gitlab.com/jabberd/jabberd/-/blob/master/jabberd14/README.protocols
 * XMPP Openfire https://github.com/igniterealtime/Openfire/blob/master/documentation/protocol-support.html
@@ -102,8 +102,8 @@ Some of these may be investigated in the future by volunteers. Others may be add
 * FairEmail https://f-droid.org/en/packages/eu.faircode.email/
 * Monocles, fork of K-9 https://f-droid.org/en/packages/de.monocles.mail/
 * IPFS-chat https://github.com/SomajitDey/ipfs-chat
-* Hugin, blockchain https://github.com/kryptokrona/hugin-messenger
-* TeleGuard
+* unmaintained: Hugin, blockchain https://github.com/kryptokrona/hugin-messenger archived in 2022
+* TeleGuard https://teleguard.com/en#faq
 * unmaintained: https://en.wikipedia.org/wiki/Miranda_IM
 * unmaintained Ricochet (original)
 * https://en.wikipedia.org/wiki/List_of_chat_websites

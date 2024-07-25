@@ -3,8 +3,8 @@ cd "$(dirname "$(readlink -f "$0")")" || exit 1
 
 ! [ -f js0-min-static ] || ! [ -f lib.js ] && {
   wget -U- \
-    https://bkil.gitlab.io/gemiweb/js0-min-static \
-    https://bkil.gitlab.io/gemiweb/src/br/lib.js &&
+    https://bkil.gitlab.io/gemiweb0/js0-min-static \
+    https://bkil.gitlab.io/gemiweb0/src/br/lib.js &&
   chmod +x ./js0-min-static || exit 1
 }
 
