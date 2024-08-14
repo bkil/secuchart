@@ -33,7 +33,7 @@ Some of these may be investigated in the future by volunteers. Others may be add
 * Tinfoil Chat (Tor and Hardware) https://github.com/maqp/tfc
 * hardware: https://disaster.radio/ LoRa + ESP32
 * Freenet + https://github.com/freenet/freenet-core/issues/1115
-* I2P
+* I2PChat I2P-Messenger https://github.com/vituperative/i2pchat
 * Twister
 * Berty https://berty.tech/blog/blockchain-berty/ they claim, p2p, e2ee, pfs, based on ipfs, zero metadata
 * Anonymous messenger https://f-droid.org/packages/com.dx.anonymousmessenger/
