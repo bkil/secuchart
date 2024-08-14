@@ -10,7 +10,7 @@ Protocol open;partial;ARP open https://github.com/threema-ch/app-remote-protocol
 Server license;partial;proprietary: Chat, Directory, Media;
 Client license;yes;AGPL-3.0-only but paid;
 Register without app;no;;
-Group chat;yes;implemented with unicast https://threema.ch/press-files/cryptography_whitepaper.pdf;
+Group chat;yes;implemented with unicast https://threema.ch/press-files/cryptography_whitepaper.pdf https://threemagroups.xyz/;
 Voice calls;yes;https://threema.ch/en/faq/calls_info;
 Video calls;yes;https://threema.ch/en/faq/calls_info;
 Group calls;yes;on Android https://threema.ch/en/blog/posts/group-calls-threema-android and iOS https://threema.ch/en/blog/posts/gc-ios;
