@@ -137,3 +137,4 @@ Some of these may be investigated in the future by volunteers. Others may be add
 * 0xchat https://github.com/0xchat-app 0xchat is a secure chat app built on the Nostr protocol.
 * positive-intentions https://positive-intentions.com/ https://github.com/positive-intentions
 * otr.to https://otr.to/ https://github.com/jermainee/otr.to
+* Android-Bonjour-WebRTC https://github.com/warren-bank/Android-Bonjour-WebRTC
