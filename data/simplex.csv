@@ -55,7 +55,7 @@ Contact list confidential;yes;https://simplex.chat/#problem-intro;
 Metadata protection;yes;https://github.com/simplex-chat/simplex-chat/blob/stable/docs/SIMPLEX.md#full-privacy-of-your-identity-profile-contacts-and-metadata;
 Perfect forward secrecy;yes;https://github.com/simplex-chat/simplexmq/blob/master/protocol/simplex-messaging.md#cryptographic-algorithms;
 Reproducible builds;yes;https://github.com/simplex-chat/simplex-chat/blob/stable/scripts/android/build-android.sh;
-Audits;yes;2022-11-03 by Trail of Bits https://simplex.chat/blog/20221108-simplex-chat-v4.2-security-audit-new-website.html https://raw.githubusercontent.com/simplex-chat/simplex-chat/stable/docs/SimpleX_Chat_Final_Report_11_03_2022.pdf;
+Audits;yes;;2022-11-03 by Trail of Bits https://simplex.chat/blog/20221108-simplex-chat-v4.2-security-audit-new-website.html https://raw.githubusercontent.com/simplex-chat/simplex-chat/stable/docs/SimpleX_Chat_Final_Report_11_03_2022.pdf 2024-08-12 by Trail of Bits https://simplex.chat/blog/20241014-simplex-network-v6-1-security-review-better-calls-user-experience.html https://raw.githubusercontent.com/simplex-chat/simplex-chat/stable/docs/SimpleX_Design_Review_2024_Summary_Report_12_08_2024.pdf
 Usage without phone number;yes;;
 Transparent financing;yes;https://simplex.chat/blog/20230422-simplex-chat-vision-funding-v5-videos-files-passcode.html#how-is-it-funded-and-what-is-the-business-model;
 No-cost tier;yes;;
