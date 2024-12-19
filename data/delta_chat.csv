@@ -88,7 +88,7 @@ Serverless LAN mode;no;;might be feasible in the future
 Network store and forward;yes;https://delta.chat/en/help#how-does-delta-chat-protect-my-metadata;
 Wireless mode;no;;
 IP shielded from peers;partial;depends on provider;most servers add SMTP client IP to Received header https://security.stackexchange.com/questions/237525/ip-address-leaked-in-email-header
-Proxy support;partial;only on desktop https://support.delta.chat/t/add-proxy-settings-to-mobile-apps/2060;
+Proxy support;yes;;HTTP(S), SOCKS5, Shadowsocks https://github.com/deltachat/deltachat-android/issues/2234
 Third party clients;yes;SMTP and IMAP;interoperates with any email client, E2EE uses AutoCrypt https://delta.chat/en/help#which-standards-are-used-for-end-to-end-encryption
 Bots available;yes;https://bots.delta.chat/ https://github.com/simplebot-org https://github.com/deltachat-bot/public-bots/blob/main/frontend/data.json https://support.delta.chat/c/bots/9;
 User addons;yes;https://webxdc.org/ https://github.com/webxdc;
