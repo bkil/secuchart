@@ -53,6 +53,8 @@ SGX CDSI (the HSM CDSH development version does have source):
 * https://github.com/signalapp/Signal-Android/blob/f63ed8f2698c05c4bb1465c01e0c79353835f6ac/libsignal/service/src/main/proto/CDSI.proto
 * https://github.com/signalapp/HsmEnclave
 
+SMS-based account authentication
+
 Web service for handling pushing and serving updates.
 
 Scripts and recipes for devops to deploy and monitor a node.
