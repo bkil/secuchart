@@ -395,6 +395,8 @@ Common examples of backends include phpBB, FluxBB, Discourse, Friendica, Hubzill
 
 You can access and search a mailing list archive from a web browser. Even netcat could suffice if the page is frugal, such as in case of Mailman 2. However, we can assume that a user will possess at least Netscape 2.0 or a gemiweb0 browser or implement it themselves if they want to read such web pages.
 
+https://bkil.gitlab.io/gemiweb0/
+
 In contrast, a community group chat room accessible over the given messenger protocol, even if it provides for limited chat log, usually does not qualify as `Web forum`, but rather as a `Contact` method.
 
 ## Contact
