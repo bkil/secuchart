@@ -70,6 +70,12 @@ fix-data
 
 support
 
+### link2xt
+
+https://fosstodon.org/@link2xt
+
+fix-data
+
 ### neotdc
 
 new-data
