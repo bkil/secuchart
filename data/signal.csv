@@ -1,7 +1,7 @@
 name;;Signal;
 Summary;;Chat, video calls by phone number https://signal.org/;
 Android Google Play;yes;https://play.google.com/store/apps/details?id=org.thoughtcrime.securesms https://signal.org/download/;
-Android F-droid/apk;partial;apk https://signal.org/android/apk/;avoids f-droid https://community.signalusers.org/t/wiki-signal-android-app-on-f-droid-store-f-droid-status/28581
+Android F-droid/apk;partial;apk, third-party repo;https://signal.org/android/apk/ https://guardianproject.info/apps/org.thoughtcrime.securesms/ avoids f-droid https://community.signalusers.org/t/wiki-signal-android-app-on-f-droid-store-f-droid-status/28581
 Apple iOS;yes;https://signal.org/download/;iPad as a secondary device https://support.signal.org/hc/en-us/articles/360007320551-Linked-Devices#link_ipad
 Desktop;partial;as secondary device https://signal.org/download/ https://support.signal.org/hc/en-us/articles/360007320551-Linked-Devices#link_desktop https://support.signal.org/hc/en-us/articles/360008216551#install_desktop;
 Web;no;;
