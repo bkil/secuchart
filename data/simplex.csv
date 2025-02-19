@@ -14,7 +14,7 @@ Protocol open;yes;https://github.com/simplex-chat/simplexmq/blob/master/protocol
 Server license;yes;AGPL-3.0-only https://github.com/simplex-chat/simplexmq/blob/master/LICENSE;
 Client license;yes;AGPL-3.0-only https://github.com/simplex-chat/simplex-chat/blob/stable/LICENSE;
 Register without app;yes;No registration necessary.;
-Group chat;yes;https://github.com/simplex-chat/simplex-chat/blob/stable/blog/20220808-simplex-chat-v3.1-chat-groups.md;
+Group chat;yes;only among trusted contacts;https://github.com/simplex-chat/simplex-chat/blob/stable/blog/20220808-simplex-chat-v3.1-chat-groups.md https://simplex.chat/docs/protocol/simplex-chat.html#a-group-member https://github.com/simplex-chat/simplexmq/blob/stable/protocol/overview-tjr.md#a-users-contact
 Voice calls;yes;https://simplex.chat/blog/20220711-simplex-chat-v3-released-ios-notifications-audio-video-calls-database-export-import-protocol-improvements.html;terminal app via WebRTC in browser
 Video calls;yes;https://simplex.chat/blog/20220711-simplex-chat-v3-released-ios-notifications-audio-video-calls-database-export-import-protocol-improvements.html;terminal app via WebRTC in browser
 Group calls;no;;
@@ -45,7 +45,7 @@ Vendor can't curate content;yes;;
 Account deactivation after device compromise;no;No user accounts;
 Bandwidth frugal;no;Very aggressive message padding, group chats are unicast;See https://github.com/simplex-chat/simplex-chat/issues/1515#issuecomment-1342248425
 Disallow screenshots;partial;only for yourself, Android https://simplex.chat/blog/20221206-simplex-chat-v4.3-voice-messages.html;
-Threat model;yes;https://github.com/simplex-chat/simplexmq/blob/stable/protocol/overview-tjr.md#threat-model;
+Threat model;yes;https://github.com/simplex-chat/simplexmq/blob/stable/protocol/overview-tjr.md#threat-model https://simplex.chat/docs/protocol/simplex-chat.html#a-group-member;
 End-to-end encryption;yes;2 layers https://simplex.chat/#problem-explained https://github.com/simplex-chat/simplexmq/blob/master/protocol/simplex-messaging.md https://github.com/simplex-chat/simplexmq/blob/master/protocol/overview-tjr.md#encryption-primitives-used;
 E2EE keys shielded from operator;yes;https://github.com/simplex-chat/simplex-chat/blob/stable/docs/SIMPLEX.md#full-privacy-of-your-identity-profile-contacts-and-metadata https://github.com/simplex-chat/simplex-chat#privacy-technical-details-and-limitations;
 Deniability;yes;https://github.com/simplex-chat/simplex-chat#privacy-technical-details-and-limitations;
