@@ -3,7 +3,7 @@ Summary;;blabber.im (Conversations) fork;With Cheogram features to improve priva
 Screenshots;;https://monocles.wiki/index.php?title=Monocles_Chat;
 Android Google Play;yes;https://play.google.com/store/apps/details?id=eu.monocles.chat;
 Android F-droid/apk;yes;https://f-droid.org/en/packages/de.monocles.chat/ https://codeberg.org/monocles/monocles_chat/releases;
-Apple iOS;no;;they recommend Siskin https://apps.apple.com/de/app/siskin-im/id1153516838?platform=iphone
+Apple iOS;no;;they recommend Siskin https://apps.apple.com/de/app/siskin-im/id1153516838?platform=iphone via https://monocles.chat/login
 Desktop;no;;
 Web;yes;https://interact.monocles.de/;
 Languages;yes;39;ar bg bn ca cs da de el eo es eu fa fi fr gl hi hr hu id it iw ja ko ml nb nl pl pt ro ru sk sq sr sv szl tr uk vi zh https://codeberg.org/monocles/monocles_chat/src/branch/master/src/main/res
@@ -22,7 +22,7 @@ Link preview;yes;https://bkil.gitlab.io/secuchart-assets/screenshots/monocles/v1
 Inline images;yes;https://codeberg.org/monocles/monocles_chat/raw/branch/master/fastlane/metadata/android/en-US/phoneScreenshots/05.png;
 Inline videos;yes;;
 Polls;no;;
-Reactions;no;;missing XEP-0444 https://codeberg.org/monocles/monocles_chat/src/branch/master/docs/XEPs.md
+Reactions;yes;https://codeberg.org/monocles/monocles_chat/issues/180#issuecomment-2420823;
 Multiple devices;yes;;
 Multiple accounts;yes;;
 Application locking;no;;
@@ -48,7 +48,7 @@ Web forum;no;;
 Contact;yes;acct:monocles@monocles.social xmpp:support@conference.monocles.eu xmpp:development@conference.monocles.de mailto:support@monocles.de;
 Syndication;no;;
 Serverless WAN mode;no;;
-Serverless LAN mode;no;;XEP-0174 unimplemented https://codeberg.org/monocles/monocles_chat/src/branch/master/docs/XEPs.md https://github.com/iNPUTmice/Conversations/issues/1415
+Serverless LAN mode;no;;XEP-0174 unimplemented https://codeberg.org/monocles/monocles_chat/issues/187 https://codeberg.org/iNPUTmice/Conversations/issues/211
 Network store and forward;yes;if server and contact client support XEP-0313 MAM;
 Wireless mode;no;;
 IP shielded from peers;yes;not for STUN calls;
