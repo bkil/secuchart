@@ -70,7 +70,7 @@ Serverless LAN mode;no;;
 Network store and forward;yes;;
 Wireless mode;no;;
 IP shielded from peers;partial;not by default;can set to always relay calls, otherwise shares IP with outgoing calls and contacts https://signal.org/blog/signal-video-calls/ https://signal.org/blog/ice-forking/ https://github.com/signalapp/Signal-Android/blob/c4bc2162f23e0fd6bc25941af8fb7454d91a4a35/app/src/main/java/org/thoughtcrime/securesms/service/webrtc/IncomingCallActionProcessor.java#L94
-Third party clients;no;https://github.com/LibreSignal/LibreSignal/blob/master/README.md https://github.com/LibreSignal/LibreSignal/issues/37#issuecomment-217211165 https://lwn.net/Articles/687294/;
+Third party clients;yes;Molly, Langis, Signal-LTS, Whisperfish, Flare;https://molly.im/ https://langis.cloudfrancois.fr/ https://github.com/benarmstead/Signal-LTS https://gitlab.com/whisperfish/whisperfish https://gitlab.com/schmiddi-on-mobile/flare
 Vendor operated network inaccessible from countries;;China, Iran, Uzbekistan, Cuba https://ooni.org/post/2021-how-signal-private-messenger-blocked-around-the-world/#findings;
 Vendor legal entity kind;;non-profit company;
 Vendor jurisdiction;;USA https://signal.org/legal/;
