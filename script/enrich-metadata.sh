@@ -129,8 +129,12 @@ download_fdroid_metadata() {
 }
 
 download_google_play_metadata() {
-  local OGURL HTML URL
+  local OGURL HTML URL RXDATE RXRELP RXREL RXOS
   readonly OGURL="$1"
+  readonly RXDATE="([A-Z][a-z]{2} [0-9]{1,2}, [0-9]{4})"
+  readonly RXRELP="([^<>\"]*[^ <>\"])"
+  readonly RXREL="([^<>()\"]*[^ <>()\"])"
+  readonly RXOS="(Android )?([0-9]+\.[0-9])( and up|[+])?"
   readonly HTML="$DIST/google-play-$2.html"
   readonly URL="`printf "%s" "$OGURL" | sed "s~^https://play\.google\.com/store/apps/details[?]id=~https://apkpure.com/0/~"`"
 
@@ -143,9 +147,13 @@ download_google_play_metadata() {
     s~^<p itemprop=\"datePublished\">([^<>]+)</p>$~date\t\1~
     t print
 
-    s~^<p class=\"date\">([A-Z][a-z]{2} [0-9]{1,2}, [0-9]{4})</p>~date\t\1~
+    s~^\s*<p class=\"date\">(Last updated on )?${RXDATE}</p>$~date\t\2~
     t date_update
-    s~^<span class=\"update\">([A-Z][a-z]{2} [0-9]{1,2}, [0-9]{4})</span>~update\t\1~
+    s~^\s*<meta property=\"og:updated_time\" content=\"${RXDATE}\">$~update\t\1~
+    t date_update
+    s~^\s*<span class=\"update\">${RXDATE}</span>$~update\t\1~
+    t date_update
+    s~^.*<li><div class=\"head\">${RXDATE}</div><div class=\"desc\">Update date</div></li><li data-dt-desc=\"AndroidOS\" data-vars-desc=\"AndroidOS\"><div class=\"head\">${RXOS}</div><div class=\"desc\">Android OS</div></li>.*$~update\t\1\nos\t\3~
     T not_date_update
     :date_update
     s~\tJan~\t01~
@@ -160,32 +168,38 @@ download_google_play_metadata() {
     s~\tOct~\t10~
     s~\tNov~\t11~
     s~\tDec~\t12~
-    s~\t([0-9]+) ([0-9]+), ([0-9]+)$~\t\3-\1-\2~
+    s~\t([0-9]+) ([0-9]+), ([0-9]+)~\t\3-\1-\2~
     s~-([0-9])$~-0\1~
     b print
     :not_date_update
 
-    s~^<div class=\"details-sdk\"><span itemprop=\"version\">([^<>]*[^<> ]) *</span>for Android</div>$~rel\t\1~
+    s~^<script type=\"application/ld[+]json\">.*\",\"version\":\"${RXRELP}\",\"operatingSystem\":\"ANDROID\",.*$~rel\t\1~
     t print
-    s~^<div class=\"ver-info-top\"><strong>.*</strong> ([^ <>()]+)( *\([0-9]+\))?</div>.*$~rel\t\1~
+    s~^.*<p class=\"app-version-name\">${RXRELP}</p>.*$~rel\t\1~
     t print
-    s~^<a class=\"version-item .* data-dt-version=\"([^<>\"]+)\".*$~rel\t\1~
+    s~^\s*version_name: '${RXRELP}',$~rel\t\1~
     t print
-    s~^<span itemprop=\"version\">([^<>]+)</span> by$~rel\t\1~
+    s~^<div class=\"details-sdk\"><span itemprop=\"version\">${RXRELP} *</span>for Android</div>$~rel\t\1~
     t print
-    s~<h3>What&#39;s New in the Latest Version ([^<>]+)</h3>~rel\t\1~
+    s~^<div class=\"ver-info-top\"><strong>.*</strong> ${RXREL}( *\([0-9]+\))?</div>.*$~rel\t\1~
+    t print
+    s~^<a class=\"version-item .* data-dt-version=\"${RXRELP}\".*$~rel\t\1~
+    t print
+    s~^<span itemprop=\"version\">${RXRELP}</span> by$~rel\t\1~
+    t print
+    s~\s*<h3( class=\"whats-new-title\")?>What&#39;s New in the Latest Version ${RXRELP}</h3>~rel\t\2~
     t print
 
-    s~^<p>(Android )?([0-9]+\.[0-9]+)( and up|[+])?</p>$~os\t\2~
+    s~^<p><strong>Requires Android: </strong>${RXOS}( *\([^<>]*\))?</p>$~os\t\1~
     t print
-    s~^<p><strong>Requires Android: </strong>Android ([^()<>]*[^()<>+ ])([+]| and up)?( *\([^<>]*\))?</p>$~os\t\1~
+    s~^\s*<p class=\"additional-info\">${RXOS}</p>$~os\t\2~
     t print
-    s~^<p class=\"additional-info\">(Android )?([0-9.]+)([+]| and up)?</p>$~os\t\2~
+    s~^<p>${RXOS}</p>$~os\t\2~
     t print
 
     s~^<p><strong>File Size: </strong>([^<>]+) (MB)</p>$~size\t\1\2~
     t print
-    s~^<span class=\"(size|ver-item-s)\">([^<>]+) (MB)</span>$~size\t\2\3~
+    s~^\s*<span class=\"(size|ver-item-s)\">([^<>]+) (MB)</span>$~size\t\2\3~
     t print
 
     b continue
