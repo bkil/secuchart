@@ -138,3 +138,7 @@ Some of these may be investigated in the future by volunteers. Others may be add
 * positive-intentions https://positive-intentions.com/ https://github.com/positive-intentions
 * otr.to https://otr.to/ https://github.com/jermainee/otr.to
 * Android-Bonjour-WebRTC https://github.com/warren-bank/Android-Bonjour-WebRTC
+* Signal https://langis.cloudfrancois.fr/
+* Signal https://github.com/benarmstead/Signal-LTS
+* Signal https://gitlab.com/whisperfish/whisperfish
+* Signal https://gitlab.com/schmiddi-on-mobile/flare
