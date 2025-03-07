@@ -142,3 +142,4 @@ Some of these may be investigated in the future by volunteers. Others may be add
 * Signal https://github.com/benarmstead/Signal-LTS
 * Signal https://gitlab.com/whisperfish/whisperfish
 * Signal https://gitlab.com/schmiddi-on-mobile/flare
+* SocketChat https://github.com/NimaKhajehpour/SocketChat https://f-droid.org/en/packages/com.nima.socketchat/
