@@ -36,8 +36,8 @@ Read public content without registering;partial;;online public mailing list arch
 Multiple devices;yes;https://delta.chat/en/help#can-i-use-delta-chat-on-multiple-devices-at-the-same-time;
 Online account replica;partial;IMAP + manual backup;the account needs to be exported/imported periodically https://support.delta.chat/t/incremental-automatic-backups/2156 set up and keep online a secondary device as an alternative
 Multiple accounts;yes;https://delta.chat/en/2021-08-24-updates#multi-account-added-or-improved https://delta.chat/en/help#multiple-accounts;
-Remote message removal;no;https://support.delta.chat/t/retract-edit-sent-messages/1918/7;
-Remote message correction;no;https://support.delta.chat/t/edit-messages-in-delta-chat/899 https://support.delta.chat/t/retract-edit-sent-messages/1918/7;
+Remote message removal;yes;https://delta.chat/en/2025-03-26-edit-and-delete-how;
+Remote message correction;yes;https://delta.chat/en/2025-03-26-edit-and-delete-how;
 Message expiration;yes;https://delta.chat/en/2020-07-30-summer-update#disappearing-messages;
 Presence status;partial;simulated last message + 10m;https://delta.chat/en/help#what-does-the-green-dot-mean https://github.com/deltachat/deltachat-android/blob/35f16c80aced4c7f07565bfd0379b2cebb47ce10/CHANGELOG.md#user-content-v1340 https://github.com/deltachat/deltachat-core-rust/blob/434e53e922a49f348856b665d70eebda2645d5ce/src/receive_imf.rs#L201 https://support.delta.chat/t/about-the-option-to-disable-recently-online-indicator/2282
 Presence not mandatory;partial;receipt part optional https://delta.chat/en/help#what-do-the-ticks-shown-beside-outgoing-messages-mean;
