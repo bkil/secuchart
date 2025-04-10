@@ -33,6 +33,7 @@ Account deactivation after device compromise;yes;;
 Logo;yes;https://commons.wikimedia.org/wiki/File:Conversations_(Instant_Messenger)_Logo.svg https://raw.githubusercontent.com/iNPUTmice/Conversations/master/art/logo.png;
 Threat model;yes;https://conversations.im/omemo/audit.pdf;
 End-to-end encryption;yes;XEP-0384 OMEMO https://conversations.im/omemo/;also OpenPGP
+Audits;yes;https://conversations.im/2025_audit_conversations.pdf;
 Usage without phone number;yes;;
 Active development;yes;https://github.com/iNPUTmice/Conversations/commits/master;
 Multi-party development;no;;
