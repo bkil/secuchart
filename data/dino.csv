@@ -15,7 +15,7 @@ Replies;partial;replies;XEP-0461 https://github.com/dino/dino/issues/1303
 Group chat;yes;https://github.com/dino/dino/wiki/Frequently-asked-questions-(FAQ)#how-to-create-a-group-chat;
 Video calls;yes;https://dino.im/blog/2022/02/dino-0.3-release/;
 Group calls;yes;https://dino.im/blog/2022/02/dino-0.3-release/;
-File transfer;yes;https://dino.im/blog/2020/11/dino-0.2-release/;
+File transfer;yes;;https://dino.im/blog/2020/11/dino-0.2-release/ + partial XEP-0447 https://xmpp.org/extensions/xep-0447.html only unencrypted file transfers https://dino.im/blog/2025/04/dino-0.5-release/
 Emoji reception;partial;FIXME;
 Reactions;yes;https://dino.im/blog/2023/02/dino-0.4-release/;
 Multiple devices;yes;;
