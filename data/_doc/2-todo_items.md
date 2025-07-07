@@ -144,3 +144,4 @@ Some of these may be investigated in the future by volunteers. Others may be add
 * Signal https://gitlab.com/schmiddi-on-mobile/flare
 * SocketChat https://github.com/NimaKhajehpour/SocketChat https://f-droid.org/en/packages/com.nima.socketchat/
 * ScratchChat https://github.com/happybeing/dweb-app-scratchchat
+* bitchat https://github.com/jackjackbits/bitchat
