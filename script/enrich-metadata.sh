@@ -144,16 +144,19 @@ download_google_play_metadata() {
 
   sed "s~\r~~g" "$HTML" |
   sed -rn "
-    s~^<p itemprop=\"datePublished\">([^<>]+)</p>$~date\t\1~
-    t print
+    s~^~ ~
+    t loop
+    :loop
+    s~^ <p itemprop=\"datePublished\">([^<>]+)</p>$~date\t\1~
+    t loop
 
-    s~^\s*<p class=\"date\">(Last updated on )?${RXDATE}</p>$~date\t\2~
+    s~<p class=\"(date|text update-date)\">(Last updated on )?${RXDATE}</p>~\ndate\t\3\n~
     t date_update
-    s~^\s*<meta property=\"og:updated_time\" content=\"${RXDATE}\">$~update\t\1~
+    s~<meta property=\"og:updated_time\" content=\"${RXDATE}\" */?>~\nupdate\t\1\n~
     t date_update
     s~^\s*<span class=\"update\">${RXDATE}</span>$~update\t\1~
     t date_update
-    s~^.*<li><div class=\"head\">${RXDATE}</div><div class=\"desc\">Update date</div></li><li data-dt-desc=\"AndroidOS\" data-vars-desc=\"AndroidOS\"><div class=\"head\">${RXOS}</div><div class=\"desc\">Android OS</div></li>.*$~update\t\1\nos\t\3~
+    s~<div class=\"head\">${RXDATE}</div><div class=\"desc\">Update date</div>~\nupdate\t\1\n~
     T not_date_update
     :date_update
     s~\tJan~\t01~
@@ -169,45 +172,49 @@ download_google_play_metadata() {
     s~\tNov~\t11~
     s~\tDec~\t12~
     s~\t([0-9]+) ([0-9]+), ([0-9]+)~\t\3-\1-\2~
-    s~-([0-9])$~-0\1~
-    b print
+    s~-([0-9](\n|$))~-0\1~
+    b loop
     :not_date_update
 
-    s~^<script type=\"application/ld[+]json\">.*\",\"version\":\"${RXRELP}\",\"operatingSystem\":\"ANDROID\",.*$~rel\t\1~
-    t print
-    s~^.*<p class=\"app-version-name\">${RXRELP}</p>.*$~rel\t\1~
-    t print
+    s~^ <script type=\"application/ld[+]json\">.*\",\"version\":\"${RXRELP}\",\"operatingSystem\":\"ANDROID\",.*$~rel\t\1~
+    t loop
+    s~<p class=\"app-version-name\">${RXRELP}</p>~\nrel\t\1\n~
+    t loop
     s~^\s*version_name: '${RXRELP}',$~rel\t\1~
-    t print
-    s~^<div class=\"details-sdk\"><span itemprop=\"version\">${RXRELP} *</span>for Android</div>$~rel\t\1~
-    t print
-    s~^<div class=\"ver-info-top\"><strong>.*</strong> ${RXREL}( *\([0-9]+\))?</div>.*$~rel\t\1~
-    t print
-    s~^<a class=\"version-item .* data-dt-version=\"${RXRELP}\".*$~rel\t\1~
-    t print
-    s~^<span itemprop=\"version\">${RXRELP}</span> by$~rel\t\1~
-    t print
+    t loop
+    s~^ <div class=\"details-sdk\"><span itemprop=\"version\">${RXRELP} *</span>for Android</div>$~rel\t\1~
+    t loop
+    s~^ <div class=\"ver-info-top\"><strong>.*</strong> ${RXREL}( *\([0-9]+\))?</div>~rel\t\1\n~
+    t loop
+    s~^ <a class=\"version-item .* data-dt-version=\"${RXRELP}\"~rel\t\1\n~
+    t loop
+    s~^ <span itemprop=\"version\">${RXRELP}</span> by$~rel\t\1~
+    t loop
     s~\s*<h3( class=\"whats-new-title\")?>What&#39;s New in the Latest Version ${RXRELP}</h3>~rel\t\2~
-    t print
+    t loop
 
-    s~^<p><strong>Requires Android: </strong>${RXOS}( *\([^<>]*\))?</p>$~os\t\1~
-    t print
+    s~<p class=\"label\">Requires Android</p><p class=\"value\">${RXOS}</p>~\nos\t\2\n~
+    t loop
     s~^\s*<p class=\"additional-info\">${RXOS}</p>$~os\t\2~
-    t print
-    s~^<p>${RXOS}</p>$~os\t\2~
-    t print
+    t loop
+    s~^ <p>${RXOS}</p>$~os\t\2~
+    t loop
+    s~<li data-dt-desc=\"AndroidOS\" data-vars-desc=\"AndroidOS\"><div class=\"head\">${RXOS}</div>~\nos\t\2\n~
+    t loop
 
-    s~^<p><strong>File Size: </strong>([^<>]+) (MB)</p>$~size\t\1\2~
-    t print
+    s~^ <p><strong>File Size: </strong>([^<>]+) (MB)</p>$~size\t\1\2~
+    t loop
     s~^\s*<span class=\"(size|ver-item-s)\">([^<>]+) (MB)</span>$~size\t\2\3~
-    t print
+    t loop
+    s~<strong class=\"text one-line\">Download APK \(([0-9.]+) (MB)\)</strong>~\nsize\t\1\2\n~
+    t loop
+    s~<span class=\"tag XAPK\">XAPK</span></div><span>([0-9.]+) (MB)</span>~\nsize\t\1\2\n~
+    t loop
 
-    b continue
-    :print
     s~ ~_~g
     p
-    :continue
   " |
+  grep "^[^ ]" |
 
   awk -F "\t" '
     BEGIN {
