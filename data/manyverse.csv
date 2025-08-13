@@ -1,7 +1,7 @@
 name;;Manyverse;
 Summary;;P2P social network on LAN/WAN;P2P social network over LAN or WAN with everything stored on your device, for desktop and mobile
 Android Google Play;yes;https://play.google.com/store/apps/details?id=se.manyver;
-Android F-droid/apk;yes;https://f-droid.org/packages/se.manyver/ https://www.manyver.se/download/;
+Android F-droid/apk;partial;https://www.manyver.se/download/;removed https://f-droid.org/packages/se.manyver/
 Landing page;yes;https://www.manyver.se/;
 Manual;yes;https://www.manyver.se/faq;
 Logo;yes;https://www.manyver.se/icons-57ae47870b759a4a2af5a4acf68a03ac/favicon.ico;

@@ -1,38 +1,47 @@
 name;;WhatsApp;
 Summary;;Chat, video calls by phone number;Popular messaging app by Meta/Facebook https://www.whatsapp.com/
-Android Google Play;yes;;https://play.google.com/store/apps/details?id=com.whatsapp&gl=US
+Android Google Play;yes;https://play.google.com/store/apps/details?id=com.whatsapp;
 Android F-droid/apk;partial;https://www.whatsapp.com/android/;see "Package installer"
-Apple iOS;yes;;https://apps.apple.com/us/app/whatsapp-messenger/id310633997
-Desktop;yes;;https://www.whatsapp.com/download/
-Web;yes;;web.whatsapp.com
+Apple iOS;yes;https://apps.apple.com/us/app/whatsapp-messenger/id310633997;
+Desktop;yes;https://www.whatsapp.com/download/;
+Web;yes;https://web.whatsapp.com/;
 Protocol;;signal protocol https://signal.org/blog/whatsapp-complete/;
 Protocol open;partial;open protocol, no way to verify because closed service platform;
 Server license;no;proprietary;
 Client license;no;proprietary;
 Register without app;no;;
 Spell check;yes;;
-Group chat;yes;up to 256 members (higher with exploits);https://social.techjunkie.com/whatsapp-group-limit/
+Replies;partial;FIXME clickable? https://faq.whatsapp.com/3240283752856917/ https://www.wikihow.com/Reply-to-a-Specific-Message-on-WhatsApp;
+Group chat;yes;up to 256 members (higher with exploits) https://social.techjunkie.com/whatsapp-group-limit/;
 Voice calls;yes;;
 Video calls;yes;;
 Group calls;yes;;
 Voice messages;yes;;
+Screen sharing;yes;https://faq.whatsapp.com/1339237313658883/;
+Audio filtering;yes;https://blog.whatsapp.com/better-calling-across-desktop-and-mobile;
 File transfer;yes;;
 Message formatting;no;;
-Emoji composer;yes;;
-Emoji reception;partial;FIXME;
+Emoji composer;yes;https://faq.whatsapp.com/424198503229937/;
+Emoji reception;yes;https://blog.hootsuite.com/whatsapp-emoji-meaning/;
 Sticker packs;yes;https://www.whatsapp.com/business-stickers?lang=en;
 Link preview;yes;;
 Inline images;yes;;
 Inline videos;yes;;
 Reactions;yes;;
+Multiple devices;yes;https://blog.whatsapp.com/one-whatsapp-account-now-across-multiple-phones;
+Application locking;yes;https://faq.whatsapp.com/1726618467788240/;
 Remote message removal;yes;;
-Remote message correction;no;;
+Remote message correction;yes;https://faq.whatsapp.com/6614640168569481/;
 Message expiration;yes;;
 Presence status;yes;;
+Presence not mandatory;yes;https://www.tomsguide.com/how-to/how-to-hide-your-online-status-on-whatsapp;
 Typing indication;yes;;
 Read receipts;yes;;
 Receipts not mandatory;partial;all or nothing;You have to disable read receipts completely and then you wont be able to see other's receipts. Also they are always sent in group chats. https://www.techbout.com/turn-off-whatsapp-read-receipts-iphone-android-21235/
-End-to-end encryption;yes;;https://faq.whatsapp.com/general/security-and-privacy/end-to-end-encryption/?lang=en
+Spam protection;yes;https://www.msn.com/en-in/technology/software/whatsapp-introduces-enhanced-security-features-to-tackle-online-scams/ar-AA1K0hly;
+Account deactivation after device compromise;yes;https://faq.whatsapp.com/1131652977717250;
+Account recovery after device compromise;yes;https://faq.whatsapp.com/1131652977717250;
+End-to-end encryption;yes;https://faq.whatsapp.com/general/security-and-privacy/end-to-end-encryption/?lang=en;
 Metadata protection;no;;
 Usage without phone number;no;Phone number based;
 No-cost tier;yes;;
