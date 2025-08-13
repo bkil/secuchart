@@ -246,7 +246,7 @@ curl2() {
   readonly CURLFILE="$1"
   shift 1
 
-  if ! [ -f "$CURLFILE" ]; then
+  if ! [ -s "$CURLFILE" ]; then
     curl \
       -A "enrich-metadata.sh/0.1 (https://github.com/bkil/secuchart)" \
       --location \
