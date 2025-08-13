@@ -1,7 +1,7 @@
 name;;Telegram FOSS;
 Summary;;Libre Telegram fork, no blobs;FOSS-friendly soft fork of Telegram Android https://github.com/Telegram-FOSS-Team/Telegram-FOSS
 Android Google Play;no;;
-Android F-droid/apk;yes;https://f-droid.org/en/packages/org.telegram.messenger/;
+Android F-droid/apk;no;removed https://f-droid.org/en/packages/org.telegram.messenger/;
 Apple iOS;no;;
 Desktop;no;;
 Web;no;;
