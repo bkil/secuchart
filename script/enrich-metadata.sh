@@ -150,13 +150,13 @@ download_google_play_metadata() {
     s~^ <p itemprop=\"datePublished\">([^<>]+)</p>$~date\t\1~
     t loop
 
-    s~<p class=\"(date|text update-date)\">(Last updated on )?${RXDATE}</p>~\ndate\t\3\n~
+    s~<p class=\"(date|text update-date)\">(Last updated on )?${RXDATE}</p>~\ndate\t\3\n ~
     t date_update
-    s~<meta property=\"og:updated_time\" content=\"${RXDATE}\" */?>~\nupdate\t\1\n~
+    s~<meta property=\"og:updated_time\" content=\"${RXDATE}\" */?>~\nupdate\t\1\n ~
     t date_update
     s~^\s*<span class=\"update\">${RXDATE}</span>$~update\t\1~
     t date_update
-    s~<div class=\"head\">${RXDATE}</div><div class=\"desc\">Update date</div>~\nupdate\t\1\n~
+    s~<div class=\"head\">${RXDATE}</div><div class=\"desc\">Update date</div>~\nupdate\t\1\n ~
     T not_date_update
     :date_update
     s~\tJan~\t01~
@@ -178,37 +178,37 @@ download_google_play_metadata() {
 
     s~^ <script type=\"application/ld[+]json\">.*\",\"version\":\"${RXRELP}\",\"operatingSystem\":\"ANDROID\",.*$~rel\t\1~
     t loop
-    s~<p class=\"app-version-name\">${RXRELP}</p>~\nrel\t\1\n~
+    s~<p class=\"app-version-name\">${RXRELP}</p>~\nrel\t\1\n ~
     t loop
     s~^\s*version_name: '${RXRELP}',$~rel\t\1~
     t loop
     s~^ <div class=\"details-sdk\"><span itemprop=\"version\">${RXRELP} *</span>for Android</div>$~rel\t\1~
     t loop
-    s~^ <div class=\"ver-info-top\"><strong>.*</strong> ${RXREL}( *\([0-9]+\))?</div>~rel\t\1\n~
+    s~^ <div class=\"ver-info-top\"><strong>.*</strong> ${RXREL}( *\([0-9]+\))?</div>~rel\t\1\n ~
     t loop
-    s~^ <a class=\"version-item .* data-dt-version=\"${RXRELP}\"~rel\t\1\n~
+    s~^ <a class=\"version-item .* data-dt-version=\"${RXRELP}\"~rel\t\1\n ~
     t loop
     s~^ <span itemprop=\"version\">${RXRELP}</span> by$~rel\t\1~
     t loop
     s~\s*<h3( class=\"whats-new-title\")?>What&#39;s New in the Latest Version ${RXRELP}</h3>~rel\t\2~
     t loop
 
-    s~<p class=\"label\">Requires Android</p><p class=\"value\">${RXOS}</p>~\nos\t\2\n~
+    s~<p class=\"label\">Requires Android</p><p class=\"value\">${RXOS}</p>~\nos\t\2\n ~
     t loop
     s~^\s*<p class=\"additional-info\">${RXOS}</p>$~os\t\2~
     t loop
     s~^ <p>${RXOS}</p>$~os\t\2~
     t loop
-    s~<li data-dt-desc=\"AndroidOS\" data-vars-desc=\"AndroidOS\"><div class=\"head\">${RXOS}</div>~\nos\t\2\n~
+    s~<li data-dt-desc=\"AndroidOS\" data-vars-desc=\"AndroidOS\"><div class=\"head\">${RXOS}</div>~\nos\t\2\n ~
     t loop
 
     s~^ <p><strong>File Size: </strong>([^<>]+) (MB)</p>$~size\t\1\2~
     t loop
     s~^\s*<span class=\"(size|ver-item-s)\">([^<>]+) (MB)</span>$~size\t\2\3~
     t loop
-    s~<strong class=\"text one-line\">Download APK \(([0-9.]+) (MB)\)</strong>~\nsize\t\1\2\n~
+    s~<strong class=\"text one-line\">Download APK \(([0-9.]+) (MB)\)</strong>~\nsize\t\1\2\n ~
     t loop
-    s~<span class=\"tag XAPK\">XAPK</span></div><span>([0-9.]+) (MB)</span>~\nsize\t\1\2\n~
+    s~<span class=\"tag XAPK\">XAPK</span></div><span>([0-9.]+) (MB)</span>~\nsize\t\1\2\n ~
     t loop
 
     s~ ~_~g

@@ -2,11 +2,11 @@ name;;keet;
 Summary;;P2P chat, video calls and file sharing;
 Android Google Play;partial;not full featured https://play.google.com/store/apps/details?id=io.keet.app https://support.holepunch.to/hc/en-001/articles/14678482505233-Will-my-phone-be-able-to-get-chat-history-if-participating-Desktops-are-diconnected;
 Android F-droid/apk;partial;https://github.com/holepunchto/keet-mobile-releases;
-Other mobile;no;https://docs.pears.com/apps/keet#join-the-internet-of-peers;
-Other Android;no;https://docs.pears.com/apps/keet#join-the-internet-of-peers;
+Other mobile;no;https://support.keet.io/installation-and-setup/installation#mobile-tablet-installation https://docs.pears.com/apps/keet#join-the-internet-of-peers;
+Other Android;no;https://support.keet.io/installation-and-setup/installation#mobile-tablet-installation https://docs.pears.com/apps/keet#join-the-internet-of-peers;
 Apple iOS;partial;not full featured https://apps.apple.com/us/app/keet-by-holepunch/id6443880549 https://support.holepunch.to/hc/en-001/articles/14678482505233-Will-my-phone-be-able-to-get-chat-history-if-participating-Desktops-are-diconnected;
-Desktop;yes;macOS Linux Windows https://docs.pears.com/apps/keet#join-the-internet-of-peers https://keet.io/;
-Web;no;https://docs.pears.com/apps/keet#join-the-internet-of-peers https://support.holepunch.to/hc/en-001/articles/14288603477265-What-is-Keet;
+Desktop;yes;macOS Linux Windows https://docs.pears.com/apps/keet#join-the-internet-of-peers https://snapcraft.io/keet https://keet.io/;
+Web;no;https://docs.pears.com/apps/keet#join-the-internet-of-peers https://web.archive.org/web/20230521113834/https://support.holepunch.to/hc/en-001/articles/14288603477265;
 Languages;partial;English, Spanish, Russian https://support.holepunch.to/hc/en-001/articles/14702866185873-Changelog-30-07-2022-Keet-v25580;
 Protocol;;Keet, Pear;
 Protocol open;no;;parts of the protocol are described in prose or have example source code, but not enough to implement a client from via clean room https://github.com/holepunchto/pear-docs#building-blocks https://docs.pears.com/apps/keet
@@ -14,13 +14,13 @@ Server license;no;proprietary;
 Client license;no;;some libraries used by keet are published under Apache 2.0, but not enough to build a client from https://github.com/holepunchto
 Register without app;no;https://docs.pears.com/apps/keet#how-it-works;
 Spell check;no;;
-Replies;no;;
+Replies;partial;https://x.com/keet_io/status/1828851766508900587 https://x.com/keet_io/status/1887517318940418349;
 Group chat;partial;no history, desktops must be online;https://support.holepunch.to/hc/en-001/articles/13735214260881-How-to-create-a-room https://support.holepunch.to/hc/en-001/articles/13735302993681-How-to-invite-other-peers-to-join-a-room https://support.holepunch.to/hc/en-001/articles/13735350942865-How-to-join-a-room only available when desktops are online https://support.holepunch.to/hc/en-001/articles/14677582542865-How-to-guarantee-a-stable-connection-to-your-rooms https://support.holepunch.to/hc/en-001/articles/14678026808337-Ensuring-access-to-data-on-a-mobile-device-with-an-unstable-connection https://support.holepunch.to/hc/en-001/articles/14678797974673-Are-Keet-rooms-always-available-on-my-different-devices chat history not shared https://support.holepunch.to/hc/en-001/articles/13736141699217-Where-is-Keet-s-chat-history-stored-if-everything-is-Peer-to-peer-P2P https://support.holepunch.to/hc/en-001/articles/14678482505233-Will-my-phone-be-able-to-get-chat-history-if-participating-Desktops-are-diconnected
 Voice calls;yes;https://support.holepunch.to/hc/en-001/articles/14290165560721-How-many-people-can-interact-in-a-room;
 Video calls;yes;https://support.holepunch.to/hc/en-001/articles/14290165560721-How-many-people-can-interact-in-a-room;
 Group calls;partial;up to 10-12 people https://support.holepunch.to/hc/en-001/articles/14290165560721-How-many-people-can-interact-in-a-room;
-Voice messages;no;;
-Screen sharing;no;;
+Voice messages;yes;per log https://x.com/keet_io/status/1887209084560285931;
+Screen sharing;partial;https://x.com/keet_io/status/1804897979012182330 only on desktop https://support.keet.io/rooms/dms-and-calls;
 Audio filtering;no;;
 File transfer;yes;https://support.holepunch.to/hc/en-001/articles/13735326276625-How-to-send-and-receive-files https://support.holepunch.to/hc/en-001/articles/13735391416849-How-to-delete-individual-files https://support.holepunch.to/hc/en-001/articles/13735449923601-How-to-delete-room-files;
 Message formatting;partial;;bold, italic, strike-through preformatted, ordered list, unordered list https://support.holepunch.to/hc/en-001/articles/13735188369553-A-beginner-s-guide-to-Keet
@@ -28,17 +28,17 @@ Unicode support;partial;;
 Emoji composer;yes;;
 Emoji reception;yes;;
 Sticker packs;no;;
-Link preview;no;;
-Inline images;partial;FIXME;
-Inline videos;partial;FIXME;
+Link preview;yes;link preview improvement per log https://x.com/keet_io/status/1877022204178973096 https://x.com/keet_io/status/1866156051709501771;
+Inline images;yes;https://support.keet.io/file-sharing-and-messages/sharing-files-and-media screenshot https://play.google.com/store/apps/details?id=io.keet.app;
+Inline videos;yes;https://support.keet.io/file-sharing-and-messages/sharing-files-and-media screenshot https://play.google.com/store/apps/details?id=io.keet.app via ffmpeg https://x.com/mafintosh/status/1953520438773993682;
 Polls;no;;
-Reactions;partial;FIXME;
-Read public content without registering;no;https://support.holepunch.to/hc/en-001/articles/14288603477265-What-is-Keet;
-Multiple devices;no;;they recommend joining in multiple devices via separate accounts, not sure whether reusing the key would work at all https://support.holepunch.to/hc/en-001/articles/14678026808337-Ensuring-access-to-data-on-a-mobile-device-with-an-unstable-connection
+Reactions;yes;https://x.com/keet_io/status/1737163152536576505;
+Read public content without registering;no;https://web.archive.org/web/20230521113834/https://support.holepunch.to/hc/en-001/articles/14288603477265;
+Multiple devices;yes;main vs. linked https://x.com/keet_io/status/1780543148273307805 https://support.keet.io/installation-and-setup/multi-device;
 Online account replica;no;https://support.holepunch.to/hc/en-001/articles/13734751158289-How-do-you-manage-the-user-s-data;
 Multiple accounts;no;;
 Application locking;no;;
-Remote message removal;no;https://support.holepunch.to/hc/en-001/articles/13736229575697-Who-does-the-Report-and-Remove-message-option-notify https://support.holepunch.to/hc/en-001/articles/13736226321681-What-s-the-approach-for-dealing-with-kick-banning-scammers-or-spambots;
+Remote message removal;yes;https://xcancel.com/keet_io/status/1630272763993763841 https://support.keet.io/file-sharing-and-messages/deleting-files-and-messages;
 Remote message correction;no;https://support.holepunch.to/hc/en-001/articles/13736229575697-Who-does-the-Report-and-Remove-message-option-notify https://support.holepunch.to/hc/en-001/articles/13736226321681-What-s-the-approach-for-dealing-with-kick-banning-scammers-or-spambots;
 Message expiration;no;;
 Presence status;no;;
@@ -51,20 +51,20 @@ Landing page;yes;https://support.holepunch.to/;
 Manual;no;;
 Vendor can't curate content;yes;in any room the vendor doesn't admin;
 Spam protection;partial;collapse voting https://support.holepunch.to/hc/en-001/articles/13736229575697-Who-does-the-Report-and-Remove-message-option-notify https://support.holepunch.to/hc/en-001/articles/13736226321681-What-s-the-approach-for-dealing-with-kick-banning-scammers-or-spambots;
-Account deactivation after device compromise;no;https://support.holepunch.to/hc/en-001/articles/13736187970193-How-do-I-recover-my-account-if-I-lose-my-device;
-Account recovery after device compromise;no;https://support.holepunch.to/hc/en-001/articles/13736187970193-How-do-I-recover-my-account-if-I-lose-my-device;
+Account deactivation after device compromise;no;https://support.keet.io/installation-and-setup/account-recovery#is-it-possible-to-change-my-recovery-phrase-or-get-a-new-recovery-phrase-in-keet;
+Account recovery after device compromise;yes;recovery phrase or linked devices https://support.keet.io/installation-and-setup/account-recovery#what-happens-if-i-lose-my-device-can-i-regain-access-to-my-account;
 CPU idle;no;uses more due to P2P https://support.holepunch.to/hc/en-001/articles/14678711235857-Will-the-app-run-in-the-background-so-I-can-get-notifications;
 Power saving;no;uses more due to P2P;
 Bandwidth frugal;no;uses more due to P2P;
 Disallow screenshots;no;;
 Logo;yes;https://keet.io/favicon.ico;
 Threat model;no;;
-End-to-end encryption;partial;FIXME https://support.holepunch.to/hc/en-001/articles/13735133290641-How-Keet-works https://github.com/holepunchto/hypercore-crypto https://github.com/holepunchto/hyperswarm-secret-stream https://noiseprotocol.org/noise.html;
+End-to-end encryption;yes;https://support.keet.io/#is-keet-secure https://github.com/holepunchto/hypercore-crypto https://github.com/holepunchto/hyperswarm-secret-stream https://noiseprotocol.org/noise.html;
 E2EE keys shielded from operator;partial;FIXME;
 Deniability;no;;
 Replay prevention;no;;
 Downgrade resistance;no;;
-Contact list confidential;no;;
+Contact list confidential;yes;https://support.keet.io/#how-does-keet-work-without-central-servers;
 Metadata protection;partial;username across rooms, LAN leaks;https://support.holepunch.to/hc/en-001/articles/13736222126993-Why-do-I-get-an-error-if-I-don-t-give-Keet-access-to-the-local-network-devices user handles shared across rooms, connections can relay via other peers and each room uses a unique id key
 Perfect forward secrecy;no;;
 Security team;no;;
@@ -76,9 +76,9 @@ Transparent financing;no;https://support.holepunch.to/hc/en-001/articles/1373477
 No-cost tier;yes;https://support.holepunch.to/hc/en-001/articles/13734773600529-Will-there-be-any-Crypto-Airdrop-for-Keet-s-users;
 Active development;partial;FIXME;Many basic features went missing for years and there seems to be little progress
 Multi-party development;partial;FIXME;
-Isolated self-hosting;no;https://support.holepunch.to/hc/en-001/articles/13734669798033-What-is-Holepunch;
-User can extend network with node;yes;https://support.holepunch.to/hc/en-001/articles/13734669798033-What-is-Holepunch https://support.holepunch.to/hc/en-001/articles/14678523460753-Does-the-app-auto-Update-on-different-devices;
-Identity not controlled by vendor;no;no code or documentation;
+Isolated self-hosting;no;https://web.archive.org/web/20230521120243/https://support.holepunch.to/hc/en-001/articles/13734669798033-What-is-Holepunch;
+User can extend network with node;yes;https://web.archive.org/web/20230521120243/https://support.holepunch.to/hc/en-001/articles/13734669798033-What-is-Holepunch https://support.holepunch.to/hc/en-001/articles/14678523460753-Does-the-app-auto-Update-on-different-devices;
+Identity not controlled by vendor;yes;https://github.com/holepunchto/keet-identity-key https://support.keet.io/#what-is-the-difference-between-keet-and-traditional-messaging-apps;
 Open documentation;no;;
 Web forum;no;;
 Contact;yes;;mailto:hello@holepunch.to https://x.com/keet_io https://discord.gg/holepunch https://github.com/gasolin/awesome-pears/blob/main/keet_rooms.md pear://keet/yry7g7wa7bmrjd1xxr7ce64581ij3hozq7589xfgxjrm74kgp34o36pwp46ohw4u1w63o6is6sax6j3swgdi66dmti8p8nfuyypfwewbuy
@@ -86,8 +86,8 @@ Syndication;yes;https://pears.com/feed/ https://blog.hypercore-protocol.org/feed
 Offline;no;https://support.holepunch.to/hc/en-001/articles/14678797974673-Are-Keet-rooms-always-available-on-my-different-devices https://support.holepunch.to/hc/en-001/articles/14678032565009-What-if-chat-rooms-are-not-available-or-are-not-syncing;
 Servers required;;;Holepunch, bootstrap (existing peers may be substituted), software updates, Google and Apple for notifications on mobile
 Servers optional;;;Bitcoin Lightning network https://support.holepunch.to/hc/en-001/articles/14294127915409-What-is-an-LND-node https://support.holepunch.to/hc/en-001/articles/13736267646865-How-does-Lightning-Network-work-in-Keet https://support.holepunch.to/hc/en-001/articles/13736264835345-What-is-Lightning-Network https://support.holepunch.to/hc/en-001/articles/14290768003089-What-is-an-Admin-Macaroon
-Serverless WAN mode;partial;FIXME;according to promotional material, but details are sparse https://docs.pears.com/apps/keet#how-it-works https://docs.pears.com/how-tos/connect-two-peers-by-key-with-hyperdht https://support.holepunch.to/hc/en-001/articles/13734669798033-What-is-Holepunch
-Serverless LAN mode;no;https://support.holepunch.to/hc/en-001/articles/13734669798033-What-is-Holepunch;
+Serverless WAN mode;partial;FIXME;according to promotional material, but details are sparse https://docs.pears.com/apps/keet#how-it-works https://docs.pears.com/how-tos/connect-two-peers-by-key-with-hyperdht https://web.archive.org/web/20230521120243/https://support.holepunch.to/hc/en-001/articles/13734669798033-What-is-Holepunch
+Serverless LAN mode;no;https://web.archive.org/web/20230521120243/https://support.holepunch.to/hc/en-001/articles/13734669798033-What-is-Holepunch;
 Network store and forward;no;https://support.holepunch.to/hc/en-001/articles/14678797974673-Are-Keet-rooms-always-available-on-my-different-devices https://support.holepunch.to/hc/en-001/articles/14678032565009-What-if-chat-rooms-are-not-available-or-are-not-syncing https://support.holepunch.to/hc/en-001/articles/14678482505233-Will-my-phone-be-able-to-get-chat-history-if-participating-Desktops-are-diconnected;
 Wireless mode;no;;
 IP shielded from peers;partial;FIXME;messages can relay via other peers, blind forward is also implemented
@@ -104,9 +104,9 @@ Transparency reports;no;;
 Vendor jurisdiction;;British Virgin Islands;
 Good ToSDR grade;no;;
 Domain;yes;https://keet.io/ https://pears.com/ https://holepunch.to/ https://blog.hypercore-protocol.org/;
-First release;no;project 2022-07-25 https://www.nigeriabitcoincommunity.com/keet-review-how-to-make-private-video-calls-on-the-blockchain-at-zero-cost/ https://support.holepunch.to/hc/en-001/articles/14288603477265-What-is-Keet https://support.holepunch.to/hc/en-001/sections/14674897362193-Changelog desktop 2023-02 https://support.holepunch.to/hc/en-001/articles/14288603477265-What-is-Keet;
+First release;partial;project 2022-07-25 https://www.nigeriabitcoincommunity.com/keet-review-how-to-make-private-video-calls-on-the-blockchain-at-zero-cost/ https://web.archive.org/web/20230521113834/https://support.holepunch.to/hc/en-001/articles/14288603477265 https://support.holepunch.to/hc/en-001/sections/14674897362193-Changelog desktop 2023-02 https://web.archive.org/web/20230521113834/https://support.holepunch.to/hc/en-001/articles/14288603477265;
 Public issue tracker;partial;only for the open components;https://github.com/holepunchto/pear/issues pear://keet/yryskxsgye5j6se8mzzxqoygzion3zyo93iphxhew4pznn7sdbeat17cr5gaquoawe9iq7eipkez99qm6zpkouckg8sacci8bdkgmcdtoc
-Support team;no;unable to guage lacking public access;
+Support team;partial;https://support.keet.io/technical-support-and-troubleshooting/issue-with-keet-app;
 Wikipedia;no;;
 Wikidata;no;Hypercore https://www.wikidata.org/wiki/Q94433009 Hyperdrive https://www.wikidata.org/wiki/Q94432883;
 Researched;no;;
