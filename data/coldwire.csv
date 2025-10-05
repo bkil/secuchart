@@ -1,0 +1,51 @@
+name;;Coldwire Messenger;
+Summary;;Text-only high-assurance messenger;
+Android Google Play;no;;
+Android F-droid/apk;no;;
+Apple iOS;no;;
+Desktop;yes;https://github.com/Freedom-Club-Sec/Coldwire-python;
+Web;no;;
+Languages;yes;English (more soon to added);
+Protocol;;Coldwire Protocol https://github.com/Freedom-Club-Sec/Coldwire-python/blob/main/COLDWIRE_PROTOCOL.md and Strandlock Protocol https://github.com/Freedom-Club-Sec/Coldwire-python/blob/main/STRANDLOCK_PROTOCOL.md;
+Protocol open;yes;https://github.com/Freedom-Club-Sec/Coldwire-python/blob/main/STRANDLOCK_PROTOCOL.md;
+Server license;yes;MIT;
+Client license;yes;MIT;
+Register without app;no;;
+Group chat;no;;
+Voice calls;no;;
+Video calls;no;;
+Group calls;no;;
+Voice messages;no;;
+Screen sharing;no;;
+Sticker packs;no;;
+Link preview;partial;;Depends on implementation.
+Reactions;no;;
+Multiple devices;no;;
+Multiple accounts;no;;
+Remote message removal;yes;Automatically after being fetched.;
+Remote message correction;no;;
+Message expiration;yes;;
+Presence status;no;;
+Typing indication;no;;
+Read receipts;no;;
+Receipts not mandatory;yes;;
+Themes;partial;Depends on implementation.
+End-to-end encryption;yes;https://github.com/Freedom-Club-Sec/Coldwire-python/blob/main/STRANDLOCK_PROTOCOL.md;
+Deniability;yes;Similar / better deniability and unlinkability than OTR.
+Contact list confidential;yes;;Contact list is only local, server is not aware of contact list.
+Metadata protection;yes;Server only sees ciphertext in, ciphertext out, and mailbox ID.
+Perfect forward secrecy;yes;https://github.com/Freedom-Club-Sec/Coldwire-python/blob/main/STRANDLOCK_PROTOCOL.md;
+Large bug bounty;no;;
+Reproducible builds;yes;Depends on implementation, but in official ones, yes;
+Audits;no;;
+Usage without phone number;yes;;
+No-cost tier;yes;;
+Active development;yes;;
+Isolated self-hosting;yes;https://github.com/Freedom-Club-Sec/Coldwire-server;
+Open documentation;yes;;;
+Web forum;no;
+Contact;yes;;mailto:freedomclubcontact@protonmail.com
+Offline;no;;
+First release;yes;2025-09-29 https://github.com/Freedom-Club-Sec/Coldwire-python;
+Public issue tracker;yes;https://github.com/Freedom-Club-Sec/Coldwire-python/issues https://github.com/Freedom-Club-Sec/Coldwire-Desktop/issues https://github.com/Freedom-Club-Sec/Coldwire-server/issues;
+No past client vulnerabilities;yes;;
