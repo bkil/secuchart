@@ -18,7 +18,7 @@ Group calls;no;;
 Voice messages;no;;
 Screen sharing;no;;
 Sticker packs;no;;
-Link preview;partial;;Depends on implementation.
+Link preview;no;;.
 Reactions;no;;
 Multiple devices;no;;
 Multiple accounts;no;;
@@ -30,11 +30,11 @@ Typing indication;no;;
 Read receipts;no;;
 Receipts not mandatory;yes;;
 Themes;partial;Depends on implementation.
-End-to-end encryption;yes;https://github.com/Freedom-Club-Sec/Coldwire-python/blob/main/STRANDLOCK_PROTOCOL.md;
+End-to-end encryption;yes;https://github.com/Freedom-Club-Sec/Coldwire-python/blob/main/STRANDLOCK_PROTOCOL.md#5-messaging-msgs;
 Deniability;yes;Similar / better deniability and unlinkability than OTR.
 Contact list confidential;yes;;Contact list is only local, server is not aware of contact list.
 Metadata protection;yes;Server only sees ciphertext in, ciphertext out, and mailbox ID.
-Perfect forward secrecy;yes;https://github.com/Freedom-Club-Sec/Coldwire-python/blob/main/STRANDLOCK_PROTOCOL.md;
+Perfect forward secrecy;yes;https://github.com/Freedom-Club-Sec/Coldwire-python/blob/main/STRANDLOCK_PROTOCOL.md#4-perfect-forward-secrecy-pfs;
 Large bug bounty;no;;
 Reproducible builds;yes;Depends on implementation, but in official ones, yes;
 Audits;no;;
