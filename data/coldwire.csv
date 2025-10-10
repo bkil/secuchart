@@ -7,7 +7,7 @@ Desktop;yes;https://github.com/Freedom-Club-Sec/Coldwire-python;
 Web;no;;
 Languages;yes;English (more soon to added);
 Protocol;;Coldwire Protocol https://github.com/Freedom-Club-Sec/Coldwire-python/blob/main/COLDWIRE_PROTOCOL.md and Strandlock Protocol https://github.com/Freedom-Club-Sec/Coldwire-python/blob/main/STRANDLOCK_PROTOCOL.md;
-Protocol open;yes;https://github.com/Freedom-Club-Sec/Coldwire-python/blob/main/STRANDLOCK_PROTOCOL.md;
+Protocol open;yes;https://github.com/Freedom-Club-Sec/Coldwire-python/blob/main/STRANDLOCK_PROTOCOL.md https://github.com/Freedom-Club-Sec/Coldwire-python/blob/main/COLDWIRE_PROTOCOL.md;
 Server license;yes;MIT;
 Client license;yes;MIT;
 Register without app;no;;
@@ -29,7 +29,7 @@ Presence status;no;;
 Typing indication;no;;
 Read receipts;no;;
 Receipts not mandatory;yes;;
-Themes;partial;Depends on implementation.
+Themes;no;;
 End-to-end encryption;yes;https://github.com/Freedom-Club-Sec/Coldwire-python/blob/main/STRANDLOCK_PROTOCOL.md#5-messaging-msgs;
 Deniability;yes;Similar / better deniability and unlinkability than OTR.
 Contact list confidential;yes;;Contact list is only local, server is not aware of contact list.
