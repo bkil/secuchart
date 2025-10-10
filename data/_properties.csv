@@ -98,7 +98,7 @@ Servers required;List all server software or instance by name that are mandatory
 Servers optional;List all server software or instance by name that can provide extra features when using this network;;;foss crowd
 Serverless WAN mode;If communicating over the internet might scale without (a vast amount of) dedicated servers, i.e. by supernode promotion and DHT;foss crowd;;
 Serverless LAN mode;If you can communicate without an internet connection and a server;crowd;;
-Network store and forward;You can compose messages to your peer even if the two of you aren't online at the same time;layperson;crowd;
+Network store and forward;yes=DTN-routing through chains of intermittent intermediaries, partial=You can compose messages to your peer even if the two of you aren't online at the same time;layperson;crowd;
 Wireless mode;Built-in support for peering with nearby nodes over ISM wireless either to sync or as part of a mesh;;tinfoil crowd;
 IP shielded from peers;;tinfoil;;
 Proxy support;HTTP, Tor, SOCKS5;;tinfoil crowd;
