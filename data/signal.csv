@@ -50,7 +50,7 @@ Metadata protection;partial;sealed sender traffic analysis https://www.ndss-symp
 Perfect forward secrecy;yes;https://www.signal.org/docs/specifications/x3dh/;
 Large bug bounty;no;https://support.signal.org/hc/en-us/articles/360007320791-How-can-I-report-a-security-vulnerability;
 Reproducible builds;yes;Android https://signal.org/blog/reproducible-android/;
-Audits;yes;multiple https://community.signalusers.org/t/overview-of-third-party-security-audits/13243;
+Audits;no;No security audit reports published;As of 2025-02-23 there are no third-party security audit reports published. https://support.signal.org/hc/en-us/articles/360007062172-Signal-Permissions-OS-Notification-Settings says "The code has been audited both by third-party security firms and individual researchers.", so it might be that Signal was audited but chose not to publish a report. Community maintains a list of third-party security audits, but as of 2025-02-23 it only contains research papers with one exception of a reference suggesting that in 2018 Signal paid Doyensec, but without any audit reports attached: https://community.signalusers.org/t/overview-of-third-party-security-audits/13243 In Signal Reddit members attempted to find security audits before, but have not succeeded: https://old.reddit.com/r/signal/comments/g0lv81/does_the_signal_app_regularly_undergo_security/ https://old.reddit.com/r/signal/comments/g4d6d1/is_there_any_recent_security_audit_report_to_look/
 Usage without phone number;no;;
 No-cost tier;yes;https://signal.org/donate/;
 Payment choices;;Google Pay, Apple Pay, cryptocurrency https://signal.org/donate/;
