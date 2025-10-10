@@ -12,6 +12,8 @@ main() {
   mkdir -p "$DIST" || exit 1
   cp -a "$O/../LICENSE" "$DIST/LICENSE" || exit 1
   cp -a "$O/../data/LICENSE" "$DIST/LICENSE.data" || exit 1
+  cp -a "$WEB/favicon.png" "$DIST/favicon.ico" || exit 1
+  cp -at "$DIST" "$WEB/secuchart-avatar.png" || exit 1
   gen_index "$LIMITITEMS" > "$DIST/index.html" || exit 1
 }
 
