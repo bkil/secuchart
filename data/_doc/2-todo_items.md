@@ -45,7 +45,8 @@ Some of these may be investigated in the future by volunteers. Others may be add
 * BeeBEEP LAN messenger https://sourceforge.net/projects/beebeep/
 * CryptoDog (Cryptocat)
 * Mattermost
-* https://github.com/basecamp/once-campfire
+* liberated basecamp https://github.com/basecamp/once-campfire
+* FOSS Discord clone https://github.com/spacebarchat/server
 * Jitsi
 * Zulip
 * Twitter
