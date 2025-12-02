@@ -68,6 +68,7 @@ The higher the amount of people reachable the better.
 ## Protocol
 
 List the canonical names of the protocols supported.
+
 ## Protocol open
 
 * yes=can be implemented based on published detailed specification,
@@ -80,7 +81,7 @@ List the canonical names of the protocols supported.
 
 ## Register without app
 
-Is there some alternative way to start using the service without installing an app? This may be achieved with or without another account through another established app, protocol or platform, such as through a web app, IRC, XMPP, Matrix, the Fediverse or email.
+Is there some alternative way to start using the service without installing a possibly proprietary, single-purpose app the vendor provides you with? This may be achieved with or without another account through another established app, protocol or platform, such as through a web app, IRC, XMPP, Matrix, NNTP, SIP, telnet, the Fediverse, email, SMS, a post card or a phone call.
 
 ## Spell check
 
@@ -170,7 +171,7 @@ Multiple choice voting. How seamless is its integration to the client interface:
 
 ## Read public content without registering
 
-Provides free tasting to look around before committing to install anything or having to remember another pair of credentials. See:
+Provides free tasting to look around before committing to install anything or having to remember another pair of credentials. Such tasting may be done through an independent, alternative, standardized protocol or web app (see the section `Register without app`). See:
 
 * #fediverse-matrix
 

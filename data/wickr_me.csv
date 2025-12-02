@@ -5,18 +5,27 @@ Android F-droid/apk;no;;Neither can an apk be dowloaded from their site, as they
 Apple iOS;yes;;https://apps.apple.com/us/app/wickr-me-private-secure-messenger/id5.92.6154
 Desktop;yes;Linux, MacOS, Windows;https://me-download.wickr.com/#/version/me
 Web;no;;
-Protocol;;Wickr Secure Messaging Protocol (Home browed);
+Protocol;;Wickr Secure Messaging Protocol https://www.wickr.com/uploads/files/700869603163179165-wickr-whitepaper-final.pdf http://www.pcmag.com/news/351756/wickr-releases-crypto-protocol-on-github;
 Protocol open;no;;
 Server license;no;proprietary;
 Client license;no;proprietary;
 Register without app;no;;
 Emoji reception;partial;FIXME;
+Message expiration;yes;http://www.afr.com/technology/apps/apps-to-keep-your-messages-secret-in-the-data-retention-age-20150528-ghbv1w;
+End-to-end encryption;yes;;
+E2EE keys shielded from operator;yes;;
 Perfect forward secrecy;yes;;
+Large bug bounty;yes;$100k http://www.pcworld.com/article/2088380/encrypted-messaging-startup-wickr-offers-100k-bug-bounty.html;
+Audits;yes;https://www.eff.org/node/82654 http://mashable.com/2013/03/04/wickr/#lneQDmOxyOqS;
 Usage without phone number;yes;;
 No-cost tier;yes;;
 Active development;yes;;
 Identity not controlled by vendor;no;;
 Serverless WAN mode;no;;
 Serverless LAN mode;no;;
+Vendor legal entity kind;;company;
+Vendor jurisdiction;;USA;
+Infrastructure provider;;Amazon AWS;
 Good ToSDR grade;partial;D https://tosdr.org/en/service/3587;
+Ethical financing in the past;no;$1.6M by CIA https://www.vice.com/en/article/wickr-cia-funding-inqtel/;
 Server hosted until;;2023-12-31;https://www.404media.co/wickr-closed-down-is-dead/
