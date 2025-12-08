@@ -12,6 +12,8 @@ Client license;yes;GPL-3.0-only https://github.com/Nheko-Reborn/nheko/blob/maste
 Register without app;yes;;
 Replies;yes;https://matrix.org/blog/2022/09/30/this-week-in-matrix-2022-09-30/#nheko-website https://matrix.org/blog/2022/09/29/matrix-v-1-4-release/#threads;
 Group chat;yes;;
+Voice calls;yes;https://github.com/Nheko-Reborn/nheko#user-content-features;
+Video calls;yes;https://github.com/Nheko-Reborn/nheko#user-content-features;
 Message formatting;yes;;
 Emoji reception;partial;FIXME;
 Sticker packs;yes;;
