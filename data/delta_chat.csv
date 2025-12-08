@@ -38,7 +38,7 @@ Read public content without registering;partial;;online public mailing list arch
 Multiple devices;yes;https://delta.chat/en/help#can-i-use-delta-chat-on-multiple-devices-at-the-same-time;
 Online account replica;partial;IMAP + manual backup;the account needs to be exported/imported periodically https://support.delta.chat/t/incremental-automatic-backups/2156 set up and keep online a secondary device as an alternative
 Multiple accounts;yes;https://delta.chat/en/2021-08-24-updates#multi-account-added-or-improved https://delta.chat/en/help#multiple-accounts;
-Application locking;no;;
+Application locking;no;https://support.delta.chat/t/password-or-pin-protection-for-opening-app-local-data-encryption/1803;
 Remote message removal;yes;https://delta.chat/en/2025-03-26-edit-and-delete-how https://github.com/chatmail/core/blob/main/spec.md#request-deletion;
 Remote message correction;yes;https://delta.chat/en/2025-03-26-edit-and-delete-how https://github.com/chatmail/core/blob/main/spec.md#request-editing;
 Message expiration;yes;https://delta.chat/en/2020-07-30-summer-update#disappearing-messages;
@@ -85,7 +85,7 @@ Open documentation;yes;https://github.com/deltachat/deltachat-pages;
 Web forum;yes;https://support.delta.chat/;
 Contact;yes;;acct:delta@chaos.social unofficial matrix:r/Delta.Chat:matrix.org xmpp:deltachat@conference.movim.eu irc://irc.libera.chat/%23deltachat https://i.delta.chat/#C753A22A447DE8CA18653B9C7668BC822C0561CA&a=pixsocial%40arcanechat.me&n=PixelSocial&i=sz7HYOnPmjG1WWOclOFlGLFv&s=XJFfgZRHwvTVAvBAQKJxFL2F
 Syndication;yes;https://delta.chat/feed.xml;
-Offline;yes;https://delta.chat/en/2020-03-06-delta-1.2;
+Offline;yes;except new contacts;can only write to a new contact or group after a handshake https://delta.chat/en/2020-03-06-delta-1.2
 Servers required;;DNS, SMTP, IMAP;
 Servers optional;;jitsi, talky.io, appear.in https://delta.chat/en/2020-07-30-summer-update#video-chats;
 Serverless WAN mode;no;SMTP is usually blocked;
